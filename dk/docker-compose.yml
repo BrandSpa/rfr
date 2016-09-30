@@ -5,7 +5,7 @@ wp:
     ports:
       - "80:80"
     volumes:
-      - /Users/dev/apps/rfr:/var/www/html/wp-content
+      - ../:/var/www/html/wp-content
 
 mysql:
     image: mysql:latest
