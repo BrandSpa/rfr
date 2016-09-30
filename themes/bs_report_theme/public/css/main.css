@@ -201,6 +201,8 @@ input {
     align-items: center;
     text-align: center;
     margin: 0 auto; }
+    .nav__logo img {
+      margin: 0 auto; }
 
 .report__header {
   padding: 60px 40px; }

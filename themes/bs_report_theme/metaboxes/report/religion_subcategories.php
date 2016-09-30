@@ -9,152 +9,21 @@
     div[class^="sub-"], div[class*=" sub-"] {
       margin-left: 20px;
     }
+    .highcharts-credits {
+      display: none;
+      opacity: 0;
+    }
   </style>
   <h3>Religion</h3>
   <hr>
   <?php if(is_array($report_religion) && count($report_religion) > 0): ?>
 
-    <div id="container" style="width: 100%; height: 400px; margin: 0 auto"></div>
-<script>
-var $ = jQuery;
-  var ob = <?php echo json_encode($report_religion) ?>;
-  var colors = <?php echo json_encode(getReligionsColors()) ?>
+    <religions-chart
+      :religions='<?php echo json_encode($report_religion) ?>'
+      :colors='<?php echo json_encode(getReligionsColors()) ?>'
+    >
+    </religions-chart>
 
-
-
-  $(function() {
-    var categories = Object.keys(ob).map(function(key) {
-      return ob[key].name;
-  } );
-
-var data = Object.keys(ob).map(function(key) {
-  var neo = {};
-  neo['y'] = parseFloat(ob[key].percent);
-
-  neo['color'] = colors[ob[key].name];
-
-  var drilldown = {};
-  drilldown['color'] = colors[ob[key].name];
-  drilldown['name'] = ob[key].name;
-
-  var categories = [];
-
-  var data = [];
-
-  if(typeof ob[key].sub == "object") {
-    categories = Object.keys(ob[key].sub).map(function(subkey) {
-      return ob[key]['sub'][subkey]['name'];
-    });
-
-    data = Object.keys(ob[key].sub).map(function(subkey) {
-      return parseFloat(ob[key]['sub'][subkey]['percent']);
-    });
-
-  } else {
-
-    if(ob[key].sub && ob[key].sub.isArray()) {
-      categories = ob[key].sub.map(function(sub) {
-        return sub['name'];
-      });
-
-      data = ob[key].sub.map(function(sub) {
-        return parseFloat(sub['percent']);
-      });
-
-    } else {
-      //if doesn't have any sub add the same data
-      categories = [].concat([ob[key].name]);
-      data = [].concat([ parseFloat(ob[key].percent) ]);
-    }
-
-  }
-
-  drilldown['categories'] = categories;
-
-  drilldown['data'] = data;
-
- neo['drilldown'] = drilldown;
-
-return neo;
-});
-
-  var browserData = [];
-  var versionsData = [];
-  var i;
-  var j
-  var dataLen = data.length;
-    var brightness;
-
-// Build the data arrays
-  for (i = 0; i < dataLen; i += 1) {
-
-      // add browser data
-      browserData.push({
-          name: categories[i],
-          y: data[i].y,
-          color: data[i].color
-      });
-
-      // add version data
-      drillDataLen = data[i].drilldown.data.length;
-      for (j = 0; j < drillDataLen; j += 1) {
-          brightness = 0.2 - (j / drillDataLen) / 5;
-          versionsData.push({
-              name: data[i].drilldown.categories[j],
-              y: data[i].drilldown.data[j],
-              color:  Highcharts.Color(data[i].color).brighten(brightness).get()
-          });
-      }
-  };
-
-  // Create the chart
-  $('#container').highcharts({
-      chart: {
-          type: 'pie'
-      },
-      title: {
-          text: ''
-      },
-      yAxis: {
-          title: {
-              text: ''
-          }
-      },
-      plotOptions: {
-          pie: {
-              shadow: false,
-              center: ['50%', '50%']
-          }
-      },
-      tooltip: {
-          valueSuffix: '%'
-      },
-      series: [{
-          name: '',
-          data: browserData,
-          size: '60%',
-          dataLabels: {
-              formatter: function () {
-                  return this.y > 5 ? this.point.name : null;
-              },
-              color: '#ffffff',
-              distance: -30
-          }
-      }, {
-          name: '',
-          data: versionsData,
-          size: '80%',
-          innerSize: '60%',
-          dataLabels: {
-              formatter: function () {
-                  // display only if larger than 1
-                  return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
-              }
-          }
-      }]
-  });
-  })
-</script>
 
   <?php foreach ($report_religion as $mainkey => $religion): ?>
     <div class="<?php echo 'main-' . $mainkey ?>">

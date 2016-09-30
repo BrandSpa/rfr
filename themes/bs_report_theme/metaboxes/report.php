@@ -33,7 +33,9 @@ include_once __DIR__ . '/report/content.php';
 
     $report_content =  get_post_meta($post->ID, 'report_content_key', true);
     $report_content_count = count($report_content);
-
+?>
+<div id="metaboxes-report">
+<?php
     report_country($post);
     report_year($post);
     report_area($post);
@@ -48,7 +50,7 @@ include_once __DIR__ . '/report/content.php';
     report_religion_subcategories($post);
     report_content($post);
   ?>
-
+</div>
   <script type="text/javascript">
     var $ = jQuery;
 

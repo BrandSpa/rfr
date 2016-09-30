@@ -9,13 +9,23 @@ var _uploader = require('./uploader');
 
 var _uploader2 = _interopRequireDefault(_uploader);
 
+var _religions_chart = require('../components/religions_chart');
+
+var _religions_chart2 = _interopRequireDefault(_religions_chart);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(function () {
   (0, _uploader2.default)();
 });
 
-},{"./uploader":2,"jquery":5}],2:[function(require,module,exports){
+(0, _religions_chart2.default)();
+
+new Vue({
+  el: '#metaboxes-report'
+});
+
+},{"../components/religions_chart":3,"./uploader":2,"jquery":7}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63,7 +73,112 @@ var section = function section() {
 
 exports.default = section;
 
-},{"jquery":5,"promise":6}],3:[function(require,module,exports){
+},{"jquery":7,"promise":8}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+
+    Vue.component('religions-chart', {
+        template: '<div id="religions-chart" style="width: 100%; height: 400px; margin: 0 auto"></div>',
+        props: ['religions', 'colors'],
+
+        ready: function ready() {
+            var religions = this.religions;
+            var colors = this.colors;
+
+            var seriesData = [];
+            var subSeriesData = [];
+
+            function createData(color, name, y, brighten) {
+                var newOb = {};
+                var nColor = brighten ? Highcharts.Color(color).brighten(0.2).get() : Highcharts.Color(color).get();
+                newOb['color'] = nColor;
+                newOb['name'] = name;
+                newOb['y'] = parseFloat(y);
+                return newOb;
+            }
+
+            function getData(obj, key) {
+                var religion = obj[key];
+                var newOb = createData(colors[religion.name], religion.name, religion.percent);
+
+                if (religion.sub && religion.sub.length > 0) {
+                    subSeriesData = subSeriesData.concat(religion.sub.map(function (rlg) {
+                        return createData(colors[religion.name], rlg.name, rlg.percent, true);
+                    }));
+                } else {
+                    var newSubOb = createData(colors[religion.name], religion.name, religion.percent, true);
+                    subSeriesData = subSeriesData.concat([newSubOb]);
+                }
+
+                return newOb;
+            }
+
+            seriesData = Object.keys(religions).map(function (key) {
+                return getData(religions, key);
+            });
+
+            $('#religions-chart').highcharts({
+                chart: {
+                    type: 'pie',
+                    backgroundColor: 'rgba(255, 255, 255, 0)'
+                },
+                title: {
+                    text: ''
+                },
+                yAxis: {
+                    title: {
+                        text: ''
+                    }
+                },
+                plotOptions: {
+                    pie: {
+                        shadow: false,
+                        center: ['50%', '50%']
+                    }
+                },
+                tooltip: {
+                    valueSuffix: '%'
+                },
+                series: [{
+                    name: '',
+                    data: seriesData,
+                    size: '60%',
+                    dataLabels: {
+                        formatter: function formatter() {
+                            return this.y > 5 ? this.point.name : null;
+                        },
+                        color: '#ffffff',
+                        distance: -30
+                    }
+                }, {
+                    name: '',
+                    data: subSeriesData,
+                    size: '80%',
+                    innerSize: '60%',
+                    dataLabels: {
+                        formatter: function formatter() {
+                            // display only if larger than 1
+                            return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+                        }
+                    }
+                }]
+            });
+        }
+    });
+};
+
+var _hexRgba = require('hex-rgba');
+
+var _hexRgba2 = _interopRequireDefault(_hexRgba);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+},{"hex-rgba":6}],4:[function(require,module,exports){
 "use strict";
 
 // rawAsap provides everything we need except exception management.
@@ -131,7 +246,7 @@ RawTask.prototype.call = function () {
     }
 };
 
-},{"./raw":4}],4:[function(require,module,exports){
+},{"./raw":5}],5:[function(require,module,exports){
 (function (global){
 "use strict";
 
@@ -355,7 +470,20 @@ rawAsap.makeRequestCallFromTimer = makeRequestCallFromTimer;
 // https://github.com/tildeio/rsvp.js/blob/cddf7232546a9cf858524b75cde6f9edf72620a7/lib/rsvp/asap.js
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
+'use strict';
+
+module.exports = function hexToRgba(hex, opacity){
+  var opacity = opacity || 100;
+  var hex = hex.replace('#', '');
+  var r = parseInt(hex.substring(0, 2), 16);
+  var g = parseInt(hex.substring(2, 4), 16);
+  var b = parseInt(hex.substring(4, 6), 16);
+
+  return 'rgba(' + r + ', ' + g + ' ,' + b + ', ' + opacity / 100 + ')';
+};
+
+},{}],7:[function(require,module,exports){
 /*eslint-disable no-unused-vars*/
 /*!
  * jQuery JavaScript Library v3.1.0
@@ -10431,12 +10559,12 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],6:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./lib')
 
-},{"./lib":11}],7:[function(require,module,exports){
+},{"./lib":13}],9:[function(require,module,exports){
 'use strict';
 
 var asap = require('asap/raw');
@@ -10651,7 +10779,7 @@ function doResolve(fn, promise) {
   }
 }
 
-},{"asap/raw":4}],8:[function(require,module,exports){
+},{"asap/raw":5}],10:[function(require,module,exports){
 'use strict';
 
 var Promise = require('./core.js');
@@ -10666,7 +10794,7 @@ Promise.prototype.done = function (onFulfilled, onRejected) {
   });
 };
 
-},{"./core.js":7}],9:[function(require,module,exports){
+},{"./core.js":9}],11:[function(require,module,exports){
 'use strict';
 
 //This file contains the ES6 extensions to the core Promises/A+ API
@@ -10775,7 +10903,7 @@ Promise.prototype['catch'] = function (onRejected) {
   return this.then(null, onRejected);
 };
 
-},{"./core.js":7}],10:[function(require,module,exports){
+},{"./core.js":9}],12:[function(require,module,exports){
 'use strict';
 
 var Promise = require('./core.js');
@@ -10793,7 +10921,7 @@ Promise.prototype['finally'] = function (f) {
   });
 };
 
-},{"./core.js":7}],11:[function(require,module,exports){
+},{"./core.js":9}],13:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./core.js');
@@ -10803,7 +10931,7 @@ require('./es6-extensions.js');
 require('./node-extensions.js');
 require('./synchronous.js');
 
-},{"./core.js":7,"./done.js":8,"./es6-extensions.js":9,"./finally.js":10,"./node-extensions.js":12,"./synchronous.js":13}],12:[function(require,module,exports){
+},{"./core.js":9,"./done.js":10,"./es6-extensions.js":11,"./finally.js":12,"./node-extensions.js":14,"./synchronous.js":15}],14:[function(require,module,exports){
 'use strict';
 
 // This file contains then/promise specific extensions that are only useful
@@ -10935,7 +11063,7 @@ Promise.prototype.nodeify = function (callback, ctx) {
   });
 }
 
-},{"./core.js":7,"asap":3}],13:[function(require,module,exports){
+},{"./core.js":9,"asap":4}],15:[function(require,module,exports){
 'use strict';
 
 var Promise = require('./core.js');
@@ -10999,4 +11127,4 @@ Promise.disableSynchronous = function() {
   Promise.prototype.getState = undefined;
 };
 
-},{"./core.js":7}]},{},[1]);
+},{"./core.js":9}]},{},[1]);
