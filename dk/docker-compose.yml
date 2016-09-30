@@ -14,7 +14,7 @@ mysql:
     ports:
      - "3307:3306"
     volumes:
-     - /Users/dev/mysqldata:/var/lib/mysql
+     - ~/mysqldata:/var/lib/mysql
 
 # nginx:
 #     build: ./nginx
