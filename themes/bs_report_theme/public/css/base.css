@@ -1,0 +1,49 @@
+.title {
+  font-family: "Roboto Condensed";
+  font-size: 5.3125em;
+  font-weight: 300;
+  line-height: 1.1; }
+  .title-highlight {
+    font-weight: bold;
+    color: #fc3938; }
+
+html {
+  font-size: 16px; }
+  @media (min-width: 800px) {
+    html {
+      font-size: 18px; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 20px; } }
+
+h1 {
+  font-family: "Roboto Condensed";
+  font-size: 3.75em;
+  font-weight: bold;
+  line-height: 1; }
+
+h2 {
+  font-family: "Roboto Condensed";
+  font-size: 1.75em;
+  font-weight: bold; }
+
+h3 {
+  font-family: "Roboto Condensed";
+  font-size: 1.5em;
+  font-weight: 500; }
+
+h4 {
+  font-family: "Roboto Condensed";
+  font-size: 1.5625em;
+  font-style: italic; }
+
+h5 {
+  font-family: "Roboto Condensed";
+  font-size: 1.25em;
+  font-style: italic; }
+
+h6 {
+  font-family: "Roboto Condensed";
+  font-size: 1.0625em;
+  font-style: italic;
+  line-height: 1.2; }

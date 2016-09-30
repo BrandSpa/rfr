@@ -1,0 +1,32 @@
+wp:
+    build: ./wp
+    links:
+     - mysql
+    ports:
+      - "80:80"
+    volumes:
+      - /Users/dev/apps/rfr:/var/www/html/wp-content
+
+mysql:
+    image: mysql:latest
+    environment:
+     - MYSQL_ROOT_PASSWORD=my-secret-pw
+    ports:
+     - "3307:3306"
+    volumes:
+     - /Users/dev/mysqldata:/var/lib/mysql
+
+# nginx:
+#     build: ./nginx
+#     environment:
+#       - WORDPRESS_DB_PASSWORD=my-secret-pw
+#       - WORDPRESS_DB_USER=root
+#       - WORDPRESS_DB_NAME=wordpress
+#     volumes_from:
+#       - wp
+#     ports:
+#       - "80:80"
+#     links:
+#       - wp
+#     volumes:
+#       - /Users/dev/apps/acn_reports/wp-content/themes/bs_report_theme/dk/logs:/var/log/nginx

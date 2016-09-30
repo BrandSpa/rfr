@@ -1,0 +1,112 @@
+.report {
+
+  &__header {
+    padding: 60px 40px;
+
+    @media #{$tablet}, #{$mobile} {
+      text-align: center;
+    }
+
+    &__back-map {
+      @include title5;
+      width: 100%;
+      display: block;
+    }
+
+    &__slider_year {
+      @include title4;
+      color: $red_orange;
+
+      a {
+        @include title4;
+        color: $red_orange;
+
+        &:first-child {
+          padding-right: 40px;
+        }
+
+        &:last-child {
+          padding-left: 40px;
+        }
+      }
+    }
+
+    &__map {
+      padding-top: 40px;
+
+      @media #{$tablet}, #{$mobile} {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__content-header {
+    padding: 160px 40px;
+  }
+
+  &__header_pdf {
+    @include center-vertical;
+    @media #{$desktop}, #{$desktop--large} {
+
+    }
+
+
+    margin: 40px 0;
+    min-height: 100px;
+    border-top: 2px solid $red_orange;
+    border-bottom: 2px solid $red_orange;
+    float: left;
+    width: 100%;
+
+
+    &__download {
+
+      img {
+        padding-right: 10px;
+      }
+    }
+
+    &__item {
+      @include center_horizontal;
+
+      h5 {
+        padding-right: 7px;
+      }
+
+      p {
+        padding-left: 7px;
+      }
+    }
+  }
+
+  &__content{
+
+    &-content {
+      padding: 40px 40px 40px 25%;
+
+      h5 {
+        color: $red_orange;
+      }
+    }
+
+    h2::after {
+      display: block;
+      content: '';
+      width: 30px;
+      height: 4px;
+      background: $red_orange;
+      margin-top: 20px;
+    }
+  }
+
+  &__icon-info {
+    text-align: center;
+    height: 200px;
+
+    img {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+}

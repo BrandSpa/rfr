@@ -1,0 +1,191 @@
+
+html {
+  font-size: 16px;
+
+  @media (min-width: 800px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+body {
+  background: $desert_storm;
+  margin-left: 200px;
+  font-family: $roboto;
+
+  @media #{$tablet}, #{$mobile} {
+    margin-left: 0;
+  }
+}
+
+a {
+  color: $armadillo;
+  transition: all 300ms ease;
+
+  &:hover {
+    color: $chicago;
+  }
+}
+
+p {
+  font-size: 1em;
+  color: $armadillo;
+  font-family: $roboto;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.title {
+  @include title0;
+
+  &-highlight {
+    font-weight: bold;
+    color: $red_orange;
+  }
+}
+
+.title-line {
+  &::after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 4px;
+    background: $red_orange;
+    margin-top: 20px;
+  }
+}
+
+.title-uppercase {
+  text-transform: uppercase;
+}
+
+h1 {
+  @include title1;
+}
+
+h2 {
+  @include title2;
+}
+
+h3 {
+  @include title3;
+}
+
+h4 {
+  @include title4;
+}
+
+h5 {
+  @include title5;
+  font-weight: normal;
+}
+
+h6 {
+  @include title6;
+}
+
+.icon-red {
+  fill: $red_orange;
+}
+
+.color-red {
+  color: $red_orange;
+}
+
+.color-dark {
+  color: $rollig_stone;
+}
+
+.color-grey {
+  color: $armadillo;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.center-vertical {
+  @include center-vertical;
+}
+
+.center_horizontal {
+  @include center_horizontal;
+}
+
+label {
+  @include title4;
+  width: 100%;
+  margin: 0;
+}
+
+.input-container {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    border-bottom: 5px solid $dark_jungle_green;
+    display: block;
+    position: absolute;
+    left: -100%;
+  }
+
+}
+
+input {
+  background: $red_orange;
+  border: 0;
+  height: 60px;
+  padding-left: 15px;
+  color: #fff;
+  outline: none;
+  width: 100%;
+  display: block;
+  transition: all 300ms ease;
+  @include title2;
+}
+
+.button {
+  @include title2;
+  background: $red_orange;
+  min-width: 250px;
+  min-height: 60px;
+  border: 0;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    display: block;
+    background: $dull_red;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: -1;
+    transition: 300ms all ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      left: 0;
+    }
+  }
+}
+
+.highcharts-credits {
+  display: none;
+  opacity: 0;
+}

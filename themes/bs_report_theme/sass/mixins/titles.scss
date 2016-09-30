@@ -1,0 +1,48 @@
+//Titles mixins
+@mixin title0 {
+  font-family: $roboto_condensed;
+  font-size: (85 / 16) * 1em;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+@mixin title1() {
+  font-family: $roboto_condensed;
+  font-size: (60 / 16) * 1em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@mixin title2() {
+  font-family: $roboto_condensed;
+  font-size: (28 / 16) * 1em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@mixin title3() {
+  font-family: $roboto;
+  font-size: (24 / 16) * 1em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+@mixin title4() {
+  font-family: $roboto_condensed;
+  font-size: (25 / 16) * 1em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@mixin title5() {
+  font-family: $roboto_condensed;
+  font-size: (20 / 16) * 1em;
+	font-style: italic;
+}
+
+@mixin title6() {
+  font-family: $roboto_condensed;
+  font-size: (17 / 16) * 1em;
+	font-style: italic;
+	line-height: 1.2;
+}

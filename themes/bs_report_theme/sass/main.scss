@@ -1,0 +1,18 @@
+/*!
+ * BrandSpa (http://brandspa.com)
+ * Alejandro Sanabria <alejandro@brandspa.com>
+ * Copyright 2016 BrandSpa
+ */
+
+ @import 'variables';
+
+//mixins
+ @import 'mixins/titles';
+ @import 'mixins/center_vertical';
+
+@import 'base';
+
+//sections
+@import 'nav';
+@import 'report';
+@import 'map';
