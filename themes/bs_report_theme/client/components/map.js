@@ -30,8 +30,8 @@ export default function() {
       gs.on('mousemove', function() {
         console.log(instance.posts);
         let pst = instance.posts.filter(post => post.meta_country == this.getAttribute('id') );
-
-        d3.select(info).select('.map__info_country').text(this.getAttribute('id') + pst.meta_situation);
+        let situ = pst.meta_situation ? pst.meta_situation : 'neh';
+        d3.select(info).select('.map__info_country').text(this.getAttribute('id') + situ);
 
         mousePosition(null)
         .then(p => {

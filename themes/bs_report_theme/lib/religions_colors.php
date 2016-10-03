@@ -42,7 +42,7 @@ function getReligionsColors() {
       "Confucianist" => $red_orange,
       "Hindu" =>  $buttercup,
       "Jewish" => $fire_engine,
-      "Muslim" => $saffron,
+      "Muslim" => $cream_can,
       "Spiritists" => $cello,
       "Other"  => $aluminum,
       "Sikhs"=> $fuel_yellow,
