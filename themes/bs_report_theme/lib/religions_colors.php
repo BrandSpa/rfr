@@ -1,7 +1,7 @@
 <?php
 
 function getReligionsColors() {
-  $red_orange = "#FC3938a";
+  $red_orange = "#FC3938";
   $dull_red = "#C03B3B";
   $dark_jungle_green = "#1A2127";
   $outer_space  = "#2B3740";
@@ -16,7 +16,7 @@ function getReligionsColors() {
     return array(
       "Agnostic" => $red_orange,
       "Atheist" => $dull_red,
-      "Buddhists " => $dark_jungle_green,
+      "Buddhists" => $dark_jungle_green,
       "Baha’i" => $outer_space,
       "Caodaists" => $cello,
       "Ethnoreligionist" => $dark_electric_blue,
