@@ -46,11 +46,12 @@ $query = get_posts( $args );
             <?php echo get_post_meta($post->ID, 'report_country_key', true) ?>
           </h1>
 
-          <select name="" id="">COUNTRIES</select>
+          <select name="" id="">
+            <option value="">></option>
           <?php foreach(getCountries() as $country): ?>
-            <a href=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?> "><?php echo $country ?></a>
+            <option value=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?> "><?php echo $country ?></option>
           <?php endforeach; ?>
-
+          </select>
         </div>
 
         <div class="col-md-6">
@@ -72,8 +73,14 @@ $query = get_posts( $args );
 
               <div class="col-md-6 report__header_pdf__item">
                 <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
+                <?php if(get_post_meta($post->ID, 'report_nature_persecution_key', true)): ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/<?php echo get_post_meta($post->ID, 'report_nature_persecution_key', true) ?>.svg" alt="">
-                <p><?php echo get_post_meta($post->ID, 'report_nature_persecution_key', true) ?></p>
+                  <p><?php echo get_post_meta($post->ID, 'report_nature_persecution_key', true) ?></p>
+              <?php else: ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
+                <p><?php echo gett('Stable') ?></p>
+              <?php  endif; ?>
+
               </div>
 
               <div class="col-md-6 report__header_pdf__item">
