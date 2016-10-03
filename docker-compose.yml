@@ -1,11 +1,11 @@
 wp:
-    build: ./wp
+    build: .
     links:
      - mysql
     ports:
       - "80:80"
     volumes:
-      - ../:/var/www/html/wp-content
+      - .:/var/www/html/wp-content
 
 mysql:
     image: mysql:latest

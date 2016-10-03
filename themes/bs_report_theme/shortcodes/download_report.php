@@ -19,7 +19,7 @@
           </g>
       </svg>
       <span>
-        Executive Summary
+        <?php echo gett('Executive Summary') ?>
       </span>
 
       </a>
@@ -34,7 +34,9 @@
                 <polygon id="Fill-5" fill="#FC3938" points="10.3769266 47.8305551 36.1291174 47.8305551 36.1291174 45.6423836 10.3769266 45.6423836"></polygon>
             </g>
         </svg>
-        <span>Full Report</span>
+        <span>
+          <?php echo gett('Full Report') ?> <i><?php echo gett('Spanish') ?></i>
+        </span>
       </a>
 
       <a href="#" class="button-special">
@@ -48,7 +50,9 @@
                 <polygon id="Fill-5" fill="#FC3938" points="10.3769266 47.8305551 36.1291174 47.8305551 36.1291174 45.6423836 10.3769266 45.6423836"></polygon>
             </g>
         </svg>
-        <span>Executive Summary</span>
+        <span>
+          <?php echo gett('Full Report') ?> <i><?php echo gett('Italian') ?></i>
+        </span>
       </a>
     </div>
     <div class="col-md-6">
