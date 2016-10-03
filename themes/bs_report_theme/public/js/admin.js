@@ -95,7 +95,8 @@ exports.default = function () {
 
             function createData(color, name, y, brighten) {
                 var newOb = {};
-                var nColor = brighten ? Highcharts.Color(color).brighten(0.2).get() : Highcharts.Color(color).get();
+                var nColor = brighten ? Highcharts.Color(color).brighten(0.3).get() : Highcharts.Color(color).get();
+
                 newOb['color'] = nColor;
                 newOb['name'] = name;
                 newOb['y'] = parseFloat(y);
@@ -104,14 +105,15 @@ exports.default = function () {
 
             function getData(obj, key) {
                 var religion = obj[key];
+                var color = colors[religion.name];
                 var newOb = createData(colors[religion.name], religion.name, religion.percent);
 
-                if (religion.sub && religion.sub.length > 0) {
-                    subSeriesData = subSeriesData.concat(religion.sub.map(function (rlg) {
-                        return createData(colors[religion.name], rlg.name, rlg.percent, true);
+                if (religion.sub && Object.keys(religion.sub).length > 0) {
+                    subSeriesData = subSeriesData.concat(Object.keys(religion.sub).map(function (key) {
+                        return createData(color, religion.sub[key].name, religion.sub[key].percent, true);
                     }));
                 } else {
-                    var newSubOb = createData(colors[religion.name], religion.name, religion.percent, true);
+                    var newSubOb = createData(color, religion.name, religion.percent, true);
                     subSeriesData = subSeriesData.concat([newSubOb]);
                 }
 

@@ -16,7 +16,8 @@ export default function() {
 
       function createData(color, name, y, brighten) {
         let newOb = {};
-        let nColor = brighten ? Highcharts.Color(color).brighten(0.2).get() : Highcharts.Color(color).get() ;
+        let nColor = brighten ? Highcharts.Color(color).brighten(0.3).get() : Highcharts.Color(color).get();
+
         newOb['color'] = nColor;
         newOb['name'] = name;
         newOb['y'] = parseFloat(y);
@@ -25,16 +26,17 @@ export default function() {
 
       function getData(obj, key) {
         let religion = obj[key];
+        let color = colors[religion.name];
         let newOb = createData(colors[religion.name], religion.name, religion.percent);
 
-        if(religion.sub && religion.sub.length > 0) {
+        if(religion.sub && Object.keys(religion.sub).length > 0) {
           subSeriesData = subSeriesData.concat(
-            religion.sub.map(rlg => {
-              return createData(colors[religion.name], rlg.name, rlg.percent, true);
+            Object.keys(religion.sub).map(key => {
+              return createData(color, religion.sub[key].name, religion.sub[key].percent, true);
             })
           );
         } else {
-          let newSubOb = createData(colors[religion.name], religion.name, religion.percent, true);
+          let newSubOb = createData(color, religion.name, religion.percent, true);
           subSeriesData = subSeriesData.concat([newSubOb]);
         }
 
