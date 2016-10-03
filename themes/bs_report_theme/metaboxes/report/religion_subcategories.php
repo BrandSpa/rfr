@@ -98,8 +98,8 @@
           placeholder="percent">
       </p>
 
-      <div class="sub-0-0">
-        <p>
+      <div class="sub-0">
+        <p class="sub-0-0">
           <select name="report_religion[0][sub][0][name]">
             <option value="">Select Religion</option>
             <?php foreach (getReligions() as $key => $value): ?>
@@ -120,7 +120,6 @@
 
       </div>
 
-      <div class="append-religion"></div>
       <p></p>
       <button class="button" onClick="addSubcategoryReligion(event, this, 0)"> Add subcategory </button>
     </div>
