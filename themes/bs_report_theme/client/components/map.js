@@ -27,10 +27,18 @@ export default function() {
 
       });
 
+      d3.select(".map svg #map-g").selectAll("g").on('click', function() {
+        console.log('link to:', this.getAttribute('id'));
+      });
+
       gs.on('mousemove', function() {
-        console.log(instance.posts);
         let pst = instance.posts.filter(post => post.meta_country == this.getAttribute('id') );
-        let situ = pst.meta_situation ? pst.meta_situation : 'neh';
+        let situations = {
+          '#FF362F': 'Persecution',
+          '#FF362F': 'Persecution',
+        };
+
+        let situ = pst.meta_situation ? pst.meta_situation : '';
         d3.select(info).select('.map__info_country').text(this.getAttribute('id') + situ);
 
         mousePosition(null)

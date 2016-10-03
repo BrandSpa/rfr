@@ -44,14 +44,36 @@ $query = get_posts( $args );
 
           <h1 class="title">
             <?php echo get_post_meta($post->ID, 'report_country_key', true) ?>
-          </h1>
+            <script type="text/javascript">
+            jQuery(function() {
+              var $ = jQuery;
+              $('.open-select-countries').on('click', function(e) {
+                e.preventDefault();
+                console.log();
+                var se = $('#select-countries');
+                  se.show();
+                  se[0].size=2;
+              });
+            })
 
-          <select name="" id="">
-            <option value="">></option>
-          <?php foreach(getCountries() as $country): ?>
-            <option value=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?> "><?php echo $country ?></option>
-          <?php endforeach; ?>
-          </select>
+            </script>
+            <a href="#" class="open-select-countries">
+
+              <svg width="47px" height="29px" viewBox="587 231 47 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Group-8-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(591.000000, 236.000000)" stroke-linecap="square">
+                      <g id="Group-7" transform="translate(0.000000, 0.279059)" stroke="#FC3938" stroke-width="6">
+                          <path d="M39.582907,9.4088894 L17.00223,9.4088894" id="Line-Copy-3" transform="translate(28.292568, 9.408889) rotate(-45.000000) translate(-28.292568, -9.408889) "></path>
+                          <path d="M20.8516408,7.5613294 L-1.72903621,7.5613294" id="Line-Copy-5" transform="translate(9.561302, 9.408889) scale(-1, 1) rotate(-45.000000) translate(-9.561302, -9.408889) "></path>
+                      </g>
+                  </g>
+              </svg>
+            </a>
+            <select name="" id="select-countries" style="display: none">
+            <?php foreach(getCountries() as $country): ?>
+              <option value=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?> "><?php echo $country ?></option>
+            <?php endforeach; ?>
+            </select>
+          </h1>
         </div>
 
         <div class="col-md-6">

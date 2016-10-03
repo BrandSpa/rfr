@@ -1,5 +1,5 @@
 FROM wordpress:latest
-RUN apt-get update && apt-get install -y zip
+RUN rm -rf /usr/local/etc/php/conf.d/opcache-recommended.ini
 WORKDIR /var/www/html
 ADD . /var/www/html/wp-content
 EXPOSE 80

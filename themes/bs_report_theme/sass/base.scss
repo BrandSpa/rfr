@@ -261,3 +261,19 @@ input {
   display: none;
   opacity: 0;
 }
+
+
+.map svg #map-g g {
+  cursor: pointer;
+}
+
+.select-country-header {
+  -webkit-appearance: none;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  &:focus {
+    box-shadow: 0;
+    outline: none;
+  }
+}
