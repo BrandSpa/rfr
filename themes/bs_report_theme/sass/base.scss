@@ -51,18 +51,25 @@ a:hover {
     font-weight: bold;
     color: $red_orange;
   }
-}
 
-.title-line {
-  &::after {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 4px;
-    background: $red_orange;
-    margin-top: 20px;
+  &-line {
+    &::after {
+      display: block;
+      content: '';
+      width: 40px;
+      height: 4px;
+      background: $red_orange;
+      margin-top: 20px;
+    }
+  }
+
+  &-center {
+    @include title_center();
   }
 }
+
+
+
 
 .title-uppercase {
   text-transform: uppercase;
@@ -154,6 +161,10 @@ input {
   @include title2;
 }
 
+.input-container {
+  margin-bottom: 30px;
+}
+
 .button {
   @include title2;
   background: $red_orange;
@@ -181,6 +192,49 @@ input {
   &:hover {
     &::after {
       left: 0;
+    }
+  }
+
+  &-special {
+    @include title2;
+    display: block;
+
+    path, polygon {
+      fill:$armadillo;
+    }
+
+    span {
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      margin-left: 20px;
+      padding-bottom: 20px;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: $red_orange;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        transition: all 300ms ease;
+      }
+
+    }
+
+    &:hover {
+      path, polygon {
+        fill: $red_orange;
+      }
+      span {
+        color: $red_orange;
+        &::after {
+          left: 0px;
+        }
+      }
+
     }
   }
 }

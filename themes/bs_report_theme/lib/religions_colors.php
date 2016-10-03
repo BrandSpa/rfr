@@ -27,9 +27,9 @@ function getReligionsColors() {
       "Confucianist" => $red_orange,
       "Hindu" => $dull_red,
       "Jewish" => $dark_jungle_green,
-      "Muslim" => $outer_space,
+      "Muslim" => $red_orange,
       "Spiritists" => $cello,
-      "Other"  => $red_orange,
+      "Other"  => $outer_space,
       "Sikhs"=> $rollig_stone,
       "Neoreligionist" => $armadillo,
       "Taoists" => $aluminum

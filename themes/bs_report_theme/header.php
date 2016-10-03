@@ -19,14 +19,21 @@
     <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo.png" alt="acn logo">
   </div>
 
-  <h4 class="color-red">
+  <h4 class="color-red nav__subtitle">
     RELIGIOUS<br>
     <span class="color-white">FREEDOM</span><br>
     REPORT<br>
     2016
   </h4>
 
-  <ul>
-    <li></li>
-  </ul>
+  <?php
+      $args = array(
+        'theme_location' => 'main',
+        'container' => false,
+        'echo' => true
+      );
+
+      $menu = wp_nav_menu( $args);
+
+   ?>
 </div>

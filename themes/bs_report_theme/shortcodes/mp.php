@@ -2,10 +2,84 @@
   $map_svg_url = get_template_directory_uri() . '/public/img/map.svg';
 ?>
 
+
 <map posts="<?php echo json_encode($posts); ?>"></map>
 
 <template id="map-template">
-  <div class="map" style="background: #2B3740; padding: 100px;position: relative">
+  <div class="map__info">
+    <span class="map__info_country"></span>
+    <span class="map__info_situation">
+      <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+    </span>
+  </div>
+
+  <div id="map" class="map">
+    <div class="row">
+      <div class="col-md-9">
+        <h1 class="title title-line color-red">
+          <?php echo gett('RELIGIOUS FREEDOM <br> IN THE WORLD', true); ?>
+        </h1>
+      </div>
+
+      <div class="col-md-3">
+        <input type="text" v-model="country" style="background: #1A2127">
+        <ul class="map__search_results">
+          <li>
+            {{country}}
+            <span>
+              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+            </span>
+          </li>
+          <li>
+            {{country}}
+            <span>
+              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+            </span>
+          </li>
+          <li>
+            {{country}}
+            <span>
+              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+            </span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
   <?php echo file_get_contents($map_svg_url); ?>
+
+  <div class="col-md-6 map_list">
+    <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
+    <ul class="map_list_exp">
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt=""> <?php echo gett('Persecution') ?>
+      </li>
+      <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Discrimination.svg" alt=""> <?php echo gett('Discrimination') ?>
+      </li>
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt=""> <?php echo gett('Stable') ?>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="col-md-6 map_list">
+    <h5 class="color-red pull-left"><?php echo gett('SITUATION') ?></h5>
+    <ul class="map_list_exp">
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Improved.svg" alt=""> <?php echo gett('Persecution') ?>
+      </li>
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
+      </li>
+      <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Worsened.svg" alt=""> <?php echo gett('Worsened') ?>
+      </li>
+
+    </ul>
+  </div>
+
   </div>
 </template>

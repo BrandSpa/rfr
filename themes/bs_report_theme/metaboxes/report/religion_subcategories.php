@@ -9,10 +9,12 @@
     div[class^="sub-"], div[class*=" sub-"] {
       margin-left: 20px;
     }
+
     .highcharts-credits {
       display: none;
       opacity: 0;
     }
+    
   </style>
   <h3>Religion</h3>
   <hr>

@@ -6,14 +6,13 @@ export default function() {
   Vue.component('map', {
     template: '#map-template',
     props: ['posts'],
+    data: {
+      country: ''
+    },
 
     ready() {
-
       let comp = this;
-
-      var info = document.querySelector('.map__info');
-
-      console.log(this.posts);
+      let info = document.querySelector('.map__info');
 
       d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
         var _this = this;
@@ -21,37 +20,27 @@ export default function() {
         info.style.zIndex= -100;
       });
 
-      d3.select(".map svg g").selectAll("g").on('mousemove', function() {
-        var _this = this;
+      let gs = d3.select(".map svg #map-g").selectAll("g");
 
+      [].slice.call(gs._groups[0]).forEach(function(g) {
+        
+      });
 
-        d3.select(info).text('country without info');
+      gs.on('mousemove', function() {
+        d3.select(info).select('.map__info_country').text('South Afrika');
 
-        // var postsFiltered = comp.posts.filter(function(post) {
-        //   if(post['meta_country'] == _this.getAttribute('id')) {
-        //     return true;
-        //   }
-        //   return false;
-        // });
-        //
-        //
-        // if(postsFiltered[0] && postsFiltered[0]['meta_population']) {
-        //   d3.select(info).text(postsFiltered[0]['meta_population']);
-        // }
         mousePosition(null)
         .then(p => {
           info.style.zIndex= 1;
-          info.style.top = (p.top - 75) + 'px';
-          info.style.left = (p.left - 80) + 'px';
+          info.style.top = (p.top - 80) + 'px';
+          info.style.left = (p.left - 125) + 'px';
         });
 
+        console.log(this);
 
-
-        d3.select(_this).style("fill", "#536D7F").style("webkit-box-shadow", "10px 5px 5px #fff");
+        d3.select(this).style("fill", "#536D7F");
 
       });
-
-
 
     }
   });

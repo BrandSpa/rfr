@@ -11,7 +11,6 @@ export default function() {
       let religions = this.religions;
       let colors = this.colors;
 
-
       let seriesData = [];
       let subSeriesData = [];
 

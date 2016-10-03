@@ -4,27 +4,39 @@
   include_once 'political_system.php';
   include_once 'languages.php';
 
-  function setTranslations() {
-    $group = 'acn';
+  function registerStr($str, $group = 'acn', $multiline = false) {
     if(function_exists('pll_register_string')) {
+      return pll_register_string($str, $str, $group, $multiline);
+    } else {
+      return $str;
+    }
+  }
+
+  function setTranslations() {
+      registerStr('RELIGIOUS FREEDOM<br> IN THE WORLD');
+      registerStr('DOWNLOAD REPORT');
+      registerStr('NATURE OF PERSECUTION');
+      registerStr('SITUATION');
+      registerStr('Area');
+      registerStr('Population');
+      registerStr('Political');
+      registerStr('Major Languages');
 
       foreach (getReligions() as $religion) {
-        pll_register_string($religion, $religion, $group. '-religions', false);
+        registerStr($religion, $group. '-religions', false);
       }
 
       foreach (getCountries() as $country) {
-        pll_register_string($country, $country, $group. '-countries', false);
+        registerStr($country, $group. '-countries', false);
       }
 
       foreach (getPoliticalSystem() as $political) {
-        pll_register_string($political, $political, $group. '-political_system', false);
+        registerStr($political, $group. '-political_system', false);
       }
 
       foreach (getLanguages() as $language) {
-        pll_register_string($language, $language, $group. '-languages', false);
+        registerStr($language, $group. '-languages', false);
       }
-    } else {
-      return;
-    }
+
   }
  ?>

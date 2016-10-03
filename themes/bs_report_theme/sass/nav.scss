@@ -19,4 +19,55 @@
     }
   }
 
+  &__subtitle {
+    padding: 40px 30px;
+  }
+
+  .menu {
+    padding: 0 30px;
+    & > li {
+
+
+      & > a {
+        @include title5;
+        color: $rollig_stone;
+        display: block;
+        margin-bottom: 15px;
+        &:hover {color: $red_orange}
+      }
+
+      .sub-menu {
+        padding: 0;
+
+        a {
+          @include title6;
+          display: block;
+          color: #fff;
+          padding-bottom: 15px;
+          font-weight: 300;
+          position: relative;
+
+          &:hover::before {
+            left: -15px;
+          }
+
+          &::before {
+            content: '+';
+            color: $red_orange;
+            font-size: 20px;
+            font-weight: 300;
+            padding-right: 10px;
+            position: absolute;
+            left: -50px;
+            top: -5px;
+            transition: left 300ms ease;
+          }
+        }
+      }
+
+    }
+  }
+
+
+
 }

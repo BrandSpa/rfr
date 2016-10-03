@@ -5,6 +5,13 @@
  * Copyright 2016 BrandSpa
  */
 require 'vendor/autoload.php';
+//add navigation menus
+register_nav_menus(
+  array(
+    'main' => 'Main nav',
+  )
+);
+
 //folders names
 $base = __DIR__;
 $lib = 'lib';

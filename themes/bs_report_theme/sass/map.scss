@@ -1,5 +1,117 @@
 .map {
   background: #2B3740;
-  padding: 100px;
-  position: relative
+  padding: 40px;
+  position: relative;
+
+  h1 {
+    font-weight: bold;
+    p {
+      color: $red_orange;
+    }
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__info {
+    @include title4;
+    @include center_vertical;
+    background: #fff;
+    border: 1px solid $dark_jungle_green;
+    color: $dark_jungle_green;
+    width: 250px;
+    padding: 20px;
+    height: 40px;
+    position: absolute;
+    z-index: -99;
+    float: left;
+    transition: all 100ms ease;
+
+    &_situation {
+      @include center_vertical;
+      width: 40px;
+      height: 40px;
+      background: $dark_jungle_green;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      width: 1px;
+      height: 15px;
+      // border-left: 10px solid transparent;
+      // border-right: 10px solid transparent;
+      // border-top: 10px solid #fff;
+      background: $dark_jungle_green;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+    }
+  }
+
+  &__search_results {
+    width: 100%;
+    padding: 0;
+    display: block;
+
+    li {
+      @include title4;
+      @include center_vertical;
+      position: relative;
+      background: #fff;
+      border: 1px solid $dark_jungle_green;
+      color: $dark_jungle_green;
+      width: 100%;
+      padding: 20px;
+      height: 40px;
+      margin: 2px 0;
+
+      span {
+        @include center_vertical;
+        width: 40px;
+        height: 40px;
+        background: $dark_jungle_green;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        img {
+          margin: 0 auto;
+        }
+      }
+
+    }
+
+  }
+
+}
+.map_list {
+  display: flex;
+  align-items: center;
+
+  h5 {
+    margin-top: 0;
+  }
+}
+
+.map_list_exp {
+  padding: 0;
+  li {
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+
+    img {
+      padding-right: 10px;
+    }
+  }
 }
