@@ -19,8 +19,11 @@
   <h3>Religion</h3>
   <hr>
   <?php if(is_array($report_religion) && count($report_religion) > 0): ?>
+    <script>
+      var js = JSON.parse(<?php echo json_encode($report_religion) ?>);
+      console.log(js);
+    </script>
 
-    <?php echo json_encode($report_religion) ?>
 
     <religions-chart
       :religions='<?php echo json_encode($report_religion) ?>'
