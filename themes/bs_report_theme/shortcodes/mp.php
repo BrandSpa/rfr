@@ -1,5 +1,5 @@
 <?php
-  $map_svg_url = get_template_directory_uri() . '/public/img/map.svg';
+  $map_svg_url = get_template_directory() . '/public/img/map.svg';
 ?>
 
 
@@ -9,7 +9,7 @@
   <div class="map__info">
     <span class="map__info_country"></span>
     <span class="map__info_situation">
-      <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+      <img src="<?php echo get_template_directory(); ?>/public/img/icons/Unchanged.svg" alt="">
     </span>
   </div>
 
@@ -27,19 +27,19 @@
           <li>
             {{country}}
             <span>
-              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+              <img src="<?php echo get_template_directory(); ?>/public/img/icons/Unchanged.svg" alt="">
             </span>
           </li>
           <li>
             {{country}}
             <span>
-              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+              <img src="<?php echo get_template_directory(); ?>/public/img/icons/Unchanged.svg" alt="">
             </span>
           </li>
           <li>
             {{country}}
             <span>
-              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+              <img src="<?php echo get_template_directory(); ?>/public/img/icons/Unchanged.svg" alt="">
             </span>
           </li>
         </ul>
@@ -53,13 +53,13 @@
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
     <ul class="map_list_exp">
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt=""> <?php echo gett('Persecution') ?>
+        <img src="<?php echo get_template_directory(); ?>/public/img/icons/Persecution.svg" alt=""> <?php echo gett('Persecution') ?>
       </li>
       <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Discrimination.svg" alt=""> <?php echo gett('Discrimination') ?>
+          <img src="<?php echo get_template_directory(); ?>/public/img/icons/Discrimination.svg" alt=""> <?php echo gett('Discrimination') ?>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt=""> <?php echo gett('Stable') ?>
+        <img src="<?php echo get_template_directory(); ?>/public/img/icons/Stable.svg" alt=""> <?php echo gett('Stable') ?>
       </li>
     </ul>
 
@@ -69,13 +69,13 @@
     <h5 class="color-red pull-left"><?php echo gett('SITUATION') ?></h5>
     <ul class="map_list_exp">
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Improved.svg" alt=""> <?php echo gett('Persecution') ?>
+        <img src="<?php echo get_template_directory(); ?>/public/img/icons/Improved.svg" alt=""> <?php echo gett('Persecution') ?>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
+        <img src="<?php echo get_template_directory(); ?>/public/img/icons/Unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
       </li>
       <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Worsened.svg" alt=""> <?php echo gett('Worsened') ?>
+          <img src="<?php echo get_template_directory(); ?>/public/img/icons/Worsened.svg" alt=""> <?php echo gett('Worsened') ?>
       </li>
 
     </ul>
