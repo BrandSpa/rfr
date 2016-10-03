@@ -17,6 +17,7 @@
       registerStr('RELIGIOUS FREEDOM<br> IN THE WORLD');
       registerStr('DOWNLOAD REPORT');
       registerStr('ABOUT US');
+      registerStr('PRESS');
       registerStr('NATURE OF PERSECUTION');
       registerStr('SITUATION');
       registerStr('Area');

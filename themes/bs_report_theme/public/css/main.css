@@ -129,7 +129,8 @@ label {
   font-weight: normal;
   font-style: italic;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  text-transform: capitalize; }
 
 .input-container {
   position: relative;

@@ -6,7 +6,8 @@
   </h1>
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
       <a href="#" class="button-special">
       <svg width="48px" height="62px" viewBox="350 6238 48 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
 
@@ -55,26 +56,27 @@
         </span>
       </a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
       <form action="">
         <div class="input-container">
-          <label for=""><?php echo gett('name') ?></label>
+          <label for="" class="color-red"><?php echo gett('name') ?></label>
           <input type="text">
         </div>
 
         <div class="input-container">
-          <label for=""><?php echo gett('email') ?></label>
+          <label for="" class="color-red"><?php echo gett('email') ?></label>
           <input type="text">
         </div>
 
         <div class="input-container">
-          <label for=""><?php echo gett('language') ?></label>
+          <label for="" class="color-red"><?php echo gett('language') ?></label>
           <input type="text">
         </div>
 
         <button class="button title-uppercase">Download</button>
       </form>
     </div>
+    <div class="col-md-1"></div>
   </div>
 
 </div>
