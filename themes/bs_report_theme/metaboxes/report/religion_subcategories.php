@@ -98,7 +98,7 @@
           placeholder="percent">
       </p>
 
-      <div class="sub-0">
+      <div class="sub-0-0">
         <p>
           <select name="report_religion[0][sub][0][name]">
             <option value="">Select Religion</option>
@@ -110,7 +110,14 @@
             type="text"
             name="report_religion[0][sub][0][percent]"
             placeholder="percent">
+
+            <button
+              class="button btn-remove-religion"
+              onClick="removeEl(event, this, '<?php echo 'sub-0-0' ?>')">
+              Remove subcategory
+            </button>
         </p>
+
       </div>
 
       <button class="button" onClick="addSubcategoryReligion(event, this, 0)"> Add subcategory </button>
