@@ -3,7 +3,7 @@
 ?>
 
 
-<map posts="<?php echo json_encode($posts); ?>"></map>
+<map :posts='<?php echo json_encode($posts); ?>'></map>
 
 <template id="map-template">
   <div class="map__info">

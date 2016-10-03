@@ -241,9 +241,11 @@ input {
     }
 
     &:hover {
+
       path, polygon {
         fill: $red_orange;
       }
+
       span {
         color: $red_orange;
         &::after {

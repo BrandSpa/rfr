@@ -1,12 +1,23 @@
 <?php
 
 function getReligionsColors() {
+
+  //main colors
+  $deep_carmine_pink = "#EE3934";
+  $saffron = "#FDBC2C";
+  $elephant = "#293640";
+
+  //second
+  $buttercup = "#D88E27";
+  $fire_engine = "#CC2027";
+  $dark_electric_blue = "#536D7F";
+
   $red_orange = "#FC3938";
   $dull_red = "#C03B3B";
   $dark_jungle_green = "#1A2127";
   $outer_space  = "#2B3740";
   $cello  = "#3C515F";
-  $dark_electric_blue = "#536D7F";
+
   $rollig_stone = "#747E86";
   $armadillo = "#4A4A4A";
   $chicago = "#5D5D5D";
@@ -16,18 +27,18 @@ function getReligionsColors() {
     return array(
       "Agnostic" => $red_orange,
       "Atheist" => $dull_red,
-      "Buddhists" => $dark_jungle_green,
+      "Buddhists" => $elephant,
       "Baha’i" => $outer_space,
       "Caodaists" => $cello,
       "Ethnoreligionist" => $dark_electric_blue,
       "No religion" => $rollig_stone,
-      "Christian" => $dark_electric_blue,
+      "Christian" => $deep_carmine_pink,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
       "Confucianist" => $red_orange,
-      "Hindu" => $dull_red,
-      "Jewish" => $dark_jungle_green,
-      "Muslim" => $red_orange,
+      "Hindu" =>  $buttercup,
+      "Jewish" => $fire_engine,
+      "Muslim" => $saffron,
       "Spiritists" => $cello,
       "Other"  => $outer_space,
       "Sikhs"=> $rollig_stone,

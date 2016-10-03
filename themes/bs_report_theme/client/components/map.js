@@ -13,6 +13,7 @@ export default function() {
     ready() {
       let comp = this;
       let info = document.querySelector('.map__info');
+      var instance = this;
 
       d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
         var _this = this;
@@ -23,11 +24,14 @@ export default function() {
       let gs = d3.select(".map svg #map-g").selectAll("g");
 
       [].slice.call(gs._groups[0]).forEach(function(g) {
-        
+
       });
 
       gs.on('mousemove', function() {
-        d3.select(info).select('.map__info_country').text('South Afrika');
+        console.log(instance.posts);
+        let pst = instance.posts.filter(post => post.meta_country == this.getAttribute('id') );
+
+        d3.select(info).select('.map__info_country').text(this.getAttribute('id') + pst.meta_situation);
 
         mousePosition(null)
         .then(p => {
@@ -36,7 +40,6 @@ export default function() {
           info.style.left = (p.left - 125) + 'px';
         });
 
-        console.log(this);
 
         d3.select(this).style("fill", "#536D7F");
 

@@ -25,6 +25,7 @@ include_once $lib . '/religions_colors.php';
 include_once $lib . '/translations.php';
 include_once $lib . '/get_translation.php';
 include_once $lib . '/translate_array.php';
+include_once $lib . '/countries.php';
 setTranslations();
 //include metaboxes
 include_once $metaboxes . '/report.php';

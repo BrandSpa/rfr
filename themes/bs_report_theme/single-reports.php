@@ -7,25 +7,24 @@
 
     <?php
 
-    $rd_args = array(
-      'meta_query' => array(
-        array(
-          'key' => 'report_year_key',
-          'value' => '2016'
-        )
-      )
-    );
+    // WP_Query arguments
+$args = array(
+    'meta_key'       => 'report_year_key',
+    'meta_value'     => '2016',
+    'post_type'        => 'reports'
+  );
 
-    $rd_query = new WP_Query( $rd_args );
+// The Query
+$query = get_posts( $args );
 
     function addMeta($obj) {
       $obj->meta_year = get_post_meta($obj->ID, 'report_year_key', true);
       $obj->meta_country = get_post_meta($obj->ID, 'report_country_key', true);
-      $obj->meta_population = get_post_meta($obj->ID, 'report_population_key', true);
+      $obj->meta_situation = get_post_meta($obj->ID, 'report_situation_key', true);
       return $obj;
     }
 
-    $posts = array_map('addMeta', $rd_query->posts);
+    $posts = array_map('addMeta', $query);
 
      ?>
 
@@ -46,6 +45,11 @@
           <h1 class="title">
             <?php echo get_post_meta($post->ID, 'report_country_key', true) ?>
           </h1>
+
+          <select name="" id="">COUNTRIES</select>
+          <?php foreach(getCountries() as $country): ?>
+            <a href=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?> "><?php echo $country ?></a>
+          <?php endforeach; ?>
 
         </div>
 
