@@ -120,6 +120,8 @@
 
       </div>
 
+      <div class="append-religion"></div>
+      <p></p>
       <button class="button" onClick="addSubcategoryReligion(event, this, 0)"> Add subcategory </button>
     </div>
 

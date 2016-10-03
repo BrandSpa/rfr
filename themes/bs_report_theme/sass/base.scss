@@ -24,10 +24,13 @@ body {
 a {
   color: $armadillo;
   transition: all 300ms ease;
+  text-decoration: none;
 
-  &:hover {
+  &:hover, &:focus {
     color: $chicago;
+    text-decoration: none;
   }
+
 }
 
 p {
