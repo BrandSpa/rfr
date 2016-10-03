@@ -11,6 +11,7 @@ function getReligionsColors() {
   $buttercup = "#D88E27";
   $fire_engine = "#CC2027";
   $dark_electric_blue = "#536D7F";
+  $gumbo = '#7699B2';
 
   $red_orange = "#FC3938";
   $dull_red = "#C03B3B";
@@ -25,7 +26,7 @@ function getReligionsColors() {
   $desert_storm = "#F8F8F8";
 
     return array(
-      "Agnostic" => $red_orange,
+      "Agnostic" => $gumbo,
       "Atheist" => $dull_red,
       "Buddhists" => $elephant,
       "Baha’i" => $outer_space,
