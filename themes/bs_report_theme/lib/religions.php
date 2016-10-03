@@ -28,7 +28,7 @@ function getReligions() {
     "Orthodox",
     "Other",
     "Protestant",
-    "Shi'a",
+    "Shi’a",
     "Shintoists",
     "Sikhs",
     "Spiritists",
