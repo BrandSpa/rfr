@@ -12,12 +12,15 @@ function getReligionsColors() {
   $fire_engine = "#CC2027";
   $dark_electric_blue = "#536D7F";
   $gumbo = '#7699B2';
+  $cream_can = '#F9C968';
 
   $red_orange = "#FC3938";
   $dull_red = "#C03B3B";
   $dark_jungle_green = "#1A2127";
   $outer_space  = "#2B3740";
   $cello  = "#3C515F";
+
+  $fuel_yellow = '#F3A82D';
 
   $rollig_stone = "#747E86";
   $armadillo = "#4A4A4A";
@@ -41,8 +44,8 @@ function getReligionsColors() {
       "Jewish" => $fire_engine,
       "Muslim" => $saffron,
       "Spiritists" => $cello,
-      "Other"  => $outer_space,
-      "Sikhs"=> $rollig_stone,
+      "Other"  => $aluminum,
+      "Sikhs"=> $fuel_yellow,
       "Neoreligionist" => $armadillo,
       "Taoists" => $aluminum
     );
