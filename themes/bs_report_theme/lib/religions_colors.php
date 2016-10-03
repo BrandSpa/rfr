@@ -40,12 +40,12 @@ function getReligionsColors() {
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
       "Confucianist" => $red_orange,
-      "Hindu" =>  $buttercup,
+      "Hindu" =>  $cello,
       "Jewish" => $fire_engine,
       "Muslim" => $rollig_stone,
       "Spiritists" => $cello,
       "Other"  => $buttercup,
-      "Sikhs"=> $fuel_yellow,
+      "Sikhs"=> $desert_storm,
       "Neoreligionist" => $armadillo,
       "Taoists" => $aluminum
     );
