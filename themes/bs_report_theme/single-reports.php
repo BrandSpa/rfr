@@ -177,6 +177,7 @@
 
 <?php include_once 'shortcodes/mp.php' ?>
 <?php include_once 'shortcodes/download_report.php' ?>
+<?php include_once 'shortcodes/about_us.php' ?>
 
 </div>
 

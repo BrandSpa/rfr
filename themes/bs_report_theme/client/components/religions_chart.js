@@ -10,6 +10,7 @@ export default function() {
     ready() {
       let religions = this.religions;
       let colors = this.colors;
+      console.log(religions);
 
       let seriesData = [];
       let subSeriesData = [];

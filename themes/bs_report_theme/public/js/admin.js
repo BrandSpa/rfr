@@ -89,6 +89,7 @@ exports.default = function () {
         ready: function ready() {
             var religions = this.religions;
             var colors = this.colors;
+            console.log(religions);
 
             var seriesData = [];
             var subSeriesData = [];
