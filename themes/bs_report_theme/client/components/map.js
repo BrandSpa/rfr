@@ -52,9 +52,7 @@ export default function() {
 
     methods: {
       search() {
-        let co = `/${this.country.toLowerCase()}/g`;
-        this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().match(co) );
-        console.log(this.items);
+        this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1 );
       }
     }
   });
