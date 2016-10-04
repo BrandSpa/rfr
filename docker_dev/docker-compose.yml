@@ -1,0 +1,29 @@
+version: '2'
+services:
+  wp:
+      build: .
+      links:
+       - mysql
+      environment:
+       - WORDPRESS_DB_PASSWORD=my-secret-pw
+      ports:
+        - "80:80"
+      volumes:
+        - ..:/var/www/html/wp-content
+
+
+  mysql:
+      image: mysql:latest
+      environment:
+       - MYSQL_ROOT_PASSWORD=my-secret-pw
+      ports:
+       - "3307:3306"
+      volumes:
+       - ~/mysqldata:/var/lib/mysql
+
+  phpadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+     - mysql
+    ports:
+      - "8080:80"

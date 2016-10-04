@@ -1,32 +1,26 @@
-wp:
-    build: .
-    links:
-     - mysql
-    ports:
-      - "80:80"
-    volumes:
-      - .:/var/www/html/wp-content
+version: '2'
+services:
+  wp:
+      image: wordpress:latest
+      environment:
+       - WORDPRESS_DB_PASSWORD=my-secret-pw
+      cpu_shares: 100
+      mem_limit: 524288000
+      links:
+       - mysql
 
-mysql:
-    image: mysql:latest
-    environment:
-     - MYSQL_ROOT_PASSWORD=my-secret-pw
-    ports:
-     - "3307:3306"
-    volumes:
-     - ~/mysqldata:/var/lib/mysql
+      ports:
+        - "80:80"
+      volumes:
+        - /home/ec2-user/rfr:/var/www/html/wp-content
 
-# nginx:
-#     build: ./nginx
-#     environment:
-#       - WORDPRESS_DB_PASSWORD=my-secret-pw
-#       - WORDPRESS_DB_USER=root
-#       - WORDPRESS_DB_NAME=wordpress
-#     volumes_from:
-#       - wp
-#     ports:
-#       - "80:80"
-#     links:
-#       - wp
-#     volumes:
-#       - /Users/dev/apps/acn_reports/wp-content/themes/bs_report_theme/dk/logs:/var/log/nginx
+  mysql:
+      image: mysql:latest
+      cpu_shares: 100
+      mem_limit: 524288000
+      environment:
+       - MYSQL_ROOT_PASSWORD=my-secret-pw
+      ports:
+       - "3306:3306"
+      volumes:
+       - /home/ec2-user/mysqldata:/var/lib/mysql
