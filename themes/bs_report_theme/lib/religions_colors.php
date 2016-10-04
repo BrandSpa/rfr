@@ -18,7 +18,7 @@ function getReligionsColors() {
   $dull_red = "#C03B3B";
   $dark_jungle_green = "#1A2127";
   $outer_space  = "#2B3740";
-  $cello  = "#3C515F";
+  $cello  = "#7699B2";
 
   $fuel_yellow = '#F3A82D';
 
@@ -44,6 +44,7 @@ function getReligionsColors() {
       "Jewish" => $fire_engine,
       "Muslim" => $rollig_stone,
       "Spiritists" => $cello,
+      "Shintoists" => $gumbo,
       "Other"  => $buttercup,
       "Sikhs"=> $chicago,
       "Neoreligionist" => $armadillo,
