@@ -9,7 +9,7 @@
   <div class="map__info">
     <span class="map__info_country"></span>
     <span class="map__info_situation">
-      <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
     </span>
   </div>
 
@@ -27,19 +27,19 @@
           <li>
             {{country}}
             <span>
-              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
             </span>
           </li>
           <li>
             {{country}}
             <span>
-              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
             </span>
           </li>
           <li>
             {{country}}
             <span>
-              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Unchanged.svg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
             </span>
           </li>
         </ul>
