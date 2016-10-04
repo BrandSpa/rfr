@@ -52,7 +52,10 @@ export default function() {
 
     methods: {
       search() {
-        this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1 );
+        if(this.country.length > 3) {
+          this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1 );
+        }
+
       }
     }
   });
