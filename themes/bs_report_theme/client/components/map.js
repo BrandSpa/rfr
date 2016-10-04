@@ -5,7 +5,7 @@ export default function() {
 
   Vue.component('map', {
     template: '#map-template',
-    props: ['posts'],
+    props: ['posts', 'items'],
     data: {
       country: ''
     },
@@ -23,11 +23,7 @@ export default function() {
 
       let gs = d3.select(".map svg #map-g").selectAll("g");
 
-      [].slice.call(gs._groups[0]).forEach(function(g) {
-
-      });
-
-      d3.select(".map svg #map-g").selectAll("g").on('click', function() {
+      gs.on('click', function() {
         console.log('link to:', this.getAttribute('id'));
       });
 
@@ -48,11 +44,18 @@ export default function() {
           info.style.left = (p.left - 125) + 'px';
         });
 
-
         d3.select(this).style("fill", "#536D7F");
 
       });
 
+    },
+
+    methods: {
+      search() {
+        console.log(this.items);
+        this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1 );
+        return this.items;
+      }
     }
   });
 
