@@ -52,8 +52,8 @@ export default function() {
 
     methods: {
       search() {
-        console.log(this.items);
-        this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1 );
+        let co = `/${this.country.toLowerCase()}/`;
+        this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().match(co) );
         return this.items;
       }
     }
