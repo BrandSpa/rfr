@@ -11,7 +11,8 @@
 $args = array(
     'meta_key'       => 'report_year_key',
     'meta_value'     => '2016',
-    'post_type'        => 'reports'
+    'post_type'        => 'reports',
+    'numberposts' => => -1
   );
 
 // The Query
