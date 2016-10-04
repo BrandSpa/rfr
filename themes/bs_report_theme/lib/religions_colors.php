@@ -44,6 +44,7 @@ function getReligionsColors() {
       "Jewish" => $fire_engine,
       "Muslim" => $rollig_stone,
       "Spiritists" => $cello,
+      "Spiritualists" => $cello,
       "Shintoists" => $gumbo,
       "Other"  => $buttercup,
       "Sikhs"=> $chicago,
