@@ -78,7 +78,8 @@ $query = get_posts( $args );
         </div>
 
         <div class="col-md-6">
-            <img src="<?php echo get_template_directory_uri() . '/public/img/maps/' . strtolower(str_replace(' ', '-', $country)) ?>" class="img-responsive report__header__map">
+            <?php $country = get_post_meta($obj->ID, 'report_country_key', true); ?>
+            <img src="<?php echo get_template_directory_uri() . '/public/img/maps/' . str_replace(' ', '-', $country) . '.png'  ?>" class="img-responsive report__header__map">
         </div>
       </div>
 
