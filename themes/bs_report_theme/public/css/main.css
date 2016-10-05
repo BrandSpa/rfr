@@ -327,7 +327,7 @@ input {
             top: -5px;
             transition: left 300ms ease; }
 
-#footer {
+#footer .menu {
   padding-top: 80px; }
   #footer .menu > li {
     float: left;
