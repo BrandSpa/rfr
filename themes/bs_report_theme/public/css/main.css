@@ -330,7 +330,8 @@ input {
 #footer .menu {
   padding: 0 30px; }
   #footer .menu > li {
-    float: left; }
+    float: left;
+    width: 16.66667%; }
     #footer .menu > li > a {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 1.25em;
@@ -340,16 +341,8 @@ input {
       margin-bottom: 15px; }
       #footer .menu > li > a:hover {
         color: #FC3938; }
-    #footer .menu > li:hover {
-      height: auto; }
-      #footer .menu > li:hover .sub-menu {
-        display: block;
-        opacity: 1;
-        transition: all 500ms ease; }
     #footer .menu > li .sub-menu {
-      padding: 0;
-      display: none;
-      opacity: 0; }
+      padding: 0; }
       #footer .menu > li .sub-menu a {
         font-family: "Roboto Condensed", sans-serif;
         font-size: 1.0625em;

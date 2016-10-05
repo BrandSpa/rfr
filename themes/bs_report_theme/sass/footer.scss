@@ -3,7 +3,7 @@
     padding: 0 30px;
     & > li {
       float: left;
-      padding-right: 100% / 6;
+      width: (100 / 6) * 1%;
 
       & > a {
         @include title5;
