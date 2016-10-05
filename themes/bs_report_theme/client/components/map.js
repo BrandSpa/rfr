@@ -45,6 +45,7 @@ export default function() {
           info.style.left = p.left + 'px';
         });
 
+        d3.select(this).style("transition", "all 500ms ease");
         d3.select(this).style("fill", "#536D7F");
 
       });
