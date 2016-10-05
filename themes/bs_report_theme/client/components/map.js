@@ -41,7 +41,7 @@ export default function() {
         .then(p => {
           info.style.zIndex= 1;
           info.style.top = (p.top - 80) + 'px';
-          info.style.left = p.left + 'px';
+          info.style.left = (p.left - 125) + 'px';
         });
 
         d3.select(this).style("fill", "#536D7F");
