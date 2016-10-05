@@ -4,9 +4,6 @@
  * Alejandro Sanabria <alejandro@brandspa.com>
  * Copyright 2016 BrandSpa
  */
-if(file_exists('vendor/autoload.php')) {
-  require 'vendor/autoload.php';
-}
 
 //add navigation menus
 register_nav_menus(
@@ -21,6 +18,11 @@ $base = __DIR__;
 $lib = 'lib';
 $shortcodes = 'shortcodes';
 $metaboxes = 'metaboxes';
+
+if(file_exists($base . '/vendor/autoload.php')) {
+  require 'vendor/autoload.php';
+}
+
 
 //include lib functions
 include_once $lib . '/geo_info.php';
