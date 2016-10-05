@@ -470,7 +470,6 @@ input {
     height: 40px;
     position: absolute;
     z-index: -99;
-    float: left;
     transition: all 100ms ease; }
     .map__info_situation {
       display: -ms-flexbox;
@@ -485,17 +484,6 @@ input {
       text-align: center; }
       .map__info_situation img {
         margin: 0 auto; }
-    .map__info::after {
-      display: block;
-      content: '';
-      width: 1px;
-      height: 15px;
-      background: #1A2127;
-      position: absolute;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      bottom: -15px; }
   .map__search_results {
     width: 100%;
     padding: 0;

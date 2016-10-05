@@ -40,7 +40,6 @@ export default function() {
 
         mousePosition(null)
         .then(p => {
-          console.log(p);
           info.style.zIndex= 1;
           info.style.top = (p.top - 50) + 'px';
           info.style.left = p.left + 'px';

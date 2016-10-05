@@ -31,7 +31,6 @@
     height: 40px;
     position: absolute;
     z-index: -99;
-    float: left;
     transition: all 100ms ease;
 
     &_situation {
@@ -46,22 +45,20 @@
         margin: 0 auto;
       }
     }
-
-    &::after {
-      display: block;
-      content: '';
-      width: 1px;
-      height: 15px;
-      // border-left: 10px solid transparent;
-      // border-right: 10px solid transparent;
-      // border-top: 10px solid #fff;
-      background: $dark_jungle_green;
-      position: absolute;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      bottom: -15px;
-    }
+    // 
+    // &::after {
+    //   display: block;
+    //   content: '';
+    //   width: 1px;
+    //   height: 15px;
+    //
+    //   background: $dark_jungle_green;
+    //   position: absolute;
+    //   margin: 0 auto;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: -15px;
+    // }
   }
 
   &__search_results {
