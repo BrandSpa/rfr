@@ -6,7 +6,7 @@
 
     <?php the_content() ?>
 
-
+    <div style="padding-top: 100px"></div>
     <?php echo json_encode(geoip_detect2_get_info_from_current_ip()) ?>
 
   <?php endwhile; else : ?>
