@@ -24,7 +24,7 @@ export default function() {
       let gs = d3.select(".map svg #map-g").selectAll("g");
 
       gs.on('click', function() {
-        window.location = 'report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
+        window.location = '/report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
       });
 
       gs.on('mousemove', function() {
