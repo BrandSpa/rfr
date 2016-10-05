@@ -19,3 +19,11 @@ services:
        - "3307:3306"
       volumes:
        - ~/mysqldata:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql
+    environment:
+      - PMA_HOST=mysql
+    ports:
+      - "9090:80"
