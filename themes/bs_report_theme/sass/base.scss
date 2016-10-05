@@ -1,5 +1,12 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 html {
+  height: 100%;
+  box-sizing: border-box;
   font-size: 16px;
 
   @media (min-width: 800px) {
@@ -15,6 +22,7 @@ body {
   background: $desert_storm;
   margin-left: 200px;
   font-family: $roboto;
+  position: relative;
 
   @media #{$tablet}, #{$mobile} {
     margin-left: 0;
@@ -276,4 +284,11 @@ input {
     box-shadow: 0;
     outline: none;
   }
+}
+
+#footer {
+  position: absolute;
+ right: 0;
+ bottom: 0;
+ left: 0;
 }
