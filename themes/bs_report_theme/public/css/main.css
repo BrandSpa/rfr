@@ -543,10 +543,6 @@ input {
     .map_list_exp li img {
       padding-right: 10px; }
 
-#map svg {
-  height: auto;
-  padding: 20% 0; }
-
 #download-report {
   padding: 120px 40px; }
   #download-report h1 {
