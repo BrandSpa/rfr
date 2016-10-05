@@ -70,7 +70,7 @@ $query = get_posts( $args );
                   </g>
               </svg>
             </a>
-            <select name="" id="select-countries" style="display: none">
+            <select name="" id="select-countries" style="display: none; width: 50%">
             <?php foreach(getCountries() as $country): ?>
               <option value=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?>"><?php echo $country ?></option>
             <?php endforeach; ?>
@@ -184,7 +184,7 @@ $query = get_posts( $args );
     <?php if(is_array(get_post_meta($post->ID, 'report_content_key', true))): ?>
       <?php foreach (get_post_meta($post->ID, 'report_content_key', true) as $key => $content): ?>
         <?php if( !empty($content['title']) ): ?>
-        <div class="report__content-header" style="background: url(<?php echo get_post_meta($post->ID, 'report_background_key', true)  ?>)">
+        <div class="report__content-header" style="background: url(<?php echo get_template_directory_uri() . '/public/img/bg_report_content_1.jpg' ?>)">
 
           <h1 class="title-line title-uppercase"><?php echo $content['title'] ?></h1>
 
