@@ -4,7 +4,10 @@
  * Alejandro Sanabria <alejandro@brandspa.com>
  * Copyright 2016 BrandSpa
  */
-require 'vendor/autoload.php';
+if(file_exists('vendor/autoload.php')) {
+  require 'vendor/autoload.php';
+}
+
 //add navigation menus
 register_nav_menus(
   array(
@@ -52,7 +55,9 @@ function my_mce_buttons_2( $buttons ) {
 
 	return $buttons;
 }
-
+//fix remove paragraphs from editor
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
 
 add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
 
