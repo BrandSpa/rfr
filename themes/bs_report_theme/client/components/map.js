@@ -24,7 +24,7 @@ export default function() {
       let gs = d3.select(".map svg #map-g").selectAll("g");
 
       gs.on('click', function() {
-        console.log('link to:', this.getAttribute('id'));
+        window.location = 'report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
       });
 
       gs.on('mousemove', function() {
@@ -52,7 +52,7 @@ export default function() {
 
     methods: {
       search() {
-        
+
         if(this.country.length > 3) {
           this.items = this.posts.filter(pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1 );
         }
