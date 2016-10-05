@@ -29,18 +29,18 @@
           &:hover::before {
             left: -15px;
           }
-
-          &::before {
-            content: '+';
-            color: $red_orange;
-            font-size: 20px;
-            font-weight: 300;
-            padding-right: 10px;
-            position: absolute;
-            left: -50px;
-            top: -5px;
-            transition: left 300ms ease;
-          }
+          // 
+          // &::before {
+          //   content: '+';
+          //   color: $red_orange;
+          //   font-size: 20px;
+          //   font-weight: 300;
+          //   padding-right: 10px;
+          //   position: absolute;
+          //   left: -50px;
+          //   top: -5px;
+          //   transition: left 300ms ease;
+          // }
         }
       }
 

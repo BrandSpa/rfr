@@ -353,16 +353,6 @@ input {
       position: relative; }
       #footer .menu > li .sub-menu a:hover::before {
         left: -15px; }
-      #footer .menu > li .sub-menu a::before {
-        content: '+';
-        color: #FC3938;
-        font-size: 20px;
-        font-weight: 300;
-        padding-right: 10px;
-        position: absolute;
-        left: -50px;
-        top: -5px;
-        transition: left 300ms ease; }
 
 .report__header {
   padding: 60px 40px; }
