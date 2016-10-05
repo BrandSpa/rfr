@@ -41,11 +41,11 @@ export default function() {
         mousePosition(null)
         .then(p => {
           info.style.zIndex= 1;
-          info.style.top = (p.top - 50) + 'px';
-          info.style.left = p.left + 'px';
+          info.style.top = (p.top - 80) + 'px';
+          info.style.left = (p.left - 300) + 'px';
         });
 
-        d3.select(this).style("transition", "all 500ms ease");
+        d3.select(this).style("transition", "all 300ms ease");
         d3.select(this).style("fill", "#536D7F");
 
       });
