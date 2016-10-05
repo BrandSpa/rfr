@@ -3,28 +3,22 @@
     padding: 0 30px;
     & > li {
       float: left;
+      padding-right: 100% / 6;
+
       & > a {
         @include title5;
         color: $red_orange;
         display: block;
         margin-bottom: 15px;
+
         &:hover {
           color: $red_orange;
-
-        }
-      }
-
-      &:hover {
-        height: auto;
-        .sub-menu {
-          display: block;
-          opacity: 1;
-          transition: all 500ms ease;
         }
       }
 
       .sub-menu {
         padding: 0;
+
         a {
           @include title6;
           display: block;
