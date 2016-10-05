@@ -42,7 +42,7 @@ export default function() {
         .then(p => {
           console.log(p);
           info.style.zIndex= 1;
-          info.style.top = p.top + 'px';
+          info.style.top = (p.top + 50) + 'px';
           info.style.left = p.left + 'px';
         });
 
