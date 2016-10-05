@@ -546,7 +546,7 @@ input {
 #map svg {
   width: 100%;
   height: auto;
-  padding: 0 20%; }
+  padding: 20% 0; }
 
 #download-report {
   padding: 120px 40px; }
