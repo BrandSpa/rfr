@@ -35,13 +35,15 @@ export default function() {
         };
 
         let situ = pst.meta_situation ? pst.meta_situation : '';
+
         d3.select(info).select('.map__info_country').text(this.getAttribute('id') + situ);
 
         mousePosition(null)
         .then(p => {
+          console.log(p);
           info.style.zIndex= 1;
-          info.style.top = (p.top - 80) + 'px';
-          info.style.left = (p.left - 300) + 'px';
+          info.style.top = p.top + 'px';
+          info.style.left = p.left + 'px';
         });
 
         d3.select(this).style("fill", "#536D7F");
