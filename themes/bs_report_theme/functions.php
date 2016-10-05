@@ -19,9 +19,7 @@ $lib = 'lib';
 $shortcodes = 'shortcodes';
 $metaboxes = 'metaboxes';
 
-if(file_exists($base . '/vendor/autoload.php')) {
   require 'vendor/autoload.php';
-}
 
 
 //include lib functions
