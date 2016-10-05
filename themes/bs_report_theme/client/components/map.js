@@ -41,7 +41,7 @@ export default function() {
         mousePosition(null)
         .then(p => {
           info.style.zIndex= 1;
-          info.style.top = (p.top - 80) + 'px';
+          info.style.top = (p.top - 40) + 'px';
           info.style.left = (p.left - 300) + 'px';
         });
 
