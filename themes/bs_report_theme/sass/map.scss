@@ -14,8 +14,8 @@
     display: block;
     margin: 0 auto;
     height: auto;
+    width: 100%;
     @media #{$mobile}, #{$tablet} {
-      width: 100%;
       padding: 20% 0;
     }
   }
@@ -45,7 +45,7 @@
         margin: 0 auto;
       }
     }
-    // 
+    //
     // &::after {
     //   display: block;
     //   content: '';

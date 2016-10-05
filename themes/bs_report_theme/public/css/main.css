@@ -448,10 +448,10 @@ input {
   .map svg {
     display: block;
     margin: 0 auto;
-    height: auto; }
+    height: auto;
+    width: 100%; }
     @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
       .map svg {
-        width: 100%;
         padding: 20% 0; } }
   .map__info {
     font-family: "Roboto Condensed", sans-serif;
