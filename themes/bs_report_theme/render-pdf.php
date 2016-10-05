@@ -109,10 +109,10 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-
 
     <div class="header">
       <div class="col-6">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo.png" alt="">
+          <img src="<?php echo get_template_directory_uri() . '/public/img/maps/' . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true)) . '.png'  ?>" class="img-responsive">
       </div>
-      <div class="col-6">
 
+      <div class="col-6">
         <h4>RELIGIOUS FREEDOM REPORT 2016</h4>
       </div>
 
@@ -166,7 +166,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-
           <?php if( !empty($content['title']) ): ?>
           <div class="report__content-header">
 
-            <h5 class="title-line title-uppercase">Legal<?php echo $content['title'] ?></h5>
+            <h5 class="title-line title-uppercase"><?php echo $content['title'] ?></h5>
 
           </div>
           <?php endif; ?>
