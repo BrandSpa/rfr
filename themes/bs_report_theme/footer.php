@@ -3,7 +3,7 @@
   <div class="col-md-9" style="height: 400px; background: #1A2127">
     <?php
         $args = array(
-          'theme_location' => 'main',
+          'theme_location' => 'footer',
           'container' => false,
           'echo' => true
         );

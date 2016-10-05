@@ -9,6 +9,7 @@ require 'vendor/autoload.php';
 register_nav_menus(
   array(
     'main' => 'Main nav',
+    'footer' => 'Footer nav',
   )
 );
 
