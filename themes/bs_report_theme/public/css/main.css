@@ -22,7 +22,9 @@ html {
 body {
   background: #F8F8F8;
   margin-left: 200px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  min-height: 100%;
+  position: relative; }
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
     body {
       margin-left: 0; } }

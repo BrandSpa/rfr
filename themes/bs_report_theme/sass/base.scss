@@ -22,6 +22,8 @@ body {
   background: $desert_storm;
   margin-left: 200px;
   font-family: $roboto;
+  min-height: 100%;
+  position: relative;
 
   @media #{$tablet}, #{$mobile} {
     margin-left: 0;
