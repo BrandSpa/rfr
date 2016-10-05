@@ -1,9 +1,8 @@
 #footer {
   .menu {
-    padding: 0 30px;
     & > li {
       float: left;
-      width: (100 / 6) * 1%;
+      width: (100 / 5) * 1%;
 
       & > a {
         @include title5;
