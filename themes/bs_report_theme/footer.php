@@ -1,7 +1,16 @@
 
 <div id="footer">
   <div class="col-md-9" style="height: 400px; background: #1A2127">
+    <?php
+        $args = array(
+          'theme_location' => 'main',
+          'container' => false,
+          'echo' => true
+        );
 
+        $menu = wp_nav_menu( $args);
+
+     ?>
   </div>
   <div class="col-md-3" style="height: 400px;background:#FFFF">
 
