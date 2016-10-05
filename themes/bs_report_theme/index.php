@@ -7,7 +7,7 @@
     <?php the_content() ?>
 
 
-    <?php var_dump(geoip_detect2_get_info_from_current_ip()) ?>
+    <?php echo json_encode(geoip_detect2_get_info_from_current_ip()) ?>
 
   <?php endwhile; else : ?>
     <h1><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h1>
