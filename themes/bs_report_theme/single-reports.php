@@ -71,14 +71,14 @@ $query = get_posts( $args );
             </a>
             <select name="" id="select-countries" style="display: none">
             <?php foreach(getCountries() as $country): ?>
-              <option value=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?> "><?php echo $country ?></option>
+              <option value=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?>"><?php echo $country ?></option>
             <?php endforeach; ?>
             </select>
           </h1>
         </div>
 
         <div class="col-md-6">
-            <img src="<?php echo get_post_meta($post->ID, 'report_map_key', true) ?>" class="img-responsive report__header__map">
+            <img src="<?php echo get_template_directory_uri() . '/public/img/maps/' . strtolower(str_replace(' ', '-', $country)) ?>" class="img-responsive report__header__map">
         </div>
       </div>
 
