@@ -109,7 +109,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-
 
     <div class="header">
       <div class="col-6">
-          <img src="<?php echo get_template_directory_uri() . '/public/img/maps/' . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true)) . '.png'  ?>" class="img-responsive">
+          <img src="<?php echo get_template_directory_uri() . '/public/img/maps/' . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true)) . '.png'  ?>" width="100%">
       </div>
 
       <div class="col-6">
