@@ -470,7 +470,8 @@ input {
     height: 40px;
     position: absolute;
     opacity: 0;
-    transition: all 100ms ease; }
+    transition: all 100ms ease;
+    z-index: 100; }
     .map__info_situation {
       display: -ms-flexbox;
       display: flex;
