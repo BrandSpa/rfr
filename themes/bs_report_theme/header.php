@@ -18,7 +18,7 @@
 
 <script type="text/javascript">
   var nav = document.querySelector('.nav');
-  var bod = document.body;
+  var bod = document.querySelector('body');
   function openNav(el, evt) {
     evt.preventDefault();
     nav.style.left = 0;
