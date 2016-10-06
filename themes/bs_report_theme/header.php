@@ -16,16 +16,7 @@
 
 <a href="#" id="open-nav" style="position: absolute; right: 60px; top: 40px">Menú</a>
 
-<script type="text/javascript">
-  var nav = jQuery('.nav');
-  var bod = jQuery('body');
-  jQuery('#open-nav').on('click', openNav);
-  function openNav(evt) {
-    evt.preventDefault();
-    nav.style.left = 0;
-    bod.style.marginLeft = '200px';
-  }
-</script>
+
 
 <div class="nav">
   <div class="nav__logo" style="height: 120px;background: #fff">
@@ -50,3 +41,14 @@
 
    ?>
 </div>
+
+<script type="text/javascript">
+  var nav = jQuery('.nav');
+  var bod = jQuery('body');
+  jQuery('#open-nav').on('click', openNav);
+  function openNav(evt) {
+    evt.preventDefault();
+    nav.style({'left': '0'});
+    bod.style.marginLeft = '200px';
+  }
+</script>
