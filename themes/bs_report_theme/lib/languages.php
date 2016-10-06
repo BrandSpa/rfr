@@ -217,7 +217,9 @@ function getLanguages() {
     "Yoruba ",
     "Zhuang",
     "Zulu",
-    "Slovene"
+    "Slovene",
+    "Czech",
+    "Comorian"
   ];
 }
 

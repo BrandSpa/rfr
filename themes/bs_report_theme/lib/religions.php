@@ -34,7 +34,8 @@ function getReligions() {
     "Spiritists",
     "Spiritualists",
     "Sunni",
-    "Taoists"
+    "Taoists",
+    "Pentecostals"
   );
 }
 
