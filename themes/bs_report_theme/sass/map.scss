@@ -12,9 +12,10 @@
 
   svg {
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
     height: auto;
     width: 100%;
+
     @media #{$mobile}, #{$tablet} {
       padding: 20% 0;
     }

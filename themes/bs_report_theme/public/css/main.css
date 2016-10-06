@@ -478,7 +478,7 @@ input {
       color: #FC3938; }
   .map svg {
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
     height: auto;
     width: 100%; }
     @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
