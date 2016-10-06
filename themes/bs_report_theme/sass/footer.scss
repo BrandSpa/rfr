@@ -62,11 +62,19 @@
       height: 200px;
       @include center_vertical;
       text-align: center;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
     }
     &-bottom {
       height: 200px;
       @include center_vertical;
       text-align: center;
+      img {
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
 }

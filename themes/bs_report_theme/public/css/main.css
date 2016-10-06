@@ -375,6 +375,9 @@ input {
     -ms-flex-align: center;
     align-items: center;
     text-align: center; }
+    .footer__right-upper img {
+      margin: 0 auto;
+      display: block; }
   .footer__right-bottom {
     height: 200px;
     display: -ms-flexbox;
@@ -382,6 +385,9 @@ input {
     -ms-flex-align: center;
     align-items: center;
     text-align: center; }
+    .footer__right-bottom img {
+      margin: 0 auto;
+      display: block; }
 
 .report__header {
   padding: 60px 40px; }
