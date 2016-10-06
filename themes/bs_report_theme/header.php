@@ -17,8 +17,8 @@
 <a href="#" id="open-nav" style="position: absolute; right: 60px; top: 40px">Menú</a>
 
 <script type="text/javascript">
-  var nav = document.querySelector('.nav');
-  var bod = document.querySelector('body');
+  var nav = jQuery('.nav');
+  var bod = jQuery('body');
   jQuery('#open-nav').on('click', openNav);
   function openNav(evt) {
     evt.preventDefault();
