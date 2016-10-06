@@ -14,12 +14,13 @@
 </head>
 <body id="acn_reports">
 
-<a href="#" id="open-nav" style="position: absolute; right: 60px; top: 80px" onClick="openNav">Menú</a>
+<a href="#" id="open-nav" style="position: absolute; right: 60px; top: 80px" onClick="openNav(this, event)">Menú</a>
 
 <script type="text/javascript">
   var nav = document.querySelector('.nav');
   var bod = document.body;
-  function openNav() {
+  function openNav(el, evt) {
+    evt.preventDefault();
     nav.style.left = 0;
     bod.style.marginLeft = '200px';
   }
