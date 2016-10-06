@@ -48,7 +48,7 @@
   jQuery('#open-nav').on('click', openNav);
   function openNav(evt) {
     evt.preventDefault();
-    nav.style({'left': '0'});
+    nav.css({'left': '0'});
     bod.style.marginLeft = '200px';
   }
 </script>
