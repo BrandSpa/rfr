@@ -368,7 +368,10 @@ input {
   height: 400px;
   background: #fff; }
   .footer__right-upper {
-    background: #F8F8F8; }
+    background: #F8F8F8;
+    height: 200px; }
+  .footer__right-bottom {
+    height: 200px; }
 
 .report__header {
   padding: 60px 40px; }
