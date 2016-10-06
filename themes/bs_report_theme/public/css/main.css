@@ -360,6 +360,16 @@ input {
         #footer .menu > li .sub-menu a:hover::before {
           left: -15px; }
 
+.footer__left {
+  height: 400px;
+  background: #1A2127; }
+
+.footer__right {
+  height: 400px;
+  background: #fff; }
+  .footer__right-upper {
+    background: #F8F8F8; }
+
 .report__header {
   padding: 60px 40px; }
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {

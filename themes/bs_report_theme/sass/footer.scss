@@ -48,3 +48,20 @@
     }
   }
 }
+
+.footer {
+  &__left {
+    height: 400px;
+    background: #1A2127
+  }
+  &__right {
+    height: 400px;
+    background: #fff;
+    &-upper {
+      background: #F8F8F8;
+    }
+    &-bottom {
+
+    }
+  }
+}

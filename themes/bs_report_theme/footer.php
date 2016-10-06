@@ -1,6 +1,6 @@
 
 <div id="footer">
-  <div class="col-md-9" style="height: 400px; background: #1A2127">
+  <div class="col-md-9 footer__left">
     <?php
         $args = array(
           'theme_location' => 'footer',
@@ -12,9 +12,14 @@
 
      ?>
   </div>
-  <div class="col-md-3" style="height: 400px;background:#FFFF">
-    <img src="<?php echo get_template_directory_uri() .'/public/img/pontificial_logo.png' ?>" alt="">
-    <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" alt="">
+  
+  <div class="col-md-3 footer__right">
+    <div class="footer__right-upper">
+        <img src="<?php echo get_template_directory_uri() .'/public/img/pontificial_logo.png' ?>" alt="">
+    </div>
+    <div class="footer__right-bottom">
+        <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" alt="">
+    </div>
   </div>
 </div>
 
