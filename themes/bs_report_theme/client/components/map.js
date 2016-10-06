@@ -46,7 +46,9 @@ export default function() {
         });
 
         d3.select(this).style("transition", "all 300ms ease");
+        d3.select(this).  attr("stroke-width", 2);
         d3.select(this).style("fill", "#536D7F");
+        d3.select(this).style("stroke", "#FFF");
 
       });
 
