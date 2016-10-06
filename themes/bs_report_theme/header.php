@@ -14,7 +14,7 @@
 </head>
 <body id="acn_reports">
 
-<a href="#" id="open-nav" style="position: absolute; right: 60px; top:60px" onClick="openNav">Menú</a>
+<a href="#" id="open-nav" style="position: absolute; right: 60px; top: 80px" onClick="openNav">Menú</a>
 
 <script type="text/javascript">
   var nav = document.querySelector('.nav');
