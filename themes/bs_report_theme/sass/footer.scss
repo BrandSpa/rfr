@@ -59,7 +59,7 @@
     background: #fff;
     &-upper {
       background: #F8F8F8;
-      height: 200px;
+      height: 300px;
       @include center_vertical;
       text-align: center;
       img {
@@ -68,7 +68,7 @@
       }
     }
     &-bottom {
-      height: 200px;
+      height: 100px;
       @include center_vertical;
       text-align: center;
       img {

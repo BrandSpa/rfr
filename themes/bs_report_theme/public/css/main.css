@@ -369,7 +369,7 @@ input {
   background: #fff; }
   .footer__right-upper {
     background: #F8F8F8;
-    height: 200px;
+    height: 300px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -379,7 +379,7 @@ input {
       margin: 0 auto;
       display: block; }
   .footer__right-bottom {
-    height: 200px;
+    height: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
