@@ -60,11 +60,13 @@
     &-upper {
       background: #F8F8F8;
       height: 200px;
-      @include vertical-align;
+      @include center_vertical;
+      text-align: center;
     }
     &-bottom {
       height: 200px;
-      @include vertical-align;
+      @include center_vertical;
+      text-align: center;
     }
   }
 }

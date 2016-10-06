@@ -369,9 +369,19 @@ input {
   background: #fff; }
   .footer__right-upper {
     background: #F8F8F8;
-    height: 200px; }
+    height: 200px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
   .footer__right-bottom {
-    height: 200px; }
+    height: 200px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
 
 .report__header {
   padding: 60px 40px; }
