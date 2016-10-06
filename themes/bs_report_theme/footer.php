@@ -13,7 +13,8 @@
      ?>
   </div>
   <div class="col-md-3" style="height: 400px;background:#FFFF">
-
+    <img src="<?php echo get_template_directory_uri() .'/public/img/pontificial_logo.png' ?>" alt="">
+    <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" alt="">
   </div>
 </div>
 
