@@ -216,7 +216,8 @@ function getLanguages() {
     "Yapese",
     "Yoruba ",
     "Zhuang",
-    "Zulu"
+    "Zulu",
+    "Slovene"
   ];
 }
 

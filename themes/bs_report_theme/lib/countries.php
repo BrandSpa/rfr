@@ -242,6 +242,7 @@ function getCountries() {
     "Yemen",
     "Zambia",
     "Zimbabwe",
+    "Sao Tome Principe"
   );
 
   sort($countries);
