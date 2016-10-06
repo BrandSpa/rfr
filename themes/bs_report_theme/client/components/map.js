@@ -18,7 +18,7 @@ export default function() {
       d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
         var _this = this;
         d3.select(_this).style("fill", "").style("webkit-box-shadow", "10px 5px 5px #fff");
-        info.style.zIndex= -100;
+        info.style.opacity = 0;
       });
 
       let gs = d3.select(".map svg #map-g").selectAll("g");
