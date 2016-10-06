@@ -10,14 +10,7 @@
 
 html {
   height: 100%;
-  box-sizing: border-box;
-  font-size: 16px; }
-  @media (max-width: 767px) {
-    html {
-      font-size: 12px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    html {
-      font-size: 14px; } }
+  box-sizing: border-box; }
 
 body {
   background: #F8F8F8;
@@ -25,7 +18,14 @@ body {
   font-family: "Roboto", sans-serif;
   min-height: 100%;
   position: relative;
-  padding-bottom: 30%; }
+  padding-bottom: 30%;
+  font-size: 16px; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 12px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 14px; } }
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
     body {
       margin-left: 0; } }
