@@ -469,7 +469,7 @@ input {
     padding: 20px;
     height: 40px;
     position: absolute;
-    z-index: -99;
+    opacity: 0;
     transition: all 100ms ease; }
     .map__info_situation {
       display: -ms-flexbox;

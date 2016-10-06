@@ -40,7 +40,7 @@ export default function() {
 
         mousePosition(null)
         .then(p => {
-          info.style.zIndex= 1;
+          info.style.opacity = 1;
           info.style.top = (p.top - 55) + 'px';
           info.style.left = (p.left - 300) + 'px';
         });
