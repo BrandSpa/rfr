@@ -1,5 +1,5 @@
 <?php  ?>
-<div id="download-report">
+<div id="download-report" style="background: #fff;">
 
   <h1 class="title-center title-line color-red">
     <?php echo gett('ABOUT US'); ?>
