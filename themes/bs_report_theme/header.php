@@ -45,10 +45,19 @@
 <script type="text/javascript">
   var nav = jQuery('.nav');
   var bod = jQuery('body');
+  var open = false;
+
   jQuery('#open-nav').on('click', openNav);
   function openNav(evt) {
     evt.preventDefault();
-    nav.css({'left': '0'});
-    bod.style.marginLeft = '200px';
+    if(open) {
+      nav.css({'left': '0'});
+      bod.css({'marginLeft': '200px'});
+    } else {
+      nav.css({'left': '-200px'});
+      bod.css({'marginLeft': '0'});
+    }
+
+    open = !open;
   }
 </script>
