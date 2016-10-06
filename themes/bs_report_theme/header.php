@@ -14,6 +14,17 @@
 </head>
 <body id="acn_reports">
 
+<a href="#" id="open-nav" style="position: absolute; right: 60px; top:60px" onClick="openNav">Menú</a>
+
+<script type="text/javascript">
+  var nav = document.querySelector('.nav');
+  var bod = document.body;
+  function openNav() {
+    nav.style.left = 0;
+    bod.style.marginLeft = '200px';
+  }
+</script>
+
 <div class="nav">
   <div class="nav__logo" style="height: 120px;background: #fff">
     <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo.png" alt="acn logo">
