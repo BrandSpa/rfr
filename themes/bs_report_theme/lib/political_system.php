@@ -1,7 +1,7 @@
 <?php
 
 function getPoliticalSystem() {
-  return array( 'Autocracy', 'Democracy', 'Monarchy' );
+  return array( 'Autocracy', 'Democracy', 'Democracy/Autocracy', 'Monarchy' );
 }
 
  ?>
