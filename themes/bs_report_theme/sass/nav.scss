@@ -5,6 +5,7 @@
   width: 200px;
   height: 100%;
   background: $dark_jungle_green;
+  transition: all 300ms ease;
 
   @media #{$tablet}, #{$mobile} {
     left: -200px;
