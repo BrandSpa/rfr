@@ -194,7 +194,7 @@ $query = get_posts( $args );
   <?php endwhile; ?>
 
   <?php  else : ?>
-    <h1><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h1>
+    <h1><?php _e( "Sorry, we don't have this report..." ); ?></h1>
   <?php endif; ?>
 
 

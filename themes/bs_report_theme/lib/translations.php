@@ -4,6 +4,7 @@
   include_once 'political_system.php';
   include_once 'languages.php';
   include_once 'situation.php';
+  include_once 'persecution.php';
 
   function registerStr($str, $group = 'acn', $multiline = false) {
     if(function_exists('pll_register_string')) {
@@ -45,6 +46,10 @@
 
       foreach (getSitutations() as $situation) {
         registerStr($situation, $group. '-situation', false);
+      }
+
+      foreach (getPersecution() as $persecution) {
+        registerStr($persecution, $group. '-persecution', false);
       }
 
   }

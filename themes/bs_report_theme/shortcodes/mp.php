@@ -41,13 +41,16 @@
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
     <ul class="map_list_exp">
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt=""> <?php echo gett('Persecution') ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt="">
+        <?php echo gett('Persecution') ?>
       </li>
       <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Discrimination.svg" alt=""> <?php echo gett('Discrimination') ?>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Discrimination.svg" alt="">
+          <?php echo gett('Discrimination') ?>
       </li>
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt=""> <?php echo gett('Stable') ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
+        <?php echo gett('Stable') ?>
       </li>
     </ul>
 
