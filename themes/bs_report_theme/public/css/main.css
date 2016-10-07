@@ -610,6 +610,7 @@ input {
     line-height: 1.2;
     color: #fff;
     display: block;
-    text-align: right;
+    position: fixed;
+    text-align: center;
     color: #FC3938;
     margin: 30px 60px; }

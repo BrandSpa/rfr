@@ -37,7 +37,8 @@
     @include title2;
     color: #fff;
     display: block;
-    text-align: right;
+    position: fixed;
+    text-align: center;
     color: $red_orange;
     margin: 30px 60px;
   }
