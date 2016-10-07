@@ -30,7 +30,8 @@ $query = get_posts( $args );
      ?>
 
 <?php include 'shortcodes/select_country.php' ?>
-    <div class="report__header" style="background: url(<?php echo get_template_directory_uri() ."/public/img/fondo-pais1280.jpg" ?>) no-repeat; background-size:cover ">
+
+    <div class="report__header" style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg" ?>) no-repeat; background-size:cover ">
       <div class="row">
         <div class="col-md-6">
           <a href="#map" class="report__header__back-map">BACK TO MAP</a>
