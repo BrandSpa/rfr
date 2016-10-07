@@ -3,6 +3,7 @@
 
 function report_political_system($post) {
   $report_political_system = get_post_meta($post->ID, 'report_political_system_key', true);
+  $report_political_system_sup = get_post_meta($post->ID, 'report_political_system_sup_key', true);
 
   ?>
   <p>
@@ -18,6 +19,12 @@ function report_political_system($post) {
       <?php endforeach; ?>
 
     </select>
+
+    <input
+      type="text"
+      name="report_political_system_sup"
+      value="<?php echo $report_political_system_sup ?>"
+      />
 
   </p>
   <?php

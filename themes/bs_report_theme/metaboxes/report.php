@@ -123,14 +123,20 @@ include_once __DIR__ . '/report/content.php';
     ));
 
     update_field(array(
-      'field_key' => 'report_area_key',
-      'field_name' => 'report_area',
+      'field_key' => 'report_area_sup_key',
+      'field_name' => 'report_area_sup',
       'post_id' => $post_id
     ));
 
     update_field(array(
       'field_key' => 'report_population_key',
       'field_name' => 'report_population',
+      'post_id' => $post_id
+    ));
+
+    update_field(array(
+      'field_key' => 'report_population_sup_key',
+      'field_name' => 'report_population_sup',
       'post_id' => $post_id
     ));
 
@@ -149,6 +155,12 @@ include_once __DIR__ . '/report/content.php';
     update_field(array(
       'field_key' => 'report_political_system_key',
       'field_name' => 'report_political_system',
+      'post_id' => $post_id
+    ));
+
+    update_field(array(
+      'field_key' => 'report_political_system_sup_key',
+      'field_name' => 'report_political_system_sup',
       'post_id' => $post_id
     ));
 
