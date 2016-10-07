@@ -15,7 +15,7 @@
 </div>
 
 <script type="text/javascript">
-  var userGeoData = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip())) ?>);
+  var userGeoData = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()) ?>));
   console.log(userGeoData);
 </script>
 
