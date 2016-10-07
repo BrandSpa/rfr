@@ -29,6 +29,7 @@ $query = get_posts( $args );
 
      ?>
 
+<?php include 'shortcodes/select_country.php' ?>
     <div class="report__header" style="background: url(<?php echo get_template_directory_uri() ."/public/img/fondo-pais1280.jpg" ?>) no-repeat; background-size:cover ">
       <div class="row">
         <div class="col-md-6">
@@ -46,19 +47,6 @@ $query = get_posts( $args );
           <h1 class="title">
             <?php echo get_post_meta($post->ID, 'report_country_key', true) ?>
 
-            <script type="text/javascript">
-            jQuery(function() {
-              var $ = jQuery;
-              $('.open-select-countries').on('click', function(e) {
-                e.preventDefault();
-                console.log();
-                var se = $('#select-countries');
-                  se.show();
-                  se[0].size=2;
-              });
-            })
-
-            </script>
             <a href="#" class="open-select-countries">
 
               <svg width="47px" height="29px" viewBox="587 231 47 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -70,11 +58,6 @@ $query = get_posts( $args );
                   </g>
               </svg>
             </a>
-            <select name="" id="select-countries" style="display: none; width: 50%">
-            <?php foreach(getCountries() as $country): ?>
-              <option value=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?>"><?php echo $country ?></option>
-            <?php endforeach; ?>
-            </select>
           </h1>
         </div>
 

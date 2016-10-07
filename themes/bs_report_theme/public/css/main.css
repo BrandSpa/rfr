@@ -575,3 +575,37 @@ input {
   #download-report .button-special {
     margin: 0 auto 60px auto;
     width: 300px; }
+
+.select_country {
+  background: RGBA(24, 30, 35, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+  overflow: scroll; }
+  .select_country ul {
+    padding: 0; }
+    .select_country ul li {
+      transition: all 300ms ease;
+      height: 40px; }
+      .select_country ul li:hover {
+        background: RGBA(24, 30, 35, 1); }
+      .select_country ul li a {
+        display: block;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 1.3; }
+  .select_country__close {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+    display: block;
+    text-align: right;
+    color: #FC3938;
+    margin: 30px 60px; }
