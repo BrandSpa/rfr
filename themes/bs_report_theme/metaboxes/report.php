@@ -189,6 +189,12 @@ include_once __DIR__ . '/report/content.php';
     ));
 
     update_field(array(
+      'field_key' => 'report_religion_sup_key',
+      'field_name' => 'report_religion_sup',
+      'post_id' => $post_id
+    ));
+
+    update_field(array(
       'field_key' => 'report_religion_name_key',
       'field_name' => 'report_religion_name',
       'post_id' => $post_id
@@ -203,6 +209,12 @@ include_once __DIR__ . '/report/content.php';
     update_field(array(
       'field_key' => 'report_languages_key',
       'field_name' => 'report_languages',
+      'post_id' => $post_id
+    ));
+
+    update_field(array(
+      'field_key' => 'report_languages_sup_key',
+      'field_name' => 'report_languages_sup',
       'post_id' => $post_id
     ));
 

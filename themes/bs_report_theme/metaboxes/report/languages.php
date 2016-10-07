@@ -1,11 +1,19 @@
 <?php
   function report_Languages($post) {
     $report_languages = get_post_meta($post->ID, 'report_languages_key', true);
+    $report_languages_sup = get_post_meta($post->ID, 'report_languages_sup_key', true);
 
     ?>
     <div class="language-section">
-    <h3>Major languages</h3>
-    <hr>
+      <h3>Major languages</h3>
+      <hr>
+
+      <input
+      type="text"
+      placeholder="Major languages sup"
+      value="<?php echo $report_languages_sup ?>"
+      >
+
     <?php if(is_array($report_languages) && count($report_languages)): ?>
       <?php foreach ($report_languages as $key => $language): ?>
         <p>

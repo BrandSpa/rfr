@@ -4,6 +4,7 @@
 
   function report_religion_subcategories($post) {
     $report_religion = get_post_meta($post->ID, 'report_religion_key', true);
+    $report_religion_sup = get_post_meta($post->ID, 'report_religion_sup_key', true);
   ?>
   <style>
     div[class^="sub-"], div[class*=" sub-"] {
@@ -31,6 +32,11 @@
     >
     </religions-chart>
 
+    <input
+    type="text"
+    placeholder="religions sup"
+    value="<?php echo $report_religion_sup ?>"
+    >
 
   <?php foreach ($report_religion as $mainkey => $religion): ?>
     <div class="<?php echo 'main-' . $mainkey ?>">
