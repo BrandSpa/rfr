@@ -34,7 +34,7 @@ $query = get_posts( $args );
     <div class="report__header" style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg" ?>) no-repeat; background-size:cover ">
       <div class="row">
         <div class="col-md-6">
-          <a href="#map" class="report__header__back-map">BACK TO MAP</a>
+          <a href="#map" class="report__header__back-map"><?php echo gett('BACK TO MAP') ?></a>
 
           <div class="report__header__slider_year">
             <?php $year = get_post_meta($post->ID, 'report_year_key', true); ?>
@@ -83,7 +83,9 @@ $query = get_posts( $args );
                 <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
                 <?php if(get_post_meta($post->ID, 'report_nature_persecution_key', true)): ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/<?php echo get_post_meta($post->ID, 'report_nature_persecution_key', true) ?>.svg" alt="">
-                  <p><?php echo get_post_meta($post->ID, 'report_nature_persecution_key', true) ?></p>
+                  <p>
+                    <?php echo gett( get_post_meta($post->ID, 'report_nature_persecution_key', true) ) ?>
+                  </p>
               <?php else: ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
                 <p><?php echo gett('Stable') ?></p>
@@ -94,7 +96,9 @@ $query = get_posts( $args );
               <div class="col-md-6 report__header_pdf__item">
                 <h5 class="color-red pull-left"><?php echo gett('SITUATION') ?></h5>
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/<?php echo get_post_meta($post->ID, 'report_situation_key', true) ?>.svg" alt="">
-                <p><?php echo get_post_meta($post->ID, 'report_situation_key', true) ?></p>
+                <p>
+                  <?php echo gett(get_post_meta($post->ID, 'report_situation_key', true)) ?>
+                </p>
               </div>
 
           </div>

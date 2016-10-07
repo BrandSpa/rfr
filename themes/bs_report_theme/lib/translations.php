@@ -15,6 +15,7 @@
 
   function setTranslations() {
       registerStr('RELIGIOUS FREEDOM<br> IN THE WORLD');
+      registerStr('BACK TO MAP');
       registerStr('DOWNLOAD REPORT');
       registerStr('ABOUT US');
       registerStr('PRESS');
