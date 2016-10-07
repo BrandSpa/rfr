@@ -27,6 +27,15 @@
       registerStr('Political');
       registerStr('Major Languages');
       registerStr('"ACN es una fundación internacional dependiente del Vaticano nacida en 1.947 que desarrolla anualmente más de 6.000 proyectos pastorales en más de 140 países. Por medio de tres pilares - oración, información y soporte financiero - ACN ayuda a cristianos perseguidos, que sufren y pasan necesidad en el mundo."');
+      registerStr('Name');
+      registerStr('Email');
+      registerStr('Language');
+      registerStr('Download');
+      registerStr('Download');
+      registerStr('Executive Summary');
+      registerStr('Full Report');
+      registerStr('Full Report');
+
 
       foreach (getReligions() as $religion) {
         registerStr($religion, $group. '-religions', false);

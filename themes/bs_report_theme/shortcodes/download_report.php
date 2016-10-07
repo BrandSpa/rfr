@@ -59,21 +59,21 @@
     <div class="col-md-5">
       <form action="">
         <div class="input-container">
-          <label for="" class="color-red"><?php echo gett('name') ?></label>
+          <label for="" class="color-red"><?php echo gett('Name') ?></label>
           <input type="text">
         </div>
 
         <div class="input-container">
-          <label for="" class="color-red"><?php echo gett('email') ?></label>
+          <label for="" class="color-red"><?php echo gett('Email') ?></label>
           <input type="text">
         </div>
 
         <div class="input-container">
-          <label for="" class="color-red"><?php echo gett('language') ?></label>
+          <label for="" class="color-red"><?php echo gett('Language') ?></label>
           <input type="text">
         </div>
 
-        <button class="button title-uppercase">Download</button>
+        <button class="button title-uppercase"><?php echo gett('Download') ?></button>
       </form>
     </div>
     <div class="col-md-1"></div>
