@@ -11,6 +11,7 @@
       <input
       type="text"
       placeholder="Major languages sup"
+      name="report_languages_sup"
       value="<?php echo $report_languages_sup ?>"
       >
 

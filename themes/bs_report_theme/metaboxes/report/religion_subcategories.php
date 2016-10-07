@@ -33,9 +33,10 @@
     </religions-chart>
 
     <input
-    type="text"
-    placeholder="religions sup"
-    value="<?php echo $report_religion_sup ?>"
+      type="text"
+      placeholder="religions sup"
+      name="report_religion_sup"
+      value="<?php echo $report_religion_sup ?>"
     >
 
   <?php foreach ($report_religion as $mainkey => $religion): ?>

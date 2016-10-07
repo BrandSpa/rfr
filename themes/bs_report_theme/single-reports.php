@@ -138,7 +138,7 @@ $query = get_posts( $args );
             <div class="col-xs-6">
               <div class="report__icon-info">
               <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/major_languages.svg" alt="">
-                <h5 class="title-uppercase color-red"><?php echo gett('Major Languages') ?></h5>
+                <h5 class="title-uppercase color-red"><?php echo gett('Major Languages') ?> <sup><?php echo get_post_meta($post->ID, 'report_languages_sup_key', true) ?></sup></h5>
 
                 <?php
                   $report_languages = get_post_meta($post->ID, 'report_languages_key', true);
@@ -160,7 +160,7 @@ $query = get_posts( $args );
         </div>
 
         <div class="col-md-8">
-          <h5 class="title-uppercase color-red"><?php echo gett('Religions') ?><sup></sup></h5>
+          <h5 class="title-uppercase color-red" style="text-align: center"><?php echo gett('Religions') ?><sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup></h5>
           <religions-chart
             :religions='<?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>'
             :colors='<?php echo json_encode(getReligionsColors()) ?>'
