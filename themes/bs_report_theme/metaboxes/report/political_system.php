@@ -23,6 +23,7 @@ function report_political_system($post) {
     <input
       type="text"
       name="report_political_system_sup"
+      placeholder="Political System Sup"
       value="<?php echo $report_political_system_sup ?>"
       />
 

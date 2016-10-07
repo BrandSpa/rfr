@@ -81,6 +81,7 @@ $query = get_posts( $args );
 
               <div class="col-md-6 report__header_pdf__item">
                 <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
+
                 <?php if(get_post_meta($post->ID, 'report_nature_persecution_key', true)): ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/<?php echo get_post_meta($post->ID, 'report_nature_persecution_key', true) ?>.svg" alt="">
                   <p>
@@ -112,7 +113,8 @@ $query = get_posts( $args );
             <div class="col-xs-6">
               <div class="report__icon-info">
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/area.svg" alt="">
-                <h5 class="title-uppercase color-red"><?php echo gett('Area') ?></h5>
+                <h5 class="title-uppercase color-red"><?php echo gett('Area') ?><sup><?php echo get_post_meta($post->ID, 'report_area_sup_key', true) ?></sup></h5>
+
                 <p> <?php echo get_post_meta($post->ID, 'report_area_key', true) ?></p>
               </div>
             </div>
@@ -120,7 +122,7 @@ $query = get_posts( $args );
             <div class="col-xs-6">
               <div class="report__icon-info">
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/population.svg" alt="">
-                <h5 class="title-uppercase color-red"><?php echo gett('Population') ?></h5>
+                <h5 class="title-uppercase color-red"><?php echo gett('Population') ?> <sup><?php echo get_post_meta($post->ID, 'report_population_sup_key', true) ?></sup></h5>
                 <p> <?php echo get_post_meta($post->ID, 'report_population_key', true) ?></p>
               </div>
             </div>
@@ -128,7 +130,7 @@ $query = get_posts( $args );
             <div class="col-xs-6">
               <div class="report__icon-info">
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/political_system.svg" alt="">
-                  <h5 class="title-uppercase color-red"><?php echo gett('Political') ?></h5>
+                  <h5 class="title-uppercase color-red"><?php echo gett('Political') ?> <sup><?php echo get_post_meta($post->ID, 'report_political_system_sup_key', true) ?></sup></h5>
                 <p><?php echo get_post_meta($post->ID, 'report_political_system_key', true) ?></p>
               </div>
             </div>

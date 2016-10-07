@@ -14,7 +14,7 @@ function report_area($post) {
 
         <input
           type="text"
-          placeholder="Area"
+          placeholder="Area Sup"
           name="report_area_sup"
           value="<?php echo $report_area_sup ?>">
     </p>
