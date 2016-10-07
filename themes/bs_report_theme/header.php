@@ -20,7 +20,17 @@
 
 <div class="nav">
   <div class="nav__logo" style="height: 120px;background: #fff">
-    <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo.png" alt="acn logo">
+    <?php
+    $home = '/';
+      if(function_exists('pll_home_url')) {
+        $home = pll_home_url();
+      }
+     ?>
+     
+    <a href="<?php echo $home ?>">
+      <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo.png" alt="acn logo">
+    </a>
+
   </div>
 
   <h4 class="color-red nav__subtitle">
