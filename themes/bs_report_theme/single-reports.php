@@ -34,11 +34,11 @@
     >
 
       <div class="row">
-        <?php echo include 'templates/report/header_top.php' ?>
+        <?php include 'templates/report/header_top.php' ?>
       </div>
 
       <div class="row">
-        <?php echo include 'template/report/header_pdf.php' ?>
+        <?php include 'templates/report/header_pdf.php' ?>
       </div>
 
       <div class="row">
