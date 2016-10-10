@@ -28,7 +28,10 @@
 
 <?php include 'shortcodes/select_country.php' ?>
 
-    <div class="report__header" style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg" ?>) no-repeat; background-size:cover ">
+    <div
+      class="report__header" 
+      style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg" ?>) no-repeat; background-size:cover "
+    >
       <div class="row">
         <div class="col-md-6">
           <a href="#map" class="report__header__back-map"><?php echo gett('BACK TO MAP') ?></a>
@@ -46,15 +49,7 @@
             <?php echo get_post_meta($post->ID, 'report_country_key', true) ?>
 
             <a href="#" class="open-select-countries">
-
-              <svg width="47px" height="29px" viewBox="587 231 47 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Group-8-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(591.000000, 236.000000)" stroke-linecap="square">
-                      <g id="Group-7" transform="translate(0.000000, 0.279059)" stroke="#FC3938" stroke-width="6">
-                          <path d="M39.582907,9.4088894 L17.00223,9.4088894" id="Line-Copy-3" transform="translate(28.292568, 9.408889) rotate(-45.000000) translate(-28.292568, -9.408889) "></path>
-                          <path d="M20.8516408,7.5613294 L-1.72903621,7.5613294" id="Line-Copy-5" transform="translate(9.561302, 9.408889) scale(-1, 1) rotate(-45.000000) translate(-9.561302, -9.408889) "></path>
-                      </g>
-                  </g>
-              </svg>
+              <img src="<?php echo get_template_directory_uri() . '/public/img/icons/down.svg' ?>" alt="">
             </a>
           </h1>
         </div>
@@ -161,14 +156,17 @@
         </div>
 
         <div class="col-md-8">
+        
           <h5 class="title-uppercase color-red" style="text-align: center">
             <?php echo gett('Religions') ?> <sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup>
           </h5>
+
           <religions-chart
             :religions='<?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>'
             :colors='<?php echo json_encode(getReligionsColors()) ?>'
           >
           </religions-chart>
+
         </div>
       </div>
 
