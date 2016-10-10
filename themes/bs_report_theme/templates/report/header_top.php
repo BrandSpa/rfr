@@ -21,8 +21,11 @@
 </div>
 
 <div class="col-md-6">
+<?php $country_en = get_post_meta($post->ID, 'report_country_key', true) ?>
+
     <img
-      src="<?php echo get_template_directory_uri() . '/public/img/maps/' . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true)) . '.png'  ?>"
+      src="<?php echo get_template_directory_uri() . '/public/img/maps/' . str_replace(' ', '-',  $country_en) . '.png'  ?>"
       class="img-responsive report__header__map"
     >
+
 </div>
