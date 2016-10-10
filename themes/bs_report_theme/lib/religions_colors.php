@@ -21,6 +21,7 @@ function getReligionsColors() {
   $chicago = "#5D5D5D";
   $aluminum = "#9B9B9B";
   $desert_storm = "#F8F8F8";
+  $zumthor = "#CBD5DA";
 
   //reds
   $carnation_light = "#F6575F";
@@ -60,7 +61,7 @@ function getReligionsColors() {
       "Chinese Local Religions" => $desert_storm,
       "Sikhs"=> $fuel_yellow,
       "Neoreligionist" => $armadillo,
-      "Ethnoreligionist" => $desert_storm,
+      "Ethnoreligionist" => $zumthor,
 
       "Confucianist" => $red_orange,
       "Hindu" =>  $lava_medium,
