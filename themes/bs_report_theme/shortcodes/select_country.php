@@ -1,4 +1,4 @@
-<div class="select_country" style="display: none">
+<div class="select_country">
   <a href="#" class="select_country__close">Close</a>
   <ul>
   <?php foreach(getCountries() as $country): ?>
@@ -11,17 +11,23 @@
 
 <script>
   var $ = jQuery;
+
   $(function() {
+
+    $(document).on('keyup', function(e) {
+      if($('.select_country').hasClass('select_country-show')) {
+        $('.select_country').removeClass('select_country-show');
+      }
+    });
+
     $('.open-select-countries').on('click', function(e) {
       e.preventDefault();
-
-      $('.select_country').css({'display': 'block'});
-
+      $('.select_country').addClass('select_country-show');
     });
 
     $('.select_country__close').on('click', function(e) {
       e.preventDefault();
-      $('.select_country').css({'display': 'none'});
+      $('.select_country').removeClass('select_country-show');
     });
   })
 

@@ -160,7 +160,7 @@ $query = get_posts( $args );
         </div>
 
         <div class="col-md-8">
-          <h5 class="title-uppercase color-red" style="text-align: center"><?php echo gett('Religions') ?><sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup></h5>
+          <h5 class="title-uppercase color-red" style="text-align: center"><?php echo gett('Religions') ?> <sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup></h5>
           <religions-chart
             :religions='<?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>'
             :colors='<?php echo json_encode(getReligionsColors()) ?>'
