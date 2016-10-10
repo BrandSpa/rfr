@@ -60,7 +60,7 @@ function getReligionsColors() {
       "Taoists" => $aluminum,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
-      "Sikhs"=> $falu_red,
+      "Sikhs"=> $lava_medium,
       "Neoreligionist" => $armadillo,
       "Ethnoreligionist" => $zumthor,
 
