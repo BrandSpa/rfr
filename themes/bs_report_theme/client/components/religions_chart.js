@@ -10,8 +10,6 @@ export default function() {
     ready() {
       let religions = this.religions;
       let colors = this.colors;
-
-
       let seriesData = [];
       let subSeriesData = [];
 
@@ -27,8 +25,8 @@ export default function() {
 
       function getData(obj, key) {
         let religion = obj[key];
-        let color = colors[religion.name];
-        let newOb = createData(colors[religion.name], religion.name, religion.percent);
+        let color = religion.color;
+        let newOb = createData(religion.color, religion.name, religion.percent);
 
         if(religion.sub && Object.keys(religion.sub).length > 0) {
           subSeriesData = subSeriesData.concat(
