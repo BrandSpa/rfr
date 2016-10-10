@@ -15,7 +15,7 @@
   $(function() {
 
     $(document).on('keyup', function(e) {
-      if($('.select_country').hasClass('select_country-show')) {
+      if(e.keyCode === 27 && $('.select_country').hasClass('select_country-show')) {
         $('.select_country').removeClass('select_country-show');
       }
     });
