@@ -20,7 +20,6 @@ export default function() {
 
        // Do the injection
        SVGInjector(mySVGsToInject, {}, function() {
-         console.log(this.countriesTranslation);
 
          d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
 
@@ -45,8 +44,8 @@ export default function() {
            };
 
            let situ = pst.meta_situation ? pst.meta_situation : '';
-
-           d3.select(info).select('.map__info_country').text(this.getAttribute('id').replace('-', ' ') + situ);
+           let country_trans =  this.countriesTranslation[this.getAttribute('id').replace('-', ' ')];
+           d3.select(info).select('.map__info_country').text(country_trans + situ);
 
            mousePosition(null)
            .then(p => {
