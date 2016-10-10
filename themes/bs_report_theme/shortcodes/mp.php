@@ -4,7 +4,7 @@
 
 <map 
   :posts='<?php echo json_encode($posts); ?>' 
-  :countriesTranslation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'>
+  :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'>
 </map>
 
 
