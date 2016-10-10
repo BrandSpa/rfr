@@ -109,7 +109,7 @@
 
             <div class="col-xs-6">
               <div class="report__icon-info">
-                <span class="icon-area"></span>
+                <span class="icon-pdf"></span>
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/area.svg" alt="">
                 <h5 class="title-uppercase color-red"><?php echo gett('Area') ?><sup><?php echo get_post_meta($post->ID, 'report_area_sup_key', true) ?></sup></h5>
 
