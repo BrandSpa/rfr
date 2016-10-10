@@ -27,6 +27,8 @@ function getReligionsColors() {
   $deep_carmine_pink = "#EE3934";
   $lava_medium = "#CC0B25";
   $fire_engine = "#CC2027";
+  $tamarillo = "#9F121F";
+  $geraldine = "#F6898F";
 
   //yellow
   $saffron = "#FDBC2C";
@@ -53,7 +55,6 @@ function getReligionsColors() {
       "Spiritualists" => $cello,
       "Shintoists" => $gumbo,
 
-
       "Taoists" => $aluminum,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
@@ -63,7 +64,7 @@ function getReligionsColors() {
       "Confucianist" => $red_orange,
       "Hindu" =>  $lava_medium,
       "Jewish" => $carnation_light,
-      "Buddhists" => $lava_medium,
+      "Buddhists" => $tamarillo,
 
       "Other"  => $buttercup,
     );
