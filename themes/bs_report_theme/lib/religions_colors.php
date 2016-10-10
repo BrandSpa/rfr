@@ -2,7 +2,7 @@
 
 function getReligionsColors() {
   //blues
-
+  $blue1 ="#11486E";
   //greys
 
   //reds
@@ -42,7 +42,7 @@ function getReligionsColors() {
       "Caodaists" => $cello,
       "Ethnoreligionist" => $dark_electric_blue,
       "No religion" => $rollig_stone,
-      "Christian" => $red1,
+      "Christian" => $blue1,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
       "Confucianist" => $red_orange,
