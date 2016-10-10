@@ -19,42 +19,46 @@ export default function() {
       var mySVGsToInject = document.querySelectorAll('img.inject-me');
 
        // Do the injection
-       SVGInjector(mySVGsToInject);
+       SVGInjector(mySVGsToInject, {}, function() {
 
-      d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
-        var _this = this;
-        d3.select(_this).style("fill", "").style("webkit-box-shadow", "10px 5px 5px #fff");
-        info.style.opacity = 0;
-      });
+         d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
+           var _this = this;
+           d3.select(_this).style("fill", "").style("webkit-box-shadow", "10px 5px 5px #fff");
+           info.style.opacity = 0;
+         });
 
-      let gs = d3.select(".map svg #map-g").selectAll("g");
+         let gs = d3.select(".map svg #map-g").selectAll("g");
 
-      gs.on('click', function() {
-        window.location = '/report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
-      });
+         gs.on('click', function() {
+           window.location = '/report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
+         });
 
-      gs.on('mousemove', function() {
-        let pst = instance.posts.filter(post => post.meta_country == this.getAttribute('id') );
-        let situations = {
-          '#FF362F': 'Persecution',
-          '#FF362F': 'Persecution',
-        };
+         gs.on('mousemove', function() {
+           let pst = instance.posts.filter(post => post.meta_country == this.getAttribute('id') );
+           let situations = {
+             '#FF362F': 'Persecution',
+             '#FF362F': 'Persecution',
+           };
 
-        let situ = pst.meta_situation ? pst.meta_situation : '';
+           let situ = pst.meta_situation ? pst.meta_situation : '';
 
-        d3.select(info).select('.map__info_country').text(this.getAttribute('id') + situ);
+           d3.select(info).select('.map__info_country').text(this.getAttribute('id') + situ);
 
-        mousePosition(null)
-        .then(p => {
-          info.style.opacity = 1;
-          info.style.top = (p.top - 60) + 'px';
-          info.style.left = (p.left - 300) + 'px';
-        });
+           mousePosition(null)
+           .then(p => {
+             info.style.opacity = 1;
+             info.style.top = (p.top - 60) + 'px';
+             info.style.left = (p.left - 300) + 'px';
+           });
 
-        d3.select(this).style("transition", "all 300ms ease");
-        d3.select(this).style("fill", "#536D7F");
+           d3.select(this).style("transition", "all 300ms ease");
+           d3.select(this).style("fill", "#536D7F");
 
-      });
+         });
+
+       });
+
+
 
     },
 
