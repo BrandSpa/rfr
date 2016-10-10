@@ -1,4 +1,5 @@
 <?php require 'render-pdf.php'; ?>
+
 <?php get_header() ?>
 
 <div class="report">
@@ -26,65 +27,28 @@
   $posts = array_map('addMetaToPost', $query);
 ?>
 
-<?php include 'shortcodes/select_country.php' ?>
+  <?php include 'shortcodes/select_country.php' ?>
 
-    <div
-      class="report__header"
-      style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg" ?>) no-repeat; background-size:cover "
-    >
+  <div class="report__header" 
+    style="background: url(<?php echo get_template_directory_uri() ." /public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg " ?>) no-repeat; background-size:cover ">
 
-      <div class="row">
-        <?php include 'templates/report/header_top.php' ?>
-      </div>
-
-      <div class="row">
-        <?php include 'templates/report/header_pdf.php' ?>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <?php include 'templates/report/info.php' ?>
-        </div>
-
-        <div class="col-md-8">
-
-          <h5 class="title-uppercase color-red" style="text-align: center">
-            <?php echo gett('Religions') ?> <sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup>
-          </h5>
-
-          <religions-chart
-            :religions='<?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>'
-            :colors='<?php echo json_encode(getReligionsColors()) ?>'
-          >
-          </religions-chart>
-
-        </div>
-      </div>
-
+    <div class="row">
+      <?php include 'templates/report/header_top.php' ?>
     </div>
 
-    <div class="report__content">
-    <?php if(is_array(get_post_meta($post->ID, 'report_content_key', true))): ?>
-      <?php foreach (get_post_meta($post->ID, 'report_content_key', true) as $key => $content): ?>
-        <?php if( !empty($content['title']) ): ?>
-        <div class="report__content-header" style="background: url(<?php echo get_template_directory_uri() . '/public/img/bg_report_content_1.jpg' ?>) no-repeat;background-size:cover">
-
-          <h1 class="title-line title-uppercase"><?php echo $content['title'] ?></h1>
-
-        </div>
-        <?php endif; ?>
-        <?php if( !empty($content['text']) ): ?>
-        <div class="report__content-content">
-
-          <p>
-            <?php echo $content['text'] ?>
-          </p>
-
-        </div>
-        <?php endif; ?>
-      <?php endforeach; ?>
-      <?php endif; ?>
+    <div class="row">
+      <?php include 'templates/report/header_pdf.php' ?>
     </div>
+
+    <div class="row">
+      <?php include 'templates/report/header_info.php' ?>
+    </div>
+
+  </div>
+
+  <div class="report__content">
+    <?php include 'templates/report/content.php' ?>
+  </div>
 
   <?php endwhile; ?>
 

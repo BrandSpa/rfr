@@ -1,7 +1,7 @@
 <?php
 use Dompdf\Dompdf;
 
-if($_GET['pdf']) {
+if($_GET['pdf']):
   $dompdf = new Dompdf();
   ob_start();
 ?>
@@ -10,94 +10,94 @@ if($_GET['pdf']) {
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title></title>
+
+  <title>Report PDF</title>
 
   <style type="text/css">
-  /* latin */
-@font-face {
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: 400;
-src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url( get_template_directory() . '/public/fonts/RobotoCondensed-Regular') format('ttf');
-unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
+    @font-face {
+      font-family: 'Roboto Condensed';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(get_template_directory() . '/public/fonts/RobotoCondensed-Regular') format('ttf');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+    
     body {
       font-family: 'Roboto Condensed', sans-serif;
       color: #1A2127;
     }
-
+    
     p {
       font-size: 13px;
     }
-
+    
     span {
       font-size: 13px;
     }
-
+    
     h5 {
       font-family: 'Roboto Condensed', sans-serif;
       color: #FC3938;
       margin: 5px 0;
       font-size: 13px;
     }
-
+    
     .country {
       border-top: 1px solid #536D7F;
       border-bottom: 1px solid #536D7F;
       height: 80px;
     }
-
+    
     .country h1 {
       font-family: 'Roboto Condensed', sans-serif;
       margin: 10px;
       font-weight: 700;
     }
-
+    
     .map {
       padding: 40px 60px;
       border-bottom: 1px solid #536D7F;
     }
-
+    
     .info {
       border-bottom: 1px solid #536D7F;
       height: 250px;
       padding-top: 10px;
     }
-
+    
     .content {
       margin-top: 20px;
     }
-
+    
     .content h5 {
       margin-bottom: 10px;
     }
-
+    
     .col-6 {
       width: 50%;
       display: inline-block;
     }
-
+    
     .col-5 {
       width: 40%;
       display: inline-block;
     }
-
+    
     .col-6 {
       width: 50%;
       display: inline-block;
     }
-
+    
     .col-7 {
       width: 60%;
       display: inline-block;
     }
-
+    
     .col-3 {
       width: 33.3%;
       display: inline-block;
     }
-
+    
     .col-12 {
       width: 100%;
     }
@@ -214,5 +214,6 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-
 
   // Output the generated PDF to Browser
   return $dompdf->stream('report', array("Attachment" => false));
-}
- ?>
+
+endif;
+?>
