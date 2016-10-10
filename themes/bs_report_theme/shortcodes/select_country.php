@@ -1,12 +1,12 @@
 <div class="select_country">
   <a href="#" class="select_country__close">Close</a>
   <ul>
-  <?php foreach(getCountries() as $country): ?>
-    <li>
-      <a href=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?>"><?php echo $country ?></a>
-    </li>
-  <?php endforeach; ?>
-</ul>
+    <?php foreach(trans_list(getCountries()) as $country): ?>
+      <li>
+        <a href=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?>"><?php echo $country ?></a>
+      </li>
+    <?php endforeach; ?>
+  </ul>
 </div>
 
 <script>
