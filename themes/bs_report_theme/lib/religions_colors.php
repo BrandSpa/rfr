@@ -2,8 +2,8 @@
 
 function getReligionsColors() {
   //blues
-  $seagul_light = "#83B6D8";
-  $seagul_medium = "#4E6C7E";
+  $seagul_light = "#1D272C";
+  $seagul_medium = "#384B56";
   $midnight_darker = "#243138";
 
   //greys
