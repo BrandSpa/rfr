@@ -47,7 +47,6 @@ function getReligionsColors() {
       "Atheist" => $seagul_dark,
       "Baha’i" => $outer_space,
       "Caodaists" => $cello,
-      "Ethnoreligionist" => $dark_electric_blue,
       "No religion" => $rollig_stone,
       "Christian" => $midnight_darker,
 
@@ -59,8 +58,9 @@ function getReligionsColors() {
       "Taoists" => $aluminum,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
-      "Sikhs"=> $chicago,
+      "Sikhs"=> $fuel_yellow,
       "Neoreligionist" => $armadillo,
+      "Ethnoreligionist" => $desert_storm,
 
       "Confucianist" => $red_orange,
       "Hindu" =>  $lava_medium,
