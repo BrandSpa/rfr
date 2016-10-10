@@ -3,31 +3,28 @@
 
 <div class="report">
 
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+ <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <?php
+<?php
 
-    // WP_Query arguments
-$args = array(
+  $args = array(
     'meta_key'       => 'report_year_key',
     'meta_value'     => '2016',
     'post_type'        => 'reports',
     'numberposts' => -1
   );
 
-// The Query
-$query = get_posts( $args );
+  $query = get_posts( $args );
 
-    function addMeta($obj) {
-      $obj->meta_year = get_post_meta($obj->ID, 'report_year_key', true);
-      $obj->meta_country = get_post_meta($obj->ID, 'report_country_key', true);
-      $obj->meta_situation = get_post_meta($obj->ID, 'report_situation_key', true);
-      return $obj;
-    }
+  function addMetaToPost($obj) {
+    $obj->meta_year = get_post_meta($obj->ID, 'report_year_key', true);
+    $obj->meta_country = get_post_meta($obj->ID, 'report_country_key', true);
+    $obj->meta_situation = get_post_meta($obj->ID, 'report_situation_key', true);
+    return $obj;
+  }
 
-    $posts = array_map('addMeta', $query);
-
-     ?>
+  $posts = array_map('addMetaToPost', $query);
+?>
 
 <?php include 'shortcodes/select_country.php' ?>
 
@@ -112,6 +109,7 @@ $query = get_posts( $args );
 
             <div class="col-xs-6">
               <div class="report__icon-info">
+              
                 <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/area.svg" alt="">
                 <h5 class="title-uppercase color-red"><?php echo gett('Area') ?><sup><?php echo get_post_meta($post->ID, 'report_area_sup_key', true) ?></sup></h5>
 
@@ -160,7 +158,9 @@ $query = get_posts( $args );
         </div>
 
         <div class="col-md-8">
-          <h5 class="title-uppercase color-red" style="text-align: center"><?php echo gett('Religions') ?> <sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup></h5>
+          <h5 class="title-uppercase color-red" style="text-align: center">
+            <?php echo gett('Religions') ?> <sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup>
+          </h5>
           <religions-chart
             :religions='<?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>'
             :colors='<?php echo json_encode(getReligionsColors()) ?>'
