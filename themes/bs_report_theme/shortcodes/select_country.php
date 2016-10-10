@@ -1,5 +1,5 @@
 <div class="select_country">
-  <a href="#" class="select_country__close">Close</a>
+  <a href="#" class="select_country__close">X</a>
   <ul>
     <?php foreach(trans_list(getCountries()) as $country): ?>
       <li>
