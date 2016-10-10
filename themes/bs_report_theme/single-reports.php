@@ -114,7 +114,7 @@
 
             <div class="col-xs-6">
               <div class="report__icon-info">
-                <span class="icon-population" style="font-size: 51px"></span>
+                <span class="icon-population" style="font-size: 73px"></span>
 
                 <h5 class="title-uppercase color-red">
                   <?php echo gett('Population') ?> <sup><?php echo get_post_meta($post->ID, 'report_population_sup_key', true) ?></sup>
@@ -125,7 +125,7 @@
 
             <div class="col-xs-6">
               <div class="report__icon-info">
-                <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/political_system.svg" alt="">
+                <span class="icon-political_system" style="font-size: 59px"></span>
                   <h5 class="title-uppercase color-red"><?php echo gett('Political') ?> <sup><?php echo get_post_meta($post->ID, 'report_political_system_sup_key', true) ?></sup></h5>
                 <p><?php echo get_post_meta($post->ID, 'report_political_system_key', true) ?></p>
               </div>
