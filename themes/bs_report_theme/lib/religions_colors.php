@@ -1,6 +1,12 @@
 <?php
 
 function getReligionsColors() {
+  //blues
+
+  //greys
+
+  //reds
+  $red1 = "#A81822";
 
   //main colors
   $deep_carmine_pink = "#EE3934";
@@ -36,7 +42,7 @@ function getReligionsColors() {
       "Caodaists" => $cello,
       "Ethnoreligionist" => $dark_electric_blue,
       "No religion" => $rollig_stone,
-      "Christian" => $deep_carmine_pink,
+      "Christian" => $red1,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
       "Confucianist" => $red_orange,
