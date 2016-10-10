@@ -64,7 +64,7 @@ function getReligionsColors() {
       "Ethnoreligionist" => $zumthor,
 
       "Confucianist" => $red_orange,
-      "Hindu" =>  $lava_medium,
+      "Hindu" =>  $chicago,
       "Jewish" => $carnation_light,
       "Buddhists" => $falu_red,
 
