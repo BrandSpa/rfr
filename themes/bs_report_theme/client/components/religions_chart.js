@@ -51,7 +51,10 @@ export default function() {
     $('#religions-chart').highcharts({
         chart: {
             type: 'pie',
-            backgroundColor:'rgba(255, 255, 255, 0)'
+            backgroundColor:'rgba(255, 255, 255, 0)',
+            style: {
+                fontFamily: 'Roboto Condensed'
+            }
         },
         title: {
             text: ''
