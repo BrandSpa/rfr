@@ -1,65 +1,71 @@
 <?php
 
 function getReligionsColors() {
+
   //blues
-  $seagul_light = "#8197A4";
-  $seagul_medium = "#384B56";
-  $midnight_darker = "#1D272C";
+  $seagul_light = "#7F95A0";
+  $seagul_medium = "#4F6470";
+  $seagul_dark = "#31414B";
+  $midnight_darker = "#1A252C";
 
-  //greys
-
-  //reds
-  $carnation_light = "#F6575F";
-  $lava_medium = "#CC0B25";
-
-  //main colors
-  $deep_carmine_pink = "#EE3934";
-  $saffron = "#FDBC2C";
+  $outer_space = "#2B3740";
+  $rollig_stone = "#747E86";
   $elephant = "#293640";
 
-  //second
-  $buttercup = "#D88E27";
-  $fire_engine = "#CC2027";
   $dark_electric_blue = "#536D7F";
   $gumbo = '#7699B2';
-  $cream_can = '#F9C968';
-
-  $red_orange = "#FC3938";
-  $dull_red = "#C03B3B";
   $dark_jungle_green = "#1A2127";
-  $outer_space  = "#2B3740";
-  $cello  = "#7699B2";
 
-  $fuel_yellow = '#F3A82D';
-
-  $rollig_stone = "#747E86";
+  //greys
   $armadillo = "#4A4A4A";
   $chicago = "#5D5D5D";
   $aluminum = "#9B9B9B";
   $desert_storm = "#F8F8F8";
 
+  //reds
+  $carnation_light = "#F6575F";
+  $deep_carmine_pink = "#EE3934";
+  $lava_medium = "#CC0B25";
+  $fire_engine = "#CC2027";
+
+  //yellow
+  $saffron = "#FDBC2C";
+  $cream_can = '#F9C968';
+  $fuel_yellow = '#F3A82D';
+
+  //second
+  $buttercup = "#D88E27";
+  $red_orange = "#FC3938";
+  $dull_red = "#C03B3B";
+  $cello  = "#7699B2";
+
     return array(
       "Agnostic" => $gumbo,
-      "Atheist" => $dull_red,
-      "Buddhists" => $midnight_darker,
+      "Atheist" => $seagul_dark,
       "Baha’i" => $outer_space,
       "Caodaists" => $cello,
       "Ethnoreligionist" => $dark_electric_blue,
       "No religion" => $rollig_stone,
       "Christian" => $midnight_darker,
-      "Chinese Universalist" => $aluminum,
-      "Chinese Local Religions" => $desert_storm,
-      "Confucianist" => $red_orange,
-      "Hindu" =>  $lava_medium,
-      "Jewish" => $carnation_light,
+
       "Muslim" => $seagul_medium,
       "Spiritists" => $cello,
       "Spiritualists" => $cello,
       "Shintoists" => $gumbo,
-      "Other"  => $buttercup,
+
+
+      "Taoists" => $aluminum,
+      "Chinese Universalist" => $aluminum,
+      "Chinese Local Religions" => $desert_storm,
       "Sikhs"=> $chicago,
       "Neoreligionist" => $armadillo,
-      "Taoists" => $aluminum
+
+      "Confucianist" => $red_orange,
+      "Hindu" =>  $lava_medium,
+      "Jewish" => $carnation_light,
+      "Buddhists" => $lava_medium,
+
+      "Other"  => $buttercup,
     );
 }
 
