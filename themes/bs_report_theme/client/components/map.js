@@ -43,6 +43,8 @@ export default function() {
              '#FF362F': 'Persecution',
            };
 
+           console.log('translations', comp.countriesTranslation);
+           
            let situ = pst.meta_situation ? pst.meta_situation : '';
            let country_trans =  comp.countriesTranslation[this.getAttribute('id').replace('-', ' ')];
 
