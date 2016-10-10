@@ -22,7 +22,9 @@ export default function() {
        SVGInjector(mySVGsToInject, {}, function() {
 
          d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
+
            var _this = this;
+           
            d3.select(_this).style("fill", "").style("webkit-box-shadow", "10px 5px 5px #fff");
            info.style.opacity = 0;
          });
@@ -35,6 +37,7 @@ export default function() {
 
          gs.on('mousemove', function() {
            let pst = instance.posts.filter(post => post.meta_country == this.getAttribute('id') );
+
            let situations = {
              '#FF362F': 'Persecution',
              '#FF362F': 'Persecution',
@@ -42,7 +45,7 @@ export default function() {
 
            let situ = pst.meta_situation ? pst.meta_situation : '';
 
-           d3.select(info).select('.map__info_country').text(this.getAttribute('id') + situ);
+           d3.select(info).select('.map__info_country').text(this.getAttribute('id').replace('-', ' ') + situ);
 
            mousePosition(null)
            .then(p => {
