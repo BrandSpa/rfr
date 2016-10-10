@@ -16,7 +16,7 @@ export default function() {
 
       function createData(color, name, y, brighten) {
         let newOb = {};
-        let nColor = brighten ? Highcharts.Color(color).brighten(0.3).get() : Highcharts.Color(color).get();
+        let nColor = brighten ? Highcharts.Color(color).brighten(0.2).get() : Highcharts.Color(color).get();
 
         newOb['color'] = nColor;
         newOb['name'] = name;
