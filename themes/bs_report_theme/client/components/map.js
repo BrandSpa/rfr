@@ -20,6 +20,7 @@ export default function() {
 
        // Do the injection
        SVGInjector(mySVGsToInject, {}, function() {
+         console.log(this.countriesTranslation);
 
          d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
 

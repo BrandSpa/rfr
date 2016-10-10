@@ -2,12 +2,10 @@
   $map_svg_url = get_template_directory_uri() . '/public/img/map.svg';
 ?>
 
-<script>
-  console.log(<?php echo json_encode( array_combine(getCountries(), trans_list(getCountries()) ) ) ?>);
-</script>
-
-
-<map :posts='<?php echo json_encode($posts); ?>'></map>
+<map 
+  :posts='<?php echo json_encode($posts); ?>' 
+  :countriesTranslation='<?php echo json_encode( array_combine(getCountries(), trans_list(getCountries()) ) ) ?>'>
+</map>
 
 <template id="map-template">
   <div class="map__info">
