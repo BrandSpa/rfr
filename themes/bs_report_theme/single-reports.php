@@ -133,8 +133,8 @@
 
             <div class="col-xs-6">
               <div class="report__icon-info">
-              <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/major_languages.svg" alt="">
-              <span class="icon-search" style="font-size: 50px"></span>
+
+              <span class="icon-major_languages" style="font-size: 52px"></span>
                 <h5 class="title-uppercase color-red"><?php echo gett('Major Languages') ?> <sup><?php echo get_post_meta($post->ID, 'report_languages_sup_key', true) ?></sup></h5>
 
                 <?php
