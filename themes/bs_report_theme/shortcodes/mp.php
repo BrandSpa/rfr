@@ -4,8 +4,10 @@
 
 <map 
   :posts='<?php echo json_encode($posts); ?>' 
-  :countriesTranslation='<?php echo json_encode( array_combine(getCountries(), trans_list(getCountries()) ) ) ?>'>
+  :countriesTranslation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'>
 </map>
+
+
 
 <template id="map-template">
   <div class="map__info">

@@ -6,7 +6,7 @@ export default function() {
 
   Vue.component('map', {
     template: '#map-template',
-    props: ['posts', 'items'],
+    props: ['posts', 'items', 'countriesTranslation'],
     data: {
       country: ''
     },
