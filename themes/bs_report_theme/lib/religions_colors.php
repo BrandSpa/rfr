@@ -2,7 +2,7 @@
 
 function getReligionsColors() {
   //blues
-  $blue1 ="#11486E";
+  $blue1 ="#0B75AF";
   //greys
 
   //reds
