@@ -31,6 +31,7 @@ function getReligionsColors() {
   $tamarillo = "#9F121F";
   $geraldine = "#F6898F";
   $falu_red = "#7A1120";
+  $dark_sienna = "#421314";
 
   //yellow
   $saffron = "#FDBC2C";
@@ -64,7 +65,7 @@ function getReligionsColors() {
       "Ethnoreligionist" => $zumthor,
 
       "Confucianist" => $red_orange,
-      "Hindu" =>  $chicago,
+      "Hindu" =>  $dark_sienna,
       "Jewish" => $carnation_light,
       "Buddhists" => $falu_red,
 
