@@ -44,7 +44,8 @@ export default function() {
            };
 
            let situ = pst.meta_situation ? pst.meta_situation : '';
-           let country_trans =  this.countriesTranslation[this.getAttribute('id').replace('-', ' ')];
+           let country_trans =  comp.countriesTranslation[this.getAttribute('id').replace('-', ' ')];
+
            d3.select(info).select('.map__info_country').text(country_trans + situ);
 
            mousePosition(null)
