@@ -4,7 +4,7 @@
       <div class="report__icon-info">
         <span class="icon-political_system" style="font-size: 59px"></span>
         <h5 class="title-uppercase color-red">
-          <?php echo gett('Political') ?> <sup><?php echo get_post_meta($post->ID, 'report_political_system_sup_key', true) ?></sup>
+          <?php echo gett('Political') ?> <sup><?php echo gett(get_post_meta($post->ID, 'report_political_system_sup_key', true)) ?></sup>
         </h5>
         <p>
           <?php echo get_post_meta($post->ID, 'report_political_system_key', true) ?>
