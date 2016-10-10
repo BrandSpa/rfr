@@ -109,7 +109,7 @@
 
             <div class="col-xs-6">
               <div class="report__icon-info">
-                <span class="icon-area" stlyle="font-size: 51px"></span>
+                <span class="icon-area" style="font-size: 51px"></span>
                 <h5 class="title-uppercase color-red">
                   <?php echo gett('Area') ?><sup><?php echo get_post_meta($post->ID, 'report_area_sup_key', true) ?></sup>
                 </h5>
