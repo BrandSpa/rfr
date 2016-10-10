@@ -21,7 +21,7 @@ function getReligionsColors() {
   $chicago = "#5D5D5D";
   $aluminum = "#9B9B9B";
   $desert_storm = "#F8F8F8";
-  $zumthor = "#CBD5DA";
+  $zumthor = "#B9C5CD";
 
   //reds
   $carnation_light = "#F6575F";
