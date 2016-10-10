@@ -27,7 +27,7 @@
 
 
     <religions-chart
-      :religions='<?php echo json_encode($report_religion) ?>'
+      :religions='<?php echo json_encode(getArrayTranslated($report_religion))  ?>'
       :colors='<?php echo json_encode(getReligionsColors()) ?>'
     >
     </religions-chart>
