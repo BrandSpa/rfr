@@ -89,14 +89,13 @@ exports.default = function () {
         ready: function ready() {
             var religions = this.religions;
             var colors = this.colors;
-            console.log(this);
-
             var seriesData = [];
             var subSeriesData = [];
+            console.log(religions);
 
             function createData(color, name, y, brighten) {
                 var newOb = {};
-                var nColor = brighten ? Highcharts.Color(color).brighten(0.3).get() : Highcharts.Color(color).get();
+                var nColor = brighten ? Highcharts.Color(color).brighten(0.2).get() : Highcharts.Color(color).get();
 
                 newOb['color'] = nColor;
                 newOb['name'] = name;
@@ -106,8 +105,8 @@ exports.default = function () {
 
             function getData(obj, key) {
                 var religion = obj[key];
-                var color = colors[religion.name];
-                var newOb = createData(colors[religion.name], religion.name, religion.percent);
+                var color = religion.color;
+                var newOb = createData(religion.color, religion.name, religion.percent);
 
                 if (religion.sub && Object.keys(religion.sub).length > 0) {
                     subSeriesData = subSeriesData.concat(Object.keys(religion.sub).map(function (key) {
@@ -128,7 +127,10 @@ exports.default = function () {
             $('#religions-chart').highcharts({
                 chart: {
                     type: 'pie',
-                    backgroundColor: 'rgba(255, 255, 255, 0)'
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
+                    style: {
+                        fontFamily: 'Roboto Condensed'
+                    }
                 },
                 title: {
                     text: ''
