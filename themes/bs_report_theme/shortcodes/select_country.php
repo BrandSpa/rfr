@@ -3,7 +3,7 @@
   <ul>
     <?php foreach(trans_list(getCountries()) as $country): ?>
       <li>
-        <a href=" /report/<?php echo strtolower(str_replace(' ', '-', $country)) ?>"><?php echo $country ?></a>
+        <a href=" /report/<?php echo remove_accents( strtolower(str_replace(' ', '-', $country)) )?>"><?php echo $country ?></a>
       </li>
     <?php endforeach; ?>
   </ul>
