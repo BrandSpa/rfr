@@ -2,11 +2,15 @@
 
 function getReligionsColors() {
   //blues
-  $charcoal ="#354753";
+  $seagul_light = "#83B6D8";
+  $seagul_medium = "#4E6C7E";
+  $midnight_darker = "#243138";
+
   //greys
 
   //reds
-  $red1 = "#A81822";
+  $carnation_light = "#F6575F";
+  $lava_medium = "#CC0B25";
 
   //main colors
   $deep_carmine_pink = "#EE3934";
@@ -37,18 +41,18 @@ function getReligionsColors() {
     return array(
       "Agnostic" => $gumbo,
       "Atheist" => $dull_red,
-      "Buddhists" => $elephant,
+      "Buddhists" => $midnight_darker,
       "Baha’i" => $outer_space,
       "Caodaists" => $cello,
       "Ethnoreligionist" => $dark_electric_blue,
       "No religion" => $rollig_stone,
-      "Christian" => $charcoal,
+      "Christian" => $seagul_light,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
       "Confucianist" => $red_orange,
-      "Hindu" =>  $cello,
-      "Jewish" => $fire_engine,
-      "Muslim" => $rollig_stone,
+      "Hindu" =>  $lava_medium,
+      "Jewish" => $carnation_light,
+      "Muslim" => $seagul_medium,
       "Spiritists" => $cello,
       "Spiritualists" => $cello,
       "Shintoists" => $gumbo,
