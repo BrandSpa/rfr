@@ -4,7 +4,6 @@ function getReligionsColors() {
   //blues
   $seagul_light = "#8197A4";
   $seagul_medium = "#384B56";
-  $seagul_regular = "#1F4359";
   $midnight_darker = "#1D272C";
 
   //greys
@@ -47,7 +46,7 @@ function getReligionsColors() {
       "Caodaists" => $cello,
       "Ethnoreligionist" => $dark_electric_blue,
       "No religion" => $rollig_stone,
-      "Christian" => $seagul_regular,
+      "Christian" => $midnight_darker,
       "Chinese Universalist" => $aluminum,
       "Chinese Local Religions" => $desert_storm,
       "Confucianist" => $red_orange,
