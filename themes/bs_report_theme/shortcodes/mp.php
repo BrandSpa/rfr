@@ -1,5 +1,5 @@
 <?php
-  $map_svg_url = get_template_directory() . '/public/img/map.svg';
+  $map_svg_url = get_template_directory_uri() . '/public/img/map.svg';
 ?>
 
 
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-  <?php echo file_get_contents($map_svg_url); ?>
+    <img class="inject-me" src="<?php echo $map_svg_url ?>">
 
   <div class="col-md-6 map_list">
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>

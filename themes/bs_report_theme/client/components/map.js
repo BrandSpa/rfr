@@ -1,5 +1,6 @@
 'use strict';
 import mousePosition from '../lib/get_mouse_position';
+import SVGInjector from 'svg-injector';
 
 export default function() {
 
@@ -14,6 +15,11 @@ export default function() {
       let comp = this;
       let info = document.querySelector('.map__info');
       var instance = this;
+
+      var mySVGsToInject = document.querySelectorAll('img.inject-me');
+
+       // Do the injection
+       SVGInjector(mySVGsToInject);
 
       d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
         var _this = this;
