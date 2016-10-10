@@ -27,7 +27,7 @@
         <?php if(is_array($report_languages)):  ?>
           <?php foreach ($report_languages as $key => $language): ?>
           <?php
-            echo $language;
+            echo gett($language);
             if(($languages_count - 1) != $key): echo ', '; endif;
           ?>
           <?php  endforeach; ?>
