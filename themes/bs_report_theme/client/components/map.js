@@ -12,11 +12,10 @@ export default function() {
     },
 
     ready() {
-      let comp = this;
       let info = document.querySelector('.map__info');
       var instance = this;
 
-      console.log('translations', comp.countriesTranslation);
+      console.log('translations', instance.countriesTranslation);
 
       var mySVGsToInject = document.querySelectorAll('img.inject-me');
 
@@ -48,7 +47,7 @@ export default function() {
            
 
            let situ = pst.meta_situation ? pst.meta_situation : '';
-           let country_trans =  comp.countriesTranslation[this.getAttribute('id').replace('-', ' ')];
+           let country_trans =  instance.countriesTranslation[this.getAttribute('id').replace('-', ' ')];
 
            d3.select(info).select('.map__info_country').text(country_trans + situ);
 
