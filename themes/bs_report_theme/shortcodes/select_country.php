@@ -1,9 +1,9 @@
 <div class="select_country">
-  <a href="#" class="select_country__close">X <?php echo pll_current_language(); ?></a>
+  <a href="#" class="select_country__close">X </a>
   <ul>
     <?php foreach(trans_list(getCountries()) as $country): ?>
       <li>
-        <a href=" /report/<?php echo  strtolower( str_replace(' ', '-', remove_accents($country)) )?>"><?php echo $country ?></a>
+        <a href="/<?php echo if(function_exists('pll_current_language')): pll_current_language(); endif; ?>/report/<?php echo  strtolower( str_replace(' ', '-', remove_accents($country)) )?>"><?php echo $country ?></a>
       </li>
     <?php endforeach; ?>
   </ul>
