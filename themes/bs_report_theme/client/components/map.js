@@ -76,16 +76,6 @@ export default function () {
 
         polygons.each(function(pol) {
           convertPolyToPath(this);
-          let el = d3.select(this);
-          el.on('mousemove', evt => {
-            showInfo(info);
-            setStyle(el);
-          });
-
-          el.on('mouseleave', evt => {
-            setStyleOut(el);
-            info.style.opacity = 0;
-          });
         });
 
         paths.each(function(pol) {
