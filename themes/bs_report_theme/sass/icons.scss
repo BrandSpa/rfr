@@ -9,6 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 [class*='icon-']:before{
 	display: inline-block;
    font-family: 'Glyphter';
@@ -18,7 +19,11 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale
 }
+
 .icon-area:before{content:'\0041';}
+
 .icon-population:before{content:'\0042';}
+
 .icon-political_system:before{content:'\0043';}
+
 .icon-major_languages:before{content:'\0044';}
