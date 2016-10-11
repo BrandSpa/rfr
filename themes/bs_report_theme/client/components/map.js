@@ -19,7 +19,7 @@ export default function() {
       var s = Snap("#svg");
 
       Snap.load(this.mapUrl, function (f) {
-        f.selectAll("polygon").onmousemove((e) => {
+        f.selectAll("polygon").mousemove((e) => {
           console.log(e);
         });
         f.selectAll("path").attr({fill: "#7A1120"});
