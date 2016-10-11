@@ -21,7 +21,8 @@ export default function() {
       Snap.load(this.mapUrl, function (f) {
           // Note that we traversre and change attr before SVG
           // is even added to the page
-          f.selectAll("polygon[fill='#09B39C']").attr({fill: "#bada55"});
+          f.selectAll("polygon").attr({fill: "#bada55"});
+          f.selectAll("path").attr({fill: "#7A1120"});
           var g = f.select("g");
           s.append(g);
           // Making croc draggable. Go ahead drag it around!
