@@ -88,7 +88,7 @@ export default function () {
 
         paths.each(function(pol) {
           let el = d3.select(this);
-          let countryName = el.attr("id");
+          let countryName = el.attr("id").replace('-', ' ');
           let report = reports.filter(rep => rep.meta_country == countryName);
           
           if(report[0] && report[0].guid) {
