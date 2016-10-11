@@ -13,6 +13,13 @@ function showInfo(info) {
     });
 }
 
+function setStyle(el) {
+  el.style({
+    "transition": "all 300ms ease",
+    "fill": "#536D7F"
+  });
+}
+
 function appendMap(mapUrl,container, cb) {
   d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
     if (error) throw error;
@@ -44,8 +51,7 @@ export default function () {
           let el = d3.select(this);
           el.on('mousemove', evt => {
             showInfo(info);
-            el.style("transition", "all 300ms ease");
-            el.style("fill", "#536D7F");
+            setStyle(el);
           });
         });
         
