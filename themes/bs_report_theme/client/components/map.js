@@ -65,10 +65,11 @@ export default function () {
 
         polygons.each(function(pol) {
           let el = d3.select(this);
-          console.log(el.attr("id"));
+          let countryName = el.attr("id");
+          let report = reports.filter(rep => rep.meta_country == countryName);
 
           d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", `/${lang}/report/${el.attr("id")}`)
+          .attr("href", report[0].guid)
           .append(() => this );
 
           el.on('mousemove', evt => {
