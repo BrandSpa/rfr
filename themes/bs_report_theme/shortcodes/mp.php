@@ -1,13 +1,13 @@
 <?php
   $map_svg_url = get_template_directory_uri() . '/public/img/map.svg';
+   $getReportLang = 'en';
+  if( function_exists('pll_current_language') ) $getReportLang = pll_current_language();
 ?>
 
-<map 
-  :posts='<?php echo json_encode($posts); ?>' 
+<map
+  :posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
   :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'>
 </map>
-
-
 
 <template id="map-template">
   <div class="map__info">

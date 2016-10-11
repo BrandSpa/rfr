@@ -14,11 +14,10 @@ export default function() {
     ready() {
       let info = document.querySelector('.map__info');
       var instance = this;
-
+      console.log('reports', instance.posts);
       var mySVGsToInject = document.querySelectorAll('img.inject-me');
 
-       // Do the injection
-       SVGInjector(mySVGsToInject, {}, function() {
+       SVGInjector(mySVGsToInject, {}, () => {
 
          d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
 
