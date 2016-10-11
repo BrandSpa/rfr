@@ -29,15 +29,12 @@ export default function () {
       var s = Snap("#svg");
 
       var myMatrix = new Snap.Matrix();
-      myMatrix.scale(2);            // play with scaling before and after the rotate 
-      myMatrix.translate(100,0);      // this translate will not be applied to the rotation
-      myMatrix.rotate(45);            // rotate
+      myMatrix.scale(3);            // play with scaling before and after the rotate 
+
 
       var myMatrixOut = new Snap.Matrix();
       myMatrixOut.scale(1);            // play with scaling before and after the rotate 
-      myMatrixOut.translate(0,0);      // this translate will not be applied to the rotation
-      myMatrixOut.rotate(0);            // rotate
-
+      
       Snap.load(this.mapUrl, function (f) {
 
         f.selectAll("polygon").forEach(el => {
