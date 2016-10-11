@@ -35,7 +35,7 @@ export default function () {
     ready() {
       let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
-      let reports = JSON.parse(instance.posts);
+      let reports = JSON.parse(this.posts);
       let polygons = d3.select(mapContainer).selectAll("polygon");
       console.log(polygons);
       appendMap(this.mapUrl);
