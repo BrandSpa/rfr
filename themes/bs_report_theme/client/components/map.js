@@ -50,7 +50,7 @@ export default function () {
         })
 
         f.selectAll("path").forEach(el => {
-          el.mouseover(e => {
+          el.mouseup(e => {
             el.animate({ transform: myMatrix },3000);
           });
 
