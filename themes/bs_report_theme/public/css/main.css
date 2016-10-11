@@ -456,6 +456,8 @@ input {
 
 .report__content-header {
   padding: 100px 40px; }
+  .report__content-header h1 {
+    margin: 0; }
 
 .report__header_pdf {
   display: -ms-flexbox;

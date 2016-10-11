@@ -42,23 +42,21 @@
 
   &__content-header {
     padding: 100px 40px;
+    
+    h1 {
+      margin: 0;
+    }
   }
 
   &__header_pdf {
     @include center-vertical;
-    @media #{$desktop}, #{$desktop--large} {
-
-    }
-
-
     margin: 40px 0;
     min-height: 100px;
     border-top: 2px solid $red_orange;
     border-bottom: 2px solid $red_orange;
     float: left;
     width: 100%;
-
-
+   
     &__download {
 
       img {
