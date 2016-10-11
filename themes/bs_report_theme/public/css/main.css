@@ -487,7 +487,7 @@ input {
   .report__content:nth-child(2n) {
     background: #F8F8F8; }
   .report__content-content {
-    padding: 0 0 40px 0; }
+    padding: 0 0 100px 0; }
     .report__content-content h5 {
       color: #FC3938; }
   .report__content h2::after {
