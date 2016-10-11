@@ -71,13 +71,11 @@ export default function () {
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
-        
+
         let paths = d3.select(mapContainer).selectAll("path");
 
-        [].forEach.call(polygons,convertPolyToPath);
-
-
         polygons.each(function(pol) {
+          convertPolyToPath(this);
           let el = d3.select(this);
           el.on('mousemove', evt => {
             showInfo(info);
