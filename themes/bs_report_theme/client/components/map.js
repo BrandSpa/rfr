@@ -14,10 +14,10 @@ function showInfo(info, el) {
     });
 }
 
-function appendMap(mapUrl) {
+function appendMap(mapUrl,container) {
   d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
     if (error) throw error;
-    mapContainer.appendChild(xml.documentElement);
+    container.appendChild(xml.documentElement);
   });
 }
 
@@ -38,7 +38,7 @@ export default function () {
       let reports = JSON.parse(this.posts);
       let polygons = d3.select(mapContainer).selectAll("polygon");
       console.log(polygons);
-      appendMap(this.mapUrl);
+      appendMap(this.mapUrl, mapContainer);
     },
 
     methods: {
