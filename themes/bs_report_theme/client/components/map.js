@@ -17,17 +17,15 @@ export default function() {
       var instance = this;
       let reports = JSON.parse( instance.posts );
       var s = Snap("#svg");
-      console.log(this.mapUrl);
+
       Snap.load(this.mapUrl, function (f) {
-          // Note that we traversre and change attr before SVG
-          // is even added to the page
-          f.selectAll("polygon").attr({fill: "#bada55"});
-          f.selectAll("path").attr({fill: "#7A1120"});
-          var g = f.select("g");
-          s.append(g);
+        f.selectAll("polygon").onmousemove((e) => {
+          console.log(e);
+        });
+        f.selectAll("path").attr({fill: "#7A1120"});
+        var g = f.select("g");
+        s.append(g);
       });
-
-
     },
 
     methods: {
