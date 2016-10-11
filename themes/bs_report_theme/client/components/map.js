@@ -30,6 +30,13 @@ export default function () {
 
       var myMatrix = new Snap.Matrix();
       myMatrix.scale(2);            // play with scaling before and after the rotate 
+      myMatrix.translate(100,0);      // this translate will not be applied to the rotation
+      myMatrix.rotate(45);            // rotate
+
+      var myMatrixOut = new Snap.Matrix();
+      myMatrixOut.scale(1);            // play with scaling before and after the rotate 
+      myMatrixOut.translate(0,0);      // this translate will not be applied to the rotation
+      myMatrixOut.rotate(0);            // rotate
 
       Snap.load(this.mapUrl, function (f) {
 
@@ -43,9 +50,15 @@ export default function () {
         })
 
         f.selectAll("path").forEach(el => {
+          el.mouseup(e => {
+            el.animate({ transform: myMatrix },3000);
+          });
+
+          el.mouseout(e => {
+            el.animate({ transform: myMatrixOut },3000);
+          });
+
           el.mousemove((e) => {
-            console.log(el.attr("id"));
-             el.animate({ transform: myMatrix },3000);
             showInfo(info);
 
           });
