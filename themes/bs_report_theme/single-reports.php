@@ -33,7 +33,7 @@
     style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg " ?>) no-repeat; background-size:cover ">
 
   <?php foreach(getReports() as $report): ?>
-    <?php echo $report->post_title ?>
+    <?php var_dump($report) ?>
   <?php endforeach; ?>
 
     <div class="row">
