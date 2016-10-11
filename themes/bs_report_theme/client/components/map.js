@@ -72,9 +72,9 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
         let paths = d3.select(mapContainer).selectAll("path");
 
-        [].forEach.call(polys,convertPolyToPath);
+        [].forEach.call(polygons,convertPolyToPath);
 
-        convertPolyToPath(poly)
+        convertPolyToPath(poly);
 
         polygons.each(function(pol) {
           let el = d3.select(this);
