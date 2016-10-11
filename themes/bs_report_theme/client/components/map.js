@@ -67,10 +67,13 @@ export default function () {
           let el = d3.select(this);
           let countryName = el.attr("id");
           let report = reports.filter(rep => rep.meta_country == countryName);
-
-          d3.select( this.parentNode ).append("a",() => this )
+          
+          if(report[0] && report[0].guid) {
+            d3.select( this.parentNode ).append("a",() => this )
           .attr("href", report[0].guid)
           .append(() => this );
+          }
+          
 
           el.on('mousemove', evt => {
             showInfo(info);
