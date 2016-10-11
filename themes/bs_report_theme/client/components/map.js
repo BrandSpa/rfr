@@ -4,6 +4,22 @@ import mousePosition from '../lib/get_mouse_position';
 
 import * as d3 from 'd3';
 
+function convertPolyToPath(poly) {
+  let svgNS = poly.ownerSVGElement.namespaceURI;
+  let path = document.createElementNS(svgNS, 'path');
+  let points = poly.getAttribute('points').split(/\s+|,/);
+  let x0 = points.shift();
+  let y0 = points.shift();
+  let l = points.join(' ');
+  let pathdata = `M ${x0} , ${y0} L ${l}`;
+
+  if (poly.tagName=='polygon') pathdata+='z';
+
+  path.setAttribute('style', poly.getAttribute('style'));
+  path.setAttribute('d',pathdata);
+  poly.parentNode.replaceChild(path,poly);
+}
+
 function showInfo(info) {
   mousePosition(null)
     .then(p => {
@@ -17,12 +33,15 @@ function setStyle(el) {
   el
   .style("transition", "all 300ms ease")
   .style("fill", "#536D7F");
+
+  el.classed("animate-path", true);
 }
 
 function setStyleOut(el) {
   el
   .style("transition", "all 300ms ease")
   .style("fill", "#FFF");
+   el.classed("animate-path", false); 
 }
 
 function appendMap(mapUrl,container, cb) {
@@ -52,6 +71,10 @@ export default function () {
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
         let paths = d3.select(mapContainer).selectAll("path");
+
+        [].forEach.call(polys,convertPolyToPath);
+
+        convertPolyToPath(poly)
 
         polygons.each(function(pol) {
           let el = d3.select(this);
