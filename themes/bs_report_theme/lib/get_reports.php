@@ -7,6 +7,7 @@
       'post_type'        => 'reports',
       'numberposts' => -1,
       'orderby' => 'title',
+      'order'   => 'ASC',
       'post_status' => 'publish'
     );
 
