@@ -14,7 +14,8 @@ export default function() {
     ready() {
       let info = document.querySelector('.map__info');
       var instance = this;
-      console.log('reports', JSON.parse( instance.posts ) );
+      let reports = JSON.parse( instance.posts );
+      console.log('reports',  reports);
       var mySVGsToInject = document.querySelectorAll('img.inject-me');
 
        SVGInjector(mySVGsToInject, {}, () => {
@@ -34,7 +35,7 @@ export default function() {
         //  });
 
          gs.on('mousemove', function() {
-           let pst = instance.posts.filter(post => post.post_title.toLowerCase().indexOf(this.getAttribute('id')) != -1 );
+           let pst = reports.filter(post => post.post_title.toLowerCase().indexOf(this.getAttribute('id')) != -1 );
 
            console.log(pst);
 
