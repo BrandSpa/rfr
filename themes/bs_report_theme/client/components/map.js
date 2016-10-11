@@ -29,12 +29,14 @@ export default function() {
 
          let gs = d3.select(".map svg #map-g").selectAll("g");
 
-         gs.on('click', function() {
-           window.location = '/report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
-         });
+        //  gs.on('click', function() {
+        //    window.location = '/report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
+        //  });
 
          gs.on('mousemove', function() {
-           let pst = instance.posts.filter(post => post.meta_country == this.getAttribute('id') );
+           let pst = instance.posts.filter(post => post.post_title.toLowerCase().indexOf(this.getAttribute('id')) != -1 );
+
+           console.log(pst);
 
            let situations = {
              '#FF362F': 'Persecution',
