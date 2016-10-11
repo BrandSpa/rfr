@@ -17,8 +17,8 @@ export default function() {
       var instance = this;
       let reports = JSON.parse( instance.posts );
       var s = Snap("#svg");
-      console.log(this.mapURL);
-      Snap.load(this.mapURL, function (f) {
+      console.log(this.mapUrl);
+      Snap.load(this.mapUrl, function (f) {
           // Note that we traversre and change attr before SVG
           // is even added to the page
           f.selectAll("polygon[fill='#09B39C']").attr({fill: "#bada55"});
