@@ -7,12 +7,15 @@
   <div class="report__content <?php echo $key ?>">
 
     <?php if( !empty($content['title']) ): ?>
-      <div class="report__content-header">
+      <div class="col-md-6">
+      
+        <div class="report__content-header">
 
-        <h1 class="title-line title-uppercase">
-          <?php echo $content['title'] ?>
-        </h1>
+          <h1 class="title-line title-uppercase">
+            <?php echo $content['title'] ?>
+          </h1>
 
+        </div>
       </div>
 
     <?php endif; ?>
