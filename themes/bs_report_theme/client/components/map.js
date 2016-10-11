@@ -16,12 +16,17 @@ export default function() {
       let info = document.querySelector('.map__info');
       var instance = this;
       let reports = JSON.parse( instance.posts );
+
       var s = Snap("#svg");
 
       Snap.load(this.mapUrl, function (f) {
-        f.selectAll("polygon").mousemove((e) => {
-          console.log(e);
-        });
+        
+        f.selectAll("polygon").forEach(el => {
+          el.mousemove((e) => {
+            console.log(e);
+          });
+        })
+
         f.selectAll("path").attr({fill: "#7A1120"});
         var g = f.select("g");
         s.append(g);
