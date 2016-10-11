@@ -19,6 +19,12 @@ function setStyle(el) {
   .style("fill", "#536D7F");
 }
 
+function setStyleOut(el) {
+  el
+  .style("transition", "all 300ms ease")
+  .style("fill", "#FFF");
+}
+
 function appendMap(mapUrl,container, cb) {
   d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
     if (error) throw error;
@@ -55,6 +61,7 @@ export default function () {
           });
 
           el.on('mouseleave', evt => {
+            setStyleOut(el);
             info.style.opacity = 0;
           });
         });
@@ -65,8 +72,9 @@ export default function () {
             showInfo(info);
             setStyle(el);
           });
-          
+
            el.on('mouseleave', evt => {
+             setStyleOut(el);
             info.style.opacity = 0;
           });
         });
