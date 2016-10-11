@@ -17,12 +17,12 @@ export default function() {
       var instance = this;
       let reports = JSON.parse( instance.posts );
       var s = Snap("#svg");
-      
+      console.log(this.mapURL);
       Snap.load(this.mapURL, function (f) {
           // Note that we traversre and change attr before SVG
           // is even added to the page
           f.selectAll("polygon[fill='#09B39C']").attr({fill: "#bada55"});
-          g = f.select("g");
+          var g = f.select("g");
           s.append(g);
           // Making croc draggable. Go ahead drag it around!
           g.drag();
