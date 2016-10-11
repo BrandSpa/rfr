@@ -7,7 +7,7 @@
 
        if( function_exists('pll_current_language') ) $getReportLang = pll_current_language();
 
-      foreach(getReports(array('language' => $getReportLang)) as $country): 
+      foreach(getReports(array('language' => $getReportLang)) as $report): 
     ?>
       <li>
         <a href="<?php echo $report->guid ?>"><?php echo $report->post_title ?></a>
