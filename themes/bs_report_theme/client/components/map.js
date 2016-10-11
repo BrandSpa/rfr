@@ -56,6 +56,7 @@ export default function () {
       let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
+      let lang = this.lang;
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
@@ -67,7 +68,7 @@ export default function () {
           console.log(el.attr("id"));
 
           d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", `/${this.lang}/report/${el.attr("id")}`)
+          .attr("href", `/${lang}/report/${el.attr("id")}`)
           .append(() => this );
 
           el.on('mousemove', evt => {
