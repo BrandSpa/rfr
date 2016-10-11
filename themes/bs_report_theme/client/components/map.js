@@ -14,7 +14,7 @@ export default function() {
     ready() {
       let info = document.querySelector('.map__info');
       var instance = this;
-      console.log('reports', JSON.parse( JSON.stringify(instance.posts) ) );
+      console.log('reports', JSON.parse( instance.posts ) );
       var mySVGsToInject = document.querySelectorAll('img.inject-me');
 
        SVGInjector(mySVGsToInject, {}, () => {
