@@ -24,6 +24,14 @@ export default function() {
         f.selectAll("polygon").forEach(el => {
           el.mousemove((e) => {
             console.log(el.attr("id"));
+            
+            mousePosition(null)
+           .then(p => {
+             info.style.opacity = 1;
+             info.style.top = (p.top - 60) + 'px';
+             info.style.left = (p.left - 300) + 'px';
+           });
+
           });
         })
 
