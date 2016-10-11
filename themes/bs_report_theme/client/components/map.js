@@ -28,7 +28,7 @@ export default function() {
            info.style.opacity = 0;
          });
 
-         let gs = d3.select(".map svg #map-g").selectAll("g");
+         let gs = d3.select("#map-g polygon #map-g path").selectAll("g");
 
         //  gs.on('click', function() {
         //    window.location = '/report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
