@@ -12,7 +12,7 @@
   </div>
 
   <h1 class="title">
-    <?php echo $post->title ?>
+    <?php get_the_title() ?>
 
     <a href="#" class="open-select-countries">
       <img src="<?php echo get_template_directory_uri() . '/public/img/icons/down.svg' ?>" alt="">
