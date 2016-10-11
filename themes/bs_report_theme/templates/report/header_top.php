@@ -1,5 +1,5 @@
 
-<div class="col-md-6">
+<div class="col-md-8">
   <a href="#map" class="report__header__back-map"><?php echo gett('BACK TO MAP') ?></a>
 
   <div class="report__header__slider_year">
@@ -20,7 +20,7 @@
   </h1>
 </div>
 
-<div class="col-md-6">
+<div class="col-md-4">
 <?php $country_en = get_post_meta($post->ID, 'report_country_key', true) ?>
 
     <img
