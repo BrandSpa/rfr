@@ -7,6 +7,7 @@
   <div class="report__content <?php echo $key ?>">
 
     <?php if( !empty($content['title']) ): ?>
+    <div class="row">
       <div class="col-md-6">
       
         <div class="report__content-header">
@@ -20,10 +21,12 @@
       </div>
 
       <div class="col-md-6"></div>
+    </div>
 
     <?php endif; ?>
 
     <?php if( !empty($content['text']) ): ?>
+    <div class="row">
 
       <div class="col-md-3">
       </div>
@@ -37,7 +40,7 @@
 
         </div>
       </div>
-
+      </div>
     <?php endif; ?>
 
   </div>
