@@ -5,7 +5,7 @@
 ?>
 
 <map
-  :posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
+  posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
   :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'>
 </map>
 
