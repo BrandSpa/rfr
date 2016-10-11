@@ -4,7 +4,7 @@ import mousePosition from '../lib/get_mouse_position';
 
 import * as d3 from 'd3';
 
-function showInfo(info, el) {
+function showInfo(info) {
 
   mousePosition(null)
     .then(p => {
@@ -42,7 +42,10 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
         polygons.each(function(pol) {
-          console.log('pol:' + pol, 'this: ' + this);
+          let el = d3.select(this);
+          el.on('mousemove', evt => {
+            showInfo(info);
+          });
         });
         
       });
