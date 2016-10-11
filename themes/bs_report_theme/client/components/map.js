@@ -62,8 +62,8 @@ export default function () {
         polygons.each(function(pol) {
 
           let el = d3.select(this);
-          d3.select( this.parentNode ).append("g",() => this )
-          .attr("class", "wrapper") 
+          d3.select( this.parentNode ).append("a",() => this )
+          .attr("href", "#") 
           .append(() => this );
 
           el.on('mousemove', evt => {
