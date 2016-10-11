@@ -7,7 +7,7 @@ export default function() {
 
   Vue.component('map', {
     template: '#map-template',
-    props: ['posts', 'items', 'countriesTranslation', 'mapURL'],
+    props: ['posts', 'items', 'countriesTranslation', 'mapUrl'],
     data: {
       country: ''
     },
