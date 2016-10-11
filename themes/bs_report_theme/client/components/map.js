@@ -14,10 +14,11 @@ function showInfo(info, el) {
     });
 }
 
-function appendMap(mapUrl,container) {
+function appendMap(mapUrl,container, cb) {
   d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
     if (error) throw error;
     container.appendChild(xml.documentElement);
+    if(typeof cb == 'function') cb();
   });
 }
 
@@ -36,9 +37,11 @@ export default function () {
       let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
-      let polygons = d3.select(mapContainer).selectAll("polygon");
-      console.log(polygons);
-      appendMap(this.mapUrl, mapContainer);
+      
+      appendMap(this.mapUrl, mapContainer, () => {
+        let polygons = d3.select(mapContainer).selectAll("polygon");
+        console.log(polygons);
+      });
     },
 
     methods: {
