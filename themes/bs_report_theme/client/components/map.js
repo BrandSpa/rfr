@@ -25,10 +25,6 @@ export default function() {
           f.selectAll("path").attr({fill: "#7A1120"});
           var g = f.select("g");
           s.append(g);
-          // Making croc draggable. Go ahead drag it around!
-          g.drag();
-          // Obviously drag could take event handlers too
-          // That’s better! selectAll for the rescue.
       });
 
 
