@@ -1,24 +1,7 @@
 'use strict';
 import Vue from 'vue';
-import mousePosition from '../lib/get_mouse_position';
-
 import * as d3 from 'd3';
-
-function convertPolyToPath(poly) {
-  let svgNS = poly.ownerSVGElement.namespaceURI;
-  let path = document.createElementNS(svgNS, 'path');
-  let points = poly.getAttribute('points').split(/\s+|,/);
-  let x0 = points.shift();
-  let y0 = points.shift();
-  let l = points.join(' ');
-  let pathdata = `M ${x0} , ${y0} L ${l}`;
-
-  if (poly.tagName=='polygon') pathdata+='z';
-
-  path.setAttribute('style', poly.getAttribute('style'));
-  path.setAttribute('d',pathdata);
-  poly.parentNode.replaceChild(path,poly);
-}
+import mousePosition from '../lib/get_mouse_position';
 
 function showInfo(info) {
   mousePosition(null)
@@ -75,7 +58,16 @@ export default function () {
         let paths = d3.select(mapContainer).selectAll("path");
 
         polygons.each(function(pol) {
-          convertPolyToPath(this);
+          let el = d3.select(this);
+          el.on('mousemove', evt => {
+            showInfo(info);
+            setStyle(el);
+          });
+
+          el.on('mouseleave', evt => {
+            setStyleOut(el);
+            info.style.opacity = 0;
+          });
         });
 
         paths.each(function(pol) {
