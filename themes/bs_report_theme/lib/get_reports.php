@@ -9,7 +9,6 @@
     );
 
     $params = array(
-      'posts_per_page' => 8,
       'post_type' => 'reports',
       'language' => 'es',
       'post_status' => 'publish'
