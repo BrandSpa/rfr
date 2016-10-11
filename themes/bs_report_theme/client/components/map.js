@@ -22,8 +22,7 @@ export default function() {
           // Note that we traversre and change attr before SVG
           // is even added to the page
           f.selectAll("polygon[fill='#09B39C']").attr({fill: "#bada55"});
-          var g = f.select("g");
-          s.append(g);
+          s.append(f);
           // Making croc draggable. Go ahead drag it around!
           g.drag();
           // Obviously drag could take event handlers too
