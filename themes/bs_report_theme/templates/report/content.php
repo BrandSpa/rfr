@@ -22,10 +22,11 @@
     <?php endif; ?>
 
     <?php if( !empty($content['text']) ): ?>
-
-      <div class="col-md-3"></div>
+    <div class="row">
+      <div class="col-md-3">
+      </div>
       
-      <div class="col-md-8">
+      <div class="col-md-9">
         <div class="report__content-content">
 
           <p>
@@ -34,7 +35,7 @@
 
         </div>
       </div>
-
+    </div>
     <?php endif; ?>
 
   </div>
