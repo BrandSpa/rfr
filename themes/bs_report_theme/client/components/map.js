@@ -29,7 +29,7 @@ export default function () {
       var s = Snap("#svg");
 
       var myMatrix = new Snap.Matrix();
-      myMatrix.scale(3);            // play with scaling before and after the rotate 
+      myMatrix.scale(1.2);            // play with scaling before and after the rotate 
 
 
       var myMatrixOut = new Snap.Matrix();
