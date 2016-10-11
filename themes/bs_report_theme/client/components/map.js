@@ -40,7 +40,7 @@ export default function () {
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
-        console.log(polygons);
+        polygons.each(pol => console.log(pol));
       });
     },
 
