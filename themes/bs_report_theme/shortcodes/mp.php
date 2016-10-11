@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <svg id="svg"></svg>
+    <svg id="svg" width="100%"></svg>
 
 
   <div class="col-md-6 map_list">
