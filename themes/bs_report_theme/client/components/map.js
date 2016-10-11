@@ -60,7 +60,12 @@ export default function () {
         let paths = d3.select(mapContainer).selectAll("path");
 
         polygons.each(function(pol) {
+
           let el = d3.select(this);
+          d3.select( this.parentNode ).insert("g", function(){return this;} )
+          .attr("class", "wrapper") 
+          .append( function(){return this;} );
+
           el.on('mousemove', evt => {
             showInfo(info);
             setStyle(el);
