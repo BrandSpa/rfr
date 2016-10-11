@@ -34,7 +34,7 @@ export default function () {
 
       var myMatrixOut = new Snap.Matrix();
       myMatrixOut.scale(1);            // play with scaling before and after the rotate 
-      
+
       Snap.load(this.mapUrl, function (f) {
 
         f.selectAll("polygon").forEach(el => {
@@ -47,7 +47,7 @@ export default function () {
         })
 
         f.selectAll("path").forEach(el => {
-          el.mousedown(e => {
+          el.mouseover(e => {
             el.animate({ transform: myMatrix },3000);
           });
 
