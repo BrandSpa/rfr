@@ -14,6 +14,13 @@ function showInfo(info, el) {
     });
 }
 
+function appendMap(mapUrl) {
+  d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
+    if (error) throw error;
+    mapContainer.appendChild(xml.documentElement);
+  });
+}
+
 export default function () {
 
   Vue.component('map', {
@@ -27,13 +34,11 @@ export default function () {
 
     ready() {
       let info = document.querySelector('.map__info');
-      var instance = this;
+      let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(instance.posts);
-
-      d3.xml(this.mapUrl).mimeType("image/svg+xml").get(function(error, xml) {
-        if (error) throw error;
-        document.querySelector('#map').appendChild(xml.documentElement);
-      });
+      let polygons = d3.select(mapContainer).selectAll("polygon");
+      console.log(polygons);
+      appendMap(this.mapUrl);
     },
 
     methods: {

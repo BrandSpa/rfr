@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <svg id="svg" width="891px" height="567px" viewBox="0 0 891 567"></svg>
+    <div id="map-container"></div>
 
   <div class="col-md-6 map_list">
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
