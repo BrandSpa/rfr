@@ -14,10 +14,9 @@ function showInfo(info) {
 }
 
 function setStyle(el) {
-  el.style({
-    "transition": "all 300ms ease",
-    "fill": "#536D7F"
-  });
+  el
+  .style("transition", "all 300ms ease")
+  .style("fill", "#536D7F");
 }
 
 function appendMap(mapUrl,container, cb) {
