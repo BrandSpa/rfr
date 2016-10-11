@@ -42,7 +42,7 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
         polygons.each(function(pol) {
-          console.log(pol, this);
+          console.log('pol:' + pol, 'this: ' + this);
         });
         
       });
