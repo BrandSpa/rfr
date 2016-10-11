@@ -57,6 +57,7 @@ export default function () {
   Vue.component('map', {
     template: '#map-template',
     props: ['posts', 'items', 'countriesTranslation', 'mapUrl'],
+    
     data() {
       return {
 
@@ -74,7 +75,6 @@ export default function () {
 
         [].forEach.call(polygons,convertPolyToPath);
 
-        convertPolyToPath(poly);
 
         polygons.each(function(pol) {
           let el = d3.select(this);
