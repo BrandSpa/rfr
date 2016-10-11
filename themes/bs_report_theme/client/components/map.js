@@ -46,7 +46,7 @@ export default function () {
 
       }
     },
-
+ 
     ready() {
       let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
