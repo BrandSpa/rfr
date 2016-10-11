@@ -3,7 +3,9 @@ import Vue from 'vue';
 import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
 
-function showInfo(info) {
+function showInfo(info, txt) {
+  d3.select(info).text(txt);
+
   mousePosition(null)
     .then(p => {
       info.style.opacity = 1;
@@ -65,7 +67,7 @@ export default function () {
 
         polygons.each(function(pol) {
           let el = d3.select(this);
-          let countryName = el.attr("id");
+          let countryName = el.attr("id").replace('-', ' ');
           let report = reports.filter(rep => rep.meta_country == countryName);
 
           if(report[0] && report[0].guid) {
@@ -76,7 +78,7 @@ export default function () {
           
 
           el.on('mousemove', evt => {
-            showInfo(info);
+            showInfo(info, countryName);
             setStyle(el);
           });
 
@@ -98,7 +100,7 @@ export default function () {
           }
           
           el.on('mousemove', evt => {
-            showInfo(info);
+            showInfo(info, countryName);
             setStyle(el);
           });
 
