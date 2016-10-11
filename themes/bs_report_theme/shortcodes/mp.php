@@ -6,7 +6,9 @@
 
 <map
   posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
-  :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'>
+  :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'
+   map-url='<?php echo $map_svg_url ?>'
+>
 </map>
 
 <template id="map-template">
@@ -39,7 +41,8 @@
       </div>
     </div>
 
-    <img class="inject-me" src="<?php echo $map_svg_url ?>">
+    <svg id="svg"></svg>
+
 
   <div class="col-md-6 map_list">
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>

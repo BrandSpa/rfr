@@ -1,12 +1,13 @@
 'use strict';
 import mousePosition from '../lib/get_mouse_position';
-import SVGInjector from 'svg-injector';
+
+import Snap from 'snapsvg';
 
 export default function() {
 
   Vue.component('map', {
     template: '#map-template',
-    props: ['posts', 'items', 'countriesTranslation'],
+    props: ['posts', 'items', 'countriesTranslation', 'mapURL'],
     data: {
       country: ''
     },
@@ -15,55 +16,19 @@ export default function() {
       let info = document.querySelector('.map__info');
       var instance = this;
       let reports = JSON.parse( instance.posts );
-      console.log('reports',  reports);
-      var mySVGsToInject = document.querySelectorAll('img.inject-me');
-
-       SVGInjector(mySVGsToInject, {}, () => {
-
-         d3.select(".map svg g").selectAll("g").on('mouseleave', function() {
-
-           var _this = this;
-           
-           d3.select(_this).style("fill", "").style("webkit-box-shadow", "10px 5px 5px #fff");
-           info.style.opacity = 0;
-         });
-
-         let gs = d3.select("#map-g polygon #map-g path").selectAll("g");
-
-        //  gs.on('click', function() {
-        //    window.location = '/report/' + this.getAttribute('id').toLowerCase().replace(' ', '-');
-        //  });
-
-         gs.on('mousemove', function() {
-           let pst = reports.filter(post => post.post_name.toLowerCase().indexOf(this.getAttribute('id').toLowerCase()) != -1 );
-
-           console.log(pst);
-
-           let situations = {
-             '#FF362F': 'Persecution',
-             '#FF362F': 'Persecution',
-           };
-
-           
-           let situ = pst.meta_situation ? pst.meta_situation : '';
-           let country_trans =  instance.countriesTranslation[this.getAttribute('id').replace('-', ' ')];
-
-           d3.select(info).select('.map__info_country').text(country_trans + situ);
-
-           mousePosition(null)
-           .then(p => {
-             info.style.opacity = 1;
-             info.style.top = (p.top - 60) + 'px';
-             info.style.left = (p.left - 300) + 'px';
-           });
-
-           d3.select(this).style("transition", "all 300ms ease");
-           d3.select(this).style("fill", "#536D7F");
-
-         });
-
-       });
-
+      var s = Snap("#svg");
+      
+      Snap.load(this.mapURL, function (f) {
+          // Note that we traversre and change attr before SVG
+          // is even added to the page
+          f.selectAll("polygon[fill='#09B39C']").attr({fill: "#bada55"});
+          g = f.select("g");
+          s.append(g);
+          // Making croc draggable. Go ahead drag it around!
+          g.drag();
+          // Obviously drag could take event handlers too
+          // That’s better! selectAll for the rescue.
+      });
 
 
     },
