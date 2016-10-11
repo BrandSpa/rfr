@@ -45,8 +45,17 @@ export default function () {
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
+        let paths = d3.select(mapContainer).selectAll("path");
 
         polygons.each(function(pol) {
+          let el = d3.select(this);
+          el.on('mousemove', evt => {
+            showInfo(info);
+            setStyle(el);
+          });
+        });
+
+        paths.each(function(pol) {
           let el = d3.select(this);
           el.on('mousemove', evt => {
             showInfo(info);
