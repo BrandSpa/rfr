@@ -8,6 +8,7 @@
   posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
   :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'
   map-url='<?php echo $map_svg_url ?>'
+  lang='<?php echo $getReportLang ?>'
 >
 </map>
 

@@ -39,7 +39,12 @@ export default function () {
 
   Vue.component('map', {
     template: '#map-template',
-    props: ['posts', 'items', 'countriesTranslation', 'mapUrl'],
+    props: [
+      'posts', 
+      'countriesTranslation', 
+      'mapUrl',
+      'lang'
+    ],
 
     data() {
       return {
@@ -62,7 +67,7 @@ export default function () {
           console.log(el.attr("id"));
 
           d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", `/report/${el.attr("id")}`)
+          .attr("href", `/${this.lang}/report/${el.attr("id")}`)
           .append(() => this );
 
           el.on('mousemove', evt => {
