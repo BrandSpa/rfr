@@ -29,9 +29,7 @@ export default function () {
       var s = Snap("#svg");
 
       var myMatrix = new Snap.Matrix();
-      myMatrix.scale(4,2);            // play with scaling before and after the rotate 
-      myMatrix.translate(100,0);      // this translate will not be applied to the rotation
-      myMatrix.rotate(45);            // rotate
+      myMatrix.scale(2);            // play with scaling before and after the rotate 
 
       Snap.load(this.mapUrl, function (f) {
 
@@ -47,7 +45,7 @@ export default function () {
         f.selectAll("path").forEach(el => {
           el.mousemove((e) => {
             console.log(el.attr("id"));
-
+             el.animate({ transform: myMatrix },3000);
             showInfo(info);
 
           });
@@ -59,7 +57,7 @@ export default function () {
         var g = f.select("g");
         
         s.append(g);
-        g.animate({ transform: myMatrix },3000);
+       
       });
     },
 
