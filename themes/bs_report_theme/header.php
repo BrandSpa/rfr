@@ -17,7 +17,12 @@
 </head>
 <body id="acn_reports">
 
-<a href="#" id="open-nav" style="position: absolute; right: 60px; top: 40px">Menú</a>
+<a href="#" id="open-nav" class="navbar-toggle" style="position: absolute; right: 60px; top: 40px">
+       <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+</a>
 
 
 
