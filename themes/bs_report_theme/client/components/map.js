@@ -5,7 +5,6 @@ import mousePosition from '../lib/get_mouse_position';
 import * as d3 from 'd3';
 
 function showInfo(info) {
-
   mousePosition(null)
     .then(p => {
       info.style.opacity = 1;
@@ -45,6 +44,8 @@ export default function () {
           let el = d3.select(this);
           el.on('mousemove', evt => {
             showInfo(info);
+            el.style("transition", "all 300ms ease");
+            el.style("fill", "#536D7F");
           });
         });
         
