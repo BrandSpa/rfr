@@ -1,5 +1,5 @@
 <div class="select_country">
-  <a href="#" class="select_country__close">X</a>
+  <a href="#" class="select_country__close">X <?php echo pll_current_language(); ?></a>
   <ul>
     <?php foreach(trans_list(getCountries()) as $country): ?>
       <li>
