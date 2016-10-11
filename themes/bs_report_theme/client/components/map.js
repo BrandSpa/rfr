@@ -3,6 +3,15 @@ import mousePosition from '../lib/get_mouse_position';
 
 import Snap from 'snapsvg';
 
+function showInfo(info) {
+ mousePosition(null)
+           .then(p => {
+             info.style.opacity = 1;
+             info.style.top = (p.top - 60) + 'px';
+             info.style.left = (p.left - 300) + 'px';
+           });
+}
+
 export default function() {
 
   Vue.component('map', {
@@ -24,13 +33,8 @@ export default function() {
         f.selectAll("polygon").forEach(el => {
           el.mousemove((e) => {
             console.log(el.attr("id"));
-            
-            mousePosition(null)
-           .then(p => {
-             info.style.opacity = 1;
-             info.style.top = (p.top - 60) + 'px';
-             info.style.left = (p.left - 300) + 'px';
-           });
+
+            showInfo(info);
 
           });
         })
