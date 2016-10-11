@@ -35,7 +35,7 @@ export default function() {
         //  });
 
          gs.on('mousemove', function() {
-           let pst = reports.filter(post => post.post_title.toLowerCase().indexOf(this.getAttribute('id')) != -1 );
+           let pst = reports.filter(post => post.post_title.toLowerCase().indexOf(this.getAttribute('id').toLowerCase()) != -1 );
 
            console.log(pst);
 
