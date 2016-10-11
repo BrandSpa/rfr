@@ -1,9 +1,16 @@
 <div class="select_country">
   <a href="#" class="select_country__close">X </a>
   <ul>
-    <?php foreach(trans_list(getCountries()) as $country): ?>
+  
+    <?php 
+      $getReportLang = 'en';
+
+       if( function_exists('pll_current_language') ) $getReportLang = pll_current_language();
+
+      foreach(getReports(array('language' => $getReportLang)) as $country): 
+    ?>
       <li>
-        <a href="/<?php if( function_exists('pll_current_language') ): echo pll_current_language(); endif; ?>/report/<?php echo  strtolower( str_replace(' ', '-', remove_accents($country)) )?>"><?php echo $country ?></a>
+        <a href="<?php echo $report->guid ?>"><?php echo $report->post_title ?></a>
       </li>
     <?php endforeach; ?>
   </ul>
