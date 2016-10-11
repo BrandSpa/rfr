@@ -51,8 +51,6 @@ export default function () {
       let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
-
-      console.log(reports);
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
@@ -60,10 +58,10 @@ export default function () {
         let paths = d3.select(mapContainer).selectAll("path");
 
         polygons.each(function(pol) {
-
           let el = d3.select(this);
+
           d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", "#") 
+          .attr("href", el.attr("id")) 
           .append(() => this );
 
           el.on('mousemove', evt => {
