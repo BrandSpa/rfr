@@ -39,6 +39,15 @@ export default function() {
           });
         })
 
+        f.selectAll("path").forEach(el => {
+          el.mousemove((e) => {
+            console.log(el.attr("id"));
+
+            showInfo(info);
+
+          });
+        })
+
         f.selectAll("path").attr({fill: "#7A1120"});
         var g = f.select("g");
         s.append(g);
