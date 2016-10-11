@@ -62,7 +62,7 @@ export default function () {
           console.log(el.attr("id"));
 
           d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", el.attr("id"))
+          .attr("href", `/report/${el.attr("id")}`)
           .append(() => this );
 
           el.on('mousemove', evt => {
