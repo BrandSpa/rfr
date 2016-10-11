@@ -2,7 +2,8 @@
 
 <?php if(is_array($report_content)): ?>
 
-  <?php foreach ($report_content as $content): ?>
+  <?php foreach ($report_content as $key => $content): ?>
+  <div class="report__content <?php echo $key ?>">
 
     <?php if( !empty($content['title']) ): ?>
       <div class="report__content-header">
@@ -25,5 +26,7 @@
       </div>
     <?php endif; ?>
 
+  </div>
   <?php endforeach; ?>
+
 <?php endif; ?>

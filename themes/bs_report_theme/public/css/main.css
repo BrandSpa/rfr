@@ -400,22 +400,22 @@ input {
   height: 400px;
   background: #fff; }
   .footer__right-upper {
-    background: #F8F8F8;
-    height: 300px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    background: #F8F8F8;
+    height: 300px;
     text-align: center; }
     .footer__right-upper img {
       margin: 0 auto;
       display: block; }
   .footer__right-bottom {
-    height: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    height: 100px;
     text-align: center; }
     .footer__right-bottom img {
       margin: 0 auto;

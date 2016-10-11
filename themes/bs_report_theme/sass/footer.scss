@@ -1,6 +1,7 @@
 #footer {
   .menu {
     padding-top: 80px;
+    
     & > li {
       float: left;
       width: (100 / 5) * 1%;
@@ -50,27 +51,33 @@
 }
 
 .footer {
+
   &__left {
     height: 400px;
     background: #1A2127
   }
+
   &__right {
     height: 400px;
     background: #fff;
+
     &-upper {
+      @include center_vertical;
       background: #F8F8F8;
       height: 300px;
-      @include center_vertical;
       text-align: center;
+
       img {
         margin: 0 auto;
         display: block;
       }
     }
+
     &-bottom {
-      height: 100px;
       @include center_vertical;
+      height: 100px;
       text-align: center;
+
       img {
         margin: 0 auto;
         display: block;

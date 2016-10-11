@@ -46,9 +46,9 @@
 
   </div>
 
-  <div class="report__content">
+ 
     <?php include 'templates/report/content.php' ?>
-  </div>
+
 
   <?php endwhile; ?>
 
