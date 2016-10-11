@@ -53,6 +53,10 @@ export default function () {
             showInfo(info);
             setStyle(el);
           });
+
+          el.on('mouseleave', evt => {
+            info.style.opacity = 0;
+          });
         });
 
         paths.each(function(pol) {
@@ -60,6 +64,10 @@ export default function () {
           el.on('mousemove', evt => {
             showInfo(info);
             setStyle(el);
+          });
+          
+           el.on('mouseleave', evt => {
+            info.style.opacity = 0;
           });
         });
         
