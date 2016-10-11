@@ -59,9 +59,10 @@ export default function () {
 
         polygons.each(function(pol) {
           let el = d3.select(this);
+          console.log(el.attr("id"));
 
           d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", el.attr("id")) 
+          .attr("href", el.attr("id"))
           .append(() => this );
 
           el.on('mousemove', evt => {
