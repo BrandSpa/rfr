@@ -1,9 +1,10 @@
 'use strict';
 import mousePosition from '../lib/get_mouse_position';
 
-import Snap from 'snapsvg';
+import * as d3 from 'd3';
 
-function showInfo(info) {
+function showInfo(info, el) {
+
   mousePosition(null)
     .then(p => {
       info.style.opacity = 1;
@@ -26,47 +27,9 @@ export default function () {
       var instance = this;
       let reports = JSON.parse(instance.posts);
 
-      var s = Snap("#svg");
-
-      var myMatrix = new Snap.Matrix();
-      myMatrix.scale(1.1);            // play with scaling before and after the rotate 
-
-      var myMatrixOut = new Snap.Matrix();
-      myMatrixOut.scale(1);            // play with scaling before and after the rotate 
-
-      Snap.load(this.mapUrl, function (f) {
-
-        f.selectAll("polygon").forEach(el => {
-          el.mousemove((e) => {
-            console.log(el.attr("id"));
-
-            showInfo(info);
-
-          });
-        })
-
-        f.selectAll("path").forEach(el => {
-          el.mouseover(e => {
-            el.animate({ transform: myMatrix },3000);
-          });
-
-          el.mouseout(e => {
-            el.animate({ transform: myMatrixOut },3000);
-          });
-
-          el.mousemove((e) => {
-            showInfo(info);
-
-          });
-        })
-
-        f.selectAll("path").attr({
-          fill: "#7A1120"
-        });
-        var g = f.select("g");
-        
-        s.append(g);
-       
+      d3.xml(this.mapUrl).mimeType("image/svg+xml").get(function(error, xml) {
+        if (error) throw error;
+        document.querySelector('#map').appendChild(xml.documentElement);
       });
     },
 
