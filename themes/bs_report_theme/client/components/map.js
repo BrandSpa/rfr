@@ -23,7 +23,7 @@ export default function() {
         
         f.selectAll("polygon").forEach(el => {
           el.mousemove((e) => {
-            console.log(e);
+            console.log(e.attr("id"));
           });
         })
 
