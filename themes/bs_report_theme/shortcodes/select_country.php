@@ -3,7 +3,7 @@
   <ul>
     <?php foreach(trans_list(getCountries()) as $country): ?>
       <li>
-        <a href="/<?php echo if(function_exists('pll_current_language')): pll_current_language(); endif; ?>/report/<?php echo  strtolower( str_replace(' ', '-', remove_accents($country)) )?>"><?php echo $country ?></a>
+        <a href="/<?php if( function_exists('pll_current_language') ): echo pll_current_language(); endif; ?>/report/<?php echo  strtolower( str_replace(' ', '-', remove_accents($country)) )?>"><?php echo $country ?></a>
       </li>
     <?php endforeach; ?>
   </ul>
