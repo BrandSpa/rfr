@@ -480,18 +480,21 @@ input {
     .report__header_pdf__item p {
       padding-left: 7px; }
 
-.report__content-content {
-  padding: 40px 40px 40px 25%; }
-  .report__content-content h5 {
-    color: #FC3938; }
-
-.report__content h2::after {
-  display: block;
-  content: '';
-  width: 30px;
-  height: 4px;
-  background: #FC3938;
-  margin-top: 20px; }
+.report__content {
+  background: #fff; }
+  .report__content:nth-child(2n) {
+    background: #F8F8F8; }
+  .report__content-content {
+    padding: 40px 40px 40px 25%; }
+    .report__content-content h5 {
+      color: #FC3938; }
+  .report__content h2::after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 4px;
+    background: #FC3938;
+    margin-top: 20px; }
 
 .report__icon-info {
   text-align: center;

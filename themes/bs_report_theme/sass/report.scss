@@ -80,6 +80,11 @@
   }
 
   &__content{
+    background: #fff;
+
+    &:nth-child(2n) {
+      background: $desert_storm;
+    }
 
     &-content {
       padding: 40px 40px 40px 25%;
