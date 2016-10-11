@@ -6,7 +6,7 @@
       'meta_value'     => '2016',
       'post_type'        => 'reports',
       'numberposts' => -1,
-      'orderby' => 'title'
+      'orderby' => 'title',
     );
 
     $params = array(
