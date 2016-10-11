@@ -4,15 +4,15 @@ import mousePosition from '../lib/get_mouse_position';
 import Snap from 'snapsvg';
 
 function showInfo(info) {
- mousePosition(null)
-           .then(p => {
-             info.style.opacity = 1;
-             info.style.top = (p.top - 60) + 'px';
-             info.style.left = (p.left - 300) + 'px';
-           });
+  mousePosition(null)
+    .then(p => {
+      info.style.opacity = 1;
+      info.style.top = (p.top - 60) + 'px';
+      info.style.left = (p.left - 300) + 'px';
+    });
 }
 
-export default function() {
+export default function () {
 
   Vue.component('map', {
     template: '#map-template',
@@ -24,12 +24,17 @@ export default function() {
     ready() {
       let info = document.querySelector('.map__info');
       var instance = this;
-      let reports = JSON.parse( instance.posts );
+      let reports = JSON.parse(instance.posts);
 
       var s = Snap("#svg");
 
+      var myMatrix = new Snap.Matrix();
+      myMatrix.scale(4,2);            // play with scaling before and after the rotate 
+      myMatrix.translate(100,0);      // this translate will not be applied to the rotation
+      myMatrix.rotate(45);            // rotate
+
       Snap.load(this.mapUrl, function (f) {
-        
+
         f.selectAll("polygon").forEach(el => {
           el.mousemove((e) => {
             console.log(el.attr("id"));
@@ -48,16 +53,20 @@ export default function() {
           });
         })
 
-        f.selectAll("path").attr({fill: "#7A1120"});
+        f.selectAll("path").attr({
+          fill: "#7A1120"
+        });
         var g = f.select("g");
+        
         s.append(g);
+        g.animate({ transform: myMatrix },3000);
       });
     },
 
     methods: {
       search() {
 
-        if(this.country.length > 2) {
+        if (this.country.length > 2) {
           this.items = this.posts.filter(
             pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1
           );
