@@ -73,17 +73,19 @@ function logos_settings_page() {
 							value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
 						/>
 
-						<ul>
+						<select>
 							<?php 
 								$langs = get_terms( array(
 									'taxonomy' => 'language',
 									'hide_empty' => false,
 								)); 
 								foreach($langs as $lang) {
-									echo $lang->name . ": " . $lang->slug;
+								?>
+								<option value="<?php echo $lang->name ?>"><?php echo $lang->slug ?></option>
+								<?php
 								}
 							?>
-						</ul>
+						</select>
 
 							<?php submit_button(); ?>
 
