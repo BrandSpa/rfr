@@ -63,16 +63,17 @@ function logos_settings_page() {
 						<hr>
 
 						<h4>Logo url</h4>
-
-						<input
-							style="background: rgba(255,255,255,.4); width: 60%; height: 35px"
-							type="text"
-							class="add_uploader"
-							placeholder="logo url"
-							name="logo_<?php echo $value ?>"
-							value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
-						/>
-
+						<p>
+							<input
+								style="background: rgba(255,255,255,.4); width: 60%; height: 35px"
+								type="text"
+								class="add_uploader"
+								placeholder="logo url"
+								name="logo_<?php echo $value ?>"
+								value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
+							/>
+						</p>
+						
 						<select name="langs_<?php echo $value ?>[]" style="background: rgba(255,255,255,.4); width: 60%; height: 35px">
 							<?php 
 								$langs = get_terms( array(
@@ -86,23 +87,28 @@ function logos_settings_page() {
 								}
 							?>
 						</select>
+
+						<div id="langs-container"></div>
 
 						<template id="template_<?php echo $value ?>">
-						<select name="langs_<?php echo $value ?>[]" style="background: rgba(255,255,255,.4); width: 60%; height: 35px">
-							<?php 
-								$langs = get_terms( array(
-									'taxonomy' => 'language',
-									'hide_empty' => false,
-								)); 
-								foreach($langs as $lang) {
+							<select name="langs_<?php echo $value ?>[]" style="background: rgba(255,255,255,.4); width: 60%; height: 35px">
+								<?php 
+									$langs = get_terms( array(
+										'taxonomy' => 'language',
+										'hide_empty' => false,
+									)); 
+									foreach($langs as $lang) {
+									?>
+									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
+									<?php
+									}
 								?>
-								<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-								<?php
-								}
-							?>
-						</select>
-
+							</select>
 						</template>
+
+						<script>
+							
+						</script>
 
 							<?php submit_button(); ?>
 

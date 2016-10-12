@@ -36,6 +36,10 @@ include_once $lib . '/get_reports.php';
 
 include_once $options . '/info.php';
 
+
+include_once('includes/shortcodes/shortcodes.php');
+
+
 setTranslations();
 //include metaboxes
 include_once $metaboxes . '/report.php';
