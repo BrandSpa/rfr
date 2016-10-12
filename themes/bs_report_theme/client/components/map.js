@@ -100,7 +100,7 @@ export default function () {
           }
           
           el.on('mousemove', evt => {
-            let countryInfo = report[0] ? report[0].post_tile : countryName;
+            let countryInfo = report[0] ? report[0].post_title : countryName;
             showInfo(info, countryInfo);
             setStyle(el);
           });
