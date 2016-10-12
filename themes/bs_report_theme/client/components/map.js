@@ -63,6 +63,8 @@ export default function () {
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
+        d3.select(mapContainer).call(d3.drag().on("start", e => console.log(e)));
+
         let paths = d3.select(mapContainer).selectAll("path");
 
         polygons.each(function(pol) {
