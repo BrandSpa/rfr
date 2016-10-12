@@ -72,10 +72,9 @@ export default function () {
             // event.x += d3.event.x
             // event.y += d3.event.y
 
-            // d3.select(this).attr("transform", function(d){
-            //     return "translate(" + [ x, y ] + ")"
-
-            // })
+            d3.select(this).attr("transform", function(d){
+              return "translate(" + [ d3.event.dx, d3.event.dy ] + ")"
+            })
         });
       
       appendMap(this.mapUrl, mapContainer, () => {
