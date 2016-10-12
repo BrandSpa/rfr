@@ -72,6 +72,7 @@ export default function () {
             // event.x += d3.event.x
             // event.y += d3.event.y
 
+
             d3.select(this).attr("transform", function(d){
               return "translate(" + [ x, y ] + ")"
             })
@@ -81,6 +82,7 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
         d3.select("#map-container svg g").call(drag);
+        d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
 
