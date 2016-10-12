@@ -76,7 +76,7 @@ function logos_settings_page() {
 						<ul>
 						<?php 
 							if(function_exists('pll_the_languages')){
-								pll_the_languages();
+								echo pll_the_languages();
 							} else {
 								echo "function doesnt exist";
 							}
