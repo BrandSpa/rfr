@@ -76,7 +76,7 @@ function logos_settings_page() {
 						<ul>
 						show this message:
 						<?php
-							var_dump( get_taxonomy( 'language' ) );
+							var_dump( term_description(null, 'language' ) );
 						?>
 						</ul>
 
