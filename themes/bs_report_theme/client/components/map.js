@@ -67,15 +67,15 @@ export default function () {
           let x = event.x - d3.event.x;
           let y = event.y - d3.event.y;
 
-          console.log(x +" : "+ y);
+          console.log(d3.event.x + " dx " + d3.event.dx +" : "+ d3.event.dy);
 
             // event.x += d3.event.x
             // event.y += d3.event.y
 
-            d3.select(this).attr("transform", function(d){
-                return "translate(" + [ x, y ] + ")"
+            // d3.select(this).attr("transform", function(d){
+            //     return "translate(" + [ x, y ] + ")"
 
-            })
+            // })
         });
       
       appendMap(this.mapUrl, mapContainer, () => {
