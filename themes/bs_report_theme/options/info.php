@@ -75,9 +75,11 @@ function logos_settings_page() {
 
 						<ul>
 						show this message:
-						<?php
-							var_dump( term_description(null, 'language' ) );
-						?>
+						<?php if( function_exists('pll_the_languages') ) : ?>
+							<?php pll_the_languages(); ?>
+							<?php else: ?>
+							<?php _e('install polylang plugin'); ?>
+							<?php endif; ?>
 						</ul>
 
 							<?php submit_button(); ?>
