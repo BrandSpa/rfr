@@ -74,7 +74,7 @@ export default function () {
             // event.y += d3.event.y
 
 
-            d3.select(g).attr("transform", function(d){
+            d3.select(this).select('g').attr("transform", function(d){
               return "translate(" + [ x, y ] + ")"
             })
         });
