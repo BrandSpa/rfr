@@ -89,8 +89,13 @@ function bs_add_report_type() {
 }
 
 add_action( 'init', 'bs_add_report_type' );
-
-if(function_exists('set_pdf_print_support')) {
-  set_pdf_print_support(['reports']);
+function getLangList() {
+  if( function_exists('pll_the_languages') ) {
+    return pll_the_languages();
+  }  else {
+    return _e('install polylang plugin');
+  } 
 }
+
+
 ?>
