@@ -32,6 +32,7 @@ include_once $lib . '/get_translation.php';
 include_once $lib . '/translate_array.php';
 include_once $lib . '/translate_list.php';
 include_once $lib . '/countries.php';
+include_once $lib . '/get_reports.php';
 
 include_once $options . '/info.php';
 
