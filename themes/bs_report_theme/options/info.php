@@ -75,11 +75,13 @@ function logos_settings_page() {
 
 						<ul>
 							<?php 
-								$tax = get_terms( array(
+								$langs = get_terms( array(
 									'taxonomy' => 'language',
 									'hide_empty' => false,
 								)); 
-								print_r($tax);
+								foreach($langs as $lang) {
+									echo $lang->description;
+								}
 							?>
 						</ul>
 
