@@ -62,9 +62,10 @@ export default function () {
 
        var drag = d3.drag()
         .on("drag", function(d) {
-          
-          let x = d3.event.x - d3.event.dx - this.getBBox().width;
-          let y = d3.event.y - d3.event.dy - this.getBBox().height;
+          let w = this.getBBox().width / 2;
+          let h = this.getBBox().height / 2;
+          let x = d3.event.x - d3.event.dx - w;
+          let y = d3.event.y - d3.event.dy - h;
 
           console.log(x, y);
 
