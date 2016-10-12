@@ -60,24 +60,22 @@ export default function () {
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
 
-       var drag = d3.drag()
-        .on("drag", function(d) {
+      let dragged = function(d, i) {
+          console.log(d);
           let g = document.querySelector('#map-container svg g');
           let w = g.getBBox().width / 2;
           let h = g.getBBox().height / 2;
           let x = d3.event.x  - w;
           let y = d3.event.y - h;
 
-          console.log(x, y);
-
-            // event.x += d3.event.x
-            // event.y += d3.event.y
-
-
             d3.select(this).select('g').attr("transform", function(d){
               return "translate(" + [ x, y ] + ")"
             })
-        });
+        };
+
+       var drag = d3
+        .drag()
+        .on("drag", dragged);
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
