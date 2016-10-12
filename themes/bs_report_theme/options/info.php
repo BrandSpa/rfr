@@ -73,7 +73,7 @@ function logos_settings_page() {
 							value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
 						/>
 
-						<select>
+						<select name="langs_<?php echo $value ?>[]">
 							<?php 
 								$langs = get_terms( array(
 									'taxonomy' => 'language',
@@ -81,7 +81,7 @@ function logos_settings_page() {
 								)); 
 								foreach($langs as $lang) {
 								?>
-								<option value="<?php echo $lang->name ?>"><?php echo $lang->slug ?></option>
+								<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
 								<?php
 								}
 							?>
