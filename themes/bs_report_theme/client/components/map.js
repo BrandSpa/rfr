@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
 
 function showInfo(info, txt) {
-  d3.select(info).text(txt);
+  d3.select(info).select('.map__info_country').text(txt);
 
   mousePosition(null)
     .then(p => {
