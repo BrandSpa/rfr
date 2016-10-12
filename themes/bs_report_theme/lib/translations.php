@@ -22,6 +22,7 @@
       registerStr('PRESS');
       registerStr('NATURE OF PERSECUTION');
       registerStr('SITUATION');
+      registerStr('RELIGIONS');
       registerStr('Area');
       registerStr('Population');
       registerStr('Political');
