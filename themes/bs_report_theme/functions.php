@@ -42,12 +42,6 @@ include_once $lib . '/get_reports.php';
 
 include_once $options . '/info.php';
 
-define('QODE_ROOT', get_template_directory_uri());
-define('QODE_ROOT_DIR', get_template_directory());
-define('QODE_VAR_PREFIX', 'qode_');
-
-include_once('includes/shortcodes/shortcodes.php');
-
 setTranslations();
 //include metaboxes
 include_once $metaboxes . '/report.php';
@@ -101,6 +95,7 @@ function bs_add_report_type() {
 }
 
 add_action( 'init', 'bs_add_report_type' );
+
 function getLangList() {
   if( function_exists('pll_the_languages') ) {
     return pll_the_languages();
