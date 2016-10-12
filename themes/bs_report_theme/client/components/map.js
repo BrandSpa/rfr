@@ -66,7 +66,7 @@ export default function () {
           let x = d3.event.x - d3.event.dx;
           let y = d3.event.y - d3.event.dy;
 
-          console.log(this.offsetWidth);
+          console.log(this.getBBox().width);
 
             // event.x += d3.event.x
             // event.y += d3.event.y
