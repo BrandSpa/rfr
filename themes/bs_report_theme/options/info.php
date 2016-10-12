@@ -76,7 +76,7 @@ function logos_settings_page() {
 						<ul>
 						<?php 
 							if(function_exists('pll_the_languages')){
-								echo pll_the_languages();
+								echo pll_the_languages(array('dropdown'=>1));
 							} else {
 								echo "function doesnt exist";
 							}
