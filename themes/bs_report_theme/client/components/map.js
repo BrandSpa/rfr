@@ -64,16 +64,16 @@ export default function () {
         .on("drag", function(d) {
           
           
-          let x = event.x - d3.event.x;
-          let y = event.y - d3.event.y;
+          let x = event.x + d3.event.dx;
+          let y = event.y + d3.event.dy;
 
-          console.log(d3.event.x + " dx " + d3.event.dx +" : "+ d3.event.dy);
+          console.log("x " + x +" y "+ y);
 
             // event.x += d3.event.x
             // event.y += d3.event.y
 
             d3.select(this).attr("transform", function(d){
-              return "translate(" + [ d3.event.dx, d3.event.dy ] + ")"
+              return "translate(" + [ x, y ] + ")"
             })
         });
       
