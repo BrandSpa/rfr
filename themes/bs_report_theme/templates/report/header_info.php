@@ -2,7 +2,8 @@
   <div class="row">
     <div class="col-xs-6">
       <div class="report__icon-info">
-        <span class="icon-political_system" style="font-size: 59px"></span>
+
+           <img src="<?php echo get_template_directory_uri() . '/img/icons/political_system.svg' ?>" />
         <h5 class="title-uppercase color-red">
           <?php echo gett('Political') ?> <sup><?php echo gett(get_post_meta($post->ID, 'report_political_system_sup_key', true)) ?></sup>
         </h5>
@@ -14,7 +15,7 @@
 
     <div class="col-xs-6">
       <div class="report__icon-info">
-        <span class="icon-major_languages" style="font-size: 52px"></span>
+         <img src="<?php echo get_template_directory_uri() . '/img/icons/major_languages.svg' ?>" />
 
         <h5 class="title-uppercase color-red">
           <?php echo gett('Major Languages') ?> <sup><?php echo get_post_meta($post->ID, 'report_languages_sup_key', true) ?></sup>
@@ -40,7 +41,9 @@
   <div class="row">
     <div class="col-xs-6">
       <div class="report__icon-info">
-        <span class="icon-area" style="font-size: 51px"></span>
+          
+          <img src="<?php echo get_template_directory_uri() . '/img/icons/area.svg' ?>" />
+
         <h5 class="title-uppercase color-red">
           <?php echo gett('Area') ?><sup><?php echo get_post_meta($post->ID, 'report_area_sup_key', true) ?></sup>
         </h5>
@@ -52,7 +55,8 @@
 
     <div class="col-xs-6">
       <div class="report__icon-info">
-        <span class="icon-population" style="font-size: 73px"></span>
+
+           <img src="<?php echo get_template_directory_uri() . '/img/icons/population.svg' ?>" />
 
         <h5 class="title-uppercase color-red">
           <?php echo gett('Population') ?> <sup><?php echo get_post_meta($post->ID, 'report_population_sup_key', true) ?></sup>
