@@ -76,9 +76,8 @@ export default function () {
           .append(() => this );
           }
           
-
           el.on('mousemove', evt => {
-             let countryInfo = report[0] ? report[0].post_name : countryName;
+             let countryInfo = report[0] ? report[0].post_title : countryName;
             showInfo(info, countryInfo);
             setStyle(el);
           });
@@ -101,7 +100,7 @@ export default function () {
           }
           
           el.on('mousemove', evt => {
-            let countryInfo = report[0] ? report[0].post_name : countryName;
+            let countryInfo = report[0] ? report[0].post_tile : countryName;
             showInfo(info, countryInfo);
             setStyle(el);
           });
