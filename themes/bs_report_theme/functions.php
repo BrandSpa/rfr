@@ -36,6 +36,10 @@ include_once $lib . '/get_reports.php';
 
 include_once $options . '/info.php';
 
+define('QODE_ROOT', get_template_directory_uri());
+define('QODE_ROOT_DIR', get_template_directory());
+define('QODE_VAR_PREFIX', 'qode_');
+
 
 include_once('includes/shortcodes/shortcodes.php');
 

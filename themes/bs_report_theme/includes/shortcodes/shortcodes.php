@@ -34,9 +34,6 @@ if (!function_exists('num_shortcodes')){
         return $columns;
     }
 }
-define('QODE_ROOT', get_template_directory_uri());
-define('QODE_ROOT_DIR', get_template_directory());
-define('QODE_VAR_PREFIX', 'qode_');
 
 include_once QODE_ROOT_DIR.'/includes/shortcodes/shortcode-elements/accordion.php';
 include_once QODE_ROOT_DIR.'/includes/shortcodes/shortcode-elements/action.php';
