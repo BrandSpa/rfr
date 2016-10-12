@@ -76,11 +76,7 @@ function logos_settings_page() {
 						<ul>
 						show this message:
 						<?php
-							if(function_exists('pll_the_languages')){
-								var_dump( pll_the_languages() );
-							} else {
-								echo "function doesnt exist";
-							}
+							var_dump( get_taxonomy( 'language' ) );
 						?>
 						</ul>
 
