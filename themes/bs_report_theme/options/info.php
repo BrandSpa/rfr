@@ -73,20 +73,6 @@ function logos_settings_page() {
 							value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
 						/>
 
-						<h4>Donate url</h4>
-
-						<input
-							style="background: rgba(255,255,255,.4); width: 60%; height: 35px"
-							type="text"
-							placeholder="donate url"
-							name="donate_url_<?php echo $value ?>"
-							value="<?php echo esc_attr( get_option('donate_url_' . $value ) ); ?>"
-						/>
-
-						<h4>Contact info</h4>
-
-						<?php wp_editor( get_option('contact_info_' . $value ), 'contact_info_' . $value); ?>
-
 							<?php submit_button(); ?>
 
           </section>
