@@ -75,7 +75,7 @@ function logos_settings_page() {
 
 						<ul>
 						show this message:
-						<?php getLangList() ?>
+						<?php echo getLangList() ?>
 						
 						</ul>
 
