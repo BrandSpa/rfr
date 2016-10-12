@@ -62,7 +62,7 @@ export default function () {
 
        var drag = d3.drag()
         .on("drag", function(d) {
-          let g = d3.select(this).select('g');
+          let g = document.querySelector('#map-container svg g');
           let w = g.getBBox().width / 2;
           let h = g.getBBox().height / 2;
           let x = d3.event.x  - w;
@@ -74,7 +74,7 @@ export default function () {
             // event.y += d3.event.y
 
 
-            g.attr("transform", function(d){
+            d3.select(g).attr("transform", function(d){
               return "translate(" + [ x, y ] + ")"
             })
         });
