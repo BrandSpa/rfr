@@ -43,6 +43,7 @@ function getCountries() {
     "Congo",
     "Costa Rica",
     "Croatia",
+    "Cuba",
     "Cyprus",
     "Czech Republic",
     "Denmark",
