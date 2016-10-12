@@ -5,6 +5,16 @@
  * Copyright 2016 BrandSpa
  */
 
+
+// enqueue the child theme stylesheet
+
+Function wp_schools_enqueue_scripts() {
+wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css'  );
+wp_enqueue_style( 'childstyle' );
+}
+add_action( 'wp_enqueue_scripts', 'wp_schools_enqueue_scripts', 11);
+
+
 //add navigation menus
 register_nav_menus(
   array(
@@ -41,7 +51,6 @@ define('QODE_ROOT_DIR', get_template_directory());
 define('QODE_VAR_PREFIX', 'qode_');
 
 include_once('includes/shortcodes/shortcodes.php');
-
 
 setTranslations();
 //include metaboxes
