@@ -25,7 +25,6 @@
 </a>
 
 
-
 <div class="nav">
   <div class="nav__logo" style="height: 120px;background: #fff">
     <?php
