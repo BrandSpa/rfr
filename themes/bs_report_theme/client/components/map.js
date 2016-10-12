@@ -65,7 +65,7 @@ export default function () {
           
           
           let x = d3.event.x - d3.event.dx;
-          let y = d3.event.dy - d3.event.y;
+          let y = d3.event.y - d3.event.dy;
 
           console.log("x " + x +" y "+ y);
 
