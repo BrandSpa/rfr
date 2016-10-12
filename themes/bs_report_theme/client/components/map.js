@@ -65,8 +65,8 @@ export default function () {
           let g = d3.select(this).select('g');
           let w = g.getBBox().width / 2;
           let h = g.getBBox().height / 2;
-          let x = d3.event.x + d3.event.dx - w;
-          let y = d3.event.y + d3.event.dy - h;
+          let x = d3.event.x  - w;
+          let y = d3.event.y - h;
 
           console.log(x, y);
 
