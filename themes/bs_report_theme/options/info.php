@@ -80,6 +80,7 @@ function logos_settings_page() {
 									'hide_empty' => false,
 								)); 
 								foreach($langs as $lang) {
+									print_r($lang);
 									echo $lang->name . ": " . $lang->locale;
 								}
 							?>
