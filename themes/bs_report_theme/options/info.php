@@ -74,7 +74,13 @@ function logos_settings_page() {
 						/>
 
 						<ul>
-							
+							<?php 
+								$tax = get_terms( array(
+									'taxonomy' => 'language',
+									'hide_empty' => false,
+								)); 
+								print_r($tax);
+							?>
 						</ul>
 
 							<?php submit_button(); ?>
