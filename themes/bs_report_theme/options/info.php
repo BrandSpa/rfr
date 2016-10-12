@@ -1,4 +1,5 @@
 <?php
+include(get_template_directory() . '/lib/countries.php');
 // create custom plugin settings menu
 add_action('admin_menu', 'bs_admin_options_menu');
 
@@ -26,7 +27,7 @@ function bs_admin_options_menu() {
 }
 
 function bs_add_country_info_settings() {
-	$options = include(get_template_directory() . '/lib/countries.php');
+	$options = getCountries();
 
   foreach ($options as $value) {
 		$value = str_replace(' ', '_', $value);
@@ -40,7 +41,7 @@ function bs_add_country_info_settings() {
 function logos_settings_page() {
 ?>
   <?php
-  $countries = include(get_template_directory() . '/lib/countries.php');
+  $countries = getCountries();
    ?>
 
   <div style="background: #f1f1f1; background-size: contain; padding: 15px">
