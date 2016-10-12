@@ -61,8 +61,8 @@ export default function () {
       let lang = this.lang;
 
        var drag = d3.drag()
-        .on("drag", function(d) {
-          console.log(this.x)
+        .on("start", function(d) {
+          console.log(this)
 
             d.x += d3.event.x
             d.y += d3.event.y
