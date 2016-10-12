@@ -60,7 +60,7 @@ export default function () {
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
 
-       var drag = d3.behavior.drag()
+       var drag = d3.drag()
         .on("drag", function(d,i) {
             d.x += d3.event.dx
             d.y += d3.event.dy
