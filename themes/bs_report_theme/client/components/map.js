@@ -73,9 +73,7 @@ export default function () {
             })
         };
 
-       var drag = d3
-        .drag()
-        .on("drag", dragged);
+       var drag = d3.behavior.drag().on("drag", dragged);
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
