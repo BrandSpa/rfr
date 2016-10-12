@@ -64,8 +64,8 @@ export default function () {
         .on("drag", function(d) {
           
           
-          let x = d3.event.dx + d3.event.x;
-          let y = d3.event.dy + d3.event.y;
+          let x = d3.event.x - d3.event.dx;
+          let y = d3.event.dy - d3.event.y;
 
           console.log("x " + x +" y "+ y);
 
