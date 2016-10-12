@@ -1,4 +1,5 @@
 <?php
+
 function getCountries() {
   $countries = array(
     "Afghanistan",
