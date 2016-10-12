@@ -61,7 +61,7 @@ export default function () {
       let lang = this.lang;
 
       let dragged = function(d, i) {
-          console.log('d', d);
+          console.log('d', d3.drag().subject(this));
           let g = document.querySelector('#map-container svg g');
           let w = g.getBBox().width / 2;
           let h = g.getBBox().height / 2;
@@ -73,12 +73,12 @@ export default function () {
             })
         };
 
-
+       var drag = d3.drag().on("drag", dragged);
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
-        d3.select("#map-container svg").drag().on("drag", dragged);
+        d3.select("#map-container svg").call(drag);
         d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
