@@ -73,7 +73,7 @@ function logos_settings_page() {
 							value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
 						/>
 
-						<ul><?php pll_the_languages(); ?></ul>
+						<ul><?php echo pll_the_languages(); ?></ul>
 
 							<?php submit_button(); ?>
 
