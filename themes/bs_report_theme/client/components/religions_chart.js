@@ -13,7 +13,6 @@ export default function() {
       let colors = this.colors;
       let seriesData = [];
       let subSeriesData = [];
-      console.log(religions);
 
       function createData(color, name, y, brighten) {
         let newOb = {};
