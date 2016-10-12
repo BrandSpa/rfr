@@ -25,7 +25,6 @@
     </div>
 
   </div>
-
  
     <?php include 'templates/report/content.php' ?>
 
