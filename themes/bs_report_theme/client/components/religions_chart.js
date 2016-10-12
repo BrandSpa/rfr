@@ -80,7 +80,7 @@ export default function() {
             size: '60%',
             dataLabels: {
                 formatter: function () {
-                    return this.y > 5 ? this.point.name : null;
+                    return this.point.name;
                 },
                 color: '#ffffff',
                 distance: -30
@@ -93,7 +93,7 @@ export default function() {
             dataLabels: {
                 formatter: function () {
                     // display only if larger than 1
-                    return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+                    return '<b>' + this.point.name + ':</b> ' + this.y + '%';
                 }
             }
         }]
