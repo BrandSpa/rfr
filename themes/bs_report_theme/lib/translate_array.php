@@ -3,7 +3,7 @@
   include_once __DIR__ . '/religions_colors.php';
 
   function changeCommaForDot($str) {
-    str_replace(',', '.', $str);
+    return str_replace(',', '.', $str);
   }
 
   function tArray($arr) {
