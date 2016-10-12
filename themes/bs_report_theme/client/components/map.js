@@ -62,10 +62,11 @@ export default function () {
 
        var drag = d3.drag()
         .on("drag", function(d) {
-          let w = this.getBBox().width / 2;
-          let h = this.getBBox().height / 2;
-          let x = d3.event.x - d3.event.dx - w;
-          let y = d3.event.y - d3.event.dy - h;
+          let g = d3.select(this).select('g');
+          let w = g.getBBox().width / 2;
+          let h = g.getBBox().height / 2;
+          let x = d3.event.x + d3.event.dx - w;
+          let y = d3.event.y + d3.event.dy - h;
 
           console.log(x, y);
 
@@ -73,7 +74,7 @@ export default function () {
             // event.y += d3.event.y
 
 
-            d3.select(this).attr("transform", function(d){
+            g.attr("transform", function(d){
               return "translate(" + [ x, y ] + ")"
             })
         });
@@ -81,7 +82,7 @@ export default function () {
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
-        d3.select("#map-container svg g").call(drag);
+        d3.select("#map-container svg").call(drag);
         d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
