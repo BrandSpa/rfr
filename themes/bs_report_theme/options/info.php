@@ -80,7 +80,7 @@ function logos_settings_page() {
 									'hide_empty' => false,
 								)); 
 								foreach($langs as $lang) {
-									echo wp_parse_str($lang->locale);
+									echo $lang->name . ": " . $lang->locale;
 								}
 							?>
 						</ul>
