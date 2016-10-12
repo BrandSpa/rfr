@@ -74,7 +74,7 @@ function logos_settings_page() {
 						/>
 
 						<ul>
-							<?php echo getLangList() ?>
+							
 						</ul>
 
 							<?php submit_button(); ?>
