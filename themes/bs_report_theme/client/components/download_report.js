@@ -14,7 +14,12 @@ export default function() {
     },
 
     ready() {
-     console.log(this.$data);
+     console.log(this.name);
+    },
+    methods: {
+      onSubmit() {
+        console.log('submit', this.$data);
+      }
     }
   });
 }

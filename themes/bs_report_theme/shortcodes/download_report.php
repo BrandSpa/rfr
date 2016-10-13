@@ -65,7 +65,7 @@
 </div>
 
 <template id="form-download-template">
-     <form action="">
+     <form action="" v-on:submit.prevent="onSubmit">
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Name') ?></label>
           <input type="text" v-model="name">
@@ -87,6 +87,6 @@
         </div>
 
 
-        <button class="button title-uppercase"><?php echo gett('Download') ?></button>
+        <button class="button title-uppercase" v-on:click.prevent="onSubmit"><?php echo gett('Download') ?></button>
       </form>
 </template>
