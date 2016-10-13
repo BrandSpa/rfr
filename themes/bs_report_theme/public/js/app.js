@@ -112,7 +112,7 @@ exports.default = function () {
 
         this.$set('validation', validation);
         return !Object.keys(validation).filter(function (key) {
-          return validation[key] == false;
+          return validation[key] == true;
         }).length > 0;
       },
       onSubmit: function onSubmit() {
