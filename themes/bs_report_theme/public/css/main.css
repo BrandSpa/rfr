@@ -654,6 +654,7 @@ input {
         width: 100%;
         color: #fff;
         text-align: center;
+        text-transform: uppercase;
         font-family: "Roboto", sans-serif;
         font-size: 1.5em;
         font-weight: 500;
