@@ -37,7 +37,7 @@ export default function () {
         };
 
         this.$set('validation', validation);
-        return Object.keys(validation).filter(key => validation[key] == false);
+        return !Object.keys(validation).filter(key => validation[key] == false).lenght > 0;
       },
 
       onSubmit() {
