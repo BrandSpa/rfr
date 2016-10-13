@@ -64,7 +64,7 @@
 
 </div>
 
-<template id="form_-ownload-template">
+<template id="form-download-template">
      <form action="">
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Name') ?></label>
