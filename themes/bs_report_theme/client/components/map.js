@@ -68,9 +68,8 @@ export default function () {
           let x = d3.event.x  - w;
           let y = d3.event.y - h;
 
-            d3.select(this).select('g').attr("transform", function(d){
-              return "translate(" + [ x, y ] + ")"
-            })
+            d3.select(this).select('g').attr("x", d.x = d3.event.x);
+            d3.select(this).select('g').attr("y", d.y = d3.event.y);
         };
 
        var drag = d3.drag().on("drag", dragged);
