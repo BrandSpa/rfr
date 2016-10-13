@@ -66,6 +66,10 @@ export default function () {
         d3.select(this).select('g').attr("transform", "translate("+ [d3.event.x, d3.event.y] +")");
         };
 
+      let zoomed = function() {
+        d3.select(this).attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+      };
+
        var drag = d3.drag().subject(function() { 
           var t = d3.select(this);
           return {x: t.attr("x"), y: t.attr("y")};
@@ -76,6 +80,7 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
         d3.select("#map-container svg").call(drag);
+        selection.call(d3.zoom().on("zoom", zoomed));
         d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
