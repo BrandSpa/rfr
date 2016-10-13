@@ -7,6 +7,7 @@ export default function() {
 
     ready() {
       console.log('hi form');
+      console.log('mmmm');
     }
   });
 }
