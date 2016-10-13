@@ -68,9 +68,13 @@
 
   function openNav(evt) {
     evt.preventDefault();
+
     if(!open) {
-      var navLeft = '-200px'; 
-      var bodyMarginLeft = '0'; 
+      navLeft = '-200px'; 
+      bodyMarginLeft = '0'; 
+    } else {
+       navLeft = '0'; 
+      bodyMarginLeft = '200px'; 
     }
 
      nav.css({'left': navLeft});
