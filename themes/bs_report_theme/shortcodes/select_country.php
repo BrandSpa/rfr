@@ -1,4 +1,4 @@
-<template id="select-country-template">
+<template id="country-select-template">
   <div class="select_country">
     <a href="#" class="select_country__close">X </a>
     <ul>
