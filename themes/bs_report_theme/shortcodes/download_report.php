@@ -57,13 +57,13 @@
       </a>
     </div>
     <div class="col-md-5">
- 
+      <form-download-report></form-download-report>
     </div>
     <div class="col-md-1"></div>
   </div>
 
 </div>
-<form-download-report></form-download-report>
+
 <template id="form_-ownload-template">
      <form action="">
         <div class="input-container">

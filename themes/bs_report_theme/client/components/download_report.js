@@ -3,7 +3,7 @@ import Vue from 'vue';
 
 export default function() {
   Vue.component('form-download-report', {
-    template: '#form_-ownload-template',
+    template: '#form-download-template',
 
     ready() {
 
