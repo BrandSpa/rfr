@@ -61,19 +61,13 @@ export default function () {
       let lang = this.lang;
 
       let dragged = function(d, i) {
-          console.log(d);
-          let g = document.querySelector('#map-container svg g');
-          
-          d.x += d3.event.x;
-          d.y += d3.event.y;
-
-  
+        console.log(d);
+        let g = document.querySelector('#map-container svg g');
         d3.select(this).select('g').attr("transform", "translate("+ [d3.event.x, d3.event.y] +")");
-            
         };
 
        var drag = d3.drag().subject(function() { 
-          var t = d3.select(this).select('g');
+          var t = d3.select(this);
           return {x: t.attr("x"), y: t.attr("y")};
         })
         .on("drag", dragged);
