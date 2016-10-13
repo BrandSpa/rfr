@@ -33,10 +33,10 @@ export default function () {
 
         switch (type) {
           case 'required':
-          validation = {...validation, name: true};
+          validation = {...validation, name: validator.isEmpty(data)};
           break;
           case 'email':
-            validator.isEmail(data);
+            validation = {...validation, email: validator.isEmail(data)};
           break;
         }
 

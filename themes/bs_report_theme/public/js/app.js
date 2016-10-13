@@ -105,10 +105,10 @@ exports.default = function () {
 
         switch (type) {
           case 'required':
-            validation = _extends({}, validation, { name: true });
+            validation = _extends({}, validation, { name: _validator2.default.isEmpty(data) });
             break;
           case 'email':
-            _validator2.default.isEmail(data);
+            validation = _extends({}, validation, { email: _validator2.default.isEmail(data) });
             break;
         }
 
