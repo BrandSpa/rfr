@@ -68,14 +68,14 @@ export default function () {
 
       let zoomed = d3.zoom().scaleExtent([1,4]).on('zoom', function() {
         let transform = d3.event.transform;
-
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")" + " scale(" + transform.k + ")")
       });
       
        var drag = d3.drag().subject(function() { 
           var t = d3.select(this);
           return {x: t.attr("x"), y: t.attr("y")};
-        }).on("drag", dragged);
+        })
+        .on("drag", dragged);
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
