@@ -72,7 +72,7 @@
             <?php echo gett('Name') ?> 
             <span 
               class="input-container__error" 
-              v-bind:class="{ 'input-container__error-show': !validation.name}"   
+              v-bind:class="{ 'input-container__error-show': validation.name}"   
             >
               <?php echo gett('Required') ?>
             </span>
