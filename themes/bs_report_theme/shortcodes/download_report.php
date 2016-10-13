@@ -57,7 +57,15 @@
       </a>
     </div>
     <div class="col-md-5">
-      <form action="">
+ 
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+</div>
+<form-download-report></form-download-report>
+<template id="form_-ownload-template">
+     <form action="">
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Name') ?></label>
           <input type="text" v-model="name">
@@ -81,8 +89,4 @@
 
         <button class="button title-uppercase"><?php echo gett('Download') ?></button>
       </form>
-    </div>
-    <div class="col-md-1"></div>
-  </div>
-
-</div>
+</template>
