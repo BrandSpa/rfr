@@ -67,15 +67,14 @@ export default function () {
         };
 
       let zoomed = d3.zoom().scaleExtent([1,3]).on('zoom', function() {
-        let transform = d3.event;
-        console.log(transform);
-        
-        d3.select(this).select('g').attr("transform", "translate(" + [0, 0] + ")" + " scale(" + 2 + ")")
+        let transform = d3.event.transform;
+        console.log();
+
+        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")" + " scale(" + transform.k + ")")
       });
       
        var drag = d3.drag().subject(function() { 
           var t = d3.select(this);
-          console.log(t);
           return {x: t.attr("x"), y: t.attr("y")};
         }).on("drag", dragged);
       
