@@ -34,13 +34,14 @@ export default function () {
           case 'email':
             validation = {...validation, email: !validator.isEmail(data)};
           break;
-        }
+        };
 
         this.$set('validation', validation);
+        return Object.keys(validation).filter(key => validation[key] == false);
       },
 
       onSubmit() {
-        console.log('submit', this.validate());
+        console.log(this.validate);
       }
     }
   });

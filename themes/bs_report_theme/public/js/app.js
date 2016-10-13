@@ -108,12 +108,15 @@ exports.default = function () {
           case 'email':
             validation = _extends({}, validation, { email: !_validator2.default.isEmail(data) });
             break;
-        }
+        };
 
         this.$set('validation', validation);
+        return Object.keys(validation).filter(function (key) {
+          return validation[key] == false;
+        });
       },
       onSubmit: function onSubmit() {
-        console.log('submit', this.validate());
+        console.log(this.validate);
       }
     }
   });
