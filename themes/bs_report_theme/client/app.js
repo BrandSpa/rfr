@@ -6,7 +6,7 @@ import countrySelect from './components/country_select';
 
 map();
 religionsChart();
-religionsChart();
+countrySelect();
 
 new Vue({
   el: '#acn_reports'
