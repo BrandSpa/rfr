@@ -18,10 +18,10 @@
 <body id="acn_reports">
 
 <a href="#" id="open-nav" style="position: absolute; left: 40px; top: 40px">
-       <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
 </a>
 
 <div class="nav">
@@ -61,7 +61,7 @@
 <script type="text/javascript">
   var nav = jQuery('.nav');
   var bod = jQuery('body');
-  var open = false;
+  var open = true;
   var navLeft = '0'; 
   var bodyMarginLeft = '200px'; 
   console.log(open);
@@ -72,15 +72,14 @@
     evt.preventDefault();
 
     if(!open) {
-      navLeft = '-200px'; 
-      bodyMarginLeft = '0'; 
+      navLeft = '-200px';
+      zIndex = '0';
     } else {
        navLeft = '0'; 
-      bodyMarginLeft = '200px'; 
+       zIndex = '1001';
     }
 
-     nav.css({'left': navLeft});
-    bod.css({'marginLeft': bodyMarginLeft});
+    nav.css({'left': navLeft, 'z-index': zIndex});
 
     open = !open;
   }
