@@ -72,7 +72,7 @@
             <?php echo gett('Name') ?> 
             <span 
               class="input-container__error" 
-              v-bind:class="{ 'input-container__error-show': validation.name}"   
+              v-bind:class="{ 'input-container__error-show': !validation.name}"   
             >
               <?php echo gett('Required') ?>
             </span>
@@ -87,7 +87,12 @@
         <div class="input-container">
           <label for="" class="color-red">
             <?php echo gett('Email') ?>
-            <span class="input-container__error"> <?php echo gett('Invalid') ?></span>
+            <span
+              class="input-container__error"
+              v-bind:class="{ 'input-container__error-show': validation.email}"
+            > 
+              <?php echo gett('Invalid') ?>
+            </span>
           </label>
           <input 
             type="text"
