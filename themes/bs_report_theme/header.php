@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/css/main.css" media="screen" title="no title">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 </head>
+
 <body id="acn_reports">
 
 <a href="#" id="open-nav" style="position: absolute; left: 40px; top: 40px">
