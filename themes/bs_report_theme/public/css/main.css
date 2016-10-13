@@ -279,9 +279,15 @@ input {
   margin-left: 0;
   margin-right: 0; }
 
-#open-nav:hover .icon-bar {
-  margin-bottom: 6px;
-  background: #FC3938; }
+#open-nav {
+  display: none;
+  margin: 20px auto; }
+  @media (max-width: 767px) {
+    #open-nav {
+      display: block; } }
+  #open-nav:hover .icon-bar {
+    margin-bottom: 6px;
+    background: #FC3938; }
 
 .icon-bar {
   width: 40px;
