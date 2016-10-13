@@ -328,7 +328,7 @@ input {
   text-align: right;
   float: right;
   margin: 40px 40px 0 0; 
-  @media #{$mobile} {
+  @media #{$mobile}, #{$tablet} {
     display: block;
   }
 
