@@ -73,14 +73,12 @@ export default function () {
        var drag = d3.drag().subject(function() { 
           var t = d3.select(this);
           return {x: t.attr("x"), y: t.attr("y")};
-        })
-        .on("drag", dragged);
+        }).on("drag", dragged);
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
-        d3.select("#map-container svg").call(drag);
-        selection.call(d3.zoom().on("zoom", zoomed));
+        d3.select("#map-container svg").call(drag).call(d3.zoom().on("zoom", zoomed));
         d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
