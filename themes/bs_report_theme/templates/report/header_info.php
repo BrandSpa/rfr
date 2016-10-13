@@ -72,7 +72,6 @@
 
 </div>
 
-
   <div class="col-md-8">
 
     <h5 class="title-uppercase color-red" style="text-align: center">
