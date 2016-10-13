@@ -90,13 +90,11 @@ exports.default = function () {
     data: function data() {
       return initialState;
     },
-    ready: function ready() {
-      console.log(this.name);
-    },
 
 
     methods: {
-      validate: function validate(opts) {
+      validate: function validate() {
+        var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { type: '', field: '' };
         var field = opts.field;
         var type = opts.type;
 

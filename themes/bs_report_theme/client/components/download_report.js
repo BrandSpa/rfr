@@ -21,12 +21,8 @@ export default function () {
       return initialState;
     },
 
-    ready() {
-      console.log(this.name);
-    },
-
     methods: {
-      validate(opts) {
+      validate(opts = {type: '', field: ''}) {
         const {field, type} = opts;
         const data = this.$data[field];
         let validation = this.$data.validation;
