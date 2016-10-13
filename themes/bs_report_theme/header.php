@@ -60,20 +60,21 @@
   var nav = jQuery('.nav');
   var bod = jQuery('body');
   var open = false;
-
+  var navLeft = '0'; 
+  var bodyMarginLeft = '200px'; 
   console.log(open);
 
   jQuery('#open-nav').on('click', openNav);
 
   function openNav(evt) {
     evt.preventDefault();
-    if(open) {
-      nav.css({'left': '0'});
-      bod.css({'marginLeft': '200px'});
-    } else {
-      nav.css({'left': '-200px'});
-      bod.css({'marginLeft': '0'});
+    if(!open) {
+      var navLeft = '-200px'; 
+      var bodyMarginLeft = '0'; 
     }
+
+     nav.css({'left': navLeft});
+    bod.css({'marginLeft': bodyMarginLeft});
 
     open = !open;
   }
