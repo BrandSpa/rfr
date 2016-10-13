@@ -112,8 +112,6 @@ exports.default = function () {
             break;
         }
 
-        console.log(validation);
-
         this.$set('validation', validation);
       },
       onSubmit: function onSubmit() {
