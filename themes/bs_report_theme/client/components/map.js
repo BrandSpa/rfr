@@ -67,7 +67,7 @@ export default function () {
         };
 
       let zoomed = function() {
-        console.log(d3.event);
+        console.log(d3.event.translate);
         d3.select(this).select('g').attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
       };
 
