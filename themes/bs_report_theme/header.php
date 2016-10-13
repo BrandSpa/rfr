@@ -3,7 +3,7 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta content="IE=edge" http-equiv=X-UA-Compatible> 
-    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
     <title>RELIGIOUS FREEDOM REPORT - <?php wp_title(); ?></title>
     <?php wp_head(); ?>
 
