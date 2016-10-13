@@ -22,7 +22,6 @@
         <span class="icon-bar"></span>
 </a>
 
-
 <div class="nav">
   <div class="nav__logo" style="height: 120px;background: #fff">
     <?php
@@ -62,7 +61,10 @@
   var bod = jQuery('body');
   var open = false;
 
+  console.log(open);
+
   jQuery('#open-nav').on('click', openNav);
+
   function openNav(evt) {
     evt.preventDefault();
     if(open) {
