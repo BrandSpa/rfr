@@ -536,10 +536,7 @@ input {
     display: block;
     margin: 40px auto;
     height: auto;
-    width: 80%; }
-    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
-      .map svg {
-        padding: 20% 0; } }
+    width: 100%; }
   .map__info {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5625em;

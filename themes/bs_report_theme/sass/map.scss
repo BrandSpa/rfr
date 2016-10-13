@@ -14,11 +14,11 @@
     display: block;
     margin: 40px auto;
     height: auto;
-    width: 80%;
+    width: 100%;
 
-    @media #{$mobile}, #{$tablet} {
-      padding: 20% 0;
-    }
+    // @media #{$mobile}, #{$tablet} {
+    //   padding: 20% 0;
+    // }
   }
 
   &__info {
