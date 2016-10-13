@@ -69,14 +69,15 @@ export default function () {
           let y = d3.event.y - h;
 
   
-            d3.select(this).select('g').attr("transform", "translate("+ [d3.event.x, d3.event.y] +")");
+        d3.select(this).select('g').attr("transform", "translate("+ [d3.event.x, d3.event.y] +")");
             
         };
 
        var drag = d3.drag() .subject(function() { 
-        var t = d3.select(this);
-        return {x: t.attr("x"), y: t.attr("y")};
-        }).on("drag", dragged);
+          var t = d3.select(this).select('g');
+          return {x: t.attr("x"), y: t.attr("y")};
+        })
+        .on("drag", dragged);
       
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
