@@ -116,6 +116,7 @@ exports.default = function () {
         }).length > 0;
       },
       onSubmit: function onSubmit() {
+        console.log(this.$data.validation);
         console.log('is valid: ' + this.validate());
       }
     }

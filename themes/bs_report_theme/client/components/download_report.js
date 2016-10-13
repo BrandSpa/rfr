@@ -41,6 +41,7 @@ export default function () {
       },
 
       onSubmit() {
+        console.log(this.$data.validation);
         console.log('is valid: ' + this.validate());
       }
     }
