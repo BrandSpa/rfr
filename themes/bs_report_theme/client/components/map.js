@@ -68,9 +68,7 @@ export default function () {
           let x = d3.event.x  - w;
           let y = d3.event.y - h;
 
-          d.x = d3.event.x;
-          d.y = d3.event.y
-
+  
             d3.select(this).select('g').attr("transform", "translate("+ [d3.event.x, d3.event.y] +")");
             
         };
