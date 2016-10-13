@@ -26,8 +26,8 @@ gulp.task('app', () => {
       console.log(err);
     })
     .pipe(source('app.js'))
-    .pipe(buffer())
-    .pipe(uglify())
+    // .pipe(buffer())
+    // .pipe(uglify())
     .pipe(gulp.dest('public/js'));
 });
 
