@@ -60,18 +60,24 @@
       <form action="">
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Name') ?></label>
-          <input type="text">
+          <input type="text" v-model="name">
         </div>
 
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Email') ?></label>
-          <input type="text">
+          <input type="text" v-model="email">
         </div>
 
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Language') ?></label>
-          <input type="text">
+          <select name="" id="" v-model="language"></select>
         </div>
+
+         <div class="input-container">
+          <label for="" class="color-red"><?php echo gett('Country') ?></label>
+          <select name="" id="" v-model="country"></select>
+        </div>
+
 
         <button class="button title-uppercase"><?php echo gett('Download') ?></button>
       </form>
