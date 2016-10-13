@@ -1,4 +1,36 @@
 <div class="col-md-4">
+
+
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="report__icon-info">
+          
+          <img src="<?php echo get_template_directory_uri() . '/public/img/icons/area.svg' ?>" />
+
+        <h5 class="title-uppercase color-red">
+          <?php echo gett('Area') ?><sup><?php echo get_post_meta($post->ID, 'report_area_sup_key', true) ?></sup>
+        </h5>
+        <p>
+          <?php echo get_post_meta($post->ID, 'report_area_key', true) ?>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-xs-6">
+      <div class="report__icon-info">
+
+           <img src="<?php echo get_template_directory_uri() . '/public/img/icons/population.svg' ?>" />
+
+        <h5 class="title-uppercase color-red">
+          <?php echo gett('Population') ?> <sup><?php echo get_post_meta($post->ID, 'report_population_sup_key', true) ?></sup>
+        </h5>
+        <p>
+          <?php echo get_post_meta($post->ID, 'report_population_key', true) ?>
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-xs-6">
       <div class="report__icon-info">
@@ -36,36 +68,6 @@
       </div>
     </div>
 
-  </div>
-
-  <div class="row">
-    <div class="col-xs-6">
-      <div class="report__icon-info">
-          
-          <img src="<?php echo get_template_directory_uri() . '/public/img/icons/area.svg' ?>" />
-
-        <h5 class="title-uppercase color-red">
-          <?php echo gett('Area') ?><sup><?php echo get_post_meta($post->ID, 'report_area_sup_key', true) ?></sup>
-        </h5>
-        <p>
-          <?php echo get_post_meta($post->ID, 'report_area_key', true) ?>
-        </p>
-      </div>
-    </div>
-
-    <div class="col-xs-6">
-      <div class="report__icon-info">
-
-           <img src="<?php echo get_template_directory_uri() . '/public/img/icons/population.svg' ?>" />
-
-        <h5 class="title-uppercase color-red">
-          <?php echo gett('Population') ?> <sup><?php echo get_post_meta($post->ID, 'report_population_sup_key', true) ?></sup>
-        </h5>
-        <p>
-          <?php echo get_post_meta($post->ID, 'report_population_key', true) ?>
-        </p>
-      </div>
-    </div>
   </div>
 
 </div>
