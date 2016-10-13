@@ -7,7 +7,10 @@
 
   .button-special {
     margin: 0 auto 60px auto;
-    width: 400px;
+    width: 100%;
+    @media #{$desktop}, #{$desktop--large} {
+      width: 400px;
+    }
   }
   
 }

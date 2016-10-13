@@ -622,7 +622,10 @@ input {
     padding-bottom: 60px; }
   #download-report .button-special {
     margin: 0 auto 60px auto;
-    width: 400px; }
+    width: 100%; }
+    @media (min-width: 992px) and (max-width: 1199px), (min-width: 1200px) {
+      #download-report .button-special {
+        width: 400px; } }
 
 .select_country {
   background: RGBA(24, 30, 35, 0.9);
