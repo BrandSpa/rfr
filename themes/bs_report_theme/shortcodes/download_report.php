@@ -69,16 +69,21 @@
 
         <div class="input-container">
           <label for="" class="color-red">
-          <?php echo gett('Name') ?> 
-            <span class="error">Required</span>
+            <?php echo gett('Name') ?> 
+            <span 
+              class="input-container__error" 
+              v-bind:class="{ 'input-container__error-show': validation.name}"   
+            >
+              <?php echo gett('Required') ?>
+            </span>
           </label>
-          <input type="text" v-model="name">
+          <input type="text" v-model="name" v-on:keyup="validate({field: 'name', type: 'required'})" />
         </div>
 
         <div class="input-container">
           <label for="" class="color-red">
             <?php echo gett('Email') ?>
-            <span class="error">Invalid</span>
+            <span class="input-container__error"> <?php echo gett('Invalid') ?></span>
           </label>
           <input type="text" v-model="email">
         </div>

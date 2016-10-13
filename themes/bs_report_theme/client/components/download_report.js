@@ -2,33 +2,32 @@
 import Vue from 'vue';
 import validator from 'validator';
 
-const ValidatorMessages = {
-  name: 'Name required',
-  email: {
-    required: 'Email required',
-    invalid: 'Email invalid'
+let initialState = {
+  name: '',
+  email: '',
+  language: '',
+  country: '',
+  validation: {
+    name: false,
+    email: false
   }
 };
 
-export default function() {
+export default function () {
   Vue.component('form-download-report', {
     template: '#form-download-template',
-    
+
     data() {
-      return {
-        name: '',
-        email: '',
-        language: '',
-        country: ''
-      }
+      return initialState;
     },
 
     ready() {
-     console.log(this.name);
+      console.log(this.name);
     },
-    
+
     methods: {
-      validate() {
+      validate(opts) {
+        console.log(opts);
         validator.isEmail(this.$data['email']);
         validator.isEmpty(this.$data['name']);
       },
