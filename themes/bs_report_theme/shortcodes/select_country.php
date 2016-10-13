@@ -18,4 +18,4 @@
   </div>
 </template>
 
-<country-select></country-select>
+<countryselect></countryselect>

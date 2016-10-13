@@ -3,7 +3,7 @@ import Vue from 'vue';
 import $ from 'jquery';
 
 export default function() {
-  Vue.component('country-select', {
+  Vue.component('countryselect', {
     template: '#country-select-template',
     props: ['countries'],
 
