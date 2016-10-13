@@ -28,8 +28,9 @@ export default function() {
     },
     
     methods: {
-      validate(field) {
-        return validator.isEmail(this.$data['email']);
+      validate() {
+        validator.isEmail(this.$data['email']);
+        validator.isEmpty(this.$data['name']);
       },
 
       onSubmit() {

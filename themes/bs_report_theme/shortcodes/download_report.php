@@ -66,13 +66,20 @@
 
 <template id="form-download-template">
      <form action="" v-on:submit.prevent="onSubmit">
+
         <div class="input-container">
-          <label for="" class="color-red"><?php echo gett('Name') ?></label>
+          <label for="" class="color-red">
+          <?php echo gett('Name') ?> 
+            <span class="error">Required</span>
+          </label>
           <input type="text" v-model="name">
         </div>
 
         <div class="input-container">
-          <label for="" class="color-red"><?php echo gett('Email') ?></label>
+          <label for="" class="color-red">
+            <?php echo gett('Email') ?>
+            <span class="error">Invalid</span>
+          </label>
           <input type="text" v-model="email">
         </div>
 
