@@ -29,11 +29,11 @@ export default function() {
     
     methods: {
       validate(field) {
-        validator.isEmail('foo@bar.com');
+        return validator.isEmail(this.$data['email']);
       },
 
       onSubmit() {
-        console.log('submit', this.$data['name']);
+        console.log('submit', this.validate());
       }
     }
   });
