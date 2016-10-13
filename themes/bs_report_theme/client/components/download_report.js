@@ -6,7 +6,7 @@ export default function() {
     template: '#form-download-template',
 
     ready() {
-
+      console.log('hi form');
     }
   });
 }
