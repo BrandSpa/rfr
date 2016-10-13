@@ -72,6 +72,7 @@ export default function () {
       
        var drag = d3.drag().subject(function() { 
           var t = d3.select(this);
+          console.log(t);
           return {x: t.attr("x"), y: t.attr("y")};
         }).on("drag", dragged);
       
