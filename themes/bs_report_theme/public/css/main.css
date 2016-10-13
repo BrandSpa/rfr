@@ -283,7 +283,7 @@ input {
   display: none;
   text-align: right;
   float: right;
-  margin-right: 40px; }
+  margin: 40px 40px 0 0; }
   @media (max-width: 767px) {
     #open-nav {
       display: block; } }
