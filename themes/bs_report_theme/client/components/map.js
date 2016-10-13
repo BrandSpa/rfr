@@ -61,7 +61,7 @@ export default function () {
       let lang = this.lang;
 
       let dragged = function(d, i) {
-        console.log(d3.event.target);
+        console.log(d3.event);
           let g = document.querySelector('#map-container svg g');
           let w = g.getBBox().width / 2;
           let h = g.getBBox().height / 2;
