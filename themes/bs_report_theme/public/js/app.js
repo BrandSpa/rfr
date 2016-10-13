@@ -116,7 +116,7 @@ exports.default = function () {
         });
       },
       onSubmit: function onSubmit() {
-        console.log(this.validate);
+        console.log(this.validate());
       }
     }
   });

@@ -41,7 +41,7 @@ export default function () {
       },
 
       onSubmit() {
-        console.log(this.validate);
+        console.log(this.validate());
       }
     }
   });
