@@ -37,11 +37,11 @@ export default function () {
         };
 
         this.$set('validation', validation);
-        return !Object.keys(validation).filter(key => validation[key] == false).lenght > 0;
+        return !Object.keys(validation).filter(key => validation[key] == false).length > 0;
       },
 
       onSubmit() {
-        console.log(this.validate());
+        console.log('is valid: ' + this.validate());
       }
     }
   });

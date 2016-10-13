@@ -113,10 +113,10 @@ exports.default = function () {
         this.$set('validation', validation);
         return !Object.keys(validation).filter(function (key) {
           return validation[key] == false;
-        }).lenght > 0;
+        }).length > 0;
       },
       onSubmit: function onSubmit() {
-        console.log(this.validate());
+        console.log('is valid: ' + this.validate());
       }
     }
   });
