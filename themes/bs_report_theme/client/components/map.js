@@ -66,7 +66,7 @@ export default function () {
         d3.select(this).select('g').attr("transform", "translate("+ [d3.event.x, d3.event.y] +")");
         };
 
-      let zoomed = d3.zoom().scaleExtent([1,4]).on('zoom', function() {
+      let zoomed = d3.zoom().scaleExtent([0.5,4]).on('zoom', function() {
         let transform = d3.event.transform;
 
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")" + " scale(" + transform.k + ")")
