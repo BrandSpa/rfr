@@ -67,7 +67,9 @@ export default function () {
         };
 
       let zoomed = d3.zoom().scaleExtent([1,3]).on('zoom', function() {
-        d3.select(this).select('g').attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+        let transform = d3.event;
+        console.log(transform);
+        d3.select(this).select('g').attr("transform", "translate(" + [0, 0] + ")" + " scale(" + 2 + ")")
       });
       
        var drag = d3.drag().subject(function() { 
