@@ -81,7 +81,7 @@ export default function () {
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
-        d3.select("#map-container svg g").call(drag).call(zoomed);
+        d3.select("#map-container svg g").call(zoomed);
         d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
