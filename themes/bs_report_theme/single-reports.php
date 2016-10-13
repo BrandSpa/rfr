@@ -10,7 +10,6 @@
 
   <div class="report__header" 
     style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg " ?>) no-repeat; background-size:cover ">
-
   
     <div class="row">
       <?php include 'templates/report/header_top.php' ?>
@@ -25,16 +24,14 @@
     </div>
 
   </div>
- 
-    <?php include 'templates/report/content.php' ?>
 
+  <?php include 'templates/report/content.php' ?>
 
   <?php endwhile; ?>
 
   <?php  else : ?>
     <h1><?php _e( "Sorry, we don't have this report..." ); ?></h1>
   <?php endif; ?>
-
 
 <?php include_once 'shortcodes/mp.php' ?>
 <?php include_once 'shortcodes/download_report.php' ?>
@@ -68,10 +65,8 @@
   </div>
 </div>
 
-
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 </body>
 </html>
-
