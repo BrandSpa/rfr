@@ -326,6 +326,8 @@ input {
 #open-nav {
   display: none;
   margin: 20px auto;
+  text-align: right;
+  
   @media #{$mobile} {
     display: block;
   }
