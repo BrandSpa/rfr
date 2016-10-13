@@ -67,7 +67,7 @@ export default function () {
         };
 
       let zoomed = function() {
-        console.log(d3.select(this).select('g').attr('transform'));
+
         d3.select(this).select('g').attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
       };
 
@@ -79,7 +79,7 @@ export default function () {
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
-        d3.select("#map-container svg").call(drag).call(d3.zoom().on("zoom", zoomed));
+        d3.select("#map-container svg g").call(drag).call(d3.zoom().on("zoom", zoomed));
         d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
