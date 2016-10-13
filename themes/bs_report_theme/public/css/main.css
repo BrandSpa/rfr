@@ -281,8 +281,9 @@ input {
 
 #open-nav {
   display: none;
-  margin: 20px auto;
-  text-align: right; }
+  text-align: right;
+  float: right;
+  margin-right: 40px; }
   @media (max-width: 767px) {
     #open-nav {
       display: block; } }
