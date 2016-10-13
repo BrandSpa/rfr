@@ -40,7 +40,6 @@
 <?php include_once 'shortcodes/download_report.php' ?>
 <?php include_once 'shortcodes/about_us.php' ?>
 <?php include_once 'shortcodes/press.php' ?>
-<?php getLangList() ?>
 
 </div>
 
