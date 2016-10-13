@@ -27,9 +27,22 @@ export default function () {
 
     methods: {
       validate(opts) {
-        console.log(opts);
-        validator.isEmail(this.$data['email']);
-        validator.isEmpty(this.$data['name']);
+        const {field, type} = opts;
+        const data = this.$data[field];
+        let validation = this.$data.validation;
+
+        switch (type) {
+          case 'required':
+          validation = {...validation, name: true};
+          break;
+          case 'email':
+            validator.isEmail(data);
+          break;
+        }
+
+        console.log(validation);
+
+        this.$set('validation', validation);
       },
 
       onSubmit() {
