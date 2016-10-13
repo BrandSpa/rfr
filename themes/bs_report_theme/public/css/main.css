@@ -364,13 +364,13 @@ input {
         font-style: italic;
         color: #747E86;
         display: block;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        text-transform: uppercase; }
         .nav .menu > li > a:hover {
           color: #FC3938; }
       .nav .menu > li:hover {
         height: auto; }
         .nav .menu > li:hover .sub-menu {
-          display: block;
           opacity: 1;
           transition: all 500ms ease; }
       .nav .menu > li .sub-menu {
