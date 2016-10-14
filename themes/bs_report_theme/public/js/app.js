@@ -40183,6 +40183,13 @@
 	exports.default = function () {
 	  _vue2.default.component('search-country', {
 	    template: '#search-country-template',
+	    data: function data() {
+	      return {
+	        country: '',
+	        items: []
+	      };
+	    },
+
 	    methods: {
 	      search: function search() {
 	        var reports = JSON.parse(this.$parent.posts);

@@ -4,6 +4,12 @@ import Vue from 'vue';
 export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
+    data() {
+      return {
+        country: '',
+        items: []
+      }
+    },
       methods: {
         search() {
           let reports = JSON.parse(this.$parent.posts);
