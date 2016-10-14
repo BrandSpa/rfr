@@ -28,7 +28,7 @@ export default function() {
         down() {
           if(this.current < this.items.length - 1) {
             this.current = this.current++;
-            console.log(this.current++);
+            console.log(this.items[this.current]);
           }
         },
 
