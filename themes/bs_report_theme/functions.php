@@ -46,6 +46,9 @@ setTranslations();
 //include metaboxes
 include_once $metaboxes . '/report.php';
 
+//include shortcodes
+include_once $shortcodes . '/map.php';
+
 // JS on admin
 function enqueue_scripts()
 {
