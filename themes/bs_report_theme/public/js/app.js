@@ -40202,6 +40202,7 @@
 	      },
 	      down: function down() {
 	        this.current = this.current++;
+	        console.log(this.current++);
 	      },
 	      search: function search(evt) {
 	        var reports = JSON.parse(this.$parent.posts);

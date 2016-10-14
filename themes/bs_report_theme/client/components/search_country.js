@@ -19,6 +19,7 @@ export default function() {
 
         down() {
           this.current = this.current++;
+          console.log(this.current++);
         },
 
         search(evt) {
