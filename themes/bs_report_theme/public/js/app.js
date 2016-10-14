@@ -20981,17 +20981,18 @@
 
 	    methods: {
 	      search: function search() {
-	        var _this3 = this;
-
 	        var reports = JSON.parse(this.posts);
-
-	        if (this.country.length > 2) {
-	          this.items = reports.filter(function (pst) {
-	            return pst.meta_country.toLowerCase().indexOf(_this3.country.toLowerCase()) != -1;
+	        var query = this.country;
+	        var results = [];
+	        if (query.length > 2) {
+	          results = reports.filter(function (pst) {
+	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
 	        } else {
-	          this.items = [];
+	          results = [];
 	        }
+	        console.log(results);
+	        this.$set('items', results);
 	      }
 	    }
 	  });
