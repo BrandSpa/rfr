@@ -5,7 +5,7 @@
 
   <ul class="map__search_results">
     <li v-for="item in items">
-      <a href="{{item.guid}}">{{item.meta_country}}</a>
+      <a href="{{item.guid}}">{{item.meta_country}} {{$index}}</a>
       <span>
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
       </span>
