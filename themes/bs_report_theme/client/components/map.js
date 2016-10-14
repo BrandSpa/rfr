@@ -68,7 +68,6 @@ export default function () {
 
       let zoomed = d3.zoom()
       .scaleExtent([1,4.5])
-      .on("mousewheel.zoom", null)
       .on('zoom', function() {
         let transform = d3.event.transform;
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")" + " scale(" + transform.k + ")")
@@ -83,7 +82,7 @@ export default function () {
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
-        d3.select("#map-container svg").call(zoomed);
+        d3.select("#map-container svg").call(zoomed).on('wheel', null);
         d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
         let paths = d3.select(mapContainer).selectAll("path");
