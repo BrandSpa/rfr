@@ -47,6 +47,9 @@ p {
 
 li {
   list-style: none;
+  &.selected {
+    background: yellow;
+  }
 }
 
 a:hover {
