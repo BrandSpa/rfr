@@ -85,9 +85,10 @@ export default function () {
           let report = reports.filter(rep => rep.meta_country == countryName);
 
           if(report[0] && report[0].guid) {
-            d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", report[0].guid)
-          .append(() => this );
+
+          d3.select( this.parentNode ).append("a",() => this )
+            .attr("href", report[0].guid)
+            .append(() => this );
           }
           
           el.on('mousemove', evt => {
@@ -130,7 +131,7 @@ export default function () {
 
     methods: {
       search() {
-
+        console.log(this.posts);
         if (this.country.length > 2) {
           this.items = this.posts.filter(
             pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1

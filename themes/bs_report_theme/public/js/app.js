@@ -20927,6 +20927,7 @@
 	          });
 
 	          if (report[0] && report[0].guid) {
+
 	            d3.select(this.parentNode).append("a", function () {
 	              return _this;
 	            }).attr("href", report[0].guid).append(function () {
@@ -20982,6 +20983,7 @@
 	      search: function search() {
 	        var _this3 = this;
 
+	        console.log(this.posts);
 	        if (this.country.length > 2) {
 	          this.items = this.posts.filter(function (pst) {
 	            return pst.meta_country.toLowerCase().indexOf(_this3.country.toLowerCase()) != -1;
