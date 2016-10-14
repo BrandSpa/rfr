@@ -17,10 +17,11 @@ export default function() {
           let results = [];
           let key = evt.keyCode;
           let $current;
-          let $listItems = $('.map__search_results li');
+          let $listItems = $(document).find('.map__search_results li');
 
           if(key == 40) {
             $current = $listItems.eq(0);
+            console.log('down', $current);
             $current.css({'background': '#333'});
           }
           
