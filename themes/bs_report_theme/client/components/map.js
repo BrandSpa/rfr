@@ -61,7 +61,7 @@ export default function () {
       let lang = this.lang;
 
       let dragged = function(d, i) {
-
+        console.log('hi nea form webpack');
         let g = document.querySelector('#map-container svg g');
         d3.select(this).select('g').attr("transform", "translate("+ [d3.event.x, d3.event.y] +")");
         };
