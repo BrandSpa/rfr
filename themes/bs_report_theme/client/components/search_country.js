@@ -17,9 +17,16 @@ export default function() {
           return index === this.current;
         },
 
+        up() {
+          this.current = this.current--;
+          console.log(this.current--);
+        },
+
         down() {
-          this.current = this.current++;
-          console.log(this.current++);
+          if(this.current < this.items.length - 1) {
+            this.current = this.current++;
+            console.log(this.current++);
+          }
         },
 
         search(evt) {

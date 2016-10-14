@@ -40200,9 +40200,15 @@
 	      isSelected: function isSelected(index) {
 	        return index === this.current;
 	      },
+	      up: function up() {
+	        this.current = this.current--;
+	        console.log(this.current--);
+	      },
 	      down: function down() {
-	        this.current = this.current++;
-	        console.log(this.current++);
+	        if (this.current < this.items.length - 1) {
+	          this.current = this.current++;
+	          console.log(this.current++);
+	        }
 	      },
 	      search: function search(evt) {
 	        var reports = JSON.parse(this.$parent.posts);
