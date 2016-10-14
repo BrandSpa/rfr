@@ -139,7 +139,8 @@ label {
   font-style: italic;
   width: 100%;
   margin: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-bottom: 25px; }
 
 .input-container {
   position: relative;
