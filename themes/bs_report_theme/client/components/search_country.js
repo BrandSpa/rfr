@@ -4,8 +4,8 @@ import Vue from 'vue';
 export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
-    
-     search() {
+      methods: {
+      search() {
        console.log('posts from child', this.posts);
         let reports = JSON.parse(this.reports);
         let query = this.country;
@@ -21,6 +21,7 @@ export default function() {
 
         this.$set('items', results);
 
+      }
       }
   });
 };

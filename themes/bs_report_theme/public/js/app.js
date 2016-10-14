@@ -40183,22 +40183,23 @@
 	exports.default = function () {
 	  _vue2.default.component('search-country', {
 	    template: '#search-country-template',
+	    methods: {
+	      search: function search() {
+	        console.log('posts from child', this.posts);
+	        var reports = JSON.parse(this.reports);
+	        var query = this.country;
+	        var results = [];
 
-	    search: function search() {
-	      console.log('posts from child', this.posts);
-	      var reports = JSON.parse(this.reports);
-	      var query = this.country;
-	      var results = [];
+	        if (query.length > 2) {
+	          results = reports.filter(function (pst) {
+	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
+	          });
+	        } else {
+	          results = [];
+	        }
 
-	      if (query.length > 2) {
-	        results = reports.filter(function (pst) {
-	          return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
-	        });
-	      } else {
-	        results = [];
+	        this.$set('items', results);
 	      }
-
-	      this.$set('items', results);
 	    }
 	  });
 	};
