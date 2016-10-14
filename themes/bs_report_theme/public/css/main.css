@@ -596,7 +596,7 @@ input {
     .map__search_input-container {
       position: relative; }
       .map__search_input-container::after {
-        content: '\f2f5';
+        content: "\f260";
         display: block;
         width: 32px;
         height: 32px;
