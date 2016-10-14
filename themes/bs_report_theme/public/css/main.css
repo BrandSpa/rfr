@@ -142,6 +142,9 @@ label {
   text-transform: uppercase;
   padding-bottom: 25px; }
 
+form button {
+  float: right; }
+
 .input-container {
   position: relative;
   overflow: hidden; }
