@@ -40175,7 +40175,7 @@
 
 /***/ },
 /* 86 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -40184,7 +40184,7 @@
 	});
 
 	exports.default = function () {
-	  Vue.component('search-country', {
+	  _vue2.default.component('search-country', {
 	    search: function search() {
 	      var reports = JSON.parse(this.reports);
 	      var query = this.country;
@@ -40202,6 +40202,12 @@
 	    }
 	  });
 	};
+
+	var _vue = __webpack_require__(14);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	;
 

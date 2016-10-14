@@ -4,6 +4,8 @@
   if( function_exists('pll_current_language') ) $getReportLang = pll_current_language();
 ?>
 
+<?php include('search_country.php') ?>
+
 <map
   posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
   :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'
