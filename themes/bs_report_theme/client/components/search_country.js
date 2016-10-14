@@ -21,7 +21,7 @@ export default function() {
 
           if(key == 40) {
             $current = $listItems.eq(0);
-            $current.css({'background': 'yellow'});
+            $current.css({'background': '#333'});
           }
           
           if (query.length > 2) {
