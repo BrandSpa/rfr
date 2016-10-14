@@ -62,6 +62,10 @@
 
 	var _country_select2 = _interopRequireDefault(_country_select);
 
+	var _search_country = __webpack_require__(86);
+
+	var _search_country2 = _interopRequireDefault(_search_country);
+
 	var _download_report = __webpack_require__(21);
 
 	var _download_report2 = _interopRequireDefault(_download_report);
@@ -72,6 +76,7 @@
 	(0, _religions_chart2.default)();
 	(0, _country_select2.default)();
 	(0, _download_report2.default)();
+	(0, _search_country2.default)();
 
 	new _vue2.default({
 	  el: '#acn_reports'
@@ -40167,6 +40172,38 @@
 	  return parts.join('@');
 	}
 	module.exports = exports['default'];
+
+/***/ },
+/* 86 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	exports.default = function () {
+	  Vue.component('search-country', {
+	    search: function search() {
+	      var reports = JSON.parse(this.reports);
+	      var query = this.country;
+	      var results = [];
+
+	      if (query.length > 2) {
+	        results = reports.filter(function (pst) {
+	          return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
+	        });
+	      } else {
+	        results = [];
+	      }
+
+	      this.$set('items', results);
+	    }
+	  });
+	};
+
+	;
 
 /***/ }
 /******/ ]);

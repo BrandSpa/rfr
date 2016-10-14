@@ -3,7 +3,7 @@
 export default function() {
   Vue.component('search-country', {
      search() {
-        let reports = JSON.parse(this.posts);
+        let reports = JSON.parse(this.reports);
         let query = this.country;
         let results = [];
         

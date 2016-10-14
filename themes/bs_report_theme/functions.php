@@ -12,8 +12,9 @@ $options = 'options';
 $shortcodes = 'shortcodes';
 $metaboxes = 'metaboxes';
 
-  require 'vendor/autoload.php';
-
+//include all libs from composer
+//is necessary first check if the folder exists
+require 'vendor/autoload.php';
 
 //include lib functions
 include_once $lib . '/geo_info.php';
@@ -98,7 +99,7 @@ function getLangList() {
     return pll_the_languages();
   }  else {
     return _e('install polylang plugin');
-  } 
+  }
 }
 
 ?>
