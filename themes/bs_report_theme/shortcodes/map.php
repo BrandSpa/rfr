@@ -12,5 +12,4 @@ function bs_map_sc($atts, $content = null) {
   }
 
   add_shortcode( 'bs_map', 'bs_map_sc' );
-
 ?>
