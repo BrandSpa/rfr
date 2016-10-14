@@ -131,11 +131,12 @@ export default function () {
 
     methods: {
       search() {
-        console.log(this.posts);
+        let reports = JSON.parse(this.posts);
+
         if (this.country.length > 2) {
-          // this.items = this.posts.filter(
-          //   pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1
-          // );
+          this.items = reports.filter(
+            pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1
+          );
         } else {
           this.items = [];
         }
