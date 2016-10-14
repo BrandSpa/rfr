@@ -7,7 +7,7 @@
     <li v-for="item in items">
       <a href="/report/{{item.meta_country.toLowerCase().replace(' ', '-')}}">{{item.meta_country}}</a>
       <span>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/{{item.meta_situation}}.svg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
       </span>
     </li>
   </ul>
