@@ -127,24 +127,6 @@ export default function () {
         });
         
       });
-    },
-
-    methods: {
-      search() {
-        let reports = JSON.parse(this.posts);
-        let query = this.country;
-        let results = [];
-        if (query.length > 2) {
-          results = reports.filter( pst => {
-            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
-          });
-        } else {
-          results = [];
-        }
-        console.log(results);
-         this.$set('items', results);
-
-      }
     }
   });
 

@@ -20976,24 +20976,6 @@
 	          });
 	        });
 	      });
-	    },
-
-
-	    methods: {
-	      search: function search() {
-	        var reports = JSON.parse(this.posts);
-	        var query = this.country;
-	        var results = [];
-	        if (query.length > 2) {
-	          results = reports.filter(function (pst) {
-	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
-	          });
-	        } else {
-	          results = [];
-	        }
-	        console.log(results);
-	        this.$set('items', results);
-	      }
 	    }
 	  });
 	};
