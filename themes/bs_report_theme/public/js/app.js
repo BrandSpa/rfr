@@ -40201,7 +40201,7 @@
 	        return index === this.current;
 	      },
 	      down: function down() {
-	        console.log(this.current);
+	        this.current = this.current++;
 	      },
 	      search: function search(evt) {
 	        var reports = JSON.parse(this.$parent.posts);
