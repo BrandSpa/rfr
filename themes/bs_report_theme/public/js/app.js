@@ -20902,29 +20902,18 @@
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
 
-	      var dragged = function dragged(d, i) {
-	        console.log('hi nea form webpack');
-	        var g = document.querySelector('#map-container svg g');
-	        d3.select(this).select('g').attr("transform", "translate(" + [d3.event.x, d3.event.y] + ")");
-	      };
-
 	      var zoomed = d3.zoom().scaleExtent([1, 4.5]).on('zoom', function () {
 	        var transform = d3.event.transform;
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")" + " scale(" + transform.k + ")");
 	      });
 
-	      var drag = d3.drag().subject(function () {
-	        var t = d3.select(this);
-	        return { x: t.attr("x"), y: t.attr("y") };
-	      }).on("drag", dragged);
-
 	      appendMap(this.mapUrl, mapContainer, function () {
 	        var polygons = d3.select(mapContainer).selectAll("polygon");
 
-	        d3.select("#map-container svg").call(zoomed).on("wheel", function () {
+	        d3.select("#map-container svg").call(zoomed).on("wheel", function (e) {
+	          console.log(e);
 	          d3.event.preventDefault();
 	        });
-	        d3.select("#map-container svg g").attr('style', 'transition: all 300ms ease');
 
 	        var paths = d3.select(mapContainer).selectAll("path");
 
