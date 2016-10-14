@@ -20,6 +20,7 @@ export default function() {
 
           if(key == 40) {
             $current = $('.map__search_results li').eq(0);
+            console.log($current);
             $current.addClass('selected');
           }
           
