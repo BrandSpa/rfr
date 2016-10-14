@@ -40204,7 +40204,7 @@
 
 	        if (key == 40) {
 	          $current = $('.map__search_results li').eq(0);
-	          console.log($current);
+	          console.log('down', $current);
 	          $current.addClass('selected');
 	        }
 
