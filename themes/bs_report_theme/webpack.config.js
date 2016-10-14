@@ -1,9 +1,12 @@
  module.exports = {
     watch: true,
-     entry: './client/app.js',
+     entry: {
+       app: './client/app.js',
+       admin: './client/admin/app.js'
+     },
      output: {
          path: './public/js',
-         filename: 'app.bundle.js',
+         filename: '[name].js'
      },
      module: {
          loaders: [{
