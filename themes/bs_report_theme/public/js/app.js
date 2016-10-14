@@ -40202,7 +40202,7 @@
 	        var key = evt.keyCode;
 
 	        if (key == 40) {
-	          console.log($('.map__search_results').eq(0));
+	          console.log($('.map__search_results li').eq(0));
 	        }
 
 	        if (query.length > 2) {
