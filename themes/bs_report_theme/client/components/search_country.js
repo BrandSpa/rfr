@@ -16,9 +16,11 @@ export default function() {
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
-          
+          let $current;
+
           if(key == 40) {
-            console.log($('.map__search_results li').eq(0));
+            $current = $('.map__search_results li').eq(0);
+            $current.addClass('selected');
           }
           
           if (query.length > 2) {
