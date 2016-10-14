@@ -21,7 +21,7 @@ export default function() {
 
           if(key == 40) {
             $current = $listItems.eq(0);
-            $current.addClass('selected');
+            $current.css({'background': 'yellow'});
           }
           
           if (query.length > 2) {
