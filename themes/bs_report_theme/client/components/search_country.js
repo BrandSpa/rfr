@@ -20,8 +20,7 @@ export default function() {
         up() {
           console.log(this.items[this.current].meta_country);
           if(this.current > 0) {
-            this.current = this.current--;
-            console.log(this.current--);
+            this.current--;
           }
           
         },
@@ -30,7 +29,7 @@ export default function() {
           console.log(this.items[this.current].meta_country);
 
           if(this.current < this.items.length - 1) {
-            this.current = this.current++;
+            this.current++;
           }
         },
 

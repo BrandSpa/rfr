@@ -40203,15 +40203,14 @@
 	      up: function up() {
 	        console.log(this.items[this.current].meta_country);
 	        if (this.current > 0) {
-	          this.current = this.current--;
-	          console.log(this.current--);
+	          this.current--;
 	        }
 	      },
 	      down: function down() {
 	        console.log(this.items[this.current].meta_country);
 
 	        if (this.current < this.items.length - 1) {
-	          this.current = this.current++;
+	          this.current++;
 	        }
 	      },
 	      search: function search(evt) {
