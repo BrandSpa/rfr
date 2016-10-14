@@ -40186,7 +40186,7 @@
 	    methods: {
 	      search: function search() {
 	        console.log('posts from child', this.posts);
-	        var reports = JSON.parse(this.reports);
+	        var reports = JSON.parse(this.posts);
 	        var query = this.country;
 	        var results = [];
 

@@ -7,7 +7,7 @@ export default function() {
       methods: {
       search() {
        console.log('posts from child', this.posts);
-        let reports = JSON.parse(this.reports);
+        let reports = JSON.parse(this.posts);
         let query = this.country;
         let results = [];
         
