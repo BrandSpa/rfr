@@ -5,20 +5,6 @@
  * Copyright 2016 BrandSpa
  */
 
-
-// enqueue the child theme stylesheet
-
-
-
-
-//add navigation menus
-register_nav_menus(
-  array(
-    'main' => 'Main nav',
-    'footer' => 'Footer nav',
-  )
-);
-
 //folders names
 $base = __DIR__;
 $lib = 'lib';
@@ -48,6 +34,14 @@ include_once $metaboxes . '/report.php';
 
 //include shortcodes
 include_once $shortcodes . '/map.php';
+
+//add navigation menus
+register_nav_menus(
+  array(
+    'main' => 'Main nav',
+    'footer' => 'Footer nav',
+  )
+);
 
 // JS on admin
 function enqueue_scripts()
@@ -106,7 +100,5 @@ function getLangList() {
     return _e('install polylang plugin');
   } 
 }
-
-
 
 ?>

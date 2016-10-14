@@ -10,7 +10,7 @@ function bs_admin_options_menu() {
     'manage_options', //allow it options
     'bs-logos', //slug
     'logos_settings_page',
-    get_template_directory_uri() . '/img/bs.png', //icon on menu
+    get_template_directory_uri() . '/public/img/bs_options.png', //icon on menu
     110 //position on menu
   );
 
