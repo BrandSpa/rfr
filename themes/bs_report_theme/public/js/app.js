@@ -40190,24 +40190,24 @@
 	    data: function data() {
 	      return {
 	        country: '',
-	        items: []
+	        items: [],
+	        current: 0
 	      };
 	    },
 
+
 	    methods: {
+	      isSelected: function isSelected(index) {
+	        return index === this.current;
+	      },
+	      down: function down() {
+	        console.log(this.current);
+	      },
 	      search: function search(evt) {
 	        var reports = JSON.parse(this.$parent.posts);
 	        var query = this.country;
 	        var results = [];
 	        var key = evt.keyCode;
-	        var $current = void 0;
-	        var $listItems = $(document).find('.map__search_results li');
-
-	        if (key == 40) {
-	          $current = $listItems.eq(0);
-	          console.log('down', $current);
-	          $current.css({ 'background': '#333' });
-	        }
 
 	        if (query.length > 2) {
 	          results = reports.filter(function (pst) {

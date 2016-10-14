@@ -7,24 +7,26 @@ export default function() {
     data() {
       return {
         country: '',
-        items: []
+        items: [],
+        current: 0
       }
     },
+
       methods: {
+        isSelected(index) {
+          return index === this.current;
+        },
+
+        down() {
+          console.log(this.current);
+        },
+
         search(evt) {
           let reports = JSON.parse(this.$parent.posts);
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
-          let $current;
-          let $listItems = $(document).find('.map__search_results li');
 
-          if(key == 40) {
-            $current = $listItems.eq(0);
-            console.log('down', $current);
-            $current.css({'background': '#333'});
-          }
-          
           if (query.length > 2) {
             results = reports.filter( pst => {
               return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
