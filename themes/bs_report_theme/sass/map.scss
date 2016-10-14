@@ -63,6 +63,21 @@
     // }
   }
 
+  &__search_input {
+    background: #1A2127;
+    position: relative;
+
+    &::after {
+      content: '\f2f5';
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 15px;
+      top: 5px;
+    }
+  }
+
   &__search_results {
     width: 100%;
     padding: 0;
