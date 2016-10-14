@@ -40185,7 +40185,7 @@
 	    template: '#search-country-template',
 	    methods: {
 	      search: function search() {
-	        console.log('posts from child', this.posts);
+	        console.log('posts from child', this.$parent.posts);
 	        var reports = JSON.parse(this.posts);
 	        var query = this.country;
 	        var results = [];

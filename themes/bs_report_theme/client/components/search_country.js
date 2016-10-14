@@ -5,23 +5,23 @@ export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
       methods: {
-      search() {
-       console.log('posts from child', this.posts);
-        let reports = JSON.parse(this.posts);
-        let query = this.country;
-        let results = [];
-        
-        if (query.length > 2) {
-          results = reports.filter( pst => {
-            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
-          });
-        } else {
-          results = [];
+        search() {
+        console.log('posts from child', this.$parent.posts);
+          let reports = JSON.parse(this.posts);
+          let query = this.country;
+          let results = [];
+          
+          if (query.length > 2) {
+            results = reports.filter( pst => {
+              return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
+            });
+          } else {
+            results = [];
+          }
+
+          this.$set('items', results);
+
         }
-
-        this.$set('items', results);
-
-      }
       }
   });
 };
