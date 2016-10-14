@@ -20915,10 +20915,7 @@
 	      appendMap(this.mapUrl, mapContainer, function () {
 	        var polygons = d3.select(mapContainer).selectAll("polygon");
 
-	        d3.select("#map-container svg").call(zoomed).on("wheel", function (e) {
-	          console.log(e);
-	          d3.event.preventDefault();
-	        });
+	        d3.select("#map-container svg").call(zoomed);
 
 	        var paths = d3.select(mapContainer).selectAll("path");
 

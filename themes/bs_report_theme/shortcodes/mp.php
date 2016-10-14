@@ -31,9 +31,7 @@
       </div>
 
       <div class="col-md-3">
-        <search-country 
-        reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'>
-        </search-country>
+        <search-country></search-country>
       </div>
     </div>
 
