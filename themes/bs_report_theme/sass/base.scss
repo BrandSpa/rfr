@@ -47,10 +47,12 @@ p {
 
 li {
   list-style: none;
-  &.selected {
+ 
+}
+
+ .selected {
     background: yellow;
   }
-}
 
 a:hover {
   text-decoration: none;

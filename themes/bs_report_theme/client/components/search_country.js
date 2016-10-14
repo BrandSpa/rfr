@@ -21,7 +21,6 @@ export default function() {
 
           if(key == 40) {
             $current = $listItems.eq(0);
-            console.log('down', $listItems);
             $current.addClass('selected');
           }
           
