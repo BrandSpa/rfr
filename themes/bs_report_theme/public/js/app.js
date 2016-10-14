@@ -40182,6 +40182,8 @@
 
 	exports.default = function () {
 	  _vue2.default.component('search-country', {
+	    template: '#search-country-template',
+
 	    search: function search() {
 	      console.log('posts from child', this.posts);
 	      var reports = JSON.parse(this.reports);
