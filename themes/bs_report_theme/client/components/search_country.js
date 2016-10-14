@@ -6,8 +6,7 @@ export default function() {
     template: '#search-country-template',
       methods: {
         search() {
-        console.log('posts from child', this.$parent.posts);
-          let reports = JSON.parse(this.posts);
+          let reports = JSON.parse(this.$parent.posts);
           let query = this.country;
           let results = [];
           
