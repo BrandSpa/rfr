@@ -31,6 +31,7 @@
       <div class="col-md-3">
         <div class="map__search_input-container">
           <input type="text" v-model="country"  v-on:keyup="search" class="map__search_input"/>
+          <i class="icon ion-home"></i>
         </div>
        
         <ul class="map__search_results">
