@@ -43,10 +43,13 @@
       position: absolute;
       right: 0;
       text-align: center;
+
       img {
         margin: 0 auto;
       }
+      
     }
+
     //
     // &::after {
     //   display: block;
@@ -66,7 +69,6 @@
   &__search_input {
     background: #1A2127;
    
-
     &-container {
        position: relative;
       &::after {

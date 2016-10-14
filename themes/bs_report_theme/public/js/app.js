@@ -167,12 +167,14 @@ exports.default = function () {
       var lang = this.lang;
 
       var dragged = function dragged(d, i) {
-        console.log(d);
+
         var g = document.querySelector('#map-container svg g');
         d3.select(this).select('g').attr("transform", "translate(" + [d3.event.x, d3.event.y] + ")");
       };
 
-      var zoomed = d3.zoom().scaleExtent([1, 4.5]).on('zoom', function () {
+      var zoomed = d3.zoom().scaleExtent([1, 4.5]).on("wheel", function () {
+        d3.event.preventDefault();
+      }).on('zoom', function () {
         var transform = d3.event.transform;
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")" + " scale(" + transform.k + ")");
       });
