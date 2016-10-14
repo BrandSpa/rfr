@@ -40201,10 +40201,11 @@
 	        var results = [];
 	        var key = evt.keyCode;
 	        var $current = void 0;
+	        var $listItems = $('.map__search_results li');
 
 	        if (key == 40) {
-	          $current = $('.map__search_results li').eq(0);
-	          console.log('down', $current);
+	          $current = $listItems.eq(0);
+	          console.log('down', $listItems);
 	          $current.addClass('selected');
 	        }
 

@@ -17,10 +17,11 @@ export default function() {
           let results = [];
           let key = evt.keyCode;
           let $current;
+          let $listItems = $('.map__search_results li');
 
           if(key == 40) {
-            $current = $('.map__search_results li').eq(0);
-            console.log('down', $current);
+            $current = $listItems.eq(0);
+            console.log('down', $listItems);
             $current.addClass('selected');
           }
           
