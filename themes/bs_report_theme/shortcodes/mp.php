@@ -53,7 +53,6 @@
         <?php echo gett('Stable') ?>
       </li>
     </ul>
-
   </div>
 
   <div class="col-md-6 map_list">
