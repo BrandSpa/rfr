@@ -133,9 +133,9 @@ export default function () {
       search() {
         console.log(this.posts);
         if (this.country.length > 2) {
-          this.items = this.posts.filter(
-            pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1
-          );
+          // this.items = this.posts.filter(
+          //   pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1
+          // );
         } else {
           this.items = [];
         }

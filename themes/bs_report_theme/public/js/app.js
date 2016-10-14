@@ -20981,13 +20981,11 @@
 
 	    methods: {
 	      search: function search() {
-	        var _this3 = this;
-
 	        console.log(this.posts);
 	        if (this.country.length > 2) {
-	          this.items = this.posts.filter(function (pst) {
-	            return pst.meta_country.toLowerCase().indexOf(_this3.country.toLowerCase()) != -1;
-	          });
+	          // this.items = this.posts.filter(
+	          //   pst => pst.meta_country.toLowerCase().indexOf(this.country.toLowerCase()) != -1
+	          // );
 	        } else {
 	          this.items = [];
 	        }
