@@ -18,7 +18,7 @@ export default function() {
           let key = evt.keyCode;
           
           if(key == 40) {
-            console.log('down');
+            console.log($('.map__search_results').eq(0));
           }
           
           if (query.length > 2) {
