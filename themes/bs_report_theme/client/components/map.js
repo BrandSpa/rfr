@@ -67,7 +67,6 @@ export default function () {
         };
 
       let zoomed = d3.zoom()
-      .on("wheel", function() { d3.event.preventDefault(); })
       .scaleExtent([1,4.5])
       .on('zoom', function() {
         let transform = d3.event.transform;
