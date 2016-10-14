@@ -71,15 +71,15 @@
    
     &-container {
        position: relative;
-      &::after {
-      content: "\f260";
+      &::before {
+      content: "\f4a5";
       display: block;
       width: 32px;
       height: 32px;
       position: absolute;
       right: 15px;
       top: 5px;
-    }
+      }
     }
 
   

@@ -595,8 +595,8 @@ input {
     background: #1A2127; }
     .map__search_input-container {
       position: relative; }
-      .map__search_input-container::after {
-        content: "\f260";
+      .map__search_input-container::before {
+        content: "\f4a5";
         display: block;
         width: 32px;
         height: 32px;
