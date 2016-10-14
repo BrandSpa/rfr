@@ -2,6 +2,7 @@
 import Vue from 'vue';
 import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
+import $ from 'jquery';
 
 function showInfo(info, txt) {
   d3.select(info).select('.map__info_country').text(txt);

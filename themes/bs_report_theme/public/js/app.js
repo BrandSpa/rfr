@@ -20994,6 +20994,10 @@
 
 	var _get_mouse_position2 = _interopRequireDefault(_get_mouse_position);
 
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -40191,10 +40195,15 @@
 	    },
 
 	    methods: {
-	      search: function search() {
+	      search: function search(evt) {
 	        var reports = JSON.parse(this.$parent.posts);
 	        var query = this.country;
 	        var results = [];
+	        var key = evt.keyCode;
+
+	        if (key == 40) {
+	          console.log('down');
+	        }
 
 	        if (query.length > 2) {
 	          results = reports.filter(function (pst) {

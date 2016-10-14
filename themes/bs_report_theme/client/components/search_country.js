@@ -11,10 +11,15 @@ export default function() {
       }
     },
       methods: {
-        search() {
+        search(evt) {
           let reports = JSON.parse(this.$parent.posts);
           let query = this.country;
           let results = [];
+          let key = evt.keyCode;
+          
+          if(key == 40) {
+            console.log('down');
+          }
           
           if (query.length > 2) {
             results = reports.filter( pst => {

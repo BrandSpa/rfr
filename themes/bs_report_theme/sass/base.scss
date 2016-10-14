@@ -203,9 +203,7 @@ input {
 }
 
 .button {
-  @include title2;
   background: $red_orange;
-  // min-width: 250px;
   min-height: 60px;
   border: 0;
   color: #fff;
@@ -215,6 +213,7 @@ input {
   display: block;
   padding: 20px 40px;
   text-align: center;
+  @include title2;
 
   &::after {
     content: '';
