@@ -40201,8 +40201,10 @@
 	        return index === this.current;
 	      },
 	      up: function up() {
-	        this.current = this.current--;
-	        console.log(this.current--);
+	        if (this.current > 0) {
+	          this.current = this.current--;
+	          console.log(this.current--);
+	        }
 	      },
 	      down: function down() {
 	        if (this.current < this.items.length - 1) {

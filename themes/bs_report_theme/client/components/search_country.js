@@ -18,8 +18,11 @@ export default function() {
         },
 
         up() {
-          this.current = this.current--;
-          console.log(this.current--);
+          if(this.current > 0) {
+            this.current = this.current--;
+            console.log(this.current--);
+          }
+          
         },
 
         down() {
