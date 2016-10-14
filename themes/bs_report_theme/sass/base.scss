@@ -198,6 +198,7 @@ input {
     display: block;
     transition: all 300ms ease;
     border: none;
+    @include title2;
   }
 }
 
