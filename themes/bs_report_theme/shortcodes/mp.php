@@ -29,7 +29,10 @@
       </div>
 
       <div class="col-md-3">
-        <input type="text" v-model="country"  v-on:keyup="search" class="map__search_input"/>
+        <div class="map__search_input-container">
+          <input type="text" v-model="country"  v-on:keyup="search" class="map__search_input"/>
+        </div>
+       
         <ul class="map__search_results">
           <li v-for="item in items">
             <a href="/report/{{item.meta_country.toLowerCase().replace(' ', '-')}}">{{item.meta_country}}</a>
