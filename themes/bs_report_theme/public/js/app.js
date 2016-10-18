@@ -40257,15 +40257,42 @@
 	  value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	exports.default = function () {
 	  _vue2.default.component('subscribe-form', {
 	    template: "#subscribe-form-template",
+	    data: function data() {
+	      return initialState;
+	    },
 	    ready: function ready() {
 	      console.log('subscribe');
 	    },
 
 
 	    methods: {
+	      validate: function validate() {
+	        var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { type: '', field: '' };
+	        var field = opts.field;
+	        var type = opts.type;
+
+	        var data = this.$data[field];
+	        var validation = this.$data.validation;
+
+	        switch (type) {
+	          case 'required':
+	            validation = _extends({}, validation, { name: _validator2.default.isEmpty(data) });
+	            break;
+	          case 'email':
+	            validation = _extends({}, validation, { email: !_validator2.default.isEmail(data) });
+	            break;
+	        };
+
+	        this.$set('validation', validation);
+	        return !Object.keys(validation).filter(function (key) {
+	          return validation[key] == true;
+	        }).length > 0;
+	      },
 	      onSubmit: function onSubmit(e) {
 	        if (e) e.preventDefault();
 	      }
@@ -40277,7 +40304,22 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
+	var _validator = __webpack_require__(23);
+
+	var _validator2 = _interopRequireDefault(_validator);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var initialState = {
+	  name: '',
+	  email: '',
+	  language: '',
+	  country: '',
+	  validation: {
+	    name: false,
+	    email: false
+	  }
+	};
 
 /***/ }
 /******/ ]);
