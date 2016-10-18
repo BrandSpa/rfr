@@ -14,18 +14,36 @@
 
   function bs_page_multi_regional_cb($post) {
     wp_nonce_field();
+    $report_country = get_post_meta($post->ID, 'page_mr_country_key', true);
 ?>
 
 <p>
   <select name="multiregional[][country]" >
-    <option value="Canada">Canada</option>
+      <?php if (!empty($report_country)): ?>
+        <option value="<?php echo $report_country ?>"><?php echo $report_country ?></option>
+        <?php else: ?>
+          <option value="">Select Country</option>
+      <?php endif; ?>
+
+      <?php foreach (getCountries() as $country): ?>
+        <option value="<?php echo $country; ?>"><?php echo $country; ?></option>
+      <?php endforeach; ?>
   </select>
 </p>
 
 <p>
   <select name="multiregional[][lang]" placeholder="country langs" >
-    <option value="fr_ca">fr_ca</option>
-    <option value="en_ca">en_ca</option>
+    		<?php 
+									$langs = get_terms( array(
+										'taxonomy' => 'language',
+										'hide_empty' => false,
+									)); 
+									foreach($langs as $lang) {
+									?>
+									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
+									<?php
+									}
+								?>
   </select>
 </p>
 
