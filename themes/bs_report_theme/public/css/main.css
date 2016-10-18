@@ -260,7 +260,7 @@ h6 {
 a polygon, a path {
   fill: #fff; }
 
-.link-bs a {
+.link-bs {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -278,9 +278,9 @@ a polygon, a path {
   max-width: 100%;
   color: #fff;
   transition: 300ms all ease; }
-  .link-bs a i {
+  .link-bs i {
     margin-left: 10px; }
-  .link-bs a::before {
+  .link-bs::before {
     content: '';
     position: absolute;
     width: 40%;
@@ -288,7 +288,7 @@ a polygon, a path {
     left: 20px;
     bottom: 0;
     transition: 300ms all ease; }
-  .link-bs a::after {
+  .link-bs::after {
     content: '';
     position: absolute;
     bottom: 4px;
@@ -297,27 +297,31 @@ a polygon, a path {
     border-color: #FC3938;
     left: 20px;
     transition: 300ms all ease; }
-  .link-bs a:hover svg {
+  .link-bs:hover svg {
     opacity: 1; }
-  .link-bs a:hover::after {
+  .link-bs:hover::after {
     width: 90%; }
-  .link-bs a svg {
+  .link-bs__svg-third {
+    position: absolute;
+    right: 0;
+    bottom: -12px; }
+  .link-bs svg {
     opacity: 0;
     transition: 400ms all ease; }
-    .link-bs a svg:first-child {
+    .link-bs svg:first-child {
       fill: '#333';
       position: absolute;
       left: 0;
       top: 0; }
-    .link-bs a svg:nth-child(2) {
+    .link-bs svg:nth-child(2) {
       position: absolute;
       right: 0;
       top: 0; }
-    .link-bs a svg:nth-child(3) {
+    .link-bs svg:nth-child(3) {
       position: absolute;
       right: 0;
       bottom: -12px; }
-    .link-bs a svg:last-child {
+    .link-bs svg:last-child {
       position: absolute;
       left: 0;
       bottom: -12px; }

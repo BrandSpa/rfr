@@ -308,7 +308,7 @@ a {
 }
 
 .link-bs {
-  a {
+
     @include center-vertical;
     @include title4();
     text-align: center;
@@ -324,7 +324,7 @@ a {
     i {
       margin-left: 10px;
     }
-    
+
     &::before {
       content: '';
       position: absolute;
@@ -354,6 +354,12 @@ a {
       &::after {
         width: 90%;
       }
+    }
+
+    &__svg-third {
+      position: absolute;
+      right: 0;
+      bottom: -12px;
     }
 
   svg {
@@ -386,5 +392,4 @@ a {
   }
 
 
-  }
-} 
+}
