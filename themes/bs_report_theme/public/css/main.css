@@ -297,10 +297,12 @@ a polygon, a path {
     border-color: #FC3938;
     left: 20px;
     transition: 300ms all ease; }
-  .link-bs:hover svg {
-    opacity: 1; }
-  .link-bs:hover::after {
-    width: 90%; }
+  .link-bs:hover {
+    color: #fff; }
+    .link-bs:hover svg {
+      opacity: 1; }
+    .link-bs:hover::after {
+      width: 90%; }
   .link-bs__svg-third {
     position: absolute;
     right: 0;
