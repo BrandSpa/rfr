@@ -59,7 +59,13 @@ form {
     transition: 300ms all ease;
   }
 
-  &:hover, &:focus {
+  &:hover {
+    &::after {
+      left: 0;
+    }
+  }
+
+  &:focus {
     &::after {
       left: 0;
     }
