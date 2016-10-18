@@ -3,9 +3,9 @@
     <input 
       type="text" 
       v-model="country" 
-      @keyup="search" 
-      @keydown.down="down" 
-      @keydown.up="up" 
+      v-on:keyup="search"
+      v-on:keydown.down="down" 
+      v-on:keydown.up="up" 
       class="map__search_input" 
     />
   </div>

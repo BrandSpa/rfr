@@ -37470,12 +37470,11 @@
 	        }
 	      },
 	      search: function search(evt) {
+	        console.log('search');
 	        var reports = JSON.parse(this.$parent.posts);
 	        var query = this.country;
 	        var results = [];
 	        var key = evt.keyCode;
-
-	        console.log(key);
 
 	        if (query.length > 2) {
 	          results = reports.filter(function (pst) {
