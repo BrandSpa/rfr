@@ -320,9 +320,11 @@ a {
     max-width: 100%;
     color: #fff;
     transition: 300ms all ease;
+
     i {
       margin-left: 10px;
     }
+    
     &::before {
       content: '';
       position: absolute;
