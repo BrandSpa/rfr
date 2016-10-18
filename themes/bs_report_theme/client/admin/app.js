@@ -5,10 +5,8 @@ import religionsChart from '../components/religions_chart';
 
 $(function() {
   uploader();
+  religionsChart();
 });
-
-
-religionsChart();
 
 new Vue({
   el: '#metaboxes-report'

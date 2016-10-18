@@ -33,6 +33,7 @@ include_once $options . '/info.php';
 setTranslations();
 //include metaboxes
 include_once $metaboxes . '/report.php';
+include_once $metaboxes . '/page_multi_regional.php';
 
 //include shortcodes
 include_once $shortcodes . '/map.php';
