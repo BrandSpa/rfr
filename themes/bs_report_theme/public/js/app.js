@@ -37443,6 +37443,9 @@
 	        current: 0
 	      };
 	    },
+	    ready: function ready() {
+	      console.log('search', this.$parent.posts);
+	    },
 
 
 	    methods: {

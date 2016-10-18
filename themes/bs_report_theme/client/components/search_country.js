@@ -12,6 +12,10 @@ export default function() {
       }
     },
 
+    ready() {
+      console.log('search', this.$parent.posts);
+    },
+
       methods: {
         isSelected(index) {
           return index === this.current;
