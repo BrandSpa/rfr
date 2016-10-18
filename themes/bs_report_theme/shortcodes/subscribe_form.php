@@ -40,10 +40,10 @@
       </select>
     </div>
 
-     <div class="input-container">
-          <label for="" class="color-white"><?php echo gett('Language') ?></label>
-          <select name="" id="" v-model="language"></select>
-        </div>
+    <div class="input-container">
+      <label for="" class="color-white"><?php echo gett('Language') ?></label>
+      <select name="" id="" v-model="language"></select>
+    </div>
 
 
     <button class="button button-dark"><?php echo gett('Subscribe') ?></button>
