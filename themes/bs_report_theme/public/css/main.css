@@ -108,6 +108,9 @@ h6 {
   font-style: italic;
   line-height: 1.2; }
 
+.button-dark {
+  background: #1A2127; }
+
 .icon-red {
   fill: #FC3938; }
 

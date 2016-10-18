@@ -114,6 +114,11 @@ h6 {
   @include title6;
 }
 
+
+.button-dark {
+  background: $dark_jungle_green;
+}
+
 .icon-red {
   fill: $red_orange;
 }
@@ -141,12 +146,6 @@ h6 {
 .center_horizontal {
   @include center_horizontal;
 }
-
-
-
-
-
-
 
 .button {
   background: $red_orange;

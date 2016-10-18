@@ -6,7 +6,7 @@
   <form action="">
 
     <div class="input-container">
-       <label for="">
+       <label for="" class="color-white">
             <?php echo gett('Name') ?>
             <span
               class="input-container__error"
@@ -20,7 +20,7 @@
     </div>
 
     <div class="input-container">
-        <label for="">
+        <label for="" class="color-white">
             <?php echo gett('Email') ?>
             <span
               class="input-container__error"
@@ -33,7 +33,7 @@
     </div>
 
      <div class="input-container">
-          <label for=""><?php echo gett('Country') ?></label>
+          <label for="" class="color-white"><?php echo gett('Country') ?></label>
       <select name="" id="" v-model="country">
         <?php foreach(getCountries() as $country): ?>
           <option value="<?php echo $country ?>"><?php echo $country; ?></option>
@@ -42,11 +42,11 @@
     </div>
 
      <div class="input-container">
-          <label for=""><?php echo gett('Language') ?></label>
+          <label for="" class="color-white"><?php echo gett('Language') ?></label>
           <select name="" id="" v-model="language"></select>
         </div>
 
 
-    <button class="button"><?php echo gett('Subscribe') ?></button>
+    <button class="button button-dark"><?php echo gett('Subscribe') ?></button>
   </form>
 </template>
