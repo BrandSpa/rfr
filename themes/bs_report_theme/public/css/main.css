@@ -314,7 +314,7 @@ form button {
     width: 100%;
     height: 5px;
     transition: 300ms all ease; }
-  .input-container:hover::after {
+  .input-container:hover::after, .input-container:focus::after {
     left: 0; }
   .input-container__error {
     opacity: 0;
