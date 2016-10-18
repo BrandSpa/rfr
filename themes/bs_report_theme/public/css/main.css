@@ -109,7 +109,7 @@ h6 {
   line-height: 1.2; }
 
 .button-dark {
-  background: #1A2127; }
+  background: #1A2127 !important; }
 
 .icon-red {
   fill: #FC3938; }
