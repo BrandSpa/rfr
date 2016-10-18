@@ -72,7 +72,6 @@
   var open = true;
   var navLeft = '0'; 
   var bodyMarginLeft = '200px'; 
-  console.log(open);
 
   jQuery('#open-nav').on('click', openNav);
 

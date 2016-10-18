@@ -101,6 +101,8 @@
           />
         </div>
 
+        <?php var_dump(geoip_detect2_get_info_from_current_ip()->country) ?>
+
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Language') ?></label>
           <select name="" id="" v-model="language"></select>
