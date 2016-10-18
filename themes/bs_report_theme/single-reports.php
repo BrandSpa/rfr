@@ -42,9 +42,7 @@
           <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
       </text>
   </svg>
-
-
-      COUNTRY REPORTS
+    <span>COUNTRY REPORTS</span>
        <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
         <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
