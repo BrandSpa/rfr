@@ -7,6 +7,12 @@ export default function() {
     template: '#country-select-template',
     props: ['countries'],
 
+    data() {
+      return {
+        current: 0
+      }
+    },
+
     ready()  {
       $(document).on('keyup', function(e) {
         if(e.keyCode === 27 && $('.select_country').hasClass('select_country-show')) {
@@ -23,6 +29,20 @@ export default function() {
         e.preventDefault();
         $('.select_country').removeClass('select_country-show');
       });
+    },
+
+    methods: {
+      up() {
+        console.log('up');
+      },
+
+      down() {
+        console.log('down');
+      },
+
+      enter() {
+
+      }
     }
   });
 }

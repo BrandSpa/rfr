@@ -1,13 +1,10 @@
 <template id="country-select-template">
-  <div class="select_country">
+  <div class="select_country" v-on:keyup.down="down" v-on:keyup.down="up">
     <a href="#" class="select_country__close">X </a>
     <ul>
-    
       <?php 
         $getReportLang = 'en';
-
         if( function_exists('pll_current_language') ) $getReportLang = pll_current_language();
-
         foreach(getReports(array('language' => $getReportLang)) as $report): 
       ?>
         <li>
@@ -17,5 +14,5 @@
     </ul>
   </div>
 </template>
-
+ 
 <countryselect></countryselect>

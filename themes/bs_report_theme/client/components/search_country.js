@@ -26,7 +26,6 @@ export default function() {
         },
 
         up() {
-
           if(this.current > 0) {
             this.current--;
           }

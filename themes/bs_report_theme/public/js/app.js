@@ -37399,6 +37399,11 @@
 	    template: '#country-select-template',
 	    props: ['countries'],
 
+	    data: function data() {
+	      return {
+	        current: 0
+	      };
+	    },
 	    ready: function ready() {
 	      (0, _jquery2.default)(document).on('keyup', function (e) {
 	        if (e.keyCode === 27 && (0, _jquery2.default)('.select_country').hasClass('select_country-show')) {
@@ -37415,6 +37420,17 @@
 	        e.preventDefault();
 	        (0, _jquery2.default)('.select_country').removeClass('select_country-show');
 	      });
+	    },
+
+
+	    methods: {
+	      up: function up() {
+	        console.log('up');
+	      },
+	      down: function down() {
+	        console.log('down');
+	      },
+	      enter: function enter() {}
 	    }
 	  });
 	};
@@ -37460,7 +37476,6 @@
 	        window.location = this.items[this.current].guid;
 	      },
 	      up: function up() {
-
 	        if (this.current > 0) {
 	          this.current--;
 	        }

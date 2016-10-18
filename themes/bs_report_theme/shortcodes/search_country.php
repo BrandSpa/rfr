@@ -1,6 +1,6 @@
 <template id="search-country-template">
   <div class="map__search_input-container">
-    <input 
+    <input
       type="text" 
       v-model="country" 
       v-on:keyup="search"
