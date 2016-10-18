@@ -13,7 +13,7 @@ export default function() {
     },
 
     ready() {
-      console.log('search', this.$parent.posts);
+
     },
 
       methods: {
@@ -42,6 +42,7 @@ export default function() {
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
+          console.log(key);
 
           if (query.length > 2) {
             results = reports.filter( pst => {

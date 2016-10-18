@@ -37443,9 +37443,7 @@
 	        current: 0
 	      };
 	    },
-	    ready: function ready() {
-	      console.log('search', this.$parent.posts);
-	    },
+	    ready: function ready() {},
 
 
 	    methods: {
@@ -37470,6 +37468,7 @@
 	        var query = this.country;
 	        var results = [];
 	        var key = evt.keyCode;
+	        console.log(key);
 
 	        if (query.length > 2) {
 	          results = reports.filter(function (pst) {
