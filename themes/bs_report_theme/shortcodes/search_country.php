@@ -5,7 +5,8 @@
       v-model="country" 
       v-on:keyup="search"
       v-on:keydown.down="down" 
-      v-on:keydown.up="up" 
+      v-on:keydown.up="up"
+      v-on:keyup.enter="enter"
       class="map__search_input" 
     />
   </div>

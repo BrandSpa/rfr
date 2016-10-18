@@ -37456,6 +37456,9 @@
 	      isSelected: function isSelected(index) {
 	        return index === this.current;
 	      },
+	      enter: function enter() {
+	        window.location = this.items[this.current].guid;
+	      },
 	      up: function up() {
 
 	        if (this.current > 0) {
@@ -37463,8 +37466,6 @@
 	        }
 	      },
 	      down: function down() {
-	        console.log(this.items[this.current].meta_country);
-
 	        if (this.current < this.items.length - 1) {
 	          this.current++;
 	        }

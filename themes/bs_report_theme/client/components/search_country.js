@@ -21,6 +21,10 @@ export default function() {
           return index === this.current;
         },
 
+        enter() {
+          window.location = this.items[this.current].guid;
+        },
+
         up() {
 
           if(this.current > 0) {
@@ -30,8 +34,6 @@ export default function() {
         },
 
         down() {
-          console.log(this.items[this.current].meta_country);
-
           if(this.current < this.items.length - 1) {
             this.current++;
           }
