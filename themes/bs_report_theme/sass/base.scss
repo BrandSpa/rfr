@@ -309,13 +309,14 @@ a {
 
 .link-bs {
    position: relative;
+   margin: 30px 0;
 
    &::before {
       content: '';
       position: absolute;
       bottom: 0;
       width: 20%;
-       border-bottom: 2px solid $red_orange;
+       border-bottom: 4px solid $red_orange;
       border-color: $red_orange;
     }
 
@@ -323,6 +324,7 @@ a {
       content: '';
       position: absolute;
       bottom: 0;
+      width: 100%;
       border-bottom: 1px solid $red_orange;
       border-color: $red_orange;
     }
