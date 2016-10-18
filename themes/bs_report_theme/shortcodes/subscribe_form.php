@@ -33,8 +33,9 @@
     </div>
 
      <div class="input-container">
-          <label for="" class="color-white"><?php echo gett('Country') ?></label>
+      <label for="" class="color-white"><?php echo gett('Country') ?></label>
       <select name="" id="" v-model="country">
+      <option value="<?php echo getUserCountry() ?>"><?php echo getUserCountry() ?></option>
         <?php foreach(getCountries() as $country): ?>
           <option value="<?php echo $country ?>"><?php echo $country; ?></option>
         <?php endforeach; ?>
