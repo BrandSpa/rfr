@@ -1,6 +1,13 @@
 <template id="search-country-template">
   <div class="map__search_input-container">
-    <input type="text" v-model="country" @keyup="search" @keydown.down="down" @keydown.up="up" class="map__search_input" />
+    <input 
+      type="text" 
+      v-model="country" 
+      @keyup="search" 
+      @keydown.down="down" 
+      @keydown.up="up" 
+      class="map__search_input" 
+    />
   </div>
 
   <ul class="map__search_results">

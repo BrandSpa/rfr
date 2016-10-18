@@ -42,6 +42,7 @@ export default function() {
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
+          
           console.log(key);
 
           if (query.length > 2) {
