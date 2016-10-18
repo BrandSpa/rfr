@@ -261,6 +261,10 @@ a polygon, a path {
   fill: #fff; }
 
 .link-bs a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5625em;
   font-weight: normal;

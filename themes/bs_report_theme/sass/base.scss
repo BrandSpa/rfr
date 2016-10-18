@@ -309,6 +309,7 @@ a {
 
 .link-bs {
   a {
+    @include center-vertical;
     @include title4();
     text-align: center;
     display: block;
