@@ -308,10 +308,42 @@ a {
 }
 
 .link-bs {
-   position: relative;
-   margin: 30px 0;
+  a {
+    @include title4();
+    text-align: center;
+    display: block;
+    float: left;
+    position: relative;
 
-   &::before {
+
+  svg {
+     &:ntn-child(1) {
+      fill: '#333';
+      position: absolute;
+      left: 0;
+    }
+
+    &:ntn-child(2) {
+      fill: '#333';
+      position: absolute;
+      right: 0;
+    }
+
+    &:ntn-child(3) {
+      fill:'#333';
+      position: absolute;
+      left: 0;
+    }
+
+    &:ntn-child(4) {
+      fill:'#333';
+      position: absolute;
+      right: 0;
+    }
+
+  }
+
+     &::before {
       content: '';
       position: absolute;
       bottom: 0;
@@ -328,34 +360,5 @@ a {
       border-bottom: 1px solid $red_orange;
       border-color: $red_orange;
     }
-
-  svg {
-     &:ntn-child(1) {
-      fill: '#333';
-      text-align: left;
-    }
-
-    &:ntn-child(2) {
-      fill: '#333';
-      text-align: right;
-    }
-
-    &:ntn-child(3) {
-      fill:'#333';
-      text-align: left;
-    }
-
-    &:ntn-child(4) {
-      fill:'#333';
-      text-align: right;
-    }
-
-  }
-
-  a {
-    @include title4();
-    text-align: center;
-    display: block;
-    float: left;
   }
 } 
