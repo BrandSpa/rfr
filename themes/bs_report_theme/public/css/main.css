@@ -307,7 +307,7 @@ a polygon, a path {
       position: absolute;
       right: 0;
       top: 0; }
-    .link-bs a svg:last-child(3) {
+    .link-bs a svg:nth-child(3) {
       position: absolute;
       left: 0;
       bottom: 0; }
