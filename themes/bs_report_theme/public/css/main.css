@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * BrandSpa (http://brandspa.com)
  * Alejandro Sanabria <alejandro@brandspa.com>
@@ -315,7 +314,7 @@ form button {
     width: 100%;
     height: 5px;
     transition: 300ms all ease; }
-  Ó .input-container:hover::after {
+  .input-container:hover::after {
     left: 0; }
   .input-container:focus::after {
     left: 0; }
