@@ -320,14 +320,14 @@ a {
     overflow: hidden;
     transition: 300ms all ease;
     background: #333;
-    padding: 10px;
+    padding: 20px 10px;
 
     &::before {
       content: '';
       position: absolute;
       width: 40%;
       border-bottom: 4px solid $red_orange;
-      left: 30px;
+      left: 20px;
       bottom: 0;
       transition: 300ms all ease;
     }

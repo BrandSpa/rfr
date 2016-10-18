@@ -278,13 +278,13 @@ a polygon, a path {
   overflow: hidden;
   transition: 300ms all ease;
   background: #333;
-  padding: 10px; }
+  padding: 20px 10px; }
   .link-bs a::before {
     content: '';
     position: absolute;
     width: 40%;
     border-bottom: 4px solid #FC3938;
-    left: 30px;
+    left: 20px;
     bottom: 0;
     transition: 300ms all ease; }
   .link-bs a::after {
