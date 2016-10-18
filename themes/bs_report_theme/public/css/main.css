@@ -314,11 +314,11 @@ a polygon, a path {
     .link-bs a svg:nth-child(4) {
       position: absolute;
       right: 0;
-      bottom: -7px; }
+      bottom: -14px; }
     .link-bs a svg:last-child {
       position: absolute;
       left: 0;
-      bottom: -7px; }
+      bottom: -14px; }
 
 .input-red, input {
   background: #FC3938;
