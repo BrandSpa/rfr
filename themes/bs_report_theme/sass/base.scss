@@ -308,6 +308,24 @@ a {
 }
 
 .link-bs {
+   position: relative;
+
+   &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 20%;
+       border-bottom: 2px solid $red_orange;
+      border-color: $red_orange;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      border-bottom: 1px solid $red_orange;
+      border-color: $red_orange;
+    }
 
   svg {
      &:ntn-child(1) {
@@ -333,23 +351,10 @@ a {
   }
 
   a {
-    position: relative;
+   
     text-align: center;
     display: block;
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      border-bottom: 2px;
-      border-color: $red_orange;
-    }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      border-bottom: 1px;
-      border-color: $red_orange;
-    }
+   
   }
 } 

@@ -260,38 +260,36 @@ h6 {
 a polygon, a path {
   fill: #fff; }
 
-.link-bs svg:ntn-child(1) {
-  fill: '#333';
-  text-align: left; }
-
-.link-bs svg:ntn-child(2) {
-  fill: '#333';
-  text-align: right; }
-
-.link-bs svg:ntn-child(3) {
-  fill: '#333';
-  text-align: left; }
-
-.link-bs svg:ntn-child(4) {
-  fill: '#333';
-  text-align: right; }
-
-.link-bs a {
-  position: relative;
-  text-align: center;
-  display: block; }
-  .link-bs a::before {
+.link-bs {
+  position: relative; }
+  .link-bs::before {
     content: '';
     position: absolute;
     bottom: 0;
-    border-bottom: 2px;
+    width: 20%;
+    border-bottom: 2px solid #FC3938;
     border-color: #FC3938; }
-  .link-bs a::after {
+  .link-bs::after {
     content: '';
     position: absolute;
     bottom: 0;
-    border-bottom: 1px;
+    border-bottom: 1px solid #FC3938;
     border-color: #FC3938; }
+  .link-bs svg:ntn-child(1) {
+    fill: '#333';
+    text-align: left; }
+  .link-bs svg:ntn-child(2) {
+    fill: '#333';
+    text-align: right; }
+  .link-bs svg:ntn-child(3) {
+    fill: '#333';
+    text-align: left; }
+  .link-bs svg:ntn-child(4) {
+    fill: '#333';
+    text-align: right; }
+  .link-bs a {
+    text-align: center;
+    display: block; }
 
 .input-red, input {
   background: #FC3938;
