@@ -40290,7 +40290,7 @@
 	      return initialState;
 	    },
 	    ready: function ready() {
-	      console.log('subscribe');
+	      console.log(this.country);
 	    },
 
 

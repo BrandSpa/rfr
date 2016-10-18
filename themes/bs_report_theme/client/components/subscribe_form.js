@@ -22,7 +22,7 @@ export default function() {
     },
     
     ready() {
-      console.log('subscribe');
+      console.log(this.country);
     },
     
     methods: {

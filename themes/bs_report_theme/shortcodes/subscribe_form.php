@@ -1,5 +1,4 @@
-<?php
-?>
+
 <subscribe-form country="<?php echo getUserCountry() ?>"></subscribe-form>
 
 <template id="subscribe-form-template">
