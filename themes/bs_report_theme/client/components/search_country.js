@@ -38,7 +38,7 @@ export default function() {
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
-          console.log('reports on:', reports);
+
           if (query.length > 2) {
             results = reports.filter( pst => {
               return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 

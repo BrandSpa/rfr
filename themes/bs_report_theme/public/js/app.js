@@ -37462,7 +37462,7 @@
 	        var query = this.country;
 	        var results = [];
 	        var key = evt.keyCode;
-	        console.log('reports on:', reports);
+
 	        if (query.length > 2) {
 	          results = reports.filter(function (pst) {
 	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
