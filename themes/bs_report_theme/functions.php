@@ -35,6 +35,7 @@ include_once $metaboxes . '/report.php';
 
 //include shortcodes
 include_once $shortcodes . '/map.php';
+include_once $shortcodes . '/download_report_sc.php';
 
 //add navigation menus
 register_nav_menus(
