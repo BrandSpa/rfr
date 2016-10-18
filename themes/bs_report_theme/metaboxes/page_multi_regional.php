@@ -29,8 +29,7 @@
   </select>
 </p>
 
-<br/>
-<button>Send</button>
-<?php    
+<?php
+var_dump(pll_the_languages());    
 }
 ?>
