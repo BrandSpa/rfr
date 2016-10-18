@@ -347,9 +347,9 @@ a {
      &::before {
       content: '';
       position: absolute;
-      bottom: 0;
-      width: 20%;
-       border-bottom: 4px solid $red_orange;
+      bottom: -4px;
+      width: 40%;
+      border-bottom: 4px solid $red_orange;
       border-color: $red_orange;
       left: 0;
     }
