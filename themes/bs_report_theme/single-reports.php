@@ -26,6 +26,7 @@
   </div>
 
   <?php include 'templates/report/content.php' ?>
+  <div class="row">
   <div class="col-md-4">
   
 <div class="link-bs">
@@ -56,7 +57,7 @@
 
 </div>
 </div>
-
+</div>
   <?php endwhile; ?>
 
   <?php  else : ?>
