@@ -317,7 +317,6 @@ a {
     margin: 30px 0;
     width: 100%;
     color: #fff;
-    overflow: hidden;
     transition: 300ms all ease;
     background: #333;
     padding: 10px 20px;
@@ -336,10 +335,10 @@ a {
       content: '';
       position: absolute;
       bottom: 4px;
-      width: 100%;
+      width: 40%;
       border-bottom: 1px solid $red_orange;
       border-color: $red_orange;
-      left: -100%;
+      left: 20px;
       transition: 300ms all ease;
     }
 
@@ -349,7 +348,7 @@ a {
       }
 
       &::after {
-        left: 20px;
+        width: 90%;
       }
     }
 
