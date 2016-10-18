@@ -25,7 +25,7 @@ function link_sc($atts, $content = null) {
       </text>
   </svg>
 
-   <i class="icon ion-document-text"></i> <?php echo gett($at['link_text']) ?>
+    <?php echo gett($at['link_text']) ?> <i class="icon ion-play"></i>
        <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
         <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
