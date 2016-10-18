@@ -110,6 +110,8 @@ h6 {
 
 .button-dark {
   background: #1A2127 !important; }
+  .button-dark::after {
+    background: #2B3740 !important; }
 
 .icon-red {
   fill: #FC3938; }
