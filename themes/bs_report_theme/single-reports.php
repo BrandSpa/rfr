@@ -30,7 +30,9 @@
   <div class="col-md-4">
   
 <div class="link-bs">
-  <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <a href="#">
+      <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
           <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
       </text>
@@ -42,9 +44,8 @@
   </svg>
 
 
-    <a href="#">COUNTRY REPORTS</a>
-
-  <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      COUNTRY REPORTS
+       <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
         <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
     </text>
@@ -54,6 +55,9 @@
           <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
       </text>
   </svg>
+    </a>
+
+ 
 
 </div>
 </div>

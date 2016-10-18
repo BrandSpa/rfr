@@ -295,7 +295,8 @@ a polygon, a path {
     font-weight: normal;
     font-style: italic;
     text-align: center;
-    display: block; }
+    display: block;
+    float: left; }
 
 .input-red, input {
   background: #FC3938;
