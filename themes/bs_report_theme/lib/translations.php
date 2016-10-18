@@ -32,7 +32,7 @@
       registerStr('Email');
       registerStr('Language');
       registerStr('Download');
-      registerStr('Download');
+      registerStr('Subscribe');
       registerStr('Executive Summary');
       registerStr('Full Report');
       registerStr('Full Report');
