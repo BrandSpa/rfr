@@ -70,6 +70,10 @@
 
 	var _download_report2 = _interopRequireDefault(_download_report);
 
+	var _subscribe_form = __webpack_require__(87);
+
+	var _subscribe_form2 = _interopRequireDefault(_subscribe_form);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _map2.default)();
@@ -77,6 +81,7 @@
 	(0, _country_select2.default)();
 	(0, _download_report2.default)();
 	(0, _search_country2.default)();
+	(0, _subscribe_form2.default)();
 
 	new _vue2.default({
 	  el: '#acn_reports'
@@ -40241,6 +40246,33 @@
 	  return parts.join('@');
 	}
 	module.exports = exports['default'];
+
+/***/ },
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	exports.default = function () {
+	  _vue2.default.component('subscribe-form', {
+	    template: "#subscribe-form-template",
+	    methods: {
+	      onSubmit: function onSubmit(e) {
+	        if (e) e.preventDefault();
+	      }
+	    }
+	  });
+	};
+
+	var _vue = __webpack_require__(14);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }
 /******/ ]);
