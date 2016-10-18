@@ -1,17 +1,23 @@
+.input-red {
+  background: $red_orange;
+  color: #fff;
+}
+
+.input-white {
+  background: #fff;
+  color: $red_orange;
+}
+
 input {
   @include title2;
   border: 0;
   height: 60px;
   padding-left: 15px;
-  color: #fff;
   outline: none;
   width: 100%;
   display: block;
   transition: all 300ms ease;
-}
-
-.input-red {
-  background: $red_orange;
+  @extend .input-red;
 }
 
 label {
