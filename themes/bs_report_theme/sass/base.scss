@@ -350,7 +350,6 @@ a {
 
       &::after {
         left: 20px;
-        right: 20px;
       }
     }
 
@@ -373,13 +372,13 @@ a {
     &:nth-child(4) {
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: -5px;
     }
 
     &:last-child {
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -5px;
     }
   }
 

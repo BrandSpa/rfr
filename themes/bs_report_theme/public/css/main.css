@@ -299,8 +299,7 @@ a polygon, a path {
   .link-bs a:hover svg {
     opacity: 1; }
   .link-bs a:hover::after {
-    left: 20px;
-    right: 20px; }
+    left: 20px; }
   .link-bs a svg {
     opacity: 0;
     transition: 400ms all ease; }
@@ -316,11 +315,11 @@ a polygon, a path {
     .link-bs a svg:nth-child(4) {
       position: absolute;
       right: 0;
-      bottom: 0; }
+      bottom: -5px; }
     .link-bs a svg:last-child {
       position: absolute;
       left: 0;
-      bottom: 0; }
+      bottom: -5px; }
 
 .input-red, input {
   background: #FC3938;
