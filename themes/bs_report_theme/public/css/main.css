@@ -268,7 +268,8 @@ a polygon, a path {
   text-align: center;
   display: block;
   float: left;
-  position: relative; }
+  position: relative;
+  height: 80px; }
   .link-bs a svg:first-child {
     fill: '#333';
     position: absolute;
