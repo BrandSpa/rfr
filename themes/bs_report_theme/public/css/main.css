@@ -302,7 +302,7 @@ a polygon, a path {
     left: 0; }
   .link-bs a svg {
     opacity: 0;
-    transition: 300ms all ease; }
+    transition: 400ms all ease; }
     .link-bs a svg:first-child {
       fill: '#333';
       position: absolute;
