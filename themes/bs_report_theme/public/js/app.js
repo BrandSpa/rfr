@@ -20916,7 +20916,6 @@
 	      var info = document.querySelector('.map__info');
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
-	      console.log(reports);
 	      var lang = this.lang;
 
 	      var zoomed = d3.zoom().scaleExtent([1, 2]).on('zoom', function () {
@@ -37580,7 +37579,7 @@
 	  name: '',
 	  email: '',
 	  language: '',
-	  country: '',
+	  country: 'Colombia',
 	  validation: {
 	    name: false,
 	    email: false
@@ -40338,7 +40337,7 @@
 	  name: '',
 	  email: '',
 	  language: '',
-	  country: '',
+	  country: 'Colombia',
 	  validation: {
 	    name: false,
 	    email: false

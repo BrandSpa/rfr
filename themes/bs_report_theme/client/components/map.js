@@ -59,7 +59,6 @@ export default function () {
       let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
-      console.log(reports);
       let lang = this.lang;
 
       let zoomed = d3.zoom()
