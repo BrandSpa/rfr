@@ -289,7 +289,7 @@ a polygon, a path {
   .link-bs a::after {
     content: '';
     position: absolute;
-    bottom: 5px;
+    bottom: 4px;
     width: 100%;
     border-bottom: 1px solid #FC3938;
     border-color: #FC3938;
