@@ -7,6 +7,7 @@ export default function() {
     ready() {
       console.log('subscribe');
     },
+    
     methods: {
       onSubmit(e) {
         if(e) e.preventDefault();

@@ -142,70 +142,11 @@ h6 {
   @include center_horizontal;
 }
 
-label {
-  @include title4;
-  width: 100%;
-  margin: 0;
-  text-transform: uppercase;
-  padding-bottom: 25px;
-}
 
-form {
-  button {
-    float: right
-  }
-}
 
-.input-container {
-  position: relative;
-  overflow: hidden;
 
-  &::after {
-    content: '';
-    border-bottom: 5px solid $dark_jungle_green;
-    display: block;
-    position: absolute;
-    left: -100%;
-  }
 
-  &__error {
-    opacity: 0;
-    transition: all 300ms ease;
-    
-    &-show {
-      opacity: 1;
-    }
-  }
 
-}
-
-input {
-  background: $red_orange;
-  border: 0;
-  height: 60px;
-  padding-left: 15px;
-  color: #fff;
-  outline: none;
-  width: 100%;
-  display: block;
-  transition: all 300ms ease;
-  @include title2;
-}
-
-.input-container {
-  margin-bottom: 30px;
-  
-  select {
-    background: $red_orange;
-    height: 60px;
-    width: 100%;
-    color: #fff;
-    display: block;
-    transition: all 300ms ease;
-    border: none;
-    @include title2;
-  }
-}
 
 .button {
   background: $red_orange;
@@ -324,10 +265,6 @@ input {
 
 .wpb_content_element {
   margin-bottom: 0 !important;
-}
-
-.animate-path {
-  
 }
 
 .row {
