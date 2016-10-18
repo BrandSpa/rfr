@@ -277,7 +277,8 @@ a polygon, a path {
   color: #fff;
   overflow: hidden;
   transition: 300ms all ease;
-  background: #333; }
+  background: #333;
+  padding: 10px; }
   .link-bs a::before {
     content: '';
     position: absolute;
@@ -311,13 +312,13 @@ a polygon, a path {
       position: absolute;
       right: 0;
       top: 0; }
-    .link-bs a svg:last-child {
-      position: absolute;
-      left: 0;
-      bottom: 0; }
     .link-bs a svg:nth-child(4) {
       position: absolute;
       right: 0;
+      bottom: 0; }
+    .link-bs a svg:last-child {
+      position: absolute;
+      left: 0;
       bottom: 0; }
 
 .input-red, input {
