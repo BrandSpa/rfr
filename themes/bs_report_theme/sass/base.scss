@@ -114,9 +114,9 @@ h6 {
   @include title6;
 }
 
-
 .button-dark {
   background: $dark_jungle_green !important;
+  
   &::after {
     background: $outer_space !important;
   }
