@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * BrandSpa (http://brandspa.com)
  * Alejandro Sanabria <alejandro@brandspa.com>
@@ -278,7 +277,7 @@ a polygon, a path {
   width: 100%;
   color: #fff;
   transition: 300ms all ease; }
-  Ø .link-bs a::before {
+  .link-bs a::before {
     content: '';
     position: absolute;
     width: 40%;
