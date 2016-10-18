@@ -10,7 +10,7 @@
     add_meta_box('page_multi_regional', 'Multi-regional info', 'bs_page_multi_regional_cb', 'page', 'normal', 'high', null);
   }
 
-  add_action('add_meta_boxes', 'bs_report_metabox');
+  add_action('add_meta_boxes', 'bs_page_multi_regional_metabox');
 
   function bs_page_multi_regional_cb($post) {
     wp_nonce_field();
