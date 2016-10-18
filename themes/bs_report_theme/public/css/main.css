@@ -283,8 +283,8 @@ a polygon, a path {
     position: absolute;
     width: 40%;
     border-bottom: 4px solid #FC3938;
-    border-color: #FC3938;
     left: 0;
+    bottom: 0;
     transition: 300ms all ease; }
   .link-bs a::after {
     content: '';
