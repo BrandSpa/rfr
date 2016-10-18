@@ -343,7 +343,7 @@ a {
       svg {
         opacity: 1;
       }
-      
+
       &::after {
         left: 0;
       }
@@ -364,7 +364,7 @@ a {
       top: 0;
     }
 
-    &:nth-child(3) {
+    &:last-child(3) {
       position: absolute;
       left: 0;
       bottom: 0;
