@@ -276,7 +276,8 @@ a polygon, a path {
   width: 100%;
   color: #fff;
   overflow: hidden;
-  transition: 300ms all ease; }
+  transition: 300ms all ease;
+  background: #333; }
   .link-bs a::before {
     content: '';
     position: absolute;
