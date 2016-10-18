@@ -6,7 +6,7 @@ let initialState = {
   name: '',
   email: '',
   language: '',
-  country: 'Colombia',
+  country: '',
   validation: {
     name: false,
     email: false
