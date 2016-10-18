@@ -278,6 +278,8 @@ a polygon, a path {
   max-width: 100%;
   color: #fff;
   transition: 300ms all ease; }
+  .link-bs a i {
+    margin-left: 10px; }
   .link-bs a::before {
     content: '';
     position: absolute;
