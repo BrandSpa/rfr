@@ -4,7 +4,7 @@ function donwload_report_sc($atts, $content = null) {
   
   ob_start();
  
-  include_once('donwload_report.php');
+  include_once('download_report.php');
 
   return ob_get_clean();
 }
