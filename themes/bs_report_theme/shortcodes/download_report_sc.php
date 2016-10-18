@@ -6,7 +6,7 @@ function donwload_report_sc($atts, $content = null) {
     ), $atts );
   ob_start();
  
- include 'donwload_report_sc.php';
+ include 'donwload_report.php';
 
   return ob_get_clean();
   }
