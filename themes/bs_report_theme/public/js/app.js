@@ -40285,6 +40285,7 @@
 	exports.default = function () {
 	  _vue2.default.component('subscribe-form', {
 	    template: "#subscribe-form-template",
+	    props: ['country'],
 	    data: function data() {
 	      return initialState;
 	    },
