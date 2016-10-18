@@ -275,17 +275,14 @@ a polygon, a path {
     left: 0;
     top: 0; }
   .link-bs a svg:nth-child(2) {
-    fill: '#333';
     position: absolute;
     right: 0;
     top: 0; }
   .link-bs a svg:nth-child(3) {
-    fill: '#333';
     position: absolute;
     left: 0;
     bottom: 0; }
   .link-bs a svg:nth-child(4) {
-    fill: '#333';
     position: absolute;
     right: 0;
     bottom: 0; }
@@ -295,14 +292,16 @@ a polygon, a path {
     bottom: 0;
     width: 20%;
     border-bottom: 4px solid #FC3938;
-    border-color: #FC3938; }
+    border-color: #FC3938;
+    left: 0; }
   .link-bs a::after {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     border-bottom: 1px solid #FC3938;
-    border-color: #FC3938; }
+    border-color: #FC3938;
+    left: 0; }
 
 .input-red, input {
   background: #FC3938;

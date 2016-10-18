@@ -315,7 +315,6 @@ a {
     float: left;
     position: relative;
 
-
   svg {
      &:first-child {
       fill: '#333';
@@ -325,26 +324,22 @@ a {
     }
 
     &:nth-child(2) {
-      fill: '#333';
       position: absolute;
       right: 0;
       top: 0;
     }
 
     &:nth-child(3) {
-      fill:'#333';
       position: absolute;
       left: 0;
       bottom: 0;
     }
 
     &:nth-child(4) {
-      fill:'#333';
       position: absolute;
       right: 0;
       bottom: 0;
     }
-
   }
 
      &::before {
@@ -354,6 +349,7 @@ a {
       width: 20%;
        border-bottom: 4px solid $red_orange;
       border-color: $red_orange;
+      left: 0;
     }
 
     &::after {
@@ -363,6 +359,7 @@ a {
       width: 100%;
       border-bottom: 1px solid $red_orange;
       border-color: $red_orange;
+      left: 0;
     }
   }
 } 
