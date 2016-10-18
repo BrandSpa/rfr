@@ -290,6 +290,10 @@ a polygon, a path {
     fill: '#333';
     text-align: right; }
   .link-bs a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5625em;
+    font-weight: normal;
+    font-style: italic;
     text-align: center;
     display: block; }
 
