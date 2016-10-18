@@ -1,6 +1,6 @@
 <?php
 ?>
-<subscribe-form></subscribe-form>
+<subscribe-form country="<?php echo getUserCountry() ?>"></subscribe-form>
 
 <template id="subscribe-form-template">
   <form action="">
@@ -35,7 +35,6 @@
      <div class="input-container">
       <label for="" class="color-white"><?php echo gett('Country') ?></label>
       <select v-model="country">
-        <option value="<?php echo getUserCountry() ?>"><?php echo getUserCountry() ?></option>
         <?php foreach(getCountries() as $country): ?>
           <option value="<?php echo $country ?>"><?php echo $country; ?></option>
         <?php endforeach; ?>
