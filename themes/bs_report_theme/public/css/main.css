@@ -316,7 +316,7 @@ form button {
     transition: 300ms all ease; }
   .input-container:hover::after {
     left: 0; }
-  .input-container:focus::after {
+  .input-container input:focus::after {
     left: 0; }
   .input-container__error {
     opacity: 0;

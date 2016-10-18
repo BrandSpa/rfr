@@ -65,7 +65,7 @@ form {
     }
   }
 
-  &:focus {
+  input:focus {
     &::after {
       left: 0;
     }
