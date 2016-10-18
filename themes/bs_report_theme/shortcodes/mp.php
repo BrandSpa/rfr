@@ -18,12 +18,7 @@
 
 
   <div id="map" class="map">
-    <div class="map__info">
-    <span class="map__info_country"></span>
-    <span class="map__info_situation">
-      <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
-    </span>
-  </div>
+  
     <div class="row">
       <div class="col-md-9">
         <h1 class="title title-line color-red">

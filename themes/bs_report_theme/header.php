@@ -18,6 +18,13 @@
 
 <body id="acn_reports">
 
+  <div class="map__info">
+    <span class="map__info_country"></span>
+    <span class="map__info_situation">
+      <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
+    </span>
+  </div>
+
 <a href="#" id="open-nav">
   <span class="sr-only">Toggle navigation</span>
   <span class="icon-bar"></span>
