@@ -18,7 +18,7 @@ export default function() {
         },
 
         up() {
-          console.log(this.items[this.current].meta_country);
+
           if(this.current > 0) {
             this.current--;
           }
