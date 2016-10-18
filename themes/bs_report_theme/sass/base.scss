@@ -338,7 +338,7 @@ a {
       bottom: 0;
     }
 
-    &:last-child(4) {
+    &:nth-child(4) {
       fill:'#333';
       position: absolute;
       right: 0;
