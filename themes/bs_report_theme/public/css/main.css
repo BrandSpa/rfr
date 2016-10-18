@@ -260,6 +260,39 @@ h6 {
 a polygon, a path {
   fill: #fff; }
 
+.link-bs svg:ntn-child(1) {
+  fill: '#333';
+  text-align: left; }
+
+.link-bs svg:ntn-child(2) {
+  fill: '#333';
+  text-align: right; }
+
+.link-bs svg:ntn-child(3) {
+  fill: '#333';
+  text-align: left; }
+
+.link-bs svg:ntn-child(4) {
+  fill: '#333';
+  text-align: right; }
+
+.link-bs a {
+  position: relative;
+  text-align: center;
+  display: block; }
+  .link-bs a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px;
+    border-color: #FC3938; }
+  .link-bs a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px;
+    border-color: #FC3938; }
+
 .input-red, input {
   background: #FC3938;
   color: #fff; }
