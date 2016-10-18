@@ -40260,6 +40260,10 @@
 	exports.default = function () {
 	  _vue2.default.component('subscribe-form', {
 	    template: "#subscribe-form-template",
+	    ready: function ready() {
+	      console.log('subscribe');
+	    },
+
 	    methods: {
 	      onSubmit: function onSubmit(e) {
 	        if (e) e.preventDefault();
