@@ -317,28 +317,32 @@ a {
 
 
   svg {
-     &:ntn-child(1) {
+     &:first-child {
       fill: '#333';
       position: absolute;
       left: 0;
+      top: 0;
     }
 
-    &:ntn-child(2) {
+    &:nth-child(2) {
       fill: '#333';
       position: absolute;
       right: 0;
+      top: 0;
     }
 
-    &:ntn-child(3) {
+    &:nth-child(3) {
       fill:'#333';
       position: absolute;
       left: 0;
+      bottom: 0;
     }
 
-    &:ntn-child(4) {
+    &:last-child(4) {
       fill:'#333';
       position: absolute;
       right: 0;
+      bottom: 0;
     }
 
   }

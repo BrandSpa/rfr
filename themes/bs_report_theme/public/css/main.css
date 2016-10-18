@@ -269,22 +269,26 @@ a polygon, a path {
   display: block;
   float: left;
   position: relative; }
-  .link-bs a svg:ntn-child(1) {
+  .link-bs a svg:first-child {
     fill: '#333';
     position: absolute;
-    left: 0; }
-  .link-bs a svg:ntn-child(2) {
+    left: 0;
+    top: 0; }
+  .link-bs a svg:nth-child(2) {
     fill: '#333';
     position: absolute;
-    right: 0; }
-  .link-bs a svg:ntn-child(3) {
+    right: 0;
+    top: 0; }
+  .link-bs a svg:nth-child(3) {
     fill: '#333';
     position: absolute;
-    left: 0; }
-  .link-bs a svg:ntn-child(4) {
+    left: 0;
+    bottom: 0; }
+  .link-bs a svg:last-child(4) {
     fill: '#333';
     position: absolute;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
   .link-bs a::before {
     content: '';
     position: absolute;
