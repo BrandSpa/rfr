@@ -299,7 +299,8 @@ a polygon, a path {
   .link-bs a:hover svg {
     opacity: 1; }
   .link-bs a:hover::after {
-    left: 0; }
+    left: 20px;
+    right: 20px; }
   .link-bs a svg {
     opacity: 0;
     transition: 400ms all ease; }
