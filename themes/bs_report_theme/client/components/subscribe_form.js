@@ -21,10 +21,6 @@ export default function() {
       return initialState;
     },
     
-    ready() {
-      console.log(this.country);
-    },
-    
     methods: {
        validate(opts = {type: '', field: ''}) {
         const {field, type} = opts;

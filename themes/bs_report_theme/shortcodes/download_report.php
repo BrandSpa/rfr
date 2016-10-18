@@ -57,7 +57,7 @@
       </a>
     </div>
     <div class="col-md-5">
-      <form-download-report></form-download-report>
+      <form-download-report country="<?php echo getUserCountry() ?>"></form-download-report>
     </div>
     <div class="col-md-1"></div>
   </div>

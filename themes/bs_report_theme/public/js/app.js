@@ -37528,7 +37528,7 @@
 	exports.default = function () {
 	  _vue2.default.component('form-download-report', {
 	    template: '#form-download-template',
-
+	    props: ['country'],
 	    data: function data() {
 	      return initialState;
 	    },
@@ -40288,9 +40288,6 @@
 	    props: ['country'],
 	    data: function data() {
 	      return initialState;
-	    },
-	    ready: function ready() {
-	      console.log(this.country);
 	    },
 
 

@@ -16,7 +16,7 @@ let initialState = {
 export default function () {
   Vue.component('form-download-report', {
     template: '#form-download-template',
-
+    props: ['country'],
     data() {
       return initialState;
     },
