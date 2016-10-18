@@ -275,29 +275,32 @@ a polygon, a path {
   margin: 30px 0;
   width: 100%;
   color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: 300ms all ease; }
   .link-bs a::before {
     content: '';
     position: absolute;
-    bottom: -4px;
     width: 40%;
     border-bottom: 4px solid #FC3938;
     border-color: #FC3938;
-    left: 0; }
+    left: 0;
+    transition: 300ms all ease; }
   .link-bs a::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
     border-bottom: 1px solid #FC3938;
     border-color: #FC3938;
-    left: -100%; }
+    left: -100%;
+    transition: 300ms all ease; }
   .link-bs a:hover svg {
     opacity: 1; }
   .link-bs a:hover::after {
     left: 0; }
   .link-bs a svg {
-    opacity: 0; }
+    opacity: 0;
+    transition: 300ms all ease; }
     .link-bs a svg:first-child {
       fill: '#333';
       position: absolute;

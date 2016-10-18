@@ -318,25 +318,27 @@ a {
     width: 100%;
     color: #fff;
     overflow: hidden;
+    transition: 300ms all ease;
 
     &::before {
       content: '';
       position: absolute;
-      bottom: -4px;
       width: 40%;
       border-bottom: 4px solid $red_orange;
       border-color: $red_orange;
       left: 0;
+      transition: 300ms all ease;
     }
 
     &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: 5px;
       width: 100%;
       border-bottom: 1px solid $red_orange;
       border-color: $red_orange;
       left: -100%;
+      transition: 300ms all ease;
     }
 
     &:hover {
@@ -351,6 +353,7 @@ a {
 
   svg {
     opacity: 0;
+    transition: 300ms all ease;
      &:first-child {
       fill: '#333';
       position: absolute;
