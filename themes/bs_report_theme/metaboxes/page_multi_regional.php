@@ -77,7 +77,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
   </select>
 </p>
 <?php endif; ?>
- 
+ <div class="append-langs"></div>
 <script type="text" id="multiregional-template">
   <p>
     <select name="multiregional[lang][]" placeholder="country langs" >
@@ -90,11 +90,24 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
         }
       ?>
     </select>
+    <button class="remove-lang">Remove</button>
   </p>
 </script>
 
+<button class="add-lang">Add lang</button>
+
 <script>
-  console.log( jQuery('#multiregional-template').html() );
+  var $template = jQuery('#multiregional-template').html();
+ 
+  jQuery('.add-lang').on('click', function(e) {
+    e.preventDefault();
+     jQuery('.append-langs').append($template);
+  });
+
+  jQuery('.remove-lang').on('click', function(e) {
+    e.preventDefault();
+    jQuery(this).parent().remove();
+  });
 </script>
 
 
