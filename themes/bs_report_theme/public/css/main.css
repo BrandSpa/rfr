@@ -856,12 +856,12 @@ form button {
     visibility: hidden; }
   .bs-modal-open {
     visibility: visible; }
-    .bs-modal-open.bs-modal__content {
+    .bs-modal-open .bs-modal__content {
       animation-name: showModal;
       animation-duration: 300ms; }
   .bs-modal-close {
     visibility: hidden; }
-    .bs-modal-close.bs-modal__content {
+    .bs-modal-close .bs-modal__content {
       animation-name: showModal;
       animation-duration: 300ms;
       animation-direction: reverse; }

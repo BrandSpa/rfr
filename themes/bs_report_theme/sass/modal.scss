@@ -49,7 +49,7 @@
    &-open {
       visibility: visible;
 
-      &.bs-modal__content { 
+      .bs-modal__content { 
         animation-name: showModal;
         animation-duration: 300ms;
        }
@@ -57,7 +57,7 @@
 
     &-close {
       visibility: hidden;
-       &.bs-modal__content { 
+       .bs-modal__content { 
         animation-name: showModal;
         animation-duration: 300ms;
          animation-direction: reverse;
