@@ -40361,6 +40361,7 @@
 	exports.default = function () {
 	  _vue2.default.component('modal-lang', {
 	    template: '#modal-lang-template',
+	    props: ['info'],
 	    ready: function ready() {
 	      (0, _jquery2.default)(document).on('keyup', function (e) {
 	        if (e.keyCode === 27) {
