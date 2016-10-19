@@ -36,6 +36,7 @@
 
 <p>
   <select name="multiregional[][lang]" placeholder="country langs" >
+  <option value="">Select lang</option>
     <?php 
       $langs = get_terms( array(
         'taxonomy' => 'language',
@@ -53,11 +54,9 @@
 <template id="mr-lang-template">
 <p>
   <select name="multiregional[][lang]" placeholder="country langs" >
+  <option value="">Select lang</option>
     <?php 
-      $langs = get_terms( array(
-        'taxonomy' => 'language',
-        'hide_empty' => false,
-      )); 
+      $langs = get_terms( array( 'taxonomy' => 'language', 'hide_empty' => false, )); 
 									foreach($langs as $lang) {
 									?>
 									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
