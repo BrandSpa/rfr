@@ -26,7 +26,7 @@
 <button class="show-modal">open modal</button>
 
 <modal-lang 
-  info='<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>'
+  :info='<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>'
   polylang='<?php if(function_exists('pll_the_languages')) { echo json_encode(pll_the_languages(array( 'raw' => 1 ))); } ?>'
 >
 
@@ -37,14 +37,8 @@
     <a href="#" class="bs-modal__close"><i class="ion-android-close color-red"></i></a> 
     <h4>Choose language</h4>
       <ul>
-          <li>
-            <a href="/es/report/canada">Spanish</a>
-          </li>
-          <li>
-            <a href="/en/report/canada">French</a>
-          </li>
-          <li>
-            <a href="/en/report/canada">English</a>
+          <li v-for="lang in info.langs">
+            <a href="/{{lang}}/report/canada">{{lang}}</a>
           </li>
       </ul>
     </div>

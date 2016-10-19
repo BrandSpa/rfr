@@ -7,7 +7,7 @@ export default function() {
     template: '#modal-lang-template',
     props: ['info', 'polylang'],
     ready() {
-      const multireg = JSON.parse(this.info);
+      const multireg = this.info;
       const pll = JSON.parse(this.polylang);
       const showMultiRegional = localStorage.getItem('multiregional');
       let showModal = false;

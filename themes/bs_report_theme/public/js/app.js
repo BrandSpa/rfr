@@ -40363,7 +40363,7 @@
 	    template: '#modal-lang-template',
 	    props: ['info', 'polylang'],
 	    ready: function ready() {
-	      var multireg = JSON.parse(this.info);
+	      var multireg = this.info;
 	      var pll = JSON.parse(this.polylang);
 	      var showMultiRegional = localStorage.getItem('multiregional');
 	      var showModal = false;
