@@ -35,14 +35,23 @@
 
   </select>
 </p>
-<?php var_dump($langs); ?>
+
 
 
 <?php if(is_array($mr['lang'])): ?>
 <?php foreach($mr['lang'] as $mrlang): ?>
+<?php
+$neededObject = array_filter(
+    $langs,
+    function ($e) use (&$mrlang) {
+        return $e->slug == $mrlang;
+    }
+);
+?>
+<?php var_dump($neededObject); ?>
   <p>
   <select name="multiregional[country]" placeholder="country langs" >
-  <option value="<?php echo $mrlang ?>"><?php echo $mrlang ?></option>
+  <option value="<?php echo $mrlang ?>"><?php echo $neededObject->name ?></option>
     <?php 
       $langs = get_terms( array(
         'taxonomy' => 'language',
