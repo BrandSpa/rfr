@@ -12,12 +12,20 @@
   transition: all 300ms;
   visibility: hidden;
 
+  &__close {
+    font-size: 32px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+  }
+
   &__content {
-    background: $dark_electric_blue;
+    background: $desert_storm;
     padding: 40px;
     opacity: 0;
     transform: scale(0);
     transition: all 300ms ease;
+    position: relative;
   }
 
   &__overlay {
@@ -31,7 +39,7 @@
     opacity: 0;
     visibility: hidden; 
     transition: all 300ms ease;
-    
+
      &-open {
       visibility: visible;
       opacity: 1;

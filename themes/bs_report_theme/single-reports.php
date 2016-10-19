@@ -67,7 +67,7 @@
 
 <div class="bs-modal">
   <div class="bs-modal__content">
-  <a href="#" class="close-modal"><i class="ion-android-close color-red"></i></a> 
+  <a href="#" class="bs-modal__close"><i class="ion-android-close color-red"></i></a> 
   <h3>Choose language</h3>
     <ul>
         <li>
@@ -103,7 +103,7 @@
     jQuery('.bs-modal').addClass('bs-modal-open');
   });
 
-  jQuery('.close-modal').on('click', function(e) {
+  jQuery('.bs-modal__close').on('click', function(e) {
     console.log(e);
     if(e) e.preventDefault();
     jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
