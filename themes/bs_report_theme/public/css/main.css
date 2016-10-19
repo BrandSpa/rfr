@@ -848,6 +848,10 @@ form button {
     left: 0;
     opacity: 0;
     visibility: hidden; }
+    .bs-modal__overlay-open {
+      visibility: visible; }
+    .bs-modal__overlay-close {
+      visibility: hidden; }
   .bs-modal-open {
     visibility: visible; }
     .bs-modal-open .bs-modal__content {

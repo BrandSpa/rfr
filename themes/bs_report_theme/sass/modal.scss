@@ -29,8 +29,14 @@
     top: 0;
     left: 0;
     opacity: 0;
-    visibility: hidden;
-    
+    visibility: hidden; 
+     &-open {
+      visibility: visible
+    }
+
+     &-close {
+      visibility: hidden
+    }
   }
 
    &-open {
@@ -40,6 +46,7 @@
          opacity: 1;
         transform: scale(1);
        }
+
     }
 
     &-close {
