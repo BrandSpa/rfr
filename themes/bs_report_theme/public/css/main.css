@@ -863,6 +863,7 @@ form button {
       animation-direction: reverse; }
   .bs-modal-open {
     visibility: visible;
+    opacity: 1;
     animation-name: showModal;
     animation-duration: 300ms; }
   .bs-modal-close {
