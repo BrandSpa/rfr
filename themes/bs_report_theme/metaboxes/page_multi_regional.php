@@ -94,7 +94,9 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
   </p>
 </script>
 
-<multiregional></multiregional>
+<script>
+  console.log(jQuery('#multiregional-template').html());
+</script>
 
 
 </div>
