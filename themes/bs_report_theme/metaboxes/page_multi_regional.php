@@ -20,7 +20,6 @@
 
 <?php var_dump($mr) ?>
 
-
 <p>
   <select name="multiregional[country]" >
       <?php if ($mr && !empty($mr['country'])): ?>
@@ -35,7 +34,6 @@
 
   </select>
 </p>
-
 
 <?php if($mr['lang'] && is_array($mr['lang'])): ?>
 <?php foreach($mr['lang'] as $mrlang): ?>
@@ -59,8 +57,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 </p>
 
 <?php endforeach; ?>
-<?php endif; ?>
-
+<?php else: ?>
 <p>
   <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="">Select lang</option>
@@ -71,46 +68,15 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
       )); 
 		  foreach($langs as $lang) {
 		?>
-		<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
+		  <option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
 		<?php
 		  }
 		?>
   </select>
 </p>
+<?php endif; ?>
 
-<p>
-  <select name="multiregional[lang][]" placeholder="country langs" >
-  <option value="">Select lang</option>
-    <?php 
-      $langs = get_terms( array(
-        'taxonomy' => 'language',
-        'hide_empty' => false,
-      )); 
-									foreach($langs as $lang) {
-									?>
-									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-									<?php
-									}
-								?>
-  </select>
-</p>
 
-<p>
-  <select name="multiregional[lang][]" placeholder="country langs" >
-  <option value="">Select lang</option>
-    <?php 
-      $langs = get_terms( array(
-        'taxonomy' => 'language',
-        'hide_empty' => false,
-      )); 
-									foreach($langs as $lang) {
-									?>
-									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-									<?php
-									}
-								?>
-  </select>
-</p>
 
 <template id="mr-lang-template">
 <p>
@@ -143,7 +109,6 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
       'post_id' => $post_id
     ));
 }
-
 
   add_action( 'save_post', 'bs_save_page_multiregional_meta');
 ?>
