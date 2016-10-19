@@ -83,7 +83,6 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
     <select name="multiregional[lang][]" placeholder="country langs" >
     <option value="">Select lang</option>
       <?php 
-        
       foreach($langs as $lang) {
         ?>
         <option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
@@ -95,7 +94,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 </script>
 
 <script>
-  console.log(jQuery('#multiregional-template').html());
+  console.log( jQuery('#multiregional-template').html() );
 </script>
 
 
