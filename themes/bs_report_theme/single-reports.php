@@ -67,7 +67,7 @@
 
 <div class="bs-modal">
   <div class="bs-modal__content">
-  <button class="close-modal">X</button>
+  <button class="close-modal"><i class="ion-android-close color-red"></i></button>
   <h3>Choose language</h3>
     <ul>
         <li>
