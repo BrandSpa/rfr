@@ -81,7 +81,7 @@
   </div>
 </div>
 
-<div class="bs-modal--overlay"></div>
+<div class="bs-modal__overlay"></div>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>

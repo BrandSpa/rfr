@@ -820,7 +820,7 @@ form button {
     margin: 30px 60px; }
 
 .bs-modal {
-  visibility: hidden;
+  visibility: visible;
   position: fixed;
   top: 40%;
   left: 0;
