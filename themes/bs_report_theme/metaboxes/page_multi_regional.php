@@ -14,6 +14,7 @@
 
   function bs_page_multi_regional_cb($post) {
     wp_nonce_field('bs_page_mr_meta', 'bs_multiregional_nonce');
+    $langs = get_terms( array( 'taxonomy' => 'language', 'hide_empty' => false, )); 
     $mr = get_post_meta($post->ID, 'multiregional_key', true);
 ?>
 
@@ -39,7 +40,7 @@
 <?php foreach($mr['lang'] as $mrlang): ?>
   <p>
   <select name="multiregional[country]" placeholder="country langs" >
-  <option value="<?php echo $mrlang ?>"><?php echo $mrlang ?></option>
+  <option value="<?php echo $mrlang ?>"><?php echo  $langs->slug[$mrlang] ?></option>
     <?php 
       $langs = get_terms( array(
         'taxonomy' => 'language',
@@ -113,7 +114,7 @@
   <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="">Select lang</option>
     <?php 
-      $langs = get_terms( array( 'taxonomy' => 'language', 'hide_empty' => false, )); 
+      
 									foreach($langs as $lang) {
 									?>
 									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
