@@ -841,7 +841,7 @@ form button {
   z-index: 2000;
   transition: all 300ms;
   animation-name: showModal;
-  animation-duration: 4s; }
+  animation-duration: 300ms; }
   .bs-modal__content {
     background: #536D7F;
     padding: 40px; }
