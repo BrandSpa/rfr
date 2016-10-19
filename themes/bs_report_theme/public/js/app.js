@@ -40389,7 +40389,7 @@
 	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-close');
 	      });
 
-	      console.log('hi asap');
+	      console.log(JSON.parse(poylangLangs));
 	    }
 	  });
 	};

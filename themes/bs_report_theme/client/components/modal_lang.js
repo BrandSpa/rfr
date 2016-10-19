@@ -33,7 +33,7 @@ export default function() {
         jQuery('.bs-modal').addClass('bs-modal-close');
       });
 
-      console.log('hi asap');
+      console.log(JSON.parse(poylangLangs));
     }
   });
 }
