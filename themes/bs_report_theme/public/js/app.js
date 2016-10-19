@@ -40365,6 +40365,7 @@
 	    ready: function ready() {
 	      var multireg = JSON.parse(this.info);
 	      var pll = JSON.parse(this.polylang);
+	      var showMultiRegional = localStorage.getItem('multiregional');
 	      var showModal = false;
 
 	      var showMdl = function showMdl() {

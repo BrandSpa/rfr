@@ -58,17 +58,12 @@
 
 	var _religions_chart2 = _interopRequireDefault(_religions_chart);
 
-	var _multi_regional = __webpack_require__(17);
-
-	var _multi_regional2 = _interopRequireDefault(_multi_regional);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
 	  (0, _uploader2.default)();
 	  (0, _religions_chart2.default)();
-	  (0, _multi_regional2.default)();
-	  console.log((0, _multi_regional2.default)());
+
 	  new Vue({
 	    el: '#metaboxes-report'
 	  });
@@ -21815,36 +21810,6 @@
 	  return 'rgba(' + r + ', ' + g + ' ,' + b + ', ' + opacity / 100 + ')';
 	};
 
-
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	exports.default = function () {
-	  _vue2.default.component('multiregional', {
-	    template: '#multiregional-template',
-	    data: function data() {
-	      return {
-	        country: '',
-	        items: [],
-	        current: 0
-	      };
-	    },
-	    ready: function ready() {}
-	  });
-	};
-
-	var _vue = __webpack_require__(14);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }
 /******/ ]);

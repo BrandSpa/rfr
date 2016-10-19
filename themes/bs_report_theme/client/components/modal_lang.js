@@ -9,6 +9,7 @@ export default function() {
     ready() {
       const multireg = JSON.parse(this.info);
       const pll = JSON.parse(this.polylang);
+      const showMultiRegional = localStorage.getItem('multiregional');
       let showModal = false;
 
       let showMdl = () => {
