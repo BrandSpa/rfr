@@ -48,7 +48,7 @@ $neededObject = array_filter(
     }
 );
 ?>
-<?php var_dump($neededObject); ?>
+<?php var_dump(key($neededObject)); ?>
   <p>
   <select name="multiregional[country]" placeholder="country langs" >
   <option value="<?php echo $mrlang ?>"><?php echo $neededObject[0]->name ?></option>
