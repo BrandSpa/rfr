@@ -839,10 +839,11 @@ form button {
   min-width: 320px;
   z-index: 2000;
   transition: all 300ms;
-  opacity: 0; }
+  visibility: hidden; }
   .bs-modal__content {
     background: #536D7F;
-    padding: 40px; }
+    padding: 40px;
+    opacity: 0; }
   .bs-modal__overlay {
     position: fixed;
     width: 100%;
@@ -854,14 +855,16 @@ form button {
     opacity: 0;
     visibility: hidden; }
     .bs-modal__overlay-open {
-      visibility: visible;
-      animation-name: showModal;
-      animation-duration: 300ms; }
+      visibility: visible; }
+      .bs-modal__overlay-open__content {
+        animation-name: showModal;
+        animation-duration: 300ms; }
     .bs-modal__overlay-close {
-      visibility: hidden;
-      animation-name: showModal;
-      animation-duration: 300ms;
-      animation-direction: reverse; }
+      visibility: hidden; }
+      .bs-modal__overlay-close__content {
+        animation-name: showModal;
+        animation-duration: 300ms;
+        animation-direction: reverse; }
   .bs-modal-open {
     visibility: visible;
     opacity: 1;
