@@ -14,9 +14,10 @@
 
   function bs_page_multi_regional_cb($post) {
     wp_nonce_field();
-    $report_country = get_post_meta($post->ID, 'page_mr_country_key', true);
-    $report_country = get_post_meta($post->ID, 'page_mr_country_key', true);
+    $mr = get_post_meta($post->ID, 'multiregional_key', true);
 ?>
+
+<?php var_dump($mr) ?>
 
 <p>
   <select name="multiregional[][country]" >
@@ -48,22 +49,8 @@
 								?>
   </select>
 </p>
-<p>
-  <select name="multiregional[][lang]" placeholder="country langs" >
-    <?php 
-      $langs = get_terms( array(
-        'taxonomy' => 'language',
-        'hide_empty' => false,
-      )); 
-									foreach($langs as $lang) {
-									?>
-									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-									<?php
-									}
-								?>
-  </select>
-</p>
 
+<template id="mr-lang-template">
 <p>
   <select name="multiregional[][lang]" placeholder="country langs" >
     <?php 
@@ -79,9 +66,24 @@
 								?>
   </select>
 </p>
+</template>
+
 
 
 <?php
-var_dump(pll_the_languages());    
+ 
 }
+
+
+  function bs_save_page_multiregional_meta($post_id) {
+
+    update_field(array(
+      'field_key' => 'multiregional_key',
+      'field_name' => 'multiregional',
+      'post_id' => $post_id
+    ));
+}
+
+
+  add_action( 'save_post', 'bs_save_page_multiregional_meta');
 ?>
