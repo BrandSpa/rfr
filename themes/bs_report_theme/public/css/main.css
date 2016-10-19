@@ -854,6 +854,15 @@ form button {
     top: 0;
     left: 0;
     visibility: hidden; }
+    .bs-modal__overlay-open {
+      visibility: visible;
+      animation-name: showModal;
+      animation-duration: 300ms; }
+    .bs-modal__overlay-close {
+      visibility: hidden;
+      animation-name: showModal;
+      animation-duration: 300ms;
+      animation-direction: reverse; }
   .bs-modal-open {
     visibility: visible;
     animation-name: showModal;

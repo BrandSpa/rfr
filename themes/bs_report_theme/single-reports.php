@@ -46,6 +46,12 @@
     jQuery('.bs-modal').removeClass('bs-modal-close');
     jQuery('.bs-modal').addClass('bs-modal-open');
   });
+
+  jQuery('.close-modal').on('click', function(e) {
+    if(e) e.preventDefault();
+    jQuery('.bs-modal').removeClass('bs-modal-open');
+    jQuery('.bs-modal').addClass('bs-modal-close');
+  });
 </script>
 
 <div id="footer">
@@ -74,6 +80,7 @@
 
 <div class="bs-modal">
   <div class="bs-modal__content">
+  <button class="close-modal">X</button>
   <h3>Choose language</h3>
     <ul>
         <li>

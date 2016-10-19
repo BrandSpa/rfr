@@ -41,6 +41,20 @@
     top: 0;
     left: 0;
     visibility: hidden;
+    
+    &-open {
+      visibility: visible;
+      animation-name: showModal;
+      animation-duration: 300ms;
+    }
+
+    &-close {
+      visibility: hidden;
+      animation-name: showModal;
+      animation-duration: 300ms;
+      animation-direction: reverse;
+    }
+
   }
 
   &-open {
