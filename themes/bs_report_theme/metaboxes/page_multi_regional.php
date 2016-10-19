@@ -37,30 +37,24 @@
 </p>
 
 
-<?php if(is_array($mr['lang'])): ?>
+<?php if($mr['lang'] && is_array($mr['lang'])): ?>
 <?php foreach($mr['lang'] as $mrlang): ?>
 <?php
-$neededObject = array_filter(
-    $langs,
-    function ($e) use (&$mrlang) {
-        return $e->slug == $mrlang;
-    }
-);
+$neededObject = array_filter( $langs, function ($e) use (&$mrlang) { 
+  return $e->slug == $mrlang; 
+  });
 ?>
   <p>
     <select name="multiregional[lang][]" placeholder="country langs" >
-  <option value="<?php echo $mrlang ?>"><?php echo $neededObject[key($neededObject)]->name ?></option>
+      <option value="<?php echo $mrlang ?>"><?php echo $neededObject[key($neededObject)]->name ?></option>
     <?php 
-      $langs = get_terms( array(
-        'taxonomy' => 'language',
-        'hide_empty' => false,
-      )); 
-									foreach($langs as $lang) {
-									?>
-									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-									<?php
-									}
-								?>
+      $langs = get_terms( array( 'taxonomy' => 'language', 'hide_empty' => false, ));
+			foreach($langs as $lang) {
+		?>
+		  <option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
+		<?php
+		  }
+		?>
   </select>
 </p>
 
@@ -75,12 +69,12 @@ $neededObject = array_filter(
         'taxonomy' => 'language',
         'hide_empty' => false,
       )); 
-									foreach($langs as $lang) {
-									?>
-									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-									<?php
-									}
-								?>
+		  foreach($langs as $lang) {
+		?>
+		<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
+		<?php
+		  }
+		?>
   </select>
 </p>
 
