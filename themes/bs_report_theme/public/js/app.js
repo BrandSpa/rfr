@@ -40389,7 +40389,7 @@
 	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-close');
 	      });
 
-	      console.log(JSON.parse(this.polylang));
+	      console.log('geo from component: ', userGeoData);
 	    }
 	  });
 	};

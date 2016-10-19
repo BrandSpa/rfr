@@ -33,7 +33,7 @@ export default function() {
         jQuery('.bs-modal').addClass('bs-modal-close');
       });
 
-      console.log(JSON.parse(this.polylang));
+      console.log('geo from component: ', userGeoData);
     }
   });
 }
