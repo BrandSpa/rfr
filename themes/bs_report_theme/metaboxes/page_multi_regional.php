@@ -20,7 +20,7 @@
 
 
 <p>
-  <select name="multiregional[country][]" >
+  <select name="multiregional[country]" >
       <?php if ($mr && !empty($mr['country'])): ?>
         <option value="<?php echo $mr['country'] ?>"><?php echo $mr['country'] ?></option>
         <?php else: ?>
