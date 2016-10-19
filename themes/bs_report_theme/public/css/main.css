@@ -821,9 +821,11 @@ form button {
 
 @keyframes showModal {
   from {
+    visibility: hidden;
     opacity: 0;
     transform: scale(0); }
   to {
+    visibility: visible;
     opacity: 1;
     transform: scale(1); } }
 
