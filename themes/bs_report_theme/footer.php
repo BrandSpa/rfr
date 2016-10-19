@@ -26,9 +26,15 @@
 <button class="show-modal">open modal</button>
 
 <?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>
+<?php if(function_exists('pll_the_languages')) { echo json_encode(pll_the_languages()); } ?>
 
 
-<modal-lang info='<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>'></modal-lang>
+<modal-lang 
+  info='<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>'
+  polylang-langs=''
+>
+
+</modal-lang>
 <template id="modal-lang-template">
   <div class="bs-modal">
     <div class="bs-modal__content">

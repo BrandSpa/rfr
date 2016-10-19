@@ -5,7 +5,7 @@ import jQuery from 'jquery';
 export default function() {
   Vue.component('modal-lang', {
     template: '#modal-lang-template',
-    props: ['info'],
+    props: ['info', 'poylangLangs'],
     ready() {
        jQuery(document).on('keyup', function(e) {
         if(e.keyCode === 27) {
