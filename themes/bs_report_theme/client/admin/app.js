@@ -7,9 +7,8 @@ import multiRegional from '../components/multi_regional';
 $(() => {
   uploader();
   religionsChart();
-  console.log(multiRegional);
   multiRegional();
-  
+  console.log(multiRegional());
   new Vue({
     el: '#metaboxes-report'
   });

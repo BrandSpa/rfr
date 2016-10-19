@@ -76,9 +76,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
   </select>
 </p>
 <?php endif; ?>
-
-
-
+ 
 <template id="mr-lang-template">
   <p>
     <select name="multiregional[lang][]" placeholder="country langs" >
