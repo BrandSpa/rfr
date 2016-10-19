@@ -8,6 +8,7 @@ $(() => {
   uploader();
   religionsChart();
   multiRegional();
+  
   new Vue({
     el: '#metaboxes-report'
   });

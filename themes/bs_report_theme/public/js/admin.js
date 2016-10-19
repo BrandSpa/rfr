@@ -68,6 +68,7 @@
 	  (0, _uploader2.default)();
 	  (0, _religions_chart2.default)();
 	  (0, _multi_regional2.default)();
+
 	  new Vue({
 	    el: '#metaboxes-report'
 	  });
