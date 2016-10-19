@@ -40,19 +40,6 @@
   <button class="show-modal">open modal</button>
 </div>
 
-<script>
-  jQuery('.show-modal').on('click', function(e) {
-    if(e) e.preventDefault();
-    jQuery('.bs-modal').removeClass('bs-modal-close');
-    jQuery('.bs-modal').addClass('bs-modal-open');
-  });
-
-  jQuery('.close-modal').on('click', function(e) {
-    if(e) e.preventDefault();
-    jQuery('.bs-modal').removeClass('bs-modal-open');
-    jQuery('.bs-modal').addClass('bs-modal-close');
-  });
-</script>
 
 <div id="footer">
   <div class="col-md-9 footer__left">
@@ -97,6 +84,21 @@
 </div>
 
 <div class="bs-modal__overlay"></div>
+
+<script>
+  jQuery('.show-modal').on('click', function(e) {
+    if(e) e.preventDefault();
+    jQuery('.bs-modal').removeClass('bs-modal-close');
+    jQuery('.bs-modal').addClass('bs-modal-open');
+  });
+
+  jQuery('.close-modal').on('click', function(e) {
+    console.log(e);
+    if(e) e.preventDefault();
+    jQuery('.bs-modal').removeClass('bs-modal-open');
+    jQuery('.bs-modal').addClass('bs-modal-close');
+  });
+</script>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
