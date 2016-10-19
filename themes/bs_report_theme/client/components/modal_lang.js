@@ -11,6 +11,13 @@ export default function() {
       const pll = JSON.parse(this.polylang);
       let showModal = false;
 
+      let showMdl = () => {
+        jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
+        jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-open');
+        jQuery('.bs-modal').removeClass('bs-modal-close');
+        jQuery('.bs-modal').addClass('bs-modal-open');
+      };
+
       jQuery(document).on('keyup', function(e) {
         if(e.keyCode === 27) {
           jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
@@ -22,14 +29,10 @@ export default function() {
 
       jQuery('.show-modal').on('click', function(e) {
         if(e) e.preventDefault();
-        jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
-        jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-open');
-        jQuery('.bs-modal').removeClass('bs-modal-close');
-        jQuery('.bs-modal').addClass('bs-modal-open');
+        showMdl();
       });
 
       jQuery('.bs-modal__close').on('click', function(e) {
-        console.log(e);
         if(e) e.preventDefault();
         jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
         jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-close');
@@ -40,6 +43,8 @@ export default function() {
       if(userGeoData && userGeoData.country) {
         showModal = userGeoData.country.names.en == multireg.country;
       }
+
+      if(showModal) showMdl();
 
       console.log('geo from component: ', showModal, multireg.country, userGeoData.country.names.en);
     }

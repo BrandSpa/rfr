@@ -40367,6 +40367,13 @@
 	      var pll = JSON.parse(this.polylang);
 	      var showModal = false;
 
+	      var showMdl = function showMdl() {
+	        (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
+	        (0, _jquery2.default)('.bs-modal__overlay').addClass('bs-modal__overlay-open');
+	        (0, _jquery2.default)('.bs-modal').removeClass('bs-modal-close');
+	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-open');
+	      };
+
 	      (0, _jquery2.default)(document).on('keyup', function (e) {
 	        if (e.keyCode === 27) {
 	          (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
@@ -40378,14 +40385,10 @@
 
 	      (0, _jquery2.default)('.show-modal').on('click', function (e) {
 	        if (e) e.preventDefault();
-	        (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
-	        (0, _jquery2.default)('.bs-modal__overlay').addClass('bs-modal__overlay-open');
-	        (0, _jquery2.default)('.bs-modal').removeClass('bs-modal-close');
-	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-open');
+	        showMdl();
 	      });
 
 	      (0, _jquery2.default)('.bs-modal__close').on('click', function (e) {
-	        console.log(e);
 	        if (e) e.preventDefault();
 	        (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
 	        (0, _jquery2.default)('.bs-modal__overlay').addClass('bs-modal__overlay-close');
@@ -40396,6 +40399,8 @@
 	      if (userGeoData && userGeoData.country) {
 	        showModal = userGeoData.country.names.en == multireg.country;
 	      }
+
+	      if (showModal) showMdl();
 
 	      console.log('geo from component: ', showModal, multireg.country, userGeoData.country.names.en);
 	    }
