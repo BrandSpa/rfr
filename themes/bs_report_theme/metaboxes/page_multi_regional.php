@@ -42,6 +42,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
   return $e->slug == $mrlang; 
   });
 ?>
+
   <p>
     <select name="multiregional[lang][]" placeholder="country langs" >
       <option value="<?php echo $mrlang ?>"><?php echo $neededObject[key($neededObject)]->name ?></option>
@@ -76,22 +77,22 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 </p>
 <?php endif; ?>
 
+<multi-regional-langs></multi-regional-langs>
 
-
-<template id="mr-lang-template">
-<p>
-  <select name="multiregional[lang][]" placeholder="country langs" >
-  <option value="">Select lang</option>
-    <?php 
-      
-									foreach($langs as $lang) {
-									?>
-									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-									<?php
-									}
-								?>
-  </select>
-</p>
+<template id="mr-lang-template" v-for="lang in langs">
+  <p>
+    <select name="multiregional[lang][]" placeholder="country langs" >
+    <option value="">Select lang</option>
+      <?php 
+        
+      foreach($langs as $lang) {
+        ?>
+        <option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
+      <?php
+        }
+      ?>
+    </select>
+  </p>
 </template>
 
 

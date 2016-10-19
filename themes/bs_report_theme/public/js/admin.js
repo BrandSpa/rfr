@@ -40,8 +40,9 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -58,11 +59,16 @@
 
 	var _religions_chart2 = _interopRequireDefault(_religions_chart);
 
+	var _multi_regional = __webpack_require__(88);
+
+	var _multi_regional2 = _interopRequireDefault(_multi_regional);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
 	  (0, _uploader2.default)();
 	  (0, _religions_chart2.default)();
+	  (0, _multi_regional2.default)();
 	});
 
 	new Vue({
@@ -70,7 +76,8 @@
 	});
 
 /***/ },
-/* 1 */
+
+/***/ 1:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10296,7 +10303,8 @@
 
 
 /***/ },
-/* 2 */
+
+/***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10347,7 +10355,8 @@
 	exports.default = section;
 
 /***/ },
-/* 3 */
+
+/***/ 3:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10356,7 +10365,8 @@
 
 
 /***/ },
-/* 4 */
+
+/***/ 4:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10370,7 +10380,8 @@
 
 
 /***/ },
-/* 5 */
+
+/***/ 5:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10589,7 +10600,8 @@
 
 
 /***/ },
-/* 6 */
+
+/***/ 6:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
@@ -10819,7 +10831,8 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 7 */
+
+/***/ 7:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10838,7 +10851,8 @@
 
 
 /***/ },
-/* 8 */
+
+/***/ 8:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10860,7 +10874,8 @@
 
 
 /***/ },
-/* 9 */
+
+/***/ 9:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10973,7 +10988,8 @@
 
 
 /***/ },
-/* 10 */
+
+/***/ 10:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11109,7 +11125,8 @@
 
 
 /***/ },
-/* 11 */
+
+/***/ 11:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11181,7 +11198,8 @@
 
 
 /***/ },
-/* 12 */
+
+/***/ 12:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11249,7 +11267,8 @@
 
 
 /***/ },
-/* 13 */
+
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11365,7 +11384,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 14 */
+
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/*!
@@ -21609,7 +21629,8 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ },
-/* 15 */
+
+/***/ 15:
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -21795,7 +21816,8 @@
 
 
 /***/ },
-/* 16 */
+
+/***/ 16:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21811,5 +21833,37 @@
 	};
 
 
+/***/ },
+
+/***/ 88:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	exports.default = function () {
+	  _vue2.default.component('multi-regional-langs', {
+	    template: "#mr-lang-template",
+	    data: function data() {
+	      return {
+	        langs: 1
+	      };
+	    },
+	    ready: function ready() {
+	      console.log(this.langs);
+	    }
+	  });
+	};
+
+	var _vue = __webpack_require__(14);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /***/ }
-/******/ ]);
+
+/******/ });

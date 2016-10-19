@@ -8,6 +8,7 @@ import searchCountry from './components/search_country';
 import downloadFormReport from './components/download_report';
 import subscribeForm from './components/subscribe_form';
 
+
 $(() => {
   map();
   religionsChart();
