@@ -854,24 +854,14 @@ form button {
     left: 0;
     opacity: 0;
     visibility: hidden; }
-    .bs-modal__overlay-open {
-      visibility: visible; }
-      .bs-modal__overlay-open.bs-modal__content {
-        animation-name: showModal;
-        animation-duration: 300ms; }
-    .bs-modal__overlay-close {
-      visibility: hidden; }
-      .bs-modal__overlay-close.bs-modal__content {
-        animation-name: showModal;
-        animation-duration: 300ms;
-        animation-direction: reverse; }
   .bs-modal-open {
-    visibility: visible;
-    opacity: 1;
-    animation-name: showModal;
-    animation-duration: 300ms; }
+    visibility: visible; }
+    .bs-modal-open.bs-modal__content {
+      animation-name: showModal;
+      animation-duration: 300ms; }
   .bs-modal-close {
-    visibility: hidden;
-    animation-name: showModal;
-    animation-duration: 300ms;
-    animation-direction: reverse; }
+    visibility: hidden; }
+    .bs-modal-close.bs-modal__content {
+      animation-name: showModal;
+      animation-duration: 300ms;
+      animation-direction: reverse; }

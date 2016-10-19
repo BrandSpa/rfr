@@ -42,7 +42,11 @@
     opacity: 0;
     visibility: hidden;
     
-    &-open {
+ 
+
+  }
+
+   &-open {
       visibility: visible;
 
       &.bs-modal__content { 
@@ -60,22 +64,6 @@
        }
      
     }
-
-  }
-
-  &-open {
-    visibility: visible;
-    opacity: 1;
-    animation-name: showModal;
-    animation-duration: 300ms;
-  }
-
-  &-close {
-     visibility: hidden;
-    animation-name: showModal;
-    animation-duration: 300ms;
-    animation-direction: reverse;
-  }
 }
 
 
