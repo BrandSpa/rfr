@@ -37,7 +37,6 @@
 </p>
 
 
-
 <?php if(is_array($mr['lang'])): ?>
 <?php foreach($mr['lang'] as $mrlang): ?>
 <?php
@@ -48,7 +47,6 @@ $neededObject = array_filter(
     }
 );
 ?>
-<?php var_dump(key($neededObject)); ?>
   <p>
   <select name="multiregional[country]" placeholder="country langs" >
   <option value="<?php echo $mrlang ?>"><?php echo $neededObject[key($neededObject)]->name ?></option>
