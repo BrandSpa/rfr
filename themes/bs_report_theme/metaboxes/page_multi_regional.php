@@ -58,7 +58,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 
 <?php endforeach; ?>
 <?php else: ?>
-<p>
+<p> 
   <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="">Select lang</option>
     <?php 
