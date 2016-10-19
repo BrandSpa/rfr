@@ -18,6 +18,8 @@
     $mr = get_post_meta($post->ID, 'multiregional_key', true);
 ?>
 
+<?php var_dump($mr) ?>
+
 
 <p>
   <select name="multiregional[country]" >
