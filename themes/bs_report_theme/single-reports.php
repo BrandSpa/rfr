@@ -86,7 +86,7 @@
 <div class="bs-modal__overlay"></div>
 
 <script>
-  jQuery(document).on('keyup', function() {
+  jQuery(document).on('keyup', function(e) {
     if(e.keyCode === 27) {
       jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
       jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-close');
