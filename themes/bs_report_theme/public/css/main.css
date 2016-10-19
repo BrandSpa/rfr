@@ -857,11 +857,13 @@ form button {
   .bs-modal-open {
     visibility: visible; }
     .bs-modal-open .bs-modal__content {
+      opacity: 1;
       animation-name: showModal;
       animation-duration: 300ms; }
   .bs-modal-close {
     visibility: hidden; }
     .bs-modal-close .bs-modal__content {
+      opacity: 0;
       animation-name: showModal;
       animation-duration: 300ms;
       animation-direction: reverse; }
