@@ -9,6 +9,7 @@ export default function() {
         langs: 1
       }
     },
+    
     ready() {
       console.log(this.langs);
     }
