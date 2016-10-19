@@ -89,7 +89,7 @@
   jQuery('.show-modal').on('click', function(e) {
     if(e) e.preventDefault();
     jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
-    jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
+    jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-open');
     jQuery('.bs-modal').removeClass('bs-modal-close');
     jQuery('.bs-modal').addClass('bs-modal-open');
   });
@@ -98,7 +98,7 @@
     console.log(e);
     if(e) e.preventDefault();
     jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
-    jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
+    jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-close');
     jQuery('.bs-modal').removeClass('bs-modal-open');
     jQuery('.bs-modal').addClass('bs-modal-close');
   });
