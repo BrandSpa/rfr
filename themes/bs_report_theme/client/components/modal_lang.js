@@ -33,7 +33,7 @@ export default function() {
         jQuery('.bs-modal').addClass('bs-modal-close');
       });
 
-      console.log('geo from component: ', userGeoData);
+      console.log('geo from component: ', userGeoData.country.names.en);
     }
   });
 }
