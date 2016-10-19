@@ -852,6 +852,8 @@ form button {
     background: RGBA(24, 30, 35, 0.9);
     z-index: 1999;
     top: 0;
-    left: 0; }
+    left: 0;
+    animation-name: showModal;
+    animation-duration: 300ms; }
   .bs-modal-open {
     visibility: visible; }
