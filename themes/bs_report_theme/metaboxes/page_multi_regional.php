@@ -19,7 +19,7 @@
 ?>
 
 <?php var_dump($mr) ?>
-
+<div id="metaboxes-report">
 <p>
   <select name="multiregional[country]" >
       <?php if ($mr && !empty($mr['country'])): ?>
@@ -96,7 +96,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 </template>
 
 
-
+</div>
 <?php
  
 }
