@@ -56,6 +56,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 		  }
 		?>
   </select>
+  <button class="remove-lang">Remove</button>
 </p>
 
 <?php endforeach; ?>
