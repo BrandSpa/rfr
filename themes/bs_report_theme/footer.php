@@ -23,6 +23,33 @@
   </div>
 </div>
 
+<button class="show-modal">open modal</button>
+<?php var_dump(get_post_meta($post->ID, 'multiregional_key', true)) ?>
+
+
+<modal-lang></modal-lang>
+<template id="modal-lang-template">
+  <div class="bs-modal">
+    <div class="bs-modal__content">
+    <a href="#" class="bs-modal__close"><i class="ion-android-close color-red"></i></a> 
+    <h3>Choose language</h3>
+      <ul>
+          <li>
+            <a href="/es/report/canada">Spanish</a>
+          </li>
+          <li>
+            <a href="/en/report/canada">French</a>
+          </li>
+          <li>
+            <a href="/en/report/canada">English</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bs-modal__overlay"></div>
+</template>
+
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>

@@ -37,7 +37,7 @@
 <?php include_once 'shortcodes/download_report.php' ?>
 <?php include_once 'shortcodes/about_us.php' ?>
 <?php include_once 'shortcodes/press.php' ?>
-  <button class="show-modal">open modal</button>
+  
 </div>
 
 
@@ -64,54 +64,6 @@
     </div>
   </div>
 </div>
-
-<div class="bs-modal">
-  <div class="bs-modal__content">
-  <a href="#" class="bs-modal__close"><i class="ion-android-close color-red"></i></a> 
-  <h3>Choose language</h3>
-    <ul>
-        <li>
-          <a href="/es/report/canada">Spanish</a>
-        </li>
-        <li>
-          <a href="/en/report/canada">French</a>
-        </li>
-        <li>
-          <a href="/en/report/canada">English</a>
-        </li>
-    </ul>
-  </div>
-</div>
-
-<div class="bs-modal__overlay"></div>
-
-<script>
-  jQuery(document).on('keyup', function(e) {
-    if(e.keyCode === 27) {
-      jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
-      jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-close');
-      jQuery('.bs-modal').removeClass('bs-modal-open');
-      jQuery('.bs-modal').addClass('bs-modal-close');
-    }
-  });
-
-  jQuery('.show-modal').on('click', function(e) {
-    if(e) e.preventDefault();
-    jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
-    jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-open');
-    jQuery('.bs-modal').removeClass('bs-modal-close');
-    jQuery('.bs-modal').addClass('bs-modal-open');
-  });
-
-  jQuery('.bs-modal__close').on('click', function(e) {
-    console.log(e);
-    if(e) e.preventDefault();
-    jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
-    jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-close');
-    jQuery('.bs-modal').removeClass('bs-modal-open');
-    jQuery('.bs-modal').addClass('bs-modal-close');
-  });
-</script>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
