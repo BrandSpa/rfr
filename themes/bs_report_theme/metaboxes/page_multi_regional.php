@@ -19,6 +19,7 @@
 
 <?php var_dump($mr['lang']) ?>
 
+
 <p>
   <select name="multiregional[][country]" >
       <?php if (!empty($report_country)): ?>
@@ -33,6 +34,28 @@
 
   </select>
 </p>
+
+<?php if(is_array($mr['lang'])): ?>
+<?php foreach($mr['lang'] as $mrlang): ?>
+  <p>
+  <select name="multiregional[][lang]" placeholder="country langs" >
+  <option value="<?php echo $mrlang ?>"><?php echo $mrlang ?></option>
+    <?php 
+      $langs = get_terms( array(
+        'taxonomy' => 'language',
+        'hide_empty' => false,
+      )); 
+									foreach($langs as $lang) {
+									?>
+									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
+									<?php
+									}
+								?>
+  </select>
+</p>
+
+<?php endforeach; ?>
+<?php endif; ?>
 
 <p>
   <select name="multiregional[][lang]" placeholder="country langs" >
