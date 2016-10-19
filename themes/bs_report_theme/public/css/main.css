@@ -835,8 +835,8 @@ form button {
   .bs-modal__close {
     font-size: 32px;
     position: absolute;
-    left: 20px;
-    top: 20px; }
+    right: 20px;
+    top: 10px; }
   .bs-modal__content {
     background: #F8F8F8;
     padding: 40px;
