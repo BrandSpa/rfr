@@ -35,7 +35,7 @@
   <div class="bs-modal">
     <div class="bs-modal__content">
     <a href="#" class="bs-modal__close"><i class="ion-android-close color-red"></i></a> 
-    <h3>Choose language</h3>
+    <h4>Choose language</h4>
       <ul>
           <li>
             <a href="/es/report/canada">Spanish</a>
