@@ -79,7 +79,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 
 <multi-regional></multi-regional>
 
-<template id="mr-lang-template" v-for="lang in langs">
+<template id="mr-lang-template">
   <p>
     <select name="multiregional[lang][]" placeholder="country langs" >
     <option value="">Select lang</option>
