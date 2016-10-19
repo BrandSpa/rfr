@@ -851,7 +851,8 @@ form button {
     z-index: 1999;
     top: 0;
     left: 0;
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
     .bs-modal__overlay-open {
       visibility: visible;
       animation-name: showModal;
