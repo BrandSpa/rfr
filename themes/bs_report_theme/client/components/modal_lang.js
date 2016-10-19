@@ -38,8 +38,9 @@ export default function() {
       });
 
       if(userGeoData && userGeoData.country) {
-        showModal = serGeoData.country.names.en == multireg.country;
+        showModal = userGeoData.country.names.en == multireg.country;
       }
+      
       console.log('geo from component: ', showModal);
     }
   });
