@@ -67,15 +67,16 @@
 
 <div class="bs-modal">
   <div class="bs-modal__content">
+  <h3>Choose language</h3>
     <ul>
         <li>
-          <a href="es/report/canada">Spanish</a>
+          <a href="/es/report/canada">Spanish</a>
         </li>
         <li>
-          <a href="en/report/canada">French</a>
+          <a href="/en/report/canada">French</a>
         </li>
         <li>
-          <a href="en/report/canada">English</a>
+          <a href="/en/report/canada">English</a>
         </li>
     </ul>
   </div>
