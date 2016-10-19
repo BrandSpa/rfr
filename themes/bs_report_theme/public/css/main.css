@@ -847,11 +847,14 @@ form button {
     top: 0;
     left: 0;
     opacity: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    transition: all 300ms ease; }
     .bs-modal__overlay-open {
-      visibility: visible; }
+      visibility: visible;
+      opacity: 1; }
     .bs-modal__overlay-close {
-      visibility: hidden; }
+      visibility: hidden;
+      opacity: 0; }
   .bs-modal-open {
     visibility: visible; }
     .bs-modal-open .bs-modal__content {
