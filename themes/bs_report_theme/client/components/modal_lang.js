@@ -7,7 +7,11 @@ export default function() {
     template: '#modal-lang-template',
     props: ['info', 'polylang'],
     ready() {
-       jQuery(document).on('keyup', function(e) {
+      const multireg = JSON.parse(this.info);
+      const pll = JSON.parse(this.polylang);
+      let showModal = false;
+
+      jQuery(document).on('keyup', function(e) {
         if(e.keyCode === 27) {
           jQuery('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
           jQuery('.bs-modal__overlay').addClass('bs-modal__overlay-close');
@@ -33,7 +37,10 @@ export default function() {
         jQuery('.bs-modal').addClass('bs-modal-close');
       });
 
-      console.log('geo from component: ', userGeoData.country.names.en);
+      if(userGeoData && userGeoData.country) {
+        showModal = serGeoData.country.names.en == multireg.country;
+      }
+      console.log('geo from component: ', showModal);
     }
   });
 }

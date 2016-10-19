@@ -40363,6 +40363,10 @@
 	    template: '#modal-lang-template',
 	    props: ['info', 'polylang'],
 	    ready: function ready() {
+	      var multireg = JSON.parse(this.info);
+	      var pll = JSON.parse(this.polylang);
+	      var showModal = false;
+
 	      (0, _jquery2.default)(document).on('keyup', function (e) {
 	        if (e.keyCode === 27) {
 	          (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
@@ -40389,7 +40393,10 @@
 	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-close');
 	      });
 
-	      console.log('geo from component: ', userGeoData.country.names.en);
+	      if (userGeoData && userGeoData.country) {
+	        showModal = serGeoData.country.names.en == multireg.country;
+	      }
+	      console.log('geo from component: ', showModal);
 	    }
 	  });
 	};
