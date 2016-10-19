@@ -41,7 +41,7 @@
 </div>
 
 <script>
-  jQuery('show-modal').on('click', function(e) {
+  jQuery('.show-modal').on('click', function(e) {
     if(e) e.preventDefault();
     jQuery('.bs-modal').removeClass('bs-modal-close');
     jQuery('.bs-modal').addClass('bs-modal-open');
