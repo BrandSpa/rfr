@@ -48,7 +48,7 @@ $neededObject = array_filter(
 );
 ?>
   <p>
-  <select name="multiregional[lang][]" placeholder="country langs" >
+    <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="<?php echo $mrlang ?>"><?php echo $neededObject[key($neededObject)]->name ?></option>
     <?php 
       $langs = get_terms( array(
