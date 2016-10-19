@@ -37,9 +37,16 @@
 <?php include_once 'shortcodes/download_report.php' ?>
 <?php include_once 'shortcodes/about_us.php' ?>
 <?php include_once 'shortcodes/press.php' ?>
-
+  <button class="show-modal">open modal</button>
 </div>
 
+<script>
+  jQuery('show-modal').on('click', function(e) {
+    if(e) e.preventDefault();
+    jQuery('.bs-modal').removeClass('bs-modal-close');
+    jQuery('.bs-modal').addClass('bs-modal-open');
+  });
+</script>
 
 <div id="footer">
   <div class="col-md-9 footer__left">

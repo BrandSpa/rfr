@@ -14,7 +14,7 @@
 }
 
 .bs-modal {
-  visibility: visible;
+  visibility: hidden;
   position: fixed;
   top: 40%;
   left: 0;
@@ -26,8 +26,6 @@
   min-width: 320px;
   z-index: 2000;
   transition: all 300ms;
-  animation-name: showModal;
-  animation-duration: 300ms;
 
   &__content {
     background: $dark_electric_blue;
@@ -42,12 +40,17 @@
     z-index: 1999;
     top: 0;
     left: 0;
+  }
+
+  &-open {
     animation-name: showModal;
     animation-duration: 300ms;
   }
 
-  &-open {
-    visibility: visible;
+  &-close {
+    animation-name: showModal;
+    animation-duration: 300ms;
+    animation-direction: reverse;
   }
 }
 

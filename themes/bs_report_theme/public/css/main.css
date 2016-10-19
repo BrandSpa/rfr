@@ -830,7 +830,7 @@ form button {
     transform: scale(1); } }
 
 .bs-modal {
-  visibility: visible;
+  visibility: hidden;
   position: fixed;
   top: 40%;
   left: 0;
@@ -841,9 +841,7 @@ form button {
   max-width: 630px;
   min-width: 320px;
   z-index: 2000;
-  transition: all 300ms;
-  animation-name: showModal;
-  animation-duration: 300ms; }
+  transition: all 300ms; }
   .bs-modal__content {
     background: #536D7F;
     padding: 40px; }
@@ -854,8 +852,11 @@ form button {
     background: RGBA(24, 30, 35, 0.9);
     z-index: 1999;
     top: 0;
-    left: 0;
+    left: 0; }
+  .bs-modal-open {
     animation-name: showModal;
     animation-duration: 300ms; }
-  .bs-modal-open {
-    visibility: visible; }
+  .bs-modal-close {
+    animation-name: showModal;
+    animation-duration: 300ms;
+    animation-direction: reverse; }
