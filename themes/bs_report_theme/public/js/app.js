@@ -40361,7 +40361,7 @@
 	exports.default = function () {
 	  _vue2.default.component('modal-lang', {
 	    template: '#modal-lang-template',
-	    props: ['info', 'poylangLangs'],
+	    props: ['info', 'polylang'],
 	    ready: function ready() {
 	      (0, _jquery2.default)(document).on('keyup', function (e) {
 	        if (e.keyCode === 27) {
@@ -40389,7 +40389,7 @@
 	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-close');
 	      });
 
-	      console.log(JSON.parse(poylangLangs));
+	      console.log(JSON.parse(this.polylang));
 	    }
 	  });
 	};

@@ -27,7 +27,7 @@
 
 <modal-lang 
   info='<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>'
-  polylang-langs='<?php if(function_exists('pll_the_languages')) { echo json_encode(pll_the_languages(array( 'raw' => 1 ))); } ?>'
+  polylang='<?php if(function_exists('pll_the_languages')) { echo json_encode(pll_the_languages(array( 'raw' => 1 ))); } ?>'
 >
 
 </modal-lang>

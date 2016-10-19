@@ -5,7 +5,7 @@ import jQuery from 'jquery';
 export default function() {
   Vue.component('modal-lang', {
     template: '#modal-lang-template',
-    props: ['info', 'poylangLangs'],
+    props: ['info', 'polylang'],
     ready() {
        jQuery(document).on('keyup', function(e) {
         if(e.keyCode === 27) {
@@ -33,7 +33,7 @@ export default function() {
         jQuery('.bs-modal').addClass('bs-modal-close');
       });
 
-      console.log(JSON.parse(poylangLangs));
+      console.log(JSON.parse(this.polylang));
     }
   });
 }
