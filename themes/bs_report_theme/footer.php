@@ -24,10 +24,11 @@
 </div>
 
 <button class="show-modal">open modal</button>
-<?php var_dump(get_post_meta($post->ID, 'multiregional_key', true)) ?>
+
+<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>
 
 
-<modal-lang></modal-lang>
+<modal-lang info='<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>'></modal-lang>
 <template id="modal-lang-template">
   <div class="bs-modal">
     <div class="bs-modal__content">
