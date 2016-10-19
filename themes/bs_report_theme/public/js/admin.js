@@ -21828,15 +21828,15 @@
 
 	exports.default = function () {
 	  _vue2.default.component('multi-regional', {
-	    template: "#mr-lang-template",
+	    template: '#mr-lang-template',
 	    data: function data() {
 	      return {
-	        langs: 1
+	        country: '',
+	        items: [],
+	        current: 0
 	      };
 	    },
-	    ready: function ready() {
-	      console.log(this.langs);
-	    }
+	    ready: function ready() {}
 	  });
 	};
 

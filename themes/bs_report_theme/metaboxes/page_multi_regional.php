@@ -102,8 +102,6 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 <?php
  
 }
-
-
   function bs_save_page_multiregional_meta($post_id) {
 
     update_field(array(

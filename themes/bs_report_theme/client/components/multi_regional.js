@@ -3,15 +3,16 @@ import Vue from 'vue';
 
 export default function() {
   Vue.component('multi-regional', {
-    template: "#mr-lang-template",
+    template: '#mr-lang-template',
     data() {
       return {
-        langs: 1
+        country: '',
+        items: [],
+        current: 0
       }
     },
-    
+
     ready() {
-      console.log(this.langs);
     }
   });
 }
