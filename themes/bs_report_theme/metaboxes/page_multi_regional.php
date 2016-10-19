@@ -77,7 +77,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 </p>
 <?php endif; ?>
  
-<template id="mr-lang-template">
+<template id="multiregional-template">
   <p>
     <select name="multiregional[lang][]" placeholder="country langs" >
     <option value="">Select lang</option>
@@ -93,7 +93,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
   </p>
 </template>
 
-<multi-regional></multi-regional>
+<multiregional></multiregional>
 
 
 </div>

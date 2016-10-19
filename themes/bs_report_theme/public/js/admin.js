@@ -21827,8 +21827,8 @@
 	});
 
 	exports.default = function () {
-	  _vue2.default.component('multi-regional', {
-	    template: '#mr-lang-template',
+	  _vue2.default.component('multiregional', {
+	    template: '#multiregional-template',
 	    data: function data() {
 	      return {
 	        country: '',

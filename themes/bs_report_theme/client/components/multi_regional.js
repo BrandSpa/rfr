@@ -2,8 +2,8 @@
 import Vue from 'vue';
 
 export default function() {
-  Vue.component('multi-regional', {
-    template: '#mr-lang-template',
+  Vue.component('multiregional', {
+    template: '#multiregional-template',
     data() {
       return {
         country: '',
