@@ -40,8 +40,8 @@ export default function() {
       if(userGeoData && userGeoData.country) {
         showModal = userGeoData.country.names.en == multireg.country;
       }
-      
-      console.log('geo from component: ', showModal);
+
+      console.log('geo from component: ', showModal, multireg.country, userGeoData.country.names.en);
     }
   });
 }
