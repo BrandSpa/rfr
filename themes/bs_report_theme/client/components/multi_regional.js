@@ -2,7 +2,7 @@
 import Vue from 'vue';
 
 export default function() {
-  Vue.component('multi-regional-langs', {
+  Vue.component('multi-regional', {
     template: "#mr-lang-template",
     data() {
       return {

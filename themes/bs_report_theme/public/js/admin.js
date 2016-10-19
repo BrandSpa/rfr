@@ -21827,7 +21827,7 @@
 	});
 
 	exports.default = function () {
-	  _vue2.default.component('multi-regional-langs', {
+	  _vue2.default.component('multi-regional', {
 	    template: "#mr-lang-template",
 	    data: function data() {
 	      return {

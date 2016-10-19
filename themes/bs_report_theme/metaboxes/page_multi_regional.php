@@ -77,7 +77,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 </p>
 <?php endif; ?>
 
-<multi-regional-langs></multi-regional-langs>
+<multi-regional></multi-regional>
 
 <template id="mr-lang-template" v-for="lang in langs">
   <p>
