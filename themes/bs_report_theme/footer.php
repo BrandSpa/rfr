@@ -37,8 +37,8 @@
     <a href="#" class="bs-modal__close"><i class="ion-android-close color-red"></i></a> 
     <h4>Choose language</h4>
       <ul>
-          <li v-for="lang in info.langs">
-            <a href="/{{lang}}/report/canada">{{lang}}</a>
+          <li v-for="lng in info.lang">
+            <a href="/{{lng}}/report/canada">{{lng}}</a>
           </li>
       </ul>
     </div>
