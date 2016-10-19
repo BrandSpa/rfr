@@ -22,7 +22,8 @@
   min-width: 320px;
   z-index: 2000;
   transition: all 300ms;
-  animation: showModal;
+  animation-name: showModal;
+  animation-duration: 4s;
 
   &__content {
     background: $dark_electric_blue;

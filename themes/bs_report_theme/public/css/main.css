@@ -840,7 +840,8 @@ form button {
   min-width: 320px;
   z-index: 2000;
   transition: all 300ms;
-  animation: showModal; }
+  animation-name: showModal;
+  animation-duration: 4s; }
   .bs-modal__content {
     background: #536D7F;
     padding: 40px; }
