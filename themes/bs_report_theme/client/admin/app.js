@@ -7,6 +7,7 @@ import multiRegional from '../components/multi_regional';
 $(() => {
   uploader();
   religionsChart();
+  console.log(multiRegional);
   multiRegional();
   
   new Vue({
