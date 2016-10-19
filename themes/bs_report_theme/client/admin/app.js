@@ -4,12 +4,13 @@ import uploader from './uploader';
 import religionsChart from '../components/religions_chart';
 import multiRegional from '../components/multi_regional';
 
-$(function() {
+$(() => {
   uploader();
   religionsChart();
   multiRegional();
+  new Vue({
+    el: '#metaboxes-report'
+  });
+
 });
 
-new Vue({
-  el: '#metaboxes-report'
-});
