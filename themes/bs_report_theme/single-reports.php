@@ -65,6 +65,24 @@
   </div>
 </div>
 
+<div class="bs-modal">
+  <div class="bs-modal__content">
+    <ul>
+        <li>
+          <a href="es/report/canada">Spanish</a>
+        </li>
+        <li>
+          <a href="en/report/canada">French</a>
+        </li>
+        <li>
+          <a href="en/report/canada">English</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<div class="bs-modal--overlay"></div>
+
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
