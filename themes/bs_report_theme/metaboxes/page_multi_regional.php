@@ -84,6 +84,5 @@
     ));
 }
 
-
   add_action( 'save_post', 'bs_save_page_multiregional_meta');
 ?>
