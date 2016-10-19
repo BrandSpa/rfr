@@ -13,7 +13,7 @@
   add_action('add_meta_boxes', 'bs_page_multi_regional_metabox');
 
   function bs_page_multi_regional_cb($post) {
-    wp_nonce_field();
+    wp_nonce_field('bs_page_mr_meta', 'bs_multiregional_nonce');
     $mr = get_post_meta($post->ID, 'multiregional_key', true);
 ?>
 
@@ -83,6 +83,7 @@
       'post_id' => $post_id
     ));
 }
+
 
   add_action( 'save_post', 'bs_save_page_multiregional_meta');
 ?>
