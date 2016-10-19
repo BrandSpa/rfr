@@ -56,7 +56,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
 		  }
 		?>
   </select>
-  <button class="remove-lang">Remove</button>
+  <button onClick="removeEl(event, this)">Remove</button>
 </p>
 
 <?php endforeach; ?>
@@ -91,7 +91,7 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
         }
       ?>
     </select>
-    <button class="remove-lang">Remove</button>
+    <button onClick="removeEl(event, this)">Remove</button>
   </p>
 </script>
 
@@ -105,10 +105,10 @@ $neededObject = array_filter( $langs, function ($e) use (&$mrlang) {
      jQuery('.append-langs').append($template);
   });
 
-  jQuery('.remove-lang').on('click', function(e) {
-    e.preventDefault();
-    jQuery(this).parent().remove();
-  });
+  function removeEl(evt, el) {
+     evt.preventDefault();
+    jQuery(el).parent().remove();
+  }
 </script>
 
 
