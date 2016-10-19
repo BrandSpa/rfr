@@ -21,7 +21,7 @@
 
 
 <p>
-  <select name="multiregional[][country]" >
+  <select name="multiregional[country][]" >
       <?php if (!empty($report_country)): ?>
         <option value="<?php echo $report_country ?>"><?php echo $report_country ?></option>
         <?php else: ?>
@@ -38,7 +38,7 @@
 <?php if(is_array($mr['lang'])): ?>
 <?php foreach($mr['lang'] as $mrlang): ?>
   <p>
-  <select name="multiregional[][lang]" placeholder="country langs" >
+  <select name="multiregional[country]" placeholder="country langs" >
   <option value="<?php echo $mrlang ?>"><?php echo $mrlang ?></option>
     <?php 
       $langs = get_terms( array(
@@ -58,7 +58,7 @@
 <?php endif; ?>
 
 <p>
-  <select name="multiregional[][lang]" placeholder="country langs" >
+  <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="">Select lang</option>
     <?php 
       $langs = get_terms( array(
@@ -75,7 +75,7 @@
 </p>
 
 <p>
-  <select name="multiregional[][lang]" placeholder="country langs" >
+  <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="">Select lang</option>
     <?php 
       $langs = get_terms( array(
@@ -92,7 +92,7 @@
 </p>
 
 <p>
-  <select name="multiregional[][lang]" placeholder="country langs" >
+  <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="">Select lang</option>
     <?php 
       $langs = get_terms( array(
@@ -110,7 +110,7 @@
 
 <template id="mr-lang-template">
 <p>
-  <select name="multiregional[][lang]" placeholder="country langs" >
+  <select name="multiregional[lang][]" placeholder="country langs" >
   <option value="">Select lang</option>
     <?php 
       $langs = get_terms( array( 'taxonomy' => 'language', 'hide_empty' => false, )); 
