@@ -20929,6 +20929,16 @@
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")");
 	      });
 
+	      var zoomOnClick = d3.zoom().scaleExtent([1, 1]).on('zoom', function () {
+	        var transform = d3.event.transform;
+	        console.log(transform);
+	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale(" + transform.k + ")");
+	      });
+
+	      d3.select('.map__controllers__more').on('click', function () {
+	        d3.select("#map-container svg").call(zoomOnClick);
+	      });
+
 	      appendMap(this.mapUrl, mapContainer, function () {
 	        var polygons = d3.select(mapContainer).selectAll("polygon");
 
