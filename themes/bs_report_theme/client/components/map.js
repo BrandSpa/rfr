@@ -60,7 +60,7 @@ export default function () {
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
-      let svg = d3.select("#map-container svg");
+      let svg = d3.select("#map-container svg g");
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {
@@ -70,15 +70,20 @@ export default function () {
         let transform = d3.event.transform;
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale("+ transform.k +") ");
       });
-      console.log(document.querySelector("#map-container svg g"));
+
+   
+
+      appendMap(this.mapUrl, mapContainer, () => {
+
+          
       d3.select('.map__controllers__more').on('click', function() {
-        console.log(svg);
         svg.transition()
         .duration(750)
         .call(zoomed.transform, d3.zoomIdentity);
       });
 
-      appendMap(this.mapUrl, mapContainer, () => {
+         console.log(document.querySelector("#map-container svg g"));
+
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
         d3.select("#map-container svg").call(zoomed);

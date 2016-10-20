@@ -20922,20 +20922,22 @@
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
-	      var svg = d3.select("#map-container svg");
+	      var svg = d3.select("#map-container svg g");
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
 	      }).on('zoom', function () {
 	        var transform = d3.event.transform;
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale(" + transform.k + ") ");
 	      });
-	      console.log(document.querySelector("#map-container svg g"));
-	      d3.select('.map__controllers__more').on('click', function () {
-	        console.log(svg);
-	        svg.transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
-	      });
 
 	      appendMap(this.mapUrl, mapContainer, function () {
+
+	        d3.select('.map__controllers__more').on('click', function () {
+	          svg.transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
+	        });
+
+	        console.log(document.querySelector("#map-container svg g"));
+
 	        var polygons = d3.select(mapContainer).selectAll("polygon");
 
 	        d3.select("#map-container svg").call(zoomed);
