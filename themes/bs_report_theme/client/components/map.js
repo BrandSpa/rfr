@@ -78,6 +78,7 @@ export default function () {
       });
 
       d3.select('.map__controllers__more').on('click', function() {
+        console.log('click?');
         d3.select("#map-container svg").call(zoomOnClick);
       }); 
 
