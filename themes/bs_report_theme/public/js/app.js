@@ -20922,7 +20922,7 @@
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
-	      var svg = d3.select("#map-container svg g∆");
+	      var svg = d3.select("#map-container svg g");
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
 	      }).on('zoom', function () {
@@ -20931,8 +20931,8 @@
 	      });
 
 	      d3.select('.map__controllers__more').on('click', function () {
-	        console.log(d3.zoomIdentity);
-	        svg.transition().duration(750).call(zoomed, d3.zoomIdentity);
+	        console.log(svg);
+	        svg.transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
 	      });
 
 	      appendMap(this.mapUrl, mapContainer, function () {
