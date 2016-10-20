@@ -20923,8 +20923,8 @@
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
 
-	      var zoomed = d3.zoom().scaleExtent([1, 1]).filter(function () {
-	        console.log('wheel', d3.event.type == 'wheel');
+	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
+	        return !d3.event.type == 'wheel';
 	      }).on('zoom', function () {
 	        var transform = d3.event.transform;
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")");

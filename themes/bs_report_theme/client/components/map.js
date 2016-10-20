@@ -62,9 +62,9 @@ export default function () {
       let lang = this.lang;
 
       let zoomed = d3.zoom()
-      .scaleExtent([1, 1])
+      .scaleExtent([1, 5])
       .filter(function() {
-        console.log('wheel', d3.event.type == 'wheel');
+        return !d3.event.type == 'wheel';
       })
       .on('zoom', function() {
         let transform = d3.event.transform;
