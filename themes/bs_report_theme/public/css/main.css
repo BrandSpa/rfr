@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * BrandSpa (http://brandspa.com)
  * Alejandro Sanabria <alejandro@brandspa.com>
@@ -656,9 +657,9 @@ form button {
   position: relative; }
   .map__controllers {
     position: absolute;
-    right: 40px;
-    top: 40px; }
-    .map__controllers button {
+    right: 100px;
+    top: 250px; }
+    .map__controllers Â button {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 1.5625em;
       font-weight: normal;
