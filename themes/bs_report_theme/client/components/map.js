@@ -75,7 +75,7 @@ export default function () {
         console.log(d3.zoomIdentity);
         svg.transition()
         .duration(750)
-        .call(zoomed.transform, d3.zoomIdentity);
+        .call(zoomed, d3.zoomIdentity);
       });
 
       appendMap(this.mapUrl, mapContainer, () => {
