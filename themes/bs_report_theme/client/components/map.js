@@ -73,8 +73,8 @@ export default function () {
 
           
       d3.select('.map__controllers__more').on('click', function() {
-        console.log(d3.select("#map-container svg g"));
-        d3.select("#map-container svg g").transition()
+        console.log(d3.select("#map-container svg g"));”
+        d3.select("#map-container svg").transition()
         .duration(750)
         .call(zoomed.transform, d3.zoomIdentity);
       });
