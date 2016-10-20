@@ -63,6 +63,9 @@ export default function () {
 
       let zoomed = d3.zoom()
       .scaleExtent([1, 1])
+      .filter(function() {
+        console.log(d3.event);
+      })
       .on('zoom', function() {
         let transform = d3.event.transform;
         console.log(d3.event);
