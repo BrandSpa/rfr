@@ -64,11 +64,10 @@ export default function () {
       let zoomed = d3.zoom()
       .scaleExtent([1, 1])
       .filter(function() {
-        console.log(d3.event);
+        console.log('wheel', d3.event.WheelEvent);
       })
       .on('zoom', function() {
         let transform = d3.event.transform;
-        console.log(d3.event);
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")");
       });
 
