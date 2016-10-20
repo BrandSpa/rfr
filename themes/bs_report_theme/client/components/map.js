@@ -71,7 +71,7 @@ export default function () {
 
 
       d3.select('.map__controllers__more').on('click', function() {
-        let trans = d3.select("#map-container svg").attr('transform');
+        let trans = d3.select("#map-container svg g").attr('transform');
         console.log(trans);
       }); 
 
