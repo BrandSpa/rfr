@@ -72,7 +72,7 @@ export default function () {
       });
 
       d3.select('.map__controllers__more').on('click', function() {
-        zoomed.scaleBy( d3.select("#map-container svg g"), 1);
+        zoomed.scaleTo( d3.select("#map-container svg g"), 1);
       });
 
       appendMap(this.mapUrl, mapContainer, () => {
