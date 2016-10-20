@@ -62,7 +62,7 @@ export default function () {
       let lang = this.lang;
 
       let zoomed = d3.zoom()
-      .scaleExtent([1,2])
+      .scaleExtent([1])
       .on('zoom', function() {
         let transform = d3.event.transform;
         console.log(d3.event);
