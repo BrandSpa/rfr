@@ -69,9 +69,8 @@ export default function () {
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")");
       });
 
-
       d3.select('.map__controllers__more').on('click', function() {
-        let trans = d3.select("#map-container svg g").attr('transform', 'scale(3)');
+        let trans = d3.select("#map-container svg g").attr('transform');
         console.log(trans);
       }); 
 

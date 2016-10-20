@@ -20930,7 +20930,7 @@
 	      });
 
 	      d3.select('.map__controllers__more').on('click', function () {
-	        var trans = d3.select("#map-container svg g").attr('transform', 'scale(3)');
+	        var trans = d3.select("#map-container svg g").attr('transform');
 	        console.log(trans);
 	      });
 
