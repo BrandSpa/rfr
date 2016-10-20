@@ -20924,7 +20924,6 @@
 	      var lang = this.lang;
 
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
-	        console.log(d3.event.type !== 'wheel');
 	        return d3.event.type !== 'wheel';
 	      }).on('zoom', function () {
 	        var transform = d3.event.transform;
@@ -20932,8 +20931,7 @@
 	      });
 
 	      d3.select('.map__controllers__more').on('click', function () {
-	        var trans = d3.select("#map-container svg g").attr('transform');
-	        console.log(trans);
+	        var trans = d3.select("#map-container svg g").attr('transform', '0, 0');
 	      });
 
 	      appendMap(this.mapUrl, mapContainer, function () {

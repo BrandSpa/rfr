@@ -64,7 +64,6 @@ export default function () {
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {
-        console.log(d3.event.type !== 'wheel');
         return d3.event.type !== 'wheel';
       })
       .on('zoom', function() {
@@ -73,8 +72,7 @@ export default function () {
       });
 
       d3.select('.map__controllers__more').on('click', function() {
-        let trans = d3.select("#map-container svg g").attr('transform');
-        console.log(trans);
+        let trans = d3.select("#map-container svg g").attr('transform', '0, 0');
       }); 
 
       appendMap(this.mapUrl, mapContainer, () => {
