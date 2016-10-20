@@ -70,7 +70,6 @@ export default function () {
       });
 
       let zoomOnClick = d3.zoom()
-      .scaleExtent([1, 1])
       .on('zoom', function() {
         let transform = d3.event.transform;
         console.log(transform);

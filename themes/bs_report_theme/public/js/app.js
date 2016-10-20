@@ -20929,7 +20929,7 @@
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")");
 	      });
 
-	      var zoomOnClick = d3.zoom().scaleExtent([1, 1]).on('zoom', function () {
+	      var zoomOnClick = d3.zoom().on('zoom', function () {
 	        var transform = d3.event.transform;
 	        console.log(transform);
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale(" + transform.k + ")");
