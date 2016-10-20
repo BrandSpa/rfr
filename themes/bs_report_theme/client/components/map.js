@@ -72,9 +72,9 @@ export default function () {
       });
 
       d3.select('.map__controllers__more').on('click', function() {
-        let trans = d3.select("#map-container svg g").attr('transform', '0, 0');
-      }); 
-
+        let trans = d3.select("#map-container svg g").attr('transform', '');
+      });
+      
       appendMap(this.mapUrl, mapContainer, () => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
