@@ -60,7 +60,7 @@ export default function () {
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
-      let svg = d3.select("#map-container svg g");
+      let svg = d3.select("#map-container svg");
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {

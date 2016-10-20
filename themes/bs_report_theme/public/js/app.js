@@ -20922,7 +20922,7 @@
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
-	      var svg = d3.select("#map-container svg g");
+	      var svg = d3.select("#map-container svg");
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
 	      }).on('zoom', function () {
