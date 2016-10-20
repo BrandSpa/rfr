@@ -66,7 +66,7 @@ export default function () {
       .on('zoom', function() {
         let transform = d3.event.transform;
         console.log(d3.event);
-        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")")
+        d3.select(this).select('g').attr("transform", transform);
       });
       
       appendMap(this.mapUrl, mapContainer, () => {
