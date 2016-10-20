@@ -20924,7 +20924,8 @@
 	      var lang = this.lang;
 
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
-	        return !d3.event.type == 'wheel';
+	        console.log(d3.event.type);
+	        // return !d3.event.type == 'wheel';
 	      }).on('zoom', function () {
 	        var transform = d3.event.transform;
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ")");
