@@ -64,7 +64,7 @@ export default function () {
       let zoomed = d3.zoom()
       .scaleExtent([1, 1])
       .filter(function() {
-        console.log('wheel', d3.event.type);
+        console.log('wheel', d3.event.type == 'wheel');
       })
       .on('zoom', function() {
         let transform = d3.event.transform;
