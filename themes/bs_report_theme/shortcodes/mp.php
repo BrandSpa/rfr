@@ -31,6 +31,11 @@
       </div>
     </div>
 
+    <div class="map__controllers">
+      <button class="map__controllers__more">+</button>
+      <button class="map__controllers__less">-</button>
+    </div>
+
     <div id="map-container"></div>
 
   <div class="col-md-6 map_list">

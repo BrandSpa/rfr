@@ -3,6 +3,15 @@
   padding: 40px;
   position: relative;
 
+  &__controllers {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    button {
+      @include title4;
+    }
+  }
+
   h1 {
     font-weight: bold;
     p {
