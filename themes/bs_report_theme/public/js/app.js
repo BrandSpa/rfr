@@ -20931,7 +20931,7 @@
 	      });
 
 	      d3.select('.map__controllers__more').on('click', function () {
-	        zoomed.scaleTo(d3.select("#map-container svg g"), 1);
+	        console.log(zoomed.scale());
 	      });
 
 	      appendMap(this.mapUrl, mapContainer, function () {
