@@ -42,7 +42,7 @@ function bs_add_country_info_settings() {
 function logos_settings_page() {
 ?>
   <?php
-  $countries = getCountries();
+  $countries = getOfficesCountries();
    ?>
 
   <div style="background: #f1f1f1; background-size: contain; padding: 15px">
