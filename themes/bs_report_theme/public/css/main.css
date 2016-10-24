@@ -337,7 +337,8 @@ a polygon, a path {
   position: relative;
   height: 500px;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 130px 0; }
   .home_header__background {
     position: absolute;
     top: 0;
