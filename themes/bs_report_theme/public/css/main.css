@@ -351,8 +351,8 @@ a polygon, a path {
     color: #fff; }
   .home_header__content {
     color: #fff;
-    font-family: 'Roboto';
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.5em; }
 
 .input-red, input {
   background: #FC3938;
