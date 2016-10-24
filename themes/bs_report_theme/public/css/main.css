@@ -355,6 +355,13 @@ a polygon, a path {
     color: #fff;
     font-weight: 400;
     font-size: 1.5em; }
+  .home_header__paginate a {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #fff; }
+    .home_header__paginate a:hover {
+      background: #FC3938; }
 
 .input-red, input {
   background: #FC3938;

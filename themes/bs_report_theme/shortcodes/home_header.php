@@ -51,6 +51,12 @@ function bs_home_header_sc($atts, $content = null) {
         </p>
       </li>
     </ul>
+
+    <div class="home_header__paginate">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
  
   </div>
   <div class="col-md-6">
