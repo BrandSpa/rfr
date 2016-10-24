@@ -72,38 +72,7 @@ function logos_settings_page() {
 								value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
 							/>
 						</p>
-						
-						<select name="langs_<?php echo $value ?>[]" style="background: rgba(255,255,255,.4); width: 60%; height: 35px">
-							<?php 
-								$langs = get_terms( array(
-									'taxonomy' => 'language',
-									'hide_empty' => false,
-								)); 
-								foreach($langs as $lang) {
-								?>
-								<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-								<?php
-								}
-							?>
-						</select>
-
-						<div id="langs-container"></div>
-
-						<template id="template_<?php echo $value ?>">
-							<select name="langs_<?php echo $value ?>[]" style="background: rgba(255,255,255,.4); width: 60%; height: 35px">
-								<?php 
-									$langs = get_terms( array(
-										'taxonomy' => 'language',
-										'hide_empty' => false,
-									)); 
-									foreach($langs as $lang) {
-									?>
-									<option value="<?php echo $lang->slug ?>"><?php echo $lang->name ?></option>
-									<?php
-									}
-								?>
-							</select>
-						</template>
+					
 
 						<script>
 							
