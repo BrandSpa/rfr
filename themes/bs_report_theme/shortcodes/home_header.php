@@ -54,27 +54,27 @@ function bs_home_header_sc($atts, $content = null) {
           ),
           array(
             "type" => "textfield",
-            "params_name" => "title_1"
+            "param_name" => "title_1"
           ),
           array(
             "type" => "textarea",
-            "params_name" => "content_1"
+            "param_name" => "content_1"
           ),
           array(
             "type" => "textfield",
-            "params_name" => "title_2"
+            "param_name" => "title_2"
           ),
           array(
             "type" => "textarea",
-            "params_name" => "content_2"
+            "param_name" => "content_2"
           ),
           array(
             "type" => "textfield",
-            "params_name" => "title_3"
+            "param_name" => "title_3"
           ),
           array(
             "type" => "textarea",
-            "params_name" => "content_3"
+            "param_name" => "content_3"
           )
         )
       ) 
