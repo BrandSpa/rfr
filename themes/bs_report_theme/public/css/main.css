@@ -692,7 +692,7 @@ form button {
   .map svg {
     display: block;
     margin: 40px auto;
-    height: auto;
+    height: auto !important;
     width: 100%; }
   .map__info {
     font-family: "Roboto Condensed", sans-serif;

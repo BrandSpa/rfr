@@ -22,7 +22,7 @@
   svg {
     display: block;
     margin: 40px auto;
-    height: auto;
+    height: auto !important;
     width: 100%;
 
     // @media #{$mobile}, #{$tablet} {
