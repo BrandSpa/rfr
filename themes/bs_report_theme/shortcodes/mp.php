@@ -30,7 +30,9 @@
         <search-country></search-country>
       </div>
         <div class="col-md-12">
-          <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
+          <div class="map__controllers">
+            <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
+          </div>
         </div>
     </div>
 
