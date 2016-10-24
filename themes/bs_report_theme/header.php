@@ -26,7 +26,6 @@
   </div>
 
 <a href="#" id="open-nav">
-  <span class="sr-only">Toggle navigation</span>
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
   <span class="icon-bar"></span>
