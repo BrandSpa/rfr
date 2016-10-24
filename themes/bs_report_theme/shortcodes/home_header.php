@@ -25,12 +25,33 @@ function bs_home_header_sc($atts, $content = null) {
   <?php endif; ?>
 
   <div class="col-md-6">
-    <h1 class="home_header__title">
-       <?php echo $at['title_1']?>
-    </h1>
-    <p class="home_header__content">
-      <?php echo $at['content_1']?>
-    </p>
+    <ul>
+      <li>
+        <h1 class="home_header__title">
+          <?php echo $at['title_1']?>
+        </h1>
+        <p class="home_header__content">
+          <?php echo $at['content_1']?>
+        </p>
+      </li>
+      <li>
+        <h1 class="home_header__title">
+          <?php echo $at['title_2']?>
+        </h1>
+        <p class="home_header__content">
+          <?php echo $at['content_2']?>
+        </p>
+      </li>
+      <li>
+        <h1 class="home_header__title">
+          <?php echo $at['title_3']?>
+        </h1>
+        <p class="home_header__content">
+          <?php echo $at['content_3']?>
+        </p>
+      </li>
+    </ul>
+ 
   </div>
   <div class="col-md-6">
 
