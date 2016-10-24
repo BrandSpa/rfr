@@ -430,4 +430,16 @@ a {
     }
   }
 
+  &__title {
+    font-size: (85 / 16) * 1em;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__content {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 400;
+  }
+
 }

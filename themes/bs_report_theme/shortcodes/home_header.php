@@ -28,7 +28,7 @@ function bs_home_header_sc($atts, $content = null) {
     <h1 class="home_header__title">
        <?php echo $at['title_1']?>
     </h1>
-    <p>
+    <p class="home_header__content">
       <?php echo $at['content_1']?>
     </p>
   </div>
