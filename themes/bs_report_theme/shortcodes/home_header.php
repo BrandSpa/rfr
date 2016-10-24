@@ -72,7 +72,7 @@ function bs_home_header_sc($atts, $content = null) {
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
     var $index = $(this).data('index');
-    console.log($('.home_header__content--' + $index)).css('background', 'red');
+    $('.home_header__content--' + $index)).css('background', 'red');
 
   });
 </script>
