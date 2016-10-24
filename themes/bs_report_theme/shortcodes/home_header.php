@@ -71,8 +71,9 @@ function bs_home_header_sc($atts, $content = null) {
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
-    $contents.each(function(li) {
-      console.log($(this).hasClass('active'));
+
+    $contents.each(function(i) {
+      console.log(i, $(this).hasClass('active'));
     });
 
     var liIndex = $(this).data('index');
