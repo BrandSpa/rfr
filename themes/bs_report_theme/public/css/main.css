@@ -470,7 +470,8 @@ form button {
       display: block;
       margin: 0 auto; }
     .nav__logo img {
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 30px; }
   .nav__subtitle {
     padding: 40px 30px; }
   .nav .menu {

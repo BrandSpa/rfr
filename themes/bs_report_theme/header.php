@@ -43,7 +43,7 @@
     <a href="<?php echo $home ?>">
      
       <?php if( !empty( get_option("logo_" . str_replace(' ', '_', getOfficeCountry())  )) ): ?>
-        <img src='<?php echo get_option("logo_" . str_replace(' ', '_', getOfficeCountry())  ) ?>'  alt="acn logo" />
+        <img src='<?php echo get_option("logo_" . str_replace(' ', '_', getOfficeCountry())  ) ?>'  alt="acn logo" class="img-responsive" />
       <?php else: ?>
          <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo.png" alt="acn logo">
       <?php endif; ?>

@@ -17,12 +17,14 @@
     @include center-vertical;
     text-align: center;
     margin: 0 auto;
+
     a {
       display: block;
       margin: 0 auto;
     }
     img {
-      margin: 0 auto
+      margin: 0 auto;
+      padding: 30px;
     }
   }
 
