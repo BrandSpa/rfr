@@ -44,10 +44,12 @@
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt="">
         <?php echo gett('Persecution') ?>
       </li>
+
       <li>
           <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Discrimination.svg" alt="">
           <?php echo gett('Discrimination') ?>
       </li>
+      
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
         <?php echo gett('Stable') ?>

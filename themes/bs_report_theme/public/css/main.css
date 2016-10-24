@@ -723,6 +723,7 @@ form button {
       background: #1A2127;
       position: absolute;
       right: 0;
+      top: 0;
       text-align: center; }
       .map__info_situation img {
         margin: 0 auto; }
