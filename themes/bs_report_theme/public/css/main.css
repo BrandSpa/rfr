@@ -679,15 +679,11 @@ form button {
   background: #2B3740;
   padding: 40px;
   position: relative; }
-  .map__controllers {
-    position: absolute;
-    right: 100px;
-    top: 250px; }
-    .map__controllers button {
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.5625em;
-      font-weight: normal;
-      font-style: italic; }
+  .map__controllers button {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5625em;
+    font-weight: normal;
+    font-style: italic; }
   .map h1 {
     font-weight: bold; }
     .map h1 p {

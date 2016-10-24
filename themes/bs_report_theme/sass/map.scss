@@ -4,12 +4,11 @@
   position: relative;
 
   &__controllers {
-    position: absolute;
-    right: 100px;
-    top: 250px;
+
     button {
       @include title4;
     }
+
   }
 
   h1 {
