@@ -42,6 +42,7 @@
 
     <a href="<?php echo $home ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/public/img/logo.png" alt="acn logo">
+      <?php echo getOfficeCountry() ?>
     </a>
 
   </div>
