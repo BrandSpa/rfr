@@ -87,4 +87,3 @@
     
   </div>
 
-<a href="#report-content" class="anchor-to-content"><i class="ion-chevron-down"></i></a>

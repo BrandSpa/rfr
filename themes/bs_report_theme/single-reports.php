@@ -23,10 +23,14 @@
       <?php include 'templates/report/header_info.php' ?>
     </div>
 
+    <a href="#report-content" class="anchor-to-content"><i class="ion-chevron-down"></i></a>
+
   </div>
+
 <div id="report-content">
   <?php include 'templates/report/content.php' ?>
 </div>
+
   <?php endwhile; ?>
 
   <?php  else : ?>
