@@ -241,7 +241,11 @@ h6 {
   display: none;
   text-align: right;
   float: right;
-  margin: 40px 40px 0 0; }
+  margin: 40px 40px 0 0;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 1; }
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     #open-nav {
       display: block; } }

@@ -283,6 +283,7 @@ h6 {
   top: 40px;
   right: 40px;
   z-index: 1;
+  
   @media #{$mobile}, #{$tablet} {
     display: block;
   }
