@@ -8,8 +8,13 @@ function bs_home_header_sc($atts, $content = null) {
 ?>
 
 <div>
-  <?php var_dump( explode(',', $at['backgrounds']) ) ?>
-  wp_get_attachment_image_src
+  <?php if(is_array( explode(',', $at['backgrounds']) )): ?>
+    <?php  foreach(explode(',', $at['backgrounds']) as $imageId):  ?>
+    <img src="<?php echo wp_get_attachment_image_src($imageId) ?>" alt="">
+      <?php echo wp_get_attachment_image_src($imageId) ?>
+
+    <?php endforeach; ?>
+  <?php endif; ?>
 </div>
 
 <?php
