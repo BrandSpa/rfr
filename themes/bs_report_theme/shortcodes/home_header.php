@@ -54,26 +54,32 @@ function bs_home_header_sc($atts, $content = null) {
           ),
           array(
             "type" => "textfield",
+            "heading" => "Title",
             "param_name" => "title_1"
           ),
           array(
             "type" => "textarea",
+            "heading" => "content",
             "param_name" => "content_1"
           ),
           array(
             "type" => "textfield",
+            "heading" => "Title",
             "param_name" => "title_2"
           ),
           array(
             "type" => "textarea",
+            "heading" => "content",
             "param_name" => "content_2"
           ),
           array(
             "type" => "textfield",
+            "heading" => "Title",
             "param_name" => "title_3"
           ),
           array(
             "type" => "textarea",
+            "heading" => "content",
             "param_name" => "content_3"
           )
         )
