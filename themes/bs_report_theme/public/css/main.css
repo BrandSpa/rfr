@@ -248,13 +248,13 @@ h6 {
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     #open-nav {
       display: block; } }
-  #open-nav .active .icon-bar:first-child {
+  #open-nav.active .icon-bar:first-child {
     transform: rotate(45deg);
     transform-origin: 50% 18%; }
-  #open-nav .active .icon-bar::nth-child(2) {
+  #open-nav.active .icon-bar::nth-child(2) {
     transform: rotate(-45deg);
     transform-origin: 10% 20%; }
-  #open-nav .active .icon-bar:last-child {
+  #open-nav.active .icon-bar:last-child {
     display: none; }
   #open-nav:hover .icon-bar {
     margin-bottom: 6px;
