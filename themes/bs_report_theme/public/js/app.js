@@ -21030,7 +21030,7 @@
 
 	  (0, _get_mouse_position2.default)(null).then(function (p) {
 	    info.style.opacity = 1;
-	    info.style.top = p.top - 120 + 'px';
+	    info.style.top = p.top - 80 + 'px';
 	    info.style.left = p.left - 300 + 'px';
 	  });
 	}

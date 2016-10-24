@@ -10,7 +10,7 @@ function showInfo(info, txt) {
   mousePosition(null)
     .then(p => {
       info.style.opacity = 1;
-      info.style.top = (p.top - 120) + 'px';
+      info.style.top = (p.top - 80) + 'px';
       info.style.left = (p.left - 300) + 'px';
     });
 }
