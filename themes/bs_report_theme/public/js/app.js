@@ -20959,7 +20959,8 @@
 	          }
 
 	          el.on('mousemove', function (evt) {
-	            var countryInfo = report[0] ? report[0].post_title : countryName;
+	            var countryInfo = report[0] ? report[0].meta_country : countryName;
+
 	            showInfo(info, countryInfo);
 	            setStyle(el);
 	          });
@@ -20988,7 +20989,7 @@
 	          }
 
 	          el.on('mousemove', function (evt) {
-	            var countryInfo = report[0] ? report[0].post_title : countryName;
+	            var countryInfo = report[0] ? report[0].meta_country : countryName;
 	            showInfo(info, countryInfo);
 	            setStyle(el);
 	          });

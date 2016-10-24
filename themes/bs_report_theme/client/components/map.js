@@ -77,7 +77,6 @@ export default function () {
           .call(zoomed.transform, d3.zoomIdentity);
         });
 
-
         let polygons = d3.select(mapContainer).selectAll("polygon");
 
         d3.select("#map-container svg").call(zoomed);
@@ -97,7 +96,8 @@ export default function () {
           }
           
           el.on('mousemove', evt => {
-             let countryInfo = report[0] ? report[0].post_title : countryName;
+            let countryInfo = report[0] ? report[0].meta_country : countryName;
+
             showInfo(info, countryInfo);
             setStyle(el);
           });
@@ -120,7 +120,7 @@ export default function () {
           }
           
           el.on('mousemove', evt => {
-            let countryInfo = report[0] ? report[0].post_title : countryName;
+            let countryInfo = report[0] ? report[0].meta_country : countryName;
             showInfo(info, countryInfo);
             setStyle(el);
           });
