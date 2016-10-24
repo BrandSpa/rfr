@@ -1,3 +1,5 @@
+<button class="show-modal">test modal</button>
+
 
 <div id="footer">
   <div class="col-md-9 footer__left">
@@ -23,7 +25,6 @@
   </div>
 </div>
 
-<button class="show-modal">open modal</button>
 
 <modal-lang 
   :info='<?php echo json_encode(get_post_meta($post->ID, 'multiregional_key', true)) ?>'
