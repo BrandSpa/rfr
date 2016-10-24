@@ -66,7 +66,7 @@ function logos_settings_page() {
 							<input
 								style="background: rgba(255,255,255,.4); width: 60%; height: 35px"
 								type="text"
-								class="add_uploader"
+								class="uploader"
 								placeholder="logo url"
 								name="logo_<?php echo $value ?>"
 								value="<?php echo esc_attr( get_option('logo_' . $value ) ); ?>"
