@@ -5,7 +5,7 @@ import mousePosition from '../lib/get_mouse_position';
 import $ from 'jquery';
 
 function showInfo(info, txt) {
-  d3.select(info).select('.map__info_country').text(txt);
+  d3.select(info).select('.map__info_country').text(txt.replace(/-/g, ' '));
 
   mousePosition(null)
     .then(p => {
@@ -77,7 +77,6 @@ export default function () {
           .call(zoomed.transform, d3.zoomIdentity);
         });
 
-         console.log(document.querySelector("#map-container svg g"));
 
         let polygons = d3.select(mapContainer).selectAll("polygon");
 

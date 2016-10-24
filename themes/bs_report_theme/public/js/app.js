@@ -20934,8 +20934,6 @@
 	          d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
 	        });
 
-	        console.log(document.querySelector("#map-container svg g"));
-
 	        var polygons = d3.select(mapContainer).selectAll("polygon");
 
 	        d3.select("#map-container svg").call(zoomed);
@@ -21026,7 +21024,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function showInfo(info, txt) {
-	  d3.select(info).select('.map__info_country').text(txt);
+	  d3.select(info).select('.map__info_country').text(txt.replace(/-/g, ' '));
 
 	  (0, _get_mouse_position2.default)(null).then(function (p) {
 	    info.style.opacity = 1;
