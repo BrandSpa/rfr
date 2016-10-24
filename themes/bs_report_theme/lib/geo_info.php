@@ -11,7 +11,7 @@
       return json_encode($geo);
     }
 
-    return 'nea';
+    return '';
   }
 
 
