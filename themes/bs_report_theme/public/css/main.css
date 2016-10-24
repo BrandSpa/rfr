@@ -669,8 +669,11 @@ form button {
 
 .anchor-to-content {
   color: #FC3938;
-  font-size: 16px;
-  text-align: center; }
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 30px; }
 
 .map {
   background: #2B3740;
