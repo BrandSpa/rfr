@@ -25,12 +25,15 @@ function bs_home_header_sc($atts, $content = null) {
   <?php endif; ?>
 
   <div class="col-md-6">
-    <h1 class="title">
-      Religious freedom has declined in <span class="color-red">11 Countries</span>
+    <h1 class="home_header__title">
+       <?php echo $at['title_1']?>
     </h1>
+    <p>
+      <?php echo $at['content_1']?>
+    </p>
   </div>
   <div class="col-md-6">
-  
+
   </div>
 </div>
 
