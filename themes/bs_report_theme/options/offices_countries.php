@@ -1,6 +1,7 @@
 <?php
 
-return  array(
+function getOfficesCountries() {
+  return  array(
   "default",
   "Australia" ,
   "Austria" ,
@@ -25,5 +26,7 @@ return  array(
   "United Kingdom",
   "United States"
 );
+
+}
 
 ?>

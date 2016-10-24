@@ -28,7 +28,7 @@ function bs_admin_options_menu() {
 }
 
 function bs_add_country_info_settings() {
-	$options = getCountries();
+	$options = getOfficesCountries();
 
   foreach ($options as $value) {
 		$value = str_replace(' ', '_', $value);
