@@ -45,6 +45,30 @@ function bs_home_header_sc($atts, $content = null) {
           array(
             "type" => "attach_images",
             "param_name" => "backgrounds"
+          ),
+          array(
+            "type" => "textfield",
+            "params_name" => "title_1"
+          ),
+          array(
+            "type" => "textarea",
+            "params_name" => "content_1"
+          ),
+          array(
+            "type" => "textfield",
+            "params_name" => "title_2"
+          ),
+          array(
+            "type" => "textarea",
+            "params_name" => "content_2"
+          ),
+          array(
+            "type" => "textfield",
+            "params_name" => "title_3"
+          ),
+          array(
+            "type" => "textarea",
+            "params_name" => "content_3"
           )
         )
       ) 
