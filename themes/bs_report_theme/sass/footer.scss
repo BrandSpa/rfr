@@ -1,6 +1,16 @@
 #footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  @media #{$mobile}, #{$tablet} {
+    position: initial;
+  }
+
   .menu {
     padding-top: 80px;
+
     ul {
       & > li {
         float: left;

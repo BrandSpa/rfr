@@ -224,12 +224,6 @@ h6 {
     box-shadow: 0;
     outline: none; }
 
-#footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
 .wpb_content_element {
   margin-bottom: 0 !important; }
 
@@ -524,34 +518,42 @@ form button {
             top: -5px;
             transition: left 300ms ease; }
 
-#footer .menu {
-  padding-top: 80px; }
-  #footer .menu ul > li {
-    float: left;
-    width: 20%; }
-    #footer .menu ul > li > a {
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.25em;
-      font-style: italic;
-      color: #FC3938;
-      display: block;
-      margin-bottom: 15px; }
-      #footer .menu ul > li > a:hover {
-        color: #FC3938; }
-    #footer .menu ul > li .sub-menu {
-      padding: 0; }
-      #footer .menu ul > li .sub-menu a {
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+    #footer {
+      position: initial; } }
+  #footer .menu {
+    padding-top: 80px; }
+    #footer .menu ul > li {
+      float: left;
+      width: 20%; }
+      #footer .menu ul > li > a {
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 1.0625em;
+        font-size: 1.25em;
         font-style: italic;
-        line-height: 1.2;
+        color: #FC3938;
         display: block;
-        color: #fff;
-        padding-bottom: 15px;
-        font-weight: 300;
-        position: relative; }
-        #footer .menu ul > li .sub-menu a:hover::before {
-          left: -15px; }
+        margin-bottom: 15px; }
+        #footer .menu ul > li > a:hover {
+          color: #FC3938; }
+      #footer .menu ul > li .sub-menu {
+        padding: 0; }
+        #footer .menu ul > li .sub-menu a {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 1.0625em;
+          font-style: italic;
+          line-height: 1.2;
+          display: block;
+          color: #fff;
+          padding-bottom: 15px;
+          font-weight: 300;
+          position: relative; }
+          #footer .menu ul > li .sub-menu a:hover::before {
+            left: -15px; }
 
 .footer__left {
   height: 400px;
