@@ -71,8 +71,8 @@ function bs_home_header_sc($atts, $content = null) {
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
-    var $index = $(this).data('index');
-    $('.home_header__content--' + $index).css('background', 'red');
+    var liIndex = $(this).data('index');
+    $('.home_header__content--' + liIndex).css('background', 'red');
 
   });
 </script>
