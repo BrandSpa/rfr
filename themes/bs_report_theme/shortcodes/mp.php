@@ -29,11 +29,13 @@
       <div class="col-md-3">
         <search-country></search-country>
       </div>
+      
+       <div class="map__controllers">
+        <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
+      </div>
     </div>
 
-    <div class="map__controllers">
-      <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
-    </div>
+   
 
     <div id="map-container"></div>
 
@@ -49,7 +51,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Discrimination.svg" alt="">
           <?php echo gett('Discrimination') ?>
       </li>
-      
+
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
         <?php echo gett('Stable') ?>
