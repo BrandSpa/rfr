@@ -444,6 +444,16 @@ a {
     font-size: (24 / 16) * 1em;
   }
 
+  &__contents {
+    li {
+      display: none;
+      
+      &--active {
+        display: block;
+      }
+    }
+  }
+
   &__paginate {
     a {
       display: inline-block;

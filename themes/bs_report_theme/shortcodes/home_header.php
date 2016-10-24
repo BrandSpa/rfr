@@ -25,8 +25,8 @@ function bs_home_header_sc($atts, $content = null) {
   <?php endif; ?>
 
   <div class="col-md-6">
-    <ul>
-      <li>
+    <ul class="home_header__contents">
+      <li data-index="0" class="active">
         <h1 class="home_header__title">
           <?php echo $at['title_1']?>
         </h1>
@@ -34,7 +34,7 @@ function bs_home_header_sc($atts, $content = null) {
           <?php echo $at['content_1']?>
         </p>
       </li>
-      <li>
+      <li data-index="1">
         <h1 class="home_header__title">
           <?php echo $at['title_2']?>
         </h1>
@@ -42,7 +42,7 @@ function bs_home_header_sc($atts, $content = null) {
           <?php echo $at['content_2']?>
         </p>
       </li>
-      <li>
+      <li data-index="2">
         <h1 class="home_header__title">
           <?php echo $at['title_3']?>
         </h1>
@@ -53,9 +53,9 @@ function bs_home_header_sc($atts, $content = null) {
     </ul>
 
     <div class="home_header__paginate">
-      <a href="#" data-index=""></a>
-      <a href="#" data-index=""></a>
-      <a href="#" data-index=""></a>
+      <a href="#" data-index="0"></a>
+      <a href="#" data-index="1"></a>
+      <a href="#" data-index="2"></a>
     </div>
  
   </div>
@@ -66,8 +66,13 @@ function bs_home_header_sc($atts, $content = null) {
 
 <script>
   var $ = jQuery;
+  var $contents = $('.home_header__contents li');
   $('.home_header__paginate a').on('click', function(e) {
-    e.preventDefault();
+     e.preventDefault();
+    console.log($(this).data);
+    $content.forEach(function(con) {
+      console.log(con);
+    });
   });
 </script>
 
