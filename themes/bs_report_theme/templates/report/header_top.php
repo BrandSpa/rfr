@@ -4,11 +4,11 @@
 
   <div class="report__header__slider_year">
     <?php $year = get_post_meta($post->ID, 'report_year_key', true); ?>
-    <a href="?report_year=<?php echo $year - 1 ?>" disabled="true"> < </a>
+    <a href="?report_year=<?php echo $year - 1 ?>" disabled="true"> <i class="ion-chevron-left"></i> </a>
 
     <?php echo get_post_meta($post->ID, 'report_year_key', true) ?>
 
-    <a href="?report_year=<?php echo $year + 1 ?>" disabled="true"> > </a>
+    <a href="?report_year=<?php echo $year + 1 ?>" disabled="true"> <i class="ion-chevron-right"></i> </a>
   </div>
 
   <h1 class="title">
