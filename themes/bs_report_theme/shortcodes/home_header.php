@@ -21,7 +21,7 @@ function bs_home_header_sc($atts, $content = null) {
   function bs_home_header_vc() {
     vc_map( 
       array(
-        "name" =>  "BS Map",
+        "name" =>  "BS home header",
         "base" => "bs_home_header",
         "category" =>  "BS",
         "params" => array(
