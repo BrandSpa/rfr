@@ -7,12 +7,10 @@ function bs_home_header_sc($atts, $content = null) {
   ob_start();
 ?>
 
-<div>
+<div class="home_header">
   <?php if(is_array( explode(',', $at['backgrounds']) )): ?>
     <?php  foreach(explode(',', $at['backgrounds']) as $imageId):  ?>
-    <img src="<?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
-      <?php var_dump(wp_get_attachment_image_src($imageId, 'full')) ?>
-
+    <img class="home_header__background" src="<?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
     <?php endforeach; ?>
   <?php endif; ?>
 </div>

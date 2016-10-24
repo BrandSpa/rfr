@@ -411,3 +411,22 @@ a {
 
 
 }
+
+
+.home_header {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+}

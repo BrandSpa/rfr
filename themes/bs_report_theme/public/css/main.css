@@ -333,6 +333,19 @@ a polygon, a path {
       left: 0;
       bottom: -12px; }
 
+.home_header {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden; }
+  .home_header__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; }
+    .home_header__background--active {
+      display: block; }
+
 .input-red, input {
   background: #FC3938;
   color: #fff; }
