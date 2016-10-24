@@ -24,9 +24,9 @@
     </div>
 
   </div>
-
+<div id="report-content">
   <?php include 'templates/report/content.php' ?>
-
+</div>
   <?php endwhile; ?>
 
   <?php  else : ?>
