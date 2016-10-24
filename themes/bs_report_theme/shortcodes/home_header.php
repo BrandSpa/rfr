@@ -53,9 +53,9 @@ function bs_home_header_sc($atts, $content = null) {
     </ul>
 
     <div class="home_header__paginate">
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
+      <a href="#" data-index=""></a>
+      <a href="#" data-index=""></a>
+      <a href="#" data-index=""></a>
     </div>
  
   </div>
@@ -63,6 +63,13 @@ function bs_home_header_sc($atts, $content = null) {
 
   </div>
 </div>
+
+<script>
+  var $ = jQuery;
+  $('.home_header__paginate a').on('click', function(e) {
+    e.preventDefault();
+  });
+</script>
 
 <?php
 
