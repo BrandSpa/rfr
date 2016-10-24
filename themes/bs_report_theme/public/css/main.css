@@ -720,10 +720,10 @@ form button {
       align-items: center;
       width: 40px;
       height: 40px;
-      background: #1A2127;
-      position: absolute;
       right: 0;
       top: 0;
+      background: #1A2127;
+      position: absolute;
       text-align: center; }
       .map__info_situation img {
         margin: 0 auto; }

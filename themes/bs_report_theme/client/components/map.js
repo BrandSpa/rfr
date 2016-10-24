@@ -72,6 +72,7 @@ export default function () {
 
       appendMap(this.mapUrl, mapContainer, () => {
         d3.select('.map__controllers__more').on('click', function() {
+          d3.select("#map-container svg").attr('height', '');
           d3.select("#map-container svg").transition()
           .duration(750)
           .call(zoomed.transform, d3.zoomIdentity);
