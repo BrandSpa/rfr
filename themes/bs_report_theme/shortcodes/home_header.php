@@ -9,10 +9,19 @@ function bs_home_header_sc($atts, $content = null) {
 
 <div class="home_header">
   <?php if(is_array( explode(',', $at['backgrounds']) )): ?>
-    <?php  foreach(explode(',', $at['backgrounds']) as $imageId):  ?>
-    <img class="home_header__background" src="<?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
+    <?php  foreach(explode(',', $at['backgrounds']) as $key => $imageId):  ?>
+    <img class="home_header__background <?php if($key == 1) echo 'home_header__background--active' ?>" src="<?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
     <?php endforeach; ?>
   <?php endif; ?>
+
+  <div class="col-md-6">
+    <h1 class="title">
+      Religious freedom has declined in <span class="color-red">11 Countries</span>
+    </h1>
+  </div>
+  <div class="col-md-6">
+  
+  </div>
 </div>
 
 <?php
