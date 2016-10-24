@@ -13,7 +13,6 @@
 
   <h1 class="title">
     <?php echo get_the_title() ?>
-
     <a href="#" class="open-select-countries">
       <img src="<?php echo get_template_directory_uri() . '/public/img/icons/down.svg' ?>" alt="">
     </a>

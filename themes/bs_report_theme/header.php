@@ -98,3 +98,6 @@
     open = !open;
   }
 </script>
+
+
+<?php include 'shortcodes/select_country.php' ?>
