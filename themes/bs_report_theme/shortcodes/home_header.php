@@ -2,7 +2,13 @@
 
 function bs_home_header_sc($atts, $content = null) {
   $at = shortcode_atts( array(
-      "backgrounds" => ""
+      "backgrounds" => "",
+      "title_1" => "",
+      "content_1" => "",
+       "title_2" => "",
+      "content_2" => "",
+       "title_3" => "",
+      "content_3" => "",
     ), $atts );
   ob_start();
 ?>
