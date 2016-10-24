@@ -69,7 +69,8 @@ function bs_home_header_sc($atts, $content = null) {
   var $contents = $('.home_header__contents li');
   $('.home_header__paginate a').on('click', function(e) {
      e.preventDefault();
-    console.log($(this).data());
+    console.log($(this).data('index'));
+
     $contents.forEach(function(con) {
       console.log(con);
     });
