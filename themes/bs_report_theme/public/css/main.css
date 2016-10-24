@@ -600,7 +600,8 @@ form button {
       font-size: 1.5625em;
       font-weight: normal;
       font-style: italic;
-      color: #FC3938; }
+      color: #FC3938;
+      font-size: 1em; }
       .report__header__slider_year a:first-child {
         padding-right: 40px; }
       .report__header__slider_year a:last-child {
