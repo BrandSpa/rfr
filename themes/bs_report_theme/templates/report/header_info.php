@@ -84,5 +84,5 @@
     >
     </religions-chart>
 
-    <a href="#report-content"><i class="ion-chevron-down"></i></a>
+    <a href="#report-content" class="anchor-to-content"><i class="ion-chevron-down"></i></a>
   </div>
