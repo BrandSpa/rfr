@@ -32,7 +32,7 @@
     </div>
 
     <div class="map__controllers">
-      <button class="map__controllers__more"><?php echo gett('Reset'); ?></button>
+      <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
     </div>
 
     <div id="map-container"></div>
