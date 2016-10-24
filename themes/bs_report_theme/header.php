@@ -76,11 +76,14 @@
 
   function openNav(evt) {
     evt.preventDefault();
+    var $nav = jQuery(this);
 
     if(!open) {
+      $nav.removeClass('active');
       navLeft = '-200px';
       zIndex = '0';
     } else {
+      $nav.addClass('active');
        navLeft = '0'; 
        zIndex = '1001';
     }
