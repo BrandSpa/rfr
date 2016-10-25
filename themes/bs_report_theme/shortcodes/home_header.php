@@ -30,20 +30,20 @@ function bs_home_header_sc($atts, $content = null) {
         <h1 class="home_header__title">
           <?php echo $at['title_1']?>
         </h1>
-        <p>
+        <p class="home_header__content">
           <?php echo $at['content_1']?>
         </p>
       </li>
-      <li class="home_header__content--1">
+      <li>
         <h1 class="home_header__title">
           <?php echo $at['title_2']?>
         </h1>
-        <p>
+        <p class="home_header__content">
           <?php echo $at['content_2']?>
         </p>
       </li>
 
-      <li class="home_header__content--2">
+      <li>
         <h1 class="home_header__title">
           <?php echo $at['title_3']?>
         </h1>
