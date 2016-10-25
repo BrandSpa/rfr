@@ -490,9 +490,9 @@ a {
         transform: translate3d(0, 0, 0);
       }
 
-        > .active,
-        > .next,
-        > .prev {
+        .active,
+        .next,
+        .prev {
           display: block;
         }
   
