@@ -80,8 +80,9 @@ function bs_home_header_sc($atts, $content = null) {
 
     setTimeout(function() {
       console.log($active.index());
-      $active.removeClass('active left');
       $contents.eq( ind ).removeClass('left next').addClass('active');
+      $active.removeClass('active left');
+      
 
     }, 1000);
     
