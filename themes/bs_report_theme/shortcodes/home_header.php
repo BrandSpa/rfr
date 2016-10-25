@@ -74,10 +74,10 @@ function bs_home_header_sc($atts, $content = null) {
     var $active = $('.home_header__contents li.active');
 
     var ind = $(this).data('index');
-    $active.removeClass('active').removeClass('left').addClass('right');
+    $active.removeClass('active').removeClass('left').addClass('left');
 
     setTimeout(function() {
-       $active.removeClass('right');
+       $active.removeClass('left');
     }, 600);
 
    
