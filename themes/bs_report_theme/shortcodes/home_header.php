@@ -68,9 +68,12 @@ function bs_home_header_sc($atts, $content = null) {
 <script>
   var $ = jQuery;
   var $contents = $('.home_header__contents li');
+  var $active = $('.home_header__contents li.active');
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
+    $active.removeClass('active');
+    $active.next().addClass('active');
 
     $contents.each(function(i) {
       console.log(i, $(this).hasClass('active'));
