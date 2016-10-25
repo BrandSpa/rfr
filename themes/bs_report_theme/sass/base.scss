@@ -446,6 +446,8 @@ a {
 
   &__contents {
     position: relative;
+    overflow: hidden;
+    width: 100%;
     
     li {
       display: none;

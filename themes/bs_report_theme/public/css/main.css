@@ -356,7 +356,9 @@ a polygon, a path {
     font-weight: 400;
     font-size: 1.5em; }
   .home_header__contents {
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    width: 100%; }
     .home_header__contents li {
       display: none;
       position: relative;
