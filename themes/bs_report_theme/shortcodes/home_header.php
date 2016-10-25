@@ -72,16 +72,9 @@ function bs_home_header_sc($atts, $content = null) {
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
+    console.log($active);
     $active.removeClass('active');
     $active.next().addClass('active');
-
-    $contents.each(function(i) {
-      console.log(i, $(this).hasClass('active'));
-    });
-
-    var liIndex = $(this).data('index');
-    $('.home_header__content--' + liIndex).css('background', 'red');
-
   });
 </script>
 
