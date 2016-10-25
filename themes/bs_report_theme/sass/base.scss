@@ -418,6 +418,7 @@ a {
     transform: translate3d(-100%, 0, 0);
   }
   to {
+    left: 0;
     transform: translate3d(0, 0, 0);
   }
 }
@@ -430,6 +431,7 @@ a {
   }
 
   to {
+    left: 0;
     transform: translate3d(100%, 0, 0);
   }
 }
@@ -478,11 +480,10 @@ a {
 
       &.left {
         animation: slideLeft .6s;
-        animation-delay: .6s;
       }
 
       &.right {
-        display: block;
+
         left: 0;
         animation: slideRight .6s;
       }

@@ -338,6 +338,7 @@ a polygon, a path {
     left: 0;
     transform: translate3d(-100%, 0, 0); }
   to {
+    left: 0;
     transform: translate3d(0, 0, 0); } }
 
 @keyframes slideRight {
@@ -345,6 +346,7 @@ a polygon, a path {
     left: 0;
     transform: translate3d(0, 0, 0); }
   to {
+    left: 0;
     transform: translate3d(100%, 0, 0); } }
 
 .home_header {
@@ -378,10 +380,8 @@ a polygon, a path {
       position: relative;
       transition: all .6s ease-in-out; }
       .home_header__contents li.left {
-        animation: slideLeft .6s;
-        animation-delay: .6s; }
+        animation: slideLeft .6s; }
       .home_header__contents li.right {
-        display: block;
         left: 0;
         animation: slideRight .6s; }
       .home_header__contents li.active {
