@@ -479,13 +479,11 @@ a {
       transition: all .6s ease-in-out;
 
       &.left {
-        animation: slideLeft .6s;
+        left: 0;
       }
 
       &.right {
-        display: block;
-        left: 0;
-        animation: slideRight .6s;
+        left: -100%;
       }
 
       &.active {

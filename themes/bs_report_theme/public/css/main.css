@@ -380,11 +380,9 @@ a polygon, a path {
       position: relative;
       transition: all .6s ease-in-out; }
       .home_header__contents li.left {
-        animation: slideLeft .6s; }
+        left: 0; }
       .home_header__contents li.right {
-        display: block;
-        left: 0;
-        animation: slideRight .6s; }
+        left: -100%; }
       .home_header__contents li.active {
         display: block;
         left: 0;
