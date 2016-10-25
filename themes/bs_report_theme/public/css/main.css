@@ -384,13 +384,14 @@ a polygon, a path {
       position: relative;
       transition: all .6s ease-in-out; }
       .home_header__contents li.active.left {
-        left: -100%;
+        left: 0;
         transform: translate3d(-100%, 0, 0); }
       .home_header__contents li.next.left, .home_header__contents li.prev.right {
-        left: 100%;
+        left: 0;
         transform: translate3d(100%, 0, 0); }
       .home_header__contents li.active {
-        left: 0; }
+        left: 0;
+        transform: translate3d(0, 0, 0); }
   .home_header__paginate a {
     display: inline-block;
     width: 12px;
