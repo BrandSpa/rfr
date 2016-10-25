@@ -74,6 +74,7 @@ function bs_home_header_sc($atts, $content = null) {
     var $active = $('.home_header__contents li.active');
 
     var ind = $(this).data('index');
+    
     $active.addClass('left');
     $contents.eq( ind ).addClass('next left');
 
@@ -81,8 +82,6 @@ function bs_home_header_sc($atts, $content = null) {
        $active.removeClass('active left');
        $contents.eq( ind ).removeClass('next left').addClass('active');
     }, 600);
-
-   
     
   });
 </script>

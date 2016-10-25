@@ -491,16 +491,13 @@ a {
         right: 100%;
       }
 
-      &.next.left {
-        left: 0;
-        transform: translate3d(0, 0, 0);
-      }
-
-      &.active {
+      &.next.left, &.active {
         display: block;
         left: 0;
         transform: translate3d(0, 0, 0);
+
       }
+
     }
 
   }
