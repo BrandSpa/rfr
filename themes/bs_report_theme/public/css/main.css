@@ -333,6 +333,13 @@ a polygon, a path {
       left: 0;
       bottom: -12px; }
 
+@keyframes slideLeft {
+  from {
+    left: 0;
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
 .home_header {
   position: relative;
   min-height: 500px;
@@ -365,8 +372,7 @@ a polygon, a path {
       transition: all .6s ease-in-out; }
       .home_header__contents li.left {
         display: block;
-        left: 0;
-        transform: translate3d(-100%, 0, 0); }
+        animation: slideLeft .6s; }
       .home_header__contents li.right {
         display: block;
         left: 0;

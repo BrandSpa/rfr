@@ -412,6 +412,16 @@ a {
 
 }
 
+@keyframes slideLeft {
+  from {
+    left: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 
 .home_header {
   position: relative;
@@ -454,11 +464,9 @@ a {
       position: relative;
       transition: all .6s ease-in-out;
 
-
       &.left {
         display: block;
-        left: 0;
-        transform: translate3d(-100%, 0, 0);
+        animation: slideLeft .6s;
       }
 
       &.right {
