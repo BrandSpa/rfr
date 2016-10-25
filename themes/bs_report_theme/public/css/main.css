@@ -381,7 +381,7 @@ a polygon, a path {
       display: block; }
     .home_header__contents li {
       display: none;
-      position: relative;
+      position: absolute;
       transition: all 1s ease-in-out; }
       .home_header__contents li.active.left {
         left: 0;
