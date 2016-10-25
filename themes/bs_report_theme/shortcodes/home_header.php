@@ -74,8 +74,10 @@ function bs_home_header_sc($atts, $content = null) {
     e.preventDefault();
     var $active = $('.home_header__contents li.active');
     
-    $active.removeClass('active').addClass('left');
-    $active.next().addClass('active'.addClass('right'));
+    $active.removeClass('active');
+    $active.addClass('left');
+    $active.next().addClass('active');
+    $active.next().addClass('right');
   });
 </script>
 
