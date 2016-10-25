@@ -26,11 +26,11 @@ function bs_home_header_sc($atts, $content = null) {
 
   <div class="col-md-6">
     <ul class="home_header__contents">
-      <li data-index="0" class="home_header__content--0 active">
+      <li data-index="0" class="active">
         <h1 class="home_header__title">
           <?php echo $at['title_1']?>
         </h1>
-        <p class="home_header__content">
+        <p>
           <?php echo $at['content_1']?>
         </p>
       </li>
@@ -38,7 +38,7 @@ function bs_home_header_sc($atts, $content = null) {
         <h1 class="home_header__title">
           <?php echo $at['title_2']?>
         </h1>
-        <p class="home_header__content">
+        <p>
           <?php echo $at['content_2']?>
         </p>
       </li>
