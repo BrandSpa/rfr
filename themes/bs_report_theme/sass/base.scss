@@ -445,8 +445,11 @@ a {
   }
 
   &__contents {
+
     li {
       display: none;
+      position: relative;
+      transition: .6s ease-in-out left;
       
       &--active {
         display: block;
