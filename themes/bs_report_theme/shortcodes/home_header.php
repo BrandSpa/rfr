@@ -81,7 +81,7 @@ function bs_home_header_sc($atts, $content = null) {
     }, 0);
 
    
-    $contents.eq( ind ).addClass('right').addClass('active');
+    $contents.eq( ind ).addClass('left').addClass('active');
   });
 </script>
 
