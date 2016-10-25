@@ -478,7 +478,9 @@ a {
       position: relative;
       transition: all .6s ease-in-out;
       float: left;
-      
+      min-height: 1px;
+      height: 100%;
+
       &.left {
         display: block;
         left: -100%;

@@ -379,7 +379,9 @@ a polygon, a path {
       display: block;
       position: relative;
       transition: all .6s ease-in-out;
-      float: left; }
+      float: left;
+      min-height: 1px;
+      height: 100%; }
       .home_header__contents li.left {
         display: block;
         left: -100%; }
