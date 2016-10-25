@@ -355,6 +355,12 @@ a polygon, a path {
     color: #fff;
     font-weight: 400;
     font-size: 1.5em; }
+  .home_header__contents li {
+    display: none;
+    position: relative;
+    transition: .6s ease-in-out left; }
+    .home_header__contents li.active {
+      display: block; }
   .home_header__paginate a {
     display: inline-block;
     width: 12px;
