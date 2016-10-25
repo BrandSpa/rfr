@@ -75,7 +75,7 @@ function bs_home_header_sc($atts, $content = null) {
     var ind = $(this).data('index');
     $active.removeClass('active');
     $active.addClass('left');
-    $active.eq( ind ).addClass('right').addClass('active');
+    $contents.eq( ind ).addClass('right').addClass('active');
   });
 </script>
 
