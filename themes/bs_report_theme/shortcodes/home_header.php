@@ -78,7 +78,7 @@ function bs_home_header_sc($atts, $content = null) {
 
     setTimeout(function() {
        $active.removeClass('left');
-    }, 0);
+    }, 600);
 
    
     $contents.eq( ind ).addClass('left').addClass('active');
