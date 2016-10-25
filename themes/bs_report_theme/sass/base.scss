@@ -479,11 +479,11 @@ a {
       transition: all .6s ease-in-out;
 
       &.left {
-        left: 100%;
+        left: -100%;
       }
 
       &.right {
-        left: -100%;
+        left: 100%;
       }
 
       &.active {
