@@ -454,6 +454,15 @@ a {
       &.active {
         display: block;
       }
+      &.left {
+        left: 0;
+        transform: translate3d(-100%, 0, 0);
+      }
+      
+      &.right {
+        left: 0;
+        transform: translate3d(100%, 0, 0);
+      }
     }
 
   }

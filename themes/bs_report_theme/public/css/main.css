@@ -361,6 +361,12 @@ a polygon, a path {
     transition: .6s ease-in-out left; }
     .home_header__contents li.active {
       display: block; }
+    .home_header__contents li.left {
+      left: 0;
+      transform: translate3d(-100%, 0, 0); }
+    .home_header__contents li.right {
+      left: 0;
+      transform: translate3d(100%, 0, 0); }
   .home_header__paginate a {
     display: inline-block;
     width: 12px;
