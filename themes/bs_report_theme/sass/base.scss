@@ -481,14 +481,19 @@ a {
       min-height: 1px;
       height: 100%;
 
-      &.left {
-        display: block;
-        left: -100%;
+      &.active.left {
+        left: 0;
+        transform: translate3d(-100%, 0, 0);
       }
 
       &.right {
         display: block;
         right: 100%;
+      }
+
+      &.next.left {
+        left: 0;
+        transform: translate3d(0, 0, 0);
       }
 
       &.active {
