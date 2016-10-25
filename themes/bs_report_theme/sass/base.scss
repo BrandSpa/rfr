@@ -474,10 +474,11 @@ a {
     width: 100%;
     
     li {
-      display: none;
+      display: block;
       position: relative;
       transition: all .6s ease-in-out;
-
+      float: left;
+      
       &.left {
         display: block;
         left: -100%;

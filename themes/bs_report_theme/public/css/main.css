@@ -376,9 +376,10 @@ a polygon, a path {
     overflow: hidden;
     width: 100%; }
     .home_header__contents li {
-      display: none;
+      display: block;
       position: relative;
-      transition: all .6s ease-in-out; }
+      transition: all .6s ease-in-out;
+      float: left; }
       .home_header__contents li.left {
         display: block;
         left: -100%; }
