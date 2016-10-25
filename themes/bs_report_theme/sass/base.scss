@@ -479,10 +479,12 @@ a {
       transition: all .6s ease-in-out;
 
       &.left {
+        display: block;
         left: -100%;
       }
 
       &.right {
+        display: block;
         left: 100%;
       }
 
