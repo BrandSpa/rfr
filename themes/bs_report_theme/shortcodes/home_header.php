@@ -77,10 +77,11 @@ function bs_home_header_sc($atts, $content = null) {
     
     $active.addClass('left');
     $contents.eq( ind ).addClass('next left');
+    $active.removeClass('active left');
+    $contents.eq( ind ).removeClass('next left').addClass('active');
 
     setTimeout(function() {
-       $active.removeClass('active left');
-       $contents.eq( ind ).removeClass('next left').addClass('active');
+       
     }, 600);
     
   });
