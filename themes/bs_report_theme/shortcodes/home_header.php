@@ -72,10 +72,10 @@ function bs_home_header_sc($atts, $content = null) {
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
     var $active = $('.home_header__contents li.active');
-    
+    var ind = $(this).data('index');
     $active.removeClass('active');
     $active.addClass('left');
-    $active.next().addClass('right').addClass('active');
+    $active.eq( ind ).addClass('right').addClass('active');
   });
 </script>
 
