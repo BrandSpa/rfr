@@ -422,6 +422,18 @@ a {
   }
 }
 
+@keyframes slideRight {
+  from {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
 
 .home_header {
   position: relative;
@@ -469,7 +481,7 @@ a {
       }
 
       &.right {
-        animation: slideLeft .6s reverse;
+        animation: slideRight .6s;
       }
 
       &.active {
