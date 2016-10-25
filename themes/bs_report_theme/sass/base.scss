@@ -472,6 +472,12 @@ a {
     position: relative;
     overflow: hidden;
     width: 100%;
+
+     > .active,
+        > .next,
+        > .prev {
+          display: block;
+        }
     
     li {
       display: none;
@@ -490,11 +496,7 @@ a {
         transform: translate3d(0, 0, 0);
       }
 
-        .active,
-        .next,
-        .prev {
-          display: block;
-        }
+       
   
     }
 
