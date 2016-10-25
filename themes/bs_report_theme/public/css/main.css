@@ -364,7 +364,9 @@ a polygon, a path {
       position: relative;
       transition: all .6s ease-in-out; }
       .home_header__contents li.active {
-        display: block; }
+        display: block;
+        left: 0;
+        transform: translate3d(0, 0, 0); }
       .home_header__contents li.left {
         left: 0;
         transform: translate3d(-100%, 0, 0); }
