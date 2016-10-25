@@ -355,18 +355,20 @@ a polygon, a path {
     color: #fff;
     font-weight: 400;
     font-size: 1.5em; }
-  .home_header__contents li {
-    display: none;
-    position: relative;
-    transition: .6s ease-in-out left; }
-    .home_header__contents li.active {
-      display: block; }
-    .home_header__contents li.left {
-      left: 0;
-      transform: translate3d(-100%, 0, 0); }
-    .home_header__contents li.right {
-      left: 0;
-      transform: translate3d(100%, 0, 0); }
+  .home_header__contents {
+    position: relative; }
+    .home_header__contents li {
+      display: none;
+      position: relative;
+      transition: all .6s ease-in-out; }
+      .home_header__contents li.active {
+        display: block; }
+      .home_header__contents li.left {
+        left: 0;
+        transform: translate3d(-100%, 0, 0); }
+      .home_header__contents li.right {
+        left: 0;
+        transform: translate3d(100%, 0, 0); }
   .home_header__paginate a {
     display: inline-block;
     width: 12px;
