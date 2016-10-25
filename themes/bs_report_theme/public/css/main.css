@@ -376,7 +376,7 @@ a polygon, a path {
     overflow: hidden;
     width: 100%; }
     .home_header__contents li {
-      display: block;
+      display: none;
       position: relative;
       transition: all .6s ease-in-out;
       float: left;
