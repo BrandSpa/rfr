@@ -384,10 +384,10 @@ a polygon, a path {
       height: 100%; }
       .home_header__contents li.left {
         display: block;
-        margin-left: -100%; }
+        left: -100%; }
       .home_header__contents li.right {
         display: block;
-        margin-left: 100%; }
+        right: 100%; }
       .home_header__contents li.active {
         display: block;
         margin-left: 0;
