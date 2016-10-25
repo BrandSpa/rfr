@@ -76,12 +76,12 @@ function bs_home_header_sc($atts, $content = null) {
     var ind = $(this).data('index');
     
     $active.addClass('left');
-    $contents.eq( ind ).addClass('next left');
+    $contents.eq( ind ).addClass('left next ');
 
   
     setTimeout(function() {
       $active.removeClass('active left');
-      $contents.eq( ind ).removeClass('next left').addClass('active');
+      $contents.eq( ind ).removeClass('left next').addClass('active');
 
     }, 600);
     
