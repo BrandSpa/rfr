@@ -380,7 +380,7 @@ a polygon, a path {
     .home_header__contents > .prev {
       display: block; }
     .home_header__contents li {
-      display: none;
+      display: block;
       position: relative;
       transition: all 1s ease-in-out; }
       .home_header__contents li.active.left {

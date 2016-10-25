@@ -67,8 +67,9 @@ function bs_home_header_sc($atts, $content = null) {
 
 <script>
   var $ = jQuery;
-  var $contents = $('.home_header__contents li');
+  var $contents = document.querySelectorAll('.home_header__contents li');
   
+
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
     var $active = $('.home_header__contents li.active');
