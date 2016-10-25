@@ -378,8 +378,7 @@ a polygon, a path {
     .home_header__contents li {
       display: none;
       position: relative;
-      transition: all .6s ease-in-out;
-      left: 0; }
+      transition: all .6s ease-in-out; }
       .home_header__contents li.left {
         left: -100%; }
       .home_header__contents li.right {
