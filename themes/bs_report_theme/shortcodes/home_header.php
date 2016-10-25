@@ -81,9 +81,9 @@ function bs_home_header_sc($atts, $content = null) {
   
     setTimeout(function() {
       $active.removeClass('active left');
-      $contents.eq( ind ).removeClass('next left').addClass('active');
+      $contents.eq( ind ).addClass('active');
 
-    }, 6000);
+    }, 600);
     
   });
 </script>
