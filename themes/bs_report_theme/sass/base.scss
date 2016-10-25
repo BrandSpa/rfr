@@ -461,11 +461,13 @@ a {
       }
 
       &.left {
+        display: block;
         left: 0;
         transform: translate3d(-100%, 0, 0);
       }
 
       &.right {
+        display: block;
         left: 0;
         transform: translate3d(100%, 0, 0);
       }
