@@ -465,13 +465,11 @@ a {
       transition: all .6s ease-in-out;
 
       &.left {
-        display: block;
         animation: slideLeft .6s;
       }
 
       &.right {
-        display: block;
-        animation: slideLeft .6s;
+        animation: slideLeft .6s reverse;
       }
 
       &.active {

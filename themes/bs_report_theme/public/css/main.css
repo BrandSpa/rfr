@@ -371,11 +371,9 @@ a polygon, a path {
       position: relative;
       transition: all .6s ease-in-out; }
       .home_header__contents li.left {
-        display: block;
         animation: slideLeft .6s; }
       .home_header__contents li.right {
-        display: block;
-        animation: slideLeft .6s; }
+        animation: slideLeft .6s reverse; }
       .home_header__contents li.active {
         display: block;
         left: 0;
