@@ -69,15 +69,15 @@ function bs_home_header_sc($atts, $content = null) {
   var $ = jQuery;
   var $contents = $('.home_header__contents li');
   
-
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
     var $active = $('.home_header__contents li.active');
     
     $active.removeClass('active');
     $active.addClass('left');
-    $active.next().addClass('active');
+    $active.removeClass('left');
     $active.next().addClass('right');
+    $active.next().addClass('active');
   });
 </script>
 
