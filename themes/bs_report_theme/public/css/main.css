@@ -381,6 +381,7 @@ a polygon, a path {
         animation: slideLeft .6s; }
       .home_header__contents li.right {
         display: block;
+        left: 0;
         animation: slideRight .6s; }
       .home_header__contents li.active {
         display: block;
