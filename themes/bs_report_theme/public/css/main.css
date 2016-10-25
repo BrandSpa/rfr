@@ -379,7 +379,7 @@ a polygon, a path {
       display: none;
       position: relative;
       transition: all .6s ease-in-out; }
-      .home_header__contents li.prev, .home_header__contents li.active.left {
+      .home_header__contents li.active.left {
         left: 0;
         transform: translate3d(-100%, 0, 0); }
       .home_header__contents li.next.left, .home_header__contents li.prev.right, .home_header__contents li.active {
@@ -389,9 +389,6 @@ a polygon, a path {
       .home_header__contents li > .next,
       .home_header__contents li > .prev {
         display: block; }
-      .home_header__contents li.right {
-        display: block;
-        right: 100%; }
   .home_header__paginate a {
     display: inline-block;
     width: 12px;
