@@ -83,7 +83,7 @@ function bs_home_header_sc($atts, $content = null) {
       $active.removeClass('active left');
       $contents.eq( ind ).removeClass('left next').addClass('active');
 
-    }, 600);
+    }, 1000);
     
   });
 </script>

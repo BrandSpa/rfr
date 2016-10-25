@@ -382,7 +382,7 @@ a polygon, a path {
     .home_header__contents li {
       display: none;
       position: relative;
-      transition: all .6s ease-in-out; }
+      transition: all 1s ease-in-out; }
       .home_header__contents li.active.left {
         left: 0;
         transform: translate3d(-100%, 0, 0); }

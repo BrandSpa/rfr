@@ -482,7 +482,7 @@ a {
     li {
       display: none;
       position: relative;
-      transition: all .6s ease-in-out;
+      transition: all 1s ease-in-out;
 
       &.active.left {
         left: 0;
