@@ -460,12 +460,12 @@ a {
     font-weight: 300;
     color: #fff;
     padding-bottom: 40px;
-     margin-right: 5em;
+    margin-right: (12 / 1) * 1%;
 
     &:after {
       content: '';
       padding-bottom: 50px;
-       margin-right: 5em;
+      margin-right: (12 / 1) * 1%;
       height: 5px;
       width: 100%;
       display: block;
@@ -478,7 +478,7 @@ a {
     color: #fff;
     font-weight: 400;
     font-size: (24 / 16) * 1em;
-     margin-right: 5em;
+     margin-right: (12 / 1) * 1%;
   }
 
   &__contents {

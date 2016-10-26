@@ -367,11 +367,11 @@ a polygon, a path {
     font-weight: 300;
     color: #fff;
     padding-bottom: 40px;
-    margin-right: 5em; }
+    margin-right: 12%; }
     .home_header__title:after {
       content: '';
       padding-bottom: 50px;
-      margin-right: 5em;
+      margin-right: 12%;
       height: 5px;
       width: 100%;
       display: block;
@@ -380,7 +380,7 @@ a polygon, a path {
     color: #fff;
     font-weight: 400;
     font-size: 1.5em;
-    margin-right: 5em; }
+    margin-right: 12%; }
   .home_header__contents {
     position: relative;
     overflow: hidden;
