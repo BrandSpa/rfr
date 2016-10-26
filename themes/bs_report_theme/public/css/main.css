@@ -379,11 +379,13 @@ a polygon, a path {
   .home_header__content {
     color: #fff;
     font-weight: 400;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    padding-right: 5em; }
   .home_header__contents {
     position: relative;
     overflow: hidden;
-    width: 100%; }
+    width: 100%;
+    padding-top: 50px; }
     .home_header__contents ul {
       padding: 0;
       width: 300%;

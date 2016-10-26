@@ -478,12 +478,14 @@ a {
     color: #fff;
     font-weight: 400;
     font-size: (24 / 16) * 1em;
+    padding-right: 5em;
   }
 
   &__contents {
     position: relative;
     overflow: hidden;
     width: 100%;
+    padding-top: 50px;
 
     ul {
       padding: 0;
