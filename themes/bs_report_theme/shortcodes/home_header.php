@@ -65,7 +65,9 @@ function bs_home_header_sc($atts, $content = null) {
  
   </div>
   <div class="col-md-6">
-    <?php echo apply_filters('the_content', $content); ?>
+    <div class="home_header__content_right">
+      <?php echo apply_filters('the_content', $content); ?>
+    </div>
   </div>
 </div>
 
