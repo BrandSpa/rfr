@@ -357,7 +357,7 @@ a polygon, a path {
   padding: 130px 0;
   padding-left: 8.33333%; }
   .home_header__background {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     /* Preserve aspet ratio */
