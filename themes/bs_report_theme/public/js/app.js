@@ -40443,14 +40443,6 @@
 	exports.default = homeHeader;
 	function homeHeader() {
 
-	  function changeImage() {
-	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
-
-	    var bg = document.querySelector('.home_header__background:nth-child(' + count + ')');
-	    $('.home_header__background').removeClass('home_header__background--active');
-	    bg.classList.add('home_header__background--active');
-	  }
-
 	  function changeSlide() {
 	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
@@ -40465,6 +40457,13 @@
 	      }
 	    }
 
+	    function changeBg() {
+
+	      var bg = document.querySelector('.home_header__background:nth-child(' + (counter + 1) + ')');
+	      $('.home_header__background').removeClass('home_header__background--active');
+	      bg.classList.add('home_header__background--active');
+	    }
+
 	    function transform() {
 	      var leftAuto = counter * 100;
 
@@ -40475,7 +40474,8 @@
 
 	    return {
 	      transform: transform,
-	      changeIndex: changeIndex
+	      changeIndex: changeIndex,
+	      changeBg: changeBg
 	    };
 	  }
 
@@ -40484,9 +40484,8 @@
 	  var slide = changeSlide();
 
 	  var autoplay = setInterval(function () {
-	    changeImage(count + 1);
-
 	    slide.changeIndex();
+	    slide.changeBg();
 	    slide.transform();
 	  }, interval);
 
