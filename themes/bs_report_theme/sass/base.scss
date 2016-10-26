@@ -461,7 +461,15 @@ a {
     color: #fff;
     padding-right: 5em;
     padding-bottom: 40px;
-    border-bottom: 5px solid $red_orange;
+    &:after {
+      content: '';
+      padding-right: 5em;
+      height: 5px;
+      width: 100%;
+      display: block;
+      border-bottom: 5px solid $red_orange;
+
+    }
   }
 
   &__content {

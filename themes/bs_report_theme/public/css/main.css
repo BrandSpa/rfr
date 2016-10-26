@@ -367,8 +367,14 @@ a polygon, a path {
     font-weight: 300;
     color: #fff;
     padding-right: 5em;
-    padding-bottom: 40px;
-    border-bottom: 5px solid #FC3938; }
+    padding-bottom: 40px; }
+    .home_header__title:after {
+      content: '';
+      padding-right: 5em;
+      height: 5px;
+      width: 100%;
+      display: block;
+      border-bottom: 5px solid #FC3938; }
   .home_header__content {
     color: #fff;
     font-weight: 400;
