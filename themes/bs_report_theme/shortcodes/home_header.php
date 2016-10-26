@@ -129,7 +129,8 @@ function bs_home_header_sc($atts, $content = null) {
            array(
             "type" => "textfield",
             "heading" => "Interval slides",
-            "param_name" => "interval"
+            "param_name" => "interval",
+            "value" => "8000"
           )
         )
       ) 
