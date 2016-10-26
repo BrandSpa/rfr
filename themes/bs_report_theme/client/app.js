@@ -23,7 +23,7 @@ $(() => {
     el: '#acn_reports'
   });
   
-  function changeSlide(index = 0) {
+  function changeSlide(count = 0) {
       let leftAuto = count * 100;
 
       $('a[data-index]').removeClass('active');

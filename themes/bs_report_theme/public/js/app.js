@@ -98,7 +98,7 @@
 	  });
 
 	  function changeSlide() {
-	    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 	    var leftAuto = count * 100;
 
