@@ -40455,7 +40455,7 @@
 	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 	    var counter = count;
-	    var leftAuto = count * 100;
+	    var leftAuto = counter * 100;
 	    var slides = document.querySelectorAll('.home_header__contents li');
 
 	    function changeIndex() {

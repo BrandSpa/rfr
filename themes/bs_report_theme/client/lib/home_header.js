@@ -10,7 +10,7 @@ export default function homeHeader() {
 
   function changeSlide(count = 0) {
       let counter = count;
-      let leftAuto = count * 100;
+      let leftAuto = counter * 100;
       let slides = document.querySelectorAll('.home_header__contents li');
 
       function changeIndex() {
