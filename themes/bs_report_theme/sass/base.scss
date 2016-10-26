@@ -523,7 +523,8 @@ a {
       width: 12px;
       height: 12px;
       background: #fff;
-      &:hover {
+      
+      &:hover, &.active {
         background: $red_orange;
       }
     }

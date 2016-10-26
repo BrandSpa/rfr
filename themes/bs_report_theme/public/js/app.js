@@ -110,7 +110,7 @@
 	      count++;
 	    }
 
-	    document.querySelector('a[data-index=\'' + (count - 1) + '\']').style.background = 'red';
+	    document.querySelector('a[data-index=\'' + (count - 1) + '\']').classList.add('active');
 
 	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
 	  }, 8000);

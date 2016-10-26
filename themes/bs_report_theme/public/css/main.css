@@ -406,7 +406,7 @@ a polygon, a path {
     width: 12px;
     height: 12px;
     background: #fff; }
-    .home_header__paginate a:hover {
+    .home_header__paginate a:hover, .home_header__paginate a.active {
       background: #FC3938; }
 
 .input-red, input {

@@ -56,7 +56,7 @@ function bs_home_header_sc($atts, $content = null) {
     </div>
 
     <div class="home_header__paginate">
-      <a href="#" data-index="0"></a>
+      <a href="#" class="active" data-index="0"></a>
       <a href="#" data-index="1"></a>
       <a href="#" data-index="2"></a>
     </div>
