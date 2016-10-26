@@ -100,15 +100,17 @@
 	  //home slider
 	  var slides = document.querySelectorAll('.home_header__contents li');
 	  var count = 0;
-	  var leftAuto = count * 100;
-
-	  if (count >= slides.length - 1) {
-	    count = 0;
-	  } else {
-	    count++;
-	  }
 
 	  setInterval(function () {
+
+	    var leftAuto = count * 100;
+
+	    if (count >= slides.length - 1) {
+	      count = 0;
+	    } else {
+	      count++;
+	    }
+
 	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
 	  }, 1000);
 

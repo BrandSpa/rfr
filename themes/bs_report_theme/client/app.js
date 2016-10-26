@@ -25,8 +25,11 @@ $(() => {
 
   //home slider
   let slides = document.querySelectorAll('.home_header__contents li');
-  let count = 0;
-  let leftAuto = count * 100;
+    let count = 0;
+
+    setInterval(() => {
+
+    let leftAuto = count * 100;
   
     if(count >= slides.length - 1) {
       count = 0;
@@ -34,7 +37,6 @@ $(() => {
       count++;
     }
 
-    setInterval(() => {
       document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
     }, 1000);
 
