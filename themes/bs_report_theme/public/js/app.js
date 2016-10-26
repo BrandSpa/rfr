@@ -111,7 +111,7 @@
 	      count++;
 	    }
 
-	    document.querySelectorAll('a[data-index]').each(function (el) {
+	    (0, _jquery2.default)('a[data-index]').each(function (el) {
 	      if (el.classList) el.classList.remove('active');
 	    });
 
