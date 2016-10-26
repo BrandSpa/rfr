@@ -100,33 +100,26 @@
 	  function changeSlide() {
 	    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
-	    var count = index;
-	    var slides = document.querySelectorAll('.home_header__contents li');
+	    var leftAuto = count * 100;
 
-	    function slide() {
-	      var leftAuto = count * 100;
+	    (0, _jquery2.default)('a[data-index]').removeClass('active');
 
-	      (0, _jquery2.default)('a[data-index]').removeClass('active');
+	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
 
-	      document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
-
-	      document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
-
-	      if (count == slides.length - 1) {
-	        count = 0;
-	      } else {
-	        count++;
-	      }
-	    }
-
-	    return slide();
+	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
 	  }
 
 	  //home slider
 	  var count = 1;
 
 	  var autoplay = setInterval(function () {
+	    var slides = document.querySelectorAll('.home_header__contents li');
 	    changeSlide(count);
+	    if (count == slides.length - 1) {
+	      count = 0;
+	    } else {
+	      count++;
+	    }
 	  }, 1000);
 
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
