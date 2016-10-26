@@ -354,7 +354,8 @@ a polygon, a path {
   min-height: 500px;
   width: 100%;
   overflow: hidden;
-  padding: 130px 0; }
+  padding: 130px 0;
+  padding-left: 12%; }
   .home_header__background {
     position: absolute;
     top: 0;
