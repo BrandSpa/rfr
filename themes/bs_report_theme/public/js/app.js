@@ -40483,7 +40483,7 @@
 
 	  var count = 1;
 	  var interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
-	  var slide = changeSlide(count);
+	  var slide = changeSlide();
 
 	  var autoplay = setInterval(function () {
 	    changeImage(count + 1);

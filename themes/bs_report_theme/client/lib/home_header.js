@@ -24,7 +24,7 @@ export default function homeHeader() {
       
       function transform() {
         let leftAuto = counter * 100;
-        
+
         $('a[data-index]').removeClass('active');
         document.querySelector(`a[data-index='${count}']`).classList.add('active');
         document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
@@ -39,7 +39,7 @@ export default function homeHeader() {
 
   let count = 1;
   let interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
-  let slide = changeSlide(count);
+  let slide = changeSlide();
 
   let autoplay = setInterval(() => {
     changeImage(count + 1);
