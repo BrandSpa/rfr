@@ -24,12 +24,13 @@ $(() => {
   });
 
   //home slider
-   let $contents = document.querySelectorAll('.home_header__contents li');
+   let slides = document.querySelectorAll('.home_header__contents li');
   
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
-   let ind = $(this).data('index');
-   let left = ind * 100;
+    console.log(slides.length);
+    let ind = $(this).data('index');
+    let left = ind * 100;
     document.querySelector('.home_header__contents ul').style.left = `-${left}%`;
   });
 

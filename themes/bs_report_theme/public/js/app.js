@@ -98,10 +98,11 @@
 	  });
 
 	  //home slider
-	  var $contents = document.querySelectorAll('.home_header__contents li');
+	  var slides = document.querySelectorAll('.home_header__contents li');
 
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
+	    console.log(slides.length);
 	    var ind = (0, _jquery2.default)(this).data('index');
 	    var left = ind * 100;
 	    document.querySelector('.home_header__contents ul').style.left = '-' + left + '%';
