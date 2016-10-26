@@ -478,7 +478,6 @@ a {
     color: #fff;
     font-weight: 400;
     font-size: (24 / 16) * 1em;
-    padding-right: 5em;
   }
 
   &__contents {
@@ -506,6 +505,7 @@ a {
       position: relative;
       transition: all 1s ease-in-out;
       float: left;
+      padding-right: 5em;
       width: (100 / 3) * 1%;
 
       &.active.left {
