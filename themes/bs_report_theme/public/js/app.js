@@ -40454,13 +40454,27 @@
 	  function changeSlide() {
 	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
+	    var counter = count;
 	    var leftAuto = count * 100;
 
-	    $('a[data-index]').removeClass('active');
+	    function changeIndex() {
+	      if (counter == slides.length - 1) {
+	        counter = 0;
+	      } else {
+	        counter++;
+	      }
+	    }
 
-	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
+	    function transform() {
+	      $('a[data-index]').removeClass('active');
+	      document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
+	      document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
+	    }
 
-	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
+	    return {
+	      transform: transform,
+	      changeIndex: changeIndex
+	    };
 	  }
 
 	  var count = 1;
@@ -40468,12 +40482,9 @@
 	  var autoplay = setInterval(function () {
 	    var slides = document.querySelectorAll('.home_header__contents li');
 	    changeImage(count + 1);
-	    changeSlide(count);
-	    if (count == slides.length - 1) {
-	      count = 0;
-	    } else {
-	      count++;
-	    }
+	    var slide = changeSlide(count);
+	    slide.changeIndex();
+	    slide.transform();
 	  }, interval);
 
 	  $('.home_header__paginate a').on('click', function (e) {

@@ -9,13 +9,28 @@ export default function homeHeader() {
   }
 
   function changeSlide(count = 0) {
+      let counter = count;
       let leftAuto = count * 100;
+      
+      function changeIndex() {
+        if(counter == slides.length - 1) {
+            counter = 0;
+        } else {
+          counter++;
+        }
+      }
+      
+      function transform() {
+        $('a[data-index]').removeClass('active');
+        document.querySelector(`a[data-index='${count}']`).classList.add('active');
+        document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
+      }
 
-      $('a[data-index]').removeClass('active');
+      return {
+        transform,
+        changeIndex
+      }
 
-      document.querySelector(`a[data-index='${count}']`).classList.add('active');
-  
-      document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
   }
 
   let count = 1;
@@ -23,13 +38,9 @@ export default function homeHeader() {
   let autoplay = setInterval(() => {
     let slides = document.querySelectorAll('.home_header__contents li');
     changeImage(count + 1);
-    changeSlide(count);
-      if(count == slides.length - 1) {
-        count = 0;
-      } else {
-        count++;
-      }
-
+    let slide = changeSlide(count);
+    slide.changeIndex();
+    slide.transform();
   }, interval);
 
   $('.home_header__paginate a').on('click', function(e) {
