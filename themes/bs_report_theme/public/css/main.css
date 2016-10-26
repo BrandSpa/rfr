@@ -371,7 +371,7 @@ a polygon, a path {
     min-height: 100%;
     display: none; }
     .home_header__background--active {
-      animation: fade 400ms;
+      animation: fade 400ms ease-in-out;
       display: block; }
   .home_header__title {
     font-size: 5.3125em;
