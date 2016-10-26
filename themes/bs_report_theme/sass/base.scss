@@ -483,7 +483,9 @@ a {
       display: block;
       position: relative;
       transition: all 1s ease-in-out;
-
+      float: left;
+      width: 33%;
+      
       &.active.left {
         left: 0;
         transform: translate3d(-100%, 0, 0);
