@@ -25,8 +25,9 @@ $(() => {
   
   function changeSlide(index = 0) {
     let count = index;
+    let slides = document.querySelectorAll('.home_header__contents li');
 
-    function slide() {
+    function slide() {  
       let leftAuto = count * 100;
 
       $('a[data-index]').removeClass('active');
@@ -47,7 +48,6 @@ $(() => {
   }
 
   //home slider
-  let slides = document.querySelectorAll('.home_header__contents li');
   let count = 1;
 
   let autoplay = setInterval(() => {

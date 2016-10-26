@@ -101,6 +101,7 @@
 	    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 	    var count = index;
+	    var slides = document.querySelectorAll('.home_header__contents li');
 
 	    function slide() {
 	      var leftAuto = count * 100;
@@ -122,7 +123,6 @@
 	  }
 
 	  //home slider
-	  var slides = document.querySelectorAll('.home_header__contents li');
 	  var count = 1;
 
 	  var autoplay = setInterval(function () {
