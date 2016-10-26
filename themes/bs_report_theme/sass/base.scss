@@ -459,13 +459,11 @@ a {
     font-size: (85 / 16) * 1em;
     font-weight: 300;
     color: #fff;
-    padding-right: 5em;
     padding-bottom: 40px;
 
     &:after {
       content: '';
       padding-bottom: 50px;
-      padding-right: 5em;
       height: 5px;
       width: 100%;
       display: block;
@@ -505,7 +503,7 @@ a {
       position: relative;
       transition: all 1s ease-in-out;
       float: left;
-      padding-right: 5em;
+      margin-right: 5em;
       width: (100 / 3) * 1%;
 
       &.active.left {
