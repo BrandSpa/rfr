@@ -102,8 +102,10 @@
 	  var count = 0;
 	  var leftAuto = count * 100;
 
-	  if (count == slides.length - 1) {
+	  if (count >= slides.length - 1) {
 	    count = 0;
+	  } else {
+	    count++;
 	  }
 
 	  setInterval(function () {
