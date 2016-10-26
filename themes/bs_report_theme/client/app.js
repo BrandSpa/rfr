@@ -36,6 +36,7 @@ $(() => {
       count++;
     }
 
+    console.log(document.querySelector(`a[data-index='${count}']`));
     document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
   }, 8000);
 
