@@ -25,20 +25,19 @@ $(() => {
 
   //home slider
   let slides = document.querySelectorAll('.home_header__contents li');
-    let count = 0;
+  let count = 0;
 
-    setInterval(() => {
-
+  setInterval(() => {
     let leftAuto = count * 100;
-  
+
     if(count >= slides.length - 1) {
       count = 0;
     } else {
       count++;
     }
 
-      document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
-    }, 1000);
+    document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
+  }, 8000);
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();

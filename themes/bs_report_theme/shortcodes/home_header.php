@@ -25,7 +25,7 @@ function bs_home_header_sc($atts, $content = null) {
   <?php endif; ?>
 
   <div class="col-md-6">
-    <div class="home_header__contents">
+    <div class="home_header__contents" data-interval="8000">
       <ul>
         <li data-index="0" class="active">
           <h1 class="home_header__title">

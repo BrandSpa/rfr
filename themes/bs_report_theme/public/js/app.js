@@ -102,7 +102,6 @@
 	  var count = 0;
 
 	  setInterval(function () {
-
 	    var leftAuto = count * 100;
 
 	    if (count >= slides.length - 1) {
@@ -112,7 +111,7 @@
 	    }
 
 	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
-	  }, 1000);
+	  }, 8000);
 
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
