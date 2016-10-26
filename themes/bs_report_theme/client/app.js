@@ -36,7 +36,7 @@ $(() => {
     } else {
       count++;
     }
-
+∆
     $('a[data-index]').each((el) => {
       if(el.classList) el.classList.remove('active');
     });
