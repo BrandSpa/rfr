@@ -375,6 +375,8 @@ a polygon, a path {
     position: relative;
     overflow: hidden;
     width: 100%; }
+    .home_header__contents ul {
+      width: 300%; }
     .home_header__contents > .active,
     .home_header__contents > .next,
     .home_header__contents > .prev {
@@ -382,7 +384,9 @@ a polygon, a path {
     .home_header__contents li {
       display: block;
       position: relative;
-      transition: all 1s ease-in-out; }
+      transition: all 1s ease-in-out;
+      float: left;
+      width: 33%; }
       .home_header__contents li.active.left {
         left: 0;
         transform: translate3d(-100%, 0, 0); }
