@@ -35,9 +35,10 @@ $(() => {
     } else {
       count++;
     }
-
+    
+    document.querySelector('a[data-index]').classList.remove('active');
     document.querySelector(`a[data-index='${count - 1}']`).classList.add('active');
-
+  
     document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
   }, 8000);
 
