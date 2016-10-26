@@ -111,10 +111,7 @@
 	      count++;
 	    }
 
-	    (0, _jquery2.default)('a[data-index]').each(function (el) {
-	      if (el.classList) el.classList.remove('active');
-	    });
-
+	    (0, _jquery2.default)('a[data-index]').removeClass('active');
 	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
 
 	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
