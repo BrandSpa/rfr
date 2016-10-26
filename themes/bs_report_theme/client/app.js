@@ -29,7 +29,12 @@ $(() => {
 
   let autoplay = setInterval(() => {
     let leftAuto = count * 100;
-    console.log(count);
+
+    $('a[data-index]').removeClass('active');
+
+    document.querySelector(`a[data-index='${count}']`).classList.add('active');
+  
+    document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
 
     if(count == slides.length - 1) {
       count = 0;
@@ -37,10 +42,6 @@ $(() => {
       count++;
     }
 
-    $('a[data-index]').removeClass('active');
-    document.querySelector(`a[data-index='${count}']`).classList.add('active');
-  
-    document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
   }, 1000);
 
 

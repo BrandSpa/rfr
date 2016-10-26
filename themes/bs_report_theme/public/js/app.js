@@ -103,18 +103,18 @@
 
 	  var autoplay = setInterval(function () {
 	    var leftAuto = count * 100;
-	    console.log(count);
+
+	    (0, _jquery2.default)('a[data-index]').removeClass('active');
+
+	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
+
+	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
 
 	    if (count == slides.length - 1) {
 	      count = 0;
 	    } else {
 	      count++;
 	    }
-
-	    (0, _jquery2.default)('a[data-index]').removeClass('active');
-	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
-
-	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
 	  }, 1000);
 
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
