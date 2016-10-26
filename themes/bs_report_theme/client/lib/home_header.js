@@ -19,7 +19,7 @@ export default function homeHeader() {
   }
 
   let count = 1;
-
+  let interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
   let autoplay = setInterval(() => {
     let slides = document.querySelectorAll('.home_header__contents li');
     changeImage(count + 1);
@@ -30,7 +30,7 @@ export default function homeHeader() {
         count++;
       }
 
-  }, 1000);
+  }, interval);
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();

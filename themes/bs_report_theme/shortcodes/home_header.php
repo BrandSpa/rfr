@@ -15,7 +15,7 @@ function bs_home_header_sc($atts, $content = null) {
   ob_start();
 ?>
 
-<div class="home_header">
+<div class="home_header" data-interval="8000">
   <?php if(is_array( explode(',', $at['backgrounds']) )): ?>
     <?php  foreach(explode(',', $at['backgrounds']) as $key => $imageId):  ?>
       <img 
@@ -27,7 +27,7 @@ function bs_home_header_sc($atts, $content = null) {
   <?php endif; ?>
 
   <div class="col-md-6">
-    <div class="home_header__contents" data-interval="8000">
+    <div class="home_header__contents" >
       <ul>
         <li data-index="0" class="active">
           <h1 class="home_header__title">
