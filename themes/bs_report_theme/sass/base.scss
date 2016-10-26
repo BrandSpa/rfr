@@ -461,6 +461,7 @@ a {
     font-weight: 300;
     color: #fff;
     padding-bottom: 40px;
+    margin-right: (1 / 12) * 100%;
 
     &:after {
       content: '';
@@ -469,6 +470,7 @@ a {
       width: 100%;
       display: block;
       border-bottom: 5px solid $red_orange;
+      margin-right: (1 / 12) * 100%;
 
     }
   }
@@ -477,6 +479,7 @@ a {
     color: #fff;
     font-weight: 400;
     font-size: (24 / 16) * 1em;
+    margin-right: (1 / 12) * 100%;
   }
 
   &__contents {

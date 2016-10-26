@@ -367,18 +367,21 @@ a polygon, a path {
     font-size: 5.3125em;
     font-weight: 300;
     color: #fff;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    margin-right: 8.33333%; }
     .home_header__title:after {
       content: '';
       padding-bottom: 50px;
       height: 5px;
       width: 100%;
       display: block;
-      border-bottom: 5px solid #FC3938; }
+      border-bottom: 5px solid #FC3938;
+      margin-right: 8.33333%; }
   .home_header__content {
     color: #fff;
     font-weight: 400;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-right: 8.33333%; }
   .home_header__contents {
     position: relative;
     overflow: hidden;
