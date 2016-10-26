@@ -99,7 +99,7 @@
 
 	  //home slider
 	  var slides = document.querySelectorAll('.home_header__contents li');
-	  var count = 0;
+	  var count = 1;
 
 	  var autoplay = setInterval(function () {
 	    var leftAuto = count * 100;

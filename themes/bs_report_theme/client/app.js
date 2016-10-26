@@ -25,7 +25,7 @@ $(() => {
 
   //home slider
   let slides = document.querySelectorAll('.home_header__contents li');
-  let count = 0;
+  let count = 1;
 
   let autoplay = setInterval(() => {
     let leftAuto = count * 100;
