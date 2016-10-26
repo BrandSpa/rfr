@@ -82,6 +82,10 @@
 
 	var _modal_lang2 = _interopRequireDefault(_modal_lang);
 
+	var _home_header = __webpack_require__(90);
+
+	var _home_header2 = _interopRequireDefault(_home_header);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
@@ -92,41 +96,10 @@
 	  (0, _search_country2.default)();
 	  (0, _subscribe_form2.default)();
 	  (0, _modal_lang2.default)();
+	  (0, _home_header2.default)();
 
 	  new _vue2.default({
 	    el: '#acn_reports'
-	  });
-
-	  function changeSlide() {
-	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-
-	    var leftAuto = count * 100;
-
-	    (0, _jquery2.default)('a[data-index]').removeClass('active');
-
-	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
-
-	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
-	  }
-
-	  //home slider
-	  var count = 1;
-
-	  var autoplay = setInterval(function () {
-	    var slides = document.querySelectorAll('.home_header__contents li');
-	    changeSlide(count);
-	    if (count == slides.length - 1) {
-	      count = 0;
-	    } else {
-	      count++;
-	    }
-	  }, 1000);
-
-	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
-	    e.preventDefault();
-	    clearInterval(autoplay);
-	    var ind = (0, _jquery2.default)(this).data('index');
-	    changeSlide(ind);
 	  });
 	});
 
@@ -40456,6 +40429,50 @@
 	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ },
+/* 89 */,
+/* 90 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = homeHeader;
+	function homeHeader() {
+	  function changeSlide() {
+	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+	    var leftAuto = count * 100;
+
+	    $('a[data-index]').removeClass('active');
+
+	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
+
+	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
+	  }
+
+	  var count = 1;
+
+	  var autoplay = setInterval(function () {
+	    var slides = document.querySelectorAll('.home_header__contents li');
+	    changeSlide(count);
+	    if (count == slides.length - 1) {
+	      count = 0;
+	    } else {
+	      count++;
+	    }
+	  }, 1000);
+
+	  $('.home_header__paginate a').on('click', function (e) {
+	    e.preventDefault();
+	    clearInterval(autoplay);
+	    var ind = $(this).data('index');
+	    changeSlide(ind);
+	  });
+	}
 
 /***/ }
 /******/ ]);
