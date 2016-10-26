@@ -16,7 +16,6 @@ export default function homeHeader() {
       document.querySelector(`a[data-index='${count}']`).classList.add('active');
   
       document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
-
   }
 
   let count = 1;
@@ -39,6 +38,7 @@ export default function homeHeader() {
     clearInterval(autoplay);
     let ind = $(this).data('index');
     changeSlide(ind); 
+    changeImage(ind + 1);
   });
 
 }

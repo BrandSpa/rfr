@@ -63,7 +63,7 @@ function bs_home_header_sc($atts, $content = null) {
  
   </div>
   <div class="col-md-6">
-
+    
   </div>
 </div>
 
