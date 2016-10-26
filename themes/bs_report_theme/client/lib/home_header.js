@@ -14,7 +14,8 @@ export default function homeHeader() {
       let slides = document.querySelectorAll('.home_header__contents li');
 
       function changeIndex() {
-        console.log();
+        console.log(counter);
+       
         if(counter == slides.length - 1) {
             counter = 0;
         } else {
@@ -38,7 +39,7 @@ export default function homeHeader() {
   let count = 1;
   let interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
   let slide = changeSlide(count);
-  
+
   let autoplay = setInterval(() => {
     changeImage(count + 1);
     

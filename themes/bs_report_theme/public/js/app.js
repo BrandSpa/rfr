@@ -40459,7 +40459,8 @@
 	    var slides = document.querySelectorAll('.home_header__contents li');
 
 	    function changeIndex() {
-	      console.log();
+	      console.log(counter);
+
 	      if (counter == slides.length - 1) {
 	        counter = 0;
 	      } else {
