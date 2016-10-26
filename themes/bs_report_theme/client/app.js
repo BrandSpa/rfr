@@ -22,12 +22,8 @@ $(() => {
   new Vue({
     el: '#acn_reports'
   });
-
-  //home slider
-  let slides = document.querySelectorAll('.home_header__contents li');
-  let count = 1;
-
-  let autoplay = setInterval(() => {
+  
+  function changeSlide(count = 0) {
     let leftAuto = count * 100;
 
     $('a[data-index]').removeClass('active');
@@ -42,6 +38,14 @@ $(() => {
       count++;
     }
 
+  }
+
+  //home slider
+  let slides = document.querySelectorAll('.home_header__contents li');
+  let count = 1;
+
+  let autoplay = setInterval(() => {
+    changeSlide(count);
   }, 1000);
 
 
@@ -49,9 +53,7 @@ $(() => {
     e.preventDefault();
     clearInterval(autoplay);
     let ind = $(this).data('index');
-    let left = ind * 100;
-
-    document.querySelector('.home_header__contents ul').style.left = `-${left}%`;
+    changeSlide(ind); 
   });
 
 })

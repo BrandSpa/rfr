@@ -97,11 +97,9 @@
 	    el: '#acn_reports'
 	  });
 
-	  //home slider
-	  var slides = document.querySelectorAll('.home_header__contents li');
-	  var count = 1;
+	  function changeSlide() {
+	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
-	  var autoplay = setInterval(function () {
 	    var leftAuto = count * 100;
 
 	    (0, _jquery2.default)('a[data-index]').removeClass('active');
@@ -115,15 +113,21 @@
 	    } else {
 	      count++;
 	    }
+	  }
+
+	  //home slider
+	  var slides = document.querySelectorAll('.home_header__contents li');
+	  var count = 1;
+
+	  var autoplay = setInterval(function () {
+	    changeSlide(count);
 	  }, 1000);
 
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
 	    clearInterval(autoplay);
 	    var ind = (0, _jquery2.default)(this).data('index');
-	    var left = ind * 100;
-
-	    document.querySelector('.home_header__contents ul').style.left = '-' + left + '%';
+	    changeSlide(ind);
 	  });
 	});
 
