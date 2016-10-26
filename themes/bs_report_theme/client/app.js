@@ -28,9 +28,12 @@ $(() => {
   
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
-    console.log(slides.length);
     let ind = $(this).data('index');
     let left = ind * 100;
+    console.log(slides);
+    setInterval(() => {
+      console.log(8);
+    }, 8000);
     document.querySelector('.home_header__contents ul').style.left = `-${left}%`;
   });
 
