@@ -366,10 +366,12 @@ a polygon, a path {
     font-size: 5.3125em;
     font-weight: 300;
     color: #fff;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    margin-right: 5em; }
     .home_header__title:after {
       content: '';
       padding-bottom: 50px;
+      margin-right: 5em;
       height: 5px;
       width: 100%;
       display: block;
@@ -377,7 +379,8 @@ a polygon, a path {
   .home_header__content {
     color: #fff;
     font-weight: 400;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-right: 5em; }
   .home_header__contents {
     position: relative;
     overflow: hidden;
@@ -398,7 +401,6 @@ a polygon, a path {
       position: relative;
       transition: all 1s ease-in-out;
       float: left;
-      margin-right: 5em;
       width: 33.33333%; }
       .home_header__contents li.active.left {
         left: 0;
