@@ -40447,7 +40447,8 @@
 	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
 
 	    var bg = document.querySelector('.home_header__background:nth-child(' + count + ')');
-	    bg.classList('home_header__background--active');
+	    $('.home_header__background').removeClass('home_header__background--active');
+	    bg.classList.add('home_header__background--active');
 	  }
 
 	  function changeSlide() {

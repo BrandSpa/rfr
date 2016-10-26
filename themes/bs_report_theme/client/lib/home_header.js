@@ -4,7 +4,8 @@ export default function homeHeader() {
 
   function changeImage(count = 2) {
      let bg = document.querySelector(`.home_header__background:nth-child(${count})`);
-     bg.classList('home_header__background--active');
+     $('.home_header__background').removeClass('home_header__background--active');
+     bg.classList.add('home_header__background--active');
   }
 
   function changeSlide(count = 0) {
