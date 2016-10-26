@@ -40493,8 +40493,10 @@
 	    e.preventDefault();
 	    clearInterval(autoplay);
 	    var ind = $(this).data('index');
-	    changeSlide(ind);
-	    changeImage(ind + 1);
+	    var slide = changeSlide();
+	    slide.changeIndex();
+	    slide.changeBg();
+	    slide.transform();
 	  });
 	}
 
