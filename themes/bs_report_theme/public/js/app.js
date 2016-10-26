@@ -103,7 +103,7 @@
 
 	  var autoplay = setInterval(function () {
 	    var leftAuto = count * 100;
-
+	    console.log(count);
 	    if (count >= slides.length - 1) {
 	      count = 0;
 	    } else {
@@ -114,7 +114,7 @@
 	    document.querySelector('a[data-index=\'' + (count - 1) + '\']').classList.add('active');
 
 	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
-	  }, 8000);
+	  }, 1000);
 
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
