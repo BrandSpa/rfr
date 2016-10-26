@@ -9,13 +9,14 @@ function bs_home_header_sc($atts, $content = null) {
       "content_2" => "",
        "title_3" => "",
       "content_3" => "",
-      "content" => ""
+      "content" => "",
+      "interval" => "8000"
     ), $atts );
 
   ob_start();
 ?>
 
-<div class="home_header" data-interval="8000">
+<div class="home_header" data-interval="<?php echo $at['interval'] ?>">
   <?php if(is_array( explode(',', $at['backgrounds']) )): ?>
     <?php  foreach(explode(',', $at['backgrounds']) as $key => $imageId):  ?>
       <img 
@@ -124,6 +125,11 @@ function bs_home_header_sc($atts, $content = null) {
             "type" => "textarea_html",
             "heading" => "content right",
             "param_name" => "content"
+          ),
+           array(
+            "type" => "textfield",
+            "heading" => "Interval slides",
+            "param_name" => "interval"
           )
         )
       ) 
