@@ -104,7 +104,7 @@
 	    e.preventDefault();
 	    var ind = (0, _jquery2.default)(this).data('index');
 	    var left = ind * 100;
-	    console.log('-' + left + '%');
+	    document.querySelector('.home_header__contents ul').style.left = '-' + left + '%';
 	  });
 	});
 

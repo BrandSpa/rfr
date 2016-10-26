@@ -30,7 +30,7 @@ $(() => {
     e.preventDefault();
    let ind = $(this).data('index');
    let left = ind * 100;
-   console.log(`-${left}%`);
+    document.querySelector('.home_header__contents ul').style.left = `-${left}%`;
   });
 
 })
