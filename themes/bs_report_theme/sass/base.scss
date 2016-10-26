@@ -446,9 +446,13 @@ a {
   padding-left: (1 / 12) * 100%;
   
   &__background {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed; 
+      top: 0; 
+      left: 0; 
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
     display: none;
 
     &--active {
