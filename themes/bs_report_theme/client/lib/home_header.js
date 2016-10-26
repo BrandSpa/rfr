@@ -10,7 +10,6 @@ export default function homeHeader() {
 
   function changeSlide(count = 0) {
       let counter = count;
-      let leftAuto = counter * 100;
       let slides = document.querySelectorAll('.home_header__contents li');
 
       function changeIndex() {
@@ -24,6 +23,8 @@ export default function homeHeader() {
       }
       
       function transform() {
+        let leftAuto = counter * 100;
+        
         $('a[data-index]').removeClass('active');
         document.querySelector(`a[data-index='${count}']`).classList.add('active');
         document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;

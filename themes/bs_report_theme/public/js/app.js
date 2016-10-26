@@ -40455,7 +40455,6 @@
 	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
 	    var counter = count;
-	    var leftAuto = counter * 100;
 	    var slides = document.querySelectorAll('.home_header__contents li');
 
 	    function changeIndex() {
@@ -40469,6 +40468,8 @@
 	    }
 
 	    function transform() {
+	      var leftAuto = counter * 100;
+
 	      $('a[data-index]').removeClass('active');
 	      document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
 	      document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
