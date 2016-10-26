@@ -37,7 +37,7 @@ $(() => {
       count++;
     }
 
-    document.querySelectorAll('a[data-index]').classList.remove('active');
+    document.querySelectorAll('a[data-index]').classList.toggle('active');
     document.querySelector(`a[data-index='${count}']`).classList.add('active');
   
     document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
