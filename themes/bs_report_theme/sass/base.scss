@@ -474,6 +474,7 @@ a {
     width: 100%;
 
     ul {
+      padding: 0;
       width: (3 * 100) * 1%;
     }
 
@@ -488,7 +489,7 @@ a {
       position: relative;
       transition: all 1s ease-in-out;
       float: left;
-      width: 33%;
+      width: (100 / 3) * 1%;
 
       &.active.left {
         left: 0;
