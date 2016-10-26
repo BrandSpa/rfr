@@ -51,7 +51,7 @@ export default function homeHeader() {
     e.preventDefault();
     clearInterval(autoplay);
     let ind = $(this).data('index');
-    let slide = changeSlide(ind);
+    let slide = changeSlide(ind);P
     slide.changeBg();
     slide.transform();
   });

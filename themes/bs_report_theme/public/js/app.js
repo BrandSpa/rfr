@@ -40493,7 +40493,7 @@
 	    e.preventDefault();
 	    clearInterval(autoplay);
 	    var ind = $(this).data('index');
-	    var slide = changeSlide(ind);
+	    var slide = changeSlide(ind);P;
 	    slide.changeBg();
 	    slide.transform();
 	  });
