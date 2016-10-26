@@ -104,14 +104,14 @@
 	  var autoplay = setInterval(function () {
 	    var leftAuto = count * 100;
 	    console.log(count);
-	    if (count >= slides.length - 1) {
+	    if (count == slides.length - 1) {
 	      count = 0;
 	    } else {
 	      count++;
 	    }
 
 	    document.querySelector('a[data-index]').classList.remove('active');
-	    document.querySelector('a[data-index=\'' + (count - 1) + '\']').classList.add('active');
+	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
 
 	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
 	  }, 1000);
