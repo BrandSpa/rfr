@@ -476,6 +476,8 @@ a {
     ul {
       padding: 0;
       width: (3 * 100) * 1%;
+      position: relative;
+      left: 0;
     }
 
      > .active,

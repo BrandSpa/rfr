@@ -67,25 +67,6 @@ function bs_home_header_sc($atts, $content = null) {
   </div>
 </div>
 
-<script>
-  var $ = jQuery;
-  var $contents = document.querySelectorAll('.home_header__contents li');
-  
-
-  $('.home_header__paginate a').on('click', function(e) {
-    e.preventDefault();
-    var $active = $('.home_header__contents li.active');
-    var ind = $(this).data('index');
-    $active.addClass('left');
-    $contents.eq( ind ).addClass('left next ');
-
-    setTimeout(function() {
-      $active.removeClass('active left');
-      $contents.eq( ind ).addClass('active').removeClass('left next');
-    }, 1000);
-  
-  });
-</script>
 
 <?php
 

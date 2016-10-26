@@ -96,6 +96,15 @@
 	  new _vue2.default({
 	    el: '#acn_reports'
 	  });
+
+	  //home slider
+	  var $contents = document.querySelectorAll('.home_header__contents li');
+
+	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
+	    e.preventDefault();
+	    var ind = (0, _jquery2.default)(this).data('index');
+	    console.log(ind * 100);
+	  });
 	});
 
 /***/ },

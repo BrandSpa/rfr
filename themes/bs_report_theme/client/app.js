@@ -23,4 +23,13 @@ $(() => {
     el: '#acn_reports'
   });
 
+  //home slider
+   let $contents = document.querySelectorAll('.home_header__contents li');
+  
+  $('.home_header__paginate a').on('click', function(e) {
+    e.preventDefault();
+   let ind = $(this).data('index');
+   console.log(ind * 100);
+  });
+
 })
