@@ -460,6 +460,7 @@ a {
     font-weight: 300;
     color: #fff;
     padding-right: 5em;
+    border-bottom: 5px solid $red_orange;
   }
 
   &__content {
@@ -523,7 +524,7 @@ a {
       width: 12px;
       height: 12px;
       background: #fff;
-      
+
       &:hover, &.active {
         background: $red_orange;
       }
