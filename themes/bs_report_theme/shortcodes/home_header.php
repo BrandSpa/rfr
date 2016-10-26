@@ -9,7 +9,9 @@ function bs_home_header_sc($atts, $content = null) {
       "content_2" => "",
        "title_3" => "",
       "content_3" => "",
+      "content" => ""
     ), $atts );
+    
   ob_start();
 ?>
 
@@ -63,7 +65,7 @@ function bs_home_header_sc($atts, $content = null) {
  
   </div>
   <div class="col-md-6">
-    
+    <?php echo $at['content'] ?>
   </div>
 </div>
 
@@ -115,6 +117,11 @@ function bs_home_header_sc($atts, $content = null) {
             "type" => "textarea",
             "heading" => "content",
             "param_name" => "content_3"
+          ),
+          array(
+            "type" => "textarea_html",
+            "heading" => "content right",
+            "param_name" => "content"
           )
         )
       ) 

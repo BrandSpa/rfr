@@ -32,7 +32,6 @@ export default function homeHeader() {
 
   }, 1000);
 
-
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
     clearInterval(autoplay);
