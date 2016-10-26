@@ -103,7 +103,8 @@
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
 	    var ind = (0, _jquery2.default)(this).data('index');
-	    console.log(ind * 100);
+	    var left = ind * 100;
+	    console.log('-' + left + '%');
 	  });
 	});
 

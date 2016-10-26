@@ -29,7 +29,8 @@ $(() => {
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
    let ind = $(this).data('index');
-   console.log(ind * 100);
+   let left = ind * 100;
+   console.log(`-${left}%`);
   });
 
 })
