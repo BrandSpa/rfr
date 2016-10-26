@@ -98,22 +98,27 @@
 	  });
 
 	  function changeSlide() {
-	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+	    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
-	    count = function count(_count) {};
-	    var leftAuto = count * 100;
+	    var count = index;
 
-	    (0, _jquery2.default)('a[data-index]').removeClass('active');
+	    function slide() {
+	      var leftAuto = count * 100;
 
-	    document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
+	      (0, _jquery2.default)('a[data-index]').removeClass('active');
 
-	    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
+	      document.querySelector('a[data-index=\'' + count + '\']').classList.add('active');
 
-	    if (count == slides.length - 1) {
-	      count = 0;
-	    } else {
-	      count++;
+	      document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
+
+	      if (count == slides.length - 1) {
+	        count = 0;
+	      } else {
+	        count++;
+	      }
 	    }
+
+	    return slide();
 	  }
 
 	  //home slider

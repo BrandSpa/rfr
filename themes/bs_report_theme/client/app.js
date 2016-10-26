@@ -26,7 +26,7 @@ $(() => {
   function changeSlide(index = 0) {
     let count = index;
 
-    function (count) {
+    function slide() {
       let leftAuto = count * 100;
 
       $('a[data-index]').removeClass('active');
@@ -42,6 +42,7 @@ $(() => {
       }
     }
 
+    return slide();
 
   }
 
