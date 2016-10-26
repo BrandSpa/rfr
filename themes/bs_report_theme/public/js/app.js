@@ -40456,6 +40456,7 @@
 
 	    var counter = count;
 	    var leftAuto = count * 100;
+	    var slides = document.querySelectorAll('.home_header__contents li');
 
 	    function changeIndex() {
 	      if (counter == slides.length - 1) {
@@ -40480,7 +40481,6 @@
 	  var count = 1;
 	  var interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
 	  var autoplay = setInterval(function () {
-	    var slides = document.querySelectorAll('.home_header__contents li');
 	    changeImage(count + 1);
 	    var slide = changeSlide(count);
 	    slide.changeIndex();
