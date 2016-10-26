@@ -23,20 +23,25 @@ $(() => {
     el: '#acn_reports'
   });
   
-  function changeSlide(count = 0) {
-    let leftAuto = count * 100;
+  function changeSlide(index = 0) {
+    let count = index;
 
-    $('a[data-index]').removeClass('active');
+    function (count) {
+      let leftAuto = count * 100;
 
-    document.querySelector(`a[data-index='${count}']`).classList.add('active');
-  
-    document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
+      $('a[data-index]').removeClass('active');
 
-    if(count == slides.length - 1) {
-      count = 0;
-    } else {
-      count++;
+      document.querySelector(`a[data-index='${count}']`).classList.add('active');
+    
+      document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
+
+      if(count == slides.length - 1) {
+        count = 0;
+      } else {
+        count++;
+      }
     }
+
 
   }
 

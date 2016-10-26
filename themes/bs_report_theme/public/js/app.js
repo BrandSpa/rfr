@@ -100,6 +100,7 @@
 	  function changeSlide() {
 	    var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
+	    count = function count(_count) {};
 	    var leftAuto = count * 100;
 
 	    (0, _jquery2.default)('a[data-index]').removeClass('active');
