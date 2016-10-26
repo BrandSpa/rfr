@@ -13,10 +13,12 @@ export default function changeSlide(count = 0) {
       }
 
        function changeBg() {
-         
         let bg = document.querySelector(`.home_header__background:nth-child(${counter + 1})`);
-        $('.home_header__background').removeClass('home_header__background--active');
-        bg.classList.add('home_header__background--active');
+        if(bg) {
+          $('.home_header__background').removeClass('home_header__background--active');
+          bg.classList.add('home_header__background--active');
+       };
+        
       }
       
       function transform() {
