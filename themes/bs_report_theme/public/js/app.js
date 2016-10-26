@@ -40459,6 +40459,7 @@
 	    var slides = document.querySelectorAll('.home_header__contents li');
 
 	    function changeIndex() {
+	      console.log();
 	      if (counter == slides.length - 1) {
 	        counter = 0;
 	      } else {
@@ -40480,9 +40481,11 @@
 
 	  var count = 1;
 	  var interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
+	  var slide = changeSlide(count);
+
 	  var autoplay = setInterval(function () {
 	    changeImage(count + 1);
-	    var slide = changeSlide(count);
+
 	    slide.changeIndex();
 	    slide.transform();
 	  }, interval);
