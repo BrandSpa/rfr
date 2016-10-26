@@ -478,6 +478,7 @@ a {
       width: (3 * 100) * 1%;
       position: relative;
       left: 0;
+      transition: all 400ms ease-in-out;
     }
 
      > .active,
