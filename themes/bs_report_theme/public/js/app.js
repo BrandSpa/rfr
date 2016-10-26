@@ -101,7 +101,7 @@
 	  var slides = document.querySelectorAll('.home_header__contents li');
 	  var count = 0;
 
-	  setInterval(function () {
+	  var autoplay = setInterval(function () {
 	    var leftAuto = count * 100;
 
 	    if (count >= slides.length - 1) {
@@ -115,6 +115,7 @@
 
 	  (0, _jquery2.default)('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
+	    clearInterval(autoplay);
 	    var ind = (0, _jquery2.default)(this).data('index');
 	    var left = ind * 100;
 
