@@ -13,8 +13,6 @@ export default function homeHeader() {
       let slides = document.querySelectorAll('.home_header__contents li');
 
       function changeIndex() {
-        console.log(counter);
-       
         if(counter == slides.length - 1) {
             counter = 0;
         } else {
@@ -26,7 +24,7 @@ export default function homeHeader() {
         let leftAuto = counter * 100;
 
         $('a[data-index]').removeClass('active');
-        document.querySelector(`a[data-index='${count}']`).classList.add('active');
+        document.querySelector(`a[data-index='${counter}']`).classList.add('active');
         document.querySelector('.home_header__contents ul').style.left = `-${leftAuto}%`;
       }
 
