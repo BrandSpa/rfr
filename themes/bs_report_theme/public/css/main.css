@@ -570,7 +570,8 @@ form button {
     .nav {
       left: -80%;
       overflow: scroll;
-      width: 80%; } }
+      width: 80%;
+      background: #fff; } }
   .nav__logo {
     display: -ms-flexbox;
     display: flex;
