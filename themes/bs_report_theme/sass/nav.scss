@@ -4,6 +4,11 @@
   @media #{$tablet}, #{$mobile} {
     display: block;
   }
+
+  & > a {
+    width: 90px;
+    float: left;
+  }
   
 }
 

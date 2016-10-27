@@ -547,6 +547,9 @@ form button {
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
     .nav_mobile {
       display: block; } }
+  .nav_mobile > a {
+    width: 90px;
+    float: left; }
 
 .nav {
   position: fixed;
