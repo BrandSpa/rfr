@@ -552,6 +552,8 @@ form button {
     background: #fff;
     width: 90px;
     float: left; }
+  .nav_mobile__subtitle {
+    float: left; }
 
 .nav {
   position: fixed;
