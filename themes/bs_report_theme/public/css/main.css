@@ -590,6 +590,9 @@ form button {
   .nav__subtitle {
     padding: 40px 30px;
     color: #1A2127; }
+    @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+      .nav__subtitle {
+        display: none; } }
   .nav .menu {
     padding: 0 30px; }
     .nav .menu > li {

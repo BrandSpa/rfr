@@ -41,6 +41,7 @@
     @include center-vertical;
     text-align: center;
     margin: 0 auto;
+
     @media #{$tablet}, #{$mobile} {
       display: none;
     }
@@ -57,6 +58,10 @@
   &__subtitle {
     padding: 40px 30px;
     color: $dark_jungle_green;
+    
+    @media #{$tablet}, #{$mobile} {
+      display: none;
+    }
   }
 
   .menu {
