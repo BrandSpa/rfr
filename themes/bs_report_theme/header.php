@@ -43,6 +43,12 @@
     REPORT 2016
   </h4>
 
+     <a href="#" id="open-nav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+
 </div>
 
 <div class="nav">
