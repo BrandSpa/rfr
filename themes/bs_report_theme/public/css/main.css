@@ -234,11 +234,7 @@ h6 {
 #open-nav {
   display: none;
   text-align: right;
-  float: right;
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  z-index: 1005; }
+  float: right; }
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     #open-nav {
       display: block; } }

@@ -23,13 +23,15 @@
     <span class="map__info_situation">
       <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
     </span>
+
+    <a href="#" id="open-nav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
   </div>
 
-<a href="#" id="open-nav">
-  <span class="icon-bar"></span>
-  <span class="icon-bar"></span>
-  <span class="icon-bar"></span>
-</a>
+
 
 <div class="nav_mobile">
   <a href="<?php echo $home ?>">

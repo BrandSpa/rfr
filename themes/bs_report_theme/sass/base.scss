@@ -272,10 +272,6 @@ h6 {
   display: none;
   text-align: right;
   float: right;
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  z-index: 1005;
 
   @media #{$mobile}, #{$tablet} {
     display: block;
