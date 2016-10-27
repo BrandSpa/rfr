@@ -82,7 +82,7 @@
 
 	var _modal_lang2 = _interopRequireDefault(_modal_lang);
 
-	var _home_header = __webpack_require__(90);
+	var _home_header = __webpack_require__(89);
 
 	var _home_header2 = _interopRequireDefault(_home_header);
 
@@ -96,6 +96,7 @@
 	  (0, _search_country2.default)();
 	  (0, _subscribe_form2.default)();
 	  (0, _modal_lang2.default)();
+
 	  (0, _home_header2.default)();
 
 	  new _vue2.default({
@@ -40431,8 +40432,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 89 */,
-/* 90 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40442,7 +40442,7 @@
 	});
 	exports.default = homeHeader;
 
-	var _change_slide = __webpack_require__(91);
+	var _change_slide = __webpack_require__(90);
 
 	var _change_slide2 = _interopRequireDefault(_change_slide);
 
@@ -40450,14 +40450,20 @@
 
 	function homeHeader() {
 	  var count = 1;
-	  var interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
+	  var $homeHeader = $('.home_header');
+	  var interval = $homeHeader.data('interval') ? $('.home_header').data('interval') : 4000;
+	  var startAutoplay = $homeHeader.data('autoplay') ? true : false;
 	  var slide = (0, _change_slide2.default)();
+	  console.log('autoplay', startAutoplay);
 
-	  var autoplay = setInterval(function () {
-	    slide.changeIndex();
-	    slide.changeBg();
-	    slide.transform();
-	  }, interval);
+	  if (startAutoplay) {
+
+	    var _autoplay = setInterval(function () {
+	      slide.changeIndex();
+	      slide.changeBg();
+	      slide.transform();
+	    }, interval);
+	  }
 
 	  $('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
@@ -40470,7 +40476,7 @@
 	}
 
 /***/ },
-/* 91 */
+/* 90 */
 /***/ function(module, exports) {
 
 	'use strict';
