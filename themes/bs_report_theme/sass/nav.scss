@@ -6,10 +6,13 @@
   }
 
   & > a {
+    background: #fff;
     width: 90px;
     float: left;
   }
   
+  background: $desert_storm;
+
 }
 
 .nav {

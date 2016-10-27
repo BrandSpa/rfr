@@ -543,11 +543,13 @@ form button {
   padding-top: 0; }
 
 .nav_mobile {
-  display: none; }
+  display: none;
+  background: #F8F8F8; }
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
     .nav_mobile {
       display: block; } }
   .nav_mobile > a {
+    background: #fff;
     width: 90px;
     float: left; }
 
