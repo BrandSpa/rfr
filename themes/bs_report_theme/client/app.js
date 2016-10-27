@@ -18,6 +18,7 @@ $(() => {
   searchCountry();
   subscribeForm();
   modalLang();
+  
   homeHeader();
 
   new Vue({

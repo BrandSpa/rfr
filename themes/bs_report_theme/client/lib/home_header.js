@@ -4,13 +4,15 @@ import changeSlide from './change_slide';
 export default function homeHeader() {
   let count = 1;
   let interval = $('.home_header').data('interval') ? $('.home_header').data('interval') : 4000;
+  let startAutoplay = $('.home_header').data('autoplay') ? true : false;
   let slide = changeSlide();
-
-  let autoplay = setInterval(() => {
-    slide.changeIndex();
-    slide.changeBg();
-    slide.transform();
-  }, interval);
+  if(startAutoplay) {
+    let autoplay = setInterval(() => {
+      slide.changeIndex();
+      slide.changeBg();
+      slide.transform();
+    }, interval);
+  }
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
