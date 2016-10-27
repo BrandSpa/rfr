@@ -592,9 +592,6 @@ form button {
     color: #1A2127; }
   .nav .menu {
     padding: 0 30px; }
-    @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-      .nav .menu {
-        padding: 30px; } }
     .nav .menu > li {
       height: 40px; }
       .nav .menu > li > a {

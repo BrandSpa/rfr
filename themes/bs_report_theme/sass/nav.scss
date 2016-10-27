@@ -101,10 +101,6 @@
 
   .menu {
     padding: 0 30px;
-    
-    @media #{$tablet}, #{$mobile} { 
-      padding: 30px;
-    }
 
     & > li {
       height: 40px;
