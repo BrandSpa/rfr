@@ -24,6 +24,42 @@
   }
 }
 
+#open-nav {
+  display: none;
+  text-align: right;
+  float: right;
+  margin: 20px;
+
+  @media #{$mobile}, #{$tablet} {
+    display: block;
+  }
+
+  &.active {
+    .icon-bar {
+      &:first-child {
+        transform: rotate(45deg);
+        transform-origin: 50% 18%;
+      }
+
+      &:nth-child(2) {
+      transform: rotate(-45deg);
+      transform-origin: 10% 20%;
+      }
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+   &:hover {
+     .icon-bar {
+       margin-bottom: 6px;
+      background: $red_orange;
+     }
+  }
+}
+
 .nav {
   position: fixed;
   left: 0;
