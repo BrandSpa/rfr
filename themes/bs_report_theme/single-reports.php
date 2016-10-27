@@ -6,8 +6,6 @@
 
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <?php include 'shortcodes/select_country.php' ?>
-
   <div class="report__header" 
     style="background: url(<?php echo get_template_directory_uri() ."/public/img/bg/" . str_replace(' ', '-',  get_post_meta($post->ID, 'report_country_key', true))  . ".jpg " ?>) no-repeat; background-size:cover ">
     
