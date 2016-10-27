@@ -41,10 +41,8 @@
   </a>
 
   <h4 class="nav_mobile__subtitle">
-    RELIGIOUS<br>
-    <span class="color-red">FREEDOM</span><br>
-    REPORT<br>
-    2016
+    RELIGIOUS <span class="color-red">FREEDOM</span><br>
+    REPORT 2016
   </h4>
 
 </div>
