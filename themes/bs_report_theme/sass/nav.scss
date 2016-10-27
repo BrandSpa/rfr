@@ -37,6 +37,7 @@
   @media #{$tablet}, #{$mobile} {
     left: -200px;
     overflow: scroll;
+    width: 80%;
   }
 
   &__logo {
@@ -68,6 +69,11 @@
 
   .menu {
     padding: 0 30px;
+    
+    @media #{$tablet}, #{$mobile} { 
+      padding: 30px;
+    }
+
     & > li {
       height: 40px;
       & > a {
