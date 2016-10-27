@@ -24,11 +24,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
     </span>
 
-    <a href="#" id="open-nav">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a>
+ 
   </div>
 
 
@@ -46,6 +42,12 @@
     RELIGIOUS <span class="color-red">FREEDOM</span><br>
     REPORT 2016
   </h4>
+
+     <a href="#" id="open-nav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
 
 </div>
 
