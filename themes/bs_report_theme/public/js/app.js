@@ -54,6 +54,10 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
+	var _nav = __webpack_require__(92);
+
+	var _nav2 = _interopRequireDefault(_nav);
+
 	var _map = __webpack_require__(17);
 
 	var _map2 = _interopRequireDefault(_map);
@@ -89,6 +93,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
+	  (0, _nav2.default)();
 	  (0, _map2.default)();
 	  (0, _religions_chart2.default)();
 	  (0, _country_select2.default)();
@@ -40520,6 +40525,53 @@
 	    changeIndex: changeIndex,
 	    changeBg: changeBg
 	  };
+	}
+
+/***/ },
+/* 91 */,
+/* 92 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = nav;
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function nav() {
+	  var nav = (0, _jquery2.default)('.nav');
+	  var bod = (0, _jquery2.default)('body');
+	  var open = true;
+	  var navLeft = '0';
+	  var bodyMarginLeft = '200px';
+
+	  document.getElementById('open-nav').addEventListener('click', openNav);
+
+	  function openNav(evt) {
+	    evt.preventDefault();
+	    var $nav = (0, _jquery2.default)(this);
+
+	    if (!open) {
+	      $nav.removeClass('active');
+	      navLeft = '-200px';
+	      zIndex = '0';
+	    } else {
+	      $nav.addClass('active');
+	      navLeft = '0';
+	      zIndex = '1001';
+	    }
+
+	    nav.css({ 'left': navLeft, 'z-index': zIndex });
+
+	    open = !open;
+	  }
 	}
 
 /***/ }

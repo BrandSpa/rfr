@@ -86,34 +86,4 @@
    ?>
 </div>
 
-<script type="text/javascript">
-  var nav = jQuery('.nav');
-  var bod = jQuery('body');
-  var open = true;
-  var navLeft = '0'; 
-  var bodyMarginLeft = '200px'; 
-
-  jQuery('#open-nav').on('click', openNav);
-
-  function openNav(evt) {
-    evt.preventDefault();
-    var $nav = jQuery(this);
-
-    if(!open) {
-      $nav.removeClass('active');
-      navLeft = '-200px';
-      zIndex = '0';
-    } else {
-      $nav.addClass('active');
-       navLeft = '0'; 
-       zIndex = '1001';
-    }
-
-    nav.css({'left': navLeft, 'z-index': zIndex});
-
-    open = !open;
-  }
-</script>
-
-
 <?php include 'shortcodes/select_country.php' ?>

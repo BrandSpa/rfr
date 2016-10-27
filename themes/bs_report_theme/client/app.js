@@ -1,6 +1,7 @@
 'use strict';
 import $ from 'jquery';
 import Vue from 'vue';
+import nav from './lib/nav';
 import map from './components/map';
 import religionsChart from './components/religions_chart';
 import countrySelect from './components/country_select';
@@ -11,6 +12,7 @@ import modalLang from './components/modal_lang';
 import homeHeader from './lib/home_header';
 
 $(() => {
+  nav();
   map();
   religionsChart();
   countrySelect();
