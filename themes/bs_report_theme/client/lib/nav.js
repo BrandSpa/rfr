@@ -2,29 +2,28 @@
 import $ from 'jquery';
 
 export default function nav() {
-   var nav = $('.nav');
-  var bod = $('body');
-  var open = true;
-  var navLeft = '0'; 
-  var bodyMarginLeft = '200px'; 
+  let nav = $('.nav');
+  let bod = $('body');
+  let open = true;
+  
+  let bodyMarginLeft = '200px'; 
+  let style = {'left': '0', 'z-index': '0'};
 
   document.getElementById('open-nav').addEventListener('click', openNav);
 
   function openNav(evt) {
     evt.preventDefault();
-    var $nav = $(this);
+    let $nav = $(this);
 
     if(!open) {
       $nav.removeClass('active');
-      navLeft = '-200px';
-      zIndex = '0';
+      style = {...style, 'left': '-200px', 'z-index': '0'};
     } else {
       $nav.addClass('active');
-       navLeft = '0'; 
-       zIndex = '1001';
+      style = {...style, 'left': '0', 'z-index': '1001'};
     }
 
-    nav.css({'left': navLeft, 'z-index': zIndex});
+    nav.css(style);
 
     open = !open;
   }
