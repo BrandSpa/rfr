@@ -20933,8 +20933,6 @@
 	  var nav = (0, _jquery2.default)('.nav');
 	  var bod = (0, _jquery2.default)('body');
 	  var open = true;
-
-	  var bodyMarginLeft = '200px';
 	  var style = { 'left': '0', 'z-index': '0' };
 
 	  document.getElementById('open-nav').addEventListener('click', openNav);
@@ -20945,7 +20943,7 @@
 
 	    if (!open) {
 	      $nav.removeClass('active');
-	      style = _extends({}, style, { 'left': '-200px', 'z-index': '0' });
+	      style = _extends({}, style, { 'left': '-80%', 'z-index': '0' });
 	    } else {
 	      $nav.addClass('active');
 	      style = _extends({}, style, { 'left': '0', 'z-index': '1001' });

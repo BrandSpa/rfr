@@ -4,9 +4,7 @@ import $ from 'jquery';
 export default function nav() {
   let nav = $('.nav');
   let bod = $('body');
-  let open = true;
-  
-  let bodyMarginLeft = '200px'; 
+  let open = true; 
   let style = {'left': '0', 'z-index': '0'};
 
   document.getElementById('open-nav').addEventListener('click', openNav);
@@ -17,7 +15,7 @@ export default function nav() {
 
     if(!open) {
       $nav.removeClass('active');
-      style = {...style, 'left': '-200px', 'z-index': '0'};
+      style = {...style, 'left': '-80%', 'z-index': '0'};
     } else {
       $nav.addClass('active');
       style = {...style, 'left': '0', 'z-index': '1001'};
