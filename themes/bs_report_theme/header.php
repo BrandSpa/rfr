@@ -51,9 +51,9 @@
 
   </div>
 
-  <h4 class="color-red nav__subtitle">
+  <h4 class="nav__subtitle">
     RELIGIOUS<br>
-    <span class="color-white">FREEDOM</span><br>
+    <span class="color-red">FREEDOM</span><br>
     REPORT<br>
     2016
   </h4>
