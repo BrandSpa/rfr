@@ -97,10 +97,6 @@
   &__subtitle {
     padding: 40px 30px;
     color: $dark_jungle_green;
-    
-    @media #{$tablet}, #{$mobile} {
-      display: none;
-    }
   }
 
   .menu {
