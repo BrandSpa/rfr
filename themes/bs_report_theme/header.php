@@ -30,7 +30,7 @@
 
 
 <div class="nav_mobile">
-  <a href="<?php echo $home ?>" class="nav_mobile__logos">
+  <a href="<?php echo $home ?>" class="nav_mobile__logo">
       <?php if( !empty( get_option("logo_" . str_replace(' ', '_', getOfficeCountry())  )) ): ?>
         <img src='<?php echo get_option("logo_" . str_replace(' ', '_', getOfficeCountry())  ) ?>'  alt="acn logo" class="img-responsive" />
       <?php else: ?>
@@ -42,12 +42,6 @@
     RELIGIOUS <span class="color-red">FREEDOM</span><br>
     REPORT 2016
   </h4>
-
-     <a href="#" id="open-nav">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a>
 
 </div>
 
