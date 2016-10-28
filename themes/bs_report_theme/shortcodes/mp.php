@@ -96,4 +96,4 @@
           document.querySelector('.map__search').classList.add('map__search--show');
         });
         
-      </script>
+</script>
