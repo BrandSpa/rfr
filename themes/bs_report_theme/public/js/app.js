@@ -21046,14 +21046,14 @@
 	  });
 	}
 
-	function setStyle(el) {
-	  el.style("transition", "all 300ms ease").style("fill", "#536D7F");
+	function setStyle(el, fill) {
+	  el.style("transition", "all 300ms ease").style("fill", fill);
 
 	  el.classed("animate-path", true);
 	}
 
-	function setStyleOut(el) {
-	  el.style("transition", "all 300ms ease").style("fill", "#FFF");
+	function setStyleOut(el, fill) {
+	  el.style("transition", "all 300ms ease").style("fill", fill);
 	  el.classed("animate-path", false);
 	}
 
@@ -21065,17 +21065,17 @@
 	  });
 	}
 
-	function showMapInfo(el, report) {
+	function showMapInfo(el, report, fill) {
 	  var info = document.querySelector('.map__info');
 
 	  el.on('mousemove', function (evt) {
 	    var countryInfo = report.meta_country;
 	    showInfo(info, countryInfo);
-	    setStyle(el);
+	    setStyle(el, fill);
 	  });
 
 	  el.on('mouseleave', function (evt) {
-	    setStyleOut(el);
+	    setStyleOut(el, fill);
 	    info.style.opacity = 0;
 	  });
 	}
@@ -21104,10 +21104,9 @@
 	  })(reports);
 
 	  if (report && report.guid) {
-	    console.log(colors[report.meta_nature_persecution]);
-	    el.attr('fill', colors[report.meta_nature_persecution]);
+	    var fill = colors[report.meta_nature_persecution];
 	    SetLink.call(this, report.guid);
-	    showMapInfo(el, report);
+	    showMapInfo(el, report, fill);
 	  }
 	}
 

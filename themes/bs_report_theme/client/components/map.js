@@ -21,18 +21,18 @@ function showInfo(info, txt) {
     });
 }
 
-function setStyle(el) {
+function setStyle(el, fill) {
   el
   .style("transition", "all 300ms ease")
-  .style("fill", "#536D7F");
+  .style("fill", fill);
 
   el.classed("animate-path", true);
 }
 
-function setStyleOut(el) {
+function setStyleOut(el, fill) {
   el
   .style("transition", "all 300ms ease")
-  .style("fill", "#FFF");
+  .style("fill", fill);
    el.classed("animate-path", false); 
 }
 
@@ -44,17 +44,17 @@ function appendMap(mapUrl,container, cb) {
   });
 }
 
-function showMapInfo(el, report) {
+function showMapInfo(el, report, fill) {
   let info = document.querySelector('.map__info');
   
   el.on('mousemove', evt => {
     let countryInfo = report.meta_country;
     showInfo(info, countryInfo);
-    setStyle(el);
+    setStyle(el, fill);
   });
 
   el.on('mouseleave', evt => {
-    setStyleOut(el);
+    setStyleOut(el, fill);
     info.style.opacity = 0;
   });
 }
@@ -76,10 +76,9 @@ function setReport(reports) {
   let report = getReport(report => report.meta_country == countryName)(reports);
 
   if(report && report.guid) {
-    console.log(colors[report.meta_nature_persecution]);
-    el.attr('fill', colors[report.meta_nature_persecution]); 
+    let fill = colors[report.meta_nature_persecution];
     SetLink.call(this, report.guid);
-    showMapInfo(el, report)
+    showMapInfo(el, report, fill)
   }
 }
 
