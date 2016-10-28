@@ -37549,6 +37549,10 @@
 
 
 	    methods: {
+	      close: function close(e) {
+	        if (e) e.preventDefault();
+	        (0, _jquery2.default)('.map__search').removeClass('map__search--show');
+	      },
 	      getIcon: function getIcon(name) {
 	        return this.dir + '/public/img/icons/' + name + '.svg';
 	      },
@@ -37604,6 +37608,10 @@
 	var _vue = __webpack_require__(14);
 
 	var _vue2 = _interopRequireDefault(_vue);
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

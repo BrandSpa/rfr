@@ -1,7 +1,7 @@
 <template id="search-country-template">
 <div class="map__search">
 
-  <a href="#" class="map__search__close"><i class="ion-close"></i></a>
+  <a href="#" class="map__search__close" v-on:click="close"><i class="ion-close"></i></a>
   
   <div class="col-md-3"></div>
   <div class="col-md-6 col-sm-10">

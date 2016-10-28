@@ -1,5 +1,6 @@
 'use strict';
 import Vue from 'vue';
+import $ from 'jquery';
 
 export default function() {
   Vue.component('search-country', {
@@ -19,6 +20,11 @@ export default function() {
     },
 
     methods: {
+
+      close(e) {
+        if(e) e.preventDefault();
+        $('.map__search').removeClass('map__search--show');
+      },
 
         getIcon(name) {
          return `${this.dir}/public/img/icons/${name}.svg`
