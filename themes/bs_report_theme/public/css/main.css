@@ -534,6 +534,7 @@ form button {
   float: left;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 1005;
   height: 60px;
   background: #F8F8F8; }
