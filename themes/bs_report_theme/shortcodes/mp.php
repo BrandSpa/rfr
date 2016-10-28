@@ -27,8 +27,16 @@
       </div>
 
       <div class="col-md-3">
-        <search-country></search-country>
+       <button class="map__controllers__more button"><?php echo gett('List'); ?></button>
+
+        <div class="map__search_input-container">
+          <input
+            type="text"
+            class="map__search_input" 
+          />
+        </div>
       </div>
+
         <div class="col-md-12">
           <div class="map__controllers">
             <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
@@ -36,8 +44,7 @@
         </div>
     </div>
 
-   
-
+  
     <div id="map-container"></div>
 
   <div class="col-md-6 map_list">
