@@ -67,7 +67,6 @@ function showMapInfo(el, report, fill) {
     .append(() => this );
 }
 
-
 const getReport = (fn) => reports => reports.filter(fn)[0];
 
 function setReport(reports) {

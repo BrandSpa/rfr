@@ -28,7 +28,7 @@
 
       <div class="col-md-3">
         <div class="col-xs-6">
-          <button><?php echo gett('List'); ?></button>
+          <button class="button"><?php echo gett('List'); ?></button>
         </div>
         <div class="col-xs-6">
 
