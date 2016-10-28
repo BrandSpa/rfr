@@ -37545,6 +37545,7 @@
 	    },
 	    ready: function ready() {
 	      this.items = JSON.parse(this.reports);
+	      (0, _jquery2.default)('.map__search_input').focus();
 	    },
 
 

@@ -17,6 +17,7 @@ export default function() {
 
     ready() {
       this.items = JSON.parse(this.reports);
+      $('.map__search_input').focus();
     },
 
     methods: {
