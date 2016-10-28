@@ -20999,8 +20999,13 @@
 	        d3.select("#map-container svg").call(zoomed);
 
 	        var paths = d3.select(mapContainer).selectAll("path");
-	        polygons.each(setReport.call(reports));
-	        paths.each(setReport.call(reports));
+	        polygons.each(function () {
+	          setReport.call(this, reports);
+	        });
+
+	        paths.each(function () {
+	          setReport.call(this, reports);
+	        });
 	      });
 	    }
 	  });
@@ -21085,7 +21090,6 @@
 	};
 
 	function setReport(reports) {
-	  console.log(d3.select(this));
 	  var el = d3.select(this);
 	  var countryName = el.attr("id").replace('-', ' ');
 	  var report = getReport(function (report) {
