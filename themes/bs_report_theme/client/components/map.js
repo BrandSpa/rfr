@@ -64,8 +64,8 @@ function showMapInfo(el, report) {
 
 const getReport = (fn) => reports => reports.filter(fn)[0];
 
-function setReport(el) {
-  // let el = d3.select(this);
+function setReport() {
+  let el = d3.select(this);
   let countryName = el.attr("id").replace('-', ' ');
   let report = getReport(report => report.meta_country == countryName)(reports);
 
