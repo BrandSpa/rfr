@@ -48,7 +48,7 @@ export default function() {
           let results = [];
           let key = evt.keyCode;
           let arrowKeys = [37, 38, 39, 40];
-
+          console.log(arrowKeys.indexOf(key) == -1);
           if (query.length > 1 && arrowKeys.indexOf(key) == -1 ) {
             console.log('enter');
 
