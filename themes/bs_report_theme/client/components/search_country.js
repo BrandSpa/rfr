@@ -46,6 +46,7 @@ export default function() {
           let key = evt.keyCode;
 
           if (query.length > 2) {
+            this.current = 0;
             results = reports.filter( pst => {
               return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
             });

@@ -37571,6 +37571,7 @@
 	        var key = evt.keyCode;
 
 	        if (query.length > 2) {
+	          this.current = 0;
 	          results = reports.filter(function (pst) {
 	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
