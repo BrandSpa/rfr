@@ -45,13 +45,15 @@ export default function() {
           let results = [];
           let key = evt.keyCode;
           
-          if (query.length > 2 && key != '40' && key != '38') {
+          console.log('key', key);
+
+          if (query.length > 1 && key != '40' && key != '38') {
             this.current = 0;
 
             results = reports.filter( pst => {
               return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
             });
-            
+
           } else {
             results = JSON.parse(this.reports);
           }
