@@ -177,4 +177,11 @@
     top: 0;
     opacity: 1;
   }
+
+  &__list {
+
+    li {
+      float: none;
+    }
+  }
 }

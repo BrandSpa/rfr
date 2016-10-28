@@ -947,6 +947,8 @@ form button {
   .map__search--show {
     top: 0;
     opacity: 1; }
+  .map__search__list li {
+    float: none; }
 
 #download-report {
   padding: 120px 40px; }

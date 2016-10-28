@@ -33,7 +33,7 @@
       <div class="col-md-6">
       <div class="row">
         <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
-         <ul class="map_list_exp">
+         <ul class="map__search__list">
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt="">
             <?php echo gett('Persecution') ?>
@@ -50,19 +50,21 @@
           </li>
       </ul>
     </div>
+    <div class="row">
       <h5 class="color-red pull-left"><?php echo gett('SITUATION') ?></h5>
-      <ul class="map_list_exp">
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/improved.svg" alt=""> <?php echo gett('Improved') ?>
-      </li>
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
-      </li>
-      <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Worsened.svg" alt=""> <?php echo gett('Worsened') ?>
-      </li>
+      <ul class="map__search__list">
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/improved.svg" alt=""> <?php echo gett('Improved') ?>
+        </li>
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
+        </li>
+        <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Worsened.svg" alt=""> <?php echo gett('Worsened') ?>
+        </li>
 
-    </ul>
+      </ul>
+     </div>
       </div>
     </div>
  
