@@ -120,8 +120,8 @@ export default function () {
         d3.select("#map-container svg").call(zoomed);
 
         let paths = d3.select(mapContainer).selectAll("path");
-        polygons.each(setReport.call(null, reports));
-        paths.each(setReport.call(null, reports));
+        polygons.each(setReport.call(reports));
+        paths.each(setReport.call(reports));
         
       });
     }
