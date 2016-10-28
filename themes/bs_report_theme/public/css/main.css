@@ -894,6 +894,7 @@ form button {
       display: flex;
       -ms-flex-align: center;
       align-items: center;
+      font-size: 1.4375em;
       position: relative;
       background: #fff;
       border: 1px solid #1A2127;

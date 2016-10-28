@@ -112,6 +112,7 @@
     li {
       @include title4;
       @include center_vertical;
+      font-size: (23 / 16) * 1em;
       position: relative;
       background: #fff;
       border: 1px solid $dark_jungle_green;
@@ -131,6 +132,7 @@
         position: absolute;
         right: 0;
         text-align: center;
+
         img {
           margin: 0 auto;
         }
