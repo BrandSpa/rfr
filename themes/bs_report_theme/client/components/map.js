@@ -38,6 +38,43 @@ function appendMap(mapUrl,container, cb) {
   });
 }
 
+
+function showMapInfo(el, report) {
+  el.on('mousemove', evt => {
+    let countryInfo = report.meta_country;
+    showInfo(info, countryInfo);
+    setStyle(el);
+  });
+      
+
+  el.on('mouseleave', evt => {
+    setStyleOut(el);
+    info.style.opacity = 0;
+  });
+}
+
+ function SetLink(reportGuid) {
+    d3
+    .select( this.parentNode )
+    .append("a", () => this )
+    .attr("href", )
+    .append(() => this );
+}
+
+
+const getReport = (fn) => reports => reports.filter(fn)[0];
+
+function setReport(el) {
+  // let el = d3.select(this);
+  let countryName = el.attr("id").replace('-', ' ');
+  let report = getReport(report => report.meta_country == countryName)(reports);
+
+  if(report && report.guid) { 
+    SetLink(report.guid);
+    showMapInfo(el, report)
+  }
+}
+
 export default function () {
 
   Vue.component('map', {
@@ -49,12 +86,6 @@ export default function () {
       'lang'
     ],
 
-    data() {
-      return {
-
-      }
-    },
- 
     ready() {
       let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
@@ -89,53 +120,8 @@ export default function () {
 
         let paths = d3.select(mapContainer).selectAll("path");
 
-        polygons.each(function(pol) {
-          let el = d3.select(this);
-          let countryName = el.attr("id").replace('-', ' ');
-          let report = reports.filter(rep => rep.meta_country == countryName);
-
-          if(report[0] && report[0].guid) {
-
-          d3.select( this.parentNode ).append("a",() => this )
-            .attr("href", report[0].guid)
-            .append(() => this );
-          }
-          
-          el.on('mousemove', evt => {
-            let countryInfo = report[0] ? report[0].meta_country : countryName;
-
-            showInfo(info, countryInfo);
-            setStyle(el);
-          });
-
-          el.on('mouseleave', evt => {
-            setStyleOut(el);
-            info.style.opacity = 0;
-          });
-        });
-
-        paths.each(function(pol) {
-          let el = d3.select(this);
-          let countryName = el.attr("id").replace('-', ' ');
-          let report = reports.filter(rep => rep.meta_country == countryName);
-          
-          if(report[0] && report[0].guid) {
-            d3.select( this.parentNode ).append("a",() => this )
-          .attr("href", report[0].guid)
-          .append(() => this );
-          }
-          
-          el.on('mousemove', evt => {
-            let countryInfo = report[0] ? report[0].meta_country : countryName;
-            showInfo(info, countryInfo);
-            setStyle(el);
-          });
-
-           el.on('mouseleave', evt => {
-             setStyleOut(el);
-            info.style.opacity = 0;
-          });
-        });
+        polygons.each(setReport(el));
+        paths.each(setReport(el));
         
       });
     }

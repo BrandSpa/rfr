@@ -20971,9 +20971,6 @@
 	    template: '#map-template',
 	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang'],
 
-	    data: function data() {
-	      return {};
-	    },
 	    ready: function ready() {
 	      var info = document.querySelector('.map__info');
 	      var mapContainer = document.querySelector('#map-container');
@@ -21003,65 +21000,8 @@
 
 	        var paths = d3.select(mapContainer).selectAll("path");
 
-	        polygons.each(function (pol) {
-	          var _this = this;
-
-	          var el = d3.select(this);
-	          var countryName = el.attr("id").replace('-', ' ');
-	          var report = reports.filter(function (rep) {
-	            return rep.meta_country == countryName;
-	          });
-
-	          if (report[0] && report[0].guid) {
-
-	            d3.select(this.parentNode).append("a", function () {
-	              return _this;
-	            }).attr("href", report[0].guid).append(function () {
-	              return _this;
-	            });
-	          }
-
-	          el.on('mousemove', function (evt) {
-	            var countryInfo = report[0] ? report[0].meta_country : countryName;
-
-	            showInfo(info, countryInfo);
-	            setStyle(el);
-	          });
-
-	          el.on('mouseleave', function (evt) {
-	            setStyleOut(el);
-	            info.style.opacity = 0;
-	          });
-	        });
-
-	        paths.each(function (pol) {
-	          var _this2 = this;
-
-	          var el = d3.select(this);
-	          var countryName = el.attr("id").replace('-', ' ');
-	          var report = reports.filter(function (rep) {
-	            return rep.meta_country == countryName;
-	          });
-
-	          if (report[0] && report[0].guid) {
-	            d3.select(this.parentNode).append("a", function () {
-	              return _this2;
-	            }).attr("href", report[0].guid).append(function () {
-	              return _this2;
-	            });
-	          }
-
-	          el.on('mousemove', function (evt) {
-	            var countryInfo = report[0] ? report[0].meta_country : countryName;
-	            showInfo(info, countryInfo);
-	            setStyle(el);
-	          });
-
-	          el.on('mouseleave', function (evt) {
-	            setStyleOut(el);
-	            info.style.opacity = 0;
-	          });
-	        });
+	        polygons.each(setReport(el));
+	        paths.each(setReport(el));
 	      });
 	    }
 	  });
@@ -21114,6 +21054,48 @@
 	    container.appendChild(xml.documentElement);
 	    if (typeof cb == 'function') cb();
 	  });
+	}
+
+	function showMapInfo(el, report) {
+	  el.on('mousemove', function (evt) {
+	    var countryInfo = report.meta_country;
+	    showInfo(info, countryInfo);
+	    setStyle(el);
+	  });
+
+	  el.on('mouseleave', function (evt) {
+	    setStyleOut(el);
+	    info.style.opacity = 0;
+	  });
+	}
+
+	function SetLink(reportGuid) {
+	  var _this = this;
+
+	  d3.select(this.parentNode).append("a", function () {
+	    return _this;
+	  }).attr("href").append(function () {
+	    return _this;
+	  });
+	}
+
+	var getReport = function getReport(fn) {
+	  return function (reports) {
+	    return reports.filter(fn)[0];
+	  };
+	};
+
+	function setReport(el) {
+	  // let el = d3.select(this);
+	  var countryName = el.attr("id").replace('-', ' ');
+	  var report = getReport(function (report) {
+	    return report.meta_country == countryName;
+	  })(reports);
+
+	  if (report && report.guid) {
+	    SetLink(report.guid);
+	    showMapInfo(el, report);
+	  }
 	}
 
 /***/ },
