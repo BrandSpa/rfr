@@ -24,8 +24,8 @@
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
-          <img v-bind:src="getIcon(item.meta_situation)" alt="">
-        </span>∆
+          <img v-bind:src="/public/img/icons/{{item.meta_situation}}.svg" alt="">
+        </span>
       </li>
     </ul>
 
@@ -74,4 +74,4 @@
 
 </template>
 
-<search-country reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'></search-country>
+<search-country dir="<?php echo get_template_directory_uri(); ?>" reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'></search-country>

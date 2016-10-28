@@ -37534,7 +37534,7 @@
 	exports.default = function () {
 	  _vue2.default.component('search-country', {
 	    template: '#search-country-template',
-	    props: ['reports'],
+	    props: ['reports', 'dir'],
 
 	    data: function data() {
 	      return {
@@ -37550,7 +37550,7 @@
 
 	    methods: {
 	      getIcon: function getIcon(name) {
-	        return '/public/img/icons/' + name + '.svg';
+	        return this.dir + '/public/img/icons/' + name + '.svg';
 	      },
 	      isSelected: function isSelected(index) {
 	        return index === this.current;

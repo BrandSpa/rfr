@@ -4,7 +4,7 @@ import Vue from 'vue';
 export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
-    props: ['reports'],
+    props: ['reports', 'dir'],
 
     data() {
       return {
@@ -21,7 +21,7 @@ export default function() {
     methods: {
 
         getIcon(name) {
-         return `/public/img/icons/${name}.svg`
+         return `${this.dir}/public/img/icons/${name}.svg`
         },
 
         isSelected(index) {
