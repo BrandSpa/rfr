@@ -24,7 +24,7 @@
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
-          <img v-bind:src="/public/img/icons/{{item.meta_situation}}.svg" alt="">
+          <img v-bind:src="getIcon(item.meta_situation)" alt="">
         </span>
       </li>
     </ul>
