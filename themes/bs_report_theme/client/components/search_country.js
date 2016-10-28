@@ -23,9 +23,12 @@ export default function() {
           return index === this.current;
         },
 
-        nature(n) {
-          console.log(n);
-          return true;
+        isDiscrimination(n) {
+          return n == 'Discrimination';
+        },  
+
+        isPersecution(n) {
+          return n == 'Persecution';
         },       
 
         enter() {

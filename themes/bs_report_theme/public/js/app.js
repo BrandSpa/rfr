@@ -37552,9 +37552,11 @@
 	      isSelected: function isSelected(index) {
 	        return index === this.current;
 	      },
-	      nature: function nature(n) {
-	        console.log(n);
-	        return true;
+	      isDiscrimination: function isDiscrimination(n) {
+	        return n == 'Discrimination';
+	      },
+	      isPersecution: function isPersecution(n) {
+	        return n == 'Persecution';
 	      },
 	      enter: function enter() {
 	        window.location = this.items[this.current].guid;
