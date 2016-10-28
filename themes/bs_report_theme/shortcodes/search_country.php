@@ -19,7 +19,7 @@
     </div>
 
     <ul class="map__search_results">
-      <li v-for="item in items" v-bind:class="{'selected': isSelected($index), 'bg-red': nature(item.nature_persecution) }">
+      <li v-for="item in items" v-bind:class="{'selected': isSelected($index), 'bg-red': nature(item.meta_nature_persecution) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
           <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
