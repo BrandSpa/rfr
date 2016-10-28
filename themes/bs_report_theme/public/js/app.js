@@ -20987,23 +20987,23 @@
 	      });
 
 	      appendMap(this.mapUrl, mapContainer, function () {
-	        d3.select("#map-container svg").attr('height', 'auto');
-
-	        d3.select('.map__controllers__more').on('click', function () {
-	          d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
-	        });
-
 	        var polygons = d3.select(mapContainer).selectAll("polygon");
+	        var paths = d3.select(mapContainer).selectAll("path");
 
 	        d3.select("#map-container svg").call(zoomed);
 
-	        var paths = d3.select(mapContainer).selectAll("path");
 	        polygons.each(function () {
 	          setReport.call(this, reports);
 	        });
 
 	        paths.each(function () {
 	          setReport.call(this, reports);
+	        });
+
+	        d3.select("#map-container svg").attr('height', 'auto');
+
+	        d3.select('.map__controllers__more').on('click', function () {
+	          d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
 	        });
 	      });
 	    }
@@ -21029,6 +21029,12 @@
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var colors = {
+	  'Persecution': '#FC3938',
+	  'Discrimination': '#FFC849',
+	  'Stable': '#E4E7EA'
+	};
 
 	function showInfo(info, txt) {
 	  d3.select(info).select('.map__info_country').text(txt.replace(/-/g, ' '));
@@ -21098,6 +21104,7 @@
 	  })(reports);
 
 	  if (report && report.guid) {
+	    el.attr('fill', colors[report.meta_situation]);
 	    SetLink.call(this, report.guid);
 	    showMapInfo(el, report);
 	  }

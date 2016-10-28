@@ -4,6 +4,12 @@ import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
 import $ from 'jquery';
 
+const colors = {
+  'Persecution': '#FC3938',
+  'Discrimination': '#FFC849',
+  'Stable': '#E4E7EA',
+};
+
 function showInfo(info, txt) {
   d3.select(info).select('.map__info_country').text(txt.replace(/-/g, ' '));
 
@@ -38,7 +44,6 @@ function appendMap(mapUrl,container, cb) {
   });
 }
 
-
 function showMapInfo(el, report) {
   let info = document.querySelector('.map__info');
   
@@ -47,7 +52,6 @@ function showMapInfo(el, report) {
     showInfo(info, countryInfo);
     setStyle(el);
   });
-      
 
   el.on('mouseleave', evt => {
     setStyleOut(el);
@@ -71,7 +75,8 @@ function setReport(reports) {
   let countryName = el.attr("id").replace('-', ' ');
   let report = getReport(report => report.meta_country == countryName)(reports);
 
-  if(report && report.guid) { 
+  if(report && report.guid) {
+    el.attr('fill', colors[report.meta_situation]); 
     SetLink.call(this, report.guid);
     showMapInfo(el, report)
   }
@@ -107,25 +112,25 @@ export default function () {
       });
 
       appendMap(this.mapUrl, mapContainer, () => {
-        d3.select("#map-container svg").attr('height', 'auto');
-
-        d3.select('.map__controllers__more').on('click', function() {
-          d3.select("#map-container svg").transition()
-          .duration(750)
-          .call(zoomed.transform, d3.zoomIdentity);
-        });
-
         let polygons = d3.select(mapContainer).selectAll("polygon");
-
+        let paths = d3.select(mapContainer).selectAll("path");
+        
         d3.select("#map-container svg").call(zoomed);
 
-        let paths = d3.select(mapContainer).selectAll("path");
         polygons.each(function() {
           setReport.call(this, reports);
         });
 
         paths.each(function() {
           setReport.call(this, reports);
+        });
+
+        d3.select("#map-container svg").attr('height', 'auto');
+
+        d3.select('.map__controllers__more').on('click', function() {
+          d3.select("#map-container svg").transition()
+          .duration(750)
+          .call(zoomed.transform, d3.zoomIdentity);
         });
         
       });
