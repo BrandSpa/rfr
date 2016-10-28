@@ -27,7 +27,10 @@
       </div>
 
       <div class="col-md-3">
-       <button class="map__controllers__more button"><?php echo gett('List'); ?></button>
+      <div class="col-xs-6">
+         <button><?php echo gett('List'); ?></button>
+      </div>
+      <div class="col-xs-6">
 
         <div class="map__search_input-container">
           <input
@@ -35,6 +38,8 @@
             class="map__search_input" 
           />
         </div>
+      </div>
+      
       </div>
 
         <div class="col-md-12">
