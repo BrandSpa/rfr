@@ -45,7 +45,7 @@ export default function() {
           let results = [];
           let key = evt.keyCode;
           
-          let keys = ['37', '38', '39', '40'];
+          let keys = [37, 38, 39, 40];
           console.log(keys.indexOf(key));
           if (query.length > 1 && keys.indexOf(key) != -1 ) {
             this.current = 0;

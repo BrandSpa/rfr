@@ -37571,7 +37571,7 @@
 	        var results = [];
 	        var key = evt.keyCode;
 
-	        var keys = ['37', '38', '39', '40'];
+	        var keys = [37, 38, 39, 40];
 	        console.log(keys.indexOf(key));
 	        if (query.length > 1 && keys.indexOf(key) != -1) {
 	          this.current = 0;
