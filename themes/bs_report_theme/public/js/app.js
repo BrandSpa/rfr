@@ -37575,6 +37575,8 @@
 	        var key = evt.keyCode;
 	        var arrowKeys = [37, 38, 39, 40];
 
+	        console.log('tell me', arrowKeys.indexOf(key) == -1);
+
 	        if (arrowKeys.indexOf(key) == -1) {
 	          this.current = 0;
 

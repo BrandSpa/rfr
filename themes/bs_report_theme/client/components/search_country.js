@@ -49,8 +49,9 @@ export default function() {
           let key = evt.keyCode;
           let arrowKeys = [37, 38, 39, 40];
           
-
-          if (arrowKeys.indexOf(key) == -1 ) {
+          console.log('tell me', arrowKeys.indexOf(key) == -1);
+          
+          if (arrowKeys.indexOf(key) == -1) {
             this.current = 0;
 
             results = reports.filter( pst => {
