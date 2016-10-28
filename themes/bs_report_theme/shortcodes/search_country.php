@@ -1,6 +1,6 @@
 <template id="search-country-template">
 <div class="map__search">
-  <div class="col-md-4 col-sm-10">
+  <div class="col-md-8 col-sm-10">
        <h1 class="title title-line color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h1>
     <div class="row">
       <div class="col-md-6">
