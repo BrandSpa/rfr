@@ -37,12 +37,14 @@
       </div>
 
       <script>
-
-        document.querySelector('.map__search_click').addEventListener('click', function(e) {
+        var input = document.querySelector('.map__search_click');
+        
+        input.addEventListener('click', function(e) {
           e.preventDefault();
           console.log('yeah');
           document.querySelector('.map__search').classList.add('map__search--show');
         });
+        
       </script>
       
       </div>
