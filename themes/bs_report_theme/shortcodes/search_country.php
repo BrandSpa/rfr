@@ -1,6 +1,6 @@
 <template id="search-country-template">
 <div class="map__search">
-  <div class="col-md-6">
+  <div class="col-md-3 col-sm-10">
       <div class="map__search_input-container">
       <input
         type="text" 
