@@ -28,10 +28,10 @@ export default function() {
         },
 
         up(e) {
-          e.preventDefault();
           if(this.current > 0) {
             this.current--;
           }
+          return false;
         },
 
         down(e) {
@@ -39,6 +39,7 @@ export default function() {
           if(this.current < this.items.length - 1) {
             this.current++;
           }
+          return false;
         },
 
         search(evt) {
@@ -50,7 +51,7 @@ export default function() {
 
           if (query.length > 1 && arrowKeys.indexOf(key) == -1 ) {
             console.log('enter');
-            
+
             this.current = 0;
 
             results = reports.filter( pst => {

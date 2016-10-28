@@ -37556,16 +37556,17 @@
 	        window.location = this.items[this.current].guid;
 	      },
 	      up: function up(e) {
-	        e.preventDefault();
 	        if (this.current > 0) {
 	          this.current--;
 	        }
+	        return false;
 	      },
 	      down: function down(e) {
 	        e.preventDefault();
 	        if (this.current < this.items.length - 1) {
 	          this.current++;
 	        }
+	        return false;
 	      },
 	      search: function search(evt) {
 	        var reports = JSON.parse(this.reports);
