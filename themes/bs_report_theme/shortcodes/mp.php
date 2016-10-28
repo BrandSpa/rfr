@@ -32,7 +32,7 @@
         <div class="col-xs-6">
 
         <div class="map__search_input-container">
-          <button class="button map__search_click">Search</button>
+          <button class="button map__search_click"></button>
         </div>
       </div>
       

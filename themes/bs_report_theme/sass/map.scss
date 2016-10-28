@@ -206,6 +206,8 @@
 .map__search_click {
   position: relative;
   background: $dark_jungle_green;
+  width: 100%;
+  
   &::before {
       content: "\f4a5";
       display: block;

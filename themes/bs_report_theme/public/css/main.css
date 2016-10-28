@@ -965,7 +965,8 @@ form button {
 
 .map__search_click {
   position: relative;
-  background: #1A2127; }
+  background: #1A2127;
+  width: 100%; }
   .map__search_click::before {
     content: "\f4a5";
     display: block;
