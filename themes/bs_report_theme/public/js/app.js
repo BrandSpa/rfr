@@ -37535,6 +37535,7 @@
 	  _vue2.default.component('search-country', {
 	    template: '#search-country-template',
 	    props: ['reports'],
+
 	    data: function data() {
 	      return {
 	        country: '',
@@ -37570,7 +37571,7 @@
 	        var results = [];
 	        var key = evt.keyCode;
 
-	        if (query.length > 2) {
+	        if (query.length > 2 && key != '40' && key != '38') {
 	          this.current = 0;
 	          results = reports.filter(function (pst) {
 	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;

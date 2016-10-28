@@ -5,6 +5,7 @@ export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
     props: ['reports'],
+
     data() {
       return {
         country: '',
@@ -30,7 +31,6 @@ export default function() {
           if(this.current > 0) {
             this.current--;
           }
-          
         },
 
         down() {
@@ -44,8 +44,8 @@ export default function() {
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
-
-          if (query.length > 2) {
+          
+          if (query.length > 2 && key != '40' && key != '38') {
             this.current = 0;
             results = reports.filter( pst => {
               return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
