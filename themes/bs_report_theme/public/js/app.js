@@ -20999,7 +20999,6 @@
 	        d3.select("#map-container svg").call(zoomed);
 
 	        var paths = d3.select(mapContainer).selectAll("path");
-	        Ø;
 	        polygons.each(setReport.call(null, reports));
 	        paths.each(setReport.call(null, reports));
 	      });
@@ -21086,6 +21085,7 @@
 	};
 
 	function setReport(reports) {
+	  console.log(d3.select(this));
 	  var el = d3.select(this);
 	  var countryName = el.attr("id").replace('-', ' ');
 	  var report = getReport(function (report) {
