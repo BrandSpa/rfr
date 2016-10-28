@@ -129,10 +129,10 @@ h6 {
   color: #fff; }
 
 .bg-red {
-  background: #FC3938; }
+  background: #FC3938 !important; }
 
 .bg-discrimination {
-  background: #FFC849; }
+  background: #FFC849 !important; }
 
 .center-vertical {
   display: -ms-flexbox;
