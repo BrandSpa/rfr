@@ -31,6 +31,7 @@
 
     </div>
       <div class="col-md-6">
+        <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
          <ul class="map_list_exp">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt="">
@@ -47,7 +48,7 @@
         <?php echo gett('Stable') ?>
       </li>
     </ul>
-
+      <h5 class="color-red pull-left"><?php echo gett('SITUATION') ?></h5>
       <ul class="map_list_exp">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/improved.svg" alt=""> <?php echo gett('Improved') ?>
