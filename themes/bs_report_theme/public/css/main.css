@@ -963,6 +963,10 @@ form button {
       .map__search__list li img {
         margin-right: 15px; }
 
+.map__search__close {
+  color: #C03B3B;
+  font-size: 32px; }
+
 .map__search_click {
   position: relative;
   background: #1A2127;
