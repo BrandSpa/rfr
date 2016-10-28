@@ -6,7 +6,8 @@
   top: 0;
   z-index: 1005;
   height: 60px;
-
+  background: $desert_storm;
+  
   @media #{$tablet}, #{$mobile} {
     display: block;
   }
@@ -19,8 +20,7 @@
     height: 60px;
   }
   
-  background: $desert_storm;
-
+  
   &__subtitle {
     font-size: 1.5rem;
     padding: 5px 10px;

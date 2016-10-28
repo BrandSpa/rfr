@@ -978,9 +978,9 @@ form button {
 .map__search__close {
   color: #FC3938;
   font-size: 32px;
-  position: absolute;
-  top: 20px;
-  right: 20px; }
+  display: block;
+  float: right;
+  margin: 20px 20px 0 0; }
 
 .map__search_click {
   position: relative;
