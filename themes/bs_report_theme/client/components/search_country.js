@@ -49,7 +49,6 @@ export default function() {
           let key = evt.keyCode;
           let arrowKeys = [37, 38, 39, 40];
           
-          console.log(query);
 
           if (arrowKeys.indexOf(key) == -1 ) {
             this.current = 0;
@@ -61,6 +60,8 @@ export default function() {
           } else {
             results = JSON.parse(this.reports);
           }
+
+          console.log(results);
 
           this.$set('items', results);
         }

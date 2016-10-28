@@ -37575,8 +37575,6 @@
 	        var key = evt.keyCode;
 	        var arrowKeys = [37, 38, 39, 40];
 
-	        console.log(query);
-
 	        if (arrowKeys.indexOf(key) == -1) {
 	          this.current = 0;
 
@@ -37586,6 +37584,8 @@
 	        } else {
 	          results = JSON.parse(this.reports);
 	        }
+
+	        console.log(results);
 
 	        this.$set('items', results);
 	      }
