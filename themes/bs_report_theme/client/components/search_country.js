@@ -46,11 +46,11 @@ export default function() {
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
-          
-          let keys = [37, 38, 39, 40];
-          console.log(keys.indexOf(key));
-          if (query.length > 1 && keys.indexOf(key) == -1 ) {
+          let arrowKeys = [37, 38, 39, 40];
 
+          if (query.length > 1 && arrowKeys.indexOf(key) == -1 ) {
+            console.log('enter');
+            
             this.current = 0;
 
             results = reports.filter( pst => {

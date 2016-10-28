@@ -37572,10 +37572,10 @@
 	        var query = this.country;
 	        var results = [];
 	        var key = evt.keyCode;
+	        var arrowKeys = [37, 38, 39, 40];
 
-	        var keys = [37, 38, 39, 40];
-	        console.log(keys.indexOf(key));
-	        if (query.length > 1 && keys.indexOf(key) == -1) {
+	        if (query.length > 1 && arrowKeys.indexOf(key) == -1) {
+	          console.log('enter');
 
 	          this.current = 0;
 
