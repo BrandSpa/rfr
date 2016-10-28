@@ -21098,7 +21098,7 @@
 
 	function setReport(reports) {
 	  var el = d3.select(this);
-	  var countryName = el.attr("id").replace('-', ' ');
+	  var countryName = el.attr("id").replace(/-/g, ' ');
 	  var report = getReport(function (report) {
 	    return report.meta_country == countryName;
 	  })(reports);
