@@ -27,10 +27,10 @@
       </div>
 
       <div class="col-md-3">
-      <div class="col-xs-6">
-         <button><?php echo gett('List'); ?></button>
-      </div>
-      <div class="col-xs-6">
+        <div class="col-xs-6">
+          <button><?php echo gett('List'); ?></button>
+        </div>
+        <div class="col-xs-6">
 
         <div class="map__search_input-container">
           <input
