@@ -40,7 +40,7 @@
       </div>
 
       <script>
-        document.querySelector('.map__search_input').addEventListener('focus', function(e) {
+        document.querySelector('.map__search_input').addEventListener('change', function(e) {
           e.preventDefault();
           console.log(this);
           document.querySelector('.map__search').classList.add('map__search--show');
