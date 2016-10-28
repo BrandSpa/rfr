@@ -949,7 +949,8 @@ form button {
     opacity: 1; }
   .map__search__list {
     float: left;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
     .map__search__list li {
       float: none;
       color: #fff; }
