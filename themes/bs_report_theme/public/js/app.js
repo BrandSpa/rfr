@@ -37573,6 +37573,7 @@
 
 	        if (query.length > 2 && key != '40' && key != '38') {
 	          this.current = 0;
+
 	          results = reports.filter(function (pst) {
 	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
