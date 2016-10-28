@@ -167,7 +167,7 @@
 
 .map__search {
   background: RGBA(24, 30, 35, .9);
-  width: 100%;
+  width: 91%;
   height: 100%;
   position: fixed;
   z-index: 999999;
@@ -175,6 +175,10 @@
   transition: all 300ms ease;
   top: -100%;
   opacity: 0;
+
+  @media #{$tablet}, #{$mobile} {
+    width: 100%;
+  }
   
   &--show {
     top: 0;
