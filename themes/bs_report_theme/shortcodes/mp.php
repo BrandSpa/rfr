@@ -1,7 +1,6 @@
 <?php
   $map_svg_url = get_template_directory_uri() . '/public/img/map.svg';
-   $getReportLang = 'en';
-  if( function_exists('pll_current_language') ) $getReportLang = pll_current_language();
+  $getReportLang = getLang();
 ?>
 
 <?php include('search_country.php') ?>

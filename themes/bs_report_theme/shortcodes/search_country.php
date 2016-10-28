@@ -1,4 +1,5 @@
 <template id="search-country-template">
+<div class="map__search">
   <div class="map__search_input-container">
     <input
       type="text" 
@@ -19,4 +20,7 @@
       </span>
     </li>
   </ul>
+</div>
 </template>
+
+<search-country reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'></search-country>

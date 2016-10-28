@@ -926,6 +926,20 @@ form button {
     .map_list_exp li img {
       padding-right: 10px; }
 
+.map__search {
+  background: RGBA(24, 30, 35, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+  overflow-y: scroll;
+  transition: all 300ms ease;
+  top: -100%;
+  opacity: 0; }
+  .map__search-show {
+    top: 0;
+    opacity: 1; }
+
 #download-report {
   padding: 120px 40px; }
   #download-report h1 {

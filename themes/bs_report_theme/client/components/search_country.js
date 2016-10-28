@@ -4,7 +4,7 @@ import Vue from 'vue';
 export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
-    data() {
+    
       return {
         country: '',
         items: [],
@@ -39,8 +39,7 @@ export default function() {
         },
 
         search(evt) {
-          console.log('search');
-          let reports = JSON.parse(this.$parent.posts);
+          let reports = JSON.parse(this.reports);
           let query = this.country;
           let results = [];
           let key = evt.keyCode;

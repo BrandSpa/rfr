@@ -19,6 +19,7 @@ require 'vendor/autoload.php';
 //include lib functions
 include_once $lib . '/geo_info.php';
 include_once $lib . '/get_meta.php';
+include_once $lib . '/get_lang.php';
 include_once $lib . '/religions_colors.php';
 include_once $lib . '/translations.php';
 include_once $lib . '/get_translation.php';

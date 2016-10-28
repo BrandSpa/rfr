@@ -70,7 +70,7 @@
 
 	var _country_select2 = _interopRequireDefault(_country_select);
 
-	var _search_country = __webpack_require__(22);
+	var _search_country = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/search_country\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _search_country2 = _interopRequireDefault(_search_country);
 
@@ -37515,75 +37515,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	exports.default = function () {
-	  _vue2.default.component('search-country', {
-	    template: '#search-country-template',
-	    data: function data() {
-	      return {
-	        country: '',
-	        items: [],
-	        current: 0
-	      };
-	    },
-	    ready: function ready() {},
-
-
-	    methods: {
-	      isSelected: function isSelected(index) {
-	        return index === this.current;
-	      },
-	      enter: function enter() {
-	        window.location = this.items[this.current].guid;
-	      },
-	      up: function up() {
-	        if (this.current > 0) {
-	          this.current--;
-	        }
-	      },
-	      down: function down() {
-	        if (this.current < this.items.length - 1) {
-	          this.current++;
-	        }
-	      },
-	      search: function search(evt) {
-	        console.log('search');
-	        var reports = JSON.parse(this.$parent.posts);
-	        var query = this.country;
-	        var results = [];
-	        var key = evt.keyCode;
-
-	        if (query.length > 2) {
-	          results = reports.filter(function (pst) {
-	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
-	          });
-	        } else {
-	          results = [];
-	        }
-
-	        this.$set('items', results);
-	      }
-	    }
-	  });
-	};
-
-	var _vue = __webpack_require__(14);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	;
-
-/***/ },
+/* 22 */,
 /* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
