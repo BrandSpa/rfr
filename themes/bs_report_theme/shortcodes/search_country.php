@@ -21,7 +21,7 @@
     <ul class="map__search_results">
       <li 
         v-for="item in items" 
-        v-bind:class="{'selected': isSelected($index), 'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution) }">
+        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
           <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
