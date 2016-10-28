@@ -20972,8 +20972,6 @@
 	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang'],
 
 	    ready: function ready() {
-	      var _this2 = this;
-
 	      var info = document.querySelector('.map__info');
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
@@ -21002,8 +21000,8 @@
 
 	        var paths = d3.select(mapContainer).selectAll("path");
 
-	        polygons.each(setReport.call(_this2, reports));
-	        paths.each(setReport.call(_this2, reports));
+	        polygons.each(setReport.call(null, reports));
+	        paths.each(setReport.call(null, reports));
 	      });
 	    }
 	  });
