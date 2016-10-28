@@ -19,6 +19,11 @@ export default function() {
     },
 
     methods: {
+      
+        getIcon() {
+         return `/public/img/icons/${item.meta_situation}.svg`
+        },
+
         isSelected(index) {
           return index === this.current;
         },

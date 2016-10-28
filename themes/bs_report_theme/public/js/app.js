@@ -37549,6 +37549,9 @@
 
 
 	    methods: {
+	      getIcon: function getIcon() {
+	        return '/public/img/icons/' + item.meta_situation + '.svg';
+	      },
 	      isSelected: function isSelected(index) {
 	        return index === this.current;
 	      },
