@@ -1,5 +1,5 @@
 <template id="country-select-template">
-  <div>
+  <div class="select_country">
     <a href="#" class="select_country__close"><i class="ion-close"></i></a>
     <ul>
       <?php 
