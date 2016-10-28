@@ -40,7 +40,9 @@
       </div>
 
       <script>
-        document.querySelector('.map__search_input').addEventListener('click', function() {
+        document.querySelector('.map__search_input').addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log(this);
           document.querySelector('.map__search').classList.add('map__search--show');
         });
       </script>
