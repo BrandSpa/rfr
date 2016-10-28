@@ -21104,7 +21104,7 @@
 	  })(reports);
 
 	  if (report && report.guid) {
-	    console.log(report.meta_nature_persecution);
+	    console.log(colors[report.meta_nature_persecution]);
 	    el.attr('fill', colors[report.meta_nature_persecution]);
 	    SetLink.call(this, report.guid);
 	    showMapInfo(el, report);
