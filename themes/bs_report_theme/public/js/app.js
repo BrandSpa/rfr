@@ -20999,7 +20999,7 @@
 	        d3.select("#map-container svg").call(zoomed);
 
 	        var paths = d3.select(mapContainer).selectAll("path");
-
+	        Ø;
 	        polygons.each(setReport.call(null, reports));
 	        paths.each(setReport.call(null, reports));
 	      });
