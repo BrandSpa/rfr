@@ -37571,9 +37571,9 @@
 	        var results = [];
 	        var key = evt.keyCode;
 
-	        console.log('key', key);
+	        var keys = ['37', '38', '39', '40'];
 
-	        if (query.length > 1 && key != '40' && key != '38') {
+	        if (query.length > 1 && keys.indexOf(key) == -1) {
 	          this.current = 0;
 
 	          results = reports.filter(function (pst) {
