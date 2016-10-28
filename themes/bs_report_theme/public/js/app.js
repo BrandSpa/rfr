@@ -21104,7 +21104,7 @@
 	  })(reports);
 
 	  if (report && report.guid) {
-	    el.attr('fill', colors[report.meta_situation]);
+	    el.attr('fill', colors[report.meta_nature_persecution]);
 	    SetLink.call(this, report.guid);
 	    showMapInfo(el, report);
 	  }

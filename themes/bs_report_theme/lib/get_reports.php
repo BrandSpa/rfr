@@ -4,6 +4,7 @@
       $obj->meta_year = get_post_meta($obj->ID, 'report_year_key', true);
       $obj->meta_country = get_post_meta($obj->ID, 'report_country_key', true);
       $obj->meta_situation = get_post_meta($obj->ID, 'report_situation_key', true);
+      $obj->meta_nature_persecution = get_post_meta($obj->ID, 'report_nature_persecution_key', true);
       return $obj;
     }
 
