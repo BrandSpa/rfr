@@ -78,7 +78,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
       </li>
       <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/worsened.svg" alt=""> <?php echo gett('Worsened') ?>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Worsened.svg" alt=""> <?php echo gett('Worsened') ?>
       </li>
 
     </ul>
