@@ -90,7 +90,7 @@
  <script>
   document.addEventListener("DOMContentLoaded", function(){
     var input = document.querySelector('.map__search_click');
-          
+    console.log(input);
           input.addEventListener('click', function(e) {
             e.preventDefault();
             console.log('yeah');
