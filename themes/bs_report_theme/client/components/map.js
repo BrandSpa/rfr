@@ -70,7 +70,7 @@ function setReport(reports) {
   let report = getReport(report => report.meta_country == countryName)(reports);
 
   if(report && report.guid) { 
-    SetLink(report.guid);
+    SetLink(report.guid).call(this);
     showMapInfo(el, report)
   }
 }

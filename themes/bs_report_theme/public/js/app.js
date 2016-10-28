@@ -21097,7 +21097,7 @@
 	  })(reports);
 
 	  if (report && report.guid) {
-	    SetLink(report.guid);
+	    SetLink(report.guid).call(this);
 	    showMapInfo(el, report);
 	  }
 	}
