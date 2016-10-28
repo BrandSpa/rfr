@@ -890,6 +890,10 @@ form button {
       font-size: 1.5625em;
       font-weight: normal;
       font-style: italic;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
       font-size: 1.4375em;
       position: relative;
       background: #fff;

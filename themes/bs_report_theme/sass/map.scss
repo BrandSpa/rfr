@@ -111,6 +111,7 @@
 
     li {
       @include title4;
+      @include center_vertical;
       font-size: (23 / 16) * 1em;
       position: relative;
       background: #fff;
