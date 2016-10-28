@@ -37575,11 +37575,9 @@
 	        var key = evt.keyCode;
 	        var arrowKeys = [37, 38, 39, 40];
 
-	        console.log(arrowKeys.indexOf(key) == -1);
+	        console.log(query);
 
 	        if (arrowKeys.indexOf(key) == -1) {
-	          console.log('enter');
-
 	          this.current = 0;
 
 	          results = reports.filter(function (pst) {
