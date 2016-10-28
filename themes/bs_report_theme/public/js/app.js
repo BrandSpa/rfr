@@ -20946,7 +20946,7 @@
 	      style = _extends({}, style, { 'left': '-80%', 'z-index': '0' });
 	    } else {
 	      $nav.addClass('active');
-	      style = _extends({}, style, { 'left': '0', 'z-index': '1001' });
+	      style = _extends({}, style, { 'left': '0', 'z-index': '10010' });
 	    }
 
 	    nav.css(style);

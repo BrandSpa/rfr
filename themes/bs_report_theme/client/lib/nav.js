@@ -18,7 +18,7 @@ export default function nav() {
       style = {...style, 'left': '-80%', 'z-index': '0'};
     } else {
       $nav.addClass('active');
-      style = {...style, 'left': '0', 'z-index': '1001'};
+      style = {...style, 'left': '0', 'z-index': '10010'};
     }
 
     nav.css(style);
