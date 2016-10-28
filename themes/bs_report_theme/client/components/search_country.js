@@ -48,10 +48,8 @@ export default function() {
           let results = [];
           let key = evt.keyCode;
           let arrowKeys = [37, 38, 39, 40];
-          
-          console.log('tell me', arrowKeys.indexOf(key) == -1);
-
-            if (arrowKeys.indexOf(key) == -1)  this.current = 0;
+        
+          if (arrowKeys.indexOf(key) == -1)  this.current = 0;
           
           if (query.length > 0) {
 
@@ -62,8 +60,6 @@ export default function() {
           } else {
             results = JSON.parse(this.reports);
           }
-
-          console.log(results);
 
           this.$set('items', results);
         }
