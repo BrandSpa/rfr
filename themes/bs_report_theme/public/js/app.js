@@ -37555,12 +37555,14 @@
 	      enter: function enter() {
 	        window.location = this.items[this.current].guid;
 	      },
-	      up: function up() {
+	      up: function up(e) {
+	        e.preventDefault();
 	        if (this.current > 0) {
 	          this.current--;
 	        }
 	      },
-	      down: function down() {
+	      down: function down(e) {
+	        e.preventDefault();
 	        if (this.current < this.items.length - 1) {
 	          this.current++;
 	        }
@@ -37574,6 +37576,7 @@
 	        var keys = [37, 38, 39, 40];
 	        console.log(keys.indexOf(key));
 	        if (query.length > 1 && keys.indexOf(key) == -1) {
+
 	          this.current = 0;
 
 	          results = reports.filter(function (pst) {

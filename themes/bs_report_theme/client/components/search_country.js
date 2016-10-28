@@ -27,13 +27,15 @@ export default function() {
           window.location = this.items[this.current].guid;
         },
 
-        up() {
+        up(e) {
+          e.preventDefault();
           if(this.current > 0) {
             this.current--;
           }
         },
 
-        down() {
+        down(e) {
+           e.preventDefault();
           if(this.current < this.items.length - 1) {
             this.current++;
           }
@@ -48,6 +50,7 @@ export default function() {
           let keys = [37, 38, 39, 40];
           console.log(keys.indexOf(key));
           if (query.length > 1 && keys.indexOf(key) == -1 ) {
+
             this.current = 0;
 
             results = reports.filter( pst => {
