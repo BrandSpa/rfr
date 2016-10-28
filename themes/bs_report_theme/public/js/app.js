@@ -37575,7 +37575,7 @@
 	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
 	        } else {
-	          results = [];
+	          results = JSON.parse(this.reports);
 	        }
 
 	        this.$set('items', results);
