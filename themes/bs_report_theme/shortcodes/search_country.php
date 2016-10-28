@@ -44,10 +44,10 @@
         <?php echo gett('Stable') ?>
       </li>
     </ul>
-    
+
       <ul class="map_list_exp">
       <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/improved.svg" alt=""> <?php echo gett('Persecution') ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/improved.svg" alt=""> <?php echo gett('Improved') ?>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
