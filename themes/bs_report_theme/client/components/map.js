@@ -40,6 +40,8 @@ function appendMap(mapUrl,container, cb) {
 
 
 function showMapInfo(el, report) {
+  let info = document.querySelector('.map__info');
+  
   el.on('mousemove', evt => {
     let countryInfo = report.meta_country;
     showInfo(info, countryInfo);
@@ -87,7 +89,6 @@ export default function () {
     ],
 
     ready() {
-      let info = document.querySelector('.map__info');
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
       let lang = this.lang;

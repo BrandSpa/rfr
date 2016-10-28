@@ -20972,7 +20972,6 @@
 	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang'],
 
 	    ready: function ready() {
-	      var info = document.querySelector('.map__info');
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
@@ -21061,6 +21060,8 @@
 	}
 
 	function showMapInfo(el, report) {
+	  var info = document.querySelector('.map__info');
+
 	  el.on('mousemove', function (evt) {
 	    var countryInfo = report.meta_country;
 	    showInfo(info, countryInfo);
