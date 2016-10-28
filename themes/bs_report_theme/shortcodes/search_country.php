@@ -1,7 +1,7 @@
 <template id="search-country-template">
 <div class="map__search">
   <div class="col-md-3 col-sm-10">
-    <h3><?php echo gett('SEARCH BY COUNTRY') ?></h3>
+    <h3 class="color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h3>
       <div class="map__search_input-container">
       <input
         type="text" 
