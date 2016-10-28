@@ -20976,6 +20976,13 @@
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
 
+	      var input = document.querySelector('.map__search_click');
+	      input.addEventListener('click', function (e) {
+	        e.preventDefault();
+	        console.log('yeah');
+	        document.querySelector('.map__search').classList.add('map__search--show');
+	      });
+
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
 	      }).on('zoom', function () {
