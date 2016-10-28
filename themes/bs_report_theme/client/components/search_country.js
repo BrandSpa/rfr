@@ -55,7 +55,6 @@ export default function() {
           }
 
           this.$set('items', results);
-
         }
       }
   });
