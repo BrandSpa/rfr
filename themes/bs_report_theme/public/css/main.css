@@ -44,7 +44,8 @@ li {
   list-style: none; }
 
 .selected {
-  background: #747E86 !important; }
+  background: #747E86 !important;
+  color: #fff !important; }
 
 a:hover {
   text-decoration: none; }
