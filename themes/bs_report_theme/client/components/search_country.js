@@ -4,11 +4,12 @@ import Vue from 'vue';
 export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
+    props: ['reports'],
     data() {
       return {
         country: '',
         items: [],
-        current: 0
+        current: 0,
       }
     },
 

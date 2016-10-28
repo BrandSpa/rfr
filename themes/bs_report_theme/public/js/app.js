@@ -37534,6 +37534,7 @@
 	exports.default = function () {
 	  _vue2.default.component('search-country', {
 	    template: '#search-country-template',
+	    props: ['reports'],
 	    data: function data() {
 	      return {
 	        country: '',
