@@ -24,6 +24,7 @@ body {
 
   @media #{$tablet}, #{$mobile} {
     margin-left: 0;
+    padding-top: 60px;
   }
 }
 
@@ -82,9 +83,6 @@ a:hover {
     @include title_center();
   }
 }
-
-
-
 
 .title-uppercase {
   text-transform: uppercase;
