@@ -213,7 +213,9 @@
 .map__search__close {
   color: $red_orange;
   font-size: 32px;
-  line-height: 70px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 
 .map__search_click {
