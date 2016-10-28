@@ -20979,17 +20979,21 @@
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
+
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
 	      }).on('zoom', function () {
+
 	        var transform = d3.event.transform;
+
+	        d3.select('.map__controllers').classed('map__controllers--active', true);
 	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale(" + transform.k + ") ");
 	      });
 
 	      appendMap(this.mapUrl, mapContainer, function () {
 	        d3.select("#map-container svg").attr('height', 'auto');
-	        d3.select('.map__controllers__more').on('click', function () {
 
+	        d3.select('.map__controllers__more').on('click', function () {
 	          d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
 	        });
 

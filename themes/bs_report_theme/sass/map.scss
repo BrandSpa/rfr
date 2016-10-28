@@ -4,6 +4,12 @@
   position: relative;
 
   &__controllers {
+    opacity: 0;
+    transition: all 300ms ease;
+    
+    &--show {
+      opacity: 1;
+    }
 
     button {
       @include title4;
