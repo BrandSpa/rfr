@@ -163,6 +163,10 @@ h6 {
   text-align: center;
   @include title2;
 
+  &:focus {
+    outline: none;
+  }
+
   &::after {
     content: '';
     display: block;
