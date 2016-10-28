@@ -37577,8 +37577,9 @@
 
 	        console.log('tell me', arrowKeys.indexOf(key) == -1);
 
-	        if (arrowKeys.indexOf(key) == -1) {
-	          this.current = 0;
+	        if (arrowKeys.indexOf(key) == -1) this.current = 0;
+
+	        if (query.length > 0) {
 
 	          results = reports.filter(function (pst) {
 	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;

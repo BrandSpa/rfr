@@ -50,9 +50,10 @@ export default function() {
           let arrowKeys = [37, 38, 39, 40];
           
           console.log('tell me', arrowKeys.indexOf(key) == -1);
+
+            if (arrowKeys.indexOf(key) == -1)  this.current = 0;
           
-          if (arrowKeys.indexOf(key) == -1) {
-            this.current = 0;
+          if (query.length > 0) {
 
             results = reports.filter( pst => {
               return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
