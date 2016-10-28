@@ -8,10 +8,10 @@
            <div class="map__search_input-container">
       <input
         type="text" 
-        v-model="country" 
-        v-on:keyup="search"
+        v-model="country"
         v-on:keydown.down="down"
         v-on:keydown.up="up"
+        v-on:keydown="search"
         v-on:keyup.enter="enter"
         class="map__search_input" 
       />
