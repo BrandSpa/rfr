@@ -120,8 +120,8 @@ export default function () {
 
         let paths = d3.select(mapContainer).selectAll("path");
 
-        polygons.each(setReport(el));
-        paths.each(setReport(el));
+        polygons.each(setReport);
+        paths.each(setReport);
         
       });
     }
