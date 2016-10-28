@@ -28,7 +28,34 @@
     </ul>
       </div>
       <div class="col-md-6">
-        forever
+         <ul class="map_list_exp">
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Persecution.svg" alt="">
+        <?php echo gett('Persecution') ?>
+      </li>
+
+      <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Discrimination.svg" alt="">
+          <?php echo gett('Discrimination') ?>
+      </li>
+
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
+        <?php echo gett('Stable') ?>
+      </li>
+    </ul>
+      <ul class="map_list_exp">
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/improved.svg" alt=""> <?php echo gett('Persecution') ?>
+      </li>
+      <li>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt=""> <?php echo gett('Unchanged') ?>
+      </li>
+      <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/worsened.svg" alt=""> <?php echo gett('Worsened') ?>
+      </li>
+
+    </ul>
       </div>
     </div>
  
