@@ -532,6 +532,9 @@ form button {
   display: none;
   float: left;
   width: 100%;
+  position: fixed;
+  z-index: 1005;
+  height: 60px;
   background: #F8F8F8; }
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
     .nav_mobile {
@@ -949,6 +952,9 @@ form button {
   .map__search--show {
     top: 0;
     opacity: 1; }
+    @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+      .map__search--show {
+        top: 60px; } }
   .map__search h1 {
     margin-top: 60px;
     margin-bottom: 60px;
