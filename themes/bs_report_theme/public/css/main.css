@@ -951,7 +951,8 @@ form button {
     opacity: 1; }
   .map__search h1 {
     margin-top: 60px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    margin: 60px auto; }
   .map__search h5 {
     margin-bottom: 30px; }
   .map__search__list {
