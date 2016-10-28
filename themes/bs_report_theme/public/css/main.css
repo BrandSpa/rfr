@@ -953,7 +953,8 @@ form button {
     width: 100%; }
     .map__search__list li {
       float: none;
-      color: #fff; }
+      color: #fff;
+      height: 30px; }
 
 #download-report {
   padding: 120px 40px; }
