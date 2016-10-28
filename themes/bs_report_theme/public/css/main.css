@@ -964,8 +964,9 @@ form button {
         margin-right: 15px; }
 
 .map__search__close {
-  color: #C03B3B;
-  font-size: 32px; }
+  color: #FC3938;
+  font-size: 32px;
+  margin: 30px; }
 
 .map__search_click {
   position: relative;
