@@ -955,6 +955,8 @@ form button {
       float: none;
       color: #fff;
       height: 30px; }
+      .map__search__list li img {
+        margin-right: 15px; }
 
 #download-report {
   padding: 120px 40px; }
