@@ -964,7 +964,19 @@ form button {
         margin-right: 15px; }
 
 .map__search_click {
+  position: relative;
   background: #1A2127; }
+  .map__search_click::after {
+    content: "\f4a5";
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-family: "Ionicons";
+    color: #fff;
+    font-size: 32px; }
 
 #download-report {
   padding: 120px 40px; }
