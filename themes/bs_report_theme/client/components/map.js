@@ -76,7 +76,8 @@ function setReport(reports) {
   let report = getReport(report => report.meta_country == countryName)(reports);
 
   if(report && report.guid) {
-    el.attr('fill', colors[report.meta_nature_persecution ]); 
+    console.log(report.meta_nature_persecution);
+    el.attr('fill', colors[report.meta_nature_persecution]); 
     SetLink.call(this, report.guid);
     showMapInfo(el, report)
   }
