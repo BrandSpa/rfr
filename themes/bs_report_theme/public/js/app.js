@@ -37549,8 +37549,8 @@
 
 
 	    methods: {
-	      getIcon: function getIcon() {
-	        return '/public/img/icons/' + item.meta_situation + '.svg';
+	      getIcon: function getIcon(name) {
+	        return '/public/img/icons/' + name + '.svg';
 	      },
 	      isSelected: function isSelected(index) {
 	        return index === this.current;

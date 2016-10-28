@@ -19,9 +19,9 @@ export default function() {
     },
 
     methods: {
-      
-        getIcon() {
-         return `/public/img/icons/${item.meta_situation}.svg`
+
+        getIcon(name) {
+         return `/public/img/icons/${name}.svg`
         },
 
         isSelected(index) {
