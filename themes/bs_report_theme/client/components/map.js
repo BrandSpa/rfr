@@ -54,10 +54,10 @@ function showMapInfo(el, report) {
 }
 
  function SetLink(reportGuid) {
-    d3
+  d3
     .select( this.parentNode )
     .append("a", () => this )
-    .attr("href", )
+    .attr("href", reportGuid)
     .append(() => this );
 }
 

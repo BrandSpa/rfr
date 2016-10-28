@@ -21078,7 +21078,7 @@
 
 	  d3.select(this.parentNode).append("a", function () {
 	    return _this;
-	  }).attr("href").append(function () {
+	  }).attr("href", reportGuid).append(function () {
 	    return _this;
 	  });
 	}
