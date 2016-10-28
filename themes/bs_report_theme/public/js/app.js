@@ -21105,6 +21105,8 @@
 
 	  if (report && report.guid) {
 	    var fill = colors[report.meta_nature_persecution];
+	    el.style("fill", fill);
+
 	    SetLink.call(this, report.guid);
 	    showMapInfo(el, report, fill);
 	  }
