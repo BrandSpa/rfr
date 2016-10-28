@@ -37542,7 +37542,9 @@
 	        current: 0
 	      };
 	    },
-	    ready: function ready() {},
+	    ready: function ready() {
+	      this.items = JSON.parse(this.reports);
+	    },
 
 
 	    methods: {
