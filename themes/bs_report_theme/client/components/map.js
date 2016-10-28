@@ -64,7 +64,7 @@ function showMapInfo(el, report) {
 
 const getReport = (fn) => reports => reports.filter(fn)[0];
 
-function setReport() {
+function setReport(reports) {
   let el = d3.select(this);
   let countryName = el.attr("id").replace('-', ' ');
   let report = getReport(report => report.meta_country == countryName)(reports);
@@ -120,8 +120,8 @@ export default function () {
 
         let paths = d3.select(mapContainer).selectAll("path");
 
-        polygons.each(setReport);
-        paths.each(setReport);
+        polygons.each(setReport.call(this, reports));
+        paths.each(setReport.call(this, reports));
         
       });
     }
