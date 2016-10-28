@@ -2,7 +2,7 @@
 <div class="map__search">
   <div class="col-md-3"></div>
   <div class="col-md-6 col-sm-10">
-       <h1 class="title title-line color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h1>
+       <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h1>
     <div class="row">
       <div class="col-md-6">
            <div class="map__search_input-container">
