@@ -1,5 +1,6 @@
 <template id="search-country-template">
 <div class="map__search">
+   <a href="#" class="select_country__close"><i class="ion-close"></i></a>
   <div class="col-md-3"></div>
   <div class="col-md-6 col-sm-10">
        <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h1>

@@ -1,5 +1,5 @@
 <template id="country-select-template">
-  <div class="select_country" v-on:keyup.down="down" v-on:keyup.down="up">
+  <div>
     <a href="#" class="select_country__close"><i class="ion-close"></i></a>
     <ul>
       <?php 
