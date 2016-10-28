@@ -37566,6 +37566,7 @@
 	        var query = this.country;
 	        var results = [];
 	        var key = evt.keyCode;
+	        console.log(query);
 
 	        if (query.length > 2) {
 	          results = reports.filter(function (pst) {

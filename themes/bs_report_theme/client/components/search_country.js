@@ -13,7 +13,7 @@ export default function() {
     },
 
     ready() {
-      
+
     },
 
     methods: {
@@ -43,6 +43,7 @@ export default function() {
           let query = this.country;
           let results = [];
           let key = evt.keyCode;
+          console.log(query);
 
           if (query.length > 2) {
             results = reports.filter( pst => {
