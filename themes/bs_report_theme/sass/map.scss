@@ -179,9 +179,11 @@
   }
 
   &__list {
-
+    float: left;
+    padding: 0;
     li {
       float: none;
+      color: #fff;
     }
   }
 }

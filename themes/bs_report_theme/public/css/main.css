@@ -947,8 +947,12 @@ form button {
   .map__search--show {
     top: 0;
     opacity: 1; }
-  .map__search__list li {
-    float: none; }
+  .map__search__list {
+    float: left;
+    padding: 0; }
+    .map__search__list li {
+      float: none;
+      color: #fff; }
 
 #download-report {
   padding: 120px 40px; }
