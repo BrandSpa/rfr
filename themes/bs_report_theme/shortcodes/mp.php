@@ -34,13 +34,14 @@
         <div class="map__search_input-container">
           <input
             type="text"
-            class="map__search_input"
+            class="map__search_click"
           />
         </div>
       </div>
 
       <script>
-        document.querySelector('.map__search_input').addEventListener('change', function(e) {
+
+        document.querySelector('.map__search_click').addEventListener('click', function(e) {
           e.preventDefault();
           console.log(this);
           document.querySelector('.map__search').classList.add('map__search--show');
