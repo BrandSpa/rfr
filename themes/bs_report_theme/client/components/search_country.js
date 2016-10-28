@@ -23,6 +23,11 @@ export default function() {
           return index === this.current;
         },
 
+        nature(n) {
+          console.log(n);
+          return true;
+        },       
+
         enter() {
           window.location = this.items[this.current].guid;
         },

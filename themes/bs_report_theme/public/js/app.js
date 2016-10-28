@@ -37552,6 +37552,10 @@
 	      isSelected: function isSelected(index) {
 	        return index === this.current;
 	      },
+	      nature: function nature(n) {
+	        console.log(n);
+	        return true;
+	      },
 	      enter: function enter() {
 	        window.location = this.items[this.current].guid;
 	      },

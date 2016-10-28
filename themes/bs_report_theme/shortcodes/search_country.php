@@ -19,14 +19,15 @@
     </div>
 
     <ul class="map__search_results">
-      <li v-for="item in items" v-bind:class="{'selected': isSelected($index)}">
+      <li v-for="item in items" v-bind:class="{'selected': isSelected($index), 'bg-red': nature(item.nature_persecution) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
           <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
         </span>
       </li>
     </ul>
-      </div>
+
+    </div>
       <div class="col-md-6">
          <ul class="map_list_exp">
       <li>
@@ -39,7 +40,7 @@
           <?php echo gett('Discrimination') ?>
       </li>
 
-      <li>”
+      <li>
         <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Stable.svg" alt="">
         <?php echo gett('Stable') ?>
       </li>

@@ -128,6 +128,12 @@ h6 {
 .color-white {
   color: #fff; }
 
+.bg-red {
+  background: #FC3938; }
+
+.bg-discrimination {
+  background: #FFC849; }
+
 .center-vertical {
   display: -ms-flexbox;
   display: flex;
