@@ -7,7 +7,7 @@
   <div class="col-md-6 col-sm-10">
        <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h1>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
            <div class="map__search_input-container">
       <input
         type="text" 
@@ -32,7 +32,7 @@
     </ul>
 
     </div>
-      <div class="col-md-6">
+      <div class="col-md-8">
       <div class="row">
         <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
          <ul class="map__search__list">
