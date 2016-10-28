@@ -4,7 +4,7 @@ import Vue from 'vue';
 export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
-    
+    data() {
       return {
         country: '',
         items: [],
@@ -16,7 +16,7 @@ export default function() {
 
     },
 
-      methods: {
+    methods: {
         isSelected(index) {
           return index === this.current;
         },
