@@ -69,8 +69,8 @@ export default function () {
       .on('zoom', function() {
 
         let transform = d3.event.transform;
-        
-        d3.select('.map__controllers').classed('map__controllers--active', true);
+
+        d3.select('.map__controllers').classed('map__controllers--show', true);
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale("+ transform.k +") ");
       });
 
