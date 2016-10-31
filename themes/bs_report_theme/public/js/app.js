@@ -37653,7 +37653,13 @@
 	        })[0];
 	      });
 
-	      newContinents['Latin America'] = continents['LATIN AMERICA'].map(function (coun) {
+	      newContinents['LatinAmerica'] = continents['LATIN AMERICA'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
+	      newContinents['north america'] = continents['NORTH AMERICA'].map(function (coun) {
 	        return reports.filter(function (r) {
 	          return r.meta_country == coun;
 	        })[0];
