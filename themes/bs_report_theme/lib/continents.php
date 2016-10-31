@@ -40,7 +40,7 @@ function getContinents() {
       "Niger",
       "Nigeria",
       "Rwanda",
-      "São Tomé and Príncipe",
+      "Sao Tome Principe",
       "Senegal",
       "Seychelles",
       "Sierra Leone",
@@ -115,7 +115,7 @@ function getContinents() {
       "Slovenia",
       "Ukraine",
     ),
-    
+
     "Latin America" => array(
       "Argentina",
       "Belize",
