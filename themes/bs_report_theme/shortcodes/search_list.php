@@ -74,3 +74,5 @@
   continents='<?php echo json_encode( getContinents() ); ?>'
 >
 </search-list>
+
+<?php echo json_encode( getContinents() ); ?>
