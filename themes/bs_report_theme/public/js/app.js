@@ -37644,7 +37644,7 @@
 
 	      var result = continents['Afrika'].map(function (coun) {
 	        return reports.filter(function (r) {
-	          return r.meta_country == count;
+	          return r.meta_country == coun;
 	        })[0];
 	      });
 
