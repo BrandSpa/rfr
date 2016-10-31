@@ -19,20 +19,20 @@
   <div id="map" class="map">
   
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-8">
         <h1 class="title title-line color-red">
           <?php echo gett('RELIGIOUS FREEDOM <br> IN THE WORLD', true); ?>
         </h1>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="col-xs-6">
-          <button class="button" v-on:click="showSearchList"><?php echo gett('LIST'); ?></button>
+          <button class="button button--fill" v-on:click="showSearchList"><?php echo gett('LIST'); ?></button>
         </div>
 
         <div class="col-xs-6">
           <div class="map__search_input-container">
-            <button class="button map__search_click" v-on:click="showSearch"></button>
+            <button class="button button--fill map__search_click" v-on:click="showSearch"></button>
           </div>
         </div>
       

@@ -167,6 +167,8 @@ button:focus {
   font-weight: bold;
   line-height: 1.2;
   height: 40px; }
+  .button--fill {
+    width: 100%; }
   .button:focus {
     outline: none; }
   .button::after {

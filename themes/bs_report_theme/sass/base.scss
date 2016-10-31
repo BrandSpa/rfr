@@ -177,6 +177,10 @@ button {
   @include title2;
   height: 40px;
 
+  &--fill {
+    width: 100%;
+  }
+
   &:focus {
     outline: none;
   }
