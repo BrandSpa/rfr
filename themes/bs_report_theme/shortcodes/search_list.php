@@ -22,7 +22,7 @@
       </li>
     </ul>
 
-    <button class="bg-red">North America</button>
+    <button class="bg-red map__search__list_btn">North America</button>
     <ul class="map__search_results">
           <li 
         v-for="item in continents.northAmerica" 
