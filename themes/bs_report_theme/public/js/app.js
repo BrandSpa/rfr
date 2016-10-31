@@ -37689,7 +37689,7 @@
 	      showContinent: function showContinent(continent) {
 	        var each = function each(fn) {
 	          return function (arr) {
-	            return Array.prototype.foreach.call(arr, fn);
+	            return Array.prototype.forEach.call(arr, fn);
 	          };
 	        };
 

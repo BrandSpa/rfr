@@ -55,7 +55,7 @@ export default function() {
         },
 
         showContinent(continent) {
-          let each = fn => arr => Array.prototype.foreach.call(arr, fn);
+          let each = fn => arr => Array.prototype.forEach.call(arr, fn);
 
           let all = document.querySelectorAll('ul[data-country]');
 
