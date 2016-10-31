@@ -52,6 +52,10 @@ export default function() {
 
         isPersecution(n) {
           return n == 'Persecution';
+        },
+
+        showContinent(countinent) {
+          console.log(continent);
         }
     }
 
