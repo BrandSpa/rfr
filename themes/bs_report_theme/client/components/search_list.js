@@ -5,10 +5,10 @@ import $ from 'jquery';
 export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',
-    props: ['reports', 'dir'],
+    props: ['reports', 'continents', 'dir'],
 
     ready() {
-      console.log('search list');
+      console.log(this.continents);
     }
   })
 

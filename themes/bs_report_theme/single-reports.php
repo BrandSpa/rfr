@@ -2,7 +2,7 @@
 
 <?php get_header() ?>
 
-<?php require 'shortcodes/search_country”.php' ?>
+<?php require 'shortcodes/search_list.php' ?>
 
 <div class="report">
 
