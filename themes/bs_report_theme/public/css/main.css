@@ -148,6 +148,9 @@ h6 {
   -ms-flex-align: baseline;
   align-items: baseline; }
 
+button:focus {
+  outline: none !important; }
+
 .button {
   background: #FC3938;
   min-height: 60px;
