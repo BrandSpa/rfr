@@ -156,6 +156,7 @@ h6 {
 .center_horizontal {
   @include center_horizontal;
 }
+
 button {
   &:focus {
     outline: none;
