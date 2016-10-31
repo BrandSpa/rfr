@@ -55,8 +55,14 @@ export default function() {
         },
 
         showContinent(continent) {
+          let each = fn => arr => Array.prototype.foreach.call(arr, fn);
+
           let all = document.querySelectorAll('ul[data-country]');
-          console.log('all', all);
+
+          each((el) => {
+            console.log(el);
+          })(all);
+
            document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
         }
     }
