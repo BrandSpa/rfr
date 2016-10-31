@@ -12,7 +12,7 @@
     <button 
       class="bg-red map__search__list_btn" 
       data-country="Afrika" 
-      onClick="showThit" >Afrika</button>
+      onClick="showThat" >Afrika</button>
 
     <ul class="map__search_results" data-country="Afrika" style="display: none">
       <li
@@ -27,7 +27,7 @@
 
 <script>
 
-  function showThit(e) {
+  function showThat(e) {
     e.preventDefault(); 
     document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  
   }
