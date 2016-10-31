@@ -37652,7 +37652,7 @@
 	      var continents = JSON.parse(this.continents);
 	      var newContinents = {};
 
-	      newContinents['Afrika'] = continents['Afrika'].map(function (coun) {
+	      newContinents['afrika'] = continents['Afrika'].map(function (coun) {
 	        return reports.filter(function (r) {
 	          return r.meta_country == coun;
 	        })[0];

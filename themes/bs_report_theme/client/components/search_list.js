@@ -17,15 +17,13 @@ export default function() {
       let continents = JSON.parse(this.continents);
       let newContinents = {};
 
-      newContinents['Afrika'] = continents['Afrika'].map(coun => {
+      newContinents['afrika'] = continents['Afrika'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
       newContinents['asia'] =  continents['Asia'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
-
-     
 
       newContinents['easterEurope'] = continents['Easter Europe'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
@@ -39,7 +37,6 @@ export default function() {
         return reports.filter(r => r.meta_country == coun)[0];
       });
       
-
       newContinents['northAmerica'] =  continents['North America'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });

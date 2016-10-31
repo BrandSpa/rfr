@@ -11,11 +11,11 @@
 
     <button 
       class="bg-red map__search__list_btn" 
-      v-on:click="showContinent('Afrika')" >Afrika</button>
+      v-on:click="showContinent('afrika')" >Afrika</button>
 
-    <ul class="map__search_results" data-country="Afrika" style="display: none">
+    <ul class="map__search_results" data-country="afrika" style="display: none">
       <li
-        v-for="item in continents.Afrika" 
+        v-for="item in continents.afrika" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
@@ -23,6 +23,37 @@
         </span>
       </li>
     </ul>
+
+    <button 
+      class="bg-red map__search__list_btn" 
+      v-on:click="showContinent('asia')" >asia</button>
+
+    <ul class="map__search_results" data-country="asia" style="display: none">
+      <li
+        v-for="item in continents.asia" 
+        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+        <a href="{{item.guid}}">{{item.meta_country}}</a>
+        <span>
+          <img v-bind:src="getIcon(item.meta_situation)" alt="">
+        </span>
+      </li>
+    </ul>
+
+    <button 
+        class="bg-red map__search__list_btn" 
+        v-on:click="showContinent('easterEurope')" >Easter Europe</button>
+
+      <ul class="map__search_results" data-country="easterEurope" style="display: none">
+        <li
+          v-for="item in continents.easterEurope" 
+          v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+          <a href="{{item.guid}}">{{item.meta_country}}</a>
+          <span>
+            <img v-bind:src="getIcon(item.meta_situation)" alt="">
+          </span>
+        </li>
+      </ul>
+    
 
     <button 
       class="bg-red map__search__list_btn" 
