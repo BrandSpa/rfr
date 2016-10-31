@@ -10,7 +10,13 @@ export default function() {
     ready() {
       var reports = JSON.parse(this.reports);
       var continents = JSON.parse(this.continents);
-      continents['Afrika'].map(coun => console.log(coun));
+      
+      let result = continents['Afrika'].map(coun => {
+        reports.filter(rep => rep.meta_country == coun);
+      });
+
+      console.log(result);
+
     }
 
   })

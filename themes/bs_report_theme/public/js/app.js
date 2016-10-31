@@ -37641,9 +37641,14 @@
 	    ready: function ready() {
 	      var reports = JSON.parse(this.reports);
 	      var continents = JSON.parse(this.continents);
-	      continents['Afrika'].map(function (coun) {
-	        return console.log(coun);
+
+	      var result = continents['Afrika'].map(function (coun) {
+	        reports.filter(function (rep) {
+	          return rep.meta_country == coun;
+	        });
 	      });
+
+	      console.log(result);
 	    }
 	  });
 	};
