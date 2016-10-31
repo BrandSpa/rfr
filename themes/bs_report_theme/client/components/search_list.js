@@ -8,8 +8,9 @@ export default function() {
     props: ['reports', 'continents', 'dir'],
 
     ready() {
-      console.log( JSON.parse(this.continents) );
+      console.log( JSON.parse(this.continents) )
     }
+    
   })
 
 }

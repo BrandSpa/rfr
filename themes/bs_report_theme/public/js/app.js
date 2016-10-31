@@ -37636,10 +37636,10 @@
 	exports.default = function () {
 	  _vue2.default.component('search-list', {
 	    template: '#search-list-template',
-	    props: ['reports', 'dir'],
+	    props: ['reports', 'continents', 'dir'],
 
 	    ready: function ready() {
-	      console.log('search list');
+	      console.log(JSON.parse(this.continents));
 	    }
 	  });
 	};
