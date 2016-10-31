@@ -9,7 +9,7 @@
     <div class="col-md-3"></div>
       <div class="col-md-4">
 
-    <button>Afrika</button>
+    <button class="bg-red">Afrika</button>
 
     <ul class="map__search_results">
       <li
@@ -22,7 +22,7 @@
       </li>
     </ul>
 
-    <button>North America</button>
+    <button class="bg-red">North America</button>
     <ul class="map__search_results">
           <li 
         v-for="item in continents.northAmerica" 
