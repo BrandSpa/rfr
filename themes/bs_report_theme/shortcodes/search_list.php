@@ -1,11 +1,11 @@
-<template id="search-country-template">
+<template id="search-list-template">
 <div class="map__search">
 
   <a href="#" class="map__search__close" v-on:click="close"><i class="ion-close"></i></a>
   
   <div class="col-md-3"></div>
   <div class="col-md-6 col-sm-10">
-       <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h1>
+       <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY LIST') ?></h1>
     <div class="row">
     <div class="col-md-3"></div>
       <div class="col-md-4">
@@ -78,4 +78,8 @@
 
 </template>
 
-<search-country dir="<?php echo get_template_directory_uri(); ?>" reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'></search-country>
+<search-list 
+  dir="<?php echo get_template_directory_uri(); ?>" 
+  reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'
+>
+</search-list>
