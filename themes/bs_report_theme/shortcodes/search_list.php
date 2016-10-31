@@ -6,8 +6,8 @@
   <div class="col-md-6 col-sm-10">
        <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY LIST') ?></h1>
     <div class="row">
-    <div class="col-md-3"></div>
-      <div class="col-md-4">
+
+  <div class="col-md-6">
 
     <button class="bg-red map__search__list_btn">Afrika</button>
 
