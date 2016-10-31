@@ -37696,7 +37696,7 @@
 	        var all = document.querySelectorAll('ul[data-country]');
 
 	        each(function (el) {
-	          console.log(el);
+	          el.style.display = 'none';
 	        })(all);
 
 	        document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';

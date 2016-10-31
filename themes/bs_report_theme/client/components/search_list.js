@@ -60,7 +60,7 @@ export default function() {
           let all = document.querySelectorAll('ul[data-country]');
 
           each((el) => {
-            console.log(el);
+            el.style.display = 'none';
           })(all);
 
            document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
