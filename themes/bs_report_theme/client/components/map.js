@@ -99,13 +99,6 @@ export default function () {
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
 
-       var input = document.querySelector('.map__search_click');
-          input.addEventListener('click', function(e) {
-            e.preventDefault();
-            console.log('yeah');
-            document.querySelector('.map__search').classList.add('map__search--show');
-          });
-
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {
@@ -142,6 +135,18 @@ export default function () {
         });
         
       });
+    },
+
+    methods: {
+      showSearch(e) {
+        e.preventDefault();
+        document.querySelector('.map__search').classList.add('map__search--show');
+      },
+
+      showSearchList(e) {
+        e.preventDefault();
+        document.querySelector('.map__search_list').classList.add('map__search_list--show');
+      }
     }
   });
 

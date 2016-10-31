@@ -945,7 +945,7 @@ form button {
     .map_list_exp li img {
       padding-right: 10px; }
 
-.map__search {
+.map__search, .map__search_list {
   background: RGBA(24, 30, 35, 0.9);
   width: 91%;
   height: 100%;
@@ -956,29 +956,29 @@ form button {
   top: -100%;
   opacity: 0; }
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-    .map__search {
+    .map__search, .map__search_list {
       width: 100%; } }
-  .map__search--show {
+  .map__search--show, .map__search_list--show {
     top: 0;
     opacity: 1; }
     @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-      .map__search--show {
+      .map__search--show, .map__search_list--show {
         top: 60px; } }
-  .map__search h1 {
+  .map__search h1, .map__search_list h1 {
     margin-top: 60px;
     margin-bottom: 60px;
     margin: 60px auto; }
-  .map__search h5 {
+  .map__search h5, .map__search_list h5 {
     margin-bottom: 30px; }
-  .map__search__list {
+  .map__search__list, .map__search_list__list {
     float: left;
     padding: 0;
     width: 100%; }
-    .map__search__list li {
+    .map__search__list li, .map__search_list__list li {
       float: none;
       color: #fff;
       height: 30px; }
-      .map__search__list li img {
+      .map__search__list li img, .map__search_list__list li img {
         margin-right: 15px; }
 
 .map__search__close {

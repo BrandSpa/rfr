@@ -27,7 +27,7 @@
 
       <div class="col-md-3">
         <div class="col-xs-6">
-          <button class="button"><?php echo gett('LIST'); ?></button>
+          <button class="button map__search_list_click"><?php echo gett('LIST'); ?></button>
         </div>
         <div class="col-xs-6">
 

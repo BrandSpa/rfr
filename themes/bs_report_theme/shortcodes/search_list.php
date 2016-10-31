@@ -1,5 +1,5 @@
 <template id="search-list-template">
-<div class="map__search">
+<div class="map__search_list">
 
   <a href="#" class="map__search__close" v-on:click="close"><i class="ion-close"></i></a>
   
