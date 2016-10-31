@@ -25,14 +25,6 @@
       </li>
     </ul>
 
-<script>
-
-  function showThat(e) {
-    e.preventDefault(); 
-    document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  
-  }
-</script>
-
     <button class="bg-red map__search__list_btn">North America</button>
 
     <ul class="map__search_results">
@@ -98,3 +90,12 @@
   continents='<?php echo json_encode( getContinents() ); ?>'
 >
 </search-list>
+
+
+<script>
+
+  function showThat(e) {
+    e.preventDefault(); 
+    document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  
+  }
+</script>
