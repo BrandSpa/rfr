@@ -27,12 +27,12 @@
 
       <div class="col-md-3">
         <div class="col-xs-6">
-          <button class="button" v-on:click="showSearch"><?php echo gett('LIST'); ?></button>
+          <button class="button" v-on:click="showSearchList"><?php echo gett('LIST'); ?></button>
         </div>
 
         <div class="col-xs-6">
           <div class="map__search_input-container">
-            <button class="button map__search_click" v-on:click="showSearchList"></button>
+            <button class="button map__search_click" v-on:click="showSearch"></button>
           </div>
         </div>
       
