@@ -37687,7 +37687,7 @@
 	        return n == 'Persecution';
 	      },
 	      showContinent: function showContinent(continent) {
-	        document.querySelector('ul[data-country=' + continent + ']').style.display = 'block';
+	        document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
 	      }
 	    }
 
