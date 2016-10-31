@@ -12,25 +12,41 @@
       <div class="map__search_input-container"></div>
 
     <ul class="map__search_results">
-      <h3>Afrika</h3>
-      <li 
-        v-for="item in continents.Afrika" 
-        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-        <a href="{{item.guid}}">{{item.meta_country}}</a>
-        <span>
-          <img v-bind:src="getIcon(item.meta_situation)" alt="">
-        </span>
+    <ul>
+      <li><h3>Afrika</h3></li>
+      <li>
+        <ul>
+               <li 
+            v-for="item in continents.Afrika" 
+            v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+            <a href="{{item.guid}}">{{item.meta_country}}</a>
+            <span>
+              <img v-bind:src="getIcon(item.meta_situation)" alt="">
+            </span>
+          </li>
+        </ul>
+      </li>    
+    </ul>       
+  </ul>
+
+  <ul>
+    <li>
+      North Americana
+    </li>
+      <li>
+        <ul>
+          <li
+          v-for="item in continents.northAmerica" 
+          v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+          <a href="{{item.guid}}">{{item.meta_country}}</a>
+          <span>
+            <img v-bind:src="getIcon(item.meta_situation)" alt="">
+          </span>
+        </li>
+        </ul>
       </li>
-      <h3>North Americana</h3>
-       <li 
-        v-for="item in continents.northAmerica" 
-        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-        <a href="{{item.guid}}">{{item.meta_country}}</a>
-        <span>
-          <img v-bind:src="getIcon(item.meta_situation)" alt="">
-        </span>
-      </li>
-    </ul>
+       
+  </ul>
 
     </div>
       <div class="col-md-3">
