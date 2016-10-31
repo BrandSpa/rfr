@@ -208,8 +208,6 @@ function getContinents() {
     "Moldova"
   );
 
-  sort($countries);
-
   return $countries;
 }
 
