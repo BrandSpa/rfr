@@ -21,11 +21,11 @@ export default function() {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      newContinents['latinAmerica'] = continents['LATIN AMERICA'].map(coun => {
+      newContinents['latinAmerica'] = continents['Latin America'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      newContinents['northAmerica'] =  continents['NORTH AMERICA'].map(coun => {
+      newContinents['northAmerica'] =  continents['North America'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
