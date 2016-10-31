@@ -37639,7 +37639,11 @@
 	    props: ['reports', 'continents', 'dir'],
 
 	    ready: function ready() {
-	      console.log(JSON.parse(this.continents));
+	      var reports = JSON.parse(this.reports);
+	      var continents = JSON.parse(this.continents);
+	      continents['Afrika'].map(function (coun) {
+	        return console.log(coun);
+	      });
 	    }
 	  });
 	};

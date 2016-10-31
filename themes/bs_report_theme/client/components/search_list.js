@@ -8,9 +8,11 @@ export default function() {
     props: ['reports', 'continents', 'dir'],
 
     ready() {
-      console.log( JSON.parse(this.continents) )
+      var reports = JSON.parse(this.reports);
+      var continents = JSON.parse(this.continents);
+      continents['Afrika'].map(coun => console.log(coun));
     }
-    
+
   })
 
 }
