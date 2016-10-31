@@ -37643,7 +37643,7 @@
 	      var continents = JSON.parse(this.continents);
 
 	      var result = continents['Afrika'].map(function (coun) {
-	        console.log("Afghanistan" == con);
+	        console.log("Afghanistan" == coun);
 	      });
 
 	      console.log(result);
