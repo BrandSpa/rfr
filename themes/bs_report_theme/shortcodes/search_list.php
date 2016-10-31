@@ -3,7 +3,7 @@
 
   <a href="#" class="map__search__close" v-on:click="close"><i class="ion-close"></i></a>
   
-  <div class="col-md-6 col-sm-10">
+  <div class="col-md-6 col-sm-10" style="float: none; margin: 0 auto">
        <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY LIST') ?></h1>
     <div class="row">
 
