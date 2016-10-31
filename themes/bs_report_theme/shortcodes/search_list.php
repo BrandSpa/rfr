@@ -53,22 +53,6 @@
           </span>
         </li>
       </ul>
-    
-
-    <button 
-      class="bg-red map__search__list_btn" 
-      v-on:click="showContinent('North America')">North America</button>
-
-    <ul class="map__search_results" data-country="North America" style="display: none">
-          <li 
-        v-for="item in continents.northAmerica" 
-        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-        <a href="{{item.guid}}">{{item.meta_country}}</a>
-        <span>
-          <img v-bind:src="getIcon(item.meta_situation)" alt="">
-        </span>
-      </li>
-    </ul>
 
      <button 
       class="bg-red map__search__list_btn" 
@@ -85,7 +69,83 @@
       </li>
     </ul>
 
+    <button 
+        class="bg-red map__search__list_btn" 
+        v-on:click="showContinent('middleEast')" >Middle East</button>
+
+      <ul class="map__search_results" data-country="middleEast" style="display: none">
+        <li
+          v-for="item in continents.middleEast" 
+          v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+          <a href="{{item.guid}}">{{item.meta_country}}</a>
+          <span>
+            <img v-bind:src="getIcon(item.meta_situation)" alt="">
+          </span>
+        </li>
+      </ul>
+    
+    <button 
+      class="bg-red map__search__list_btn" 
+      v-on:click="showContinent('North America')">North America</button>
+
+    <ul class="map__search_results" data-country="North America" style="display: none">
+          <li 
+        v-for="item in continents.northAmerica" 
+        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+        <a href="{{item.guid}}">{{item.meta_country}}</a>
+        <span>
+          <img v-bind:src="getIcon(item.meta_situation)" alt="">
+        </span>
+      </li>
+    </ul>
+
+    <button 
+        class="bg-red map__search__list_btn" 
+        v-on:click="showContinent('ocenia')" >Ocenia</button>
+
+      <ul class="map__search_results" data-country="ocenia" style="display: none">
+        <li
+          v-for="item in continents.ocenia" 
+          v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+          <a href="{{item.guid}}">{{item.meta_country}}</a>
+          <span>
+            <img v-bind:src="getIcon(item.meta_situation)" alt="">
+          </span>
+        </li>
+      </ul>
+      
+      <button 
+        class="bg-red map__search__list_btn" 
+        v-on:click="showContinent('russiaCentralAsia')" >Russia & Central Asia</button>
+
+      <ul class="map__search_results" data-country="russiaCentralAsia" style="display: none">
+        <li
+          v-for="item in continents.russiaCentralAsia" 
+          v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+          <a href="{{item.guid}}">{{item.meta_country}}</a>
+          <span>
+            <img v-bind:src="getIcon(item.meta_situation)" alt="">
+          </span>
+        </li>
+      </ul>
+
+      <button 
+        class="bg-red map__search__list_btn" 
+        v-on:click="showContinent('westernEurope')" >Western Europe</button>
+
+      <ul class="map__search_results" data-country="westernEurope" style="display: none">
+        <li
+          v-for="item in continents.westernEurope" 
+          v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+          <a href="{{item.guid}}">{{item.meta_country}}</a>
+          <span>
+            <img v-bind:src="getIcon(item.meta_situation)" alt="">
+          </span>
+        </li>
+      </ul>
+    
     </div>
+    
       <div class="col-md-6">
       <div class="row">
         <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
