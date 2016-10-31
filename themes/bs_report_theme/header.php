@@ -90,4 +90,4 @@
    ?>
 </div>
 
-<?php include 'shortcodes/select_country.php' ?>
+<?php include 'shortcodes/select_list.php' ?>
