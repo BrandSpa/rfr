@@ -21,11 +21,38 @@ export default function() {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      newContinents['latinAmerica'] = continents['Latin America'].map(coun => {
+      newContinents['asia'] =  continents['Asia'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
+     
+
+      newContinents['easterEurope'] = continents['Easter Europe'].map(coun => {
+        return reports.filter(r => r.meta_country == coun)[0];
+      });
+
+       newContinents['latinAmerica'] = continents['Latin America'].map(coun => {
+        return reports.filter(r => r.meta_country == coun)[0];
+      });
+
+      newContinents['middleEast'] = continents['Middle East'].map(coun => {
+        return reports.filter(r => r.meta_country == coun)[0];
+      });
+      
+
       newContinents['northAmerica'] =  continents['North America'].map(coun => {
+        return reports.filter(r => r.meta_country == coun)[0];
+      });
+    
+      newContinents['ocenia'] =  continents['Ocenia'].map(coun => {
+        return reports.filter(r => r.meta_country == coun)[0];
+      });
+
+      newContinents['russiaCentralAsia'] =  continents['Russia & Central Asia'].map(coun => {
+        return reports.filter(r => r.meta_country == coun)[0];
+      });
+
+     newContinents['westernEurope'] =  continents['Western Europe'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 

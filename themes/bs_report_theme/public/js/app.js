@@ -37658,13 +37658,49 @@
 	        })[0];
 	      });
 
+	      newContinents['asia'] = continents['Asia'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
+	      newContinents['easterEurope'] = continents['Easter Europe'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
 	      newContinents['latinAmerica'] = continents['Latin America'].map(function (coun) {
 	        return reports.filter(function (r) {
 	          return r.meta_country == coun;
 	        })[0];
 	      });
 
+	      newContinents['middleEast'] = continents['Middle East'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
 	      newContinents['northAmerica'] = continents['North America'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
+	      newContinents['ocenia'] = continents['Ocenia'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
+	      newContinents['russiaCentralAsia'] = continents['Russia & Central Asia'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
+	      newContinents['westernEurope'] = continents['Western Europe'].map(function (coun) {
 	        return reports.filter(function (r) {
 	          return r.meta_country == coun;
 	        })[0];
