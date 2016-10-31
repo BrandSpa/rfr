@@ -37665,7 +37665,7 @@
 	        })[0];
 	      });
 
-	      console.log(newContinents);
+	      this.continents = newContinents;
 	    }
 	  });
 	};

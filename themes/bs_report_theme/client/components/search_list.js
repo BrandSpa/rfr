@@ -29,7 +29,7 @@ export default function() {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      console.log(newContinents);
+      this.continents = newContinents;
     }
 
   })
