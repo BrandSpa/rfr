@@ -6,12 +6,6 @@
   <div class="col-md-6 col-sm-10">
        <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY LIST') ?></h1>
     <div class="row">
-<script>
-
-  function showThit() { 
-    document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  
-  }
-</script>
 
   <div class="col-md-6">
 
@@ -30,6 +24,13 @@
         </span>
       </li>
     </ul>
+    
+<script>
+
+  function showThit() { 
+    document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  
+  }
+</script>
 
     <button class="bg-red map__search__list_btn">North America</button>
 
