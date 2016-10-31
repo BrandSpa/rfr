@@ -9,9 +9,12 @@
 
   <div class="col-md-6">
 
-    <button class="bg-red map__search__list_btn">Afrika</button>
+    <button 
+      class="bg-red map__search__list_btn" 
+      data-country="Afrika" 
+      onClick="function(){ jQuery('li[data-country="Afrika"]').style.display = 'block'  }" >Afrika</button>
 
-    <ul class="map__search_results">
+    <ul class="map__search_results" data-country="Afrika" stlyle="display: none">
       <li
         v-for="item in continents.Afrika" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
@@ -23,6 +26,7 @@
     </ul>
 
     <button class="bg-red map__search__list_btn">North America</button>
+
     <ul class="map__search_results">
           <li 
         v-for="item in continents.northAmerica" 
