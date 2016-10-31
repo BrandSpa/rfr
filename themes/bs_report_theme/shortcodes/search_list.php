@@ -12,7 +12,7 @@
     <button 
       class="bg-red map__search__list_btn" 
       data-country="Afrika" 
-      onClick="function(){ jQuery('ul[data-country="Afrika"]').style.display = 'block'  }" >Afrika</button>
+      onClick="function(){ document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  }" >Afrika</button>
 
     <ul class="map__search_results" data-country="Afrika" style="display: none">
       <li
