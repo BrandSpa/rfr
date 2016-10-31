@@ -9,17 +9,7 @@
     <div class="row">
     <div class="col-md-3"></div>
       <div class="col-md-4">
-           <div class="map__search_input-container">
-      <input
-        type="text" 
-        v-model="country"
-        v-on:keydown.down="down"
-        v-on:keydown.up="up"
-        v-on:keyup="search"
-        v-on:keyup.enter="enter"
-        class="map__search_input" 
-      />
-    </div>
+      <div class="map__search_input-container"></div>
 
     <ul class="map__search_results">
       <li 
