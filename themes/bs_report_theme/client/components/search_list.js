@@ -35,7 +35,7 @@ export default function() {
     methods: {
         close(e) {
         if(e) e.preventDefault();
-        $('.map__search').removeClass('map__search--show');
+        $('.map__search_list').removeClass('map__search_list--show');
       },
 
         getIcon(name) {

@@ -37677,7 +37677,7 @@
 	    methods: {
 	      close: function close(e) {
 	        if (e) e.preventDefault();
-	        (0, _jquery2.default)('.map__search').removeClass('map__search--show');
+	        (0, _jquery2.default)('.map__search_list').removeClass('map__search_list--show');
 	      },
 	      getIcon: function getIcon(name) {
 	        return this.dir + '/public/img/icons/' + name + '.svg';
