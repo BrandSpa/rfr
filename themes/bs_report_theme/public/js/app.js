@@ -37642,13 +37642,19 @@
 	      var reports = JSON.parse(this.reports);
 	      var continents = JSON.parse(this.continents);
 
-	      var result = continents['Afrika'].map(function (coun) {
+	      var afrika = continents['Afrika'].map(function (coun) {
 	        return reports.filter(function (r) {
 	          return r.meta_country == coun;
 	        })[0];
 	      });
 
-	      console.log(result);
+	      var latinAmerica = continents['LATIN AMERICA'].map(function (coun) {
+	        return reports.filter(function (r) {
+	          return r.meta_country == coun;
+	        })[0];
+	      });
+
+	      console.log(afrika, latinAmerica);
 	    }
 	  });
 	};

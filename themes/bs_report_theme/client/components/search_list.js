@@ -11,11 +11,15 @@ export default function() {
       var reports = JSON.parse(this.reports);
       var continents = JSON.parse(this.continents);
 
-      let result = continents['Afrika'].map(coun => {
+      let afrika = continents['Afrika'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      console.log(result);
+      let latinAmerica = continents['LATIN AMERICA'].map(coun => {
+        return reports.filter(r => r.meta_country == coun)[0];
+      });
+
+      console.log(afrika, latinAmerica);
     }
 
   })
