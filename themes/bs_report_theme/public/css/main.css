@@ -1016,7 +1016,7 @@ form button {
   border: 1px solid #1A2127;
   color: #1A2127;
   width: 100%;
-  padding: 20px;
+  padding-left: 20px;
   height: 40px;
   margin: 2px 0;
   overflow: hidden;
