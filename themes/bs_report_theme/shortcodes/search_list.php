@@ -11,11 +11,10 @@
       <div class="col-md-4">
       <div class="map__search_input-container"></div>
 
+    <button>Afrika</button>
+
     <ul class="map__search_results">
-      <li>
-        <button>Afrika</button>
-        <ul>
-            <li 
+      <li
         v-for="item in continents.Afrika" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
@@ -23,13 +22,11 @@
           <img v-bind:src="getIcon(item.meta_situation)" alt="">
         </span>
       </li>
-        </ul>
-      </li>
-    
-       <li>
-        <button>North America</button>
-      </li>
-       <li 
+    </ul>
+
+    <button>North America</button>
+    <ul class="map__search_results">
+          <li 
         v-for="item in continents.northAmerica" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
