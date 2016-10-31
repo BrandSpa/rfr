@@ -56,7 +56,6 @@ export default function() {
 
         showContinent(continent) {
            document.querySelector(`ul[data-country=${continent}]`).style.display = 'block';
-          console.log(continent);
         }
     }
 

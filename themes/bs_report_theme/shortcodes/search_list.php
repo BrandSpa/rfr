@@ -11,7 +11,6 @@
 
     <button 
       class="bg-red map__search__list_btn" 
-      data-country="Afrika" 
       v-on:click="showContinent('Afrika')" >Afrika</button>
 
     <ul class="map__search_results" data-country="Afrika" style="display: none">
@@ -25,9 +24,11 @@
       </li>
     </ul>
 
-    <button class="bg-red map__search__list_btn">North America</button>
+    <button 
+      class="bg-red map__search__list_btn" 
+      v-on:click="showContinent('North America')">North America</button>
 
-    <ul class="map__search_results">
+    <ul class="map__search_results" data-country="North America" style="display: none">
           <li 
         v-for="item in continents.northAmerica" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
