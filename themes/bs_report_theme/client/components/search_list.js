@@ -12,7 +12,7 @@ export default function() {
       var continents = JSON.parse(this.continents);
 
       let result = continents['Afrika'].map(coun => {
-        console.log("Afghanistan" == coun);
+        return "Afghanistan" == coun;
       });
 
       console.log(result);
