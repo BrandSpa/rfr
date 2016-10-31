@@ -39,6 +39,21 @@
       </li>
     </ul>
 
+     <button 
+      class="bg-red map__search__list_btn" 
+      v-on:click="showContinent('Latin America')">Latin America</button>
+
+    <ul class="map__search_results" data-country="Latin America" style="display: none">
+      <li 
+        v-for="item in continents.latinAmerica" 
+        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+        <a href="{{item.guid}}">{{item.meta_country}}</a>
+        <span>
+          <img v-bind:src="getIcon(item.meta_situation)" alt="">
+        </span>
+      </li>
+    </ul>
+
     </div>
       <div class="col-md-6">
       <div class="row">

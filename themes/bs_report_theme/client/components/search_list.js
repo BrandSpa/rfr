@@ -21,7 +21,7 @@ export default function() {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      newContinents['LatinAmerica'] = continents['LATIN AMERICA'].map(coun => {
+      newContinents['latinAmerica'] = continents['LATIN AMERICA'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
