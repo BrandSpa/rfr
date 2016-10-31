@@ -93,9 +93,10 @@
 
 
 <script>
-
   function showThat(e) {
-    e.preventDefault(); 
-    document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  
+    e.preventDefault();
+    console.log('nea'); 
+    document.querySelector('ul[data-country="Afrika"]').style.display = 'block';
   }
+
 </script>
