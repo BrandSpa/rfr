@@ -13,7 +13,7 @@
 
     <ul class="map__search_results">
       <li 
-        v-for="item in items" 
+        v-for="item in continents.Afrika" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
         <a href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
