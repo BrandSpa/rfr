@@ -24,10 +24,11 @@
         </span>
       </li>
     </ul>
-    
+
 <script>
 
-  function showThit() { 
+  function showThit(e) {
+    e.preventDefault(); 
     document.querySelector('ul[data-country="Afrika"]').style.display = 'block'  
   }
 </script>
