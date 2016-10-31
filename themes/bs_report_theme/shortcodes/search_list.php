@@ -12,7 +12,7 @@
     <button 
       class="bg-red map__search__list_btn" 
       data-country="Afrika" 
-      onClick="showThit" >Afrika</button>
+      onClick="showThit(event)" >Afrika</button>
 
     <ul class="map__search_results" data-country="Afrika" style="display: none">
       <li
