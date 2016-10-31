@@ -54,7 +54,8 @@ export default function() {
           return n == 'Persecution';
         },
 
-        showContinent(countinent) {
+        showContinent(continent) {
+           document.querySelector(`ul[data-country=${continent}]`).style.display = 'block';
           console.log(continent);
         }
     }

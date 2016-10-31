@@ -37686,7 +37686,8 @@
 	      isPersecution: function isPersecution(n) {
 	        return n == 'Persecution';
 	      },
-	      showContinent: function showContinent(countinent) {
+	      showContinent: function showContinent(continent) {
+	        document.querySelector('ul[data-country=' + continent + ']').style.display = 'block';
 	        console.log(continent);
 	      }
 	    }

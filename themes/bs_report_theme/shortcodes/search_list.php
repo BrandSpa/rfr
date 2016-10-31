@@ -91,12 +91,3 @@
 >
 </search-list>
 
-
-<script>
-  function showThat(e) {
-    e.preventDefault();
-    console.log('nea'); 
-    document.querySelector('ul[data-country="Afrika"]').style.display = 'block';
-  }
-
-</script>
