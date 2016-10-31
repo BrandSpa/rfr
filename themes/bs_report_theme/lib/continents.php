@@ -15,7 +15,7 @@ function getContinents() {
       "Austria",
       "Azerbaijan",
     ),
-    
+
     "LATIN AMERICA" => array(
       "Bahamas",
       "Bahrain",
