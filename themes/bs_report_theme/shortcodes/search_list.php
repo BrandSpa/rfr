@@ -84,3 +84,5 @@
   continents='<?php echo json_encode( getContinents() ); ?>'
 >
 </search-list>
+
+<?php var_dump(getContinents()) ?>
