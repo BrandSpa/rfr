@@ -37666,7 +37666,28 @@
 	      });
 
 	      this.continents = newContinents;
+	    },
+
+
+	    methods: {
+	      close: function close(e) {
+	        if (e) e.preventDefault();
+	        (0, _jquery2.default)('.map__search').removeClass('map__search--show');
+	      },
+	      getIcon: function getIcon(name) {
+	        return this.dir + '/public/img/icons/' + name + '.svg';
+	      },
+	      isSelected: function isSelected(index) {
+	        return index === this.current;
+	      },
+	      isDiscrimination: function isDiscrimination(n) {
+	        return n == 'Discrimination';
+	      },
+	      isPersecution: function isPersecution(n) {
+	        return n == 'Persecution';
+	      }
 	    }
+
 	  });
 	};
 

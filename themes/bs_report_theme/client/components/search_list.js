@@ -30,6 +30,29 @@ export default function() {
       });
 
       this.continents = newContinents;
+    },
+
+    methods: {
+        close(e) {
+        if(e) e.preventDefault();
+        $('.map__search').removeClass('map__search--show');
+      },
+
+        getIcon(name) {
+         return `${this.dir}/public/img/icons/${name}.svg`
+        },
+
+        isSelected(index) {
+          return index === this.current;
+        },
+
+        isDiscrimination(n) {
+          return n == 'Discrimination';
+        },  
+
+        isPersecution(n) {
+          return n == 'Persecution';
+        }
     }
 
   })
