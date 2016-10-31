@@ -12,9 +12,9 @@
     <button 
       class="bg-red map__search__list_btn" 
       data-country="Afrika" 
-      onClick="function(){ jQuery('li[data-country="Afrika"]').style.display = 'block'  }" >Afrika</button>
+      onClick="function(){ jQuery('ul[data-country="Afrika"]').style.display = 'block'  }" >Afrika</button>
 
-    <ul class="map__search_results" data-country="Afrika" stlyle="display: none">
+    <ul class="map__search_results" data-country="Afrika" style="display: none">
       <li
         v-for="item in continents.Afrika" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
