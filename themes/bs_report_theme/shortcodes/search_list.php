@@ -9,7 +9,7 @@
     <div class="col-md-3"></div>
       <div class="col-md-4">
 
-    <button class="bg-red">Afrika</button>
+    <button class="bg-red map__search__list_btn">Afrika</button>
 
     <ul class="map__search_results">
       <li
