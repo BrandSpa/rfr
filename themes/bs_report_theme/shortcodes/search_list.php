@@ -10,7 +10,7 @@
     <div class="col-md-3"></div>
       <div class="col-md-4">
       <div class="map__search_input-container"></div>
-
+”
     <ul class="map__search_results">
       <li 
         v-for="item in items" 
@@ -75,4 +75,4 @@
 >
 </search-list>
 
-<?php var_dump(getContinents()) ?>
+<?php echo json_encode( getContinents() ) ?>
