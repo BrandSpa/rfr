@@ -37641,11 +37641,16 @@
 	    ready: function ready() {
 	      var reports = JSON.parse(this.reports);
 	      var continents = JSON.parse(this.continents);
+	      console.log(reports);
 
 	      var result = continents['Afrika'].map(function (coun) {
-	        reports.filter(function (rep) {
+	        if (reports.filter(function (rep) {
 	          return rep.meta_country == coun;
-	        });
+	        })) {
+	          reports.filter(function (rep) {
+	            return rep.meta_country == coun;
+	          });
+	        }
 	      });
 
 	      console.log(result);
