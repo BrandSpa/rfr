@@ -6,20 +6,26 @@ export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',
     props: ['reports', 'continents', 'dir'],
+    data() {
+      return {
+        continents: []
+      }
+    },
 
     ready() {
-      var reports = JSON.parse(this.reports);
-      var continents = JSON.parse(this.continents);
+      let reports = JSON.parse(this.reports);
+      let continents = JSON.parse(this.continents);
+      let newContinents = {};
 
-      let afrika = continents['Afrika'].map(coun => {
+      newContinents['Afrika'] = continents['Afrika'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      let latinAmerica = continents['LATIN AMERICA'].map(coun => {
+      newContinents['Latin America'] = continents['LATIN AMERICA'].map(coun => {
         return reports.filter(r => r.meta_country == coun)[0];
       });
 
-      console.log(afrika, latinAmerica);
+      console.log(newContinents);
     }
 
   })

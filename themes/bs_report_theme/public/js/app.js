@@ -37637,24 +37637,29 @@
 	  _vue2.default.component('search-list', {
 	    template: '#search-list-template',
 	    props: ['reports', 'continents', 'dir'],
-
+	    data: function data() {
+	      return {
+	        continents: []
+	      };
+	    },
 	    ready: function ready() {
 	      var reports = JSON.parse(this.reports);
 	      var continents = JSON.parse(this.continents);
+	      var newContinents = {};
 
-	      var afrika = continents['Afrika'].map(function (coun) {
+	      newContinents['Afrika'] = continents['Afrika'].map(function (coun) {
 	        return reports.filter(function (r) {
 	          return r.meta_country == coun;
 	        })[0];
 	      });
 
-	      var latinAmerica = continents['LATIN AMERICA'].map(function (coun) {
+	      newContinents['Latin America'] = continents['LATIN AMERICA'].map(function (coun) {
 	        return reports.filter(function (r) {
 	          return r.meta_country == coun;
 	        })[0];
 	      });
 
-	      console.log(afrika, latinAmerica);
+	      console.log(newContinents);
 	    }
 	  });
 	};
