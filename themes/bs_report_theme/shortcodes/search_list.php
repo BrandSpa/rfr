@@ -12,6 +12,9 @@
       <div class="map__search_input-container"></div>
 
     <ul class="map__search_results">
+      <li>
+        <button>Afrika</button>
+      </li>
       <li 
         v-for="item in continents.Afrika" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
@@ -19,6 +22,9 @@
         <span>
           <img v-bind:src="getIcon(item.meta_situation)" alt="">
         </span>
+      </li>
+       <li>
+        <button>North America</button>
       </li>
        <li 
         v-for="item in continents.northAmerica" 
