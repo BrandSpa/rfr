@@ -708,6 +708,8 @@ form button {
   width: 100%;
   height: 270px;
   padding-top: 40px; }
+  .footer__top .nav__subtitle {
+    padding: 0; }
 
 .footer__bottom {
   width: 100%;
