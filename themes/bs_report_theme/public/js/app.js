@@ -40778,7 +40778,7 @@
 	  li.setAttribute('class', 'menu-item');
 
 	  var appendTo = each(function (el) {
-	    li.appendChild(el);
+	    ul.appendChild(el);
 	  });
 
 	  appendTo(langs);

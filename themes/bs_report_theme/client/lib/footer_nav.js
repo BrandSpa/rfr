@@ -13,7 +13,7 @@ export default function footerNav() {
   li.setAttribute('class', 'menu-item');
   
   let appendTo = each((el) => {
-    li.appendChild(el);
+    ul.appendChild(el);
   });
   
   appendTo(langs);
