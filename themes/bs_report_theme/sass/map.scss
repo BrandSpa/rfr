@@ -8,7 +8,7 @@
     opacity: 0;
     transition: all 300ms ease;
 
-    @media #{$mobile} {
+    @media #{$mobile}, #{$tablet} {
       float: right;
       margin: 15px 15px 0 0;
     }
