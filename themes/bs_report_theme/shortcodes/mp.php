@@ -24,7 +24,7 @@
           <?php echo gett('RELIGIOUS FREEDOM <br> IN THE WORLD', true); ?>
         </h1>
       </div>
-
+      
       <div class="col-md-4">
         <div class="col-xs-6">
           <button class="button button--fill" v-on:click="showSearchList"><?php echo gett('LIST'); ?></button>
@@ -35,14 +35,16 @@
             <button class="button button--fill map__search_click" v-on:click="showSearch"></button>
           </div>
         </div>
-      
-      </div>
 
-        <div class="col-md-12">
+         <div class="col-md-12">
           <div class="map__controllers">
             <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
           </div>
         </div>
+      
+      </div>
+
+       
     </div>
 
   
