@@ -717,7 +717,8 @@ form button {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    float: left; }
     .footer__bottom-left img {
       margin: 0 auto;
       display: block; }

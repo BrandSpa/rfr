@@ -15,11 +15,11 @@
   
 
   <div class="col-md-3 footer__bottom">
-    <div class="footer__bottom-left">
-        <img src="<?php echo get_template_directory_uri() .'/public/img/pontificial_logo.png' ?>" alt="">
+    <div class="footer__bottom-left col-md-6">
+      <img src="<?php echo get_template_directory_uri() ?>/public/img/logo_simple.png" alt="">
     </div>
 
-    <div class="footer__bottom-right">
+    <div class="footer__bottom-right col-md-6">
         <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" alt="">
     </div>
   </div>

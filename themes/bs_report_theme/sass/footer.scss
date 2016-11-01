@@ -78,7 +78,8 @@
     &-left {
       @include center_vertical;
       text-align: center;
-      
+      float: left;
+
       img {
         margin: 0 auto;
         display: block;
