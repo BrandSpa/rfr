@@ -686,6 +686,20 @@ form button {
       margin-bottom: 15px; }
       #footer .menu .menu-item a:hover {
         color: #FC3938; }
+    #footer .menu .menu-item .sub-menu {
+      padding: 0; }
+      #footer .menu .menu-item .sub-menu a {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 1.0625em;
+        font-style: italic;
+        line-height: 1.2;
+        display: block;
+        color: #fff;
+        padding-bottom: 15px;
+        font-weight: 300;
+        position: relative; }
+        #footer .menu .menu-item .sub-menu a:hover::before {
+          left: -15px; }
 
 .footer__top {
   background: #F8F8F8;
@@ -714,21 +728,6 @@ form button {
     .footer__bottom-right img {
       margin: 0 auto;
       display: block; }
-
-.footer .sub-menu {
-  padding: 0; }
-  .footer .sub-menu > a {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.0625em;
-    font-style: italic;
-    line-height: 1.2;
-    display: block;
-    color: #fff;
-    padding-bottom: 15px;
-    font-weight: 300;
-    position: relative; }
-    .footer .sub-menu > a:hover::before {
-      left: -15px; }
 
 .report__header {
   padding: 60px 40px; }
