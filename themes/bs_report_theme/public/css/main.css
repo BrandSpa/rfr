@@ -673,7 +673,8 @@ form button {
   left: 0; }
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     #footer {
-      position: initial; } }
+      position: initial;
+      text-align: center; } }
   #footer .menu .menu-item {
     float: left;
     width: 20%; }
