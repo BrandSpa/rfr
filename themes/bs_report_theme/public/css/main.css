@@ -176,6 +176,13 @@ button:focus {
   height: 40px; }
   .button--fill {
     width: 100%; }
+  .button--center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .button:focus {
     outline: none; }
   .button::after {
