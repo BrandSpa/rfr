@@ -10,7 +10,16 @@
     //   return $arr['name'] == $name;
     // });
 
-    return $countries;
+    return array_map(function($country) {
+
+      $c = [];
+      $c['name'] = $country['name'];
+      $c['languages'] = $country['languages'];
+      return $c;
+
+    }, $countries);
+
+
   }
 
 ?>
