@@ -34,7 +34,7 @@
       <?php echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) ) ?>
     </div>
     
-    <div class="col-md-3">
+    <div class="footer__bottom-middle col-md-3">
       <a href="#">PRIVACY POLICY</a>
       <a href="#”">TERMS & CONDITIONS</a>
     </div>

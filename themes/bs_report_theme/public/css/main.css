@@ -715,6 +715,9 @@ form button {
   .footer__bottom-left img {
     display: block;
     float: left; }
+  .footer__bottom-middle a {
+    display: block;
+    width: 100%; }
   .footer__bottom-right img {
     float: right;
     display: block; }
