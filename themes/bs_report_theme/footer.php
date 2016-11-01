@@ -2,7 +2,7 @@
 
 
 <div id="footer">
-  <div class="col-md-9 footer__left">
+  <div class="col-md-12 footer__top">
     <?php
         $args = array(
           'theme_location' => 'footer',
@@ -15,11 +15,12 @@
      ?>
   </div>
   
-  <div class="col-md-3 footer__right">
-    <div class="footer__right-upper">
+  <div class="col-md-3 footer__bottom">
+    <div class="footer__bottom-left">
         <img src="<?php echo get_template_directory_uri() .'/public/img/pontificial_logo.png' ?>" alt="">
     </div>
-    <div class="footer__right-bottom">
+    
+    <div class="footer__bottom-right">
         <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" alt="">
     </div>
   </div>
