@@ -40810,7 +40810,7 @@
 	    return ob;
 	  });
 
-	  return cons;
+	  console.log(cons);
 	}
 
 /***/ },

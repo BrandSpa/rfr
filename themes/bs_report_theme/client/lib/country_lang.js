@@ -8,6 +8,6 @@ export default function countryLang() {
     ob['languages'] = con['languages'].map(lang => lang['iso639_1']);
     return ob;
   });
-  
-  return cons;
+
+  console.log(cons);
 }
