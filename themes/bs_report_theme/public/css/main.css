@@ -848,6 +848,10 @@ form button {
   .map__controllers {
     opacity: 0;
     transition: all 300ms ease; }
+    @media (max-width: 767px) {
+      .map__controllers {
+        float: right;
+        padding-right: 15px; } }
     .map__controllers--show {
       opacity: 1; }
     .map__controllers button {
