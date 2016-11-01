@@ -92,6 +92,4 @@
 
 <?php include 'shortcodes/select_country.php' ?>
 
-<?php
-  echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-?>
+<h1> <?php echo get_locale(); ?> </h1>
