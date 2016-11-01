@@ -171,6 +171,7 @@ button {
 }
 
 .button {
+  @include title2;
   background: $red_orange;
   min-height: 60px;
   border: 0;
@@ -181,7 +182,7 @@ button {
   display: block;
   padding: 10px 40px;
   text-align: center;
-  @include title2;
+  line-height: 1;
   height: 40px;
 
   &--fill {
