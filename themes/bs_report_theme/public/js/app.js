@@ -94,6 +94,10 @@
 
 	var _home_header2 = _interopRequireDefault(_home_header);
 
+	var _footer_nav = __webpack_require__(93);
+
+	var _footer_nav2 = _interopRequireDefault(_footer_nav);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
@@ -106,7 +110,7 @@
 	  (0, _search_list2.default)();
 	  (0, _subscribe_form2.default)();
 	  (0, _modal_lang2.default)();
-
+	  (0, _footer_nav2.default)();
 	  (0, _home_header2.default)();
 
 	  new _vue2.default({
@@ -40745,6 +40749,35 @@
 	    changeIndex: changeIndex,
 	    changeBg: changeBg
 	  };
+	}
+
+/***/ },
+/* 93 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = footerNav;
+	function footerNav() {
+	  var each = function each(fn) {
+	    return function (arr) {
+	      return Array.prototype.forEach.call(arr, fn);
+	    };
+	  };
+	  var langs = document.querySelectorAll('#footer .lang-item');
+	  var li = document.createElement('li');
+
+	  li.attributes('class', 'menu-item');
+	  var appendTo = each(function (el) {
+	    li.appendChild(el);
+	  });
+
+	  appendTo(langs);
+
+	  console.log(li);
 	}
 
 /***/ }
