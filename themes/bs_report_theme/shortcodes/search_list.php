@@ -10,7 +10,7 @@
   <div class="col-md-6">
 
     <button 
-      class="bg-dark_jungle map__search__list_btn" 
+      class="bg-dark_jungle map__search__list_btn color-rolling-store" 
       v-on:click="showContinent('afrika')" >Afrika</button>
 
     <ul class="map__search_results" data-country="afrika" style="display: none">
@@ -25,7 +25,7 @@
     </ul>
 
     <button 
-      class="bg-dark_jungle map__search__list_btn" 
+      class="bg-dark_jungle map__search__list_btn color-rolling-store" 
       v-on:click="showContinent('asia')" >asia</button>
 
     <ul class="map__search_results" data-country="asia" style="display: none">
@@ -40,7 +40,7 @@
     </ul>
 
     <button 
-        class="bg-dark_jungle map__search__list_btn" 
+        class="bg-dark_jungle map__search__list_btn color-rolling-store" 
         v-on:click="showContinent('easterEurope')" >Easter Europe</button>
 
       <ul class="map__search_results" data-country="easterEurope" style="display: none">
@@ -55,7 +55,7 @@
       </ul>
 
      <button 
-      class="bg-dark_jungle map__search__list_btn" 
+      class="bg-dark_jungle map__search__list_btn color-rolling-store" 
       v-on:click="showContinent('Latin America')">Latin America</button>
 
     <ul class="map__search_results" data-country="Latin America" style="display: none">
@@ -70,7 +70,7 @@
     </ul>
 
     <button 
-        class="bg-dark_jungle map__search__list_btn" 
+        class="bg-dark_jungle map__search__list_btn color-rolling-store" 
         v-on:click="showContinent('middleEast')" >Middle East</button>
 
       <ul class="map__search_results" data-country="middleEast" style="display: none">
@@ -85,7 +85,7 @@
       </ul>
     
     <button 
-      class="bg-dark_jungle map__search__list_btn" 
+      class="bg-dark_jungle map__search__list_btn color-rolling-store" 
       v-on:click="showContinent('North America')">North America</button>
 
     <ul class="map__search_results" data-country="North America" style="display: none">
@@ -100,7 +100,7 @@
     </ul>
 
     <button 
-        class="bg-dark_jungle map__search__list_btn" 
+        class="bg-dark_jungle map__search__list_btn color-rolling-store" 
         v-on:click="showContinent('ocenia')" >Ocenia</button>
 
       <ul class="map__search_results" data-country="ocenia" style="display: none">
@@ -115,7 +115,7 @@
       </ul>
       
       <button 
-        class="bg-dark_jungle map__search__list_btn" 
+        class="bg-dark_jungle map__search__list_btn color-rolling-store" 
         v-on:click="showContinent('russiaCentralAsia')" >Russia & Central Asia</button>
 
       <ul class="map__search_results" data-country="russiaCentralAsia" style="display: none">
@@ -130,7 +130,7 @@
       </ul>
 
       <button 
-        class="bg-dark_jungle map__search__list_btn" 
+        class="bg-dark_jungle map__search__list_btn color-rolling-store" 
         v-on:click="showContinent('westernEurope')" >Western Europe</button>
 
       <ul class="map__search_results" data-country="westernEurope" style="display: none">
