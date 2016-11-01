@@ -1,9 +1,7 @@
 <?php
   
   
-  function getCountriesInfo($name) {
-    $name = $name ? $name : 'United States';
-
+  function getCountriesInfo($name = 'United States') {
     $json = file_get_contents(__DIR__ . '/countries_info.json');
     
     $countries = json_decode($json, true);
