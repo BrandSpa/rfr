@@ -17,7 +17,7 @@
   </div>
     <?php
         $args = array(
-          'theme_location' => 'footer',
+          'theme_location' => 'header',
           'container' => false,
           'echo' => true
         );
