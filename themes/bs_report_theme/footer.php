@@ -30,7 +30,8 @@
   
 
   <div class="col-md-3 footer__bottom">
-    <div class="footer__bottom-left col-md-5">
+  <div class="col-md-1"></div>
+    <div class="footer__bottom-left col-md-4">
       <img src="<?php echo get_template_directory_uri() ?>/public/img/logo_simple.png" alt="" width="65">
       <?php echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) ) ?>
     </div>
@@ -40,7 +41,7 @@
       <a href="#”">TERMS & CONDITIONS</a>
     </div>
 
-    <div class="footer__bottom-right col-md-4">
+    <div class="footer__bottom-right col-md-3">
         <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" alt="">
     </div>
   </div>
