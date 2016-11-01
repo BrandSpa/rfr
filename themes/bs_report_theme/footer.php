@@ -1,5 +1,3 @@
-<button class="show-modal">test modal</button>
-
 
 <div id="footer">
   <div class="col-md-12 footer__top">
@@ -15,7 +13,7 @@
      ?>
   </div>
   
-  
+
   <div class="col-md-3 footer__bottom">
     <div class="footer__bottom-left">
         <img src="<?php echo get_template_directory_uri() .'/public/img/pontificial_logo.png' ?>" alt="">
