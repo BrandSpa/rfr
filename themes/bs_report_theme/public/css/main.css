@@ -720,15 +720,15 @@ form button {
     text-align: center;
     float: left; }
     .footer__bottom-left img {
-      margin: 0 auto;
-      display: block; }
+      display: block;
+      float: left; }
   .footer__bottom-right {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center; }
     .footer__bottom-right img {
-      margin: 0 auto;
+      float: right;
       display: block; }
 
 .report__header {

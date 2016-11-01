@@ -73,8 +73,8 @@
       float: left;
 
       img {
-        margin: 0 auto;
         display: block;
+        float: left;
       }
     }
 
@@ -82,7 +82,7 @@
       @include center_vertical;
 
       img {
-        margin: 0 auto;
+        float: right;
         display: block;
       }
     }
