@@ -14,18 +14,17 @@
   
   <div class="footer__menu col-md-10">
   
- 
     <?php
-        $args = array(
-          'theme_location' => 'header',
-          'container' => false,
-          'echo' => true
-        );
-
-        $menu = wp_nav_menu( $args);
-
+      $args = array(
+        'theme_location' => 'header',
+        'container' => false,
+        'echo' => true
+      );
+      
+      $menu = wp_nav_menu( $args);
      ?>
    </div>
+
   </div>
   
 
