@@ -1,13 +1,20 @@
 
 <div id="footer">
   <div class="col-md-12 footer__top">
+  <div class="col-md-2">
+  
     <h4 class="nav__subtitle">
-    RELIGIOUS<br>
-    <span class="color-red">FREEDOM</span><br>
-    REPORT<br>
-    2016
-  </h4>
+      RELIGIOUS<br>
+      <span class="color-red">FREEDOM</span><br>
+      REPORT<br>
+      2016
+    </h4>
 
+  </div>
+  
+  <div class="footer__menu col-md-10">
+  
+  </div>
     <?php
         $args = array(
           'theme_location' => 'footer',
