@@ -1022,7 +1022,9 @@ form button {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1.4375em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #747E86;
   position: relative;
   background: #fff;
   border: 1px solid #1A2127;

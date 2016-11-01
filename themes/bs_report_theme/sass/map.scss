@@ -243,16 +243,18 @@
 
 .map__search__list_btn {
   @include title4;
-      @include center_vertical;
-      font-size: (23 / 16) * 1em;
-      position: relative;
-      background: #fff;
-      border: 1px solid $dark_jungle_green;
-      color: $dark_jungle_green;
-      width: 100%;
-      padding-left: 20px;
-      height: 40px;
-      margin: 2px 0;
-      overflow: hidden;
-      transition: all 300ms ease-in-out;
+  @include center_vertical;
+  font-size: (24 / 16) * 1em;
+  text-transform: uppercase;
+  color: $rollig_stone;
+  position: relative;
+  background: #fff;
+  border: 1px solid $dark_jungle_green;
+  color: $dark_jungle_green;
+  width: 100%;
+  padding-left: 20px;
+  height: 40px;
+  margin: 2px 0;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
 }
