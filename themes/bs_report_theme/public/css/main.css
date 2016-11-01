@@ -711,7 +711,8 @@ form button {
 .footer__bottom {
   width: 100%;
   background: #fff;
-  height: 200px; }
+  height: 200px;
+  padding-top: 80px; }
   .footer__bottom-left img {
     display: block;
     float: left; }
