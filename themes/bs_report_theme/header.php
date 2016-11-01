@@ -91,5 +91,3 @@
 </div>
 
 <?php include 'shortcodes/select_country.php' ?>
-
-<?php var_dump(getCountriesInfo()['Colombia']) ?>
