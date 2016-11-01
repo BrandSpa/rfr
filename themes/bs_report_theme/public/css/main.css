@@ -739,6 +739,10 @@ form button {
   .footer__bottom-right img {
     float: right;
     display: block; }
+    @media (max-width: 767px) {
+      .footer__bottom-right img {
+        float: none;
+        margin: 20px auto; } }
 
 .report__header {
   padding: 60px 40px; }

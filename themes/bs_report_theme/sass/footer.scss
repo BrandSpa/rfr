@@ -108,6 +108,10 @@
       img {
         float: right;
         display: block;
+        @media #{$mobile} {
+          float: none;
+          margin: 20px auto;
+        }
       }
     }
   }
