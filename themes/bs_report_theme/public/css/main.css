@@ -716,7 +716,8 @@ form button {
   padding-top: 80px; }
   .footer__bottom-left img {
     display: block;
-    float: left; }
+    float: left;
+    margin-right: 20px; }
   .footer__bottom-middle a {
     display: block;
     width: 100%; }
