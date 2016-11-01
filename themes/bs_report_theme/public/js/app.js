@@ -40770,6 +40770,9 @@
 	  var langs = document.querySelectorAll('#footer .lang-item');
 	  var li = document.createElement('li');
 
+	  var a = document.createElement('a');
+	  a.appendChild(Document.createTextNode('Languages'));
+	  li.appendChild(a);
 	  li.setAttribute('class', 'menu-item');
 	  var appendTo = each(function (el) {
 	    li.appendChild(el);
