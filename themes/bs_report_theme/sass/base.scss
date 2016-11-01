@@ -61,7 +61,7 @@ a:hover {
 
 .title {
   @include title0;
-
+  margin-bottom: 20px;
   &-highlight {
     font-weight: bold;
     color: $red_orange;

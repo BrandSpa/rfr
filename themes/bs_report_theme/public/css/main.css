@@ -54,7 +54,8 @@ a:hover {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 5.3125em;
   font-weight: 300;
-  line-height: 1.1; }
+  line-height: 1.1;
+  margin-bottom: 20px; }
   .title-highlight {
     font-weight: bold;
     color: #FC3938; }
