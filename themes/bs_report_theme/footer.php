@@ -14,7 +14,7 @@
   
   <div class="footer__menu col-md-10">
   
-  </div>
+ 
     <?php
         $args = array(
           'theme_location' => 'header',
@@ -25,6 +25,7 @@
         $menu = wp_nav_menu( $args);
 
      ?>
+   </div>
   </div>
   
 
