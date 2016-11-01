@@ -674,34 +674,32 @@ form button {
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     #footer {
       position: initial; } }
-  #footer .menu {
-    padding-top: 80px; }
-    #footer .menu ul > li {
-      float: left;
-      width: 20%; }
-      #footer .menu ul > li > a {
+  #footer .menu ul > li {
+    float: left;
+    width: 20%; }
+    #footer .menu ul > li > a {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1.25em;
+      font-style: italic;
+      color: #FC3938;
+      display: block;
+      margin-bottom: 15px; }
+      #footer .menu ul > li > a:hover {
+        color: #FC3938; }
+    #footer .menu ul > li .sub-menu {
+      padding: 0; }
+      #footer .menu ul > li .sub-menu a {
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 1.25em;
+        font-size: 1.0625em;
         font-style: italic;
-        color: #FC3938;
+        line-height: 1.2;
         display: block;
-        margin-bottom: 15px; }
-        #footer .menu ul > li > a:hover {
-          color: #FC3938; }
-      #footer .menu ul > li .sub-menu {
-        padding: 0; }
-        #footer .menu ul > li .sub-menu a {
-          font-family: "Roboto Condensed", sans-serif;
-          font-size: 1.0625em;
-          font-style: italic;
-          line-height: 1.2;
-          display: block;
-          color: #fff;
-          padding-bottom: 15px;
-          font-weight: 300;
-          position: relative; }
-          #footer .menu ul > li .sub-menu a:hover::before {
-            left: -15px; }
+        color: #fff;
+        padding-bottom: 15px;
+        font-weight: 300;
+        position: relative; }
+        #footer .menu ul > li .sub-menu a:hover::before {
+          left: -15px; }
 
 .footer__top {
   background: #F8F8F8;
