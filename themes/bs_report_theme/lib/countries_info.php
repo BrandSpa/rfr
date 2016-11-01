@@ -6,10 +6,10 @@
     
     $countries = json_decode($json, true);
 
-    array_filter($countries, function($arr) use($name) {
-      return $arr['name'] == $name;
-    });
-    
+    // array_filter($countries, function($arr) use($name) {
+    //   return $arr['name'] == $name;
+    // });
+
     return $countries;
   }
 
