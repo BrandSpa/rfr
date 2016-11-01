@@ -40769,11 +40769,14 @@
 	  };
 	  var langs = document.querySelectorAll('#footer .lang-item');
 	  var li = document.createElement('li');
-
 	  var a = document.createElement('a');
+	  var ul = document.createElement('ul');
+	  ul.setAttribute('class', 'sub-menu');
 	  a.appendChild(document.createTextNode('Languages'));
 	  li.appendChild(a);
+	  li.appendChild(ul);
 	  li.setAttribute('class', 'menu-item');
+
 	  var appendTo = each(function (el) {
 	    li.appendChild(el);
 	  });
