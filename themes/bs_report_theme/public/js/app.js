@@ -40771,7 +40771,7 @@
 	  var li = document.createElement('li');
 
 	  var a = document.createElement('a');
-	  a.appendChild(Document.createTextNode('Languages'));
+	  a.appendChild(document.createTextNode('Languages'));
 	  li.appendChild(a);
 	  li.setAttribute('class', 'menu-item');
 	  var appendTo = each(function (el) {

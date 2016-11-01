@@ -6,7 +6,7 @@ export default function footerNav() {
   let li = document.createElement('li');
   
   let a = document.createElement('a');
-  a.appendChild(Document.createTextNode('Languages'));
+  a.appendChild(document.createTextNode('Languages'));
   li.appendChild(a);
   li.setAttribute('class', 'menu-item');
   let appendTo = each((el) => {
