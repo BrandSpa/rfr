@@ -712,24 +712,12 @@ form button {
   width: 100%;
   background: #fff;
   height: 200px; }
-  .footer__bottom-left {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
+  .footer__bottom-left img {
+    display: block;
     float: left; }
-    .footer__bottom-left img {
-      display: block;
-      float: left; }
-  .footer__bottom-right {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center; }
-    .footer__bottom-right img {
-      float: right;
-      display: block; }
+  .footer__bottom-right img {
+    float: right;
+    display: block; }
 
 .report__header {
   padding: 60px 40px; }

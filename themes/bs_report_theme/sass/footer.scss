@@ -68,9 +68,6 @@
     
 
     &-left {
-      @include center_vertical;
-      text-align: center;
-      float: left;
 
       img {
         display: block;
@@ -79,7 +76,6 @@
     }
 
     &-right {
-      @include center_vertical;
 
       img {
         float: right;
