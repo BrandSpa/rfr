@@ -709,7 +709,7 @@ form button {
   width: 100%; }
 
 .footer__bottom {
-  height: 400px;
+  width: 100%;
   background: #fff; }
   .footer__bottom-left {
     display: -ms-flexbox;
