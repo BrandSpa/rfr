@@ -33,7 +33,7 @@ function bs_add_country_info_settings() {
   foreach ($options as $value) {
 		$value = str_replace(' ', '_', $value);
     register_setting( 'bs_country_info_group', 'logo_' . $value );
-    register_setting( 'bs_country_info_group', 'donate_url_' . $value );
+    register_setting( 'bs_country_info_group', 'redirect_url_' . $value );
     register_setting( 'bs_country_info_group', 'contact_info_' . $value );
   }
 
@@ -86,7 +86,6 @@ function logos_settings_page() {
 						<h4>Contact info</h4>
 
 						<?php wp_editor( get_option('contact_info_' . $value ), 'contact_info_' . $value); ?>
-
 					
 						<script>
 							
