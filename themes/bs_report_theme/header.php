@@ -91,3 +91,7 @@
 </div>
 
 <?php include 'shortcodes/select_country.php' ?>
+
+<?php
+  echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+?>
