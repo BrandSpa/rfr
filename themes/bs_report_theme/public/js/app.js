@@ -40770,7 +40770,7 @@
 	  var langs = document.querySelectorAll('#footer .lang-item');
 	  var li = document.createElement('li');
 
-	  li.attributes('class', 'menu-item');
+	  li.setAttribute('class', 'menu-item');
 	  var appendTo = each(function (el) {
 	    li.appendChild(el);
 	  });
