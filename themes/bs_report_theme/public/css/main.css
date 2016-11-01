@@ -842,7 +842,8 @@ form button {
 .map {
   background: #2B3740;
   padding: 40px;
-  position: relative; }
+  position: relative;
+  float: left; }
   .map__controllers {
     opacity: 0;
     transition: all 300ms ease; }
