@@ -75,7 +75,7 @@
 
 <?php wp_footer() ?>
 
-<?php var_dump(getCountriesInfo()) ?>
+<?php var_dump(getCountriesInfo('United States')) ?>
  
 </body>
 </html>
