@@ -666,11 +666,6 @@ form button {
             top: -5px;
             transition: left 300ms ease; }
 
-@media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
-  #footer {
-    position: initial;
-    text-align: center; } }
-
 #footer .menu {
   padding: 0; }
   #footer .menu .menu-item {
@@ -678,6 +673,7 @@ form button {
     width: 20%; }
     @media (max-width: 767px) {
       #footer .menu .menu-item {
+        display: block;
         width: 100%; } }
     #footer .menu .menu-item a {
       font-family: "Roboto Condensed", sans-serif;
