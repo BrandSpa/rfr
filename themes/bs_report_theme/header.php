@@ -92,4 +92,4 @@
 
 <?php include 'shortcodes/select_country.php' ?>
 
-<h1> <?php echo get_locale(); ?> </h1>
+<?php var_dump(getCountriesInfo()) ?>

@@ -30,6 +30,7 @@ include_once $lib . '/continents.php';
 include_once $lib . '/get_reports.php';
 include_once $lib . '/get_user_country.php';
 include_once $lib . '/get_office_country.php';
+include_once $lib . '/countries_info.php';
 
 include_once $options . '/info.php';
 
