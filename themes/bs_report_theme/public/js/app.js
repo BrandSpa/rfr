@@ -40801,7 +40801,15 @@
 	var countries = __webpack_require__(95);
 
 	function countryLang() {
-	  console.log(countries);
+	  var cons = countries.map(function (con) {
+	    var ob = {};
+	    ob['name'] = con['name'];
+	    ob['languages'] = con['languages'].map(function (lang) {
+	      return lang['iso639_1'];
+	    });
+	    return ob;
+	  });
+	  return cons;
 	}
 
 /***/ },
