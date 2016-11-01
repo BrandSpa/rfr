@@ -1,5 +1,5 @@
 'use strict';
-import countries from 'countriesV2.json';
+const countries = require("json!./countries_list.json");
 
 export default function countryLang() {
   console.log(countries);  

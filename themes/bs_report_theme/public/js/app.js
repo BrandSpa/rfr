@@ -98,9 +98,9 @@
 
 	var _footer_nav2 = _interopRequireDefault(_footer_nav);
 
-	var _countries = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./countries\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _country_lang = __webpack_require__(94);
 
-	var _countries2 = _interopRequireDefault(_countries);
+	var _country_lang2 = _interopRequireDefault(_country_lang);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -116,7 +116,7 @@
 	  (0, _modal_lang2.default)();
 	  (0, _footer_nav2.default)();
 	  (0, _home_header2.default)();
-	  (0, _countries2.default)();
+	  (0, _country_lang2.default)();
 
 	  new _vue2.default({
 	    el: '#acn_reports'
@@ -40787,6 +40787,15822 @@
 	  // document.querySelector('#footer .menu').appendChild(li);
 
 	}
+
+/***/ },
+/* 94 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = countryLang;
+	var countries = __webpack_require__(95);
+
+	function countryLang() {
+	  console.log(countries);
+	}
+
+/***/ },
+/* 95 */
+/***/ function(module, exports) {
+
+	module.exports = [
+		{
+			"name": "Afghanistan",
+			"nativeName": "افغانستان",
+			"topLevelDomain": [
+				".af"
+			],
+			"capital": "Kabul",
+			"altSpellings": [
+				"AF",
+				"Afġānistān"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Afghanistan",
+				"es": "Afganistán",
+				"fr": "Afghanistan",
+				"it": "Afghanistan",
+				"ja": "アフガニスタン",
+				"nl": "Afghanistan",
+				"hr": "Afganistan"
+			},
+			"population": 27657145,
+			"latlng": [
+				33,
+				65
+			],
+			"demonym": "Afghan",
+			"borders": [
+				"IRN",
+				"PAK",
+				"TKM",
+				"UZB",
+				"TJK",
+				"CHN"
+			],
+			"area": 652230,
+			"gini": 27.8,
+			"timezones": [
+				"UTC+04:30"
+			],
+			"currencies": [
+				{
+					"symbol": "؋",
+					"code": "AFN",
+					"name": "Afghan afghani"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ps",
+					"iso639_2": "pus",
+					"name": "Pashto",
+					"nativeName": "پښتو"
+				},
+				{
+					"iso639_1": "uz",
+					"iso639_2": "uzb",
+					"name": "Uzbek",
+					"nativeName": "Oʻzbek"
+				},
+				{
+					"iso639_1": "tk",
+					"iso639_2": "tuk",
+					"name": "Turkmen",
+					"nativeName": "Türkmen"
+				}
+			],
+			"alpha2Code": "AF",
+			"alpha3Code": "AFG",
+			"callingCodes": [
+				"93"
+			],
+			"numericCode": "004"
+		},
+		{
+			"name": "Åland Islands",
+			"nativeName": "Åland",
+			"topLevelDomain": [
+				".ax"
+			],
+			"capital": "Mariehamn",
+			"altSpellings": [
+				"AX",
+				"Aaland",
+				"Aland",
+				"Ahvenanmaa"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Åland",
+				"es": "Alandia",
+				"fr": "Åland",
+				"it": "Isole Aland",
+				"ja": "オーランド諸島",
+				"nl": "Ålandeilanden",
+				"hr": "Ålandski otoci"
+			},
+			"population": 28875,
+			"latlng": [
+				60.116667,
+				19.9
+			],
+			"demonym": "Ålandish",
+			"borders": [],
+			"area": 1580,
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sv",
+					"iso639_2": "swe",
+					"name": "Swedish",
+					"nativeName": "svenska"
+				}
+			],
+			"alpha2Code": "AX",
+			"alpha3Code": "ALA",
+			"callingCodes": [
+				"358"
+			],
+			"numericCode": "248"
+		},
+		{
+			"name": "Albania",
+			"nativeName": "Shqipëria",
+			"topLevelDomain": [
+				".al"
+			],
+			"capital": "Tirana",
+			"altSpellings": [
+				"AL",
+				"Shqipëri",
+				"Shqipëria",
+				"Shqipnia"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Albanien",
+				"es": "Albania",
+				"fr": "Albanie",
+				"it": "Albania",
+				"ja": "アルバニア",
+				"nl": "Albanië",
+				"hr": "Albanija"
+			},
+			"population": 2886026,
+			"latlng": [
+				41,
+				20
+			],
+			"demonym": "Albanian",
+			"borders": [
+				"MNE",
+				"GRC",
+				"MKD",
+				"KOS"
+			],
+			"area": 28748,
+			"gini": 34.5,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "L",
+					"code": "ALL",
+					"name": "Albanian lek"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sq",
+					"iso639_2": "sqi",
+					"name": "Albanian",
+					"nativeName": "Shqip"
+				}
+			],
+			"alpha2Code": "AL",
+			"alpha3Code": "ALB",
+			"callingCodes": [
+				"355"
+			],
+			"numericCode": "008"
+		},
+		{
+			"name": "Algeria",
+			"nativeName": "الجزائر",
+			"topLevelDomain": [
+				".dz"
+			],
+			"capital": "Algiers",
+			"altSpellings": [
+				"DZ",
+				"Dzayer",
+				"Algérie"
+			],
+			"region": "Africa",
+			"subregion": "Northern Africa",
+			"translations": {
+				"de": "Algerien",
+				"es": "Argelia",
+				"fr": "Algérie",
+				"it": "Algeria",
+				"ja": "アルジェリア",
+				"nl": "Algerije",
+				"hr": "Alžir"
+			},
+			"population": 40400000,
+			"latlng": [
+				28,
+				3
+			],
+			"demonym": "Algerian",
+			"borders": [
+				"TUN",
+				"LBY",
+				"NER",
+				"ESH",
+				"MRT",
+				"MLI",
+				"MAR"
+			],
+			"area": 2381741,
+			"gini": 35.3,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "د.ج",
+					"code": "DZD",
+					"name": "Algerian dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "DZ",
+			"alpha3Code": "DZA",
+			"callingCodes": [
+				"213"
+			],
+			"numericCode": "012"
+		},
+		{
+			"name": "American Samoa",
+			"nativeName": "American Samoa",
+			"topLevelDomain": [
+				".as"
+			],
+			"capital": "Pago Pago",
+			"altSpellings": [
+				"AS",
+				"Amerika Sāmoa",
+				"Amelika Sāmoa",
+				"Sāmoa Amelika"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Amerikanisch-Samoa",
+				"es": "Samoa Americana",
+				"fr": "Samoa américaines",
+				"it": "Samoa Americane",
+				"ja": "アメリカ領サモア",
+				"nl": "Amerikaans Samoa",
+				"hr": "Američka Samoa"
+			},
+			"population": 57100,
+			"latlng": [
+				-14.33333333,
+				-170
+			],
+			"demonym": "American Samoan",
+			"borders": [],
+			"area": 199,
+			"currencies": [
+				{
+					"code": "USD",
+					"name": "United State Dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "sm",
+					"iso639_2": "smo",
+					"name": "Samoan",
+					"nativeName": "gagana fa'a Samoa"
+				}
+			],
+			"alpha2Code": "AS",
+			"alpha3Code": "ASM",
+			"callingCodes": [
+				"1684"
+			],
+			"numericCode": "016"
+		},
+		{
+			"name": "Andorra",
+			"nativeName": "Andorra",
+			"topLevelDomain": [
+				".ad"
+			],
+			"capital": "Andorra la Vella",
+			"altSpellings": [
+				"AD",
+				"Principality of Andorra",
+				"Principat d'Andorra"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Andorra",
+				"es": "Andorra",
+				"fr": "Andorre",
+				"it": "Andorra",
+				"ja": "アンドラ",
+				"nl": "Andorra",
+				"hr": "Andora"
+			},
+			"population": 78014,
+			"latlng": [
+				42.5,
+				1.5
+			],
+			"demonym": "Andorran",
+			"borders": [
+				"FRA",
+				"ESP"
+			],
+			"area": 468,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ca",
+					"iso639_2": "cat",
+					"name": "Catalan",
+					"nativeName": "català"
+				}
+			],
+			"alpha2Code": "AD",
+			"alpha3Code": "AND",
+			"callingCodes": [
+				"376"
+			],
+			"numericCode": "020"
+		},
+		{
+			"name": "Angola",
+			"nativeName": "Angola",
+			"topLevelDomain": [
+				".ao"
+			],
+			"capital": "Luanda",
+			"altSpellings": [
+				"AO",
+				"República de Angola",
+				"ʁɛpublika de an'ɡɔla"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Angola",
+				"es": "Angola",
+				"fr": "Angola",
+				"it": "Angola",
+				"ja": "アンゴラ",
+				"nl": "Angola",
+				"hr": "Angola"
+			},
+			"population": 25868000,
+			"latlng": [
+				-12.5,
+				18.5
+			],
+			"demonym": "Angolan",
+			"borders": [
+				"COG",
+				"COD",
+				"ZMB",
+				"NAM"
+			],
+			"area": 1246700,
+			"gini": 58.6,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Kz",
+					"code": "AOA",
+					"name": "Angolan kwanza"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "AO",
+			"alpha3Code": "AGO",
+			"callingCodes": [
+				"244"
+			],
+			"numericCode": "024"
+		},
+		{
+			"name": "Anguilla",
+			"nativeName": "Anguilla",
+			"topLevelDomain": [
+				".ai"
+			],
+			"capital": "The Valley",
+			"altSpellings": [
+				"AI"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Anguilla",
+				"es": "Anguilla",
+				"fr": "Anguilla",
+				"it": "Anguilla",
+				"ja": "アンギラ",
+				"nl": "Anguilla",
+				"hr": "Angvila"
+			},
+			"population": 13452,
+			"latlng": [
+				18.25,
+				-63.16666666
+			],
+			"demonym": "Anguillian",
+			"borders": [],
+			"area": 91,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "AI",
+			"alpha3Code": "AIA",
+			"callingCodes": [
+				"1264"
+			],
+			"numericCode": "660"
+		},
+		{
+			"name": "Antarctica",
+			"nativeName": "Antarctica",
+			"topLevelDomain": [
+				".aq"
+			],
+			"alpha2Code": "AQ",
+			"alpha3Code": "ATA",
+			"numericCode": "010",
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "AUD",
+					"name": "Australian dollar"
+				},
+				{
+					"symbol": "£",
+					"code": "GBP",
+					"name": "British pound"
+				}
+			],
+			"callingCodes": [],
+			"capital": "",
+			"altSpellings": [],
+			"relevance": "0",
+			"region": "Polar",
+			"subregion": "",
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"translations": {
+				"de": "Antarktika",
+				"es": "Antártida",
+				"fr": "Antarctique",
+				"it": "Antartide",
+				"ja": "南極大陸",
+				"nl": "Antarctica",
+				"hr": "Antarktika"
+			},
+			"population": 1000,
+			"latlng": [
+				-74.65,
+				4.48
+			],
+			"demonym": "",
+			"borders": [],
+			"area": 14000000,
+			"timezones": [
+				"UTC-03:00",
+				"UTC+03:00",
+				"UTC+05:00",
+				"UTC+06:00",
+				"UTC+07:00",
+				"UTC+08:00",
+				"UTC+10:00",
+				"UTC+12:00"
+			]
+		},
+		{
+			"name": "Antigua and Barbuda",
+			"nativeName": "Antigua and Barbuda",
+			"topLevelDomain": [
+				".ag"
+			],
+			"capital": "Saint John's",
+			"altSpellings": [
+				"AG"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Antigua und Barbuda",
+				"es": "Antigua y Barbuda",
+				"fr": "Antigua-et-Barbuda",
+				"it": "Antigua e Barbuda",
+				"ja": "アンティグア・バーブーダ",
+				"nl": "Antigua en Barbuda",
+				"hr": "Antigva i Barbuda"
+			},
+			"population": 86295,
+			"latlng": [
+				17.05,
+				-61.8
+			],
+			"demonym": "Antiguan, Barbudan",
+			"borders": [],
+			"area": 442,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "AG",
+			"alpha3Code": "ATG",
+			"callingCodes": [
+				"1268"
+			],
+			"numericCode": "028"
+		},
+		{
+			"name": "Argentina",
+			"nativeName": "Argentina",
+			"topLevelDomain": [
+				".ar"
+			],
+			"capital": "Buenos Aires",
+			"altSpellings": [
+				"AR",
+				"Argentine Republic",
+				"República Argentina"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Argentinien",
+				"es": "Argentina",
+				"fr": "Argentine",
+				"it": "Argentina",
+				"ja": "アルゼンチン",
+				"nl": "Argentinië",
+				"hr": "Argentina"
+			},
+			"population": 43590400,
+			"latlng": [
+				-34,
+				-64
+			],
+			"demonym": "Argentinean",
+			"borders": [
+				"BOL",
+				"BRA",
+				"CHL",
+				"PRY",
+				"URY"
+			],
+			"area": 2780400,
+			"gini": 44.5,
+			"timezones": [
+				"UTC-03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "ARS",
+					"name": "Argentine peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				},
+				{
+					"iso639_1": "gn",
+					"iso639_2": "grn",
+					"name": "Guaraní",
+					"nativeName": "Avañe'ẽ"
+				}
+			],
+			"alpha2Code": "AR",
+			"alpha3Code": "ARG",
+			"callingCodes": [
+				"54"
+			],
+			"numericCode": "032"
+		},
+		{
+			"name": "Armenia",
+			"nativeName": "Հայաստան",
+			"topLevelDomain": [
+				".am"
+			],
+			"capital": "Yerevan",
+			"altSpellings": [
+				"AM",
+				"Hayastan",
+				"Republic of Armenia",
+				"Հայաստանի Հանրապետություն"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Armenien",
+				"es": "Armenia",
+				"fr": "Arménie",
+				"it": "Armenia",
+				"ja": "アルメニア",
+				"nl": "Armenië",
+				"hr": "Armenija"
+			},
+			"population": 2994400,
+			"latlng": [
+				40,
+				45
+			],
+			"demonym": "Armenian",
+			"borders": [
+				"AZE",
+				"GEO",
+				"IRN",
+				"TUR"
+			],
+			"area": 29743,
+			"gini": 30.9,
+			"timezones": [
+				"UTC+04:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "AMD",
+					"name": "Armenian dram"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "hy",
+					"iso639_2": "hye",
+					"name": "Armenian",
+					"nativeName": "Հայերեն"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "AM",
+			"alpha3Code": "ARM",
+			"callingCodes": [
+				"374"
+			],
+			"numericCode": "051"
+		},
+		{
+			"name": "Aruba",
+			"nativeName": "Aruba",
+			"topLevelDomain": [
+				".aw"
+			],
+			"capital": "Oranjestad",
+			"altSpellings": [
+				"AW"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Aruba",
+				"es": "Aruba",
+				"fr": "Aruba",
+				"it": "Aruba",
+				"ja": "アルバ",
+				"nl": "Aruba",
+				"hr": "Aruba"
+			},
+			"population": 107394,
+			"latlng": [
+				12.5,
+				-69.96666666
+			],
+			"demonym": "Aruban",
+			"borders": [],
+			"area": 180,
+			"currencies": [
+				{
+					"symbol": "ƒ",
+					"code": "AWG",
+					"name": "Aruban florin"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				},
+				{
+					"iso639_1": "pa",
+					"iso639_2": "pan",
+					"name": "Eastern Punjabi",
+					"nativeName": "ਪੰਜਾਬੀ"
+				}
+			],
+			"alpha2Code": "AW",
+			"alpha3Code": "ABW",
+			"callingCodes": [
+				"297"
+			],
+			"numericCode": "533"
+		},
+		{
+			"name": "Australia",
+			"nativeName": "Australia",
+			"topLevelDomain": [
+				".au"
+			],
+			"capital": "Canberra",
+			"altSpellings": [
+				"AU"
+			],
+			"region": "Oceania",
+			"subregion": "Australia and New Zealand",
+			"translations": {
+				"de": "Australien",
+				"es": "Australia",
+				"fr": "Australie",
+				"it": "Australia",
+				"ja": "オーストラリア",
+				"nl": "Australië",
+				"hr": "Australija"
+			},
+			"population": 24117360,
+			"latlng": [
+				-27,
+				133
+			],
+			"demonym": "Australian",
+			"borders": [],
+			"area": 7692024,
+			"gini": 30.5,
+			"timezones": [
+				"UTC+05:00",
+				"UTC+06:30",
+				"UTC+07:00",
+				"UTC+08:00",
+				"UTC+09:30",
+				"UTC+10:00",
+				"UTC+10:30",
+				"UTC+11:30"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "AUD",
+					"name": "Australian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "AU",
+			"alpha3Code": "AUS",
+			"callingCodes": [
+				"61"
+			],
+			"numericCode": "036"
+		},
+		{
+			"name": "Austria",
+			"nativeName": "Österreich",
+			"topLevelDomain": [
+				".at"
+			],
+			"capital": "Vienna",
+			"altSpellings": [
+				"AT",
+				"Österreich",
+				"Osterreich",
+				"Oesterreich"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Österreich",
+				"es": "Austria",
+				"fr": "Autriche",
+				"it": "Austria",
+				"ja": "オーストリア",
+				"nl": "Oostenrijk",
+				"hr": "Austrija"
+			},
+			"population": 8725931,
+			"latlng": [
+				47.33333333,
+				13.33333333
+			],
+			"demonym": "Austrian",
+			"borders": [
+				"CZE",
+				"DEU",
+				"HUN",
+				"ITA",
+				"LIE",
+				"SVK",
+				"SVN",
+				"CHE"
+			],
+			"area": 83871,
+			"gini": 26,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "de",
+					"iso639_2": "deu",
+					"name": "German",
+					"nativeName": "Deutsch"
+				}
+			],
+			"alpha2Code": "AT",
+			"alpha3Code": "AUT",
+			"callingCodes": [
+				"43"
+			],
+			"numericCode": "040"
+		},
+		{
+			"name": "Azerbaijan",
+			"nativeName": "Azərbaycan",
+			"topLevelDomain": [
+				".az"
+			],
+			"capital": "Baku",
+			"altSpellings": [
+				"AZ",
+				"Republic of Azerbaijan",
+				"Azərbaycan Respublikası"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Aserbaidschan",
+				"es": "Azerbaiyán",
+				"fr": "Azerbaïdjan",
+				"it": "Azerbaijan",
+				"ja": "アゼルバイジャン",
+				"nl": "Azerbeidzjan",
+				"hr": "Azerbajdžan"
+			},
+			"population": 9730500,
+			"latlng": [
+				40.5,
+				47.5
+			],
+			"demonym": "Azerbaijani",
+			"borders": [
+				"ARM",
+				"GEO",
+				"IRN",
+				"RUS",
+				"TUR"
+			],
+			"area": 86600,
+			"gini": 33.7,
+			"timezones": [
+				"UTC+04:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "AZN",
+					"name": "Azerbaijani manat"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "az",
+					"iso639_2": "aze",
+					"name": "Azerbaijani",
+					"nativeName": "azərbaycan dili"
+				},
+				{
+					"iso639_1": "hy",
+					"iso639_2": "hye",
+					"name": "Armenian",
+					"nativeName": "Հայերեն"
+				}
+			],
+			"alpha2Code": "AZ",
+			"alpha3Code": "AZE",
+			"callingCodes": [
+				"994"
+			],
+			"numericCode": "031"
+		},
+		{
+			"name": "Bahamas",
+			"nativeName": "Bahamas",
+			"topLevelDomain": [
+				".bs"
+			],
+			"capital": "Nassau",
+			"altSpellings": [
+				"BS",
+				"Commonwealth of the Bahamas"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Bahamas",
+				"es": "Bahamas",
+				"fr": "Bahamas",
+				"it": "Bahamas",
+				"ja": "バハマ",
+				"nl": "Bahama’s",
+				"hr": "Bahami"
+			},
+			"population": 378040,
+			"latlng": [
+				24.25,
+				-76
+			],
+			"demonym": "Bahamian",
+			"borders": [],
+			"area": 13943,
+			"timezones": [
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "BSD",
+					"name": "Bahamian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "BS",
+			"alpha3Code": "BHS",
+			"callingCodes": [
+				"1242"
+			],
+			"numericCode": "044"
+		},
+		{
+			"name": "Bahrain",
+			"nativeName": "‏البحرين",
+			"topLevelDomain": [
+				".bh"
+			],
+			"capital": "Manama",
+			"altSpellings": [
+				"BH",
+				"Kingdom of Bahrain",
+				"Mamlakat al-Baḥrayn"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Bahrain",
+				"es": "Bahrein",
+				"fr": "Bahreïn",
+				"it": "Bahrein",
+				"ja": "バーレーン",
+				"nl": "Bahrein",
+				"hr": "Bahrein"
+			},
+			"population": 1404900,
+			"latlng": [
+				26,
+				50.55
+			],
+			"demonym": "Bahraini",
+			"borders": [],
+			"area": 765,
+			"gini": null,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": ".د.ب",
+					"code": "BHD",
+					"name": "Bahraini dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "BH",
+			"alpha3Code": "BHR",
+			"callingCodes": [
+				"973"
+			],
+			"numericCode": "048"
+		},
+		{
+			"name": "Bangladesh",
+			"nativeName": "Bangladesh",
+			"topLevelDomain": [
+				".bd"
+			],
+			"capital": "Dhaka",
+			"altSpellings": [
+				"BD",
+				"People's Republic of Bangladesh",
+				"Gônôprôjatôntri Bangladesh"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Bangladesch",
+				"es": "Bangladesh",
+				"fr": "Bangladesh",
+				"it": "Bangladesh",
+				"ja": "バングラデシュ",
+				"nl": "Bangladesh",
+				"hr": "Bangladeš"
+			},
+			"population": 161006790,
+			"latlng": [
+				24,
+				90
+			],
+			"demonym": "Bangladeshi",
+			"borders": [
+				"MMR",
+				"IND"
+			],
+			"area": 147570,
+			"gini": 32.1,
+			"timezones": [
+				"UTC+06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "৳",
+					"code": "BDT",
+					"name": "Bangladeshi taka"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "bn",
+					"iso639_2": "ben",
+					"name": "Bengali",
+					"nativeName": "বাংলা"
+				}
+			],
+			"alpha2Code": "BD",
+			"alpha3Code": "BGD",
+			"callingCodes": [
+				"880"
+			],
+			"numericCode": "050"
+		},
+		{
+			"name": "Barbados",
+			"nativeName": "Barbados",
+			"topLevelDomain": [
+				".bb"
+			],
+			"capital": "Bridgetown",
+			"altSpellings": [
+				"BB"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Barbados",
+				"es": "Barbados",
+				"fr": "Barbade",
+				"it": "Barbados",
+				"ja": "バルバドス",
+				"nl": "Barbados",
+				"hr": "Barbados"
+			},
+			"population": 285000,
+			"latlng": [
+				13.16666666,
+				-59.53333333
+			],
+			"demonym": "Barbadian",
+			"borders": [],
+			"area": 430,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "BBD",
+					"name": "Barbadian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "BB",
+			"alpha3Code": "BRB",
+			"callingCodes": [
+				"1246"
+			],
+			"numericCode": "052"
+		},
+		{
+			"name": "Belarus",
+			"nativeName": "Белару́сь",
+			"topLevelDomain": [
+				".by"
+			],
+			"capital": "Minsk",
+			"altSpellings": [
+				"BY",
+				"Bielaruś",
+				"Republic of Belarus",
+				"Белоруссия",
+				"Республика Беларусь",
+				"Belorussiya",
+				"Respublika Belarus’"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Weißrussland",
+				"es": "Bielorrusia",
+				"fr": "Biélorussie",
+				"it": "Bielorussia",
+				"ja": "ベラルーシ",
+				"nl": "Wit-Rusland",
+				"hr": "Bjelorusija"
+			},
+			"population": 9498700,
+			"latlng": [
+				53,
+				28
+			],
+			"demonym": "Belarusian",
+			"borders": [
+				"LVA",
+				"LTU",
+				"POL",
+				"RUS",
+				"UKR"
+			],
+			"area": 207600,
+			"gini": 26.5,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Br",
+					"code": "BYR",
+					"name": "New Belarusian ruble"
+				},
+				{
+					"symbol": "Br",
+					"code": "BYN",
+					"name": "Old Belarusian ruble"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "be",
+					"iso639_2": "bel",
+					"name": "Belarusian",
+					"nativeName": "беларуская мова"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "BY",
+			"alpha3Code": "BLR",
+			"callingCodes": [
+				"375"
+			],
+			"numericCode": "112"
+		},
+		{
+			"name": "Belgium",
+			"nativeName": "België",
+			"topLevelDomain": [
+				".be"
+			],
+			"capital": "Brussels",
+			"altSpellings": [
+				"BE",
+				"België",
+				"Belgie",
+				"Belgien",
+				"Belgique",
+				"Kingdom of Belgium",
+				"Koninkrijk België",
+				"Royaume de Belgique",
+				"Königreich Belgien"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Belgien",
+				"es": "Bélgica",
+				"fr": "Belgique",
+				"it": "Belgio",
+				"ja": "ベルギー",
+				"nl": "België",
+				"hr": "Belgija"
+			},
+			"population": 11319511,
+			"latlng": [
+				50.83333333,
+				4
+			],
+			"demonym": "Belgian",
+			"borders": [
+				"FRA",
+				"DEU",
+				"LUX",
+				"NLD"
+			],
+			"area": 30528,
+			"gini": 33,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "de",
+					"iso639_2": "deu",
+					"name": "German",
+					"nativeName": "Deutsch"
+				}
+			],
+			"alpha2Code": "BE",
+			"alpha3Code": "BEL",
+			"callingCodes": [
+				"32"
+			],
+			"numericCode": "056"
+		},
+		{
+			"name": "Belize",
+			"nativeName": "Belize",
+			"topLevelDomain": [
+				".bz"
+			],
+			"capital": "Belmopan",
+			"altSpellings": [
+				"BZ"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "Belize",
+				"es": "Belice",
+				"fr": "Belize",
+				"it": "Belize",
+				"ja": "ベリーズ",
+				"nl": "Belize",
+				"hr": "Belize"
+			},
+			"population": 370300,
+			"latlng": [
+				17.25,
+				-88.75
+			],
+			"demonym": "Belizean",
+			"borders": [
+				"GTM",
+				"MEX"
+			],
+			"area": 22966,
+			"gini": 53.1,
+			"timezones": [
+				"UTC-06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "BZD",
+					"name": "Belize dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "BZ",
+			"alpha3Code": "BLZ",
+			"callingCodes": [
+				"501"
+			],
+			"numericCode": "084"
+		},
+		{
+			"name": "Benin",
+			"nativeName": "Bénin",
+			"topLevelDomain": [
+				".bj"
+			],
+			"capital": "Porto-Novo",
+			"altSpellings": [
+				"BJ",
+				"Republic of Benin",
+				"République du Bénin"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Benin",
+				"es": "Benín",
+				"fr": "Bénin",
+				"it": "Benin",
+				"ja": "ベナン",
+				"nl": "Benin",
+				"hr": "Benin"
+			},
+			"population": 10653654,
+			"latlng": [
+				9.5,
+				2.25
+			],
+			"demonym": "Beninese",
+			"borders": [
+				"BFA",
+				"NER",
+				"NGA",
+				"TGO"
+			],
+			"area": 112622,
+			"gini": 38.6,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "BJ",
+			"alpha3Code": "BEN",
+			"callingCodes": [
+				"229"
+			],
+			"numericCode": "204"
+		},
+		{
+			"name": "Bermuda",
+			"nativeName": "Bermuda",
+			"topLevelDomain": [
+				".bm"
+			],
+			"capital": "Hamilton",
+			"altSpellings": [
+				"BM",
+				"The Islands of Bermuda",
+				"The Bermudas",
+				"Somers Isles"
+			],
+			"region": "Americas",
+			"subregion": "Northern America",
+			"translations": {
+				"de": "Bermuda",
+				"es": "Bermudas",
+				"fr": "Bermudes",
+				"it": "Bermuda",
+				"ja": "バミューダ",
+				"nl": "Bermuda",
+				"hr": "Bermudi"
+			},
+			"population": 61954,
+			"latlng": [
+				32.33333333,
+				-64.75
+			],
+			"demonym": "Bermudian",
+			"borders": [],
+			"area": 54,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "BMD",
+					"name": "Bermudian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "BM",
+			"alpha3Code": "BMU",
+			"callingCodes": [
+				"1441"
+			],
+			"numericCode": "060"
+		},
+		{
+			"name": "Bhutan",
+			"nativeName": "ʼbrug-yul",
+			"topLevelDomain": [
+				".bt"
+			],
+			"capital": "Thimphu",
+			"altSpellings": [
+				"BT",
+				"Kingdom of Bhutan"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Bhutan",
+				"es": "Bután",
+				"fr": "Bhoutan",
+				"it": "Bhutan",
+				"ja": "ブータン",
+				"nl": "Bhutan",
+				"hr": "Butan"
+			},
+			"population": 775620,
+			"latlng": [
+				27.5,
+				90.5
+			],
+			"demonym": "Bhutanese",
+			"borders": [
+				"CHN",
+				"IND"
+			],
+			"area": 38394,
+			"gini": 38.1,
+			"timezones": [
+				"UTC+06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Nu.",
+					"code": "BTN",
+					"name": "Bhutanese ngultrum"
+				},
+				{
+					"symbol": "₹",
+					"code": "INR",
+					"name": "Indian rupee"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "dz",
+					"iso639_2": "dzo",
+					"name": "Dzongkha",
+					"nativeName": "རྫོང་ཁ"
+				}
+			],
+			"alpha2Code": "BT",
+			"alpha3Code": "BTN",
+			"callingCodes": [
+				"975"
+			],
+			"numericCode": "064"
+		},
+		{
+			"name": "Bolivia (Plurinational State of)",
+			"nativeName": "Bolivia",
+			"topLevelDomain": [
+				".bo"
+			],
+			"capital": "Sucre",
+			"altSpellings": [
+				"BO",
+				"Buliwya",
+				"Wuliwya",
+				"Plurinational State of Bolivia",
+				"Estado Plurinacional de Bolivia",
+				"Buliwya Mamallaqta",
+				"Wuliwya Suyu",
+				"Tetã Volívia"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Bolivien",
+				"es": "Bolivia",
+				"fr": "Bolivie",
+				"it": "Bolivia",
+				"ja": "ボリビア多民族国",
+				"nl": "Bolivia",
+				"hr": "Bolivija"
+			},
+			"population": 10985059,
+			"latlng": [
+				-17,
+				-65
+			],
+			"demonym": "Bolivian",
+			"borders": [
+				"ARG",
+				"BRA",
+				"CHL",
+				"PRY",
+				"PER"
+			],
+			"area": 1098581,
+			"gini": 56.3,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Bs.",
+					"code": "BOB",
+					"name": "Bolivian boliviano"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				},
+				{
+					"iso639_1": "ay",
+					"iso639_2": "aym",
+					"name": "Aymara",
+					"nativeName": "aymar aru"
+				},
+				{
+					"iso639_1": "qu",
+					"iso639_2": "que",
+					"name": "Quechua",
+					"nativeName": "Runa Simi"
+				}
+			],
+			"alpha2Code": "BO",
+			"alpha3Code": "BOL",
+			"callingCodes": [
+				"591"
+			],
+			"numericCode": "068"
+		},
+		{
+			"name": "Bonaire, Sint Eustatius and Saba",
+			"nativeName": "Bonaire",
+			"topLevelDomain": [
+				".an",
+				".nl"
+			],
+			"capital": "Kralendijk",
+			"altSpellings": [
+				"BQ",
+				"Boneiru"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {},
+			"population": 17408,
+			"latlng": [
+				12.15,
+				-68.266667
+			],
+			"demonym": "Dutch",
+			"borders": [],
+			"area": 294,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				}
+			],
+			"alpha2Code": "BQ",
+			"alpha3Code": "BES",
+			"callingCodes": [
+				"5997"
+			],
+			"numericCode": "535"
+		},
+		{
+			"name": "Bosnia and Herzegovina",
+			"nativeName": "Bosna i Hercegovina",
+			"topLevelDomain": [
+				".ba"
+			],
+			"capital": "Sarajevo",
+			"altSpellings": [
+				"BA",
+				"Bosnia-Herzegovina",
+				"Босна и Херцеговина"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Bosnien und Herzegowina",
+				"es": "Bosnia y Herzegovina",
+				"fr": "Bosnie-Herzégovine",
+				"it": "Bosnia ed Erzegovina",
+				"ja": "ボスニア・ヘルツェゴビナ",
+				"nl": "Bosnië en Herzegovina",
+				"hr": "Bosna i Hercegovina"
+			},
+			"population": 3531159,
+			"latlng": [
+				44,
+				18
+			],
+			"demonym": "Bosnian, Herzegovinian",
+			"borders": [
+				"HRV",
+				"MNE",
+				"SRB"
+			],
+			"area": 51209,
+			"gini": 36.2,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "BAM",
+					"name": "Bosnia and Herzegovina convertible mark"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "bs",
+					"iso639_2": "bos",
+					"name": "Bosnian",
+					"nativeName": "bosanski jezik"
+				},
+				{
+					"iso639_1": "hr",
+					"iso639_2": "hrv",
+					"name": "Croatian",
+					"nativeName": "hrvatski jezik"
+				},
+				{
+					"iso639_1": "sr",
+					"iso639_2": "srp",
+					"name": "Serbian",
+					"nativeName": "српски језик"
+				}
+			],
+			"alpha2Code": "BA",
+			"alpha3Code": "BIH",
+			"callingCodes": [
+				"387"
+			],
+			"numericCode": "070"
+		},
+		{
+			"name": "Botswana",
+			"nativeName": "Botswana",
+			"topLevelDomain": [
+				".bw"
+			],
+			"capital": "Gaborone",
+			"altSpellings": [
+				"BW",
+				"Republic of Botswana",
+				"Lefatshe la Botswana"
+			],
+			"region": "Africa",
+			"subregion": "Southern Africa",
+			"translations": {
+				"de": "Botswana",
+				"es": "Botswana",
+				"fr": "Botswana",
+				"it": "Botswana",
+				"ja": "ボツワナ",
+				"nl": "Botswana",
+				"hr": "Bocvana"
+			},
+			"population": 2141206,
+			"latlng": [
+				-22,
+				24
+			],
+			"demonym": "Motswana",
+			"borders": [
+				"NAM",
+				"ZAF",
+				"ZMB",
+				"ZWE"
+			],
+			"area": 582000,
+			"gini": 61,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "P",
+					"code": "BWP",
+					"name": "Botswana pula"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "tn",
+					"iso639_2": "tsn",
+					"name": "Tswana",
+					"nativeName": "Setswana"
+				}
+			],
+			"alpha2Code": "BW",
+			"alpha3Code": "BWA",
+			"callingCodes": [
+				"267"
+			],
+			"numericCode": "072"
+		},
+		{
+			"name": "Bouvet Island",
+			"nativeName": "Bouvetøya",
+			"topLevelDomain": [
+				".bv"
+			],
+			"capital": "",
+			"altSpellings": [
+				"BV",
+				"Bouvetøya",
+				"Bouvet-øya"
+			],
+			"region": "",
+			"subregion": "",
+			"translations": {
+				"de": "Bouvetinsel",
+				"es": "Isla Bouvet",
+				"fr": "Île Bouvet",
+				"it": "Isola Bouvet",
+				"ja": "ブーベ島",
+				"nl": "Bouveteiland",
+				"hr": "Otok Bouvet"
+			},
+			"population": 0,
+			"latlng": [
+				-54.43333333,
+				3.4
+			],
+			"demonym": "",
+			"borders": [],
+			"area": 49,
+			"currencies": [
+				{
+					"code": "NOK",
+					"name": "Norwegian krone",
+					"symbol": "kr"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "no",
+					"iso639_2": "nor",
+					"name": "Norwegian",
+					"nativeName": "Norsk"
+				},
+				{
+					"iso639_1": "nb",
+					"iso639_2": "nob",
+					"name": "Norwegian Bokmål",
+					"nativeName": "Norsk bokmål"
+				},
+				{
+					"iso639_1": "nn",
+					"iso639_2": "nno",
+					"name": "Norwegian Nynorsk",
+					"nativeName": "Norsk nynorsk"
+				}
+			],
+			"alpha2Code": "BV",
+			"alpha3Code": "BVT",
+			"callingCodes": [
+				""
+			],
+			"numericCode": "074",
+			"timezones": [
+				"UTC+01:00"
+			]
+		},
+		{
+			"name": "Brazil",
+			"nativeName": "Brasil",
+			"topLevelDomain": [
+				".br"
+			],
+			"capital": "Brasília",
+			"altSpellings": [
+				"BR",
+				"Brasil",
+				"Federative Republic of Brazil",
+				"República Federativa do Brasil"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Brasilien",
+				"es": "Brasil",
+				"fr": "Brésil",
+				"it": "Brasile",
+				"ja": "ブラジル",
+				"nl": "Brazilië",
+				"hr": "Brazil"
+			},
+			"population": 206135893,
+			"latlng": [
+				-10,
+				-55
+			],
+			"demonym": "Brazilian",
+			"borders": [
+				"ARG",
+				"BOL",
+				"COL",
+				"GUF",
+				"GUY",
+				"PRY",
+				"PER",
+				"SUR",
+				"URY",
+				"VEN"
+			],
+			"area": 8515767,
+			"gini": 54.7,
+			"timezones": [
+				"UTC-05:00",
+				"UTC-04:00",
+				"UTC-03:00",
+				"UTC-02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "R$",
+					"code": "BRL",
+					"name": "Brazilian real"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "BR",
+			"alpha3Code": "BRA",
+			"callingCodes": [
+				"55"
+			],
+			"numericCode": "076"
+		},
+		{
+			"name": "British Indian Ocean Territory",
+			"nativeName": "British Indian Ocean Territory",
+			"topLevelDomain": [
+				".io"
+			],
+			"capital": "Diego Garcia",
+			"altSpellings": [
+				"IO"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Britisches Territorium im Indischen Ozean",
+				"es": "Territorio Británico del Océano Índico",
+				"fr": "Territoire britannique de l'océan Indien",
+				"it": "Territorio britannico dell'oceano indiano",
+				"ja": "イギリス領インド洋地域",
+				"nl": "Britse Gebieden in de Indische Oceaan",
+				"hr": "Britanski Indijskooceanski teritorij"
+			},
+			"population": 3000,
+			"latlng": [
+				-6,
+				71.5
+			],
+			"demonym": "Indian",
+			"borders": [],
+			"area": 60,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "IO",
+			"alpha3Code": "IOT",
+			"callingCodes": [
+				"246"
+			],
+			"numericCode": "086"
+		},
+		{
+			"name": "United States Minor Outlying Islands",
+			"nativeName": "United States Minor Outlying Islands",
+			"topLevelDomain": [
+				".us"
+			],
+			"capital": "",
+			"altSpellings": [
+				"UM"
+			],
+			"region": "Americas",
+			"subregion": "Northern America",
+			"translations": {
+				"de": "Kleinere Inselbesitzungen der Vereinigten Staaten",
+				"es": "Islas Ultramarinas Menores de Estados Unidos",
+				"fr": "Îles mineures éloignées des États-Unis",
+				"it": "Isole minori esterne degli Stati Uniti d'America",
+				"ja": "合衆国領有小離島",
+				"nl": "Kleine afgelegen eilanden van de Verenigde Staten",
+				"hr": "Mali udaljeni otoci SAD-a"
+			},
+			"population": 300,
+			"latlng": [],
+			"demonym": "American",
+			"borders": [],
+			"currencies": [
+				{
+					"code": "USD",
+					"name": "United States Dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "UM",
+			"alpha3Code": "UMI",
+			"callingCodes": [
+				""
+			],
+			"numericCode": "581"
+		},
+		{
+			"name": "Virgin Islands (British)",
+			"nativeName": "British Virgin Islands",
+			"topLevelDomain": [
+				".vg"
+			],
+			"capital": "Road Town",
+			"altSpellings": [
+				"VG"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Britische Jungferninseln",
+				"es": "Islas Vírgenes del Reino Unido",
+				"fr": "Îles Vierges britanniques",
+				"it": "Isole Vergini Britanniche",
+				"ja": "イギリス領ヴァージン諸島",
+				"nl": "Britse Maagdeneilanden",
+				"hr": "Britanski Djevičanski Otoci"
+			},
+			"population": 28514,
+			"latlng": [
+				18.431383,
+				-64.62305
+			],
+			"demonym": "Virgin Islander",
+			"borders": [],
+			"area": 151,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": null,
+					"name": "[D]"
+				},
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "VG",
+			"alpha3Code": "VGB",
+			"callingCodes": [
+				"1284"
+			],
+			"timezones": [
+				"UTC-04:00"
+			],
+			"numericCode": "092"
+		},
+		{
+			"name": "Virgin Islands (U.S.)",
+			"nativeName": "Virgin Islands of the United States",
+			"topLevelDomain": [
+				".vi"
+			],
+			"alpha2Code": "VI",
+			"numericCode": "850",
+			"alpha3Code": "VIR",
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"callingCodes": [
+				"1 340"
+			],
+			"capital": "Charlotte Amalie",
+			"altSpellings": [
+				"VI",
+				"USVI",
+				"American Virgin Islands",
+				"U.S. Virgin Islands"
+			],
+			"relevance": "0.5",
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"translations": {
+				"de": "Amerikanische Jungferninseln",
+				"es": "Islas Vírgenes de los Estados Unidos",
+				"fr": "Îles Vierges des États-Unis",
+				"it": "Isole Vergini americane",
+				"ja": "アメリカ領ヴァージン諸島",
+				"nl": "Verenigde Staten Maagdeneilanden"
+			},
+			"population": 114743,
+			"latlng": [
+				18.34,
+				-64.93
+			],
+			"demonym": "Virgin Islander",
+			"borders": [],
+			"area": 346.36,
+			"timezones": [
+				"UTC-04:00"
+			]
+		},
+		{
+			"name": "Brunei Darussalam",
+			"nativeName": "Negara Brunei Darussalam",
+			"topLevelDomain": [
+				".bn"
+			],
+			"capital": "Bandar Seri Begawan",
+			"altSpellings": [
+				"BN",
+				"Nation of Brunei",
+				" the Abode of Peace"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Brunei",
+				"nl": "Brunei",
+				"de": "Brunei",
+				"it": "Brunei",
+				"ja": "ブルネイ・ダルサラーム",
+				"es": "Brunei",
+				"hr": "Brunej"
+			},
+			"population": 411900,
+			"latlng": [
+				4.5,
+				114.66666666
+			],
+			"demonym": "Bruneian",
+			"borders": [
+				"MYS"
+			],
+			"area": 5765,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "BND",
+					"name": "Brunei dollar"
+				},
+				{
+					"symbol": "$",
+					"code": "SGD",
+					"name": "Singapore dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ms",
+					"iso639_2": "msa",
+					"name": "Malay",
+					"nativeName": "bahasa Melayu"
+				}
+			],
+			"alpha2Code": "BN",
+			"alpha3Code": "BRN",
+			"callingCodes": [
+				"673"
+			],
+			"numericCode": "096"
+		},
+		{
+			"name": "Bulgaria",
+			"nativeName": "България",
+			"topLevelDomain": [
+				".bg"
+			],
+			"capital": "Sofia",
+			"altSpellings": [
+				"BG",
+				"Republic of Bulgaria",
+				"Република България"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Bulgarien",
+				"es": "Bulgaria",
+				"fr": "Bulgarie",
+				"it": "Bulgaria",
+				"ja": "ブルガリア",
+				"nl": "Bulgarije",
+				"hr": "Bugarska"
+			},
+			"population": 7153784,
+			"latlng": [
+				43,
+				25
+			],
+			"demonym": "Bulgarian",
+			"borders": [
+				"GRC",
+				"MKD",
+				"ROU",
+				"SRB",
+				"TUR"
+			],
+			"area": 110879,
+			"gini": 28.2,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "лв",
+					"code": "BGN",
+					"name": "Bulgarian lev"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "bg",
+					"iso639_2": "bul",
+					"name": "Bulgarian",
+					"nativeName": "български език"
+				}
+			],
+			"alpha2Code": "BG",
+			"alpha3Code": "BGR",
+			"callingCodes": [
+				"359"
+			],
+			"numericCode": "100"
+		},
+		{
+			"name": "Burkina Faso",
+			"nativeName": "Burkina Faso",
+			"topLevelDomain": [
+				".bf"
+			],
+			"capital": "Ouagadougou",
+			"altSpellings": [
+				"BF"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Burkina Faso",
+				"es": "Burkina Faso",
+				"fr": "Burkina Faso",
+				"it": "Burkina Faso",
+				"ja": "ブルキナファソ",
+				"nl": "Burkina Faso",
+				"hr": "Burkina Faso"
+			},
+			"population": 19034397,
+			"latlng": [
+				13,
+				-2
+			],
+			"demonym": "Burkinabe",
+			"borders": [
+				"BEN",
+				"CIV",
+				"GHA",
+				"MLI",
+				"NER",
+				"TGO"
+			],
+			"area": 272967,
+			"gini": 39.8,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "ff",
+					"iso639_2": "ful",
+					"name": "Fula",
+					"nativeName": "Fulfulde"
+				}
+			],
+			"alpha2Code": "BF",
+			"alpha3Code": "BFA",
+			"callingCodes": [
+				"226"
+			],
+			"numericCode": "854"
+		},
+		{
+			"name": "Burundi",
+			"nativeName": "Burundi",
+			"topLevelDomain": [
+				".bi"
+			],
+			"capital": "Bujumbura",
+			"altSpellings": [
+				"BI",
+				"Republic of Burundi",
+				"Republika y'Uburundi",
+				"République du Burundi"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Burundi",
+				"es": "Burundi",
+				"fr": "Burundi",
+				"it": "Burundi",
+				"ja": "ブルンジ",
+				"nl": "Burundi",
+				"hr": "Burundi"
+			},
+			"population": 10114505,
+			"latlng": [
+				-3.5,
+				30
+			],
+			"demonym": "Burundian",
+			"borders": [
+				"COD",
+				"RWA",
+				"TZA"
+			],
+			"area": 27834,
+			"gini": 33.3,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "BIF",
+					"name": "Burundian franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "rn",
+					"iso639_2": "run",
+					"name": "Kirundi",
+					"nativeName": "Ikirundi"
+				}
+			],
+			"alpha2Code": "BI",
+			"alpha3Code": "BDI",
+			"callingCodes": [
+				"257"
+			],
+			"numericCode": "108"
+		},
+		{
+			"name": "Cambodia",
+			"nativeName": "Kâmpŭchéa",
+			"topLevelDomain": [
+				".kh"
+			],
+			"capital": "Phnom Penh",
+			"altSpellings": [
+				"KH",
+				"Kingdom of Cambodia"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Cambodge",
+				"nl": "Cambodja",
+				"de": "Kambodscha",
+				"it": "Cambogia",
+				"ja": "カンボジア",
+				"es": "Camboya",
+				"hr": "Kambodža"
+			},
+			"population": 15626444,
+			"latlng": [
+				13,
+				105
+			],
+			"demonym": "Cambodian",
+			"borders": [
+				"LAO",
+				"THA",
+				"VNM"
+			],
+			"area": 181035,
+			"gini": 37.9,
+			"timezones": [
+				"UTC+07:00"
+			],
+			"currencies": [
+				{
+					"symbol": "៛",
+					"code": "KHR",
+					"name": "Cambodian riel"
+				},
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "km",
+					"iso639_2": "khm",
+					"name": "Khmer",
+					"nativeName": "ខ្មែរ"
+				}
+			],
+			"alpha2Code": "KH",
+			"alpha3Code": "KHM",
+			"callingCodes": [
+				"855"
+			],
+			"numericCode": "116"
+		},
+		{
+			"name": "Cameroon",
+			"nativeName": "Cameroon",
+			"topLevelDomain": [
+				".cm"
+			],
+			"capital": "Yaoundé",
+			"altSpellings": [
+				"CM",
+				"Republic of Cameroon",
+				"République du Cameroun"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Kamerun",
+				"es": "Camerún",
+				"fr": "Cameroun",
+				"it": "Camerun",
+				"ja": "カメルーン",
+				"nl": "Kameroen",
+				"hr": "Kamerun"
+			},
+			"population": 22709892,
+			"latlng": [
+				6,
+				12
+			],
+			"demonym": "Cameroonian",
+			"borders": [
+				"CAF",
+				"TCD",
+				"COG",
+				"GNQ",
+				"GAB",
+				"NGA"
+			],
+			"area": 475442,
+			"gini": 38.9,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XAF",
+					"name": "Central African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "CM",
+			"alpha3Code": "CMR",
+			"callingCodes": [
+				"237"
+			],
+			"numericCode": "120"
+		},
+		{
+			"name": "Canada",
+			"nativeName": "Canada",
+			"topLevelDomain": [
+				".ca"
+			],
+			"capital": "Ottawa",
+			"altSpellings": [
+				"CA"
+			],
+			"region": "Americas",
+			"subregion": "Northern America",
+			"translations": {
+				"de": "Kanada",
+				"es": "Canadá",
+				"fr": "Canada",
+				"it": "Canada",
+				"ja": "カナダ",
+				"nl": "Canada",
+				"hr": "Kanada"
+			},
+			"population": 36155487,
+			"latlng": [
+				60,
+				-95
+			],
+			"demonym": "Canadian",
+			"borders": [
+				"USA"
+			],
+			"area": 9984670,
+			"gini": 32.6,
+			"timezones": [
+				"UTC-08:00",
+				"UTC-07:00",
+				"UTC-06:00",
+				"UTC-05:00",
+				"UTC-04:00",
+				"UTC-03:30"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "CAD",
+					"name": "Canadian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "CA",
+			"alpha3Code": "CAN",
+			"callingCodes": [
+				"1"
+			],
+			"numericCode": "124"
+		},
+		{
+			"name": "Cabo Verde",
+			"nativeName": "Cabo Verde",
+			"topLevelDomain": [
+				".cv"
+			],
+			"capital": "Praia",
+			"altSpellings": [
+				"CV",
+				"Republic of Cabo Verde",
+				"República de Cabo Verde"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Kap Verde",
+				"es": "Cabo Verde",
+				"fr": "Cap Vert",
+				"it": "Capo Verde",
+				"ja": "カーボベルデ",
+				"nl": "Kaapverdië",
+				"hr": "Zelenortska Republika"
+			},
+			"population": 531239,
+			"latlng": [
+				16,
+				-24
+			],
+			"demonym": "Cape Verdian",
+			"borders": [],
+			"area": 4033,
+			"gini": 50.5,
+			"timezones": [
+				"UTC-01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Esc",
+					"code": "CVE",
+					"name": "Cape Verdean escudo"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "CV",
+			"alpha3Code": "CPV",
+			"callingCodes": [
+				"238"
+			],
+			"numericCode": "132"
+		},
+		{
+			"name": "Cayman Islands",
+			"nativeName": "Cayman Islands",
+			"topLevelDomain": [
+				".ky"
+			],
+			"capital": "George Town",
+			"altSpellings": [
+				"KY"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Kaimaninseln",
+				"es": "Islas Caimán",
+				"fr": "Îles Caïmans",
+				"it": "Isole Cayman",
+				"ja": "ケイマン諸島",
+				"nl": "Caymaneilanden",
+				"hr": "Kajmanski otoci"
+			},
+			"population": 58238,
+			"latlng": [
+				19.5,
+				-80.5
+			],
+			"demonym": "Caymanian",
+			"borders": [],
+			"area": 264,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "KYD",
+					"name": "Cayman Islands dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "KY",
+			"alpha3Code": "CYM",
+			"callingCodes": [
+				"1345"
+			],
+			"numericCode": "136"
+		},
+		{
+			"name": "Central African Republic",
+			"nativeName": "Ködörösêse tî Bêafrîka",
+			"topLevelDomain": [
+				".cf"
+			],
+			"capital": "Bangui",
+			"altSpellings": [
+				"CF",
+				"Central African Republic",
+				"République centrafricaine"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Zentralafrikanische Republik",
+				"es": "República Centroafricana",
+				"fr": "République centrafricaine",
+				"it": "Repubblica Centrafricana",
+				"ja": "中央アフリカ共和国",
+				"nl": "Centraal-Afrikaanse Republiek",
+				"hr": "Srednjoafrička Republika"
+			},
+			"population": 4998000,
+			"latlng": [
+				7,
+				21
+			],
+			"demonym": "Central African",
+			"borders": [
+				"CMR",
+				"TCD",
+				"COD",
+				"COG",
+				"SSD",
+				"SDN"
+			],
+			"area": 622984,
+			"gini": 56.3,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XAF",
+					"name": "Central African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "sg",
+					"iso639_2": "sag",
+					"name": "Sango",
+					"nativeName": "yângâ tî sängö"
+				}
+			],
+			"alpha2Code": "CF",
+			"alpha3Code": "CAF",
+			"callingCodes": [
+				"236"
+			],
+			"numericCode": "140"
+		},
+		{
+			"name": "Chad",
+			"nativeName": "Tchad",
+			"topLevelDomain": [
+				".td"
+			],
+			"capital": "N'Djamena",
+			"altSpellings": [
+				"TD",
+				"Tchad",
+				"Republic of Chad",
+				"République du Tchad"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Tschad",
+				"es": "Chad",
+				"fr": "Tchad",
+				"it": "Ciad",
+				"ja": "チャド",
+				"nl": "Tsjaad",
+				"hr": "Čad"
+			},
+			"population": 14497000,
+			"latlng": [
+				15,
+				19
+			],
+			"demonym": "Chadian",
+			"borders": [
+				"CMR",
+				"CAF",
+				"LBY",
+				"NER",
+				"NGA",
+				"SSD"
+			],
+			"area": 1284000,
+			"gini": 39.8,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XAF",
+					"name": "Central African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "TD",
+			"alpha3Code": "TCD",
+			"callingCodes": [
+				"235"
+			],
+			"numericCode": "148"
+		},
+		{
+			"name": "Chile",
+			"nativeName": "Chile",
+			"topLevelDomain": [
+				".cl"
+			],
+			"capital": "Santiago",
+			"altSpellings": [
+				"CL",
+				"Republic of Chile",
+				"República de Chile"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Chile",
+				"es": "Chile",
+				"fr": "Chili",
+				"it": "Cile",
+				"ja": "チリ",
+				"nl": "Chili",
+				"hr": "Čile"
+			},
+			"population": 18191900,
+			"latlng": [
+				-30,
+				-71
+			],
+			"demonym": "Chilean",
+			"borders": [
+				"ARG",
+				"BOL",
+				"PER"
+			],
+			"area": 756102,
+			"gini": 52.1,
+			"timezones": [
+				"UTC-06:00",
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "CLP",
+					"name": "Chilean peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "CL",
+			"alpha3Code": "CHL",
+			"callingCodes": [
+				"56"
+			],
+			"numericCode": "152"
+		},
+		{
+			"name": "China",
+			"nativeName": "中国",
+			"topLevelDomain": [
+				".cn"
+			],
+			"capital": "Beijing",
+			"altSpellings": [
+				"CN",
+				"Zhōngguó",
+				"Zhongguo",
+				"Zhonghua",
+				"People's Republic of China",
+				"中华人民共和国",
+				"Zhōnghuá Rénmín Gònghéguó"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "China",
+				"es": "China",
+				"fr": "Chine",
+				"it": "Cina",
+				"ja": "中国",
+				"nl": "China",
+				"hr": "Kina"
+			},
+			"population": 1377422166,
+			"latlng": [
+				35,
+				105
+			],
+			"demonym": "Chinese",
+			"borders": [
+				"AFG",
+				"BTN",
+				"MMR",
+				"HKG",
+				"IND",
+				"KAZ",
+				"PRK",
+				"KGZ",
+				"LAO",
+				"MAC",
+				"MNG",
+				"PAK",
+				"RUS",
+				"TJK",
+				"VNM"
+			],
+			"area": 9640011,
+			"gini": 47,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "¥",
+					"code": "CNY",
+					"name": "Chinese yuan"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "zh",
+					"iso639_2": "zho",
+					"name": "Chinese",
+					"nativeName": "中文 (Zhōngwén)"
+				}
+			],
+			"alpha2Code": "CN",
+			"alpha3Code": "CHN",
+			"callingCodes": [
+				"86"
+			],
+			"numericCode": "156"
+		},
+		{
+			"name": "Christmas Island",
+			"nativeName": "Christmas Island",
+			"topLevelDomain": [
+				".cx"
+			],
+			"capital": "Flying Fish Cove",
+			"altSpellings": [
+				"CX",
+				"Territory of Christmas Island"
+			],
+			"region": "Oceania",
+			"subregion": "Australia and New Zealand",
+			"translations": {
+				"fr": "Île Christmas",
+				"nl": "Christmaseiland",
+				"de": "Weihnachtsinsel",
+				"it": "Isola di Natale",
+				"ja": "クリスマス島",
+				"es": "Isla de Navidad",
+				"hr": "Božićni otok"
+			},
+			"population": 2072,
+			"latlng": [
+				-10.5,
+				105.66666666
+			],
+			"demonym": "Christmas Island",
+			"borders": [],
+			"area": 135,
+			"currencies": [
+				{
+					"code": "AUD",
+					"name": "Australian dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "CX",
+			"alpha3Code": "CXR",
+			"callingCodes": [
+				"61"
+			],
+			"numericCode": "162"
+		},
+		{
+			"name": "Cocos (Keeling) Islands",
+			"nativeName": "Cocos (Keeling) Islands",
+			"topLevelDomain": [
+				".cc"
+			],
+			"capital": "West Island",
+			"altSpellings": [
+				"CC",
+				"Territory of the Cocos (Keeling) Islands",
+				"Keeling Islands"
+			],
+			"region": "Oceania",
+			"subregion": "Australia and New Zealand",
+			"translations": {
+				"fr": "Îles Cocos",
+				"nl": "Cocoseilanden",
+				"de": "Kokosinseln",
+				"it": "Isole Cocos e Keeling",
+				"ja": "ココス（キーリング）諸島",
+				"es": "Islas Cocos o Islas Keeling",
+				"hr": "Kokosovi Otoci"
+			},
+			"population": 550,
+			"latlng": [
+				-12.5,
+				96.83333333
+			],
+			"demonym": "Cocos Islander",
+			"borders": [],
+			"area": 14,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "AUD",
+					"name": "Australian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "CC",
+			"alpha3Code": "CCK",
+			"callingCodes": [
+				"61"
+			],
+			"numericCode": "166"
+		},
+		{
+			"name": "Colombia",
+			"nativeName": "Colombia",
+			"topLevelDomain": [
+				".co"
+			],
+			"capital": "Bogotá",
+			"altSpellings": [
+				"CO",
+				"Republic of Colombia",
+				"República de Colombia"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Kolumbien",
+				"es": "Colombia",
+				"fr": "Colombie",
+				"it": "Colombia",
+				"ja": "コロンビア",
+				"nl": "Colombia",
+				"hr": "Kolumbija"
+			},
+			"population": 48759958,
+			"latlng": [
+				4,
+				-72
+			],
+			"demonym": "Colombian",
+			"borders": [
+				"BRA",
+				"ECU",
+				"PAN",
+				"PER",
+				"VEN"
+			],
+			"area": 1141748,
+			"gini": 55.9,
+			"timezones": [
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "COP",
+					"name": "Colombian peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "CO",
+			"alpha3Code": "COL",
+			"callingCodes": [
+				"57"
+			],
+			"numericCode": "170"
+		},
+		{
+			"name": "Comoros",
+			"nativeName": "Komori",
+			"topLevelDomain": [
+				".km"
+			],
+			"capital": "Moroni",
+			"altSpellings": [
+				"KM",
+				"Union of the Comoros",
+				"Union des Comores",
+				"Udzima wa Komori",
+				"al-Ittiḥād al-Qumurī"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Union der Komoren",
+				"es": "Comoras",
+				"fr": "Comores",
+				"it": "Comore",
+				"ja": "コモロ",
+				"nl": "Comoren",
+				"hr": "Komori"
+			},
+			"population": 806153,
+			"latlng": [
+				-12.16666666,
+				44.25
+			],
+			"demonym": "Comoran",
+			"borders": [],
+			"area": 1862,
+			"gini": 64.3,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "KMF",
+					"name": "Comorian franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "KM",
+			"alpha3Code": "COM",
+			"callingCodes": [
+				"269"
+			],
+			"numericCode": "174"
+		},
+		{
+			"name": "Congo",
+			"nativeName": "République du Congo",
+			"topLevelDomain": [
+				".cg"
+			],
+			"capital": "Brazzaville",
+			"altSpellings": [
+				"CG",
+				"Congo-Brazzaville"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Kongo",
+				"es": "Congo",
+				"fr": "Congo",
+				"it": "Congo",
+				"ja": "コンゴ共和国",
+				"nl": "Congo [Republiek]",
+				"hr": "Kongo"
+			},
+			"population": 4741000,
+			"latlng": [
+				-1,
+				15
+			],
+			"demonym": "Congolese",
+			"borders": [
+				"AGO",
+				"CMR",
+				"CAF",
+				"COD",
+				"GAB"
+			],
+			"area": 342000,
+			"gini": 47.3,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XAF",
+					"name": "Central African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "ln",
+					"iso639_2": "lin",
+					"name": "Lingala",
+					"nativeName": "Lingála"
+				}
+			],
+			"alpha2Code": "CG",
+			"alpha3Code": "COG",
+			"callingCodes": [
+				"242"
+			],
+			"numericCode": "178"
+		},
+		{
+			"name": "Congo (Democratic Republic of the)",
+			"nativeName": "République démocratique du Congo",
+			"topLevelDomain": [
+				".cd"
+			],
+			"capital": "Kinshasa",
+			"altSpellings": [
+				"CD",
+				"DR Congo",
+				"Congo-Kinshasa",
+				"DRC"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Kongo (Dem. Rep.)",
+				"es": "Congo (Rep. Dem.)",
+				"fr": "Congo (Rép. dém.)",
+				"it": "Congo (Rep. Dem.)",
+				"ja": "コンゴ民主共和国",
+				"nl": "Congo [DRC]",
+				"hr": "Kongo, Demokratska Republika"
+			},
+			"population": 85026000,
+			"latlng": [
+				0,
+				25
+			],
+			"demonym": "Congolese",
+			"borders": [
+				"AGO",
+				"BDI",
+				"CAF",
+				"COG",
+				"RWA",
+				"SSD",
+				"TZA",
+				"UGA",
+				"ZMB"
+			],
+			"area": 2344858,
+			"timezones": [
+				"UTC+01:00",
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "CDF",
+					"name": "Congolese franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "ln",
+					"iso639_2": "lin",
+					"name": "Lingala",
+					"nativeName": "Lingála"
+				},
+				{
+					"iso639_1": "kg",
+					"iso639_2": "kon",
+					"name": "Kongo",
+					"nativeName": "Kikongo"
+				},
+				{
+					"iso639_1": "sw",
+					"iso639_2": "swa",
+					"name": "Swahili",
+					"nativeName": "Kiswahili"
+				},
+				{
+					"iso639_1": "lu",
+					"iso639_2": "lub",
+					"name": "Luba-Katanga",
+					"nativeName": "Tshiluba"
+				}
+			],
+			"alpha2Code": "CD",
+			"alpha3Code": "COD",
+			"callingCodes": [
+				"243"
+			],
+			"numericCode": "180"
+		},
+		{
+			"name": "Cook Islands",
+			"nativeName": "Cook Islands",
+			"topLevelDomain": [
+				".ck"
+			],
+			"capital": "Avarua",
+			"altSpellings": [
+				"CK",
+				"Kūki 'Āirani"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Cookinseln",
+				"es": "Islas Cook",
+				"fr": "Îles Cook",
+				"it": "Isole Cook",
+				"ja": "クック諸島",
+				"nl": "Cookeilanden",
+				"hr": "Cookovo Otočje"
+			},
+			"population": 18100,
+			"latlng": [
+				-21.23333333,
+				-159.76666666
+			],
+			"demonym": "Cook Islander",
+			"borders": [],
+			"area": 236,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "NZD",
+					"name": "New Zealand dollar"
+				},
+				{
+					"symbol": "$",
+					"code": "(none)",
+					"name": "Cook Islands dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "CK",
+			"alpha3Code": "COK",
+			"callingCodes": [
+				"682"
+			],
+			"numericCode": "184"
+		},
+		{
+			"name": "Costa Rica",
+			"nativeName": "Costa Rica",
+			"topLevelDomain": [
+				".cr"
+			],
+			"capital": "San José",
+			"altSpellings": [
+				"CR",
+				"Republic of Costa Rica",
+				"República de Costa Rica"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "Costa Rica",
+				"es": "Costa Rica",
+				"fr": "Costa Rica",
+				"it": "Costa Rica",
+				"ja": "コスタリカ",
+				"nl": "Costa Rica",
+				"hr": "Kostarika"
+			},
+			"population": 4890379,
+			"latlng": [
+				10,
+				-84
+			],
+			"demonym": "Costa Rican",
+			"borders": [
+				"NIC",
+				"PAN"
+			],
+			"area": 51100,
+			"gini": 50.7,
+			"timezones": [
+				"UTC-06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₡",
+					"code": "CRC",
+					"name": "Costa Rican colón"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "CR",
+			"alpha3Code": "CRI",
+			"callingCodes": [
+				"506"
+			],
+			"numericCode": "188"
+		},
+		{
+			"name": "Croatia",
+			"nativeName": "Hrvatska",
+			"topLevelDomain": [
+				".hr"
+			],
+			"capital": "Zagreb",
+			"altSpellings": [
+				"HR",
+				"Hrvatska",
+				"Republic of Croatia",
+				"Republika Hrvatska"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Kroatien",
+				"es": "Croacia",
+				"fr": "Croatie",
+				"it": "Croazia",
+				"ja": "クロアチア",
+				"nl": "Kroatië",
+				"hr": "Hrvatska"
+			},
+			"population": 4190669,
+			"latlng": [
+				45.16666666,
+				15.5
+			],
+			"demonym": "Croatian",
+			"borders": [
+				"BIH",
+				"HUN",
+				"MNE",
+				"SRB",
+				"SVN"
+			],
+			"area": 56594,
+			"gini": 33.7,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "kn",
+					"code": "HRK",
+					"name": "Croatian kuna"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "hr",
+					"iso639_2": "hrv",
+					"name": "Croatian",
+					"nativeName": "hrvatski jezik"
+				}
+			],
+			"alpha2Code": "HR",
+			"alpha3Code": "HRV",
+			"callingCodes": [
+				"385"
+			],
+			"numericCode": "191"
+		},
+		{
+			"name": "Cuba",
+			"nativeName": "Cuba",
+			"topLevelDomain": [
+				".cu"
+			],
+			"capital": "Havana",
+			"altSpellings": [
+				"CU",
+				"Republic of Cuba",
+				"República de Cuba"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Kuba",
+				"es": "Cuba",
+				"fr": "Cuba",
+				"it": "Cuba",
+				"ja": "キューバ",
+				"nl": "Cuba",
+				"hr": "Kuba"
+			},
+			"population": 11239004,
+			"latlng": [
+				21.5,
+				-80
+			],
+			"demonym": "Cuban",
+			"borders": [],
+			"area": 109884,
+			"gini": null,
+			"timezones": [
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "CUC",
+					"name": "Cuban convertible peso"
+				},
+				{
+					"symbol": "$",
+					"code": "CUP",
+					"name": "Cuban peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "CU",
+			"alpha3Code": "CUB",
+			"callingCodes": [
+				"53"
+			],
+			"numericCode": "192"
+		},
+		{
+			"name": "Curaçao",
+			"nativeName": "Curaçao",
+			"topLevelDomain": [
+				".cw"
+			],
+			"capital": "Willemstad",
+			"altSpellings": [
+				"CW",
+				"Curacao",
+				"Kòrsou",
+				"Country of Curaçao",
+				"Land Curaçao",
+				"Pais Kòrsou"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"nl": "Curaçao"
+			},
+			"population": 154843,
+			"latlng": [
+				12.116667,
+				-68.933333
+			],
+			"demonym": "Dutch",
+			"borders": [],
+			"area": 444,
+			"currencies": [
+				{
+					"symbol": "ƒ",
+					"code": "ANG",
+					"name": "Netherlands Antillean guilder"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				},
+				{
+					"iso639_1": "pa",
+					"iso639_2": "pan",
+					"name": "Eastern Punjabi",
+					"nativeName": "ਪੰਜਾਬੀ"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "CW",
+			"alpha3Code": "CUW",
+			"callingCodes": [
+				"599"
+			],
+			"numericCode": "531",
+			"timezones": [
+				"UTC-04:00"
+			]
+		},
+		{
+			"name": "Cyprus",
+			"nativeName": "Κύπρος",
+			"topLevelDomain": [
+				".cy"
+			],
+			"capital": "Nicosia",
+			"altSpellings": [
+				"CY",
+				"Kýpros",
+				"Kıbrıs",
+				"Republic of Cyprus",
+				"Κυπριακή Δημοκρατία",
+				"Kıbrıs Cumhuriyeti"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Zypern",
+				"es": "Chipre",
+				"fr": "Chypre",
+				"it": "Cipro",
+				"ja": "キプロス",
+				"nl": "Cyprus",
+				"hr": "Cipar"
+			},
+			"population": 847000,
+			"latlng": [
+				35,
+				33
+			],
+			"demonym": "Cypriot",
+			"borders": [
+				"GBR"
+			],
+			"area": 9251,
+			"gini": null,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "el",
+					"iso639_2": "ell",
+					"name": "Greek (modern)",
+					"nativeName": "ελληνικά"
+				},
+				{
+					"iso639_1": "tr",
+					"iso639_2": "tur",
+					"name": "Turkish",
+					"nativeName": "Türkçe"
+				},
+				{
+					"iso639_1": "hy",
+					"iso639_2": "hye",
+					"name": "Armenian",
+					"nativeName": "Հայերեն"
+				}
+			],
+			"alpha2Code": "CY",
+			"alpha3Code": "CYP",
+			"callingCodes": [
+				"357"
+			],
+			"numericCode": "196"
+		},
+		{
+			"name": "Czech Republic",
+			"nativeName": "Česká republika",
+			"topLevelDomain": [
+				".cz"
+			],
+			"capital": "Prague",
+			"altSpellings": [
+				"CZ",
+				"Česká republika",
+				"Česko"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Tschechische Republik",
+				"es": "República Checa",
+				"fr": "République tchèque",
+				"it": "Repubblica Ceca",
+				"ja": "チェコ",
+				"nl": "Tsjechië",
+				"hr": "Češka"
+			},
+			"population": 10558524,
+			"latlng": [
+				49.75,
+				15.5
+			],
+			"demonym": "Czech",
+			"borders": [
+				"AUT",
+				"DEU",
+				"POL",
+				"SVK"
+			],
+			"area": 78865,
+			"gini": 26,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Kč",
+					"code": "CZK",
+					"name": "Czech koruna"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "cs",
+					"iso639_2": "ces",
+					"name": "Czech",
+					"nativeName": "čeština"
+				},
+				{
+					"iso639_1": "sk",
+					"iso639_2": "slk",
+					"name": "Slovak",
+					"nativeName": "slovenčina"
+				}
+			],
+			"alpha2Code": "CZ",
+			"alpha3Code": "CZE",
+			"callingCodes": [
+				"420"
+			],
+			"numericCode": "203"
+		},
+		{
+			"name": "Denmark",
+			"nativeName": "Danmark",
+			"topLevelDomain": [
+				".dk"
+			],
+			"capital": "Copenhagen",
+			"altSpellings": [
+				"DK",
+				"Danmark",
+				"Kingdom of Denmark",
+				"Kongeriget Danmark"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Dänemark",
+				"es": "Dinamarca",
+				"fr": "Danemark",
+				"it": "Danimarca",
+				"ja": "デンマーク",
+				"nl": "Denemarken",
+				"hr": "Danska"
+			},
+			"population": 5717014,
+			"latlng": [
+				56,
+				10
+			],
+			"demonym": "Danish",
+			"borders": [
+				"DEU"
+			],
+			"area": 43094,
+			"gini": 24,
+			"timezones": [
+				"UTC-04:00",
+				"UTC-03:00",
+				"UTC-01:00",
+				"UTC",
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "kr",
+					"code": "DKK",
+					"name": "Danish krone"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "da",
+					"iso639_2": "dan",
+					"name": "Danish",
+					"nativeName": "dansk"
+				}
+			],
+			"alpha2Code": "DK",
+			"alpha3Code": "DNK",
+			"callingCodes": [
+				"45"
+			],
+			"numericCode": "208"
+		},
+		{
+			"name": "Djibouti",
+			"nativeName": "Djibouti",
+			"topLevelDomain": [
+				".dj"
+			],
+			"capital": "Djibouti",
+			"altSpellings": [
+				"DJ",
+				"Jabuuti",
+				"Gabuuti",
+				"Republic of Djibouti",
+				"République de Djibouti",
+				"Gabuutih Ummuuno",
+				"Jamhuuriyadda Jabuuti"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Dschibuti",
+				"es": "Yibuti",
+				"fr": "Djibouti",
+				"it": "Gibuti",
+				"ja": "ジブチ",
+				"nl": "Djibouti",
+				"hr": "Džibuti"
+			},
+			"population": 900000,
+			"latlng": [
+				11.5,
+				43
+			],
+			"demonym": "Djibouti",
+			"borders": [
+				"ERI",
+				"ETH",
+				"SOM"
+			],
+			"area": 23200,
+			"gini": 40,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "DJF",
+					"name": "Djiboutian franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "DJ",
+			"alpha3Code": "DJI",
+			"callingCodes": [
+				"253"
+			],
+			"numericCode": "262"
+		},
+		{
+			"name": "Dominica",
+			"nativeName": "Dominica",
+			"topLevelDomain": [
+				".dm"
+			],
+			"capital": "Roseau",
+			"altSpellings": [
+				"DM",
+				"Dominique",
+				"Wai‘tu kubuli",
+				"Commonwealth of Dominica"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Dominica",
+				"es": "Dominica",
+				"fr": "Dominique",
+				"it": "Dominica",
+				"ja": "ドミニカ国",
+				"nl": "Dominica",
+				"hr": "Dominika"
+			},
+			"population": 71293,
+			"latlng": [
+				15.41666666,
+				-61.33333333
+			],
+			"demonym": "Dominican",
+			"borders": [],
+			"area": 751,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "DM",
+			"alpha3Code": "DMA",
+			"callingCodes": [
+				"1767"
+			],
+			"numericCode": "212"
+		},
+		{
+			"name": "Dominican Republic",
+			"nativeName": "República Dominicana",
+			"topLevelDomain": [
+				".do"
+			],
+			"capital": "Santo Domingo",
+			"altSpellings": [
+				"DO"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Dominikanische Republik",
+				"es": "República Dominicana",
+				"fr": "République dominicaine",
+				"it": "Repubblica Dominicana",
+				"ja": "ドミニカ共和国",
+				"nl": "Dominicaanse Republiek",
+				"hr": "Dominikanska Republika"
+			},
+			"population": 10075045,
+			"latlng": [
+				19,
+				-70.66666666
+			],
+			"demonym": "Dominican",
+			"borders": [
+				"HTI"
+			],
+			"area": 48671,
+			"gini": 47.2,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "DOP",
+					"name": "Dominican peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "DO",
+			"alpha3Code": "DOM",
+			"callingCodes": [
+				"1809",
+				"1829",
+				"1849"
+			],
+			"numericCode": "214"
+		},
+		{
+			"name": "Ecuador",
+			"nativeName": "Ecuador",
+			"topLevelDomain": [
+				".ec"
+			],
+			"capital": "Quito",
+			"altSpellings": [
+				"EC",
+				"Republic of Ecuador",
+				"República del Ecuador"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Ecuador",
+				"es": "Ecuador",
+				"fr": "Équateur",
+				"it": "Ecuador",
+				"ja": "エクアドル",
+				"nl": "Ecuador",
+				"hr": "Ekvador"
+			},
+			"population": 16545799,
+			"latlng": [
+				-2,
+				-77.5
+			],
+			"demonym": "Ecuadorean",
+			"borders": [
+				"COL",
+				"PER"
+			],
+			"area": 276841,
+			"gini": 49.3,
+			"timezones": [
+				"UTC-06:00",
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				},
+				{
+					"symbol": null,
+					"code": "(none)",
+					"name": null
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "EC",
+			"alpha3Code": "ECU",
+			"callingCodes": [
+				"593"
+			],
+			"numericCode": "218"
+		},
+		{
+			"name": "Egypt",
+			"nativeName": "مصر‎",
+			"topLevelDomain": [
+				".eg"
+			],
+			"capital": "Cairo",
+			"altSpellings": [
+				"EG",
+				"Arab Republic of Egypt"
+			],
+			"region": "Africa",
+			"subregion": "Northern Africa",
+			"translations": {
+				"de": "Ägypten",
+				"es": "Egipto",
+				"fr": "Égypte",
+				"it": "Egitto",
+				"ja": "エジプト",
+				"nl": "Egypte",
+				"hr": "Egipat"
+			},
+			"population": 91290000,
+			"latlng": [
+				27,
+				30
+			],
+			"demonym": "Egyptian",
+			"borders": [
+				"ISR",
+				"LBY",
+				"SDN"
+			],
+			"area": 1002450,
+			"gini": 30.8,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "EGP",
+					"name": "Egyptian pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "EG",
+			"alpha3Code": "EGY",
+			"callingCodes": [
+				"20"
+			],
+			"numericCode": "818"
+		},
+		{
+			"name": "El Salvador",
+			"nativeName": "El Salvador",
+			"topLevelDomain": [
+				".sv"
+			],
+			"capital": "San Salvador",
+			"altSpellings": [
+				"SV",
+				"Republic of El Salvador",
+				"República de El Salvador"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "El Salvador",
+				"es": "El Salvador",
+				"fr": "Salvador",
+				"it": "El Salvador",
+				"ja": "エルサルバドル",
+				"nl": "El Salvador",
+				"hr": "Salvador"
+			},
+			"population": 6520675,
+			"latlng": [
+				13.83333333,
+				-88.91666666
+			],
+			"demonym": "Salvadoran",
+			"borders": [
+				"GTM",
+				"HND"
+			],
+			"area": 21041,
+			"gini": 48.3,
+			"timezones": [
+				"UTC-06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "SV",
+			"alpha3Code": "SLV",
+			"callingCodes": [
+				"503"
+			],
+			"numericCode": "222"
+		},
+		{
+			"name": "Equatorial Guinea",
+			"nativeName": "Guinea Ecuatorial",
+			"topLevelDomain": [
+				".gq"
+			],
+			"capital": "Malabo",
+			"altSpellings": [
+				"GQ",
+				"Republic of Equatorial Guinea",
+				"República de Guinea Ecuatorial",
+				"République de Guinée équatoriale",
+				"República da Guiné Equatorial"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Äquatorial-Guinea",
+				"es": "Guinea Ecuatorial",
+				"fr": "Guinée-Équatoriale",
+				"it": "Guinea Equatoriale",
+				"ja": "赤道ギニア",
+				"nl": "Equatoriaal-Guinea",
+				"hr": "Ekvatorijalna Gvineja"
+			},
+			"population": 1222442,
+			"latlng": [
+				2,
+				10
+			],
+			"demonym": "Equatorial Guinean",
+			"borders": [
+				"CMR",
+				"GAB"
+			],
+			"area": 28051,
+			"gini": null,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XAF",
+					"name": "Central African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "GQ",
+			"alpha3Code": "GNQ",
+			"callingCodes": [
+				"240"
+			],
+			"numericCode": "226"
+		},
+		{
+			"name": "Eritrea",
+			"nativeName": "ኤርትራ",
+			"topLevelDomain": [
+				".er"
+			],
+			"capital": "Asmara",
+			"altSpellings": [
+				"ER",
+				"State of Eritrea",
+				"ሃገረ ኤርትራ",
+				"Dawlat Iritriyá",
+				"ʾErtrā",
+				"Iritriyā",
+				""
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Eritrea",
+				"es": "Eritrea",
+				"fr": "Érythrée",
+				"it": "Eritrea",
+				"ja": "エリトリア",
+				"nl": "Eritrea",
+				"hr": "Eritreja"
+			},
+			"population": 5352000,
+			"latlng": [
+				15,
+				39
+			],
+			"demonym": "Eritrean",
+			"borders": [
+				"DJI",
+				"ETH",
+				"SDN"
+			],
+			"area": 117600,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Nfk",
+					"code": "ERN",
+					"name": "Eritrean nakfa"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ti",
+					"iso639_2": "tir",
+					"name": "Tigrinya",
+					"nativeName": "ትግርኛ"
+				},
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "ER",
+			"alpha3Code": "ERI",
+			"callingCodes": [
+				"291"
+			],
+			"numericCode": "232"
+		},
+		{
+			"name": "Estonia",
+			"nativeName": "Eesti",
+			"topLevelDomain": [
+				".ee"
+			],
+			"capital": "Tallinn",
+			"altSpellings": [
+				"EE",
+				"Eesti",
+				"Republic of Estonia",
+				"Eesti Vabariik"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Estland",
+				"es": "Estonia",
+				"fr": "Estonie",
+				"it": "Estonia",
+				"ja": "エストニア",
+				"nl": "Estland",
+				"hr": "Estonija"
+			},
+			"population": 1315944,
+			"latlng": [
+				59,
+				26
+			],
+			"demonym": "Estonian",
+			"borders": [
+				"LVA",
+				"RUS"
+			],
+			"area": 45227,
+			"gini": 36,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "et",
+					"iso639_2": "est",
+					"name": "Estonian",
+					"nativeName": "eesti"
+				}
+			],
+			"alpha2Code": "EE",
+			"alpha3Code": "EST",
+			"callingCodes": [
+				"372"
+			],
+			"numericCode": "233"
+		},
+		{
+			"name": "Ethiopia",
+			"nativeName": "ኢትዮጵያ",
+			"topLevelDomain": [
+				".et"
+			],
+			"capital": "Addis Ababa",
+			"altSpellings": [
+				"ET",
+				"ʾĪtyōṗṗyā",
+				"Federal Democratic Republic of Ethiopia",
+				"የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Äthiopien",
+				"es": "Etiopía",
+				"fr": "Éthiopie",
+				"it": "Etiopia",
+				"ja": "エチオピア",
+				"nl": "Ethiopië",
+				"hr": "Etiopija"
+			},
+			"population": 92206005,
+			"latlng": [
+				8,
+				38
+			],
+			"demonym": "Ethiopian",
+			"borders": [
+				"DJI",
+				"ERI",
+				"KEN",
+				"SOM",
+				"SSD",
+				"SDN"
+			],
+			"area": 1104300,
+			"gini": 29.8,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Br",
+					"code": "ETB",
+					"name": "Ethiopian birr"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "am",
+					"iso639_2": "amh",
+					"name": "Amharic",
+					"nativeName": "አማርኛ"
+				}
+			],
+			"alpha2Code": "ET",
+			"alpha3Code": "ETH",
+			"callingCodes": [
+				"251"
+			],
+			"numericCode": "231"
+		},
+		{
+			"name": "Falkland Islands (Malvinas)",
+			"nativeName": "Falkland Islands",
+			"topLevelDomain": [
+				".fk"
+			],
+			"capital": "Stanley",
+			"altSpellings": [
+				"FK",
+				"Islas Malvinas"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Falklandinseln",
+				"es": "Islas Malvinas",
+				"fr": "Îles Malouines",
+				"it": "Isole Falkland o Isole Malvine",
+				"ja": "フォークランド（マルビナス）諸島",
+				"nl": "Falklandeilanden [Islas Malvinas]",
+				"hr": "Falklandski Otoci"
+			},
+			"population": 2563,
+			"latlng": [
+				-51.75,
+				-59
+			],
+			"demonym": "Falkland Islander",
+			"borders": [],
+			"area": 12173,
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "FKP",
+					"name": "Falkland Islands pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "FK",
+			"alpha3Code": "FLK",
+			"callingCodes": [
+				"500"
+			],
+			"numericCode": "238"
+		},
+		{
+			"name": "Faroe Islands",
+			"nativeName": "Føroyar",
+			"topLevelDomain": [
+				".fo"
+			],
+			"capital": "Tórshavn",
+			"altSpellings": [
+				"FO",
+				"Føroyar",
+				"Færøerne"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Färöer-Inseln",
+				"es": "Islas Faroe",
+				"fr": "Îles Féroé",
+				"it": "Isole Far Oer",
+				"ja": "フェロー諸島",
+				"nl": "Faeröer",
+				"hr": "Farski Otoci"
+			},
+			"population": 49376,
+			"latlng": [
+				62,
+				-7
+			],
+			"demonym": "Faroese",
+			"borders": [],
+			"area": 1393,
+			"currencies": [
+				{
+					"symbol": "kr",
+					"code": "DKK",
+					"name": "Danish krone"
+				},
+				{
+					"symbol": "kr",
+					"code": "(none)",
+					"name": "Faroese króna"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fo",
+					"iso639_2": "fao",
+					"name": "Faroese",
+					"nativeName": "føroyskt"
+				}
+			],
+			"alpha2Code": "FO",
+			"alpha3Code": "FRO",
+			"callingCodes": [
+				"298"
+			],
+			"numericCode": "234"
+		},
+		{
+			"name": "Fiji",
+			"nativeName": "Fiji",
+			"topLevelDomain": [
+				".fj"
+			],
+			"capital": "Suva",
+			"altSpellings": [
+				"FJ",
+				"Viti",
+				"Republic of Fiji",
+				"Matanitu ko Viti",
+				"Fijī Gaṇarājya"
+			],
+			"region": "Oceania",
+			"subregion": "Melanesia",
+			"translations": {
+				"de": "Fidschi",
+				"es": "Fiyi",
+				"fr": "Fidji",
+				"it": "Figi",
+				"ja": "フィジー",
+				"nl": "Fiji",
+				"hr": "Fiđi"
+			},
+			"population": 867000,
+			"latlng": [
+				-18,
+				175
+			],
+			"demonym": "Fijian",
+			"borders": [],
+			"area": 18272,
+			"gini": 42.8,
+			"timezones": [
+				"UTC+12:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "FJD",
+					"name": "Fijian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fj",
+					"iso639_2": "fij",
+					"name": "Fijian",
+					"nativeName": "vosa Vakaviti"
+				},
+				{
+					"iso639_1": "hi",
+					"iso639_2": "hin",
+					"name": "Hindi",
+					"nativeName": "हिन्दी"
+				},
+				{
+					"iso639_1": "ur",
+					"iso639_2": "urd",
+					"name": "Urdu",
+					"nativeName": "اردو"
+				}
+			],
+			"alpha2Code": "FJ",
+			"alpha3Code": "FJI",
+			"callingCodes": [
+				"679"
+			],
+			"numericCode": "242"
+		},
+		{
+			"name": "Finland",
+			"nativeName": "Suomi",
+			"topLevelDomain": [
+				".fi"
+			],
+			"capital": "Helsinki",
+			"altSpellings": [
+				"FI",
+				"Suomi",
+				"Republic of Finland",
+				"Suomen tasavalta",
+				"Republiken Finland"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Finnland",
+				"es": "Finlandia",
+				"fr": "Finlande",
+				"it": "Finlandia",
+				"ja": "フィンランド",
+				"nl": "Finland",
+				"hr": "Finska"
+			},
+			"population": 5491817,
+			"latlng": [
+				64,
+				26
+			],
+			"demonym": "Finnish",
+			"borders": [
+				"NOR",
+				"SWE",
+				"RUS"
+			],
+			"area": 338424,
+			"gini": 26.9,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fi",
+					"iso639_2": "fin",
+					"name": "Finnish",
+					"nativeName": "suomi"
+				},
+				{
+					"iso639_1": "sv",
+					"iso639_2": "swe",
+					"name": "Swedish",
+					"nativeName": "svenska"
+				}
+			],
+			"alpha2Code": "FI",
+			"alpha3Code": "FIN",
+			"callingCodes": [
+				"358"
+			],
+			"numericCode": "246"
+		},
+		{
+			"name": "France",
+			"nativeName": "France",
+			"topLevelDomain": [
+				".fr"
+			],
+			"capital": "Paris",
+			"altSpellings": [
+				"FR",
+				"French Republic",
+				"République française"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Frankreich",
+				"es": "Francia",
+				"fr": "France",
+				"it": "Francia",
+				"ja": "フランス",
+				"nl": "Frankrijk",
+				"hr": "Francuska"
+			},
+			"population": 66710000,
+			"latlng": [
+				46,
+				2
+			],
+			"demonym": "French",
+			"borders": [
+				"AND",
+				"BEL",
+				"DEU",
+				"ITA",
+				"LUX",
+				"MCO",
+				"ESP",
+				"CHE"
+			],
+			"area": 640679,
+			"gini": 32.7,
+			"timezones": [
+				"UTC-10:00",
+				"UTC-09:30",
+				"UTC-09:00",
+				"UTC-08:00",
+				"UTC-04:00",
+				"UTC-03:00",
+				"UTC+01:00",
+				"UTC+03:00",
+				"UTC+04:00",
+				"UTC+05:00",
+				"UTC+11:00",
+				"UTC+12:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "FR",
+			"alpha3Code": "FRA",
+			"callingCodes": [
+				"33"
+			],
+			"numericCode": "250"
+		},
+		{
+			"name": "French Guiana",
+			"nativeName": "Guyane française",
+			"topLevelDomain": [
+				".gf"
+			],
+			"capital": "Cayenne",
+			"altSpellings": [
+				"GF",
+				"Guiana",
+				"Guyane"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Französisch Guyana",
+				"es": "Guayana Francesa",
+				"fr": "Guayane",
+				"it": "Guyana francese",
+				"ja": "フランス領ギアナ",
+				"nl": "Frans-Guyana",
+				"hr": "Francuska Gvajana"
+			},
+			"population": 254541,
+			"latlng": [
+				4,
+				-53
+			],
+			"demonym": "",
+			"borders": [
+				"BRA",
+				"SUR"
+			],
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "GF",
+			"alpha3Code": "GUF",
+			"callingCodes": [
+				"594"
+			],
+			"numericCode": "254"
+		},
+		{
+			"name": "French Polynesia",
+			"nativeName": "Polynésie française",
+			"topLevelDomain": [
+				".pf"
+			],
+			"capital": "Papeetē",
+			"altSpellings": [
+				"PF",
+				"Polynésie française",
+				"French Polynesia",
+				"Pōrīnetia Farāni"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Französisch-Polynesien",
+				"es": "Polinesia Francesa",
+				"fr": "Polynésie française",
+				"it": "Polinesia Francese",
+				"ja": "フランス領ポリネシア",
+				"nl": "Frans-Polynesië",
+				"hr": "Francuska Polinezija"
+			},
+			"population": 271800,
+			"latlng": [
+				-15,
+				-140
+			],
+			"demonym": "French Polynesian",
+			"borders": [],
+			"area": 4167,
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XPF",
+					"name": "CFP franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "PF",
+			"alpha3Code": "PYF",
+			"callingCodes": [
+				"689"
+			],
+			"numericCode": "258"
+		},
+		{
+			"name": "French Southern Territories",
+			"nativeName": "Territoire des Terres australes et antarctiques françaises",
+			"topLevelDomain": [
+				".tf"
+			],
+			"capital": "Port-aux-Français",
+			"altSpellings": [
+				"TF"
+			],
+			"region": "Africa",
+			"subregion": "Southern Africa",
+			"translations": {
+				"de": "Französische Süd- und Antarktisgebiete",
+				"es": "Tierras Australes y Antárticas Francesas",
+				"fr": "Terres australes et antarctiques françaises",
+				"it": "Territori Francesi del Sud",
+				"ja": "フランス領南方・南極地域",
+				"nl": "Franse Gebieden in de zuidelijke Indische Oceaan",
+				"hr": "Francuski južni i antarktički teritoriji"
+			},
+			"population": 140,
+			"latlng": [
+				-49.25,
+				69.167
+			],
+			"demonym": "French",
+			"borders": [],
+			"area": 7747,
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "TF",
+			"alpha3Code": "ATF",
+			"callingCodes": [
+				""
+			],
+			"numericCode": "260",
+			"timezones": [
+				"UTC+05:00"
+			]
+		},
+		{
+			"name": "Gabon",
+			"nativeName": "Gabon",
+			"topLevelDomain": [
+				".ga"
+			],
+			"capital": "Libreville",
+			"altSpellings": [
+				"GA",
+				"Gabonese Republic",
+				"République Gabonaise"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "Gabun",
+				"es": "Gabón",
+				"fr": "Gabon",
+				"it": "Gabon",
+				"ja": "ガボン",
+				"nl": "Gabon",
+				"hr": "Gabon"
+			},
+			"population": 1802278,
+			"latlng": [
+				-1,
+				11.75
+			],
+			"demonym": "Gabonese",
+			"borders": [
+				"CMR",
+				"COG",
+				"GNQ"
+			],
+			"area": 267668,
+			"gini": 41.5,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XAF",
+					"name": "Central African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "GA",
+			"alpha3Code": "GAB",
+			"callingCodes": [
+				"241"
+			],
+			"numericCode": "266"
+		},
+		{
+			"name": "Gambia",
+			"nativeName": "Gambia",
+			"topLevelDomain": [
+				".gm"
+			],
+			"capital": "Banjul",
+			"altSpellings": [
+				"GM",
+				"Republic of the Gambia"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Gambia",
+				"es": "Gambia",
+				"fr": "Gambie",
+				"it": "Gambia",
+				"ja": "ガンビア",
+				"nl": "Gambia",
+				"hr": "Gambija"
+			},
+			"population": 1882450,
+			"latlng": [
+				13.46666666,
+				-16.56666666
+			],
+			"demonym": "Gambian",
+			"borders": [
+				"SEN"
+			],
+			"area": 11295,
+			"currencies": [
+				{
+					"symbol": "D",
+					"code": "GMD",
+					"name": "Gambian dalasi"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "GM",
+			"alpha3Code": "GMB",
+			"callingCodes": [
+				"220"
+			],
+			"numericCode": "270"
+		},
+		{
+			"name": "Georgia",
+			"nativeName": "საქართველო",
+			"topLevelDomain": [
+				".ge"
+			],
+			"capital": "Tbilisi",
+			"altSpellings": [
+				"GE",
+				"Sakartvelo"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Georgien",
+				"es": "Georgia",
+				"fr": "Géorgie",
+				"it": "Georgia",
+				"ja": "グルジア",
+				"nl": "Georgië",
+				"hr": "Gruzija"
+			},
+			"population": 3720400,
+			"latlng": [
+				42,
+				43.5
+			],
+			"demonym": "Georgian",
+			"borders": [
+				"ARM",
+				"AZE",
+				"RUS",
+				"TUR"
+			],
+			"gini": 41.3,
+			"area": 69700,
+			"currencies": [
+				{
+					"code": "GEL",
+					"name": "Georgian Lari",
+					"symbol": "ლ"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ka",
+					"iso639_2": "kat",
+					"name": "Georgian",
+					"nativeName": "ქართული"
+				}
+			],
+			"alpha2Code": "GE",
+			"alpha3Code": "GEO",
+			"callingCodes": [
+				"995"
+			],
+			"numericCode": "268"
+		},
+		{
+			"name": "Germany",
+			"nativeName": "Deutschland",
+			"topLevelDomain": [
+				".de"
+			],
+			"capital": "Berlin",
+			"altSpellings": [
+				"DE",
+				"Federal Republic of Germany",
+				"Bundesrepublik Deutschland"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Deutschland",
+				"es": "Alemania",
+				"fr": "Allemagne",
+				"it": "Germania",
+				"ja": "ドイツ",
+				"nl": "Duitsland",
+				"hr": "Njemačka"
+			},
+			"population": 81770900,
+			"latlng": [
+				51,
+				9
+			],
+			"demonym": "German",
+			"borders": [
+				"AUT",
+				"BEL",
+				"CZE",
+				"DNK",
+				"FRA",
+				"LUX",
+				"NLD",
+				"POL",
+				"CHE"
+			],
+			"area": 357114,
+			"gini": 28.3,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "de",
+					"iso639_2": "deu",
+					"name": "German",
+					"nativeName": "Deutsch"
+				}
+			],
+			"alpha2Code": "DE",
+			"alpha3Code": "DEU",
+			"callingCodes": [
+				"49"
+			],
+			"numericCode": "276"
+		},
+		{
+			"name": "Ghana",
+			"nativeName": "Ghana",
+			"topLevelDomain": [
+				".gh"
+			],
+			"capital": "Accra",
+			"altSpellings": [
+				"GH"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Ghana",
+				"es": "Ghana",
+				"fr": "Ghana",
+				"it": "Ghana",
+				"ja": "ガーナ",
+				"nl": "Ghana",
+				"hr": "Gana"
+			},
+			"population": 27670174,
+			"latlng": [
+				8,
+				-2
+			],
+			"demonym": "Ghanaian",
+			"borders": [
+				"BFA",
+				"CIV",
+				"TGO"
+			],
+			"area": 238533,
+			"gini": 42.8,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "₵",
+					"code": "GHS",
+					"name": "Ghanaian cedi"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "GH",
+			"alpha3Code": "GHA",
+			"callingCodes": [
+				"233"
+			],
+			"numericCode": "288"
+		},
+		{
+			"name": "Gibraltar",
+			"nativeName": "Gibraltar",
+			"topLevelDomain": [
+				".gi"
+			],
+			"capital": "Gibraltar",
+			"altSpellings": [
+				"GI"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Gibraltar",
+				"es": "Gibraltar",
+				"fr": "Gibraltar",
+				"it": "Gibilterra",
+				"ja": "ジブラルタル",
+				"nl": "Gibraltar",
+				"hr": "Gibraltar"
+			},
+			"population": 33140,
+			"latlng": [
+				36.13333333,
+				-5.35
+			],
+			"demonym": "Gibraltar",
+			"borders": [
+				"ESP"
+			],
+			"area": 6,
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "GIP",
+					"name": "Gibraltar pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "GI",
+			"alpha3Code": "GIB",
+			"callingCodes": [
+				"350"
+			],
+			"numericCode": "292"
+		},
+		{
+			"name": "Greece",
+			"nativeName": "Ελλάδα",
+			"topLevelDomain": [
+				".gr"
+			],
+			"capital": "Athens",
+			"altSpellings": [
+				"GR",
+				"Elláda",
+				"Hellenic Republic",
+				"Ελληνική Δημοκρατία"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Griechenland",
+				"es": "Grecia",
+				"fr": "Grèce",
+				"it": "Grecia",
+				"ja": "ギリシャ",
+				"nl": "Griekenland",
+				"hr": "Grčka"
+			},
+			"population": 10858018,
+			"latlng": [
+				39,
+				22
+			],
+			"demonym": "Greek",
+			"borders": [
+				"ALB",
+				"BGR",
+				"TUR",
+				"MKD"
+			],
+			"area": 131990,
+			"gini": 34.3,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "el",
+					"iso639_2": "ell",
+					"name": "Greek (modern)",
+					"nativeName": "ελληνικά"
+				}
+			],
+			"alpha2Code": "GR",
+			"alpha3Code": "GRC",
+			"callingCodes": [
+				"30"
+			],
+			"numericCode": "300"
+		},
+		{
+			"name": "Greenland",
+			"nativeName": "Kalaallit Nunaat",
+			"topLevelDomain": [
+				".gl"
+			],
+			"capital": "Nuuk",
+			"altSpellings": [
+				"GL",
+				"Grønland"
+			],
+			"region": "Americas",
+			"subregion": "Northern America",
+			"translations": {
+				"de": "Grönland",
+				"es": "Groenlandia",
+				"fr": "Groenland",
+				"it": "Groenlandia",
+				"ja": "グリーンランド",
+				"nl": "Groenland",
+				"hr": "Grenland"
+			},
+			"population": 55847,
+			"latlng": [
+				72,
+				-40
+			],
+			"demonym": "Greenlandic",
+			"borders": [],
+			"area": 2166086,
+			"currencies": [
+				{
+					"code": "DKK",
+					"name": "Danish krone",
+					"symbol": "kr"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "kl",
+					"iso639_2": "kal",
+					"name": "Kalaallisut",
+					"nativeName": "kalaallisut"
+				}
+			],
+			"alpha2Code": "GL",
+			"alpha3Code": "GRL",
+			"callingCodes": [
+				"299"
+			],
+			"numericCode": "304"
+		},
+		{
+			"name": "Grenada",
+			"nativeName": "Grenada",
+			"topLevelDomain": [
+				".gd"
+			],
+			"capital": "St. George's",
+			"altSpellings": [
+				"GD"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Grenada",
+				"es": "Grenada",
+				"fr": "Grenade",
+				"it": "Grenada",
+				"ja": "グレナダ",
+				"nl": "Grenada",
+				"hr": "Grenada"
+			},
+			"population": 103328,
+			"latlng": [
+				12.11666666,
+				-61.66666666
+			],
+			"demonym": "Grenadian",
+			"borders": [],
+			"area": 344,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "GD",
+			"alpha3Code": "GRD",
+			"callingCodes": [
+				"1473"
+			],
+			"numericCode": "308"
+		},
+		{
+			"name": "Guadeloupe",
+			"nativeName": "Guadeloupe",
+			"topLevelDomain": [
+				".gp"
+			],
+			"capital": "Basse-Terre",
+			"altSpellings": [
+				"GP",
+				"Gwadloup"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Guadeloupe",
+				"es": "Guadalupe",
+				"fr": "Guadeloupe",
+				"it": "Guadeloupa",
+				"ja": "グアドループ",
+				"nl": "Guadeloupe",
+				"hr": "Gvadalupa"
+			},
+			"population": 400132,
+			"latlng": [
+				16.25,
+				-61.583333
+			],
+			"demonym": "Guadeloupian",
+			"borders": [],
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "GP",
+			"alpha3Code": "GLP",
+			"callingCodes": [
+				"590"
+			],
+			"numericCode": "312"
+		},
+		{
+			"name": "Guam",
+			"nativeName": "Guam",
+			"topLevelDomain": [
+				".gu"
+			],
+			"capital": "Hagåtña",
+			"altSpellings": [
+				"GU",
+				"Guåhån"
+			],
+			"region": "Oceania",
+			"subregion": "Micronesia",
+			"translations": {
+				"de": "Guam",
+				"es": "Guam",
+				"fr": "Guam",
+				"it": "Guam",
+				"ja": "グアム",
+				"nl": "Guam",
+				"hr": "Guam"
+			},
+			"population": 184200,
+			"latlng": [
+				13.46666666,
+				144.78333333
+			],
+			"demonym": "Guamanian",
+			"borders": [],
+			"area": 549,
+			"currencies": [
+				{
+					"code": "USD",
+					"name": "United States dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "ch",
+					"iso639_2": "cha",
+					"name": "Chamorro",
+					"nativeName": "Chamoru"
+				},
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "GU",
+			"alpha3Code": "GUM",
+			"callingCodes": [
+				"1671"
+			],
+			"numericCode": "316"
+		},
+		{
+			"name": "Guatemala",
+			"nativeName": "Guatemala",
+			"topLevelDomain": [
+				".gt"
+			],
+			"capital": "Guatemala City",
+			"altSpellings": [
+				"GT"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "Guatemala",
+				"es": "Guatemala",
+				"fr": "Guatemala",
+				"it": "Guatemala",
+				"ja": "グアテマラ",
+				"nl": "Guatemala",
+				"hr": "Gvatemala"
+			},
+			"population": 16176133,
+			"latlng": [
+				15.5,
+				-90.25
+			],
+			"demonym": "Guatemalan",
+			"borders": [
+				"BLZ",
+				"SLV",
+				"HND",
+				"MEX"
+			],
+			"area": 108889,
+			"gini": 55.9,
+			"timezones": [
+				"UTC-06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Q",
+					"code": "GTQ",
+					"name": "Guatemalan quetzal"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "GT",
+			"alpha3Code": "GTM",
+			"callingCodes": [
+				"502"
+			],
+			"numericCode": "320"
+		},
+		{
+			"name": "Guernsey",
+			"nativeName": "Guernsey",
+			"topLevelDomain": [
+				".gg"
+			],
+			"capital": "St. Peter Port",
+			"altSpellings": [
+				"GG",
+				"Bailiwick of Guernsey",
+				"Bailliage de Guernesey"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Guernsey",
+				"es": "Guernsey",
+				"fr": "Guernesey",
+				"it": "Guernsey",
+				"ja": "ガーンジー",
+				"nl": "Guernsey",
+				"hr": "Guernsey"
+			},
+			"population": 62999,
+			"latlng": [
+				49.46666666,
+				-2.58333333
+			],
+			"demonym": "Channel Islander",
+			"borders": [],
+			"area": 78,
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "GBP",
+					"name": "British pound"
+				},
+				{
+					"symbol": "£",
+					"code": "(none)",
+					"name": "Guernsey pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "GG",
+			"alpha3Code": "GGY",
+			"callingCodes": [
+				"44"
+			],
+			"numericCode": "831"
+		},
+		{
+			"name": "Guinea",
+			"nativeName": "Guinée",
+			"topLevelDomain": [
+				".gn"
+			],
+			"capital": "Conakry",
+			"altSpellings": [
+				"GN",
+				"Republic of Guinea",
+				"République de Guinée"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Guinea",
+				"es": "Guinea",
+				"fr": "Guinée",
+				"it": "Guinea",
+				"ja": "ギニア",
+				"nl": "Guinee",
+				"hr": "Gvineja"
+			},
+			"population": 12947000,
+			"latlng": [
+				11,
+				-10
+			],
+			"demonym": "Guinean",
+			"borders": [
+				"CIV",
+				"GNB",
+				"LBR",
+				"MLI",
+				"SEN",
+				"SLE"
+			],
+			"area": 245857,
+			"gini": 39.4,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "GNF",
+					"name": "Guinean franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "ff",
+					"iso639_2": "ful",
+					"name": "Fula",
+					"nativeName": "Fulfulde"
+				}
+			],
+			"alpha2Code": "GN",
+			"alpha3Code": "GIN",
+			"callingCodes": [
+				"224"
+			],
+			"numericCode": "324"
+		},
+		{
+			"name": "Guinea-Bissau",
+			"nativeName": "Guiné-Bissau",
+			"topLevelDomain": [
+				".gw"
+			],
+			"capital": "Bissau",
+			"altSpellings": [
+				"GW",
+				"Republic of Guinea-Bissau",
+				"República da Guiné-Bissau"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Guinea-Bissau",
+				"es": "Guinea-Bisáu",
+				"fr": "Guinée-Bissau",
+				"it": "Guinea-Bissau",
+				"ja": "ギニアビサウ",
+				"nl": "Guinee-Bissau",
+				"hr": "Gvineja Bisau"
+			},
+			"population": 1547777,
+			"latlng": [
+				12,
+				-15
+			],
+			"demonym": "Guinea-Bissauan",
+			"borders": [
+				"GIN",
+				"SEN"
+			],
+			"area": 36125,
+			"gini": 35.5,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "GW",
+			"alpha3Code": "GNB",
+			"callingCodes": [
+				"245"
+			],
+			"numericCode": "624"
+		},
+		{
+			"name": "Guyana",
+			"nativeName": "Guyana",
+			"topLevelDomain": [
+				".gy"
+			],
+			"capital": "Georgetown",
+			"altSpellings": [
+				"GY",
+				"Co-operative Republic of Guyana"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Guyana",
+				"es": "Guyana",
+				"fr": "Guyane",
+				"it": "Guyana",
+				"ja": "ガイアナ",
+				"nl": "Guyana",
+				"hr": "Gvajana"
+			},
+			"population": 746900,
+			"latlng": [
+				5,
+				-59
+			],
+			"demonym": "Guyanese",
+			"borders": [
+				"BRA",
+				"SUR",
+				"VEN"
+			],
+			"area": 214969,
+			"gini": 44.5,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "GYD",
+					"name": "Guyanese dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "GY",
+			"alpha3Code": "GUY",
+			"callingCodes": [
+				"592"
+			],
+			"numericCode": "328"
+		},
+		{
+			"name": "Haiti",
+			"nativeName": "Haïti",
+			"topLevelDomain": [
+				".ht"
+			],
+			"capital": "Port-au-Prince",
+			"altSpellings": [
+				"HT",
+				"Republic of Haiti",
+				"République d'Haïti",
+				"Repiblik Ayiti"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Haiti",
+				"es": "Haiti",
+				"fr": "Haïti",
+				"it": "Haiti",
+				"ja": "ハイチ",
+				"nl": "Haïti",
+				"hr": "Haiti"
+			},
+			"population": 11078033,
+			"latlng": [
+				19,
+				-72.41666666
+			],
+			"demonym": "Haitian",
+			"borders": [
+				"DOM"
+			],
+			"area": 27750,
+			"gini": 59.2,
+			"timezones": [
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "G",
+					"code": "HTG",
+					"name": "Haitian gourde"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "ht",
+					"iso639_2": "hat",
+					"name": "Haitian",
+					"nativeName": "Kreyòl ayisyen"
+				}
+			],
+			"alpha2Code": "HT",
+			"alpha3Code": "HTI",
+			"callingCodes": [
+				"509"
+			],
+			"numericCode": "332"
+		},
+		{
+			"name": "Heard Island and McDonald Islands",
+			"nativeName": "Heard Island and McDonald Islands",
+			"topLevelDomain": [
+				".hm",
+				".aq"
+			],
+			"capital": "",
+			"altSpellings": [
+				"HM"
+			],
+			"region": "",
+			"subregion": "",
+			"translations": {
+				"de": "Heard und die McDonaldinseln",
+				"es": "Islas Heard y McDonald",
+				"fr": "Îles Heard-et-MacDonald",
+				"it": "Isole Heard e McDonald",
+				"ja": "ハード島とマクドナルド諸島",
+				"nl": "Heard- en McDonaldeilanden",
+				"hr": "Otok Heard i otočje McDonald"
+			},
+			"population": 0,
+			"latlng": [
+				-53.1,
+				72.51666666
+			],
+			"demonym": "Heard and McDonald Islander",
+			"borders": [],
+			"area": 412,
+			"currencies": [
+				{
+					"code": "AUD",
+					"name": "Australian dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "HM",
+			"alpha3Code": "HMD",
+			"callingCodes": [
+				""
+			],
+			"numericCode": "334",
+			"timezones": [
+				"UTC+05:00"
+			]
+		},
+		{
+			"name": "Holy See",
+			"nativeName": "Sancta Sedes",
+			"topLevelDomain": [
+				".va"
+			],
+			"alpha2Code": "VA",
+			"alpha3Code": "VAT",
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"callingCodes": [
+				"379"
+			],
+			"capital": "Rome",
+			"altSpellings": [
+				"Sancta Sedes",
+				"Vatican",
+				"The Vatican"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"languages": [
+				{
+					"iso639_1": "la",
+					"iso639_2": "lat",
+					"name": "Latin",
+					"nativeName": "latine"
+				},
+				{
+					"iso639_1": "it",
+					"iso639_2": "ita",
+					"name": "Italian",
+					"nativeName": "italiano"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "de",
+					"iso639_2": "deu",
+					"name": "German",
+					"nativeName": "Deutsch"
+				}
+			],
+			"translations": {
+				"de": "Heiliger Stuhl",
+				"es": "Santa Sede",
+				"fr": "voir Saint",
+				"it": "Santa Sede",
+				"ja": "聖座",
+				"nl": "Heilige Stoel",
+				"hr": "Sveta Stolica"
+			},
+			"population": 451,
+			"latlng": [
+				41.9,
+				12.45
+			],
+			"demonym": "",
+			"borders": [
+				"ITA"
+			],
+			"area": 0.44,
+			"gini": null,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"numericCode": "336"
+		},
+		{
+			"name": "Honduras",
+			"nativeName": "Honduras",
+			"topLevelDomain": [
+				".hn"
+			],
+			"capital": "Tegucigalpa",
+			"altSpellings": [
+				"HN",
+				"Republic of Honduras",
+				"República de Honduras"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "Honduras",
+				"es": "Honduras",
+				"fr": "Honduras",
+				"it": "Honduras",
+				"ja": "ホンジュラス",
+				"nl": "Honduras",
+				"hr": "Honduras"
+			},
+			"population": 8576532,
+			"latlng": [
+				15,
+				-86.5
+			],
+			"demonym": "Honduran",
+			"borders": [
+				"GTM",
+				"SLV",
+				"NIC"
+			],
+			"area": 112492,
+			"gini": 57,
+			"timezones": [
+				"UTC-06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "L",
+					"code": "HNL",
+					"name": "Honduran lempira"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "HN",
+			"alpha3Code": "HND",
+			"callingCodes": [
+				"504"
+			],
+			"numericCode": "340"
+		},
+		{
+			"name": "Hong Kong",
+			"nativeName": "香港",
+			"topLevelDomain": [
+				".hk"
+			],
+			"capital": "City of Victoria",
+			"altSpellings": [
+				"HK",
+				"香港"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "Hong Kong",
+				"es": "Hong Kong",
+				"fr": "Hong Kong",
+				"it": "Hong Kong",
+				"ja": "香港",
+				"nl": "Hongkong",
+				"hr": "Hong Kong"
+			},
+			"population": 7324300,
+			"latlng": [
+				22.25,
+				114.16666666
+			],
+			"demonym": "Chinese",
+			"borders": [
+				"CHN"
+			],
+			"area": 1104,
+			"gini": 53.3,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "HKD",
+					"name": "Hong Kong dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "zh",
+					"iso639_2": "zho",
+					"name": "Chinese",
+					"nativeName": "中文 (Zhōngwén)"
+				}
+			],
+			"alpha2Code": "HK",
+			"alpha3Code": "HKG",
+			"callingCodes": [
+				"852"
+			],
+			"numericCode": "344"
+		},
+		{
+			"name": "Hungary",
+			"nativeName": "Magyarország",
+			"topLevelDomain": [
+				".hu"
+			],
+			"capital": "Budapest",
+			"altSpellings": [
+				"HU"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Ungarn",
+				"es": "Hungría",
+				"fr": "Hongrie",
+				"it": "Ungheria",
+				"ja": "ハンガリー",
+				"nl": "Hongarije",
+				"hr": "Mađarska"
+			},
+			"population": 9823000,
+			"latlng": [
+				47,
+				20
+			],
+			"demonym": "Hungarian",
+			"borders": [
+				"AUT",
+				"HRV",
+				"ROU",
+				"SRB",
+				"SVK",
+				"SVN",
+				"UKR"
+			],
+			"area": 93028,
+			"gini": 31.2,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Ft",
+					"code": "HUF",
+					"name": "Hungarian forint"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "hu",
+					"iso639_2": "hun",
+					"name": "Hungarian",
+					"nativeName": "magyar"
+				}
+			],
+			"alpha2Code": "HU",
+			"alpha3Code": "HUN",
+			"callingCodes": [
+				"36"
+			],
+			"numericCode": "348"
+		},
+		{
+			"name": "Iceland",
+			"nativeName": "Ísland",
+			"topLevelDomain": [
+				".is"
+			],
+			"capital": "Reykjavík",
+			"altSpellings": [
+				"IS",
+				"Island",
+				"Republic of Iceland",
+				"Lýðveldið Ísland"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Island",
+				"es": "Islandia",
+				"fr": "Islande",
+				"it": "Islanda",
+				"ja": "アイスランド",
+				"nl": "IJsland",
+				"hr": "Island"
+			},
+			"population": 334300,
+			"latlng": [
+				65,
+				-18
+			],
+			"demonym": "Icelander",
+			"borders": [],
+			"area": 103000,
+			"gini": null,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "kr",
+					"code": "ISK",
+					"name": "Icelandic króna"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "is",
+					"iso639_2": "isl",
+					"name": "Icelandic",
+					"nativeName": "Íslenska"
+				}
+			],
+			"alpha2Code": "IS",
+			"alpha3Code": "ISL",
+			"callingCodes": [
+				"354"
+			],
+			"numericCode": "352"
+		},
+		{
+			"name": "India",
+			"nativeName": "भारत",
+			"topLevelDomain": [
+				".in"
+			],
+			"capital": "New Delhi",
+			"altSpellings": [
+				"IN",
+				"Bhārat",
+				"Republic of India",
+				"Bharat Ganrajya"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Indien",
+				"es": "India",
+				"fr": "Inde",
+				"it": "India",
+				"ja": "インド",
+				"nl": "India",
+				"hr": "Indija"
+			},
+			"population": 1295210000,
+			"latlng": [
+				20,
+				77
+			],
+			"demonym": "Indian",
+			"borders": [
+				"AFG",
+				"BGD",
+				"BTN",
+				"MMR",
+				"CHN",
+				"NPL",
+				"PAK",
+				"LKA"
+			],
+			"area": 3287590,
+			"gini": 33.4,
+			"timezones": [
+				"UTC+05:30"
+			],
+			"currencies": [
+				{
+					"symbol": "₹",
+					"code": "INR",
+					"name": "Indian rupee"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "hi",
+					"iso639_2": "hin",
+					"name": "Hindi",
+					"nativeName": "हिन्दी"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "IN",
+			"alpha3Code": "IND",
+			"callingCodes": [
+				"91"
+			],
+			"numericCode": "356"
+		},
+		{
+			"name": "Indonesia",
+			"nativeName": "Indonesia",
+			"topLevelDomain": [
+				".id"
+			],
+			"capital": "Jakarta",
+			"altSpellings": [
+				"ID",
+				"Republic of Indonesia",
+				"Republik Indonesia"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Indonésie",
+				"nl": "Indonesië",
+				"de": "Indonesien",
+				"it": "Indonesia",
+				"ja": "インドネシア",
+				"es": "Indonesia",
+				"hr": "Indonezija"
+			},
+			"population": 258705000,
+			"latlng": [
+				-5,
+				120
+			],
+			"demonym": "Indonesian",
+			"borders": [
+				"TLS",
+				"MYS",
+				"PNG"
+			],
+			"area": 1904569,
+			"gini": 34,
+			"timezones": [
+				"UTC+07:00",
+				"UTC+08:00",
+				"UTC+09:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Rp",
+					"code": "IDR",
+					"name": "Indonesian rupiah"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "id",
+					"iso639_2": "ind",
+					"name": "Indonesian",
+					"nativeName": "Bahasa Indonesia"
+				}
+			],
+			"alpha2Code": "ID",
+			"alpha3Code": "IDN",
+			"callingCodes": [
+				"62"
+			],
+			"numericCode": "360"
+		},
+		{
+			"name": "Côte d'Ivoire",
+			"nativeName": "Côte d'Ivoire",
+			"topLevelDomain": [
+				".ci"
+			],
+			"capital": "Yamoussoukro",
+			"altSpellings": [
+				"CI",
+				"Ivory Coast",
+				"Republic of Côte d'Ivoire",
+				"République de Côte d'Ivoire"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Elfenbeinküste",
+				"es": "Costa de Marfil",
+				"fr": "Côte d'Ivoire",
+				"it": "Costa D'Avorio",
+				"ja": "コートジボワール",
+				"nl": "Ivoorkust",
+				"hr": "Obala Bjelokosti"
+			},
+			"population": 22671331,
+			"latlng": [
+				8,
+				-5
+			],
+			"demonym": "Ivorian",
+			"borders": [
+				"BFA",
+				"GHA",
+				"GIN",
+				"LBR",
+				"MLI"
+			],
+			"area": 322463,
+			"gini": 41.5,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "CI",
+			"alpha3Code": "CIV",
+			"callingCodes": [
+				"225"
+			],
+			"numericCode": "384"
+		},
+		{
+			"name": "Iran (Islamic Republic of)",
+			"nativeName": "ایران",
+			"topLevelDomain": [
+				".ir"
+			],
+			"capital": "Tehran",
+			"altSpellings": [
+				"IR",
+				"Islamic Republic of Iran",
+				"Jomhuri-ye Eslāmi-ye Irān"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Iran",
+				"es": "Iran",
+				"fr": "Iran",
+				"ja": "イラン・イスラム共和国",
+				"nl": "Iran",
+				"hr": "Iran"
+			},
+			"population": 79369900,
+			"latlng": [
+				32,
+				53
+			],
+			"demonym": "Iranian",
+			"borders": [
+				"AFG",
+				"ARM",
+				"AZE",
+				"IRQ",
+				"PAK",
+				"TUR",
+				"TKM"
+			],
+			"area": 1648195,
+			"gini": 38.3,
+			"timezones": [
+				"UTC+03:30"
+			],
+			"currencies": [
+				{
+					"symbol": "﷼",
+					"code": "IRR",
+					"name": "Iranian rial"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fa",
+					"iso639_2": "fas",
+					"name": "Persian (Farsi)",
+					"nativeName": "فارسی"
+				}
+			],
+			"alpha2Code": "IR",
+			"alpha3Code": "IRN",
+			"callingCodes": [
+				"98"
+			],
+			"numericCode": "364"
+		},
+		{
+			"name": "Iraq",
+			"nativeName": "العراق",
+			"topLevelDomain": [
+				".iq"
+			],
+			"capital": "Baghdad",
+			"altSpellings": [
+				"IQ",
+				"Republic of Iraq",
+				"Jumhūriyyat al-‘Irāq"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Irak",
+				"es": "Irak",
+				"fr": "Irak",
+				"it": "Iraq",
+				"ja": "イラク",
+				"nl": "Irak",
+				"hr": "Irak"
+			},
+			"population": 37883543,
+			"latlng": [
+				33,
+				44
+			],
+			"demonym": "Iraqi",
+			"borders": [
+				"IRN",
+				"JOR",
+				"KWT",
+				"SAU",
+				"SYR",
+				"TUR"
+			],
+			"area": 438317,
+			"gini": 30.9,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ع.د",
+					"code": "IQD",
+					"name": "Iraqi dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				},
+				{
+					"iso639_1": "ku",
+					"iso639_2": "kur",
+					"name": "Kurdish",
+					"nativeName": "Kurdî"
+				}
+			],
+			"alpha2Code": "IQ",
+			"alpha3Code": "IRQ",
+			"callingCodes": [
+				"964"
+			],
+			"numericCode": "368"
+		},
+		{
+			"name": "Ireland",
+			"nativeName": "Éire",
+			"topLevelDomain": [
+				".ie"
+			],
+			"capital": "Dublin",
+			"altSpellings": [
+				"IE",
+				"Éire",
+				"Republic of Ireland",
+				"Poblacht na hÉireann"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Irland",
+				"es": "Irlanda",
+				"fr": "Irlande",
+				"it": "Irlanda",
+				"ja": "アイルランド",
+				"nl": "Ierland",
+				"hr": "Irska"
+			},
+			"population": 6378000,
+			"latlng": [
+				53,
+				-8
+			],
+			"demonym": "Irish",
+			"borders": [
+				"GBR"
+			],
+			"area": 70273,
+			"gini": 34.3,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ga",
+					"iso639_2": "gle",
+					"name": "Irish",
+					"nativeName": "Gaeilge"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "IE",
+			"alpha3Code": "IRL",
+			"callingCodes": [
+				"353"
+			],
+			"numericCode": "372"
+		},
+		{
+			"name": "Isle of Man",
+			"nativeName": "Isle of Man",
+			"topLevelDomain": [
+				".im"
+			],
+			"capital": "Douglas",
+			"altSpellings": [
+				"IM",
+				"Ellan Vannin",
+				"Mann",
+				"Mannin"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Insel Man",
+				"es": "Isla de Man",
+				"fr": "Île de Man",
+				"it": "Isola di Man",
+				"ja": "マン島",
+				"nl": "Isle of Man",
+				"hr": "Otok Man"
+			},
+			"population": 84497,
+			"latlng": [
+				54.25,
+				-4.5
+			],
+			"demonym": "Manx",
+			"borders": [],
+			"area": 572,
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "GBP",
+					"name": "British pound"
+				},
+				{
+					"symbol": "£",
+					"code": "IMP[G]",
+					"name": "Manx pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "gv",
+					"iso639_2": "glv",
+					"name": "Manx",
+					"nativeName": "Gaelg"
+				}
+			],
+			"alpha2Code": "IM",
+			"alpha3Code": "IMN",
+			"callingCodes": [
+				"44"
+			],
+			"numericCode": "833"
+		},
+		{
+			"name": "Israel",
+			"nativeName": "יִשְׂרָאֵל",
+			"topLevelDomain": [
+				".il"
+			],
+			"capital": "Jerusalem",
+			"altSpellings": [
+				"IL",
+				"State of Israel",
+				"Medīnat Yisrā'el"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Israel",
+				"es": "Israel",
+				"fr": "Israël",
+				"it": "Israele",
+				"ja": "イスラエル",
+				"nl": "Israël",
+				"hr": "Izrael"
+			},
+			"population": 8527400,
+			"latlng": [
+				31.5,
+				34.75
+			],
+			"demonym": "Israeli",
+			"borders": [
+				"EGY",
+				"JOR",
+				"LBN",
+				"SYR"
+			],
+			"area": 20770,
+			"gini": 39.2,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₪",
+					"code": "ILS",
+					"name": "Israeli new shekel"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "he",
+					"iso639_2": "heb",
+					"name": "Hebrew (modern)",
+					"nativeName": "עברית"
+				},
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "IL",
+			"alpha3Code": "ISR",
+			"callingCodes": [
+				"972"
+			],
+			"numericCode": "376"
+		},
+		{
+			"name": "Italy",
+			"nativeName": "Italia",
+			"topLevelDomain": [
+				".it"
+			],
+			"capital": "Rome",
+			"altSpellings": [
+				"IT",
+				"Italian Republic",
+				"Repubblica italiana"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Italien",
+				"es": "Italia",
+				"fr": "Italie",
+				"it": "Italia",
+				"ja": "イタリア",
+				"nl": "Italië",
+				"hr": "Italija"
+			},
+			"population": 60665551,
+			"latlng": [
+				42.83333333,
+				12.83333333
+			],
+			"demonym": "Italian",
+			"borders": [
+				"AUT",
+				"FRA",
+				"SMR",
+				"SVN",
+				"CHE",
+				"VAT"
+			],
+			"area": 301336,
+			"gini": 36,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "it",
+					"iso639_2": "ita",
+					"name": "Italian",
+					"nativeName": "italiano"
+				}
+			],
+			"alpha2Code": "IT",
+			"alpha3Code": "ITA",
+			"callingCodes": [
+				"39"
+			],
+			"numericCode": "380"
+		},
+		{
+			"name": "Jamaica",
+			"nativeName": "Jamaica",
+			"topLevelDomain": [
+				".jm"
+			],
+			"capital": "Kingston",
+			"altSpellings": [
+				"JM"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Jamaika",
+				"es": "Jamaica",
+				"fr": "Jamaïque",
+				"it": "Giamaica",
+				"ja": "ジャマイカ",
+				"nl": "Jamaica",
+				"hr": "Jamajka"
+			},
+			"population": 2723246,
+			"latlng": [
+				18.25,
+				-77.5
+			],
+			"demonym": "Jamaican",
+			"borders": [],
+			"area": 10991,
+			"gini": 45.5,
+			"timezones": [
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "JMD",
+					"name": "Jamaican dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "JM",
+			"alpha3Code": "JAM",
+			"callingCodes": [
+				"1876"
+			],
+			"numericCode": "388"
+		},
+		{
+			"name": "Japan",
+			"nativeName": "日本",
+			"topLevelDomain": [
+				".jp"
+			],
+			"capital": "Tokyo",
+			"altSpellings": [
+				"JP",
+				"Nippon",
+				"Nihon"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "Japan",
+				"es": "Japón",
+				"fr": "Japon",
+				"it": "Giappone",
+				"ja": "日本",
+				"nl": "Japan",
+				"hr": "Japan"
+			},
+			"population": 126960000,
+			"latlng": [
+				36,
+				138
+			],
+			"demonym": "Japanese",
+			"borders": [],
+			"area": 377930,
+			"gini": 38.1,
+			"timezones": [
+				"UTC+09:00"
+			],
+			"currencies": [
+				{
+					"symbol": "¥",
+					"code": "JPY",
+					"name": "Japanese yen"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ja",
+					"iso639_2": "jpn",
+					"name": "Japanese",
+					"nativeName": "日本語 (にほんご)"
+				}
+			],
+			"alpha2Code": "JP",
+			"alpha3Code": "JPN",
+			"callingCodes": [
+				"81"
+			],
+			"numericCode": "392"
+		},
+		{
+			"name": "Jersey",
+			"nativeName": "Jersey",
+			"topLevelDomain": [
+				".je"
+			],
+			"capital": "Saint Helier",
+			"altSpellings": [
+				"JE",
+				"Bailiwick of Jersey",
+				"Bailliage de Jersey",
+				"Bailliage dé Jèrri"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Jersey",
+				"es": "Jersey",
+				"fr": "Jersey",
+				"it": "Isola di Jersey",
+				"ja": "ジャージー",
+				"nl": "Jersey",
+				"hr": "Jersey"
+			},
+			"population": 100800,
+			"latlng": [
+				49.25,
+				-2.16666666
+			],
+			"demonym": "Channel Islander",
+			"borders": [],
+			"area": 116,
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "GBP",
+					"name": "British pound"
+				},
+				{
+					"symbol": "£",
+					"code": "JEP[G]",
+					"name": "Jersey pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "JE",
+			"alpha3Code": "JEY",
+			"callingCodes": [
+				"44"
+			],
+			"numericCode": "832"
+		},
+		{
+			"name": "Jordan",
+			"nativeName": "الأردن",
+			"topLevelDomain": [
+				".jo"
+			],
+			"capital": "Amman",
+			"altSpellings": [
+				"JO",
+				"Hashemite Kingdom of Jordan",
+				"al-Mamlakah al-Urdunīyah al-Hāshimīyah"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Jordanien",
+				"es": "Jordania",
+				"fr": "Jordanie",
+				"it": "Giordania",
+				"ja": "ヨルダン",
+				"nl": "Jordanië",
+				"hr": "Jordan"
+			},
+			"population": 9531712,
+			"latlng": [
+				31,
+				36
+			],
+			"demonym": "Jordanian",
+			"borders": [
+				"IRQ",
+				"ISR",
+				"SAU",
+				"SYR"
+			],
+			"area": 89342,
+			"gini": 35.4,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "د.ا",
+					"code": "JOD",
+					"name": "Jordanian dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "JO",
+			"alpha3Code": "JOR",
+			"callingCodes": [
+				"962"
+			],
+			"numericCode": "400"
+		},
+		{
+			"name": "Kazakhstan",
+			"nativeName": "Қазақстан",
+			"topLevelDomain": [
+				".kz",
+				".қаз"
+			],
+			"capital": "Astana",
+			"altSpellings": [
+				"KZ",
+				"Qazaqstan",
+				"Казахстан",
+				"Republic of Kazakhstan",
+				"Қазақстан Республикасы",
+				"Qazaqstan Respublïkası",
+				"Республика Казахстан",
+				"Respublika Kazakhstan"
+			],
+			"region": "Asia",
+			"subregion": "Central Asia",
+			"translations": {
+				"de": "Kasachstan",
+				"es": "Kazajistán",
+				"fr": "Kazakhstan",
+				"it": "Kazakistan",
+				"ja": "カザフスタン",
+				"nl": "Kazachstan",
+				"hr": "Kazahstan"
+			},
+			"population": 17753200,
+			"latlng": [
+				48,
+				68
+			],
+			"demonym": "Kazakhstani",
+			"borders": [
+				"CHN",
+				"KGZ",
+				"RUS",
+				"TKM",
+				"UZB"
+			],
+			"area": 2724900,
+			"gini": 29,
+			"timezones": [
+				"UTC+05:00",
+				"UTC+06:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "KZT",
+					"name": "Kazakhstani tenge"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "kk",
+					"iso639_2": "kaz",
+					"name": "Kazakh",
+					"nativeName": "қазақ тілі"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "KZ",
+			"alpha3Code": "KAZ",
+			"callingCodes": [
+				"76",
+				"77"
+			],
+			"numericCode": "398"
+		},
+		{
+			"name": "Kenya",
+			"nativeName": "Kenya",
+			"topLevelDomain": [
+				".ke"
+			],
+			"capital": "Nairobi",
+			"altSpellings": [
+				"KE",
+				"Republic of Kenya",
+				"Jamhuri ya Kenya"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Kenia",
+				"es": "Kenia",
+				"fr": "Kenya",
+				"it": "Kenya",
+				"ja": "ケニア",
+				"nl": "Kenia",
+				"hr": "Kenija"
+			},
+			"population": 47251000,
+			"latlng": [
+				1,
+				38
+			],
+			"demonym": "Kenyan",
+			"borders": [
+				"ETH",
+				"SOM",
+				"SSD",
+				"TZA",
+				"UGA"
+			],
+			"area": 580367,
+			"gini": 47.7,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Sh",
+					"code": "KES",
+					"name": "Kenyan shilling"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "sw",
+					"iso639_2": "swa",
+					"name": "Swahili",
+					"nativeName": "Kiswahili"
+				}
+			],
+			"alpha2Code": "KE",
+			"alpha3Code": "KEN",
+			"callingCodes": [
+				"254"
+			],
+			"numericCode": "404"
+		},
+		{
+			"name": "Kiribati",
+			"nativeName": "Kiribati",
+			"topLevelDomain": [
+				".ki"
+			],
+			"capital": "South Tarawa",
+			"altSpellings": [
+				"KI",
+				"Republic of Kiribati",
+				"Ribaberiki Kiribati"
+			],
+			"region": "Oceania",
+			"subregion": "Micronesia",
+			"translations": {
+				"de": "Kiribati",
+				"es": "Kiribati",
+				"fr": "Kiribati",
+				"it": "Kiribati",
+				"ja": "キリバス",
+				"nl": "Kiribati",
+				"hr": "Kiribati"
+			},
+			"population": 113400,
+			"latlng": [
+				1.41666666,
+				173
+			],
+			"demonym": "I-Kiribati",
+			"borders": [],
+			"area": 811,
+			"timezones": [
+				"UTC+12:00",
+				"UTC+13:00",
+				"UTC+14:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "AUD",
+					"name": "Australian dollar"
+				},
+				{
+					"symbol": "$",
+					"code": "(none)",
+					"name": "Kiribati dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "KI",
+			"alpha3Code": "KIR",
+			"callingCodes": [
+				"686"
+			],
+			"numericCode": "296"
+		},
+		{
+			"name": "Kuwait",
+			"nativeName": "الكويت",
+			"topLevelDomain": [
+				".kw"
+			],
+			"capital": "Kuwait City",
+			"altSpellings": [
+				"KW",
+				"State of Kuwait",
+				"Dawlat al-Kuwait"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Kuwait",
+				"es": "Kuwait",
+				"fr": "Koweït",
+				"it": "Kuwait",
+				"ja": "クウェート",
+				"nl": "Koeweit",
+				"hr": "Kuvajt"
+			},
+			"population": 4183658,
+			"latlng": [
+				29.5,
+				45.75
+			],
+			"demonym": "Kuwaiti",
+			"borders": [
+				"IRN",
+				"SAU"
+			],
+			"area": 17818,
+			"gini": null,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "د.ك",
+					"code": "KWD",
+					"name": "Kuwaiti dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "KW",
+			"alpha3Code": "KWT",
+			"callingCodes": [
+				"965"
+			],
+			"numericCode": "414"
+		},
+		{
+			"name": "Kyrgyzstan",
+			"nativeName": "Кыргызстан",
+			"topLevelDomain": [
+				".kg"
+			],
+			"capital": "Bishkek",
+			"altSpellings": [
+				"KG",
+				"Киргизия",
+				"Kyrgyz Republic",
+				"Кыргыз Республикасы",
+				"Kyrgyz Respublikasy"
+			],
+			"region": "Asia",
+			"subregion": "Central Asia",
+			"translations": {
+				"de": "Kirgisistan",
+				"es": "Kirguizistán",
+				"fr": "Kirghizistan",
+				"it": "Kirghizistan",
+				"ja": "キルギス",
+				"nl": "Kirgizië",
+				"hr": "Kirgistan"
+			},
+			"population": 6047800,
+			"latlng": [
+				41,
+				75
+			],
+			"demonym": "Kirghiz",
+			"borders": [
+				"CHN",
+				"KAZ",
+				"TJK",
+				"UZB"
+			],
+			"area": 199951,
+			"gini": 36.2,
+			"timezones": [
+				"UTC+06:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "KGS",
+					"name": "Kyrgyzstani som"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ky",
+					"iso639_2": "kir",
+					"name": "Kyrgyz",
+					"nativeName": "Кыргызча"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "KG",
+			"alpha3Code": "KGZ",
+			"callingCodes": [
+				"996"
+			],
+			"numericCode": "417"
+		},
+		{
+			"name": "Lao People's Democratic Republic",
+			"nativeName": "ສປປລາວ",
+			"topLevelDomain": [
+				".la"
+			],
+			"capital": "Vientiane",
+			"altSpellings": [
+				"LA",
+				"Lao",
+				"Lao People's Democratic Republic",
+				"Sathalanalat Paxathipatai Paxaxon Lao"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Laos",
+				"nl": "Laos",
+				"de": "Laos",
+				"it": "Laos",
+				"ja": "ラオス人民民主共和国",
+				"es": "Laos",
+				"hr": "Laos"
+			},
+			"population": 6492400,
+			"latlng": [
+				18,
+				105
+			],
+			"demonym": "Laotian",
+			"borders": [
+				"MMR",
+				"KHM",
+				"CHN",
+				"THA",
+				"VNM"
+			],
+			"area": 236800,
+			"gini": 36.7,
+			"timezones": [
+				"UTC+07:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₭",
+					"code": "LAK",
+					"name": "Lao kip"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "lo",
+					"iso639_2": "lao",
+					"name": "Lao",
+					"nativeName": "ພາສາລາວ"
+				}
+			],
+			"alpha2Code": "LA",
+			"alpha3Code": "LAO",
+			"callingCodes": [
+				"856"
+			],
+			"numericCode": "418"
+		},
+		{
+			"name": "Latvia",
+			"nativeName": "Latvija",
+			"topLevelDomain": [
+				".lv"
+			],
+			"capital": "Riga",
+			"altSpellings": [
+				"LV",
+				"Republic of Latvia",
+				"Latvijas Republika"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Lettland",
+				"es": "Letonia",
+				"fr": "Lettonie",
+				"it": "Lettonia",
+				"ja": "ラトビア",
+				"nl": "Letland",
+				"hr": "Latvija"
+			},
+			"population": 1961600,
+			"latlng": [
+				57,
+				25
+			],
+			"demonym": "Latvian",
+			"borders": [
+				"BLR",
+				"EST",
+				"LTU",
+				"RUS"
+			],
+			"area": 64559,
+			"gini": 36.6,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "lv",
+					"iso639_2": "lav",
+					"name": "Latvian",
+					"nativeName": "latviešu valoda"
+				}
+			],
+			"alpha2Code": "LV",
+			"alpha3Code": "LVA",
+			"callingCodes": [
+				"371"
+			],
+			"numericCode": "428"
+		},
+		{
+			"name": "Lebanon",
+			"nativeName": "لبنان",
+			"topLevelDomain": [
+				".lb"
+			],
+			"capital": "Beirut",
+			"altSpellings": [
+				"LB",
+				"Lebanese Republic",
+				"Al-Jumhūrīyah Al-Libnānīyah"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Libanon",
+				"es": "Líbano",
+				"fr": "Liban",
+				"it": "Libano",
+				"ja": "レバノン",
+				"nl": "Libanon",
+				"hr": "Libanon"
+			},
+			"population": 5988000,
+			"latlng": [
+				33.83333333,
+				35.83333333
+			],
+			"demonym": "Lebanese",
+			"borders": [
+				"ISR",
+				"SYR"
+			],
+			"area": 10452,
+			"gini": null,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ل.ل",
+					"code": "LBP",
+					"name": "Lebanese pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "LB",
+			"alpha3Code": "LBN",
+			"callingCodes": [
+				"961"
+			],
+			"numericCode": "422"
+		},
+		{
+			"name": "Lesotho",
+			"nativeName": "Lesotho",
+			"topLevelDomain": [
+				".ls"
+			],
+			"capital": "Maseru",
+			"altSpellings": [
+				"LS",
+				"Kingdom of Lesotho",
+				"Muso oa Lesotho"
+			],
+			"region": "Africa",
+			"subregion": "Southern Africa",
+			"translations": {
+				"de": "Lesotho",
+				"es": "Lesotho",
+				"fr": "Lesotho",
+				"it": "Lesotho",
+				"ja": "レソト",
+				"nl": "Lesotho",
+				"hr": "Lesoto"
+			},
+			"population": 1894194,
+			"latlng": [
+				-29.5,
+				28.5
+			],
+			"demonym": "Mosotho",
+			"borders": [
+				"ZAF"
+			],
+			"area": 30355,
+			"gini": 52.5,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "L",
+					"code": "LSL",
+					"name": "Lesotho loti"
+				},
+				{
+					"symbol": "R",
+					"code": "ZAR",
+					"name": "South African rand"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "st",
+					"iso639_2": "sot",
+					"name": "Southern Sotho",
+					"nativeName": "Sesotho"
+				}
+			],
+			"alpha2Code": "LS",
+			"alpha3Code": "LSO",
+			"callingCodes": [
+				"266"
+			],
+			"numericCode": "426"
+		},
+		{
+			"name": "Liberia",
+			"nativeName": "Liberia",
+			"topLevelDomain": [
+				".lr"
+			],
+			"capital": "Monrovia",
+			"altSpellings": [
+				"LR",
+				"Republic of Liberia"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Liberia",
+				"es": "Liberia",
+				"fr": "Liberia",
+				"it": "Liberia",
+				"ja": "リベリア",
+				"nl": "Liberia",
+				"hr": "Liberija"
+			},
+			"population": 4615000,
+			"latlng": [
+				6.5,
+				-9.5
+			],
+			"demonym": "Liberian",
+			"borders": [
+				"GIN",
+				"CIV",
+				"SLE"
+			],
+			"area": 111369,
+			"gini": 38.2,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "LRD",
+					"name": "Liberian dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "LR",
+			"alpha3Code": "LBR",
+			"callingCodes": [
+				"231"
+			],
+			"numericCode": "430"
+		},
+		{
+			"name": "Libya",
+			"nativeName": "‏ليبيا",
+			"topLevelDomain": [
+				".ly"
+			],
+			"capital": "Tripoli",
+			"altSpellings": [
+				"LY",
+				"State of Libya",
+				"Dawlat Libya"
+			],
+			"region": "Africa",
+			"subregion": "Northern Africa",
+			"translations": {
+				"de": "Libyen",
+				"es": "Libia",
+				"fr": "Libye",
+				"it": "Libia",
+				"ja": "リビア",
+				"nl": "Libië",
+				"hr": "Libija"
+			},
+			"population": 6385000,
+			"latlng": [
+				25,
+				17
+			],
+			"demonym": "Libyan",
+			"borders": [
+				"DZA",
+				"TCD",
+				"EGY",
+				"NER",
+				"SDN",
+				"TUN"
+			],
+			"area": 1759540,
+			"gini": null,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ل.د",
+					"code": "LYD",
+					"name": "Libyan dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "LY",
+			"alpha3Code": "LBY",
+			"callingCodes": [
+				"218"
+			],
+			"numericCode": "434"
+		},
+		{
+			"name": "Liechtenstein",
+			"nativeName": "Liechtenstein",
+			"topLevelDomain": [
+				".li"
+			],
+			"capital": "Vaduz",
+			"altSpellings": [
+				"LI",
+				"Principality of Liechtenstein",
+				"Fürstentum Liechtenstein"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Liechtenstein",
+				"es": "Liechtenstein",
+				"fr": "Liechtenstein",
+				"it": "Liechtenstein",
+				"ja": "リヒテンシュタイン",
+				"nl": "Liechtenstein",
+				"hr": "Lihtenštajn"
+			},
+			"population": 37623,
+			"latlng": [
+				47.26666666,
+				9.53333333
+			],
+			"demonym": "Liechtensteiner",
+			"borders": [
+				"AUT",
+				"CHE"
+			],
+			"area": 160,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "CHF",
+					"name": "Swiss franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "de",
+					"iso639_2": "deu",
+					"name": "German",
+					"nativeName": "Deutsch"
+				}
+			],
+			"alpha2Code": "LI",
+			"alpha3Code": "LIE",
+			"callingCodes": [
+				"423"
+			],
+			"numericCode": "438"
+		},
+		{
+			"name": "Lithuania",
+			"nativeName": "Lietuva",
+			"topLevelDomain": [
+				".lt"
+			],
+			"capital": "Vilnius",
+			"altSpellings": [
+				"LT",
+				"Republic of Lithuania",
+				"Lietuvos Respublika"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Litauen",
+				"es": "Lituania",
+				"fr": "Lituanie",
+				"it": "Lituania",
+				"ja": "リトアニア",
+				"nl": "Litouwen",
+				"hr": "Litva"
+			},
+			"population": 2872294,
+			"latlng": [
+				56,
+				24
+			],
+			"demonym": "Lithuanian",
+			"borders": [
+				"BLR",
+				"LVA",
+				"POL",
+				"RUS"
+			],
+			"area": 65300,
+			"gini": 37.6,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "lt",
+					"iso639_2": "lit",
+					"name": "Lithuanian",
+					"nativeName": "lietuvių kalba"
+				}
+			],
+			"alpha2Code": "LT",
+			"alpha3Code": "LTU",
+			"callingCodes": [
+				"370"
+			],
+			"numericCode": "440"
+		},
+		{
+			"name": "Luxembourg",
+			"nativeName": "Luxembourg",
+			"topLevelDomain": [
+				".lu"
+			],
+			"capital": "Luxembourg",
+			"altSpellings": [
+				"LU",
+				"Grand Duchy of Luxembourg",
+				"Grand-Duché de Luxembourg",
+				"Großherzogtum Luxemburg",
+				"Groussherzogtum Lëtzebuerg"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Luxemburg",
+				"es": "Luxemburgo",
+				"fr": "Luxembourg",
+				"it": "Lussemburgo",
+				"ja": "ルクセンブルク",
+				"nl": "Luxemburg",
+				"hr": "Luksemburg"
+			},
+			"population": 576200,
+			"latlng": [
+				49.75,
+				6.16666666
+			],
+			"demonym": "Luxembourger",
+			"borders": [
+				"BEL",
+				"FRA",
+				"DEU"
+			],
+			"area": 2586,
+			"gini": 30.8,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "de",
+					"iso639_2": "deu",
+					"name": "German",
+					"nativeName": "Deutsch"
+				},
+				{
+					"iso639_1": "lb",
+					"iso639_2": "ltz",
+					"name": "Luxembourgish",
+					"nativeName": "Lëtzebuergesch"
+				}
+			],
+			"alpha2Code": "LU",
+			"alpha3Code": "LUX",
+			"callingCodes": [
+				"352"
+			],
+			"numericCode": "442"
+		},
+		{
+			"name": "Macao",
+			"nativeName": "澳門",
+			"topLevelDomain": [
+				".mo"
+			],
+			"capital": "",
+			"altSpellings": [
+				"MO",
+				"澳门",
+				"Macao Special Administrative Region of the People's Republic of China",
+				"中華人民共和國澳門特別行政區",
+				"Região Administrativa Especial de Macau da República Popular da China"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "Macao",
+				"es": "Macao",
+				"fr": "Macao",
+				"it": "Macao",
+				"ja": "マカオ",
+				"nl": "Macao",
+				"hr": "Makao"
+			},
+			"population": 649100,
+			"latlng": [
+				22.16666666,
+				113.55
+			],
+			"demonym": "Chinese",
+			"borders": [
+				"CHN"
+			],
+			"area": 30,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "P",
+					"code": "MOP",
+					"name": "Macanese pataca"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "zh",
+					"iso639_2": "zho",
+					"name": "Chinese",
+					"nativeName": "中文 (Zhōngwén)"
+				},
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "MO",
+			"alpha3Code": "MAC",
+			"callingCodes": [
+				"853"
+			],
+			"numericCode": "446"
+		},
+		{
+			"name": "Macedonia (the former Yugoslav Republic of)",
+			"nativeName": "Македонија",
+			"topLevelDomain": [
+				".mk"
+			],
+			"capital": "Skopje",
+			"altSpellings": [
+				"MK",
+				"Republic of Macedonia",
+				"Република Македонија"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Mazedonien",
+				"es": "Macedonia",
+				"fr": "Macédoine",
+				"it": "Macedonia",
+				"ja": "マケドニア旧ユーゴスラビア共和国",
+				"nl": "Macedonië",
+				"hr": "Makedonija"
+			},
+			"population": 2058539,
+			"latlng": [
+				41.83333333,
+				22
+			],
+			"demonym": "Macedonian",
+			"borders": [
+				"ALB",
+				"BGR",
+				"GRC",
+				"KOS",
+				"SRB"
+			],
+			"area": 25713,
+			"gini": 43.2,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ден",
+					"code": "MKD",
+					"name": "Macedonian denar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "mk",
+					"iso639_2": "mkd",
+					"name": "Macedonian",
+					"nativeName": "македонски јазик"
+				}
+			],
+			"alpha2Code": "MK",
+			"alpha3Code": "MKD",
+			"callingCodes": [
+				"389"
+			],
+			"numericCode": "807"
+		},
+		{
+			"name": "Madagascar",
+			"nativeName": "Madagasikara",
+			"topLevelDomain": [
+				".mg"
+			],
+			"capital": "Antananarivo",
+			"altSpellings": [
+				"MG",
+				"Republic of Madagascar",
+				"Repoblikan'i Madagasikara",
+				"République de Madagascar"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Madagaskar",
+				"es": "Madagascar",
+				"fr": "Madagascar",
+				"it": "Madagascar",
+				"ja": "マダガスカル",
+				"nl": "Madagaskar",
+				"hr": "Madagaskar"
+			},
+			"population": 22434363,
+			"latlng": [
+				-20,
+				47
+			],
+			"demonym": "Malagasy",
+			"borders": [],
+			"area": 587041,
+			"gini": 44.1,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Ar",
+					"code": "MGA",
+					"name": "Malagasy ariary"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "mg",
+					"iso639_2": "mlg",
+					"name": "Malagasy",
+					"nativeName": "fiteny malagasy"
+				}
+			],
+			"alpha2Code": "MG",
+			"alpha3Code": "MDG",
+			"callingCodes": [
+				"261"
+			],
+			"numericCode": "450"
+		},
+		{
+			"name": "Malawi",
+			"nativeName": "Malawi",
+			"topLevelDomain": [
+				".mw"
+			],
+			"capital": "Lilongwe",
+			"altSpellings": [
+				"MW",
+				"Republic of Malawi"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Malawi",
+				"es": "Malawi",
+				"fr": "Malawi",
+				"it": "Malawi",
+				"ja": "マラウイ",
+				"nl": "Malawi",
+				"hr": "Malavi"
+			},
+			"population": 16832910,
+			"latlng": [
+				-13.5,
+				34
+			],
+			"demonym": "Malawian",
+			"borders": [
+				"MOZ",
+				"TZA",
+				"ZMB"
+			],
+			"area": 118484,
+			"gini": 39,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "MK",
+					"code": "MWK",
+					"name": "Malawian kwacha"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "ny",
+					"iso639_2": "nya",
+					"name": "Chichewa",
+					"nativeName": "chiCheŵa"
+				}
+			],
+			"alpha2Code": "MW",
+			"alpha3Code": "MWI",
+			"callingCodes": [
+				"265"
+			],
+			"numericCode": "454"
+		},
+		{
+			"name": "Malaysia",
+			"nativeName": "Malaysia",
+			"topLevelDomain": [
+				".my"
+			],
+			"capital": "Kuala Lumpur",
+			"altSpellings": [
+				"MY"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Malaisie",
+				"nl": "Maleisië",
+				"de": "Malaysia",
+				"it": "Malesia",
+				"ja": "マレーシア",
+				"es": "Malasia",
+				"hr": "Malezija"
+			},
+			"population": 31405416,
+			"latlng": [
+				2.5,
+				112.5
+			],
+			"demonym": "Malaysian",
+			"borders": [
+				"BRN",
+				"IDN",
+				"THA"
+			],
+			"area": 330803,
+			"gini": 46.2,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "RM",
+					"code": "MYR",
+					"name": "Malaysian ringgit"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": null,
+					"iso639_2": "zsm",
+					"name": "Malaysian",
+					"nativeName": "بهاس مليسيا"
+				}
+			],
+			"alpha2Code": "MY",
+			"alpha3Code": "MYS",
+			"callingCodes": [
+				"60"
+			],
+			"numericCode": "458"
+		},
+		{
+			"name": "Maldives",
+			"nativeName": "Maldives",
+			"topLevelDomain": [
+				".mv"
+			],
+			"capital": "Malé",
+			"altSpellings": [
+				"MV",
+				"Maldive Islands",
+				"Republic of the Maldives",
+				"Dhivehi Raajjeyge Jumhooriyya"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Malediven",
+				"es": "Maldivas",
+				"fr": "Maldives",
+				"it": "Maldive",
+				"ja": "モルディブ",
+				"nl": "Maldiven",
+				"hr": "Maldivi"
+			},
+			"population": 344023,
+			"latlng": [
+				3.25,
+				73
+			],
+			"demonym": "Maldivan",
+			"borders": [],
+			"area": 300,
+			"gini": 37.4,
+			"timezones": [
+				"UTC+05:00"
+			],
+			"currencies": [
+				{
+					"symbol": ".ރ",
+					"code": "MVR",
+					"name": "Maldivian rufiyaa"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "dv",
+					"iso639_2": "div",
+					"name": "Divehi",
+					"nativeName": "ދިވެހި"
+				}
+			],
+			"alpha2Code": "MV",
+			"alpha3Code": "MDV",
+			"callingCodes": [
+				"960"
+			],
+			"numericCode": "462"
+		},
+		{
+			"name": "Mali",
+			"nativeName": "Mali",
+			"topLevelDomain": [
+				".ml"
+			],
+			"capital": "Bamako",
+			"altSpellings": [
+				"ML",
+				"Republic of Mali",
+				"République du Mali"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Mali",
+				"es": "Mali",
+				"fr": "Mali",
+				"it": "Mali",
+				"ja": "マリ",
+				"nl": "Mali",
+				"hr": "Mali"
+			},
+			"population": 18135000,
+			"latlng": [
+				17,
+				-4
+			],
+			"demonym": "Malian",
+			"borders": [
+				"DZA",
+				"BFA",
+				"GIN",
+				"CIV",
+				"MRT",
+				"NER",
+				"SEN"
+			],
+			"area": 1240192,
+			"gini": 33,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "ML",
+			"alpha3Code": "MLI",
+			"callingCodes": [
+				"223"
+			],
+			"numericCode": "466"
+		},
+		{
+			"name": "Malta",
+			"nativeName": "Malta",
+			"topLevelDomain": [
+				".mt"
+			],
+			"capital": "Valletta",
+			"altSpellings": [
+				"MT",
+				"Republic of Malta",
+				"Repubblika ta' Malta"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Malta",
+				"es": "Malta",
+				"fr": "Malte",
+				"it": "Malta",
+				"ja": "マルタ",
+				"nl": "Malta",
+				"hr": "Malta"
+			},
+			"population": 425384,
+			"latlng": [
+				35.83333333,
+				14.58333333
+			],
+			"demonym": "Maltese",
+			"borders": [],
+			"area": 316,
+			"gini": null,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "mt",
+					"iso639_2": "mlt",
+					"name": "Maltese",
+					"nativeName": "Malti"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "MT",
+			"alpha3Code": "MLT",
+			"callingCodes": [
+				"356"
+			],
+			"numericCode": "470"
+		},
+		{
+			"name": "Marshall Islands",
+			"nativeName": "M̧ajeļ",
+			"topLevelDomain": [
+				".mh"
+			],
+			"capital": "Majuro",
+			"altSpellings": [
+				"MH",
+				"Republic of the Marshall Islands",
+				"Aolepān Aorōkin M̧ajeļ"
+			],
+			"region": "Oceania",
+			"subregion": "Micronesia",
+			"translations": {
+				"de": "Marshallinseln",
+				"es": "Islas Marshall",
+				"fr": "Îles Marshall",
+				"it": "Isole Marshall",
+				"ja": "マーシャル諸島",
+				"nl": "Marshalleilanden",
+				"hr": "Maršalovi Otoci"
+			},
+			"population": 54880,
+			"latlng": [
+				9,
+				168
+			],
+			"demonym": "Marshallese",
+			"borders": [],
+			"area": 181,
+			"timezones": [
+				"UTC+12:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "mh",
+					"iso639_2": "mah",
+					"name": "Marshallese",
+					"nativeName": "Kajin M̧ajeļ"
+				}
+			],
+			"alpha2Code": "MH",
+			"alpha3Code": "MHL",
+			"callingCodes": [
+				"692"
+			],
+			"numericCode": "584"
+		},
+		{
+			"name": "Martinique",
+			"nativeName": "Martinique",
+			"topLevelDomain": [
+				".mq"
+			],
+			"capital": "Fort-de-France",
+			"altSpellings": [
+				"MQ"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Martinique",
+				"es": "Martinica",
+				"fr": "Martinique",
+				"it": "Martinica",
+				"ja": "マルティニーク",
+				"nl": "Martinique",
+				"hr": "Martinique"
+			},
+			"population": 378243,
+			"latlng": [
+				14.666667,
+				-61
+			],
+			"demonym": "French",
+			"borders": [],
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "MQ",
+			"alpha3Code": "MTQ",
+			"callingCodes": [
+				"596"
+			],
+			"numericCode": "474"
+		},
+		{
+			"name": "Mauritania",
+			"nativeName": "موريتانيا",
+			"topLevelDomain": [
+				".mr"
+			],
+			"capital": "Nouakchott",
+			"altSpellings": [
+				"MR",
+				"Islamic Republic of Mauritania",
+				"al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Mauretanien",
+				"es": "Mauritania",
+				"fr": "Mauritanie",
+				"it": "Mauritania",
+				"ja": "モーリタニア",
+				"nl": "Mauritanië",
+				"hr": "Mauritanija"
+			},
+			"population": 3718678,
+			"latlng": [
+				20,
+				-12
+			],
+			"demonym": "Mauritanian",
+			"borders": [
+				"DZA",
+				"MLI",
+				"SEN",
+				"ESH"
+			],
+			"area": 1030700,
+			"gini": 40.5,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "UM",
+					"code": "MRO",
+					"name": "Mauritanian ouguiya"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "MR",
+			"alpha3Code": "MRT",
+			"callingCodes": [
+				"222"
+			],
+			"numericCode": "478"
+		},
+		{
+			"name": "Mauritius",
+			"nativeName": "Maurice",
+			"topLevelDomain": [
+				".mu"
+			],
+			"capital": "Port Louis",
+			"altSpellings": [
+				"MU",
+				"Republic of Mauritius",
+				"République de Maurice"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Mauritius",
+				"es": "Mauricio",
+				"fr": "Île Maurice",
+				"it": "Mauritius",
+				"ja": "モーリシャス",
+				"nl": "Mauritius",
+				"hr": "Mauricijus"
+			},
+			"population": 1262879,
+			"latlng": [
+				-20.28333333,
+				57.55
+			],
+			"demonym": "Mauritian",
+			"borders": [],
+			"area": 2040,
+			"gini": null,
+			"timezones": [
+				"UTC+04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₨",
+					"code": "MUR",
+					"name": "Mauritian rupee"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "MU",
+			"alpha3Code": "MUS",
+			"callingCodes": [
+				"230"
+			],
+			"numericCode": "480"
+		},
+		{
+			"name": "Mayotte",
+			"nativeName": "Mayotte",
+			"topLevelDomain": [
+				".yt"
+			],
+			"capital": "Mamoudzou",
+			"altSpellings": [
+				"YT",
+				"Department of Mayotte",
+				"Département de Mayotte"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Mayotte",
+				"es": "Mayotte",
+				"fr": "Mayotte",
+				"it": "Mayotte",
+				"ja": "マヨット",
+				"nl": "Mayotte",
+				"hr": "Mayotte"
+			},
+			"population": 226915,
+			"latlng": [
+				-12.83333333,
+				45.16666666
+			],
+			"demonym": "French",
+			"borders": [],
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "YT",
+			"alpha3Code": "MYT",
+			"callingCodes": [
+				"262"
+			],
+			"numericCode": "175"
+		},
+		{
+			"name": "Mexico",
+			"nativeName": "México",
+			"topLevelDomain": [
+				".mx"
+			],
+			"capital": "Mexico City",
+			"altSpellings": [
+				"MX",
+				"Mexicanos",
+				"United Mexican States",
+				"Estados Unidos Mexicanos"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "Mexiko",
+				"es": "México",
+				"fr": "Mexique",
+				"it": "Messico",
+				"ja": "メキシコ",
+				"nl": "Mexico",
+				"hr": "Meksiko"
+			},
+			"population": 122273473,
+			"latlng": [
+				23,
+				-102
+			],
+			"demonym": "Mexican",
+			"borders": [
+				"BLZ",
+				"GTM",
+				"USA"
+			],
+			"area": 1964375,
+			"gini": 47,
+			"timezones": [
+				"UTC-08:00",
+				"UTC-07:00",
+				"UTC-06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "MXN",
+					"name": "Mexican peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "MX",
+			"alpha3Code": "MEX",
+			"callingCodes": [
+				"52"
+			],
+			"numericCode": "484"
+		},
+		{
+			"name": "Micronesia (Federated States of)",
+			"nativeName": "Micronesia",
+			"topLevelDomain": [
+				".fm"
+			],
+			"capital": "Palikir",
+			"altSpellings": [
+				"FM",
+				"Federated States of Micronesia"
+			],
+			"region": "Oceania",
+			"subregion": "Micronesia",
+			"translations": {
+				"de": "Mikronesien",
+				"es": "Micronesia",
+				"fr": "Micronésie",
+				"it": "Micronesia",
+				"ja": "ミクロネシア連邦",
+				"nl": "Micronesië",
+				"hr": "Mikronezija"
+			},
+			"population": 102800,
+			"latlng": [
+				6.91666666,
+				158.25
+			],
+			"demonym": "Micronesian",
+			"borders": [],
+			"area": 702,
+			"timezones": [
+				"UTC+10:00",
+				"UTC+11"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": null,
+					"name": "[D]"
+				},
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "FM",
+			"alpha3Code": "FSM",
+			"callingCodes": [
+				"691"
+			],
+			"numericCode": "583"
+		},
+		{
+			"name": "Moldova (Republic of)",
+			"nativeName": "Moldova",
+			"topLevelDomain": [
+				".md"
+			],
+			"capital": "Chișinău",
+			"altSpellings": [
+				"MD",
+				"Republic of Moldova",
+				"Republica Moldova"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Moldawie",
+				"es": "Moldavia",
+				"fr": "Moldavie",
+				"it": "Moldavia",
+				"ja": "モルドバ共和国",
+				"nl": "Moldavië",
+				"hr": "Moldova"
+			},
+			"population": 3553100,
+			"latlng": [
+				47,
+				29
+			],
+			"demonym": "Moldovan",
+			"borders": [
+				"ROU",
+				"UKR"
+			],
+			"area": 33846,
+			"gini": 33,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "L",
+					"code": "MDL",
+					"name": "Moldovan leu"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ro",
+					"iso639_2": "ron",
+					"name": "Romanian",
+					"nativeName": "Română"
+				}
+			],
+			"alpha2Code": "MD",
+			"alpha3Code": "MDA",
+			"callingCodes": [
+				"373"
+			],
+			"numericCode": "498"
+		},
+		{
+			"name": "Monaco",
+			"nativeName": "Monaco",
+			"topLevelDomain": [
+				".mc"
+			],
+			"capital": "Monaco",
+			"altSpellings": [
+				"MC",
+				"Principality of Monaco",
+				"Principauté de Monaco"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Monaco",
+				"es": "Mónaco",
+				"fr": "Monaco",
+				"it": "Principato di Monaco",
+				"ja": "モナコ",
+				"nl": "Monaco",
+				"hr": "Monako"
+			},
+			"population": 38400,
+			"latlng": [
+				43.73333333,
+				7.4
+			],
+			"demonym": "Monegasque",
+			"borders": [
+				"FRA"
+			],
+			"area": 2.02,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "MC",
+			"alpha3Code": "MCO",
+			"callingCodes": [
+				"377"
+			],
+			"numericCode": "492"
+		},
+		{
+			"name": "Mongolia",
+			"nativeName": "Монгол улс",
+			"topLevelDomain": [
+				".mn"
+			],
+			"capital": "Ulan Bator",
+			"altSpellings": [
+				"MN"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "Mongolei",
+				"es": "Mongolia",
+				"fr": "Mongolie",
+				"it": "Mongolia",
+				"ja": "モンゴル",
+				"nl": "Mongolië",
+				"hr": "Mongolija"
+			},
+			"population": 3093100,
+			"latlng": [
+				46,
+				105
+			],
+			"demonym": "Mongolian",
+			"borders": [
+				"CHN",
+				"RUS"
+			],
+			"area": 1564110,
+			"gini": 36.5,
+			"timezones": [
+				"UTC+07:00",
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₮",
+					"code": "MNT",
+					"name": "Mongolian tögrög"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "mn",
+					"iso639_2": "mon",
+					"name": "Mongolian",
+					"nativeName": "Монгол хэл"
+				}
+			],
+			"alpha2Code": "MN",
+			"alpha3Code": "MNG",
+			"callingCodes": [
+				"976"
+			],
+			"numericCode": "496"
+		},
+		{
+			"name": "Montenegro",
+			"nativeName": "Црна Гора",
+			"topLevelDomain": [
+				".me"
+			],
+			"capital": "Podgorica",
+			"altSpellings": [
+				"ME",
+				"Crna Gora"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Montenegro",
+				"es": "Montenegro",
+				"fr": "Monténégro",
+				"it": "Montenegro",
+				"ja": "モンテネグロ",
+				"nl": "Montenegro",
+				"hr": "Crna Gora"
+			},
+			"population": 621810,
+			"latlng": [
+				42.5,
+				19.3
+			],
+			"demonym": "Montenegrin",
+			"borders": [
+				"ALB",
+				"BIH",
+				"HRV",
+				"KOS",
+				"SRB"
+			],
+			"area": 13812,
+			"gini": 30,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sr",
+					"iso639_2": "srp",
+					"name": "Serbian",
+					"nativeName": "српски језик"
+				},
+				{
+					"iso639_1": "bs",
+					"iso639_2": "bos",
+					"name": "Bosnian",
+					"nativeName": "bosanski jezik"
+				},
+				{
+					"iso639_1": "sq",
+					"iso639_2": "sqi",
+					"name": "Albanian",
+					"nativeName": "Shqip"
+				},
+				{
+					"iso639_1": "hr",
+					"iso639_2": "hrv",
+					"name": "Croatian",
+					"nativeName": "hrvatski jezik"
+				}
+			],
+			"alpha2Code": "ME",
+			"alpha3Code": "MNE",
+			"callingCodes": [
+				"382"
+			],
+			"numericCode": "499"
+		},
+		{
+			"name": "Montserrat",
+			"nativeName": "Montserrat",
+			"topLevelDomain": [
+				".ms"
+			],
+			"capital": "Plymouth",
+			"altSpellings": [
+				"MS"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Montserrat",
+				"es": "Montserrat",
+				"fr": "Montserrat",
+				"it": "Montserrat",
+				"ja": "モントセラト",
+				"nl": "Montserrat",
+				"hr": "Montserrat"
+			},
+			"population": 4922,
+			"latlng": [
+				16.75,
+				-62.2
+			],
+			"demonym": "Montserratian",
+			"borders": [],
+			"area": 102,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "MS",
+			"alpha3Code": "MSR",
+			"callingCodes": [
+				"1664"
+			],
+			"numericCode": "500"
+		},
+		{
+			"name": "Morocco",
+			"nativeName": "المغرب",
+			"topLevelDomain": [
+				".ma"
+			],
+			"capital": "Rabat",
+			"altSpellings": [
+				"MA",
+				"Kingdom of Morocco",
+				"Al-Mamlakah al-Maġribiyah"
+			],
+			"region": "Africa",
+			"subregion": "Northern Africa",
+			"translations": {
+				"de": "Marokko",
+				"es": "Marruecos",
+				"fr": "Maroc",
+				"it": "Marocco",
+				"ja": "モロッコ",
+				"nl": "Marokko",
+				"hr": "Maroko"
+			},
+			"population": 33337529,
+			"latlng": [
+				32,
+				-5
+			],
+			"demonym": "Moroccan",
+			"borders": [
+				"DZA",
+				"ESH",
+				"ESP"
+			],
+			"area": 446550,
+			"gini": 40.9,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "د.م.",
+					"code": "MAD",
+					"name": "Moroccan dirham"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "MA",
+			"alpha3Code": "MAR",
+			"callingCodes": [
+				"212"
+			],
+			"numericCode": "504"
+		},
+		{
+			"name": "Mozambique",
+			"nativeName": "Moçambique",
+			"topLevelDomain": [
+				".mz"
+			],
+			"capital": "Maputo",
+			"altSpellings": [
+				"MZ",
+				"Republic of Mozambique",
+				"República de Moçambique"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Mosambik",
+				"es": "Mozambique",
+				"fr": "Mozambique",
+				"it": "Mozambico",
+				"ja": "モザンビーク",
+				"nl": "Mozambique",
+				"hr": "Mozambik"
+			},
+			"population": 26423700,
+			"latlng": [
+				-18.25,
+				35
+			],
+			"demonym": "Mozambican",
+			"borders": [
+				"MWI",
+				"ZAF",
+				"SWZ",
+				"TZA",
+				"ZMB",
+				"ZWE"
+			],
+			"area": 801590,
+			"gini": 45.7,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "MT",
+					"code": "MZN",
+					"name": "Mozambican metical"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "MZ",
+			"alpha3Code": "MOZ",
+			"callingCodes": [
+				"258"
+			],
+			"numericCode": "508"
+		},
+		{
+			"name": "Myanmar",
+			"nativeName": "Myanma",
+			"topLevelDomain": [
+				".mm"
+			],
+			"capital": "Naypyidaw",
+			"altSpellings": [
+				"MM",
+				"Burma",
+				"Republic of the Union of Myanmar",
+				"Pyidaunzu Thanmăda Myăma Nainngandaw"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Myanmar",
+				"nl": "Myanmar",
+				"de": "Myanmar",
+				"it": "Birmania",
+				"ja": "ミャンマー",
+				"es": "Myanmar",
+				"hr": "Mijanmar"
+			},
+			"population": 51419420,
+			"latlng": [
+				22,
+				98
+			],
+			"demonym": "Burmese",
+			"borders": [
+				"BGD",
+				"CHN",
+				"IND",
+				"LAO",
+				"THA"
+			],
+			"gini": null,
+			"timezones": [
+				"UTC+06:30"
+			],
+			"area": 676578,
+			"currencies": [
+				{
+					"symbol": "Ks",
+					"code": "MMK",
+					"name": "Burmese kyat"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "my",
+					"iso639_2": "mya",
+					"name": "Burmese",
+					"nativeName": "ဗမာစာ"
+				}
+			],
+			"alpha2Code": "MM",
+			"alpha3Code": "MMR",
+			"callingCodes": [
+				"95"
+			],
+			"numericCode": "104"
+		},
+		{
+			"name": "Namibia",
+			"nativeName": "Namibia",
+			"topLevelDomain": [
+				".na"
+			],
+			"capital": "Windhoek",
+			"altSpellings": [
+				"NA",
+				"Namibië",
+				"Republic of Namibia"
+			],
+			"region": "Africa",
+			"subregion": "Southern Africa",
+			"translations": {
+				"de": "Namibia",
+				"es": "Namibia",
+				"fr": "Namibie",
+				"it": "Namibia",
+				"ja": "ナミビア",
+				"nl": "Namibië",
+				"hr": "Namibija"
+			},
+			"population": 2324388,
+			"latlng": [
+				-22,
+				17
+			],
+			"demonym": "Namibian",
+			"borders": [
+				"AGO",
+				"BWA",
+				"ZAF",
+				"ZMB"
+			],
+			"area": 825615,
+			"gini": 63.9,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "NAD",
+					"name": "Namibian dollar"
+				},
+				{
+					"symbol": "R",
+					"code": "ZAR",
+					"name": "South African rand"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "af",
+					"iso639_2": "afr",
+					"name": "Afrikaans",
+					"nativeName": "Afrikaans"
+				}
+			],
+			"alpha2Code": "NA",
+			"alpha3Code": "NAM",
+			"callingCodes": [
+				"264"
+			],
+			"numericCode": "516"
+		},
+		{
+			"name": "Nauru",
+			"nativeName": "Nauru",
+			"topLevelDomain": [
+				".nr"
+			],
+			"capital": "Yaren",
+			"altSpellings": [
+				"NR",
+				"Naoero",
+				"Pleasant Island",
+				"Republic of Nauru",
+				"Ripublik Naoero"
+			],
+			"region": "Oceania",
+			"subregion": "Micronesia",
+			"translations": {
+				"de": "Nauru",
+				"es": "Nauru",
+				"fr": "Nauru",
+				"it": "Nauru",
+				"ja": "ナウル",
+				"nl": "Nauru",
+				"hr": "Nauru"
+			},
+			"population": 10084,
+			"latlng": [
+				-0.53333333,
+				166.91666666
+			],
+			"demonym": "Nauruan",
+			"borders": [],
+			"area": 21,
+			"timezones": [
+				"UTC+12:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "AUD",
+					"name": "Australian dollar"
+				},
+				{
+					"symbol": "$",
+					"code": "(none)",
+					"name": null
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "na",
+					"iso639_2": "nau",
+					"name": "Nauruan",
+					"nativeName": "Dorerin Naoero"
+				}
+			],
+			"alpha2Code": "NR",
+			"alpha3Code": "NRU",
+			"callingCodes": [
+				"674"
+			],
+			"numericCode": "520"
+		},
+		{
+			"name": "Nepal",
+			"nativeName": "नेपाल",
+			"topLevelDomain": [
+				".np"
+			],
+			"capital": "Kathmandu",
+			"altSpellings": [
+				"NP",
+				"Federal Democratic Republic of Nepal",
+				"Loktāntrik Ganatantra Nepāl"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Népal",
+				"es": "Nepal",
+				"fr": "Népal",
+				"it": "Nepal",
+				"ja": "ネパール",
+				"nl": "Nepal",
+				"hr": "Nepal"
+			},
+			"population": 28431500,
+			"latlng": [
+				28,
+				84
+			],
+			"demonym": "Nepalese",
+			"borders": [
+				"CHN",
+				"IND"
+			],
+			"area": 147181,
+			"gini": 32.8,
+			"timezones": [
+				"UTC+05:45"
+			],
+			"currencies": [
+				{
+					"symbol": "₨",
+					"code": "NPR",
+					"name": "Nepalese rupee"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ne",
+					"iso639_2": "nep",
+					"name": "Nepali",
+					"nativeName": "नेपाली"
+				}
+			],
+			"alpha2Code": "NP",
+			"alpha3Code": "NPL",
+			"callingCodes": [
+				"977"
+			],
+			"numericCode": "524"
+		},
+		{
+			"name": "Netherlands",
+			"nativeName": "Nederland",
+			"topLevelDomain": [
+				".nl"
+			],
+			"capital": "Amsterdam",
+			"altSpellings": [
+				"NL",
+				"Holland",
+				"Nederland"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Niederlande",
+				"es": "Países Bajos",
+				"fr": "Pays-Bas",
+				"it": "Paesi Bassi",
+				"ja": "オランダ",
+				"nl": "Nederland",
+				"hr": "Nizozemska"
+			},
+			"population": 17019800,
+			"latlng": [
+				52.5,
+				5.75
+			],
+			"demonym": "Dutch",
+			"borders": [
+				"BEL",
+				"DEU"
+			],
+			"area": 41850,
+			"gini": 30.9,
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				}
+			],
+			"alpha2Code": "NL",
+			"alpha3Code": "NLD",
+			"callingCodes": [
+				"31"
+			],
+			"numericCode": "528"
+		},
+		{
+			"name": "New Caledonia",
+			"nativeName": "Nouvelle-Calédonie",
+			"topLevelDomain": [
+				".nc"
+			],
+			"capital": "Nouméa",
+			"altSpellings": [
+				"NC"
+			],
+			"region": "Oceania",
+			"subregion": "Melanesia",
+			"translations": {
+				"de": "Neukaledonien",
+				"es": "Nueva Caledonia",
+				"fr": "Nouvelle-Calédonie",
+				"it": "Nuova Caledonia",
+				"ja": "ニューカレドニア",
+				"nl": "Nieuw-Caledonië",
+				"hr": "Nova Kaledonija"
+			},
+			"population": 268767,
+			"latlng": [
+				-21.5,
+				165.5
+			],
+			"demonym": "New Caledonian",
+			"borders": [],
+			"area": 18575,
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XPF",
+					"name": "CFP franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "NC",
+			"alpha3Code": "NCL",
+			"callingCodes": [
+				"687"
+			],
+			"numericCode": "540"
+		},
+		{
+			"name": "New Zealand",
+			"nativeName": "New Zealand",
+			"topLevelDomain": [
+				".nz"
+			],
+			"capital": "Wellington",
+			"altSpellings": [
+				"NZ",
+				"Aotearoa"
+			],
+			"region": "Oceania",
+			"subregion": "Australia and New Zealand",
+			"translations": {
+				"fr": "Nouvelle-Zélande",
+				"nl": "Nieuw-Zeeland",
+				"de": "Neuseeland",
+				"it": "Nuova Zelanda",
+				"ja": "ニュージーランド",
+				"es": "Nueva Zelanda",
+				"hr": "Novi Zeland"
+			},
+			"population": 4697854,
+			"latlng": [
+				-41,
+				174
+			],
+			"demonym": "New Zealander",
+			"borders": [],
+			"area": 270467,
+			"gini": 36.2,
+			"timezones": [
+				"UTC-11:00",
+				"UTC-10:00",
+				"UTC+12:00",
+				"UTC+12:45",
+				"UTC+13:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "NZD",
+					"name": "New Zealand dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "mi",
+					"iso639_2": "mri",
+					"name": "Māori",
+					"nativeName": "te reo Māori"
+				}
+			],
+			"alpha2Code": "NZ",
+			"alpha3Code": "NZL",
+			"callingCodes": [
+				"64"
+			],
+			"numericCode": "554"
+		},
+		{
+			"name": "Nicaragua",
+			"nativeName": "Nicaragua",
+			"topLevelDomain": [
+				".ni"
+			],
+			"capital": "Managua",
+			"altSpellings": [
+				"NI",
+				"Republic of Nicaragua",
+				"República de Nicaragua"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "Nicaragua",
+				"es": "Nicaragua",
+				"fr": "Nicaragua",
+				"it": "Nicaragua",
+				"ja": "ニカラグア",
+				"nl": "Nicaragua",
+				"hr": "Nikaragva"
+			},
+			"population": 6262703,
+			"latlng": [
+				13,
+				-85
+			],
+			"demonym": "Nicaraguan",
+			"borders": [
+				"CRI",
+				"HND"
+			],
+			"area": 130373,
+			"gini": 40.5,
+			"timezones": [
+				"UTC-06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "C$",
+					"code": "NIO",
+					"name": "Nicaraguan córdoba"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "NI",
+			"alpha3Code": "NIC",
+			"callingCodes": [
+				"505"
+			],
+			"numericCode": "558"
+		},
+		{
+			"name": "Niger",
+			"nativeName": "Niger",
+			"topLevelDomain": [
+				".ne"
+			],
+			"capital": "Niamey",
+			"altSpellings": [
+				"NE",
+				"Nijar",
+				"Republic of Niger",
+				"République du Niger"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Niger",
+				"es": "Níger",
+				"fr": "Niger",
+				"it": "Niger",
+				"ja": "ニジェール",
+				"nl": "Niger",
+				"hr": "Niger"
+			},
+			"population": 20715000,
+			"latlng": [
+				16,
+				8
+			],
+			"demonym": "Nigerien",
+			"borders": [
+				"DZA",
+				"BEN",
+				"BFA",
+				"TCD",
+				"LBY",
+				"MLI",
+				"NGA"
+			],
+			"area": 1267000,
+			"gini": 34.6,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "NE",
+			"alpha3Code": "NER",
+			"callingCodes": [
+				"227"
+			],
+			"numericCode": "562"
+		},
+		{
+			"name": "Nigeria",
+			"nativeName": "Nigeria",
+			"topLevelDomain": [
+				".ng"
+			],
+			"capital": "Abuja",
+			"altSpellings": [
+				"NG",
+				"Nijeriya",
+				"Naíjíríà",
+				"Federal Republic of Nigeria"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Nigeria",
+				"es": "Nigeria",
+				"fr": "Nigéria",
+				"it": "Nigeria",
+				"ja": "ナイジェリア",
+				"nl": "Nigeria",
+				"hr": "Nigerija"
+			},
+			"population": 186988000,
+			"latlng": [
+				10,
+				8
+			],
+			"demonym": "Nigerian",
+			"borders": [
+				"BEN",
+				"CMR",
+				"TCD",
+				"NER"
+			],
+			"area": 923768,
+			"gini": 48.8,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₦",
+					"code": "NGN",
+					"name": "Nigerian naira"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "NG",
+			"alpha3Code": "NGA",
+			"callingCodes": [
+				"234"
+			],
+			"numericCode": "566"
+		},
+		{
+			"name": "Niue",
+			"nativeName": "Niuē",
+			"topLevelDomain": [
+				".nu"
+			],
+			"capital": "Alofi",
+			"altSpellings": [
+				"NU"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Niue",
+				"es": "Niue",
+				"fr": "Niue",
+				"it": "Niue",
+				"ja": "ニウエ",
+				"nl": "Niue",
+				"hr": "Niue"
+			},
+			"population": 1470,
+			"latlng": [
+				-19.03333333,
+				-169.86666666
+			],
+			"demonym": "Niuean",
+			"borders": [],
+			"area": 260,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "NZD",
+					"name": "New Zealand dollar"
+				},
+				{
+					"symbol": "$",
+					"code": "(none)",
+					"name": "Niue dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "NU",
+			"alpha3Code": "NIU",
+			"callingCodes": [
+				"683"
+			],
+			"numericCode": "570"
+		},
+		{
+			"name": "Norfolk Island",
+			"nativeName": "Norfolk Island",
+			"topLevelDomain": [
+				".nf"
+			],
+			"capital": "Kingston",
+			"altSpellings": [
+				"NF",
+				"Territory of Norfolk Island",
+				"Teratri of Norf'k Ailen"
+			],
+			"region": "Oceania",
+			"subregion": "Australia and New Zealand",
+			"translations": {
+				"fr": "Île de Norfolk",
+				"nl": "Norfolkeiland",
+				"de": "Norfolkinsel",
+				"it": "Isola Norfolk",
+				"ja": "ノーフォーク島",
+				"es": "Isla de Norfolk",
+				"hr": "Otok Norfolk"
+			},
+			"population": 2302,
+			"latlng": [
+				-29.03333333,
+				167.95
+			],
+			"demonym": "Norfolk Islander",
+			"borders": [],
+			"area": 36,
+			"currencies": [
+				{
+					"code": "AUD",
+					"name": "Australian dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "NF",
+			"alpha3Code": "NFK",
+			"callingCodes": [
+				"672"
+			],
+			"numericCode": "574"
+		},
+		{
+			"name": "Korea (Democratic People's Republic of)",
+			"nativeName": "북한",
+			"topLevelDomain": [
+				".kp"
+			],
+			"capital": "Pyongyang",
+			"altSpellings": [
+				"KP",
+				"Democratic People's Republic of Korea",
+				"조선민주주의인민공화국",
+				"Chosŏn Minjujuŭi Inmin Konghwaguk"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "Nordkorea",
+				"es": "Corea del Norte",
+				"fr": "Corée du Nord",
+				"it": "Corea del Nord",
+				"ja": "朝鮮民主主義人民共和国",
+				"nl": "Noord-Korea",
+				"hr": "Sjeverna Koreja"
+			},
+			"population": 25281000,
+			"latlng": [
+				40,
+				127
+			],
+			"demonym": "North Korean",
+			"borders": [
+				"CHN",
+				"KOR",
+				"RUS"
+			],
+			"area": 120538,
+			"gini": null,
+			"timezones": [
+				"UTC+09:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₩",
+					"code": "KPW",
+					"name": "North Korean won"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ko",
+					"iso639_2": "kor",
+					"name": "Korean",
+					"nativeName": "한국어"
+				}
+			],
+			"alpha2Code": "KP",
+			"alpha3Code": "PRK",
+			"callingCodes": [
+				"850"
+			],
+			"numericCode": "408"
+		},
+		{
+			"name": "Northern Mariana Islands",
+			"nativeName": "Northern Mariana Islands",
+			"topLevelDomain": [
+				".mp"
+			],
+			"capital": "Saipan",
+			"altSpellings": [
+				"MP",
+				"Commonwealth of the Northern Mariana Islands",
+				"Sankattan Siha Na Islas Mariånas"
+			],
+			"region": "Oceania",
+			"subregion": "Micronesia",
+			"translations": {
+				"de": "Nördliche Marianen",
+				"es": "Islas Marianas del Norte",
+				"fr": "Îles Mariannes du Nord",
+				"it": "Isole Marianne Settentrionali",
+				"ja": "北マリアナ諸島",
+				"nl": "Noordelijke Marianeneilanden",
+				"hr": "Sjevernomarijanski otoci"
+			},
+			"population": 56940,
+			"latlng": [
+				15.2,
+				145.75
+			],
+			"demonym": "American",
+			"borders": [],
+			"area": 464,
+			"currencies": [
+				{
+					"code": "USD",
+					"name": "United States dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "ch",
+					"iso639_2": "cha",
+					"name": "Chamorro",
+					"nativeName": "Chamoru"
+				}
+			],
+			"alpha2Code": "MP",
+			"alpha3Code": "MNP",
+			"callingCodes": [
+				"1670"
+			],
+			"numericCode": "580"
+		},
+		{
+			"name": "Norway",
+			"nativeName": "Norge",
+			"topLevelDomain": [
+				".no"
+			],
+			"capital": "Oslo",
+			"altSpellings": [
+				"NO",
+				"Norge",
+				"Noreg",
+				"Kingdom of Norway",
+				"Kongeriket Norge",
+				"Kongeriket Noreg"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Norwegen",
+				"es": "Noruega",
+				"fr": "Norvège",
+				"it": "Norvegia",
+				"ja": "ノルウェー",
+				"nl": "Noorwegen",
+				"hr": "Norveška"
+			},
+			"population": 5223256,
+			"latlng": [
+				62,
+				10
+			],
+			"demonym": "Norwegian",
+			"borders": [
+				"FIN",
+				"SWE",
+				"RUS"
+			],
+			"area": 323802,
+			"gini": 25.8,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "kr",
+					"code": "NOK",
+					"name": "Norwegian krone"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "no",
+					"iso639_2": "nor",
+					"name": "Norwegian",
+					"nativeName": "Norsk"
+				},
+				{
+					"iso639_1": "nb",
+					"iso639_2": "nob",
+					"name": "Norwegian Bokmål",
+					"nativeName": "Norsk bokmål"
+				},
+				{
+					"iso639_1": "nn",
+					"iso639_2": "nno",
+					"name": "Norwegian Nynorsk",
+					"nativeName": "Norsk nynorsk"
+				}
+			],
+			"alpha2Code": "NO",
+			"alpha3Code": "NOR",
+			"callingCodes": [
+				"47"
+			],
+			"numericCode": "578"
+		},
+		{
+			"name": "Oman",
+			"nativeName": "عمان",
+			"topLevelDomain": [
+				".om"
+			],
+			"capital": "Muscat",
+			"altSpellings": [
+				"OM",
+				"Sultanate of Oman",
+				"Salṭanat ʻUmān"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Oman",
+				"es": "Omán",
+				"fr": "Oman",
+				"it": "oman",
+				"ja": "オマーン",
+				"nl": "Oman",
+				"hr": "Oman"
+			},
+			"population": 4420133,
+			"latlng": [
+				21,
+				57
+			],
+			"demonym": "Omani",
+			"borders": [
+				"SAU",
+				"ARE",
+				"YEM"
+			],
+			"area": 309500,
+			"gini": null,
+			"timezones": [
+				"UTC+04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ر.ع.",
+					"code": "OMR",
+					"name": "Omani rial"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "OM",
+			"alpha3Code": "OMN",
+			"callingCodes": [
+				"968"
+			],
+			"numericCode": "512"
+		},
+		{
+			"name": "Pakistan",
+			"nativeName": "Pakistan",
+			"topLevelDomain": [
+				".pk"
+			],
+			"capital": "Islamabad",
+			"altSpellings": [
+				"PK",
+				"Pākistān",
+				"Islamic Republic of Pakistan",
+				"Islāmī Jumhūriya'eh Pākistān"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Pakistan",
+				"es": "Pakistán",
+				"fr": "Pakistan",
+				"it": "Pakistan",
+				"ja": "パキスタン",
+				"nl": "Pakistan",
+				"hr": "Pakistan"
+			},
+			"population": 194125062,
+			"latlng": [
+				30,
+				70
+			],
+			"demonym": "Pakistani",
+			"borders": [
+				"AFG",
+				"CHN",
+				"IND",
+				"IRN"
+			],
+			"area": 881912,
+			"gini": 30,
+			"timezones": [
+				"UTC+05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₨",
+					"code": "PKR",
+					"name": "Pakistani rupee"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "ur",
+					"iso639_2": "urd",
+					"name": "Urdu",
+					"nativeName": "اردو"
+				}
+			],
+			"alpha2Code": "PK",
+			"alpha3Code": "PAK",
+			"callingCodes": [
+				"92"
+			],
+			"numericCode": "586"
+		},
+		{
+			"name": "Palau",
+			"nativeName": "Palau",
+			"topLevelDomain": [
+				".pw"
+			],
+			"capital": "Ngerulmud",
+			"altSpellings": [
+				"PW",
+				"Republic of Palau",
+				"Beluu er a Belau"
+			],
+			"region": "Oceania",
+			"subregion": "Micronesia",
+			"translations": {
+				"de": "Palau",
+				"es": "Palau",
+				"fr": "Palaos",
+				"it": "Palau",
+				"ja": "パラオ",
+				"nl": "Palau",
+				"hr": "Palau"
+			},
+			"population": 17950,
+			"latlng": [
+				7.5,
+				134.5
+			],
+			"demonym": "Palauan",
+			"borders": [],
+			"area": 459,
+			"timezones": [
+				"UTC+09:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "(none)",
+					"name": "[E]"
+				},
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "PW",
+			"alpha3Code": "PLW",
+			"callingCodes": [
+				"680"
+			],
+			"numericCode": "585"
+		},
+		{
+			"name": "Palestine, State of",
+			"nativeName": "فلسطين",
+			"topLevelDomain": [
+				".ps"
+			],
+			"capital": "Ramallah",
+			"altSpellings": [
+				"PS",
+				"State of Palestine",
+				"Dawlat Filasṭin"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Palästina",
+				"es": "Palestina",
+				"fr": "Palestine",
+				"it": "Palestina",
+				"ja": "パレスチナ",
+				"nl": "Palestijnse gebieden",
+				"hr": "Palestina"
+			},
+			"population": 4682467,
+			"latlng": [
+				31.9,
+				35.2
+			],
+			"demonym": "Palestinian",
+			"borders": [
+				"ISR",
+				"EGY",
+				"JOR"
+			],
+			"gini": 35.5,
+			"currencies": [
+				{
+					"code": "ILS",
+					"name": "Israeli new sheqel",
+					"symbol": "₪"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "PS",
+			"alpha3Code": "PSE",
+			"callingCodes": [
+				"970"
+			],
+			"numericCode": "275"
+		},
+		{
+			"name": "Panama",
+			"nativeName": "Panamá",
+			"topLevelDomain": [
+				".pa"
+			],
+			"capital": "Panama City",
+			"altSpellings": [
+				"PA",
+				"Republic of Panama",
+				"República de Panamá"
+			],
+			"region": "Americas",
+			"subregion": "Central America",
+			"translations": {
+				"de": "Panama",
+				"es": "Panamá",
+				"fr": "Panama",
+				"it": "Panama",
+				"ja": "パナマ",
+				"nl": "Panama",
+				"hr": "Panama"
+			},
+			"population": 3814672,
+			"latlng": [
+				9,
+				-80
+			],
+			"demonym": "Panamanian",
+			"borders": [
+				"COL",
+				"CRI"
+			],
+			"area": 75417,
+			"gini": 51.9,
+			"timezones": [
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "B/.",
+					"code": "PAB",
+					"name": "Panamanian balboa"
+				},
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "PA",
+			"alpha3Code": "PAN",
+			"callingCodes": [
+				"507"
+			],
+			"numericCode": "591"
+		},
+		{
+			"name": "Papua New Guinea",
+			"nativeName": "Papua Niugini",
+			"topLevelDomain": [
+				".pg"
+			],
+			"capital": "Port Moresby",
+			"altSpellings": [
+				"PG",
+				"Independent State of Papua New Guinea",
+				"Independen Stet bilong Papua Niugini"
+			],
+			"region": "Oceania",
+			"subregion": "Melanesia",
+			"translations": {
+				"de": "Papua-Neuguinea",
+				"es": "Papúa Nueva Guinea",
+				"fr": "Papouasie-Nouvelle-Guinée",
+				"it": "Papua Nuova Guinea",
+				"ja": "パプアニューギニア",
+				"nl": "Papoea-Nieuw-Guinea",
+				"hr": "Papua Nova Gvineja"
+			},
+			"population": 8083700,
+			"latlng": [
+				-6,
+				147
+			],
+			"demonym": "Papua New Guinean",
+			"borders": [
+				"IDN"
+			],
+			"area": 462840,
+			"gini": 50.9,
+			"timezones": [
+				"UTC+10:00"
+			],
+			"currencies": [
+				{
+					"symbol": "K",
+					"code": "PGK",
+					"name": "Papua New Guinean kina"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "PG",
+			"alpha3Code": "PNG",
+			"callingCodes": [
+				"675"
+			],
+			"numericCode": "598"
+		},
+		{
+			"name": "Paraguay",
+			"nativeName": "Paraguay",
+			"topLevelDomain": [
+				".py"
+			],
+			"capital": "Asunción",
+			"altSpellings": [
+				"PY",
+				"Republic of Paraguay",
+				"República del Paraguay",
+				"Tetã Paraguái"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Paraguay",
+				"es": "Paraguay",
+				"fr": "Paraguay",
+				"it": "Paraguay",
+				"ja": "パラグアイ",
+				"nl": "Paraguay",
+				"hr": "Paragvaj"
+			},
+			"population": 6854536,
+			"latlng": [
+				-23,
+				-58
+			],
+			"demonym": "Paraguayan",
+			"borders": [
+				"ARG",
+				"BOL",
+				"BRA"
+			],
+			"area": 406752,
+			"gini": 52.4,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₲",
+					"code": "PYG",
+					"name": "Paraguayan guaraní"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				},
+				{
+					"iso639_1": "gn",
+					"iso639_2": "grn",
+					"name": "Guaraní",
+					"nativeName": "Avañe'ẽ"
+				}
+			],
+			"alpha2Code": "PY",
+			"alpha3Code": "PRY",
+			"callingCodes": [
+				"595"
+			],
+			"numericCode": "600"
+		},
+		{
+			"name": "Peru",
+			"nativeName": "Perú",
+			"topLevelDomain": [
+				".pe"
+			],
+			"capital": "Lima",
+			"altSpellings": [
+				"PE",
+				"Republic of Peru",
+				" República del Perú"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Peru",
+				"es": "Perú",
+				"fr": "Pérou",
+				"it": "Perù",
+				"ja": "ペルー",
+				"nl": "Peru",
+				"hr": "Peru"
+			},
+			"population": 31488700,
+			"latlng": [
+				-10,
+				-76
+			],
+			"demonym": "Peruvian",
+			"borders": [
+				"BOL",
+				"BRA",
+				"CHL",
+				"COL",
+				"ECU"
+			],
+			"area": 1285216,
+			"gini": 48.1,
+			"timezones": [
+				"UTC-05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "S/.",
+					"code": "PEN",
+					"name": "Peruvian nuevo sol"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "PE",
+			"alpha3Code": "PER",
+			"callingCodes": [
+				"51"
+			],
+			"numericCode": "604"
+		},
+		{
+			"name": "Philippines",
+			"nativeName": "Pilipinas",
+			"topLevelDomain": [
+				".ph"
+			],
+			"capital": "Manila",
+			"altSpellings": [
+				"PH",
+				"Republic of the Philippines",
+				"Repúblika ng Pilipinas"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Philippines",
+				"nl": "Filipijnen",
+				"de": "Philippinen",
+				"it": "Filippine",
+				"ja": "フィリピン",
+				"es": "Filipinas",
+				"hr": "Filipini"
+			},
+			"population": 103279800,
+			"latlng": [
+				13,
+				122
+			],
+			"demonym": "Filipino",
+			"borders": [],
+			"area": 342353,
+			"gini": 43,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₱",
+					"code": "PHP",
+					"name": "Philippine peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "PH",
+			"alpha3Code": "PHL",
+			"callingCodes": [
+				"63"
+			],
+			"numericCode": "608"
+		},
+		{
+			"name": "Pitcairn",
+			"nativeName": "Pitcairn Islands",
+			"topLevelDomain": [
+				".pn"
+			],
+			"capital": "Adamstown",
+			"altSpellings": [
+				"PN",
+				"Pitcairn Henderson Ducie and Oeno Islands"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Pitcairn",
+				"es": "Islas Pitcairn",
+				"fr": "Îles Pitcairn",
+				"it": "Isole Pitcairn",
+				"ja": "ピトケアン",
+				"nl": "Pitcairneilanden",
+				"hr": "Pitcairnovo otočje"
+			},
+			"population": 56,
+			"latlng": [
+				-25.06666666,
+				-130.1
+			],
+			"demonym": "Pitcairn Islander",
+			"borders": [],
+			"area": 47,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "NZD",
+					"name": "New Zealand dollar"
+				},
+				{
+					"symbol": "$",
+					"code": null,
+					"name": "Pitcairn Islands dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "PN",
+			"alpha3Code": "PCN",
+			"callingCodes": [
+				"64"
+			],
+			"numericCode": "612"
+		},
+		{
+			"name": "Poland",
+			"nativeName": "Polska",
+			"topLevelDomain": [
+				".pl"
+			],
+			"capital": "Warsaw",
+			"altSpellings": [
+				"PL",
+				"Republic of Poland",
+				"Rzeczpospolita Polska"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Polen",
+				"es": "Polonia",
+				"fr": "Pologne",
+				"it": "Polonia",
+				"ja": "ポーランド",
+				"nl": "Polen",
+				"hr": "Poljska"
+			},
+			"population": 38437239,
+			"latlng": [
+				52,
+				20
+			],
+			"demonym": "Polish",
+			"borders": [
+				"BLR",
+				"CZE",
+				"DEU",
+				"LTU",
+				"RUS",
+				"SVK",
+				"UKR"
+			],
+			"area": 312679,
+			"gini": 34.1,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "zł",
+					"code": "PLN",
+					"name": "Polish złoty"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pl",
+					"iso639_2": "pol",
+					"name": "Polish",
+					"nativeName": "język polski"
+				}
+			],
+			"alpha2Code": "PL",
+			"alpha3Code": "POL",
+			"callingCodes": [
+				"48"
+			],
+			"numericCode": "616"
+		},
+		{
+			"name": "Portugal",
+			"nativeName": "Portugal",
+			"topLevelDomain": [
+				".pt"
+			],
+			"capital": "Lisbon",
+			"altSpellings": [
+				"PT",
+				"Portuguesa",
+				"Portuguese Republic",
+				"República Portuguesa"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Portugal",
+				"es": "Portugal",
+				"fr": "Portugal",
+				"it": "Portogallo",
+				"ja": "ポルトガル",
+				"nl": "Portugal",
+				"hr": "Portugal"
+			},
+			"population": 10374822,
+			"latlng": [
+				39.5,
+				-8
+			],
+			"demonym": "Portuguese",
+			"borders": [
+				"ESP"
+			],
+			"area": 92090,
+			"gini": 38.5,
+			"timezones": [
+				"UTC-01:00",
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "PT",
+			"alpha3Code": "PRT",
+			"callingCodes": [
+				"351"
+			],
+			"numericCode": "620"
+		},
+		{
+			"name": "Puerto Rico",
+			"nativeName": "Puerto Rico",
+			"topLevelDomain": [
+				".pr"
+			],
+			"capital": "San Juan",
+			"altSpellings": [
+				"PR",
+				"Commonwealth of Puerto Rico",
+				"Estado Libre Asociado de Puerto Rico"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Puerto Rico",
+				"es": "Puerto Rico",
+				"fr": "Porto Rico",
+				"it": "Porto Rico",
+				"ja": "プエルトリコ",
+				"nl": "Puerto Rico",
+				"hr": "Portoriko"
+			},
+			"population": 3474182,
+			"latlng": [
+				18.25,
+				-66.5
+			],
+			"demonym": "Puerto Rican",
+			"borders": [],
+			"area": 8870,
+			"currencies": [
+				{
+					"code": "USD",
+					"name": "United States dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "PR",
+			"alpha3Code": "PRI",
+			"callingCodes": [
+				"1787",
+				"1939"
+			],
+			"numericCode": "630"
+		},
+		{
+			"name": "Qatar",
+			"nativeName": "قطر",
+			"topLevelDomain": [
+				".qa"
+			],
+			"capital": "Doha",
+			"altSpellings": [
+				"QA",
+				"State of Qatar",
+				"Dawlat Qaṭar"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Katar",
+				"es": "Catar",
+				"fr": "Qatar",
+				"it": "Qatar",
+				"ja": "カタール",
+				"nl": "Qatar",
+				"hr": "Katar"
+			},
+			"population": 2587564,
+			"latlng": [
+				25.5,
+				51.25
+			],
+			"demonym": "Qatari",
+			"borders": [
+				"SAU"
+			],
+			"area": 11586,
+			"gini": 41.1,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ر.ق",
+					"code": "QAR",
+					"name": "Qatari riyal"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "QA",
+			"alpha3Code": "QAT",
+			"callingCodes": [
+				"974"
+			],
+			"numericCode": "634"
+		},
+		{
+			"name": "Republic of Kosovo",
+			"nativeName": "Republika e Kosovës",
+			"topLevelDomain": [
+				""
+			],
+			"capital": "Pristina",
+			"altSpellings": [
+				"XK",
+				"Република Косово"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"es": "Kosovo",
+				"hr": "Kosovo"
+			},
+			"population": 1733842,
+			"latlng": [
+				42.666667,
+				21.166667
+			],
+			"demonym": "Kosovar",
+			"borders": [
+				"ALB",
+				"MKD",
+				"MNE",
+				"SRB"
+			],
+			"area": 10908,
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sq",
+					"iso639_2": "sqi",
+					"name": "Albanian",
+					"nativeName": "Shqip"
+				},
+				{
+					"iso639_1": "sr",
+					"iso639_2": "srp",
+					"name": "Serbian",
+					"nativeName": "српски језик"
+				}
+			],
+			"alpha2Code": "XK",
+			"alpha3Code": "KOS",
+			"callingCodes": [
+				"383"
+			]
+		},
+		{
+			"name": "Réunion",
+			"nativeName": "La Réunion",
+			"topLevelDomain": [
+				".re"
+			],
+			"capital": "Saint-Denis",
+			"altSpellings": [
+				"RE",
+				"Reunion"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Réunion",
+				"es": "Reunión",
+				"fr": "Réunion",
+				"it": "Riunione",
+				"ja": "レユニオン",
+				"nl": "Réunion",
+				"hr": "Réunion"
+			},
+			"population": 840974,
+			"latlng": [
+				-21.15,
+				55.5
+			],
+			"demonym": "French",
+			"borders": [],
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "RE",
+			"alpha3Code": "REU",
+			"callingCodes": [
+				"262"
+			],
+			"numericCode": "638"
+		},
+		{
+			"name": "Romania",
+			"nativeName": "România",
+			"topLevelDomain": [
+				".ro"
+			],
+			"capital": "Bucharest",
+			"altSpellings": [
+				"RO",
+				"Rumania",
+				"Roumania",
+				"România"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Rumänien",
+				"es": "Rumania",
+				"fr": "Roumanie",
+				"it": "Romania",
+				"ja": "ルーマニア",
+				"nl": "Roemenië",
+				"hr": "Rumunjska"
+			},
+			"population": 19861408,
+			"latlng": [
+				46,
+				25
+			],
+			"demonym": "Romanian",
+			"borders": [
+				"BGR",
+				"HUN",
+				"MDA",
+				"SRB",
+				"UKR"
+			],
+			"area": 238391,
+			"gini": 30,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "lei",
+					"code": "RON",
+					"name": "Romanian leu"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ro",
+					"iso639_2": "ron",
+					"name": "Romanian",
+					"nativeName": "Română"
+				}
+			],
+			"alpha2Code": "RO",
+			"alpha3Code": "ROU",
+			"callingCodes": [
+				"40"
+			],
+			"numericCode": "642"
+		},
+		{
+			"name": "Russian Federation",
+			"nativeName": "Россия",
+			"topLevelDomain": [
+				".ru"
+			],
+			"capital": "Moscow",
+			"altSpellings": [
+				"RU",
+				"Rossiya",
+				"Russian Federation",
+				"Российская Федерация",
+				"Rossiyskaya Federatsiya"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Russland",
+				"es": "Rusia",
+				"fr": "Russie",
+				"it": "Russia",
+				"ja": "ロシア連邦",
+				"nl": "Rusland",
+				"hr": "Rusija"
+			},
+			"population": 146599183,
+			"latlng": [
+				60,
+				100
+			],
+			"demonym": "Russian",
+			"borders": [
+				"AZE",
+				"BLR",
+				"CHN",
+				"EST",
+				"FIN",
+				"GEO",
+				"KAZ",
+				"PRK",
+				"LVA",
+				"LTU",
+				"MNG",
+				"NOR",
+				"POL",
+				"UKR"
+			],
+			"area": 17124442,
+			"gini": 40.1,
+			"timezones": [
+				"UTC+03:00",
+				"UTC+04:00",
+				"UTC+06:00",
+				"UTC+07:00",
+				"UTC+08:00",
+				"UTC+09:00",
+				"UTC+10:00",
+				"UTC+11:00",
+				"UTC+12:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "RUB",
+					"name": "Russian ruble"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "RU",
+			"alpha3Code": "RUS",
+			"callingCodes": [
+				"7"
+			],
+			"numericCode": "643"
+		},
+		{
+			"name": "Rwanda",
+			"nativeName": "Rwanda",
+			"topLevelDomain": [
+				".rw"
+			],
+			"capital": "Kigali",
+			"altSpellings": [
+				"RW",
+				"Republic of Rwanda",
+				"Repubulika y'u Rwanda",
+				"République du Rwanda"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Ruanda",
+				"es": "Ruanda",
+				"fr": "Rwanda",
+				"it": "Ruanda",
+				"ja": "ルワンダ",
+				"nl": "Rwanda",
+				"hr": "Ruanda"
+			},
+			"population": 11553188,
+			"latlng": [
+				-2,
+				30
+			],
+			"demonym": "Rwandan",
+			"borders": [
+				"BDI",
+				"COD",
+				"TZA",
+				"UGA"
+			],
+			"area": 26338,
+			"gini": 50.8,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "RWF",
+					"name": "Rwandan franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "rw",
+					"iso639_2": "kin",
+					"name": "Kinyarwanda",
+					"nativeName": "Ikinyarwanda"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "RW",
+			"alpha3Code": "RWA",
+			"callingCodes": [
+				"250"
+			],
+			"numericCode": "646"
+		},
+		{
+			"name": "Saint Barthélemy",
+			"nativeName": "Saint-Barthélemy",
+			"topLevelDomain": [
+				".bl"
+			],
+			"capital": "Gustavia",
+			"altSpellings": [
+				"BL",
+				"St. Barthelemy",
+				"Collectivity of Saint Barthélemy",
+				"Collectivité de Saint-Barthélemy"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Saint-Barthélemy",
+				"es": "San Bartolomé",
+				"fr": "Saint-Barthélemy",
+				"it": "Antille Francesi",
+				"ja": "サン・バルテルミー",
+				"nl": "Saint Barthélemy",
+				"hr": "Saint Barthélemy"
+			},
+			"population": 9417,
+			"latlng": [
+				18.5,
+				-63.41666666
+			],
+			"demonym": "Saint Barthélemy Islander",
+			"borders": [],
+			"area": 21,
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "BL",
+			"alpha3Code": "BLM",
+			"callingCodes": [
+				"590"
+			],
+			"numericCode": "652"
+		},
+		{
+			"name": "Saint Helena, Ascension and Tristan da Cunha",
+			"nativeName": "Saint Helena",
+			"topLevelDomain": [
+				".sh"
+			],
+			"capital": "Jamestown",
+			"altSpellings": [
+				"SH"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Sankt Helena",
+				"es": "Santa Helena",
+				"fr": "Sainte-Hélène",
+				"it": "Sant'Elena",
+				"ja": "セントヘレナ・アセンションおよびトリスタンダクーニャ",
+				"nl": "Sint-Helena",
+				"hr": "Sveta Helena"
+			},
+			"population": 4255,
+			"latlng": [
+				-15.95,
+				-5.7
+			],
+			"demonym": "Saint Helenian",
+			"borders": [],
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "SHP",
+					"name": "Saint Helena pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "SH",
+			"alpha3Code": "SHN",
+			"callingCodes": [
+				"290"
+			],
+			"numericCode": "654"
+		},
+		{
+			"name": "Saint Kitts and Nevis",
+			"nativeName": "Saint Kitts and Nevis",
+			"topLevelDomain": [
+				".kn"
+			],
+			"capital": "Basseterre",
+			"altSpellings": [
+				"KN",
+				"Federation of Saint Christopher and Nevis"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "St. Kitts und Nevis",
+				"es": "San Cristóbal y Nieves",
+				"fr": "Saint-Christophe-et-Niévès",
+				"it": "Saint Kitts e Nevis",
+				"ja": "セントクリストファー・ネイビス",
+				"nl": "Saint Kitts en Nevis",
+				"hr": "Sveti Kristof i Nevis"
+			},
+			"population": 46204,
+			"latlng": [
+				17.33333333,
+				-62.75
+			],
+			"demonym": "Kittian and Nevisian",
+			"borders": [],
+			"area": 261,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "KN",
+			"alpha3Code": "KNA",
+			"callingCodes": [
+				"1869"
+			],
+			"numericCode": "659"
+		},
+		{
+			"name": "Saint Lucia",
+			"nativeName": "Saint Lucia",
+			"topLevelDomain": [
+				".lc"
+			],
+			"capital": "Castries",
+			"altSpellings": [
+				"LC"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Saint Lucia",
+				"es": "Santa Lucía",
+				"fr": "Saint-Lucie",
+				"it": "Santa Lucia",
+				"ja": "セントルシア",
+				"nl": "Saint Lucia",
+				"hr": "Sveta Lucija"
+			},
+			"population": 186000,
+			"latlng": [
+				13.88333333,
+				-60.96666666
+			],
+			"demonym": "Saint Lucian",
+			"borders": [],
+			"area": 616,
+			"gini": 42.6,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "LC",
+			"alpha3Code": "LCA",
+			"callingCodes": [
+				"1758"
+			],
+			"numericCode": "662"
+		},
+		{
+			"name": "Saint Martin (French part)",
+			"nativeName": "Saint-Martin",
+			"topLevelDomain": [
+				".mf",
+				".fr",
+				".gp"
+			],
+			"capital": "Marigot",
+			"altSpellings": [
+				"MF",
+				"Collectivity of Saint Martin",
+				"Collectivité de Saint-Martin"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Saint Martin",
+				"es": "Saint Martin",
+				"fr": "Saint-Martin",
+				"it": "Saint Martin",
+				"ja": "サン・マルタン（フランス領）",
+				"nl": "Saint-Martin",
+				"hr": "Sveti Martin"
+			},
+			"population": 36979,
+			"latlng": [
+				18.08333333,
+				-63.95
+			],
+			"demonym": "Saint Martin Islander",
+			"borders": [
+				"SXM",
+				"NLD"
+			],
+			"area": 53,
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				}
+			],
+			"alpha2Code": "MF",
+			"alpha3Code": "MAF",
+			"callingCodes": [
+				"590"
+			],
+			"numericCode": "663"
+		},
+		{
+			"name": "Saint Pierre and Miquelon",
+			"nativeName": "Saint-Pierre-et-Miquelon",
+			"topLevelDomain": [
+				".pm"
+			],
+			"capital": "Saint-Pierre",
+			"altSpellings": [
+				"PM",
+				"Collectivité territoriale de Saint-Pierre-et-Miquelon"
+			],
+			"region": "Americas",
+			"subregion": "Northern America",
+			"translations": {
+				"de": "Saint-Pierre und Miquelon",
+				"es": "San Pedro y Miquelón",
+				"fr": "Saint-Pierre-et-Miquelon",
+				"it": "Saint-Pierre e Miquelon",
+				"ja": "サンピエール島・ミクロン島",
+				"nl": "Saint Pierre en Miquelon",
+				"hr": "Sveti Petar i Mikelon"
+			},
+			"population": 6069,
+			"latlng": [
+				46.83333333,
+				-56.33333333
+			],
+			"demonym": "French",
+			"borders": [],
+			"area": 242,
+			"currencies": [
+				{
+					"code": "EUR",
+					"name": "Euro",
+					"symbol": "€"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "PM",
+			"alpha3Code": "SPM",
+			"callingCodes": [
+				"508"
+			],
+			"numericCode": "666"
+		},
+		{
+			"name": "Saint Vincent and the Grenadines",
+			"nativeName": "Saint Vincent and the Grenadines",
+			"topLevelDomain": [
+				".vc"
+			],
+			"capital": "Kingstown",
+			"altSpellings": [
+				"VC"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Saint Vincent und die Grenadinen",
+				"es": "San Vicente y Granadinas",
+				"fr": "Saint-Vincent-et-les-Grenadines",
+				"it": "Saint Vincent e Grenadine",
+				"ja": "セントビンセントおよびグレナディーン諸島",
+				"nl": "Saint Vincent en de Grenadines",
+				"hr": "Sveti Vincent i Grenadini"
+			},
+			"population": 109991,
+			"latlng": [
+				13.25,
+				-61.2
+			],
+			"demonym": "Saint Vincentian",
+			"borders": [],
+			"area": 389,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "XCD",
+					"name": "East Caribbean dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "VC",
+			"alpha3Code": "VCT",
+			"callingCodes": [
+				"1784"
+			],
+			"numericCode": "670"
+		},
+		{
+			"name": "Samoa",
+			"nativeName": "Samoa",
+			"topLevelDomain": [
+				".ws"
+			],
+			"capital": "Apia",
+			"altSpellings": [
+				"WS",
+				"Independent State of Samoa",
+				"Malo Saʻoloto Tutoʻatasi o Sāmoa"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Samoa",
+				"es": "Samoa",
+				"fr": "Samoa",
+				"it": "Samoa",
+				"ja": "サモア",
+				"nl": "Samoa",
+				"hr": "Samoa"
+			},
+			"population": 194899,
+			"latlng": [
+				-13.58333333,
+				-172.33333333
+			],
+			"demonym": "Samoan",
+			"borders": [],
+			"area": 2842,
+			"timezones": [
+				"UTC+13:00"
+			],
+			"currencies": [
+				{
+					"symbol": "T",
+					"code": "WST",
+					"name": "Samoan tālā"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sm",
+					"iso639_2": "smo",
+					"name": "Samoan",
+					"nativeName": "gagana fa'a Samoa"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "WS",
+			"alpha3Code": "WSM",
+			"callingCodes": [
+				"685"
+			],
+			"numericCode": "882"
+		},
+		{
+			"name": "San Marino",
+			"nativeName": "San Marino",
+			"topLevelDomain": [
+				".sm"
+			],
+			"capital": "City of San Marino",
+			"altSpellings": [
+				"SM",
+				"Republic of San Marino",
+				"Repubblica di San Marino"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "San Marino",
+				"es": "San Marino",
+				"fr": "Saint-Marin",
+				"it": "San Marino",
+				"ja": "サンマリノ",
+				"nl": "San Marino",
+				"hr": "San Marino"
+			},
+			"population": 33005,
+			"latlng": [
+				43.76666666,
+				12.41666666
+			],
+			"demonym": "Sammarinese",
+			"borders": [
+				"ITA"
+			],
+			"area": 61,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "it",
+					"iso639_2": "ita",
+					"name": "Italian",
+					"nativeName": "italiano"
+				}
+			],
+			"alpha2Code": "SM",
+			"alpha3Code": "SMR",
+			"callingCodes": [
+				"378"
+			],
+			"numericCode": "674"
+		},
+		{
+			"name": "Sao Tome and Principe",
+			"nativeName": "São Tomé e Príncipe",
+			"topLevelDomain": [
+				".st"
+			],
+			"capital": "São Tomé",
+			"altSpellings": [
+				"ST",
+				"Democratic Republic of São Tomé and Príncipe",
+				"República Democrática de São Tomé e Príncipe"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"de": "São Tomé und Príncipe",
+				"es": "Santo Tomé y Príncipe",
+				"fr": "Sao Tomé-et-Principe",
+				"it": "São Tomé e Príncipe",
+				"ja": "サントメ・プリンシペ",
+				"nl": "Sao Tomé en Principe",
+				"hr": "Sveti Toma i Princip"
+			},
+			"population": 187356,
+			"latlng": [
+				1,
+				7
+			],
+			"demonym": "Sao Tomean",
+			"borders": [],
+			"area": 964,
+			"gini": 50.8,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Db",
+					"code": "STD",
+					"name": "São Tomé and Príncipe dobra"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "ST",
+			"alpha3Code": "STP",
+			"callingCodes": [
+				"239"
+			],
+			"numericCode": "678"
+		},
+		{
+			"name": "Saudi Arabia",
+			"nativeName": "العربية السعودية",
+			"topLevelDomain": [
+				".sa"
+			],
+			"capital": "Riyadh",
+			"altSpellings": [
+				"SA",
+				"Kingdom of Saudi Arabia",
+				"Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Saudi-Arabien",
+				"es": "Arabia Saudí",
+				"fr": "Arabie Saoudite",
+				"it": "Arabia Saudita",
+				"ja": "サウジアラビア",
+				"nl": "Saoedi-Arabië",
+				"hr": "Saudijska Arabija"
+			},
+			"population": 32248200,
+			"latlng": [
+				25,
+				45
+			],
+			"demonym": "Saudi Arabian",
+			"borders": [
+				"IRQ",
+				"JOR",
+				"KWT",
+				"OMN",
+				"QAT",
+				"ARE",
+				"YEM"
+			],
+			"area": 2149690,
+			"gini": null,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ر.س",
+					"code": "SAR",
+					"name": "Saudi riyal"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "SA",
+			"alpha3Code": "SAU",
+			"callingCodes": [
+				"966"
+			],
+			"numericCode": "682"
+		},
+		{
+			"name": "Senegal",
+			"nativeName": "Sénégal",
+			"topLevelDomain": [
+				".sn"
+			],
+			"capital": "Dakar",
+			"altSpellings": [
+				"SN",
+				"Republic of Senegal",
+				"République du Sénégal"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Senegal",
+				"es": "Senegal",
+				"fr": "Sénégal",
+				"it": "Senegal",
+				"ja": "セネガル",
+				"nl": "Senegal",
+				"hr": "Senegal"
+			},
+			"population": 14799859,
+			"latlng": [
+				14,
+				-14
+			],
+			"demonym": "Senegalese",
+			"borders": [
+				"GMB",
+				"GIN",
+				"GNB",
+				"MLI",
+				"MRT"
+			],
+			"area": 196722,
+			"gini": 39.2,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "SN",
+			"alpha3Code": "SEN",
+			"callingCodes": [
+				"221"
+			],
+			"numericCode": "686"
+		},
+		{
+			"name": "Serbia",
+			"nativeName": "Србија",
+			"topLevelDomain": [
+				".rs"
+			],
+			"capital": "Belgrade",
+			"altSpellings": [
+				"RS",
+				"Srbija",
+				"Republic of Serbia",
+				"Република Србија",
+				"Republika Srbija"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Serbien",
+				"es": "Serbia",
+				"fr": "Serbie",
+				"it": "Serbia",
+				"ja": "セルビア",
+				"nl": "Servië",
+				"hr": "Srbija"
+			},
+			"population": 7076372,
+			"latlng": [
+				44,
+				21
+			],
+			"demonym": "Serbian",
+			"borders": [
+				"BIH",
+				"BGR",
+				"HRV",
+				"HUN",
+				"KOS",
+				"MKD",
+				"MNE",
+				"ROU"
+			],
+			"area": 88361,
+			"gini": 27.8,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "дин.",
+					"code": "RSD",
+					"name": "Serbian dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sr",
+					"iso639_2": "srp",
+					"name": "Serbian",
+					"nativeName": "српски језик"
+				}
+			],
+			"alpha2Code": "RS",
+			"alpha3Code": "SRB",
+			"callingCodes": [
+				"381"
+			],
+			"numericCode": "688"
+		},
+		{
+			"name": "Seychelles",
+			"nativeName": "Seychelles",
+			"topLevelDomain": [
+				".sc"
+			],
+			"capital": "Victoria",
+			"altSpellings": [
+				"SC",
+				"Republic of Seychelles",
+				"Repiblik Sesel",
+				"République des Seychelles"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Seychellen",
+				"es": "Seychelles",
+				"fr": "Seychelles",
+				"it": "Seychelles",
+				"ja": "セーシェル",
+				"nl": "Seychellen",
+				"hr": "Sejšeli"
+			},
+			"population": 91400,
+			"latlng": [
+				-4.58333333,
+				55.66666666
+			],
+			"demonym": "Seychellois",
+			"borders": [],
+			"area": 452,
+			"gini": 65.8,
+			"timezones": [
+				"UTC+04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₨",
+					"code": "SCR",
+					"name": "Seychellois rupee"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "SC",
+			"alpha3Code": "SYC",
+			"callingCodes": [
+				"248"
+			],
+			"numericCode": "690"
+		},
+		{
+			"name": "Sierra Leone",
+			"nativeName": "Sierra Leone",
+			"topLevelDomain": [
+				".sl"
+			],
+			"capital": "Freetown",
+			"altSpellings": [
+				"SL",
+				"Republic of Sierra Leone"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Sierra Leone",
+				"es": "Sierra Leone",
+				"fr": "Sierra Leone",
+				"it": "Sierra Leone",
+				"ja": "シエラレオネ",
+				"nl": "Sierra Leone",
+				"hr": "Sijera Leone"
+			},
+			"population": 7075641,
+			"latlng": [
+				8.5,
+				-11.5
+			],
+			"demonym": "Sierra Leonean",
+			"borders": [
+				"GIN",
+				"LBR"
+			],
+			"area": 71740,
+			"gini": 42.5,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Le",
+					"code": "SLL",
+					"name": "Sierra Leonean leone"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "SL",
+			"alpha3Code": "SLE",
+			"callingCodes": [
+				"232"
+			],
+			"numericCode": "694"
+		},
+		{
+			"name": "Singapore",
+			"nativeName": "Singapore",
+			"topLevelDomain": [
+				".sg"
+			],
+			"capital": "Singapore",
+			"altSpellings": [
+				"SG",
+				"Singapura",
+				"Republik Singapura",
+				"新加坡共和国"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Singapour",
+				"nl": "Singapore",
+				"de": "Singapur",
+				"it": "Singapore",
+				"ja": "シンガポール",
+				"es": "Singapur",
+				"hr": "Singapur"
+			},
+			"population": 5535000,
+			"latlng": [
+				1.36666666,
+				103.8
+			],
+			"demonym": "Singaporean",
+			"borders": [],
+			"area": 710,
+			"gini": 48.1,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "BND",
+					"name": "Brunei dollar"
+				},
+				{
+					"symbol": "$",
+					"code": "SGD",
+					"name": "Singapore dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "ms",
+					"iso639_2": "msa",
+					"name": "Malay",
+					"nativeName": "bahasa Melayu"
+				},
+				{
+					"iso639_1": "ta",
+					"iso639_2": "tam",
+					"name": "Tamil",
+					"nativeName": "தமிழ்"
+				},
+				{
+					"iso639_1": "zh",
+					"iso639_2": "zho",
+					"name": "Chinese",
+					"nativeName": "中文 (Zhōngwén)"
+				}
+			],
+			"alpha2Code": "SG",
+			"alpha3Code": "SGP",
+			"callingCodes": [
+				"65"
+			],
+			"numericCode": "702"
+		},
+		{
+			"name": "Sint Maarten (Dutch part)",
+			"nativeName": "Sint Maarten",
+			"topLevelDomain": [
+				".sx"
+			],
+			"capital": "Philipsburg",
+			"altSpellings": [
+				"SX"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"nl": "Sint Maarten"
+			},
+			"population": 38247,
+			"latlng": [
+				18.033333,
+				-63.05
+			],
+			"demonym": "Dutch",
+			"borders": [
+				"MAF"
+			],
+			"area": 34,
+			"currencies": [
+				{
+					"symbol": "ƒ",
+					"code": "ANG",
+					"name": "Netherlands Antillean guilder"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "SX",
+			"alpha3Code": "SXM",
+			"callingCodes": [
+				"1721"
+			],
+			"numericCode": "534"
+		},
+		{
+			"name": "Slovakia",
+			"nativeName": "Slovensko",
+			"topLevelDomain": [
+				".sk"
+			],
+			"capital": "Bratislava",
+			"altSpellings": [
+				"SK",
+				"Slovak Republic",
+				"Slovenská republika"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Slowakei",
+				"es": "República Eslovaca",
+				"fr": "Slovaquie",
+				"it": "Slovacchia",
+				"ja": "スロバキア",
+				"nl": "Slowakije",
+				"hr": "Slovačka"
+			},
+			"population": 5426252,
+			"latlng": [
+				48.66666666,
+				19.5
+			],
+			"demonym": "Slovak",
+			"borders": [
+				"AUT",
+				"CZE",
+				"HUN",
+				"POL",
+				"UKR"
+			],
+			"area": 49037,
+			"gini": 26,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sk",
+					"iso639_2": "slk",
+					"name": "Slovak",
+					"nativeName": "slovenčina"
+				}
+			],
+			"alpha2Code": "SK",
+			"alpha3Code": "SVK",
+			"callingCodes": [
+				"421"
+			],
+			"numericCode": "703"
+		},
+		{
+			"name": "Slovenia",
+			"nativeName": "Slovenija",
+			"topLevelDomain": [
+				".si"
+			],
+			"capital": "Ljubljana",
+			"altSpellings": [
+				"SI",
+				"Republic of Slovenia",
+				"Republika Slovenija"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Slowenien",
+				"es": "Eslovenia",
+				"fr": "Slovénie",
+				"it": "Slovenia",
+				"ja": "スロベニア",
+				"nl": "Slovenië",
+				"hr": "Slovenija"
+			},
+			"population": 2064188,
+			"latlng": [
+				46.11666666,
+				14.81666666
+			],
+			"demonym": "Slovene",
+			"borders": [
+				"AUT",
+				"HRV",
+				"ITA",
+				"HUN"
+			],
+			"area": 20273,
+			"gini": 31.2,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sl",
+					"iso639_2": "slv",
+					"name": "Slovene",
+					"nativeName": "slovenski jezik"
+				}
+			],
+			"alpha2Code": "SI",
+			"alpha3Code": "SVN",
+			"callingCodes": [
+				"386"
+			],
+			"numericCode": "705"
+		},
+		{
+			"name": "Solomon Islands",
+			"nativeName": "Solomon Islands",
+			"topLevelDomain": [
+				".sb"
+			],
+			"capital": "Honiara",
+			"altSpellings": [
+				"SB"
+			],
+			"region": "Oceania",
+			"subregion": "Melanesia",
+			"translations": {
+				"de": "Salomonen",
+				"es": "Islas Salomón",
+				"fr": "Îles Salomon",
+				"it": "Isole Salomone",
+				"ja": "ソロモン諸島",
+				"nl": "Salomonseilanden",
+				"hr": "Solomonski Otoci"
+			},
+			"population": 642000,
+			"latlng": [
+				-8,
+				159
+			],
+			"demonym": "Solomon Islander",
+			"borders": [],
+			"area": 28896,
+			"timezones": [
+				"UTC+11:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "SBD",
+					"name": "Solomon Islands dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "SB",
+			"alpha3Code": "SLB",
+			"callingCodes": [
+				"677"
+			],
+			"numericCode": "090"
+		},
+		{
+			"name": "Somalia",
+			"nativeName": "Soomaaliya",
+			"topLevelDomain": [
+				".so"
+			],
+			"capital": "Mogadishu",
+			"altSpellings": [
+				"SO",
+				"aṣ-Ṣūmāl",
+				"Federal Republic of Somalia",
+				"Jamhuuriyadda Federaalka Soomaaliya",
+				"Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Somalia",
+				"es": "Somalia",
+				"fr": "Somalie",
+				"it": "Somalia",
+				"ja": "ソマリア",
+				"nl": "Somalië",
+				"hr": "Somalija"
+			},
+			"population": 11079000,
+			"latlng": [
+				10,
+				49
+			],
+			"demonym": "Somali",
+			"borders": [
+				"DJI",
+				"ETH",
+				"KEN"
+			],
+			"area": 637657,
+			"gini": null,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Sh",
+					"code": "SOS",
+					"name": "Somali shilling"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "so",
+					"iso639_2": "som",
+					"name": "Somali",
+					"nativeName": "Soomaaliga"
+				},
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "SO",
+			"alpha3Code": "SOM",
+			"callingCodes": [
+				"252"
+			],
+			"numericCode": "706"
+		},
+		{
+			"name": "South Africa",
+			"nativeName": "South Africa",
+			"topLevelDomain": [
+				".za"
+			],
+			"capital": "Pretoria",
+			"altSpellings": [
+				"ZA",
+				"RSA",
+				"Suid-Afrika",
+				"Republic of South Africa"
+			],
+			"region": "Africa",
+			"subregion": "Southern Africa",
+			"translations": {
+				"de": "Republik Südafrika",
+				"es": "República de Sudáfrica",
+				"fr": "Afrique du Sud",
+				"it": "Sud Africa",
+				"ja": "南アフリカ",
+				"nl": "Zuid-Afrika",
+				"hr": "Južnoafrička Republika"
+			},
+			"population": 55653654,
+			"latlng": [
+				-29,
+				24
+			],
+			"demonym": "South African",
+			"borders": [
+				"BWA",
+				"LSO",
+				"MOZ",
+				"NAM",
+				"SWZ",
+				"ZWE"
+			],
+			"area": 1221037,
+			"gini": 63.1,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "R",
+					"code": "ZAR",
+					"name": "South African rand"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "af",
+					"iso639_2": "afr",
+					"name": "Afrikaans",
+					"nativeName": "Afrikaans"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "nr",
+					"iso639_2": "nbl",
+					"name": "Southern Ndebele",
+					"nativeName": "isiNdebele"
+				},
+				{
+					"iso639_1": "st",
+					"iso639_2": "sot",
+					"name": "Southern Sotho",
+					"nativeName": "Sesotho"
+				},
+				{
+					"iso639_1": "ss",
+					"iso639_2": "ssw",
+					"name": "Swati",
+					"nativeName": "SiSwati"
+				},
+				{
+					"iso639_1": "tn",
+					"iso639_2": "tsn",
+					"name": "Tswana",
+					"nativeName": "Setswana"
+				},
+				{
+					"iso639_1": "ts",
+					"iso639_2": "tso",
+					"name": "Tsonga",
+					"nativeName": "Xitsonga"
+				},
+				{
+					"iso639_1": "ve",
+					"iso639_2": "ven",
+					"name": "Venda",
+					"nativeName": "Tshivenḓa"
+				},
+				{
+					"iso639_1": "xh",
+					"iso639_2": "xho",
+					"name": "Xhosa",
+					"nativeName": "isiXhosa"
+				},
+				{
+					"iso639_1": "zu",
+					"iso639_2": "zul",
+					"name": "Zulu",
+					"nativeName": "isiZulu"
+				}
+			],
+			"alpha2Code": "ZA",
+			"alpha3Code": "ZAF",
+			"callingCodes": [
+				"27"
+			],
+			"numericCode": "710"
+		},
+		{
+			"name": "South Georgia and the South Sandwich Islands",
+			"nativeName": "South Georgia",
+			"topLevelDomain": [
+				".gs"
+			],
+			"capital": "King Edward Point",
+			"altSpellings": [
+				"GS",
+				"South Georgia and the South Sandwich Islands"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Südgeorgien und die Südlichen Sandwichinseln",
+				"es": "Islas Georgias del Sur y Sandwich del Sur",
+				"fr": "Géorgie du Sud-et-les Îles Sandwich du Sud",
+				"it": "Georgia del Sud e Isole Sandwich Meridionali",
+				"ja": "サウスジョージア・サウスサンドウィッチ諸島",
+				"nl": "Zuid-Georgia en Zuidelijke Sandwicheilanden",
+				"hr": "Južna Georgija i otočje Južni Sandwich"
+			},
+			"population": 30,
+			"latlng": [
+				-54.5,
+				-37
+			],
+			"demonym": "South Georgia and the South Sandwich Islander",
+			"borders": [],
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "GBP",
+					"name": "British pound"
+				},
+				{
+					"symbol": "£",
+					"code": "(none)",
+					"name": null
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "GS",
+			"alpha3Code": "SGS",
+			"callingCodes": [
+				"500"
+			],
+			"numericCode": "239"
+		},
+		{
+			"name": "Korea (Republic of)",
+			"nativeName": "대한민국",
+			"topLevelDomain": [
+				".kr"
+			],
+			"capital": "Seoul",
+			"altSpellings": [
+				"KR",
+				"Republic of Korea"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "Südkorea",
+				"es": "Corea del Sur",
+				"fr": "Corée du Sud",
+				"it": "Corea del Sud",
+				"ja": "大韓民国",
+				"nl": "Zuid-Korea",
+				"hr": "Južna Koreja"
+			},
+			"population": 50801405,
+			"latlng": [
+				37,
+				127.5
+			],
+			"demonym": "South Korean",
+			"borders": [
+				"PRK"
+			],
+			"area": 100210,
+			"gini": 31.3,
+			"timezones": [
+				"UTC+09:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₩",
+					"code": "KRW",
+					"name": "South Korean won"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ko",
+					"iso639_2": "kor",
+					"name": "Korean",
+					"nativeName": "한국어"
+				}
+			],
+			"alpha2Code": "KR",
+			"alpha3Code": "KOR",
+			"callingCodes": [
+				"82"
+			],
+			"numericCode": "410"
+		},
+		{
+			"name": "South Sudan",
+			"nativeName": "South Sudan",
+			"topLevelDomain": [
+				".ss"
+			],
+			"capital": "Juba",
+			"altSpellings": [
+				"SS"
+			],
+			"region": "Africa",
+			"subregion": "Middle Africa",
+			"translations": {
+				"fr": "Soudan du Sud",
+				"nl": "Zuid-Soedan",
+				"de": "Südsudan",
+				"it": "Sudan del sud",
+				"ja": "南スーダン",
+				"es": "Sudán del Sur",
+				"hr": "Južni Sudan"
+			},
+			"population": 12131000,
+			"latlng": [
+				7,
+				30
+			],
+			"demonym": "South Sudanese",
+			"borders": [
+				"CAF",
+				"COD",
+				"ETH",
+				"KEN",
+				"SDN",
+				"UGA"
+			],
+			"area": 619745,
+			"gini": 45.5,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "SSP",
+					"name": "South Sudanese pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "SS",
+			"alpha3Code": "SSD",
+			"callingCodes": [
+				"211"
+			],
+			"numericCode": "728"
+		},
+		{
+			"name": "Spain",
+			"nativeName": "España",
+			"topLevelDomain": [
+				".es"
+			],
+			"capital": "Madrid",
+			"altSpellings": [
+				"ES",
+				"Kingdom of Spain",
+				"Reino de España"
+			],
+			"region": "Europe",
+			"subregion": "Southern Europe",
+			"translations": {
+				"de": "Spanien",
+				"es": "España",
+				"fr": "Espagne",
+				"it": "Spagna",
+				"ja": "スペイン",
+				"nl": "Spanje",
+				"hr": "Španjolska"
+			},
+			"population": 46438422,
+			"latlng": [
+				40,
+				-4
+			],
+			"demonym": "Spanish",
+			"borders": [
+				"AND",
+				"FRA",
+				"GIB",
+				"PRT",
+				"MAR"
+			],
+			"area": 505992,
+			"gini": 34.7,
+			"timezones": [
+				"UTC",
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "ES",
+			"alpha3Code": "ESP",
+			"callingCodes": [
+				"34"
+			],
+			"numericCode": "724"
+		},
+		{
+			"name": "Sri Lanka",
+			"nativeName": "śrī laṃkāva",
+			"topLevelDomain": [
+				".lk"
+			],
+			"capital": "Colombo",
+			"altSpellings": [
+				"LK",
+				"ilaṅkai",
+				"Democratic Socialist Republic of Sri Lanka"
+			],
+			"region": "Asia",
+			"subregion": "Southern Asia",
+			"translations": {
+				"de": "Sri Lanka",
+				"es": "Sri Lanka",
+				"fr": "Sri Lanka",
+				"it": "Sri Lanka",
+				"ja": "スリランカ",
+				"nl": "Sri Lanka",
+				"hr": "Šri Lanka"
+			},
+			"population": 20966000,
+			"latlng": [
+				7,
+				81
+			],
+			"demonym": "Sri Lankan",
+			"borders": [
+				"IND"
+			],
+			"area": 65610,
+			"gini": 40.3,
+			"timezones": [
+				"UTC+05:30"
+			],
+			"currencies": [
+				{
+					"symbol": "Rs",
+					"code": "LKR",
+					"name": "Sri Lankan rupee"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "si",
+					"iso639_2": "sin",
+					"name": "Sinhalese",
+					"nativeName": "සිංහල"
+				},
+				{
+					"iso639_1": "ta",
+					"iso639_2": "tam",
+					"name": "Tamil",
+					"nativeName": "தமிழ்"
+				}
+			],
+			"alpha2Code": "LK",
+			"alpha3Code": "LKA",
+			"callingCodes": [
+				"94"
+			],
+			"numericCode": "144"
+		},
+		{
+			"name": "Sudan",
+			"nativeName": "السودان",
+			"topLevelDomain": [
+				".sd"
+			],
+			"capital": "Khartoum",
+			"altSpellings": [
+				"SD",
+				"Republic of the Sudan",
+				"Jumhūrīyat as-Sūdān"
+			],
+			"region": "Africa",
+			"subregion": "Northern Africa",
+			"translations": {
+				"de": "Sudan",
+				"es": "Sudán",
+				"fr": "Soudan",
+				"it": "Sudan",
+				"ja": "スーダン",
+				"nl": "Soedan",
+				"hr": "Sudan"
+			},
+			"population": 39598700,
+			"latlng": [
+				15,
+				30
+			],
+			"demonym": "Sudanese",
+			"borders": [
+				"CAF",
+				"TCD",
+				"EGY",
+				"ERI",
+				"ETH",
+				"LBY",
+				"SSD"
+			],
+			"area": 1886068,
+			"gini": 35.3,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ج.س.",
+					"code": "SDG",
+					"name": "Sudanese pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "SD",
+			"alpha3Code": "SDN",
+			"callingCodes": [
+				"249"
+			],
+			"numericCode": "729"
+		},
+		{
+			"name": "Suriname",
+			"nativeName": "Suriname",
+			"topLevelDomain": [
+				".sr"
+			],
+			"capital": "Paramaribo",
+			"altSpellings": [
+				"SR",
+				"Sarnam",
+				"Sranangron",
+				"Republic of Suriname",
+				"Republiek Suriname"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Suriname",
+				"es": "Surinam",
+				"fr": "Surinam",
+				"it": "Suriname",
+				"ja": "スリナム",
+				"nl": "Suriname",
+				"hr": "Surinam"
+			},
+			"population": 541638,
+			"latlng": [
+				4,
+				-56
+			],
+			"demonym": "Surinamer",
+			"borders": [
+				"BRA",
+				"GUF",
+				"FRA",
+				"GUY"
+			],
+			"area": 163820,
+			"gini": 52.9,
+			"timezones": [
+				"UTC-03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "SRD",
+					"name": "Surinamese dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "nl",
+					"iso639_2": "nld",
+					"name": "Dutch",
+					"nativeName": "Nederlands"
+				}
+			],
+			"alpha2Code": "SR",
+			"alpha3Code": "SUR",
+			"callingCodes": [
+				"597"
+			],
+			"numericCode": "740"
+		},
+		{
+			"name": "Svalbard and Jan Mayen",
+			"nativeName": "Svalbard og Jan Mayen",
+			"topLevelDomain": [
+				".sj"
+			],
+			"capital": "Longyearbyen",
+			"altSpellings": [
+				"SJ",
+				"Svalbard and Jan Mayen Islands"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Svalbard und Jan Mayen",
+				"es": "Islas Svalbard y Jan Mayen",
+				"fr": "Svalbard et Jan Mayen",
+				"it": "Svalbard e Jan Mayen",
+				"ja": "スヴァールバル諸島およびヤンマイエン島",
+				"nl": "Svalbard en Jan Mayen",
+				"hr": "Svalbard i Jan Mayen"
+			},
+			"population": 2562,
+			"latlng": [
+				78,
+				20
+			],
+			"demonym": "Norwegian",
+			"borders": [],
+			"currencies": [
+				{
+					"code": "NOK",
+					"name": "Norwegian krone",
+					"symbol": "kr"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "no",
+					"iso639_2": "nor",
+					"name": "Norwegian",
+					"nativeName": "Norsk"
+				}
+			],
+			"alpha2Code": "SJ",
+			"alpha3Code": "SJM",
+			"callingCodes": [
+				"4779"
+			],
+			"numericCode": "744"
+		},
+		{
+			"name": "Swaziland",
+			"nativeName": "Swaziland",
+			"topLevelDomain": [
+				".sz"
+			],
+			"capital": "Lobamba",
+			"altSpellings": [
+				"SZ",
+				"weSwatini",
+				"Swatini",
+				"Ngwane",
+				"Kingdom of Swaziland",
+				"Umbuso waseSwatini"
+			],
+			"region": "Africa",
+			"subregion": "Southern Africa",
+			"translations": {
+				"de": "Swasiland",
+				"es": "Suazilandia",
+				"fr": "Swaziland",
+				"it": "Swaziland",
+				"ja": "スワジランド",
+				"nl": "Swaziland",
+				"hr": "Svazi"
+			},
+			"population": 1132657,
+			"latlng": [
+				-26.5,
+				31.5
+			],
+			"demonym": "Swazi",
+			"borders": [
+				"MOZ",
+				"ZAF"
+			],
+			"area": 17364,
+			"gini": 51.5,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "L",
+					"code": "SZL",
+					"name": "Swazi lilangeni"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "ss",
+					"iso639_2": "ssw",
+					"name": "Swati",
+					"nativeName": "SiSwati"
+				}
+			],
+			"alpha2Code": "SZ",
+			"alpha3Code": "SWZ",
+			"callingCodes": [
+				"268"
+			],
+			"numericCode": "748"
+		},
+		{
+			"name": "Sweden",
+			"nativeName": "Sverige",
+			"topLevelDomain": [
+				".se"
+			],
+			"capital": "Stockholm",
+			"altSpellings": [
+				"SE",
+				"Kingdom of Sweden",
+				"Konungariket Sverige"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Schweden",
+				"es": "Suecia",
+				"fr": "Suède",
+				"it": "Svezia",
+				"ja": "スウェーデン",
+				"nl": "Zweden",
+				"hr": "Švedska"
+			},
+			"population": 9894888,
+			"latlng": [
+				62,
+				15
+			],
+			"demonym": "Swedish",
+			"borders": [
+				"FIN",
+				"NOR"
+			],
+			"area": 450295,
+			"gini": 25,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "kr",
+					"code": "SEK",
+					"name": "Swedish krona"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sv",
+					"iso639_2": "swe",
+					"name": "Swedish",
+					"nativeName": "svenska"
+				}
+			],
+			"alpha2Code": "SE",
+			"alpha3Code": "SWE",
+			"callingCodes": [
+				"46"
+			],
+			"numericCode": "752"
+		},
+		{
+			"name": "Switzerland",
+			"nativeName": "Schweiz",
+			"topLevelDomain": [
+				".ch"
+			],
+			"capital": "Bern",
+			"altSpellings": [
+				"CH",
+				"Swiss Confederation",
+				"Schweiz",
+				"Suisse",
+				"Svizzera",
+				"Svizra"
+			],
+			"region": "Europe",
+			"subregion": "Western Europe",
+			"translations": {
+				"de": "Schweiz",
+				"es": "Suiza",
+				"fr": "Suisse",
+				"it": "Svizzera",
+				"ja": "スイス",
+				"nl": "Zwitserland",
+				"hr": "Švicarska"
+			},
+			"population": 8341600,
+			"latlng": [
+				47,
+				8
+			],
+			"demonym": "Swiss",
+			"borders": [
+				"AUT",
+				"FRA",
+				"ITA",
+				"LIE",
+				"DEU"
+			],
+			"area": 41284,
+			"gini": 33.7,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "CHF",
+					"name": "Swiss franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "de",
+					"iso639_2": "deu",
+					"name": "German",
+					"nativeName": "Deutsch"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				},
+				{
+					"iso639_1": "it",
+					"iso639_2": "ita",
+					"name": "Italian",
+					"nativeName": "italiano"
+				}
+			],
+			"alpha2Code": "CH",
+			"alpha3Code": "CHE",
+			"callingCodes": [
+				"41"
+			],
+			"numericCode": "756"
+		},
+		{
+			"name": "Syrian Arab Republic",
+			"nativeName": "سوريا",
+			"topLevelDomain": [
+				".sy"
+			],
+			"capital": "Damascus",
+			"altSpellings": [
+				"SY",
+				"Syrian Arab Republic",
+				"Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Syrien",
+				"es": "Siria",
+				"fr": "Syrie",
+				"it": "Siria",
+				"ja": "シリア・アラブ共和国",
+				"nl": "Syrië",
+				"hr": "Sirija"
+			},
+			"population": 18564000,
+			"latlng": [
+				35,
+				38
+			],
+			"demonym": "Syrian",
+			"borders": [
+				"IRQ",
+				"ISR",
+				"JOR",
+				"LBN",
+				"TUR"
+			],
+			"area": 185180,
+			"gini": 35.8,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "SYP",
+					"name": "Syrian pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "SY",
+			"alpha3Code": "SYR",
+			"callingCodes": [
+				"963"
+			],
+			"numericCode": "760"
+		},
+		{
+			"name": "Taiwan, Province of China",
+			"nativeName": "臺灣",
+			"topLevelDomain": [
+				".tw"
+			],
+			"capital": "Taipei",
+			"altSpellings": [
+				"TW",
+				"Táiwān",
+				"Republic of China",
+				"中華民國",
+				"Zhōnghuá Mínguó"
+			],
+			"region": "Asia",
+			"subregion": "Eastern Asia",
+			"translations": {
+				"de": "Taiwan",
+				"es": "Taiwán",
+				"fr": "Taïwan",
+				"it": "Taiwan",
+				"ja": "台湾（台湾省/中華民国）",
+				"nl": "Taiwan",
+				"hr": "Tajvan"
+			},
+			"population": 23503349,
+			"latlng": [
+				23.5,
+				121
+			],
+			"demonym": "Taiwanese",
+			"borders": [],
+			"area": 36193,
+			"gini": null,
+			"timezones": [
+				"UTC+08:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "TWD",
+					"name": "New Taiwan dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "zh",
+					"iso639_2": "zho",
+					"name": "Chinese",
+					"nativeName": "中文 (Zhōngwén)"
+				}
+			],
+			"alpha2Code": "TW",
+			"alpha3Code": "TWN",
+			"callingCodes": [
+				"886"
+			],
+			"numericCode": "158"
+		},
+		{
+			"name": "Tajikistan",
+			"nativeName": "Тоҷикистон",
+			"topLevelDomain": [
+				".tj"
+			],
+			"capital": "Dushanbe",
+			"altSpellings": [
+				"TJ",
+				"Toçikiston",
+				"Republic of Tajikistan",
+				"Ҷумҳурии Тоҷикистон",
+				"Çumhuriyi Toçikiston"
+			],
+			"region": "Asia",
+			"subregion": "Central Asia",
+			"translations": {
+				"de": "Tadschikistan",
+				"es": "Tayikistán",
+				"fr": "Tadjikistan",
+				"it": "Tagikistan",
+				"ja": "タジキスタン",
+				"nl": "Tadzjikistan",
+				"hr": "Tađikistan"
+			},
+			"population": 8593600,
+			"latlng": [
+				39,
+				71
+			],
+			"demonym": "Tadzhik",
+			"borders": [
+				"AFG",
+				"CHN",
+				"KGZ",
+				"UZB"
+			],
+			"area": 143100,
+			"gini": 30.8,
+			"timezones": [
+				"UTC+05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ЅМ",
+					"code": "TJS",
+					"name": "Tajikistani somoni"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "tg",
+					"iso639_2": "tgk",
+					"name": "Tajik",
+					"nativeName": "тоҷикӣ"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "TJ",
+			"alpha3Code": "TJK",
+			"callingCodes": [
+				"992"
+			],
+			"numericCode": "762"
+		},
+		{
+			"name": "Tanzania, United Republic of",
+			"nativeName": "Tanzania",
+			"topLevelDomain": [
+				".tz"
+			],
+			"capital": "Dodoma",
+			"altSpellings": [
+				"TZ",
+				"United Republic of Tanzania",
+				"Jamhuri ya Muungano wa Tanzania"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Tansania",
+				"es": "Tanzania",
+				"fr": "Tanzanie",
+				"it": "Tanzania",
+				"ja": "タンザニア",
+				"nl": "Tanzania",
+				"hr": "Tanzanija"
+			},
+			"population": 55155000,
+			"latlng": [
+				-6,
+				35
+			],
+			"demonym": "Tanzanian",
+			"borders": [
+				"BDI",
+				"COD",
+				"KEN",
+				"MWI",
+				"MOZ",
+				"RWA",
+				"UGA",
+				"ZMB"
+			],
+			"area": 945087,
+			"gini": 37.6,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Sh",
+					"code": "TZS",
+					"name": "Tanzanian shilling"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "sw",
+					"iso639_2": "swa",
+					"name": "Swahili",
+					"nativeName": "Kiswahili"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "TZ",
+			"alpha3Code": "TZA",
+			"callingCodes": [
+				"255"
+			],
+			"numericCode": "834"
+		},
+		{
+			"name": "Thailand",
+			"nativeName": "ประเทศไทย",
+			"topLevelDomain": [
+				".th"
+			],
+			"capital": "Bangkok",
+			"altSpellings": [
+				"TH",
+				"Prathet",
+				"Thai",
+				"Kingdom of Thailand",
+				"ราชอาณาจักรไทย",
+				"Ratcha Anachak Thai"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Thaïlande",
+				"nl": "Thailand",
+				"de": "Thailand",
+				"it": "Tailandia",
+				"ja": "タイ",
+				"es": "Tailandia",
+				"hr": "Tajland"
+			},
+			"population": 65327652,
+			"latlng": [
+				15,
+				100
+			],
+			"demonym": "Thai",
+			"borders": [
+				"MMR",
+				"KHM",
+				"LAO",
+				"MYS"
+			],
+			"area": 513120,
+			"gini": 40,
+			"timezones": [
+				"UTC+07:00"
+			],
+			"currencies": [
+				{
+					"symbol": "฿",
+					"code": "THB",
+					"name": "Thai baht"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "th",
+					"iso639_2": "tha",
+					"name": "Thai",
+					"nativeName": "ไทย"
+				}
+			],
+			"alpha2Code": "TH",
+			"alpha3Code": "THA",
+			"callingCodes": [
+				"66"
+			],
+			"numericCode": "764"
+		},
+		{
+			"name": "Timor-Leste",
+			"nativeName": "Timor-Leste",
+			"topLevelDomain": [
+				".tl"
+			],
+			"capital": "Dili",
+			"altSpellings": [
+				"TL",
+				"East Timor",
+				"Democratic Republic of Timor-Leste",
+				"República Democrática de Timor-Leste",
+				"Repúblika Demokrátika Timór-Leste"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Timor oriental",
+				"nl": "Oost-Timor",
+				"de": "Timor-Leste",
+				"it": "Timor Est",
+				"ja": "東ティモール",
+				"es": "Timor Oriental",
+				"hr": "Istočni Timor"
+			},
+			"population": 1167242,
+			"latlng": [
+				-8.83333333,
+				125.91666666
+			],
+			"demonym": "East Timorese",
+			"borders": [
+				"IDN"
+			],
+			"area": 14874,
+			"gini": 31.9,
+			"timezones": [
+				"UTC+09:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				},
+				{
+					"symbol": null,
+					"code": null,
+					"name": null
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "pt",
+					"iso639_2": "por",
+					"name": "Portuguese",
+					"nativeName": "português"
+				}
+			],
+			"alpha2Code": "TL",
+			"alpha3Code": "TLS",
+			"callingCodes": [
+				"670"
+			],
+			"numericCode": "626"
+		},
+		{
+			"name": "Togo",
+			"nativeName": "Togo",
+			"topLevelDomain": [
+				".tg"
+			],
+			"capital": "Lomé",
+			"altSpellings": [
+				"TG",
+				"Togolese",
+				"Togolese Republic",
+				"République Togolaise"
+			],
+			"region": "Africa",
+			"subregion": "Western Africa",
+			"translations": {
+				"de": "Togo",
+				"es": "Togo",
+				"fr": "Togo",
+				"it": "Togo",
+				"ja": "トーゴ",
+				"nl": "Togo",
+				"hr": "Togo"
+			},
+			"population": 7143000,
+			"latlng": [
+				8,
+				1.16666666
+			],
+			"demonym": "Togolese",
+			"borders": [
+				"BEN",
+				"BFA",
+				"GHA"
+			],
+			"area": 56785,
+			"gini": 34.4,
+			"timezones": [
+				"UTC"
+			],
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XOF",
+					"name": "West African CFA franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "TG",
+			"alpha3Code": "TGO",
+			"callingCodes": [
+				"228"
+			],
+			"numericCode": "768"
+		},
+		{
+			"name": "Tokelau",
+			"nativeName": "Tokelau",
+			"topLevelDomain": [
+				".tk"
+			],
+			"capital": "Fakaofo",
+			"altSpellings": [
+				"TK"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Tokelau",
+				"es": "Islas Tokelau",
+				"fr": "Tokelau",
+				"it": "Isole Tokelau",
+				"ja": "トケラウ",
+				"nl": "Tokelau",
+				"hr": "Tokelau"
+			},
+			"population": 1411,
+			"latlng": [
+				-9,
+				-172
+			],
+			"demonym": "Tokelauan",
+			"borders": [],
+			"area": 12,
+			"currencies": [
+				{
+					"code": "NZD",
+					"name": "New Zealand dollar",
+					"symbol": "$"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "TK",
+			"alpha3Code": "TKL",
+			"callingCodes": [
+				"690"
+			],
+			"numericCode": "772"
+		},
+		{
+			"name": "Tonga",
+			"nativeName": "Tonga",
+			"topLevelDomain": [
+				".to"
+			],
+			"capital": "Nuku'alofa",
+			"altSpellings": [
+				"TO"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Tonga",
+				"es": "Tonga",
+				"fr": "Tonga",
+				"it": "Tonga",
+				"ja": "トンガ",
+				"nl": "Tonga",
+				"hr": "Tonga"
+			},
+			"population": 103252,
+			"latlng": [
+				-20,
+				-175
+			],
+			"demonym": "Tongan",
+			"borders": [],
+			"area": 747,
+			"timezones": [
+				"UTC+13:00"
+			],
+			"currencies": [
+				{
+					"symbol": "T$",
+					"code": "TOP",
+					"name": "Tongan paʻanga"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "to",
+					"iso639_2": "ton",
+					"name": "Tonga (Tonga Islands)",
+					"nativeName": "faka Tonga"
+				}
+			],
+			"alpha2Code": "TO",
+			"alpha3Code": "TON",
+			"callingCodes": [
+				"676"
+			],
+			"numericCode": "776"
+		},
+		{
+			"name": "Trinidad and Tobago",
+			"nativeName": "Trinidad and Tobago",
+			"topLevelDomain": [
+				".tt"
+			],
+			"capital": "Port of Spain",
+			"altSpellings": [
+				"TT",
+				"Republic of Trinidad and Tobago"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Trinidad und Tobago",
+				"es": "Trinidad y Tobago",
+				"fr": "Trinité et Tobago",
+				"it": "Trinidad e Tobago",
+				"ja": "トリニダード・トバゴ",
+				"nl": "Trinidad en Tobago",
+				"hr": "Trinidad i Tobago"
+			},
+			"population": 1349667,
+			"latlng": [
+				11,
+				-61
+			],
+			"demonym": "Trinidadian",
+			"borders": [],
+			"area": 5130,
+			"gini": 40.3,
+			"timezones": [
+				"UTC-04:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "TTD",
+					"name": "Trinidad and Tobago dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "TT",
+			"alpha3Code": "TTO",
+			"callingCodes": [
+				"1868"
+			],
+			"numericCode": "780"
+		},
+		{
+			"name": "Tunisia",
+			"nativeName": "تونس",
+			"topLevelDomain": [
+				".tn"
+			],
+			"capital": "Tunis",
+			"altSpellings": [
+				"TN",
+				"Republic of Tunisia",
+				"al-Jumhūriyyah at-Tūnisiyyah"
+			],
+			"region": "Africa",
+			"subregion": "Northern Africa",
+			"translations": {
+				"de": "Tunesien",
+				"es": "Túnez",
+				"fr": "Tunisie",
+				"it": "Tunisia",
+				"ja": "チュニジア",
+				"nl": "Tunesië",
+				"hr": "Tunis"
+			},
+			"population": 11154400,
+			"latlng": [
+				34,
+				9
+			],
+			"demonym": "Tunisian",
+			"borders": [
+				"DZA",
+				"LBY"
+			],
+			"area": 163610,
+			"gini": 41.4,
+			"timezones": [
+				"UTC+01:00"
+			],
+			"currencies": [
+				{
+					"symbol": "د.ت",
+					"code": "TND",
+					"name": "Tunisian dinar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "TN",
+			"alpha3Code": "TUN",
+			"callingCodes": [
+				"216"
+			],
+			"numericCode": "788"
+		},
+		{
+			"name": "Turkey",
+			"nativeName": "Türkiye",
+			"topLevelDomain": [
+				".tr"
+			],
+			"capital": "Ankara",
+			"altSpellings": [
+				"TR",
+				"Turkiye",
+				"Republic of Turkey",
+				"Türkiye Cumhuriyeti"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Türkei",
+				"es": "Turquía",
+				"fr": "Turquie",
+				"it": "Turchia",
+				"ja": "トルコ",
+				"nl": "Turkije",
+				"hr": "Turska"
+			},
+			"population": 78741053,
+			"latlng": [
+				39,
+				35
+			],
+			"demonym": "Turkish",
+			"borders": [
+				"ARM",
+				"AZE",
+				"BGR",
+				"GEO",
+				"GRC",
+				"IRN",
+				"IRQ",
+				"SYR"
+			],
+			"area": 783562,
+			"gini": 39,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "TRY",
+					"name": "Turkish lira"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "tr",
+					"iso639_2": "tur",
+					"name": "Turkish",
+					"nativeName": "Türkçe"
+				}
+			],
+			"alpha2Code": "TR",
+			"alpha3Code": "TUR",
+			"callingCodes": [
+				"90"
+			],
+			"numericCode": "792"
+		},
+		{
+			"name": "Turkmenistan",
+			"nativeName": "Türkmenistan",
+			"topLevelDomain": [
+				".tm"
+			],
+			"capital": "Ashgabat",
+			"altSpellings": [
+				"TM"
+			],
+			"region": "Asia",
+			"subregion": "Central Asia",
+			"translations": {
+				"de": "Turkmenistan",
+				"es": "Turkmenistán",
+				"fr": "Turkménistan",
+				"it": "Turkmenistan",
+				"ja": "トルクメニスタン",
+				"nl": "Turkmenistan",
+				"hr": "Turkmenistan"
+			},
+			"population": 4751120,
+			"latlng": [
+				40,
+				60
+			],
+			"demonym": "Turkmen",
+			"borders": [
+				"AFG",
+				"IRN",
+				"KAZ",
+				"UZB"
+			],
+			"area": 488100,
+			"gini": 40.8,
+			"timezones": [
+				"UTC+05:00"
+			],
+			"currencies": [
+				{
+					"symbol": "m",
+					"code": "TMT",
+					"name": "Turkmenistan manat"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "tk",
+					"iso639_2": "tuk",
+					"name": "Turkmen",
+					"nativeName": "Türkmen"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "TM",
+			"alpha3Code": "TKM",
+			"callingCodes": [
+				"993"
+			],
+			"numericCode": "795"
+		},
+		{
+			"name": "Turks and Caicos Islands",
+			"nativeName": "Turks and Caicos Islands",
+			"topLevelDomain": [
+				".tc"
+			],
+			"capital": "Cockburn Town",
+			"altSpellings": [
+				"TC"
+			],
+			"region": "Americas",
+			"subregion": "Caribbean",
+			"translations": {
+				"de": "Turks- und Caicosinseln",
+				"es": "Islas Turks y Caicos",
+				"fr": "Îles Turques-et-Caïques",
+				"it": "Isole Turks e Caicos",
+				"ja": "タークス・カイコス諸島",
+				"nl": "Turks- en Caicoseilanden",
+				"hr": "Otoci Turks i Caicos"
+			},
+			"population": 31458,
+			"latlng": [
+				21.75,
+				-71.58333333
+			],
+			"demonym": "Turks and Caicos Islander",
+			"borders": [],
+			"area": 948,
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "TC",
+			"alpha3Code": "TCA",
+			"callingCodes": [
+				"1649"
+			],
+			"numericCode": "796"
+		},
+		{
+			"name": "Tuvalu",
+			"nativeName": "Tuvalu",
+			"topLevelDomain": [
+				".tv"
+			],
+			"capital": "Funafuti",
+			"altSpellings": [
+				"TV"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Tuvalu",
+				"es": "Tuvalu",
+				"fr": "Tuvalu",
+				"it": "Tuvalu",
+				"ja": "ツバル",
+				"nl": "Tuvalu",
+				"hr": "Tuvalu"
+			},
+			"population": 10640,
+			"latlng": [
+				-8,
+				178
+			],
+			"demonym": "Tuvaluan",
+			"borders": [],
+			"area": 26,
+			"timezones": [
+				"UTC+12:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "AUD",
+					"name": "Australian dollar"
+				},
+				{
+					"symbol": "$",
+					"code": "TVD[G]",
+					"name": "Tuvaluan dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "TV",
+			"alpha3Code": "TUV",
+			"callingCodes": [
+				"688"
+			],
+			"numericCode": "798"
+		},
+		{
+			"name": "Uganda",
+			"nativeName": "Uganda",
+			"topLevelDomain": [
+				".ug"
+			],
+			"capital": "Kampala",
+			"altSpellings": [
+				"UG",
+				"Republic of Uganda",
+				"Jamhuri ya Uganda"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Uganda",
+				"es": "Uganda",
+				"fr": "Uganda",
+				"it": "Uganda",
+				"ja": "ウガンダ",
+				"nl": "Oeganda",
+				"hr": "Uganda"
+			},
+			"population": 33860700,
+			"latlng": [
+				1,
+				32
+			],
+			"demonym": "Ugandan",
+			"borders": [
+				"COD",
+				"KEN",
+				"RWA",
+				"SSD",
+				"TZA"
+			],
+			"area": 241550,
+			"gini": 44.3,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Sh",
+					"code": "UGX",
+					"name": "Ugandan shilling"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "sw",
+					"iso639_2": "swa",
+					"name": "Swahili",
+					"nativeName": "Kiswahili"
+				}
+			],
+			"alpha2Code": "UG",
+			"alpha3Code": "UGA",
+			"callingCodes": [
+				"256"
+			],
+			"numericCode": "800"
+		},
+		{
+			"name": "Ukraine",
+			"nativeName": "Україна",
+			"topLevelDomain": [
+				".ua"
+			],
+			"capital": "Kiev",
+			"altSpellings": [
+				"UA",
+				"Ukrayina"
+			],
+			"region": "Europe",
+			"subregion": "Eastern Europe",
+			"translations": {
+				"de": "Ukraine",
+				"es": "Ucrania",
+				"fr": "Ukraine",
+				"it": "Ucraina",
+				"ja": "ウクライナ",
+				"nl": "Oekraïne",
+				"hr": "Ukrajina"
+			},
+			"population": 42692393,
+			"latlng": [
+				49,
+				32
+			],
+			"demonym": "Ukrainian",
+			"borders": [
+				"BLR",
+				"HUN",
+				"MDA",
+				"POL",
+				"ROU",
+				"RUS",
+				"SVK"
+			],
+			"area": 603700,
+			"gini": 26.4,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₴",
+					"code": "UAH",
+					"name": "Ukrainian hryvnia"
+				},
+				{
+					"symbol": null,
+					"code": "RUB",
+					"name": "Russian ruble"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "uk",
+					"iso639_2": "ukr",
+					"name": "Ukrainian",
+					"nativeName": "Українська"
+				}
+			],
+			"alpha2Code": "UA",
+			"alpha3Code": "UKR",
+			"callingCodes": [
+				"380"
+			],
+			"numericCode": "804"
+		},
+		{
+			"name": "United Arab Emirates",
+			"nativeName": "دولة الإمارات العربية المتحدة",
+			"topLevelDomain": [
+				".ae"
+			],
+			"capital": "Abu Dhabi",
+			"altSpellings": [
+				"AE",
+				"UAE"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Vereinigte Arabische Emirate",
+				"es": "Emiratos Árabes Unidos",
+				"fr": "Émirats arabes unis",
+				"it": "Emirati Arabi Uniti",
+				"ja": "アラブ首長国連邦",
+				"nl": "Verenigde Arabische Emiraten",
+				"hr": "Ujedinjeni Arapski Emirati"
+			},
+			"population": 9856000,
+			"latlng": [
+				24,
+				54
+			],
+			"demonym": "Emirati",
+			"borders": [
+				"OMN",
+				"SAU"
+			],
+			"area": 83600,
+			"gini": null,
+			"timezones": [
+				"UTC+04"
+			],
+			"currencies": [
+				{
+					"symbol": "د.إ",
+					"code": "AED",
+					"name": "United Arab Emirates dirham"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "AE",
+			"alpha3Code": "ARE",
+			"callingCodes": [
+				"971"
+			],
+			"numericCode": "784"
+		},
+		{
+			"name": "United Kingdom of Great Britain and Northern Ireland",
+			"nativeName": "United Kingdom",
+			"topLevelDomain": [
+				".uk"
+			],
+			"capital": "London",
+			"altSpellings": [
+				"GB",
+				"UK",
+				"Great Britain"
+			],
+			"region": "Europe",
+			"subregion": "Northern Europe",
+			"translations": {
+				"de": "Vereinigtes Königreich",
+				"es": "Reino Unido",
+				"fr": "Royaume-Uni",
+				"it": "Regno Unito",
+				"ja": "イギリス",
+				"nl": "Verenigd Koninkrijk",
+				"hr": "Ujedinjeno Kraljevstvo"
+			},
+			"population": 65110000,
+			"latlng": [
+				54,
+				-2
+			],
+			"demonym": "British",
+			"borders": [
+				"IRL"
+			],
+			"area": 242900,
+			"gini": 34,
+			"timezones": [
+				"UTC-08:00",
+				"UTC-05:00",
+				"UTC-04:00",
+				"UTC-03:00",
+				"UTC-02:00",
+				"UTC",
+				"UTC+01:00",
+				"UTC+02:00",
+				"UTC+06:00"
+			],
+			"currencies": [
+				{
+					"symbol": "£",
+					"code": "GBP",
+					"name": "British pound"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "GB",
+			"alpha3Code": "GBR",
+			"callingCodes": [
+				"44"
+			],
+			"numericCode": "826"
+		},
+		{
+			"name": "United States of America",
+			"nativeName": "United States",
+			"topLevelDomain": [
+				".us"
+			],
+			"capital": "Washington, D.C.",
+			"altSpellings": [
+				"US",
+				"USA",
+				"United States of America"
+			],
+			"region": "Americas",
+			"subregion": "Northern America",
+			"translations": {
+				"de": "Vereinigte Staaten von Amerika",
+				"es": "Estados Unidos",
+				"fr": "États-Unis",
+				"it": "Stati Uniti D'America",
+				"ja": "アメリカ合衆国",
+				"nl": "Verenigde Staten",
+				"hr": "Sjedinjene Američke Države"
+			},
+			"population": 323947000,
+			"latlng": [
+				38,
+				-97
+			],
+			"demonym": "American",
+			"borders": [
+				"CAN",
+				"MEX"
+			],
+			"area": 9629091,
+			"gini": 48,
+			"timezones": [
+				"UTC-12:00",
+				"UTC-11:00",
+				"UTC-10:00",
+				"UTC-09:00",
+				"UTC-08:00",
+				"UTC-07:00",
+				"UTC-06:00",
+				"UTC-05:00",
+				"UTC-04:00",
+				"UTC+10:00",
+				"UTC+12:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "US",
+			"alpha3Code": "USA",
+			"callingCodes": [
+				"1"
+			],
+			"numericCode": "840"
+		},
+		{
+			"name": "Uruguay",
+			"nativeName": "Uruguay",
+			"topLevelDomain": [
+				".uy"
+			],
+			"capital": "Montevideo",
+			"altSpellings": [
+				"UY",
+				"Oriental Republic of Uruguay",
+				"República Oriental del Uruguay"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Uruguay",
+				"es": "Uruguay",
+				"fr": "Uruguay",
+				"it": "Uruguay",
+				"ja": "ウルグアイ",
+				"nl": "Uruguay",
+				"hr": "Urugvaj"
+			},
+			"population": 3480222,
+			"latlng": [
+				-33,
+				-56
+			],
+			"demonym": "Uruguayan",
+			"borders": [
+				"ARG",
+				"BRA"
+			],
+			"area": 181034,
+			"gini": 39.7,
+			"timezones": [
+				"UTC-03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "$",
+					"code": "UYU",
+					"name": "Uruguayan peso"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "UY",
+			"alpha3Code": "URY",
+			"callingCodes": [
+				"598"
+			],
+			"numericCode": "858"
+		},
+		{
+			"name": "Uzbekistan",
+			"nativeName": "O‘zbekiston",
+			"topLevelDomain": [
+				".uz"
+			],
+			"capital": "Tashkent",
+			"altSpellings": [
+				"UZ",
+				"Republic of Uzbekistan",
+				"O‘zbekiston Respublikasi",
+				"Ўзбекистон Республикаси"
+			],
+			"region": "Asia",
+			"subregion": "Central Asia",
+			"translations": {
+				"de": "Usbekistan",
+				"es": "Uzbekistán",
+				"fr": "Ouzbékistan",
+				"it": "Uzbekistan",
+				"ja": "ウズベキスタン",
+				"nl": "Oezbekistan",
+				"hr": "Uzbekistan"
+			},
+			"population": 31576400,
+			"latlng": [
+				41,
+				64
+			],
+			"demonym": "Uzbekistani",
+			"borders": [
+				"AFG",
+				"KAZ",
+				"KGZ",
+				"TJK",
+				"TKM"
+			],
+			"area": 447400,
+			"gini": 36.7,
+			"timezones": [
+				"UTC+05:00"
+			],
+			"currencies": [
+				{
+					"symbol": null,
+					"code": "UZS",
+					"name": "Uzbekistani som"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "uz",
+					"iso639_2": "uzb",
+					"name": "Uzbek",
+					"nativeName": "Oʻzbek"
+				},
+				{
+					"iso639_1": "ru",
+					"iso639_2": "rus",
+					"name": "Russian",
+					"nativeName": "Русский"
+				}
+			],
+			"alpha2Code": "UZ",
+			"alpha3Code": "UZB",
+			"callingCodes": [
+				"998"
+			],
+			"numericCode": "860"
+		},
+		{
+			"name": "Vanuatu",
+			"nativeName": "Vanuatu",
+			"topLevelDomain": [
+				".vu"
+			],
+			"capital": "Port Vila",
+			"altSpellings": [
+				"VU",
+				"Republic of Vanuatu",
+				"Ripablik blong Vanuatu",
+				"République de Vanuatu"
+			],
+			"region": "Oceania",
+			"subregion": "Melanesia",
+			"translations": {
+				"de": "Vanuatu",
+				"es": "Vanuatu",
+				"fr": "Vanuatu",
+				"it": "Vanuatu",
+				"ja": "バヌアツ",
+				"nl": "Vanuatu",
+				"hr": "Vanuatu"
+			},
+			"population": 277500,
+			"latlng": [
+				-16,
+				167
+			],
+			"demonym": "Ni-Vanuatu",
+			"borders": [],
+			"area": 12189,
+			"timezones": [
+				"UTC+11:00"
+			],
+			"currencies": [
+				{
+					"symbol": "Vt",
+					"code": "VUV",
+					"name": "Vanuatu vatu"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "bi",
+					"iso639_2": "bis",
+					"name": "Bislama",
+					"nativeName": "Bislama"
+				},
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "VU",
+			"alpha3Code": "VUT",
+			"callingCodes": [
+				"678"
+			],
+			"numericCode": "548"
+		},
+		{
+			"name": "Venezuela (Bolivarian Republic of)",
+			"nativeName": "Venezuela",
+			"topLevelDomain": [
+				".ve"
+			],
+			"capital": "Caracas",
+			"altSpellings": [
+				"VE",
+				"Bolivarian Republic of Venezuela",
+				"República Bolivariana de Venezuela"
+			],
+			"region": "Americas",
+			"subregion": "South America",
+			"translations": {
+				"de": "Venezuela",
+				"es": "Venezuela",
+				"fr": "Venezuela",
+				"it": "Venezuela",
+				"ja": "ベネズエラ・ボリバル共和国",
+				"nl": "Venezuela",
+				"hr": "Venezuela"
+			},
+			"population": 31028700,
+			"latlng": [
+				8,
+				-66
+			],
+			"demonym": "Venezuelan",
+			"borders": [
+				"BRA",
+				"COL",
+				"GUY"
+			],
+			"area": 916445,
+			"gini": 44.8,
+			"timezones": [
+				"UTC-04:30"
+			],
+			"currencies": [
+				{
+					"symbol": "Bs F",
+					"code": "VEF",
+					"name": "Venezuelan bolívar"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "VE",
+			"alpha3Code": "VEN",
+			"callingCodes": [
+				"58"
+			],
+			"numericCode": "862"
+		},
+		{
+			"name": "Viet Nam",
+			"nativeName": "Việt Nam",
+			"topLevelDomain": [
+				".vn"
+			],
+			"capital": "Hanoi",
+			"altSpellings": [
+				"VN",
+				"Socialist Republic of Vietnam",
+				"Cộng hòa Xã hội chủ nghĩa Việt Nam"
+			],
+			"region": "Asia",
+			"subregion": "South-Eastern Asia",
+			"translations": {
+				"fr": "Viêt Nam",
+				"nl": "Vietnam",
+				"de": "Vietnam",
+				"it": "Vietnam",
+				"ja": "ベトナム",
+				"es": "Vietnam",
+				"hr": "Vijetnam"
+			},
+			"population": 92700000,
+			"latlng": [
+				16.16666666,
+				107.83333333
+			],
+			"demonym": "Vietnamese",
+			"borders": [
+				"KHM",
+				"CHN",
+				"LAO"
+			],
+			"area": 331212,
+			"gini": 35.6,
+			"timezones": [
+				"UTC+07:00"
+			],
+			"currencies": [
+				{
+					"symbol": "₫",
+					"code": "VND",
+					"name": "Vietnamese đồng"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "vi",
+					"iso639_2": "vie",
+					"name": "Vietnamese",
+					"nativeName": "Tiếng Việt"
+				}
+			],
+			"alpha2Code": "VN",
+			"alpha3Code": "VNM",
+			"callingCodes": [
+				"84"
+			],
+			"numericCode": "704"
+		},
+		{
+			"name": "Wallis and Futuna",
+			"nativeName": "Wallis et Futuna",
+			"topLevelDomain": [
+				".wf"
+			],
+			"capital": "Mata-Utu",
+			"altSpellings": [
+				"WF",
+				"Territory of the Wallis and Futuna Islands",
+				"Territoire des îles Wallis et Futuna"
+			],
+			"region": "Oceania",
+			"subregion": "Polynesia",
+			"translations": {
+				"de": "Wallis und Futuna",
+				"es": "Wallis y Futuna",
+				"fr": "Wallis-et-Futuna",
+				"it": "Wallis e Futuna",
+				"ja": "ウォリス・フツナ",
+				"nl": "Wallis en Futuna",
+				"hr": "Wallis i Fortuna"
+			},
+			"population": 11750,
+			"latlng": [
+				-13.3,
+				-176.2
+			],
+			"demonym": "Wallis and Futuna Islander",
+			"borders": [],
+			"area": 142,
+			"currencies": [
+				{
+					"symbol": "Fr",
+					"code": "XPF",
+					"name": "CFP franc"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "fr",
+					"iso639_2": "fra",
+					"name": "French",
+					"nativeName": "français"
+				}
+			],
+			"alpha2Code": "WF",
+			"alpha3Code": "WLF",
+			"callingCodes": [
+				"681"
+			],
+			"numericCode": "876"
+		},
+		{
+			"name": "Western Sahara",
+			"nativeName": "الصحراء الغربية",
+			"topLevelDomain": [
+				".eh"
+			],
+			"capital": "El Aaiún",
+			"altSpellings": [
+				"EH",
+				"Taneẓroft Tutrimt"
+			],
+			"region": "Africa",
+			"subregion": "Northern Africa",
+			"translations": {
+				"de": "Westsahara",
+				"es": "Sahara Occidental",
+				"fr": "Sahara Occidental",
+				"it": "Sahara Occidentale",
+				"ja": "西サハラ",
+				"nl": "Westelijke Sahara",
+				"hr": "Zapadna Sahara"
+			},
+			"population": 510713,
+			"latlng": [
+				24.5,
+				-13
+			],
+			"demonym": "Sahrawi",
+			"borders": [
+				"DZA",
+				"MRT",
+				"MAR"
+			],
+			"area": 266000,
+			"currencies": [
+				{
+					"code": "MAD",
+					"name": "Moroccan dirham",
+					"symbol": "د.م."
+				},
+				{
+					"code": "DZD",
+					"name": "Algerian dinar",
+					"symbol": "د.ج"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "es",
+					"iso639_2": "spa",
+					"name": "Spanish",
+					"nativeName": "español"
+				}
+			],
+			"alpha2Code": "EH",
+			"alpha3Code": "ESH",
+			"callingCodes": [
+				"212"
+			],
+			"numericCode": "732"
+		},
+		{
+			"name": "Yemen",
+			"nativeName": "اليَمَن",
+			"topLevelDomain": [
+				".ye"
+			],
+			"capital": "Sana'a",
+			"altSpellings": [
+				"YE",
+				"Yemeni Republic",
+				"al-Jumhūriyyah al-Yamaniyyah"
+			],
+			"region": "Asia",
+			"subregion": "Western Asia",
+			"translations": {
+				"de": "Jemen",
+				"es": "Yemen",
+				"fr": "Yémen",
+				"it": "Yemen",
+				"ja": "イエメン",
+				"nl": "Jemen",
+				"hr": "Jemen"
+			},
+			"population": 27478000,
+			"latlng": [
+				15,
+				48
+			],
+			"demonym": "Yemeni",
+			"borders": [
+				"OMN",
+				"SAU"
+			],
+			"area": 527968,
+			"gini": 37.7,
+			"timezones": [
+				"UTC+03:00"
+			],
+			"currencies": [
+				{
+					"symbol": "﷼",
+					"code": "YER",
+					"name": "Yemeni rial"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "ar",
+					"iso639_2": "ara",
+					"name": "Arabic",
+					"nativeName": "العربية"
+				}
+			],
+			"alpha2Code": "YE",
+			"alpha3Code": "YEM",
+			"callingCodes": [
+				"967"
+			],
+			"numericCode": "887"
+		},
+		{
+			"name": "Zambia",
+			"nativeName": "Zambia",
+			"topLevelDomain": [
+				".zm"
+			],
+			"capital": "Lusaka",
+			"altSpellings": [
+				"ZM",
+				"Republic of Zambia"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Sambia",
+				"es": "Zambia",
+				"fr": "Zambie",
+				"it": "Zambia",
+				"ja": "ザンビア",
+				"nl": "Zambia",
+				"hr": "Zambija"
+			},
+			"population": 15933883,
+			"latlng": [
+				-15,
+				30
+			],
+			"demonym": "Zambian",
+			"borders": [
+				"AGO",
+				"BWA",
+				"COD",
+				"MWI",
+				"MOZ",
+				"NAM",
+				"TZA",
+				"ZWE"
+			],
+			"area": 752612,
+			"gini": 54.6,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "ZK",
+					"code": "ZMW",
+					"name": "Zambian kwacha"
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				}
+			],
+			"alpha2Code": "ZM",
+			"alpha3Code": "ZMB",
+			"callingCodes": [
+				"260"
+			],
+			"numericCode": "894"
+		},
+		{
+			"name": "Zimbabwe",
+			"nativeName": "Zimbabwe",
+			"topLevelDomain": [
+				".zw"
+			],
+			"capital": "Harare",
+			"altSpellings": [
+				"ZW",
+				"Republic of Zimbabwe"
+			],
+			"region": "Africa",
+			"subregion": "Eastern Africa",
+			"translations": {
+				"de": "Simbabwe",
+				"es": "Zimbabue",
+				"fr": "Zimbabwe",
+				"it": "Zimbabwe",
+				"ja": "ジンバブエ",
+				"nl": "Zimbabwe",
+				"hr": "Zimbabve"
+			},
+			"population": 14240168,
+			"latlng": [
+				-20,
+				30
+			],
+			"demonym": "Zimbabwean",
+			"borders": [
+				"BWA",
+				"MOZ",
+				"ZAF",
+				"ZMB"
+			],
+			"area": 390757,
+			"gini": null,
+			"timezones": [
+				"UTC+02:00"
+			],
+			"currencies": [
+				{
+					"symbol": "P",
+					"code": "BWP",
+					"name": "Botswana pula"
+				},
+				{
+					"symbol": "£",
+					"code": "GBP",
+					"name": "British pound"
+				},
+				{
+					"symbol": "¥",
+					"code": "CNY",
+					"name": "Chinese yuan"
+				},
+				{
+					"symbol": "€",
+					"code": "EUR",
+					"name": "Euro"
+				},
+				{
+					"symbol": "₹",
+					"code": "INR",
+					"name": "Indian rupee"
+				},
+				{
+					"symbol": "¥",
+					"code": "JPY",
+					"name": "Japanese yen"
+				},
+				{
+					"symbol": "Rs",
+					"code": "ZAR",
+					"name": "South African rand"
+				},
+				{
+					"symbol": "$",
+					"code": "USD",
+					"name": "United States dollar"
+				},
+				{
+					"symbol": null,
+					"code": "(none)",
+					"name": null
+				}
+			],
+			"languages": [
+				{
+					"iso639_1": "en",
+					"iso639_2": "eng",
+					"name": "English",
+					"nativeName": "English"
+				},
+				{
+					"iso639_1": "sn",
+					"iso639_2": "sna",
+					"name": "Shona",
+					"nativeName": "chiShona"
+				},
+				{
+					"iso639_1": "nd",
+					"iso639_2": "nde",
+					"name": "Northern Ndebele",
+					"nativeName": "isiNdebele"
+				}
+			],
+			"alpha2Code": "ZW",
+			"alpha3Code": "ZWE",
+			"callingCodes": [
+				"263"
+			],
+			"numericCode": "716"
+		}
+	];
 
 /***/ }
 /******/ ]);
