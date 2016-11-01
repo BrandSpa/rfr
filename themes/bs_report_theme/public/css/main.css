@@ -677,6 +677,9 @@ form button {
   #footer .menu .menu-item {
     float: left;
     width: 20%; }
+    @media (max-width: 767px) {
+      #footer .menu .menu-item {
+        width: 100%; } }
     #footer .menu .menu-item a {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 1.25em;

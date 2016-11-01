@@ -12,6 +12,9 @@
     .menu-item  {
       float: left;
       width: (100 / 5) * 1%;
+      @media #{$mobile} {
+        width: 100%;
+      }
 
       a {
           @include title5;
@@ -49,7 +52,6 @@
 }
 
 }
-
 
 .footer {
 
