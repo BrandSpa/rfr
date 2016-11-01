@@ -77,10 +77,8 @@
 
     &-left {
       @include center_vertical;
-      background: #F8F8F8;
-      height: 300px;
       text-align: center;
-
+      
       img {
         margin: 0 auto;
         display: block;
@@ -89,8 +87,6 @@
 
     &-right {
       @include center_vertical;
-      height: 100px;
-      text-align: center;
 
       img {
         margin: 0 auto;

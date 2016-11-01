@@ -717,8 +717,6 @@ form button {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    background: #F8F8F8;
-    height: 300px;
     text-align: center; }
     .footer__bottom-left img {
       margin: 0 auto;
@@ -727,9 +725,7 @@ form button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-    align-items: center;
-    height: 100px;
-    text-align: center; }
+    align-items: center; }
     .footer__bottom-right img {
       margin: 0 auto;
       display: block; }
