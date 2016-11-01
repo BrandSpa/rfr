@@ -98,6 +98,10 @@
 
 	var _footer_nav2 = _interopRequireDefault(_footer_nav);
 
+	var _countries = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./countries\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+	var _countries2 = _interopRequireDefault(_countries);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
@@ -112,6 +116,7 @@
 	  (0, _modal_lang2.default)();
 	  (0, _footer_nav2.default)();
 	  (0, _home_header2.default)();
+	  (0, _countries2.default)();
 
 	  new _vue2.default({
 	    el: '#acn_reports'
