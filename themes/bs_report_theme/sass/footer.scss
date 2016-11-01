@@ -87,6 +87,12 @@
         display: block;
         float: left;
         margin-right: 20px;
+        
+        @media #{$mobile} {
+          float: none;
+          margin: 20px auto;
+        }
+
       }
     }
     

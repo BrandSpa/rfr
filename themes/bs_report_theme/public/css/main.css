@@ -729,6 +729,10 @@ form button {
     display: block;
     float: left;
     margin-right: 20px; }
+    @media (max-width: 767px) {
+      .footer__bottom-left img {
+        float: none;
+        margin: 20px auto; } }
   .footer__bottom-middle a {
     display: block;
     width: 100%; }
