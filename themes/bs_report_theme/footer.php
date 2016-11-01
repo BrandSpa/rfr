@@ -1,6 +1,7 @@
 
 <div id="footer">
   <div class="col-md-12 footer__top">
+  <div class="col-md-1"></div>
   <div class="col-md-1">
   
     <h4 class="nav__subtitle">
@@ -12,7 +13,7 @@
 
   </div>
   
-  <div class="footer__menu col-md-10">
+  <div class="footer__menu col-md-9">
   
     <?php
       $args = array(
