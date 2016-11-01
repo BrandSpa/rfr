@@ -136,6 +136,9 @@ h6 {
 .bg-discrimination {
   background: #FFC849 !important; }
 
+.bg-dark_jungle {
+  background: #1A2127 !important; }
+
 .center-vertical {
   display: -ms-flexbox;
   display: flex;

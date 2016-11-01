@@ -149,6 +149,10 @@ h6 {
   background: $discrimination !important;
 }
 
+.bg-dark_jungle {
+  background: $dark_jungle_green !important;
+}
+
 .center-vertical {
   @include center-vertical;
 }

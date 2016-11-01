@@ -25,7 +25,7 @@
     </ul>
 
     <button 
-      class="bg-red map__search__list_btn" 
+      class="bg-dark_jungle map__search__list_btn" 
       v-on:click="showContinent('asia')" >asia</button>
 
     <ul class="map__search_results" data-country="asia" style="display: none">
