@@ -851,7 +851,7 @@ form button {
     @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
       .map__controllers {
         float: right;
-        margin: 15px 15px 0 0; } }
+        margin: 15px 0 0 0; } }
     .map__controllers--show {
       opacity: 1; }
     .map__controllers button {
