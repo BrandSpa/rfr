@@ -16,7 +16,7 @@
   
     <?php
       $args = array(
-        'theme_location' => 'header',
+        'theme_location' => 'main',
         'container' => false,
         'echo' => true
       );
