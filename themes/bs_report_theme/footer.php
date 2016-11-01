@@ -1,7 +1,7 @@
 
 <div id="footer">
   <div class="col-md-12 footer__top">
-  <div class="col-md-2">
+  <div class="col-md-1">
   
     <h4 class="nav__subtitle">
       RELIGIOUS<br>
