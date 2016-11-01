@@ -40762,27 +40762,25 @@
 	});
 	exports.default = footerNav;
 	function footerNav() {
-	  var each = function each(fn) {
-	    return function (arr) {
-	      return Array.prototype.forEach.call(arr, fn);
-	    };
-	  };
-	  var langs = document.querySelectorAll('#footer .lang-item');
-	  var li = document.createElement('li');
-	  var a = document.createElement('a');
-	  var ul = document.createElement('ul');
-	  ul.setAttribute('class', 'sub-menu');
-	  a.appendChild(document.createTextNode('Languages'));
-	  li.appendChild(a);
-	  li.appendChild(ul);
-	  li.setAttribute('class', 'menu-item');
+	  // let each = fn => arr => Array.prototype.forEach.call(arr, fn);
+	  // let langs = document.querySelectorAll('#footer .lang-item');
+	  // let li = document.createElement('li');
+	  // let a = document.createElement('a');
+	  // let ul = document.createElement('ul');
 
-	  var appendTo = each(function (el) {
-	    ul.appendChild(el);
-	  });
+	  // ul.setAttribute('class', 'sub-menu');
+	  // a.appendChild(document.createTextNode('Languages'));
+	  // li.appendChild(a);
+	  // li.appendChild(ul);
+	  // li.setAttribute('class', 'menu-item');
 
-	  appendTo(langs);
-	  document.querySelector('#footer .menu').appendChild(li);
+	  // let appendTo = each((el) => {
+	  //   ul.appendChild(el);
+	  // });
+
+	  // appendTo(langs);
+	  // document.querySelector('#footer .menu').appendChild(li);
+
 	}
 
 /***/ }
