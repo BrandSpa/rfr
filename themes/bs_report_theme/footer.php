@@ -36,7 +36,7 @@
     
     <div class="col-md-3">
       <a href="#">PRIVACY POLICY</a>
-      <a href="#">TERMS & CONDITIONS</a>
+      <a href="#”">TERMS & CONDITIONS</a>
     </div>
 
     <div class="footer__bottom-right col-md-4">
