@@ -9,13 +9,11 @@
   }
 
   .menu {
-
-    ul {
-      & > li {
+    li {
         float: left;
         width: (100 / 5) * 1%;
 
-        a {
+    a {
           @include title5;
           color: $red_orange;
           display: block;
@@ -26,8 +24,8 @@
           }
         }
       }
-    }
-  }
+}
+
 }
 
 
@@ -96,5 +94,5 @@
             // }
           }
         }
-        
+
 }
