@@ -40779,8 +40779,7 @@
 	  });
 
 	  appendTo(langs);
-
-	  console.log(li);
+	  document.querySelector('#footer .menu').appendChild(li);
 	}
 
 /***/ }
