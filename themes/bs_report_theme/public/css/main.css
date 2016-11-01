@@ -704,14 +704,14 @@ form button {
           #footer .menu ul > li .sub-menu a:hover::before {
             left: -15px; }
 
-.footer__left {
-  height: 400px;
-  background: #1A2127; }
+.footer__top {
+  background: #F8F8F8;
+  width: 100%; }
 
-.footer__right {
+.footer__bottom {
   height: 400px;
   background: #fff; }
-  .footer__right-upper {
+  .footer__bottom-left {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -719,17 +719,17 @@ form button {
     background: #F8F8F8;
     height: 300px;
     text-align: center; }
-    .footer__right-upper img {
+    .footer__bottom-left img {
       margin: 0 auto;
       display: block; }
-  .footer__right-bottom {
+  .footer__bottom-right {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     height: 100px;
     text-align: center; }
-    .footer__right-bottom img {
+    .footer__bottom-right img {
       margin: 0 auto;
       display: block; }
 

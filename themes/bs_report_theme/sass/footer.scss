@@ -63,16 +63,16 @@
 
 .footer {
 
-  &__left {
-    height: 400px;
-    background: #1A2127
+  &__top {
+    background: $desert_storm;
+    width: 100%;
   }
 
-  &__right {
+  &__bottom {
     height: 400px;
     background: #fff;
 
-    &-upper {
+    &-left {
       @include center_vertical;
       background: #F8F8F8;
       height: 300px;
@@ -84,7 +84,7 @@
       }
     }
 
-    &-bottom {
+    &-right {
       @include center_vertical;
       height: 100px;
       text-align: center;
