@@ -1,9 +1,9 @@
 <?php
   $uri = $_SERVER['REQUEST_URI'];
-  echo getUserCountry();
+  var_dump(getUserCountry());
   $lang = getCountriesInfo(getUserCountry())->languages[0];
   echo $lang;
-  
+
   print_r( pll_the_languages( array( 'raw' => 1 ) )[$lang]['url'] );
 
   if($uri == '/' || $uri == '' || empty($uri)) {
