@@ -1,7 +1,7 @@
 <?php
   $uri = $_SERVER['REQUEST_URI'];
-  var_dump(getUserCountry()->isoCode);
-  $lang = getCountriesInfo(getUserCountry())->languages[0];
+  $iso = getUserCountry()->isoCode;
+  $lang = getCountriesInfo($iso)->languages[0];
   echo $lang;
 
   print_r( pll_the_languages( array( 'raw' => 1 ) )[$lang]['url'] );
