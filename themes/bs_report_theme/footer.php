@@ -69,7 +69,7 @@
   <div class="bs-modal__overlay"></div>
 </template>
 
-<?php var_dump(getCountriesInfo()); ?>
+<?php var_dump(getCountriesInfo()->name['Afghanistan']); ?>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
