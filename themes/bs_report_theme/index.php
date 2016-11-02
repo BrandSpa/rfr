@@ -3,7 +3,7 @@
   $iso = getUserCountry()->isoCode;
   $lang = getCountriesInfo($iso)->languages[0];
   
-  setcookie("nea", $lang);
+  setcookie("pll_language", $lang);
 
   print_r( pll_the_languages( array( 'raw' => 1 ) )[$lang] );
 ?>
