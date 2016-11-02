@@ -69,7 +69,7 @@
   <div class="bs-modal__overlay"></div>
 </template>
 
-<?php print_r( getCountriesInfo('Colombia') ); ?>
+<?php print_r( getCountriesInfo(getUserCountry()) ); ?>
 <?php echo get_permalink() ?>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
