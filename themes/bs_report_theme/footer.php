@@ -69,10 +69,6 @@
   <div class="bs-modal__overlay"></div>
 </template>
 
-<?php print_r( getCountriesInfo(getUserCountry())->languages[0] ); ?>
-
-
-
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>

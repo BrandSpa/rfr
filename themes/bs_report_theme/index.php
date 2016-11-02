@@ -2,7 +2,7 @@
   $uri = $_SERVER['REQUEST_URI'];
   $lang = getCountriesInfo(getUserCountry())->languages[0];
 
-  print_r( pll_the_languages( array( 'raw' => 1 ) ));
+  print_r( pll_the_languages( array( 'raw' => 1 ) )[$lang] );
 
   if($uri == '/' || $uri == '' || empty($uri)) {
     $lang = getCountriesInfo(getUserCountry())->languages[0];
@@ -10,8 +10,6 @@
     return wp_redirect( $url );
     exit;
   }
-
-
 ?>
 
 <?php get_header() ?>
