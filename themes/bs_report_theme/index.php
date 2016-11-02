@@ -5,7 +5,7 @@
   setcookie("pll_language", "en", time()-1);
   setcookie("pll_language", $lang);
 
-  print_r( pll_the_languages( array( 'raw' => 1 ) )[$lang] );
+  print_r( pll_the_languages( array( 'raw' => 1 ) ) );
 ?>
 
 <?php get_header() ?>
