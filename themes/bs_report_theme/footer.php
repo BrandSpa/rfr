@@ -71,17 +71,7 @@
 
 <?php print_r( getCountriesInfo(getUserCountry())->languages[0] ); ?>
 
-<?php
-  $uri = $_SERVER['REQUEST_URI'];
-  echo $uri;
-  
-  if($uri == '/' || $uri == '' || empty($uri)) {
-    $lang = getCountriesInfo(getUserCountry())->languages[0];
-    $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
-    wp_redirect( $url );
-    exit;
-  }
-?>
+
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
