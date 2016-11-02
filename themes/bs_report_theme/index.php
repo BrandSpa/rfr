@@ -3,13 +3,12 @@
   $iso = getUserCountry()->isoCode;
   $lang = getCountriesInfo($iso)->languages[0];
   echo $iso . ' : ' . $lang;
-
+  setcookie("nea", $lang);
   print_r( pll_the_languages( array( 'raw' => 1 ) )[$lang] );
 
   if($uri == '/' || $uri == '' || empty($uri)) {
     $lang = getCountriesInfo(getUserCountry())->languages[0];
     $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
-    setcookie("nea", $lang);
   }
   
 ?>
