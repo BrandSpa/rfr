@@ -25,8 +25,7 @@
   <?php endwhile; else : ?>
     <h1>
     <?php
-      return wp_redirect('/');
-      exit;
+      
      ?>
     </h1>
   <?php endif; ?>
