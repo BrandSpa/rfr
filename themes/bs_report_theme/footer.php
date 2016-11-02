@@ -70,6 +70,7 @@
 </template>
 
 <?php var_dump(getCountriesInfo('Colombia'))['languages']; ?>
+<?php echo content_url() ?>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
