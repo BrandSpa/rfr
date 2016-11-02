@@ -74,9 +74,12 @@
 <?php
   $uri = $_SERVER['REQUEST_URI'];
   echo $uri;
-  $lang = getCountriesInfo(getUserCountry())->languages[0];
-  $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
-  echo $url;
+  if($uri == '/' || $uri == '') {
+    $lang = getCountriesInfo(getUserCountry())->languages[0];
+    $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
+    wp_redirect( $url );
+    exit;
+  }
 ?>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
