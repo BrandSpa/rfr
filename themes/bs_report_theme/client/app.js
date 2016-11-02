@@ -12,6 +12,7 @@ import subscribeForm from './components/subscribe_form';
 import modalLang from './components/modal_lang';
 import homeHeader from './lib/home_header';
 import footerNav from './lib/footer_nav';
+import countries from './lib/country_lang';
 
 $(() => {
   nav();
@@ -25,6 +26,7 @@ $(() => {
   modalLang();
   footerNav();
   homeHeader();
+  countries();
 
   new Vue({
     el: '#acn_reports'
