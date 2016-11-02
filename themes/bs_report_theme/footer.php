@@ -70,7 +70,10 @@
 </template>
 
 <?php print_r( getCountriesInfo(getUserCountry())->languages[0] ); ?>
-<?php echo get_permalink() ?>
+<?php
+$url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+echo $url;
+?>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
