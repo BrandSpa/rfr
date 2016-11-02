@@ -40811,7 +40811,7 @@
 	    return ob;
 	  });
 
-	  console.log(JSON.stringify(cons));
+	  console.log(cons);
 	}
 
 /***/ },
