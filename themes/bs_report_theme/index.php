@@ -1,6 +1,6 @@
 <?php
   $uri = $_SERVER['REQUEST_URI'];
-  var_dump(getUserCountry());
+  var_dump(getUserCountry()->isoCode);
   $lang = getCountriesInfo(getUserCountry())->languages[0];
   echo $lang;
 
