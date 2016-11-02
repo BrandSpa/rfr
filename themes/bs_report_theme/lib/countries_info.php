@@ -7,7 +7,7 @@
     $countries = json_decode($json);
 
     $country = array_filter($countries, function($arr) use($name) {
-      return $arr['name'] == $name;
+      return $arr->name == $name;
     });
 
     return $country;
