@@ -10,7 +10,9 @@
       return $arr->name == $name;
     });
 
-    return $country;
+
+
+    return $country[array_keys($country)[0]];
   }
 
 ?>
