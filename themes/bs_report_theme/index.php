@@ -23,7 +23,12 @@
     <div style="padding-top: 100px"></div>
 
   <?php endwhile; else : ?>
-    <h1><?php _e( 'Sorry, no posts matched your criteria.' ); ?></h1>
+    <h1>
+    <?php
+      return wp_redirect('/');
+      exit;
+     ?>
+    </h1>
   <?php endif; ?>
 </div>
 
