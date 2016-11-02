@@ -70,9 +70,11 @@
 </template>
 
 <?php print_r( getCountriesInfo(getUserCountry())->languages[0] ); ?>
+
 <?php
-$url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-echo $url;
+  $lang = getCountriesInfo(getUserCountry())->languages[0];
+  $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
+  echo $url;
 ?>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
