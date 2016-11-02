@@ -9,12 +9,7 @@
   if($uri == '/' || $uri == '' || empty($uri)) {
     $lang = getCountriesInfo(getUserCountry())->languages[0];
     $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
-    setcookie("lang", $lang);
-    
-    header("Location:" . $url); /* Redirect browser */
-
-    /* Make sure that code below does not get executed when we redirect. */
-    exit;
+    setcookie("nea", $lang);
   }
   
 ?>
