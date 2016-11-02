@@ -2,9 +2,8 @@
   $uri = $_SERVER['REQUEST_URI'];
   $iso = getUserCountry()->isoCode;
   $lang = getCountriesInfo($iso)->languages[0];
-  setcookie("pll_language", "en", time()-1);
+  unset($_COOKIE["pll_language"]);
   setcookie("pll_language", $lang);
-
   print_r(isset(pll_the_languages( array( 'raw' => 1 ) )[$lang]) && is_array(pll_the_languages( array( 'raw' => 1 ) )[$lang]));
 ?>
 
