@@ -2,7 +2,7 @@
   $uri = $_SERVER['REQUEST_URI'];
   $iso = getUserCountry()->isoCode;
   $lang = getCountriesInfo($iso)->languages[0];
-  
+  echo $iso;
   echo $lang;
 
   print_r( pll_the_languages( array( 'raw' => 1 ) )[$lang]['url'] );
@@ -12,7 +12,7 @@
     $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
     echo $url;
   }
-
+  
 ?>
 
 <?php get_header() ?>
