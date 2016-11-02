@@ -2,6 +2,7 @@
 const countries = require("json!./countries_list.json");
 
 export default function countryLang() {
+
   const cons =  countries.map(con => {
     let ob = {};
     ob['name'] = con['name'];
@@ -9,5 +10,5 @@ export default function countryLang() {
     return ob;
   });
 
-  console.log(cons);
+  console.log(JSON.stringify(cons));
 }

@@ -40801,6 +40801,7 @@
 	var countries = __webpack_require__(95);
 
 	function countryLang() {
+
 	  var cons = countries.map(function (con) {
 	    var ob = {};
 	    ob['name'] = con['name'];
@@ -40810,7 +40811,7 @@
 	    return ob;
 	  });
 
-	  console.log(cons);
+	  console.log(JSON.stringify(cons));
 	}
 
 /***/ },

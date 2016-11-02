@@ -75,7 +75,6 @@
 
 <?php wp_footer() ?>
 
-<?php echo getCountriesInfo('United States').toString(); ?>
   
 </body>
 </html>
