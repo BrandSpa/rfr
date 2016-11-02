@@ -1,12 +1,14 @@
 <?php
   $uri = $_SERVER['REQUEST_URI'];
-  
+  print_r(pll_the_languages( array( 'raw' => 1 ) ));
   if($uri == '/' || $uri == '' || empty($uri)) {
     $lang = getCountriesInfo(getUserCountry())->languages[0];
     $url = "http://".$_SERVER['HTTP_HOST'].'/'.$lang;
     return wp_redirect( $url );
     exit;
   }
+
+
 ?>
 
 <?php get_header() ?>
@@ -27,7 +29,6 @@
 
 <script type="text/javascript">
   var userGeoData = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()) ?>));
-  console.log(userGeoData);
 </script>
 
 <?php get_footer() ?>

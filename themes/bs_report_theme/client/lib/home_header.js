@@ -7,7 +7,6 @@ export default function homeHeader() {
   let interval = $homeHeader.data('interval') ? $('.home_header').data('interval') : 4000;
   let startAutoplay = $homeHeader.data('autoplay') ? true : false;
   let slide = changeSlide();
-  console.log('autoplay', startAutoplay);
   
   if(startAutoplay) {
     
