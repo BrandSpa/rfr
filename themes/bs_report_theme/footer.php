@@ -70,7 +70,7 @@
 </template>
 
 <?php print_r( getCountriesInfo('Colombia') ); ?>
-<?php print_r( array_keys(getCountriesInfo('Colombia') )); ?>
+<?php echo array_keys(getCountriesInfo('Colombia'))[0] ?>
 <?php echo get_permalink() ?>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
