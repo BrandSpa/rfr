@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -40,7 +41,7 @@
 
   <h4 class="nav_mobile__subtitle">
     RELIGIOUS <span class="color-red">FREEDOM</span><br>
-    REPORT 2016
+    REPORT 2016 <?php echo get_the_ID(); ?>
   </h4>
 
      <a href="#" id="open-nav">
