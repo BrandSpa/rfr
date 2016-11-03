@@ -46,8 +46,10 @@ export default function () {
       },
 
       onSubmit() {
+        let {name, email, country, language} = this;
+
         if(this.isValid) {
-          console.log(this.name, this.email, this.country);
+          console.log(name, email, country, language);
         }
       }
     }

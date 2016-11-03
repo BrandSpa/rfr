@@ -37781,8 +37781,14 @@
 	        var fields = Object.keys(this.validation);
 	      },
 	      onSubmit: function onSubmit() {
+	        var name = this.name;
+	        var email = this.email;
+	        var country = this.country;
+	        var language = this.language;
+
+
 	        if (this.isValid) {
-	          console.log(this.name, this.email, this.country);
+	          console.log(name, email, country, language);
 	        }
 	      }
 	    }
