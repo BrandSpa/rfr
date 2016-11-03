@@ -9,7 +9,6 @@ import searchCountry from './components/search_country';
 import searchList from './components/search_list';
 import downloadFormReport from './components/download_report';
 import subscribeForm from './components/subscribe_form';
-import modalLang from './components/modal_lang';
 import homeHeader from './lib/home_header';
 import footerNav from './lib/footer_nav';
 import countries from './lib/country_lang';

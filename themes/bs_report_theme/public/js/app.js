@@ -86,10 +86,6 @@
 
 	var _subscribe_form2 = _interopRequireDefault(_subscribe_form);
 
-	var _modal_lang = __webpack_require__(90);
-
-	var _modal_lang2 = _interopRequireDefault(_modal_lang);
-
 	var _home_header = __webpack_require__(91);
 
 	var _home_header2 = _interopRequireDefault(_home_header);
@@ -113,7 +109,7 @@
 	  (0, _search_country2.default)();
 	  (0, _search_list2.default)();
 	  (0, _subscribe_form2.default)();
-	  (0, _modal_lang2.default)();
+	  modalLang();
 	  (0, _footer_nav2.default)();
 	  (0, _home_header2.default)();
 	  (0, _country_lang2.default)();
@@ -40576,76 +40572,7 @@
 	};
 
 /***/ },
-/* 90 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	exports.default = function () {
-	  _vue2.default.component('modal-lang', {
-	    template: '#modal-lang-template',
-	    props: ['info', 'polylang'],
-	    ready: function ready() {
-	      var multireg = this.info;
-	      var pll = JSON.parse(this.polylang);
-	      var showMultiRegional = localStorage.getItem('multiregional');
-	      var showModal = false;
-
-	      var showMdl = function showMdl() {
-	        (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-close');
-	        (0, _jquery2.default)('.bs-modal__overlay').addClass('bs-modal__overlay-open');
-	        (0, _jquery2.default)('.bs-modal').removeClass('bs-modal-close');
-	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-open');
-	      };
-
-	      (0, _jquery2.default)(document).on('keyup', function (e) {
-	        if (e.keyCode === 27) {
-	          (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
-	          (0, _jquery2.default)('.bs-modal__overlay').addClass('bs-modal__overlay-close');
-	          (0, _jquery2.default)('.bs-modal').removeClass('bs-modal-open');
-	          (0, _jquery2.default)('.bs-modal').addClass('bs-modal-close');
-	        }
-	      });
-
-	      (0, _jquery2.default)('.show-modal').on('click', function (e) {
-	        if (e) e.preventDefault();
-	        showMdl();
-	      });
-
-	      (0, _jquery2.default)('.bs-modal__close').on('click', function (e) {
-	        if (e) e.preventDefault();
-	        (0, _jquery2.default)('.bs-modal__overlay').removeClass('bs-modal__overlay-open');
-	        (0, _jquery2.default)('.bs-modal__overlay').addClass('bs-modal__overlay-close');
-	        (0, _jquery2.default)('.bs-modal').removeClass('bs-modal-open');
-	        (0, _jquery2.default)('.bs-modal').addClass('bs-modal-close');
-	      });
-
-	      if (userGeoData && userGeoData.country) {
-	        showModal = userGeoData.country.names.en == multireg.country;
-	      }
-
-	      if (showModal) showMdl();
-
-	      console.log('geo from component: ', showModal, multireg.country, userGeoData.country.names.en);
-	    }
-	  });
-	};
-
-	var _vue = __webpack_require__(14);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ },
+/* 90 */,
 /* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
