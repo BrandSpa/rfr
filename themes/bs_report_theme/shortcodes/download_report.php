@@ -57,7 +57,12 @@
 
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Language') ?></label>
-          <select name="" id="" v-model="language"></select>
+          <select name="" id="" v-model="language">
+          
+            <?php foreach(getLanguages() as $country): ?>
+              <option value="<?php echo $country ?>"><?php echo $country; ?></option>
+            <?php endforeach; ?>
+          </select>
         </div>
 
          <div class="input-container">
