@@ -37782,7 +37782,7 @@
 	      },
 	      onSubmit: function onSubmit() {
 	        if (this.isValid) {
-	          console.log(this.$data);
+	          console.log(this.name, this.email, this.country);
 	        }
 	      }
 	    }
