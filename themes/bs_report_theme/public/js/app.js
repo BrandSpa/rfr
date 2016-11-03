@@ -37662,7 +37662,7 @@
 	            return r.meta_country == coun;
 	          })[0];
 	        } else {
-	          return;
+	          return '';
 	        }
 	      };
 
