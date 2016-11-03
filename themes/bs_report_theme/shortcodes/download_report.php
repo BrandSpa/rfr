@@ -3,6 +3,7 @@
 
   <h1 class="title-center title-line color-red">
     <?php echo gett('DOWNLOAD REPORT'); ?>
+    <?php var_dump( getUserCountry() ) ?>
   </h1>
  
   <div class="row">
