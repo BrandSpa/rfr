@@ -16,42 +16,30 @@ export default function() {
       let reports = JSON.parse(this.reports);
       let continents = JSON.parse(this.continents);
       let newContinents = {};
-
-      newContinents['afrika'] = continents['Afrika'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
-
-      newContinents['asia'] =  continents['Asia'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
-
-      newContinents['easterEurope'] = continents['Easter Europe'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
-
-       newContinents['latinAmerica'] = continents['Latin America'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
-
-      newContinents['middleEast'] = continents['Middle East'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
       
-      newContinents['northAmerica'] =  continents['North America'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
+      let filterByCountry = coun => {
+        if(reports.filter(r => r.meta_country == coun)[0]) {
+          return reports.filter(r => r.meta_country == coun)[0];
+        }
+      };
+
+      newContinents['afrika'] = continents['Afrika'].map(filterByCountry);
+
+      newContinents['asia'] =  continents['Asia'].map(filterByCountry);
+
+      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry);
+
+      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry);
+
+      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry);
+      
+      newContinents['northAmerica'] =  continents['North America'].map(filterByCountry);
     
-      newContinents['ocenia'] =  continents['Ocenia'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
+      newContinents['ocenia'] =  continents['Ocenia'].map(filterByCountry);
 
-      newContinents['russiaCentralAsia'] =  continents['Russia & Central Asia'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
+      newContinents['russiaCentralAsia'] =  continents['Russia & Central Asia'].map(filterByCountry);
 
-     newContinents['westernEurope'] =  continents['Western Europe'].map(coun => {
-        return reports.filter(r => r.meta_country == coun)[0];
-      });
+     newContinents['westernEurope'] =  continents['Western Europe'].map(filterByCountry);
 
       this.continents = newContinents;
     },
