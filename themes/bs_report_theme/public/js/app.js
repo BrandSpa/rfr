@@ -37778,7 +37778,11 @@
 	        }).length == 0);
 	      },
 	      validateAll: function validateAll() {
-	        var fields = Object.keys(this.validation);
+	        var _this = this;
+
+	        Object.keys(this.validation).forEach(function (field) {
+	          return _this.validate({ field: field });
+	        });
 	      },
 	      onSubmit: function onSubmit() {
 	        var name = this.name;
@@ -37786,7 +37790,7 @@
 	        var country = this.country;
 	        var language = this.language;
 
-
+	        this.validateAll();
 	        if (this.isValid) {
 	          console.log({ name: name, email: email, country: country, language: language });
 	        }

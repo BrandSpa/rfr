@@ -42,12 +42,12 @@ export default function () {
       },
 
       validateAll() {
-        let fields = Object.keys(this.validation);
+        Object.keys(this.validation).forEach(field => this.validate({field}));
       },
 
       onSubmit() {
         const {name, email, country, language} = this;
-
+        this.validateAll();
         if(this.isValid) {
           console.log({name, email, country, language});
         }
