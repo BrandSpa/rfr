@@ -1,7 +1,3 @@
-<?php
-  
-?>
-
 <?php get_header() ?>
 
 <div >
@@ -22,8 +18,5 @@
   <?php endif; ?>
 </div>
 
-<script type="text/javascript">
-  var userGeoData = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()) ?>));
-</script>
 
 <?php get_footer() ?>

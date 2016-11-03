@@ -114,21 +114,18 @@ function getLangList() {
 }
 
 
-// function setNewLang() {
-//   $uri = $_SERVER['REQUEST_URI'];
-//   $iso = getUserCountry()->isoCode;
-//   $lang = getCountriesInfo($iso)->languages[0];
-  
-//   unset($_COOKIE["pll_language"]);
+function setNewLang() {
+  $uri = $_SERVER['REQUEST_URI'];
+  $iso = getUserCountry()->isoCode;
+  $lang = getCountriesInfo($iso)->languages[0];
 
-//   print_r($_COOKIE["pll_language"]);
+  if(function_exists('pll_the_languages')) {
+    if(isset(pll_the_languages( array( 'raw' => 1 ) )[$lang]) && is_array(pll_the_languages( array( 'raw' => 1 ) )[$lang])) {
+      add_filter( 'pll_redirect_home', '/'. $lang );
+    }  
+  }
+}
 
-//   setcookie("pll_language", $lang);
-  
-//   print_r(isset(pll_the_languages( array( 'raw' => 1 ) )[$lang]) && is_array(pll_the_languages( array( 'raw' => 1 ) )[$lang]));
-
-// }
-
-// setNewLang();
+setNewLang();
 
 ?>
