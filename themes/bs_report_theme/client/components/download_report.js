@@ -6,6 +6,7 @@ let initialState = {
   name: '',
   email: '',
   language: '',
+  isValid: false,
   validation: {
     name: false,
     email: false
@@ -36,17 +37,16 @@ export default function () {
         };
 
         this.$set('validation', validation);
-        return !Object.keys(validation).filter(key => validation[key] == true).length > 0;
+        this.$set('isValid', !Object.keys(validation).filter(key => validation[key] == true).length > 0);
       },
 
       validateAll() {
         let fields = Object.keys(this.validation);
-        console.log(fields);
       },
 
       onSubmit() {
         console.log(this.validateAll());
-        console.log('is valid: ' + this.validate());
+        console.log('is valid: ' + this.isValid);
       }
     }
   });

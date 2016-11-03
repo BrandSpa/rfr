@@ -37774,17 +37774,16 @@
 	        };
 
 	        this.$set('validation', validation);
-	        return !Object.keys(validation).filter(function (key) {
+	        this.$set('isValid', !Object.keys(validation).filter(function (key) {
 	          return validation[key] == true;
-	        }).length > 0;
+	        }).length > 0);
 	      },
 	      validateAll: function validateAll() {
 	        var fields = Object.keys(this.validation);
-	        console.log(fields);
 	      },
 	      onSubmit: function onSubmit() {
 	        console.log(this.validateAll());
-	        console.log('is valid: ' + this.validate());
+	        console.log('is valid: ' + this.isValid);
 	      }
 	    }
 	  });
@@ -37804,6 +37803,7 @@
 	  name: '',
 	  email: '',
 	  language: '',
+	  isValid: false,
 	  validation: {
 	    name: false,
 	    email: false
