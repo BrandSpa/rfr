@@ -6,7 +6,7 @@
   </h1>
  
   <div class="row">
-    <div class="col-md-1"></div>”
+    <div class="col-md-1"></div>
 
     <div class="col-md-5" style="float: none; margin: 0 auto">
       <form-download-report country="<?php echo getUserCountry() ?>"></form-download-report>
