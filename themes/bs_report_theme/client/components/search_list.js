@@ -2,23 +2,6 @@
 import Vue from 'vue';
 import $ from 'jquery';
 
-function setContinent(continents, currentContinents = {}, continentName) {
-
-  let filterAndMapByCountry = coun => {
-    if(reports.filter(r => r.meta_country == coun)[0]) {
-      return reports.filter(r => r.meta_country == coun)[0];
-    } else {
-      return '';
-    }
-  };
-
-  let cleanEmpty = report => typeof report == 'object';
-
-  newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty).filter(cleanEmpty);
-
-  return {...currentContinents, ...newContinents};
-}
-
 export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',

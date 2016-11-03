@@ -24,7 +24,7 @@ $(() => {
   subscribeForm();
   footerNav();
   homeHeader();
-  countries();
+  // countries();
 
   new Vue({
     el: '#acn_reports'
