@@ -55,7 +55,7 @@ export default function () {
         if(this.isValid) {
           request
           .post(`http://us13.api.mailchimp.com/3.0/lists/${listId}`, {
-            data: {name, email, country, language},
+            data: {email_address: email},
             auth: { user: apiKey }
           })
           .then(res => console.log(res.data))
