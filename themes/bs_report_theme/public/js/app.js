@@ -37781,8 +37781,9 @@
 	        var fields = Object.keys(this.validation);
 	      },
 	      onSubmit: function onSubmit() {
-	        console.log(this.validateAll());
-	        console.log('is valid: ' + this.isValid);
+	        if (this.isValid) {
+	          console.log(this.$data);
+	        }
 	      }
 	    }
 	  });
