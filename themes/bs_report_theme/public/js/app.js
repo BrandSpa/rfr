@@ -37668,6 +37668,8 @@
 	          return reports.filter(function (r) {
 	            return r.meta_country == coun;
 	          })[0];
+	        } else {
+	          return {};
 	        }
 	      };
 

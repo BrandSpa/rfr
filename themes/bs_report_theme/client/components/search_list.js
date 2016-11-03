@@ -20,6 +20,8 @@ export default function() {
       let filterByCountry = coun => {
         if(reports.filter(r => r.meta_country == coun)[0]) {
           return reports.filter(r => r.meta_country == coun)[0];
+        } else {
+          return {};
         }
       };
 
