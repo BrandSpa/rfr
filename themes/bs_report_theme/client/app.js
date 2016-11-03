@@ -22,7 +22,6 @@ $(() => {
   searchCountry();
   searchList();
   subscribeForm();
-  modalLang();
   footerNav();
   homeHeader();
   countries();

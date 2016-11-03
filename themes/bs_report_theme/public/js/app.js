@@ -86,15 +86,15 @@
 
 	var _subscribe_form2 = _interopRequireDefault(_subscribe_form);
 
-	var _home_header = __webpack_require__(91);
+	var _home_header = __webpack_require__(90);
 
 	var _home_header2 = _interopRequireDefault(_home_header);
 
-	var _footer_nav = __webpack_require__(93);
+	var _footer_nav = __webpack_require__(92);
 
 	var _footer_nav2 = _interopRequireDefault(_footer_nav);
 
-	var _country_lang = __webpack_require__(94);
+	var _country_lang = __webpack_require__(93);
 
 	var _country_lang2 = _interopRequireDefault(_country_lang);
 
@@ -109,7 +109,6 @@
 	  (0, _search_country2.default)();
 	  (0, _search_list2.default)();
 	  (0, _subscribe_form2.default)();
-	  modalLang();
 	  (0, _footer_nav2.default)();
 	  (0, _home_header2.default)();
 	  (0, _country_lang2.default)();
@@ -40572,8 +40571,7 @@
 	};
 
 /***/ },
-/* 90 */,
-/* 91 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40583,7 +40581,7 @@
 	});
 	exports.default = homeHeader;
 
-	var _change_slide = __webpack_require__(92);
+	var _change_slide = __webpack_require__(91);
 
 	var _change_slide2 = _interopRequireDefault(_change_slide);
 
@@ -40616,7 +40614,7 @@
 	}
 
 /***/ },
-/* 92 */
+/* 91 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40663,7 +40661,7 @@
 	}
 
 /***/ },
-/* 93 */
+/* 92 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40695,7 +40693,7 @@
 	}
 
 /***/ },
-/* 94 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40704,7 +40702,7 @@
 	  value: true
 	});
 	exports.default = countryLang;
-	var countries = __webpack_require__(95);
+	var countries = __webpack_require__(94);
 
 	function countryLang() {
 
@@ -40722,7 +40720,7 @@
 	}
 
 /***/ },
-/* 95 */
+/* 94 */
 /***/ function(module, exports) {
 
 	module.exports = [
