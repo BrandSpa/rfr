@@ -22,14 +22,14 @@ export default function () {
     },
 
     methods: {
-      validate(opts = {type: '', field: ''}) {
-        const {field, type} = opts;
+      validate(opts = {field: ''}) {
+        const {field} = opts;
         const data = this.$data[field];
         let validation = this.$data.validation;
 
-        switch (type) {
-          case 'required':
-          validation = {...validation, name: validator.isEmpty(data)};
+        switch (field) {
+          case 'name':
+            validation = {...validation, name: validator.isEmpty(data)};
           break;
           case 'email':
             validation = {...validation, email: !validator.isEmail(data)};
@@ -37,7 +37,7 @@ export default function () {
         };
 
         this.$set('validation', validation);
-        this.$set('isValid', !Object.keys(validation).filter(key => validation[key] == true).length > 0);
+        this.$set('isValid', Object.keys(validation).filter(key => validation[key] == true).length == 0);
       },
 
       validateAll() {

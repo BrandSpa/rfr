@@ -37757,15 +37757,14 @@
 
 	    methods: {
 	      validate: function validate() {
-	        var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { type: '', field: '' };
+	        var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { field: '' };
 	        var field = opts.field;
-	        var type = opts.type;
 
 	        var data = this.$data[field];
 	        var validation = this.$data.validation;
 
-	        switch (type) {
-	          case 'required':
+	        switch (field) {
+	          case 'name':
 	            validation = _extends({}, validation, { name: _validator2.default.isEmpty(data) });
 	            break;
 	          case 'email':
@@ -37774,9 +37773,9 @@
 	        };
 
 	        this.$set('validation', validation);
-	        this.$set('isValid', !Object.keys(validation).filter(function (key) {
+	        this.$set('isValid', Object.keys(validation).filter(function (key) {
 	          return validation[key] == true;
-	        }).length > 0);
+	        }).length == 0);
 	      },
 	      validateAll: function validateAll() {
 	        var fields = Object.keys(this.validation);
