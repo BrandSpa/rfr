@@ -37648,11 +37648,7 @@
 	  _vue2.default.component('search-list', {
 	    template: '#search-list-template',
 	    props: ['reports', 'continents', 'dir'],
-	    data: function data() {
-	      return {
-	        continents: []
-	      };
-	    },
+
 	    ready: function ready() {
 	      var reports = JSON.parse(this.reports);
 	      var continents = JSON.parse(this.continents);
