@@ -3,6 +3,7 @@ import Vue from 'vue';
 import validator from 'validator';
 import request from 'axios';
 const apiKey = '709cb76ed68f751a3ae287f2c067a046-us13';
+const listId = 'e4bd5ff7e0';
 
 let initialState = {
   name: '',
@@ -54,11 +55,9 @@ export default function () {
         if(this.isValid) {
           request({
             method: 'post',
-            url: 'http://us13.api.mailchimp.com/3.0/',
+            url: `http://us13.api.mailchimp.com/3.0/lists/${listId}`,
             data: {name, email, country, language},
-            auth: {
-              user: apiKey
-            }
+            auth: { user: apiKey }
           })
           .then(res => console.log(res.data))
           .catch(err => console.log(err));

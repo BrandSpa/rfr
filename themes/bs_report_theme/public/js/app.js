@@ -37795,11 +37795,9 @@
 	        if (this.isValid) {
 	          (0, _axios2.default)({
 	            method: 'post',
-	            url: 'http://us13.api.mailchimp.com/3.0/',
+	            url: 'http://us13.api.mailchimp.com/3.0/lists/' + listId,
 	            data: { name: name, email: email, country: country, language: language },
-	            auth: {
-	              user: apiKey
-	            }
+	            auth: { user: apiKey }
 	          }).then(function (res) {
 	            return console.log(res.data);
 	          }).catch(function (err) {
@@ -37826,6 +37824,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var apiKey = '709cb76ed68f751a3ae287f2c067a046-us13';
+	var listId = 'e4bd5ff7e0';
 
 	var initialState = {
 	  name: '',
