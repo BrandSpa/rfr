@@ -17,7 +17,7 @@
 </div>
 
 <template id="form-download-template">
-     <form action="" v-on:submit.prevent="onSubmit">
+     <form  v-on:submit.prevent="onSubmit">
 
         <div class="input-container">
           <label for="" class="color-red">

@@ -37778,8 +37778,12 @@
 	          return validation[key] == true;
 	        }).length > 0;
 	      },
+	      validateAll: function validateAll() {
+	        var fields = Object.keys(this.validation);
+	        console.log(fields);
+	      },
 	      onSubmit: function onSubmit() {
-	        console.log(this.$data.validation);
+	        console.log(this.validateAll());
 	        console.log('is valid: ' + this.validate());
 	      }
 	    }
