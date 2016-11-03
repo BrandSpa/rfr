@@ -6,7 +6,7 @@ export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',
     props: ['reports', 'continents', 'dir'],
-  ”
+  
     ready() {
       let reports = JSON.parse(this.reports);
       let continents = JSON.parse(this.continents);
