@@ -53,9 +53,8 @@ export default function () {
         this.validateAll();
 
         if(this.isValid) {
-          request({
-            method: 'post',
-            url: `http://us13.api.mailchimp.com/3.0/lists/${listId}`,
+          request
+          .post(`http://us13.api.mailchimp.com/3.0/lists/${listId}`, {
             data: {name, email, country, language},
             auth: { user: apiKey }
           })

@@ -37793,9 +37793,7 @@
 	        this.validateAll();
 
 	        if (this.isValid) {
-	          (0, _axios2.default)({
-	            method: 'post',
-	            url: 'http://us13.api.mailchimp.com/3.0/lists/' + listId,
+	          _axios2.default.post('http://us13.api.mailchimp.com/3.0/lists/' + listId, {
 	            data: { name: name, email: email, country: country, language: language },
 	            auth: { user: apiKey }
 	          }).then(function (res) {
