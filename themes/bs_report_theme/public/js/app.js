@@ -74,7 +74,7 @@
 
 	var _search_country2 = _interopRequireDefault(_search_country);
 
-	var _search_list = __webpack_require__(23);
+	var _search_list = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/search_list\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _search_list2 = _interopRequireDefault(_search_list);
 
@@ -37633,108 +37633,7 @@
 	;
 
 /***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-	exports.default = function () {
-	  _vue2.default.component('search-list', {
-	    template: '#search-list-template',
-	    props: ['reports', 'continents', 'dir'],
-
-	    ready: function ready() {
-	      var reports = JSON.parse(this.reports);
-	      var continents = JSON.parse(this.continents);
-	      var newContinents = {};
-
-	      var filterByCountry = function filterByCountry(coun) {
-	        if (reports.filter(function (r) {
-	          return r.meta_country == coun;
-	        })[0]) {
-	          return reports.filter(function (r) {
-	            return r.meta_country == coun;
-	          })[0];
-	        } else {
-	          return '';
-	        }
-	      };
-
-	      var cleanEmpty = function cleanEmpty(report) {
-	        return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
-	      };
-
-	      newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['asia'] = continents['Asia'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['northAmerica'] = continents['North America'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['ocenia'] = continents['Ocenia'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['russiaCentralAsia'] = continents['Russia & Central Asia'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['westernEurope'] = continents['Western Europe'].map(filterByCountry).filter(cleanEmpty);
-	      this.continents = newContinents;
-	    },
-
-
-	    methods: {
-	      close: function close(e) {
-	        if (e) e.preventDefault();
-	        (0, _jquery2.default)('.map__search_list').removeClass('map__search_list--show');
-	      },
-	      getIcon: function getIcon(name) {
-	        return this.dir + '/public/img/icons/' + name + '.svg';
-	      },
-	      isSelected: function isSelected(index) {
-	        return index === this.current;
-	      },
-	      isDiscrimination: function isDiscrimination(n) {
-	        if (n) {
-	          return n == 'Discrimination';
-	        }
-	      },
-	      isPersecution: function isPersecution(n) {
-	        if (n) {
-	          return n == 'Persecution';
-	        }
-	      },
-	      showContinent: function showContinent(continent) {
-	        var each = function each(fn) {
-	          return function (arr) {
-	            return Array.prototype.forEach.call(arr, fn);
-	          };
-	        };
-
-	        var all = document.querySelectorAll('ul[data-country]');
-
-	        each(function (el) {
-	          el.style.display = 'none';
-	        })(all);
-
-	        document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
-	      }
-	    }
-
-	  });
-	};
-
-	var _vue = __webpack_require__(14);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ },
+/* 23 */,
 /* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37800,7 +37699,6 @@
 	  name: '',
 	  email: '',
 	  language: '',
-	  country: '',
 	  validation: {
 	    name: false,
 	    email: false
