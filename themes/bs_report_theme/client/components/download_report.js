@@ -46,10 +46,10 @@ export default function () {
       },
 
       onSubmit() {
-        let {name, email, country, language} = this;
+        const {name, email, country, language} = this;
 
         if(this.isValid) {
-          console.log(name, email, country, language);
+          console.log({name, email, country, language});
         }
       }
     }

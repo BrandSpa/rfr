@@ -37788,7 +37788,7 @@
 
 
 	        if (this.isValid) {
-	          console.log(name, email, country, language);
+	          console.log({ name: name, email: email, country: country, language: language });
 	        }
 	      }
 	    }
