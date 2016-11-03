@@ -1,6 +1,8 @@
 'use strict';
 import Vue from 'vue';
 import validator from 'validator';
+import request from 'axios';
+const apiKey = '709cb76ed68f751a3ae287f2c067a046-us13';
 
 let initialState = {
   name: '',
@@ -48,8 +50,18 @@ export default function () {
       onSubmit() {
         const {name, email, country, language} = this;
         this.validateAll();
+
         if(this.isValid) {
-          console.log({name, email, country, language});
+          request({
+            method: 'post',
+            url: 'http://us13.api.mailchimp.com/3.0/',
+            data: {name, email, country, language},
+            auth: {
+              user: apiKey
+            }
+          })
+          .then(res => console.log(res.data))
+          .catch(err => console.log(err));
         }
       }
     }
