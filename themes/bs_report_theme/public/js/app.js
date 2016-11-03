@@ -37731,10 +37731,14 @@
 	        return index === this.current;
 	      },
 	      isDiscrimination: function isDiscrimination(n) {
-	        return n == 'Discrimination';
+	        if (n) {
+	          return n == 'Discrimination';
+	        }
 	      },
 	      isPersecution: function isPersecution(n) {
-	        return n == 'Persecution';
+	        if (n) {
+	          return n == 'Persecution';
+	        }
 	      },
 	      showContinent: function showContinent(continent) {
 	        var each = function each(fn) {

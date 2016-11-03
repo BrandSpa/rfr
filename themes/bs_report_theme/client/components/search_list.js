@@ -71,11 +71,16 @@ export default function() {
         },
 
         isDiscrimination(n) {
-          return n == 'Discrimination';
+          if(n) {
+            return n == 'Discrimination';
+          }
+          
         },  
 
         isPersecution(n) {
-          return n == 'Persecution';
+          if(n) {
+            return n == 'Persecution';
+          }
         },
 
         showContinent(continent) {
