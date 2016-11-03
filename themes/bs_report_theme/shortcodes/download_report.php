@@ -29,11 +29,13 @@
               <?php echo gett('Required') ?>
             </span>
           </label>
+
           <input 
             type="text" 
             v-model="name" 
-            v-on:keyup="validate({field: 'name', type: 'required'})" 
+            v-on:keyup="validate({field: 'name'})" 
           />
+
         </div>
 
         <div class="input-container">
@@ -49,7 +51,7 @@
           <input 
             type="text"
             v-model="email"
-            v-on:keyup="validate({field: 'email', type: 'email'})" 
+            v-on:keyup="validate({field: 'email'})" 
           />
         </div>
 
