@@ -37647,8 +37647,6 @@
 	  value: true
 	});
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 	exports.default = function () {
 	  _vue2.default.component('search-list', {
 	    template: '#search-list-template',
@@ -37671,13 +37669,9 @@
 	            return r.meta_country == coun;
 	          })[0];
 	        } else {
-	          return '';
+	          return;
 	        }
 	      };
-
-	      filterByCountry = filterByCountry.filter(function (report) {
-	        return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
-	      });
 
 	      newContinents['afrika'] = continents['Afrika'].map(filterByCountry);
 
