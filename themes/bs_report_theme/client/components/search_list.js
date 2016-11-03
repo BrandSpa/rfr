@@ -2,6 +2,23 @@
 import Vue from 'vue';
 import $ from 'jquery';
 
+function setContinent(continents, currentContinents = {}, continentName) {
+
+  let filterAndMapByCountry = coun => {
+    if(reports.filter(r => r.meta_country == coun)[0]) {
+      return reports.filter(r => r.meta_country == coun)[0];
+    } else {
+      return '';
+    }
+  };
+
+  let cleanEmpty = report => typeof report == 'object';
+
+  newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty).filter(cleanEmpty);
+
+  return {...currentContinents, ...newContinents};
+}
+
 export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',
@@ -25,24 +42,17 @@ export default function() {
         }
       };
 
-      newContinents['afrika'] = continents['Afrika'].map(filterByCountry);
+      let cleanEmpty = report => typeof report == 'object';
 
-      newContinents['asia'] =  continents['Asia'].map(filterByCountry);
-
-      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry);
-
-      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry);
-
-      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry);
-      
-      newContinents['northAmerica'] =  continents['North America'].map(filterByCountry);
-    
-      newContinents['ocenia'] =  continents['Ocenia'].map(filterByCountry);
-
-      newContinents['russiaCentralAsia'] =  continents['Russia & Central Asia'].map(filterByCountry);
-
-     newContinents['westernEurope'] =  continents['Western Europe'].map(filterByCountry);
-
+      newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['asia'] =  continents['Asia'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['northAmerica'] =  continents['North America'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['ocenia'] =  continents['Ocenia'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['russiaCentralAsia'] =  continents['Russia & Central Asia'].map(filterByCountry).filter(cleanEmpty);
+      newContinents['westernEurope'] =  continents['Western Europe'].map(filterByCountry).filter(cleanEmpty);
       this.continents = newContinents;
     },
 

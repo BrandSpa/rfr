@@ -37642,6 +37642,10 @@
 	  value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 	exports.default = function () {
 	  _vue2.default.component('search-list', {
 	    template: '#search-list-template',
@@ -37668,24 +37672,19 @@
 	        }
 	      };
 
-	      newContinents['afrika'] = continents['Afrika'].map(filterByCountry);
+	      var cleanEmpty = function cleanEmpty(report) {
+	        return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
+	      };
 
-	      newContinents['asia'] = continents['Asia'].map(filterByCountry);
-
-	      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry);
-
-	      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry);
-
-	      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry);
-
-	      newContinents['northAmerica'] = continents['North America'].map(filterByCountry);
-
-	      newContinents['ocenia'] = continents['Ocenia'].map(filterByCountry);
-
-	      newContinents['russiaCentralAsia'] = continents['Russia & Central Asia'].map(filterByCountry);
-
-	      newContinents['westernEurope'] = continents['Western Europe'].map(filterByCountry);
-
+	      newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['asia'] = continents['Asia'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['northAmerica'] = continents['North America'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['ocenia'] = continents['Ocenia'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['russiaCentralAsia'] = continents['Russia & Central Asia'].map(filterByCountry).filter(cleanEmpty);
+	      newContinents['westernEurope'] = continents['Western Europe'].map(filterByCountry).filter(cleanEmpty);
 	      this.continents = newContinents;
 	    },
 
@@ -37740,6 +37739,32 @@
 	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function setContinent(continents) {
+	  var currentContinents = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	  var continentName = arguments[2];
+
+
+	  var filterAndMapByCountry = function filterAndMapByCountry(coun) {
+	    if (reports.filter(function (r) {
+	      return r.meta_country == coun;
+	    })[0]) {
+	      return reports.filter(function (r) {
+	        return r.meta_country == coun;
+	      })[0];
+	    } else {
+	      return '';
+	    }
+	  };
+
+	  var cleanEmpty = function cleanEmpty(report) {
+	    return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
+	  };
+
+	  newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty).filter(cleanEmpty);
+
+	  return _extends({}, currentContinents, newContinents);
+	}
 
 /***/ },
 /* 24 */
