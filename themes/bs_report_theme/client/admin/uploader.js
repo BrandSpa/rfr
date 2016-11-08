@@ -1,6 +1,7 @@
 'use strict';
 import $ from 'jquery';
 import Promise from 'promise';
+
 const open_media_uploader_image = () => {
   let media_uploader = wp.media({
       frame:    "post",
