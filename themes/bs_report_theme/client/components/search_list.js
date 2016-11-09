@@ -71,11 +71,10 @@ export default function() {
           let display = $ul.style.display;
 
           each(($el) => { $el.style.display = 'none'; })($all);
-
+           $ul.style.display = 'block';
+          
           if(currentContinent == continent) {
             $ul.style.display = 'none';
-          } else {
-            $ul.style.display = 'block';
           }
 
         }

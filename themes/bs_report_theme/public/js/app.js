@@ -37729,11 +37729,10 @@
 	        each(function ($el) {
 	          $el.style.display = 'none';
 	        })($all);
+	        $ul.style.display = 'block';
 
 	        if (currentContinent == continent) {
 	          $ul.style.display = 'none';
-	        } else {
-	          $ul.style.display = 'block';
 	        }
 	      }
 	    }
