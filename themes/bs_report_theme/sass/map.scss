@@ -130,6 +130,10 @@
       margin: 2px 0;
       overflow: hidden;
       transition: all 300ms ease-in-out;
+      
+      a {
+        color: $dark_jungle_green;
+      }
 
       span {
         @include center_vertical;
@@ -138,6 +142,7 @@
         background: $dark_jungle_green;
         position: absolute;
         right: 0;
+        top: 0;
         text-align: center;
 
         img {
