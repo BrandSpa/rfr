@@ -37721,11 +37721,9 @@
 	          };
 	        };
 
-	        var all = document.querySelectorAll('ul[data-country]');
+	        var all = this.$el.querySelectorAll('ul[data-country]');
 
-	        var block = document.querySelector('ul[data-country="' + continent + '"]');
-
-	        console.log('come on', this.$el);
+	        var block = this.$el.querySelector('ul[data-country="' + continent + '"]');
 
 	        if (block.style.display == 'block') {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'none';
