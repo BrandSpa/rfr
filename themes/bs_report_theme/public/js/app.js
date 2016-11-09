@@ -66,10 +66,6 @@
 
 	var _religions_chart2 = _interopRequireDefault(_religions_chart);
 
-	var _country_select = __webpack_require__(21);
-
-	var _country_select2 = _interopRequireDefault(_country_select);
-
 	var _search_country = __webpack_require__(22);
 
 	var _search_country2 = _interopRequireDefault(_search_country);
@@ -104,7 +100,6 @@
 	  (0, _nav2.default)();
 	  (0, _map2.default)();
 	  (0, _religions_chart2.default)();
-	  (0, _country_select2.default)();
 	  (0, _download_report2.default)();
 	  (0, _search_country2.default)();
 	  (0, _search_list2.default)();
@@ -37483,67 +37478,7 @@
 	};
 
 /***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	exports.default = function () {
-	  _vue2.default.component('countryselect', {
-	    template: '#country-select-template',
-	    props: ['countries'],
-
-	    data: function data() {
-	      return {
-	        current: 0
-	      };
-	    },
-	    ready: function ready() {
-	      (0, _jquery2.default)(document).on('keyup', function (e) {
-	        if (e.keyCode === 27 && (0, _jquery2.default)('.select_country').hasClass('select_country-show')) {
-	          (0, _jquery2.default)('.select_country').removeClass('select_country-show');
-	        }
-	      });
-
-	      (0, _jquery2.default)('.open-select-countries').on('click', function (e) {
-	        e.preventDefault();
-	        (0, _jquery2.default)('.select_country').addClass('select_country-show');
-	      });
-
-	      (0, _jquery2.default)('.select_country__close').on('click', function (e) {
-	        e.preventDefault();
-	        (0, _jquery2.default)('.select_country').removeClass('select_country-show');
-	      });
-	    },
-
-
-	    methods: {
-	      up: function up() {
-	        console.log('up');
-	      },
-	      down: function down() {
-	        console.log('down');
-	      },
-	      enter: function enter() {}
-	    }
-	  });
-	};
-
-	var _vue = __webpack_require__(14);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ },
+/* 21 */,
 /* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37568,6 +37503,7 @@
 	    ready: function ready() {
 	      this.items = JSON.parse(this.reports);
 	      (0, _jquery2.default)('.map__search_input').focus();
+	      (0, _jquery2.default)('.open-select-countries').on('click', this.open);
 	    },
 
 
@@ -37576,6 +37512,11 @@
 	        if (e) e.preventDefault();
 	        (0, _jquery2.default)('body').removeClass('model-open');
 	        (0, _jquery2.default)('.map__search').removeClass('map__search--show');
+	      },
+	      open: function open(e) {
+	        if (e) e.preventDefault();
+	        (0, _jquery2.default)('body').addClass('model-open');
+	        (0, _jquery2.default)('.map__search').addClass('map__search--show');
 	      },
 	      getIcon: function getIcon(name) {
 	        return this.dir + '/public/img/icons/' + name + '.svg';

@@ -18,6 +18,7 @@ export default function() {
     ready() {
       this.items = JSON.parse(this.reports);
       $('.map__search_input').focus();
+      $('.open-select-countries').on('click', this.open);
     },
 
     methods: {
@@ -26,6 +27,12 @@ export default function() {
         if(e) e.preventDefault();
         $('body').removeClass('model-open');
         $('.map__search').removeClass('map__search--show');
+      },
+
+      open(e) {
+        if(e) e.preventDefault();
+        $('body').addClass('model-open');
+        $('.map__search').addClass('map__search--show');
       },
 
         getIcon(name) {
