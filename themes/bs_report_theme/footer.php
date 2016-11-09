@@ -1,8 +1,8 @@
 
 <div id="footer">
   <div class="col-md-9 footer__top">
-  
-  <div class="footer__menu">
+  <div class="col-md-1"></div>
+  <div class="footer__menu col-md-11">
     <?php
       $args = array(
         'theme_location' => 'main',
