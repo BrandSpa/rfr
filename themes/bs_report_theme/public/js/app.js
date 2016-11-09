@@ -37723,13 +37723,12 @@
 	        var parent = this.$el;
 	        var $all = parent.querySelectorAll('ul[data-country]');
 	        var $ul = parent.querySelector('ul[data-country="' + continent + '"]');
+	        var display = $ul.style.display;
 
-	        if ($ul.style.display == 'block') {
+	        if (display == 'block') {
 	          $ul.style.display = 'none';
 	        } else {
-	          each(function (el) {
-	            el.style.display = 'none';
-	          })($all);
+	          // each((el) => { el.style.display = 'none'; })($all);
 	          $ul.style.display = 'block';
 	        }
 	      }
