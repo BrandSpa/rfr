@@ -739,7 +739,7 @@ form button {
 
 .footer__top {
   background: #E8E8E8;
-  height: 270px;
+  height: 600px;
   padding-top: 40px; }
   @media (max-width: 767px) {
     .footer__top {
@@ -749,7 +749,7 @@ form button {
 
 .footer__bottom {
   background: #fff;
-  height: 200px;
+  height: 600px;
   padding-top: 80px; }
   @media (max-width: 767px) {
     .footer__bottom {
