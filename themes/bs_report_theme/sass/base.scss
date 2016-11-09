@@ -450,6 +450,9 @@ a {
   overflow: hidden;
   padding: 130px 0;
   padding-left: (1 / 12) * 100%;
+  @media #{$mobile}, #{$tablet} {
+    padding-top: 40px;
+  }
   
   &__content_right {
     margin-right: (1 / 12) * 100%;

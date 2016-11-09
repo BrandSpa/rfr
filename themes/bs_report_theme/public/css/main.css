@@ -369,6 +369,9 @@ a polygon, a path {
   overflow: hidden;
   padding: 130px 0;
   padding-left: 8.33333%; }
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+    .home_header {
+      padding-top: 40px; } }
   .home_header__content_right {
     margin-right: 8.33333%; }
   .home_header__background {
