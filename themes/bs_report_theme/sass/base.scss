@@ -321,13 +321,12 @@ a {
 }
 
 .link-bs {
-
     @include center-vertical;
     @include title4();
     text-align: center;
     position: relative;
     height: 80px;
-    margin: 30px 0;
+    margin: 15px 0;
     padding: 10px 20px;
     min-width: 250px;
     max-width: 100%;
@@ -450,6 +449,7 @@ a {
   overflow: hidden;
   padding: 130px 0;
   padding-left: (1 / 12) * 100%;
+
   @media #{$mobile}, #{$tablet} {
     padding-top: 40px;
   }
