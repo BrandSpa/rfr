@@ -37725,7 +37725,7 @@
 	        console.log(block);
 	        console.log('display', block);
 
-	        if (block == 'block') {
+	        if (block.style.display == 'block') {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'none';
 	        } else {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
