@@ -471,6 +471,10 @@ a {
     min-height: 100%;
     display: none;
 
+    @media #{$mobile}, #{$tablet} {
+      left: -50%;
+    }
+
     &--active {
       animation: fade 1s ease-in-out; 
       display: block;
