@@ -135,7 +135,7 @@ export default function () {
         });
         
       });
-    },w
+    },
 
     methods: {
       showSearch(e) {

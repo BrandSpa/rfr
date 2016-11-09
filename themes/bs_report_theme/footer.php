@@ -14,7 +14,6 @@
   </div>
   
   <div class="footer__menu col-md-9">
-  
     <?php
       $args = array(
         'theme_location' => 'main',
