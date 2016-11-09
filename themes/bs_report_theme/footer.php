@@ -18,16 +18,14 @@
   
 
   <div class="col-md-3 footer__bottom">
-  <div class="col-md-1"></div>
-
     <div class="footer__bottom-left col-md-12">
       <h3 style="text-transform: uppercase" class="color-red"><?php echo gett('Contact') ?></h3>
       <?php echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) ) ?>
     </div>
     
     <div class="footer__bottom-middle col-md-12">
-      <a href="#">PRIVACY POLICY</a>
-      <a href="#”">TERMS & CONDITIONS</a>
+      <a href="#"><?php echo gett('PRIVACY POLICY') ?></a>
+      <a href="#”"><?php echo gett('TERMS & CONDITIONS') ?></a>
     </div>
   </div>
   

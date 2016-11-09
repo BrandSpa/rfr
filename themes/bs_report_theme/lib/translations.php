@@ -35,7 +35,9 @@
       registerStr('Subscribe');
       registerStr('Executive Summary');
       registerStr('Full Report');
-      registerStr('Full Report');
+      registerStr('PRIVACY POLICY');
+      registerStr('TERMS & CONDITIONS');
+      registerStr('Contact');
 
 
       foreach (getReligions() as $religion) {
