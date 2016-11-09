@@ -473,6 +473,7 @@ a {
 
     @media #{$mobile}, #{$tablet} {
       left: -50%;
+      width: 200%;
     }
 
     &--active {

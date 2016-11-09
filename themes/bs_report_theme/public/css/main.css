@@ -387,7 +387,8 @@ a polygon, a path {
     display: none; }
     @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
       .home_header__background {
-        left: -50%; } }
+        left: -50%;
+        width: 200%; } }
     .home_header__background--active {
       animation: fade 1s ease-in-out;
       display: block; }
