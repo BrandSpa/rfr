@@ -33,7 +33,7 @@ export default function() {
         if(e) e.preventDefault();
         $('body').addClass('model-open');
         $('.map__search').addClass('map__search--show');
-        console.log($('.map__search_input'));
+        console.log('opne', $('.map__search_input'));
         $('.map__search_input').focus();
       },
 
