@@ -388,11 +388,8 @@ a polygon, a path {
     min-width: 100%;
     min-height: 100%;
     display: none;
-    background-position: cover; }
-    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
-      .home_header__background {
-        left: -50%;
-        width: 200%; } }
+    background-size: cover;
+    background-repeat: no-repeat; }
     .home_header__background--active {
       animation: fade 1s ease-in-out;
       display: block; }
