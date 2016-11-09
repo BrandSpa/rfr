@@ -773,6 +773,9 @@ form button {
         float: none;
         margin: 20px auto; } }
 
+.footer .bs-logo {
+  padding: 10px 0; }
+
 .report__header {
   padding: 60px 40px; }
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
