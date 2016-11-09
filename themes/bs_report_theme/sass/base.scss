@@ -455,10 +455,10 @@ a {
   }
   
   &__content_right {
-    margin-right: (1 / 12) * 100%;
     @media #{$mobile}, #{$tablet} {
       float: right;
     }
+
   }
   
   &__background {
