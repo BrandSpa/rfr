@@ -37730,11 +37730,10 @@
 	        if (block.style.display == 'block') {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'none';
 	        } else {
-	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
-
 	          each(function (el) {
 	            el.style.display = 'none';
 	          })(all);
+	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
 	        }
 	      }
 	    }
