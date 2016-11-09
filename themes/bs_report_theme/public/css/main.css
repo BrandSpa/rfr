@@ -762,11 +762,13 @@ form button {
       .footer__bottom-left img {
         float: none;
         margin: 20px auto; } }
-  .footer__bottom-middle a {
-    display: block;
-    width: 100%;
-    font-style: italic;
-    font-size: 0.85714em; }
+  .footer__bottom-middle {
+    margin-top: 20px; }
+    .footer__bottom-middle a {
+      display: block;
+      width: 100%;
+      font-style: italic;
+      font-size: 0.85714em; }
   .footer__bottom-right img {
     float: right;
     display: block; }
