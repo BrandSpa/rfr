@@ -474,7 +474,8 @@ a {
     min-width: 100%;
     min-height: 100%;
     display: none;
-
+    background-position: cover;
+    
     @media #{$mobile}, #{$tablet} {
       left: -50%;
       width: 200%;
