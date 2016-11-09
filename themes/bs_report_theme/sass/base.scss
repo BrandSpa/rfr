@@ -479,6 +479,7 @@ a {
     color: #fff;
     padding-bottom: 40px;
     margin-right: (1 / 12) * 100%;
+   
 
     &:after {
       content: '';
@@ -488,6 +489,9 @@ a {
       display: block;
       border-bottom: 5px solid $red_orange;
       margin-right: (1 / 12) * 100%;
+       @media #{$mobile}, #{$tablet} {
+        width: 20%;
+      }
 
     }
   }
