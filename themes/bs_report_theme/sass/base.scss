@@ -487,14 +487,10 @@ a {
       content: '';
       padding-bottom: 50px;
       height: 5px;
-      width: 100%;
+      width: 20%;
       display: block;
       border-bottom: 5px solid $red_orange;
       margin-right: (1 / 12) * 100%;
-       @media #{$mobile}, #{$tablet} {
-        width: 20%;
-      }
-
     }
   }
 

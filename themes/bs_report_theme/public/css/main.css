@@ -396,13 +396,10 @@ a polygon, a path {
       content: '';
       padding-bottom: 50px;
       height: 5px;
-      width: 100%;
+      width: 20%;
       display: block;
       border-bottom: 5px solid #FC3938;
       margin-right: 8.33333%; }
-      @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
-        .home_header__title:after {
-          width: 20%; } }
   .home_header__content {
     color: #fff;
     font-weight: 400;
