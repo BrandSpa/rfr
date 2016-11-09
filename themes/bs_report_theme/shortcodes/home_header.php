@@ -22,7 +22,7 @@ function bs_home_header_sc($atts, $content = null) {
       <div 
         class="home_header__background <?php if($key == 0) echo 'home_header__background--active' ?>"   
         data-index="<?php echo $key ?>"
-        style="background: url(<?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>);  background-size: cover;"
+        style="background: url(<?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>);  background-size: cover; background-position: center"
         ></div>
     <?php endforeach; ?>
   <?php endif; ?>
