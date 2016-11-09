@@ -295,7 +295,7 @@ a polygon, a path {
   .link-bs::before {
     content: '';
     position: absolute;
-    width: 40%;
+    width: 20%;
     border-bottom: 4px solid #FC3938;
     left: 20px;
     bottom: 0;
@@ -304,7 +304,7 @@ a polygon, a path {
     content: '';
     position: absolute;
     bottom: 4px;
-    width: 40%;
+    width: 20%;
     border-bottom: 1px solid #FC3938;
     border-color: #FC3938;
     left: 20px;
