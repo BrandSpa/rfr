@@ -42101,10 +42101,10 @@
 	  var interval = $homeHeader.data('interval') ? $('.home_header').data('interval') : 4000;
 	  var startAutoplay = $homeHeader.data('autoplay') ? true : false;
 	  var slide = (0, _change_slide2.default)();
-
+	  var autoplay = void 0;
 	  if (startAutoplay) {
 
-	    var _autoplay = setInterval(function () {
+	    autoplay = setInterval(function () {
 	      slide.changeIndex();
 	      slide.changeBg();
 	      slide.transform();
