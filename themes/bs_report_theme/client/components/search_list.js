@@ -67,12 +67,14 @@ export default function() {
           let parent = this.$el;
           let $all = parent.querySelectorAll('ul[data-country]');
           let $ul = parent.querySelector(`ul[data-country="${continent}"]`);
+          let currentContinent = $ul.getAttribute('data-country');
           let display = $ul.style.display;
 
-          if(display == 'block') {
+          each(($el) => { $el.style.display = 'none'; })($all);
+
+          if(currentContinent == continent) {
             $ul.style.display = 'none';
           } else {
-            // each((el) => { el.style.display = 'none'; })($all);
             $ul.style.display = 'block';
           }
 
