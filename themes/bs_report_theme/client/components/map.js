@@ -141,13 +141,13 @@ export default function () {
       showSearch(e) {
         e.preventDefault();
         $('.map__search').addClass('map__search--show');
-        $(body).addClass('model-open');
+        $('body').addClass('model-open');
       },
 
       showSearchList(e) {
         e.preventDefault();
         $('.map__search_list').addClass('map__search_list--show');
-        $(body).addClass('model-open');
+        $('body').addClass('model-open');
       }
     }
   });

@@ -27,6 +27,10 @@ body {
   }
 }
 
+.model-open {
+  overflow: hidden;
+}
+
 a {
   color: $armadillo;
   transition: all 300ms ease;

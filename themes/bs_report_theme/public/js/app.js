@@ -21028,12 +21028,12 @@
 	      showSearch: function showSearch(e) {
 	        e.preventDefault();
 	        (0, _jquery2.default)('.map__search').addClass('map__search--show');
-	        (0, _jquery2.default)(body).addClass('model-open');
+	        (0, _jquery2.default)('body').addClass('model-open');
 	      },
 	      showSearchList: function showSearchList(e) {
 	        e.preventDefault();
 	        (0, _jquery2.default)('.map__search_list').addClass('map__search_list--show');
-	        (0, _jquery2.default)(body).addClass('model-open');
+	        (0, _jquery2.default)('body').addClass('model-open');
 	      }
 	    }
 	  });
