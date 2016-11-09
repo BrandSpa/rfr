@@ -1,19 +1,8 @@
 
 <div id="footer">
   <div class="col-md-9 footer__top">
-  <div class="col-md-1"></div>
-  <div class="col-md-1">
   
-    <h4 class="nav__subtitle">
-      RELIGIOUS<br>
-      <span class="color-red">FREEDOM</span><br>
-      REPORT<br>
-      2016
-    </h4>
-
-  </div>
-  
-  <div class="footer__menu col-md-9">
+  <div class="footer__menu">
     <?php
       $args = array(
         'theme_location' => 'main',
