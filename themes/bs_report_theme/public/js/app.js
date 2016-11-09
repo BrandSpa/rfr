@@ -117,7 +117,10 @@
 	    el: '#acn_reports'
 	  });
 	  var windowHeight = window.innerHeight;
-	  document.querySelector('.home_header').style.height = windowHeight + 'px';
+
+	  if (windowHeight > 700) {
+	    document.querySelector('.home_header').style.height = windowHeight + 'px';
+	  }
 	});
 
 /***/ },
