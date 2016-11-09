@@ -413,6 +413,9 @@ a polygon, a path {
     width: 100%;
     padding-top: 50px;
     margin-right: 8.33333%; }
+    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+      .home_header__contents {
+        padding-top: 0px; } }
     .home_header__contents ul {
       padding: 0;
       width: 300%;
