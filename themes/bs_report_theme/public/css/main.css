@@ -972,7 +972,8 @@ form button {
       overflow: hidden;
       transition: all 300ms ease-in-out; }
       .map__search_results li a {
-        color: #1A2127; }
+        color: #1A2127;
+        width: 100%; }
       .map__search_results li span {
         display: -ms-flexbox;
         display: flex;
