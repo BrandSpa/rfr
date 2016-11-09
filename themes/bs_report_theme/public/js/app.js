@@ -37720,19 +37720,17 @@
 	            return Array.prototype.forEach.call(arr, fn);
 	          };
 	        };
+	        var parent = this.$el;
+	        var $all = parent.querySelectorAll('ul[data-country]');
+	        var $ul = parent.querySelector('ul[data-country="' + continent + '"]');
 
-	        var all = this.$el.querySelectorAll('ul[data-country]');
-
-	        var block = this.$el.querySelector('ul[data-country="' + continent + '"]');
-
-	        if (block.style.display == 'block') {
-	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'none';
+	        if ($ul.style.display == 'block') {
+	          $ul.style.display = 'none';
 	        } else {
 	          each(function (el) {
 	            el.style.display = 'none';
-	          })(all);
-
-	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
+	          })($all);
+	          $ul.style.display = 'block';
 	        }
 	      }
 	    }

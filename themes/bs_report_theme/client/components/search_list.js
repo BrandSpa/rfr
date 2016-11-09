@@ -64,19 +64,15 @@ export default function() {
 
         showContinent(continent) {
           let each = fn => arr => Array.prototype.forEach.call(arr, fn);
-          
-          let all = this.$el.querySelectorAll('ul[data-country]');
+          let parent = this.$el;
+          let $all = parent.querySelectorAll('ul[data-country]');
+          let $ul = parent.querySelector(`ul[data-country="${continent}"]`);
 
-          let block = this.$el.querySelector(`ul[data-country="${continent}"]`);
-
-          if(block.style.display == 'block') {
-            document.querySelector(`ul[data-country="${continent}"]`).style.display = 'none';
+          if($ul.style.display == 'block') {
+            $ul.style.display = 'none';
           } else {
-            each((el) => {
-              el.style.display = 'none';
-            })(all);
-            
-            document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
+            each((el) => { el.style.display = 'none'; })($all);
+            $ul.style.display = 'block';
           }
 
         }
