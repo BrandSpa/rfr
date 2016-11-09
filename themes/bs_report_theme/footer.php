@@ -19,9 +19,9 @@
 
   <div class="col-md-3 footer__bottom">
   <div class="col-md-1"></div>
-  
+
     <div class="footer__bottom-left col-md-12">
-      <h3 style="text-tranform: uppercase" class="color-red"><?php echo gett('Contact') ?></h3>
+      <h3 style="text-transform: uppercase" class="color-red"><?php echo gett('Contact') ?></h3>
       <?php echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) ) ?>
     </div>
     
