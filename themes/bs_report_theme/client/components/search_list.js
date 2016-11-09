@@ -69,7 +69,7 @@ export default function() {
           each((el) => {
             el.style.display = 'none';
           })(all);
-          let block = document.querySelector(`ul[data-country="${continent}"]`).style.display;
+          let block = document.querySelector(`ul[data-country="${continent}"]`).style;
           
           console.log(block);
 

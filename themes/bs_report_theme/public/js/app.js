@@ -37724,7 +37724,7 @@
 	        each(function (el) {
 	          el.style.display = 'none';
 	        })(all);
-	        var block = document.querySelector('ul[data-country="' + continent + '"]').style.display;
+	        var block = document.querySelector('ul[data-country="' + continent + '"]').style;
 
 	        console.log(block);
 
