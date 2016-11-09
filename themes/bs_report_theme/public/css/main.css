@@ -388,7 +388,6 @@ a polygon, a path {
     min-width: 100%;
     min-height: 100%;
     display: none;
-    background-size: cover;
     background-repeat: no-repeat; }
     .home_header__background--active {
       animation: fade 1s ease-in-out;
