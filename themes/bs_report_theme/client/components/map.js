@@ -140,12 +140,14 @@ export default function () {
     methods: {
       showSearch(e) {
         e.preventDefault();
-        document.querySelector('.map__search').classList.add('map__search--show');
+        $('.map__search').addClass('map__search--show');
+        $(body).addClass('model-open');
       },
 
       showSearchList(e) {
         e.preventDefault();
-        document.querySelector('.map__search_list').classList.add('map__search_list--show');
+        $('.map__search_list').addClass('map__search_list--show');
+        $(body).addClass('model-open');
       }
     }
   });

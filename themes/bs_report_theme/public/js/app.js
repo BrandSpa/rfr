@@ -21027,11 +21027,13 @@
 	    methods: {
 	      showSearch: function showSearch(e) {
 	        e.preventDefault();
-	        document.querySelector('.map__search').classList.add('map__search--show');
+	        (0, _jquery2.default)('.map__search').addClass('map__search--show');
+	        (0, _jquery2.default)(body).addClass('model-open');
 	      },
 	      showSearchList: function showSearchList(e) {
 	        e.preventDefault();
-	        document.querySelector('.map__search_list').classList.add('map__search_list--show');
+	        (0, _jquery2.default)('.map__search_list').addClass('map__search_list--show');
+	        (0, _jquery2.default)(body).addClass('model-open');
 	      }
 	    }
 	  });
