@@ -29,10 +29,9 @@
       <a href="#">PRIVACY POLICY</a>
       <a href="#”">TERMS & CONDITIONS</a>
     </div>
-
-    <div class="footer__bottom-right col-md-3">
-        <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" alt="">
-    </div>
+  </div>
+  <div class="col-md-12">
+    <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" class="pull-right">
   </div>
 </div>
 
