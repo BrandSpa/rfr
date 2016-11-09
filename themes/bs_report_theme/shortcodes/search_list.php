@@ -17,7 +17,7 @@
       <li
         v-for="item in continents.afrika" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-        <a :href="{{item.guid}}">{{item.meta_country}}</a>
+        <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
           <img v-bind:src="getIcon(item.meta_situation)" alt="">
         </span>
@@ -32,7 +32,7 @@
       <li
         v-for="item in continents.asia" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-        <a :href="{{item.guid}}">{{item.meta_country}}</a>
+        <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
           <img v-bind:src="getIcon(item.meta_situation)" alt="">
         </span>
@@ -47,7 +47,7 @@
         <li
           v-for="item in continents.easterEurope" 
           v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-          <a :href="{{item.guid}}">{{item.meta_country}}</a>
+          <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
           <span>
             <img v-bind:src="getIcon(item.meta_situation)" alt="">
           </span>
@@ -62,7 +62,7 @@
           <li 
         v-for="item in continents.latinAmerica" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-        <a :href="{{item.guid}}">{{item.meta_country}}</a>
+        <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
           <img v-bind:src="getIcon(item.meta_situation)" alt="">
         </span>
@@ -77,7 +77,7 @@
         <li
           v-for="item in continents.middleEast" 
           v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-          <a :href="{{item.guid}}">{{item.meta_country}}</a>
+          <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
           <span>
             <img v-bind:src="getIcon(item.meta_situation)" alt="">
           </span>
@@ -92,7 +92,7 @@
           <li 
         v-for="item in continents.northAmerica" 
         v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-        <a :href="{{item.guid}}">{{item.meta_country}}</a>
+        <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
         <span>
           <img v-bind:src="getIcon(item.meta_situation)" alt="">
         </span>
@@ -107,7 +107,7 @@
         <li
           v-for="item in continents.ocenia" 
           v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-          <a :href="{{item.guid}}">{{item.meta_country}}</a>
+          <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
           <span>
             <img v-bind:src="getIcon(item.meta_situation)" alt="">
           </span>
@@ -122,7 +122,7 @@
         <li
           v-for="item in continents.russiaCentralAsia" 
           v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-          <a :href="{{item.guid}}">{{item.meta_country}}</a>
+          <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
           <span>
             <img v-bind:src="getIcon(item.meta_situation)" alt="">
           </span>
@@ -137,7 +137,7 @@
         <li
           v-for="item in continents.westernEurope" 
           v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-          <a :href="{{item.guid}}">{{item.meta_country}}</a>
+          <a v-bind:href="{{item.guid}}">{{item.meta_country}}</a>
           <span>
             <img v-bind:src="getIcon(item.meta_situation)" alt="">
           </span>
