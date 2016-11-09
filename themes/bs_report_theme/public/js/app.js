@@ -37725,6 +37725,9 @@
 	          el.style.display = 'none';
 	        })(all);
 	        var block = document.querySelector('ul[data-country="' + continent + '"]').style.display;
+
+	        console.log(block);
+
 	        if (block == 'block') {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'none';
 	        } else {
