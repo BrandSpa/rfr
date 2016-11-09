@@ -647,7 +647,10 @@ form button {
       padding: 30px; }
   .nav__subtitle {
     padding: 40px 30px;
-    color: #1A2127; }
+    color: #1A2127;
+    font-style: normal; }
+    .nav__subtitle span {
+      font-weight: bold; }
   .nav .menu {
     padding: 0 30px; }
     .nav .menu > li {
