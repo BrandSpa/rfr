@@ -33,12 +33,13 @@ export default function() {
         if(e) e.preventDefault();
         $('body').addClass('model-open');
         $('.map__search').addClass('map__search--show');
+        console.log($('.map__search_input'));
         $('.map__search_input').focus();
       },
 
-        getIcon(name) {
-         return `${this.dir}/public/img/icons/${name}.svg`
-        },
+      getIcon(name) {
+        return `${this.dir}/public/img/icons/${name}.svg`
+      },
 
         isSelected(index) {
           return index === this.current;

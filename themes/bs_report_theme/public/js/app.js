@@ -37516,6 +37516,7 @@
 	        if (e) e.preventDefault();
 	        (0, _jquery2.default)('body').addClass('model-open');
 	        (0, _jquery2.default)('.map__search').addClass('map__search--show');
+	        console.log((0, _jquery2.default)('.map__search_input'));
 	        (0, _jquery2.default)('.map__search_input').focus();
 	      },
 	      getIcon: function getIcon(name) {
