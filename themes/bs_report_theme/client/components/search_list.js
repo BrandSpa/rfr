@@ -76,6 +76,7 @@ export default function() {
             each((el) => {
               el.style.display = 'none';
             })(all);
+            console.log(block);
             document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
           }
 
