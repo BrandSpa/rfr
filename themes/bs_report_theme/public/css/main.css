@@ -738,7 +738,7 @@ form button {
           left: -15px; }
 
 .footer__top {
-  background: #E8E8E8;
+  background: white;
   height: 600px;
   padding-top: 40px; }
   @media (max-width: 767px) {
