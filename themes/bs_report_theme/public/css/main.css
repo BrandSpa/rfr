@@ -374,6 +374,9 @@ a polygon, a path {
       padding-top: 40px; } }
   .home_header__content_right {
     margin-right: 8.33333%; }
+    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+      .home_header__content_right {
+        float: right; } }
   .home_header__background {
     position: absolute;
     top: 0;
