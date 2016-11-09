@@ -284,7 +284,7 @@ a polygon, a path {
   text-align: center;
   position: relative;
   height: 80px;
-  margin: 30px 0;
+  margin: 15px 0;
   padding: 10px 20px;
   min-width: 250px;
   max-width: 100%;
@@ -372,11 +372,9 @@ a polygon, a path {
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     .home_header {
       padding-top: 40px; } }
-  .home_header__content_right {
-    margin-right: 8.33333%; }
-    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
-      .home_header__content_right {
-        float: right; } }
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+    .home_header__content_right {
+      float: right; } }
   .home_header__background {
     position: absolute;
     top: 0;
