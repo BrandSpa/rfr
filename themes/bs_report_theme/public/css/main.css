@@ -746,6 +746,9 @@ form button {
       height: auto; } }
   .footer__top .nav__subtitle {
     padding: 0; }
+  .footer__top .bs-logo {
+    background: #E5E4E4;
+    padding: 10px 0; }
 
 .footer__bottom {
   background: #F7F7F7;
@@ -772,10 +775,6 @@ form button {
       .footer__bottom-right img {
         float: none;
         margin: 20px auto; } }
-
-.footer .bs-logo {
-  background: #E5E4E4;
-  padding: 10px 0; }
 
 .report__header {
   padding: 60px 40px; }
