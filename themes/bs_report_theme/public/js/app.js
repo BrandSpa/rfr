@@ -37720,9 +37720,6 @@
 	            return Array.prototype.forEach.call(arr, fn);
 	          };
 	        };
-	        // each((el) => {
-	        //   el.style.display = 'none';
-	        // })(all);
 
 	        var all = document.querySelectorAll('ul[data-country]');
 
@@ -37734,6 +37731,10 @@
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'none';
 	        } else {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
+
+	          each(function (el) {
+	            el.style.display = 'none';
+	          })(all);
 	        }
 	      }
 	    }

@@ -64,9 +64,7 @@ export default function() {
 
         showContinent(continent) {
           let each = fn => arr => Array.prototype.forEach.call(arr, fn);
-          // each((el) => {
-          //   el.style.display = 'none';
-          // })(all);
+         
 
           let all = document.querySelectorAll('ul[data-country]');
 
@@ -78,6 +76,11 @@ export default function() {
             document.querySelector(`ul[data-country="${continent}"]`).style.display = 'none';
           } else {
             document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
+
+            each((el) => {
+              el.style.display = 'none';
+            })(all);
+
           }
 
         }
