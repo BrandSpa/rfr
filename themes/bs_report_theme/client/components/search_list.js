@@ -37,6 +37,7 @@ export default function() {
     methods: {
       close(e) {
         if(e) e.preventDefault();
+        $('body').removeClass('model-open');
         $('.map__search_list').removeClass('map__search_list--show');
       },
 
@@ -63,6 +64,9 @@ export default function() {
 
         showContinent(continent) {
           let each = fn => arr => Array.prototype.forEach.call(arr, fn);
+          // each((el) => {
+          //   el.style.display = 'none';
+          // })(all);
 
           let all = document.querySelectorAll('ul[data-country]');
 
@@ -76,12 +80,6 @@ export default function() {
             document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
           }
 
-          each((el) => {
-            el.style.display = 'none';
-          })(all);
-
-        
-          
         }
     }
 

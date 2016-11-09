@@ -24,6 +24,7 @@ export default function() {
 
       close(e) {
         if(e) e.preventDefault();
+        $('body').removeClass('model-open');
         $('.map__search').removeClass('map__search--show');
       },
 

@@ -37574,6 +37574,7 @@
 	    methods: {
 	      close: function close(e) {
 	        if (e) e.preventDefault();
+	        (0, _jquery2.default)('body').removeClass('model-open');
 	        (0, _jquery2.default)('.map__search').removeClass('map__search--show');
 	      },
 	      getIcon: function getIcon(name) {
@@ -37694,6 +37695,7 @@
 	    methods: {
 	      close: function close(e) {
 	        if (e) e.preventDefault();
+	        (0, _jquery2.default)('body').removeClass('model-open');
 	        (0, _jquery2.default)('.map__search_list').removeClass('map__search_list--show');
 	      },
 	      getIcon: function getIcon(name) {
@@ -37718,6 +37720,9 @@
 	            return Array.prototype.forEach.call(arr, fn);
 	          };
 	        };
+	        // each((el) => {
+	        //   el.style.display = 'none';
+	        // })(all);
 
 	        var all = document.querySelectorAll('ul[data-country]');
 
@@ -37730,10 +37735,6 @@
 	        } else {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
 	        }
-
-	        each(function (el) {
-	          el.style.display = 'none';
-	        })(all);
 	      }
 	    }
 
