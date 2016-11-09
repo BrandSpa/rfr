@@ -116,6 +116,7 @@
 	  new _vue2.default({
 	    el: '#acn_reports'
 	  });
+
 	  var windowHeight = window.innerHeight;
 
 	  if (windowHeight > 700) {
@@ -42112,7 +42113,10 @@
 
 	  $('.home_header__paginate a').on('click', function (e) {
 	    e.preventDefault();
-	    clearInterval(autoplay);
+	    if (autoplay) {
+	      clearInterval(autoplay);
+	    }
+
 	    var ind = $(this).data('index');
 	    var slide = (0, _change_slide2.default)(ind);
 	    slide.changeBg();

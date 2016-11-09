@@ -20,7 +20,10 @@ export default function homeHeader() {
 
   $('.home_header__paginate a').on('click', function(e) {
     e.preventDefault();
-    clearInterval(autoplay);
+    if(autoplay) {
+      clearInterval(autoplay);
+    }
+    
     let ind = $(this).data('index');
     let slide = changeSlide(ind);
     slide.changeBg();

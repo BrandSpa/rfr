@@ -29,8 +29,9 @@ $(() => {
   new Vue({
     el: '#acn_reports'
   });
-  const windowHeight = window.innerHeight;
   
+  const windowHeight = window.innerHeight;
+
   if( windowHeight  > 700) {
     document.querySelector('.home_header').style.height = `${windowHeight}px`;
   }
