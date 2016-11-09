@@ -37724,8 +37724,12 @@
 	        each(function (el) {
 	          el.style.display = 'none';
 	        })(all);
-
-	        document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
+	        var block = document.querySelector('ul[data-country="' + continent + '"]').style.display;
+	        if (block == 'block') {
+	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'none';
+	        } else {
+	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
+	        }
 	      }
 	    }
 

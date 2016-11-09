@@ -35,7 +35,7 @@ export default function() {
     },
 
     methods: {
-        close(e) {
+      close(e) {
         if(e) e.preventDefault();
         $('.map__search_list').removeClass('map__search_list--show');
       },
@@ -69,8 +69,13 @@ export default function() {
           each((el) => {
             el.style.display = 'none';
           })(all);
-
-           document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
+          let block =document.querySelector(`ul[data-country="${continent}"]`).style.display;
+          if(block == 'block') {
+            document.querySelector(`ul[data-country="${continent}"]`).style.display = 'none';
+          } else {
+            document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
+          }
+          
         }
     }
 
