@@ -30,9 +30,11 @@
       <a href="#”">TERMS & CONDITIONS</a>
     </div>
   </div>
+  
   <div class="col-md-12">
     <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" class="pull-right">
   </div>
+
 </div>
 
 <modal-lang 
