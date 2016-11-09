@@ -494,6 +494,9 @@ a {
     font-weight: 400;
     font-size: (24 / 16) * 1em;
     margin-right: (1 / 12) * 100%;
+    @media #{$mobile}, #{$tablet} {
+      display: none;
+    }
   }
 
   &__contents {
