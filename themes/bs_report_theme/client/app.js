@@ -29,5 +29,7 @@ $(() => {
   new Vue({
     el: '#acn_reports'
   });
+  const windowHeight = window.innerHeight;
+  document.querySelector('.home_header').style.height = `${windowHeight}px`;
 
 })

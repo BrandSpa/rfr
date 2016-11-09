@@ -116,6 +116,8 @@
 	  new _vue2.default({
 	    el: '#acn_reports'
 	  });
+	  var windowHeight = window.innerHeight;
+	  document.querySelector('.home_header').style.height = windowHeight + 'px';
 	});
 
 /***/ },
