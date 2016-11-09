@@ -66,10 +66,7 @@ export default function() {
 
           let all = document.querySelectorAll('ul[data-country]');
 
-          each((el) => {
-            el.style.display = 'none';
-          })(all);
-          let block = document.querySelector(`ul[data-country="${continent}"]`).style.display;
+            let block = document.querySelector(`ul[data-country="${continent}"]`).style.display;
           
           console.log('display', block);
 
@@ -78,6 +75,12 @@ export default function() {
           } else {
             document.querySelector(`ul[data-country="${continent}"]`).style.display = 'block';
           }
+
+          each((el) => {
+            el.style.display = 'none';
+          })(all);
+
+        
           
         }
     }

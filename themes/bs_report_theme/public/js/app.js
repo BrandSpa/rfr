@@ -37721,9 +37721,6 @@
 
 	        var all = document.querySelectorAll('ul[data-country]');
 
-	        each(function (el) {
-	          el.style.display = 'none';
-	        })(all);
 	        var block = document.querySelector('ul[data-country="' + continent + '"]').style.display;
 
 	        console.log('display', block);
@@ -37733,6 +37730,10 @@
 	        } else {
 	          document.querySelector('ul[data-country="' + continent + '"]').style.display = 'block';
 	        }
+
+	        each(function (el) {
+	          el.style.display = 'none';
+	        })(all);
 	      }
 	    }
 
