@@ -4,6 +4,7 @@
 ?>
 
 <?php include('search_country.php') ?>
+<?php include('search_list.php') ?>
 
 <map
   posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
