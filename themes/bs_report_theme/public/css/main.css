@@ -744,13 +744,11 @@ form button {
       .nav .menu > li:hover {
         height: auto; }
         .nav .menu > li:hover .sub-menu {
-          display: block;
           opacity: 1;
           transform: skew(1);
           transition: all 500ms ease; }
       .nav .menu > li .sub-menu {
         padding: 0;
-        display: none;
         opacity: 0;
         transform: skew(0); }
         .nav .menu > li .sub-menu a {
