@@ -468,7 +468,8 @@ a polygon, a path {
   width: 38px;
   top: 50%;
   bottom: 0;
-  margin: auto; }
+  margin: auto;
+  z-index: 10015; }
   .bs_share__fb {
     width: 100%;
     height: 38px;
