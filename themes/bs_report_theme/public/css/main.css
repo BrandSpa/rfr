@@ -502,6 +502,7 @@ a polygon, a path {
       fill: #1A2127 !important; }
 
 #return-to-top {
+  z-index: 10015;
   position: fixed;
   bottom: 20px;
   right: 20px;
