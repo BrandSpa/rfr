@@ -96,7 +96,8 @@ export default function () {
       'posts', 
       'countriesTranslation', 
       'mapUrl',
-      'lang'
+      'lang',
+      'url'
     ],
 
     ready() {

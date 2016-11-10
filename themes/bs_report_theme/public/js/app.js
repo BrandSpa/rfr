@@ -20979,7 +20979,7 @@
 
 	  _vue2.default.component('map', {
 	    template: '#map-template',
-	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang'],
+	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang', 'url'],
 
 	    ready: function ready() {
 	      var mapContainer = document.querySelector('#map-container');
