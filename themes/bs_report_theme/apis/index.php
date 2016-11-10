@@ -8,7 +8,7 @@ add_action( 'wp_ajax_mailchimp_subscribe', 'mailchimp_subscribe' );
 function mailchimp_subscribe() {
   $data = json_encode($_POST['data']);
   $listId = $_POST['lang'];
-  $res = mc_subscribe($data, $listId, null);
+  $res = mc_subscribe($data, $listId);
   header('Content-type: application/json');
   echo $res;
   die();
