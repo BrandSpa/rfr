@@ -20959,6 +20959,13 @@
 
 	    open = !open;
 	  }
+
+	  (0, _jquery2.default)('.nav .menu-item-has-children').on('click', openSubMenu);
+
+	  function openSubMenu(e) {
+	    e.preventDefault();
+	    console.log('nav');
+	  }
 	}
 
 /***/ },
