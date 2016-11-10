@@ -12,6 +12,7 @@ import subscribeForm from './components/subscribe_form';
 import homeHeader from './lib/home_header';
 import footerNav from './lib/footer_nav';
 import countries from './lib/country_lang';
+import scrollTop from './lib/scroll_top';
 
 $(() => {
   nav();
@@ -23,6 +24,7 @@ $(() => {
   subscribeForm();
   footerNav();
   homeHeader();
+  scrollTop();
   // countries();
 
   new Vue({

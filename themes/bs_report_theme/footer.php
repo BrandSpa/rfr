@@ -1,4 +1,7 @@
  <?php $current_url = esc_url($_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); ?>
+
+ <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
 <div class="bs_share" >
   <div class="bs_share__fb">
     <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_url ?>">

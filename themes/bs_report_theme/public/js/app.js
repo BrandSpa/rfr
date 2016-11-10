@@ -94,6 +94,10 @@
 
 	var _country_lang2 = _interopRequireDefault(_country_lang);
 
+	var _scroll_top = __webpack_require__(120);
+
+	var _scroll_top2 = _interopRequireDefault(_scroll_top);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
@@ -106,6 +110,7 @@
 	  (0, _subscribe_form2.default)();
 	  (0, _footer_nav2.default)();
 	  (0, _home_header2.default)();
+	  (0, _scroll_top2.default)();
 	  // countries();
 
 	  new _vue2.default({
@@ -58052,6 +58057,30 @@
 			"numericCode": "716"
 		}
 	];
+
+/***/ },
+/* 119 */,
+/* 120 */
+/***/ function(module, exports) {
+
+	'use strict';
+	// ===== Scroll to Top ==== 
+
+	$(window).scroll(function () {
+	    if ($(this).scrollTop() >= 50) {
+	        // If page is scrolled more than 50px
+	        $('#return-to-top').fadeIn(200); // Fade in the arrow
+	    } else {
+	        $('#return-to-top').fadeOut(200); // Else fade out the arrow
+	    }
+	});
+
+	$('#return-to-top').click(function () {
+	    // When arrow is clicked
+	    $('body,html').animate({
+	        scrollTop: 0 // Scroll to top of body
+	    }, 500);
+	});
 
 /***/ }
 /******/ ]);
