@@ -499,7 +499,7 @@ a polygon, a path {
     justify-content: center;
     text-align: center; }
     .bs_share__tw a path {
-      background: #1A2127 !important; }
+      fill: #1A2127 !important; }
 
 .input-red, input {
   background: #FC3938;
