@@ -55,7 +55,7 @@ export default function () {
         let mergeFields = Object.keys(fields).reduce((obj, key) => {
           let newOb = {};
           let name = key.toUpperCase();
-          newOb[name] = data[key];
+          newOb[name] = fields[key];
           return {...obj, ...newOb};
         }, {}); 
 

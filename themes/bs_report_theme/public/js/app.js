@@ -37757,7 +37757,7 @@
 	        var mergeFields = Object.keys(fields).reduce(function (obj, key) {
 	          var newOb = {};
 	          var name = key.toUpperCase();
-	          newOb[name] = data[key];
+	          newOb[name] = fields[key];
 	          return _extends({}, obj, newOb);
 	        }, {});
 
