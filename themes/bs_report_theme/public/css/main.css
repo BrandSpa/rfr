@@ -730,6 +730,7 @@ form button {
   .nav .menu {
     padding: 0 30px; }
     .nav .menu > li > a {
+      cursor: pointer;
       font-family: "Roboto Condensed", sans-serif;
       font-size: 1.25em;
       font-style: italic;
