@@ -480,6 +480,8 @@ a polygon, a path {
     flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
     text-align: center; }
   .bs_share__tw {
     width: 100%;
@@ -492,6 +494,8 @@ a polygon, a path {
     flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
     text-align: center; }
 
 .input-red, input {
