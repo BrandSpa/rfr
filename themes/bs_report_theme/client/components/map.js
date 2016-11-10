@@ -132,7 +132,7 @@ export default function () {
           setReport.call(this, reports);
         });
 
-        d3.select("#map-container svg").attr('height', 'auto');
+        d3.select("#map-container svg").attr('height', window.innerHeight);
 
         d3.select('.map__controllers__more').on('click', function() {
           d3.select("#map-container svg").transition()
