@@ -20964,7 +20964,7 @@
 
 	  function openSubMenu(e) {
 	    e.preventDefault();
-	    console.log('nav');
+	    (0, _jquery2.default)(this).find('.sub-menu').addClass('sub-menu--open');
 	  }
 	}
 
