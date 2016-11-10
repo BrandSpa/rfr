@@ -33,7 +33,7 @@
 
         <div class="col-xs-6">
           <div class="map__search_input-container">
-            <button class="button button--fill map__search_click" v-on:click="showSearch"></button>
+            <button class="button button--fill open-search-countries"></button>
           </div>
         </div>
 
@@ -45,11 +45,9 @@
       
       </div>
 
-       
     </div>
 
-  
-    <div id="map-container"></div>
+  <div id="map-container"></div>
 
   <div class="col-md-6 map_list">
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>

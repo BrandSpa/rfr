@@ -19,6 +19,7 @@ export default function() {
       this.items = JSON.parse(this.reports);
       $('.map__search_input').focus();
       $('.open-select-countries').on('click', this.open);
+      $('.open-search-countries').on('click', this.open);
     },
 
     methods: {

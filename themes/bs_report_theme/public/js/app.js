@@ -37503,6 +37503,7 @@
 	      this.items = JSON.parse(this.reports);
 	      (0, _jquery2.default)('.map__search_input').focus();
 	      (0, _jquery2.default)('.open-select-countries').on('click', this.open);
+	      (0, _jquery2.default)('.open-search-countries').on('click', this.open);
 	    },
 
 
