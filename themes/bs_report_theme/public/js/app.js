@@ -42021,9 +42021,16 @@
 	        };
 
 	        this.$set('validation', validation);
-	        return !Object.keys(validation).filter(function (key) {
+	        this.$set('isValid', Object.keys(validation).filter(function (key) {
 	          return validation[key] == true;
-	        }).length > 0;
+	        }).length == 0);
+	      },
+	      validateAll: function validateAll() {
+	        var _this = this;
+
+	        Object.keys(this.validation).forEach(function (field) {
+	          return _this.validate({ field: field });
+	        });
 	      },
 	      onSubmit: function onSubmit(e) {
 	        if (e) e.preventDefault();
