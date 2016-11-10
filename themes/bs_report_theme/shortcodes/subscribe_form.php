@@ -1,7 +1,7 @@
 
 <subscribe-form country="<?php echo getUserCountry() ?>"></subscribe-form>
 
-<template id="subscribe-form-template">
+<script type="text" id="subscribe-form-template">
   <form action="">
 
     <div class="input-container">
@@ -48,4 +48,4 @@
 
     <button class="button button-dark"><?php echo gett('Subscribe') ?></button>
   </form>
-</template>
+</script>

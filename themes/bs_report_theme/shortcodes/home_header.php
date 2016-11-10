@@ -15,7 +15,7 @@ function bs_home_header_sc($atts, $content = null) {
 
   ob_start();
 ?>
-w
+
 <div class="home_header" data-interval="<?php echo $at['interval'] ?>" data-autoplay="true" >
   <?php if(is_array( explode(',', $at['backgrounds']) )): ?>
     <?php  foreach(explode(',', $at['backgrounds']) as $key => $imageId):  ?>

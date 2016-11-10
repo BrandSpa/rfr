@@ -15,7 +15,7 @@
 >
 </map>
 
-<template id="map-template">
+<script type="text" id="map-template">
 
 
   <div id="map" class="map">
@@ -87,5 +87,5 @@
   </div>
 
   </div>
-</template>
+</script>
 
