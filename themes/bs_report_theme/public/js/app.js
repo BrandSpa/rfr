@@ -37709,7 +37709,7 @@
 	exports.default = function () {
 	  _vue2.default.component('form-download-report', {
 	    template: '#form-download-template',
-	    props: ['country'],
+	    props: ['country', 'lang'],
 	    data: function data() {
 	      return initialState;
 	    },
@@ -37749,13 +37749,13 @@
 	        var email = this.email;
 	        var country = this.country;
 	        var language = this.language;
+	        var lang = this.lang;
 
 	        this.validateAll();
 
 	        if (this.isValid) {
-	          _axios2.default.post('http://us13.api.mailchimp.com/3.0/lists/' + listId, {
-	            data: { email_address: email },
-	            auth: { user: apiKey }
+	          _axios2.default.post('/wp-admin/admin-ajax.php', {
+	            data: { action: 'mailchimp_subscribe' }
 	          }).then(function (res) {
 	            return console.log(res.data);
 	          }).catch(function (err) {
@@ -37780,9 +37780,6 @@
 	var _axios2 = _interopRequireDefault(_axios);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var apiKey = '709cb76ed68f751a3ae287f2c067a046-us13';
-	var listId = 'e4bd5ff7e0';
 
 	var initialState = {
 	  name: '',

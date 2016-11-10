@@ -2,8 +2,6 @@
 import Vue from 'vue';
 import validator from 'validator';
 import request from 'axios';
-const apiKey = '709cb76ed68f751a3ae287f2c067a046-us13';
-const listId = 'e4bd5ff7e0';
 
 let initialState = {
   name: '',
@@ -20,7 +18,7 @@ let initialState = {
 export default function () {
   Vue.component('form-download-report', {
     template: '#form-download-template',
-    props: ['country'],
+    props: ['country', 'lang'],
     data() {
       return initialState;
     },
@@ -49,14 +47,13 @@ export default function () {
       },
 
       onSubmit() {
-        const {name, email, country, language} = this;
+        const {name, email, country, language, lang} = this;
         this.validateAll();
 
         if(this.isValid) {
           request
-          .post(`http://us13.api.mailchimp.com/3.0/lists/${listId}`, {
-            data: {email_address: email},
-            auth: { user: apiKey }
+          .post('/wp-admin/admin-ajax.php', {
+            data: {action: 'mailchimp_subscribe'}
           })
           .then(res => console.log(res.data))
           .catch(err => console.log(err));

@@ -1,16 +1,21 @@
 
-<subscribe-form country="<?php echo getUserCountry() ?>"></subscribe-form>
+<subscribe-form 
+  lang="<?php echo getLangName() ?>" 
+  country="<?php echo getUserCountry() ?>"
+>
+</subscribe-form>
 
-<script type="text" id="subscribe-form-template">
-  <form action="">
-
+<script type="text/template" id="subscribe-form-template">
+  <form>
     <div class="input-container">
        <label for="" class="color-white">
             <?php echo gett('Name') ?>
             <span
               class="input-container__error"
-              v-bind:class="{ 'input-container__error-show': validation.name}"
-            > 
+              v-bind:class="{ 
+                'input-container__error-show': validation.name
+              }"
+            >
               <?php echo gett('Invalid') ?>
             </span>
           </label>
