@@ -749,6 +749,7 @@ form button {
           transform: skew(1);
           transition: all 500ms ease; }
       .nav .menu > li .sub-menu {
+        display: none;
         padding: 0;
         opacity: 0;
         transform: skew(0); }
