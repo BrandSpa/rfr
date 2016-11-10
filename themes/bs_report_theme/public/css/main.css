@@ -481,8 +481,8 @@ a polygon, a path {
     flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center; }
   .bs_share__tw a {
     width: 100%;
@@ -495,8 +495,8 @@ a polygon, a path {
     flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center; }
     .bs_share__tw a path {
       background: #1A2127 !important; }

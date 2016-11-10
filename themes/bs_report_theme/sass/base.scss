@@ -593,7 +593,7 @@ a {
       height: 38px;
       background: #192127;
       @include center-vertical;
-      align-content: center;
+      justify-content: center;
       text-align: center;
     }
     
@@ -605,7 +605,7 @@ a {
         height: 38px;
         background: #fff;
         @include center-vertical;
-        align-content: center;
+        justify-content: center;
         text-align: center;
         path {
           background: #1A2127 !important;
