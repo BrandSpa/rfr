@@ -17,10 +17,6 @@ body {
     font-size: 10px;
   }
 
-  @media #{$tablet} {
-    font-size: 14px;
-  }
-
   @media #{$tablet}, #{$mobile} {
     margin-left: 0;
     padding-top: 60px;
