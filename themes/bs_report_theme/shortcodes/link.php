@@ -10,30 +10,34 @@ function link_sc($atts, $content = null) {
   ?>
 
     <a href="<?php echo $at['link_href'] ?>" class="link-bs">
-        <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
-                <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
-            </text>
+        
+        <svg width="7px" height="7px" viewBox="129 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <defs></defs>
+            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="1" fill="none" points="130 77 130 72 135 72"></polyline>
         </svg>
 
-        <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
-                <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
-            </text>
+                
+        <svg width="7px" height="7px" viewBox="330 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+
+            <polyline id="Path-2-Copy-2" stroke="#FFFFFF" stroke-width="1" fill="none" transform="translate(333.500000, 74.500000) scale(-1, 1) translate(-333.500000, -74.500000) " points="331 77 331 72 336 72"></polyline>
         </svg>
+
 
         <?php echo gett($at['link_text']) ?> <i class="<?php echo $at['link_icon'] ?>"></i>
 
-        <svg class="link-bs__svg-third" width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
-                <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
-            </text>
+          <svg width="7px" height="7px" viewBox="129 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <defs></defs>
+            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="1" fill="none" points="130 77 130 72 135 72"></polyline>
         </svg>
 
-        <svg width="14px" height="29px" viewBox="0 0 14 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <text id="+" stroke="none" fill="none" font-family="Roboto-Light, Roboto" font-size="24" font-weight="300">
-                <tspan x="0.214687083" y="22.2741321" fill="#FFFFFF">+</tspan>
-            </text>
+
+        <svg width="7px" height="7px" viewBox="330 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+
+            <polyline id="Path-2-Copy-2" stroke="#FFFFFF" stroke-width="1" fill="none" transform="translate(333.500000, 74.500000) scale(-1, 1) translate(-333.500000, -74.500000) " points="331 77 331 72 336 72"></polyline>
         </svg>
     </a>
 
