@@ -1,4 +1,6 @@
 'use strict';
+import $ from 'jquery';
+
 // ===== Scroll to Top ==== 
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px

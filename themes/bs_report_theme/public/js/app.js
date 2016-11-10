@@ -58061,23 +58061,29 @@
 /***/ },
 /* 119 */,
 /* 120 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	// ===== Scroll to Top ==== 
 
-	$(window).scroll(function () {
-	    if ($(this).scrollTop() >= 50) {
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// ===== Scroll to Top ==== 
+	(0, _jquery2.default)(window).scroll(function () {
+	    if ((0, _jquery2.default)(this).scrollTop() >= 50) {
 	        // If page is scrolled more than 50px
-	        $('#return-to-top').fadeIn(200); // Fade in the arrow
+	        (0, _jquery2.default)('#return-to-top').fadeIn(200); // Fade in the arrow
 	    } else {
-	        $('#return-to-top').fadeOut(200); // Else fade out the arrow
+	        (0, _jquery2.default)('#return-to-top').fadeOut(200); // Else fade out the arrow
 	    }
 	});
 
-	$('#return-to-top').click(function () {
+	(0, _jquery2.default)('#return-to-top').click(function () {
 	    // When arrow is clicked
-	    $('body,html').animate({
+	    (0, _jquery2.default)('body,html').animate({
 	        scrollTop: 0 // Scroll to top of body
 	    }, 500);
 	});
