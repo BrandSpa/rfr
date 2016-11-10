@@ -35,12 +35,11 @@
   svg {
     display: block;
     margin: 40px auto;
-    height: auto !important;
     width: 100%;
 
-    // @media #{$mobile}, #{$tablet} {
-    //   padding: 20% 0;
-    // }
+    @media #{$mobile} {
+      height: auto !important;
+    }
   }
 
   &__info {
