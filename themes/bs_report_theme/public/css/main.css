@@ -143,7 +143,7 @@ h6 {
   background: #1A2127 !important; }
 
 .center-vertical {
-  display: table-cell;
+  display: table;
   display: -ms-flexbox;
   display: flex;
   flex-align: center;
@@ -152,7 +152,7 @@ h6 {
   align-items: center; }
 
 .center_horizontal {
-  display: table-cell;
+  display: table;
   display: -ms-flexbox;
   display: flex;
   flex-align: baseline;
@@ -278,7 +278,7 @@ a polygon, a path {
   fill: #fff; }
 
 .link-bs {
-  display: table-cell;
+  display: table;
   display: -ms-flexbox;
   display: flex;
   flex-align: center;
@@ -632,7 +632,7 @@ form button {
       width: 80%;
       background: #fff; } }
   .nav__logo {
-    display: table-cell;
+    display: table;
     display: -ms-flexbox;
     display: flex;
     flex-align: center;
@@ -830,7 +830,7 @@ form button {
     margin: 0; }
 
 .report__header_pdf {
-  display: table-cell;
+  display: table;
   display: -ms-flexbox;
   display: flex;
   flex-align: center;
@@ -847,7 +847,7 @@ form button {
   .report__header_pdf__download img {
     padding-right: 10px; }
   .report__header_pdf__item {
-    display: table-cell;
+    display: table;
     display: -ms-flexbox;
     display: flex;
     flex-align: baseline;
@@ -927,7 +927,7 @@ form button {
     font-size: 1.5625em;
     font-weight: normal;
     font-style: italic;
-    display: table-cell;
+    display: table;
     display: -ms-flexbox;
     display: flex;
     flex-align: center;
@@ -945,7 +945,7 @@ form button {
     transition: all 100ms ease;
     z-index: 100; }
     .map__info_situation {
-      display: table-cell;
+      display: table;
       display: -ms-flexbox;
       display: flex;
       flex-align: center;
@@ -985,7 +985,7 @@ form button {
       font-size: 1.5625em;
       font-weight: normal;
       font-style: italic;
-      display: table-cell;
+      display: table;
       display: -ms-flexbox;
       display: flex;
       flex-align: center;
@@ -1006,7 +1006,7 @@ form button {
       .map__search_results li a {
         color: #1A2127; }
       .map__search_results li span {
-        display: table-cell;
+        display: table;
         display: -ms-flexbox;
         display: flex;
         flex-align: center;
@@ -1104,7 +1104,7 @@ form button {
   font-size: 1.5625em;
   font-weight: normal;
   font-style: italic;
-  display: table-cell;
+  display: table;
   display: -ms-flexbox;
   display: flex;
   flex-align: center;

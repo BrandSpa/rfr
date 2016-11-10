@@ -1,5 +1,5 @@
 @mixin center_vertical() {
-  display: table-cell; // ie9
+  display: table; // ie9
   display: flex;
   flex-align: center;
   flex-pack: center;
@@ -7,7 +7,7 @@
 }
 
 @mixin center_horizontal {
-  display: table-cell; // ie9
+  display: table; // ie9
   display: flex;
   flex-align: baseline;
   align-items: baseline;
