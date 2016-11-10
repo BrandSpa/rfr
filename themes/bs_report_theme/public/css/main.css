@@ -729,42 +729,51 @@ form button {
       font-weight: bold; }
   .nav .menu {
     padding: 0 30px; }
-    .nav .menu > li > a {
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 1.25em;
-      font-style: italic;
-      color: #2B3740;
-      display: block;
-      margin-bottom: 15px;
-      text-transform: uppercase; }
-      .nav .menu > li > a:hover {
-        color: #FC3938; }
-    .nav .menu > li:hover .sub-menu {
-      display: block; }
-    .nav .menu > li .sub-menu {
-      display: none; }
-      .nav .menu > li .sub-menu a {
+    .nav .menu > li {
+      height: 40px; }
+      .nav .menu > li > a {
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 1.0625em;
+        font-size: 1.25em;
         font-style: italic;
-        line-height: 1.2;
-        display: block;
         color: #2B3740;
-        padding-bottom: 15px;
-        font-weight: 300;
-        position: relative; }
-        .nav .menu > li .sub-menu a:hover::before {
-          left: -15px; }
-        .nav .menu > li .sub-menu a::before {
-          content: '+';
-          color: #FC3938;
-          font-size: 20px;
+        display: block;
+        margin-bottom: 15px;
+        text-transform: uppercase; }
+        .nav .menu > li > a:hover {
+          color: #FC3938; }
+      .nav .menu > li:hover {
+        height: auto; }
+        .nav .menu > li:hover .sub-menu {
+          display: block;
+          opacity: 1;
+          transform: skew(1);
+          transition: all 500ms ease; }
+      .nav .menu > li .sub-menu {
+        padding: 0;
+        opacity: 0;
+        transform: skew(0); }
+        .nav .menu > li .sub-menu a {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 1.0625em;
+          font-style: italic;
+          line-height: 1.2;
+          display: block;
+          color: #2B3740;
+          padding-bottom: 15px;
           font-weight: 300;
-          padding-right: 10px;
-          position: absolute;
-          left: -50px;
-          top: -5px;
-          transition: left 300ms ease; }
+          position: relative; }
+          .nav .menu > li .sub-menu a:hover::before {
+            left: -15px; }
+          .nav .menu > li .sub-menu a::before {
+            content: '+';
+            color: #FC3938;
+            font-size: 20px;
+            font-weight: 300;
+            padding-right: 10px;
+            position: absolute;
+            left: -50px;
+            top: -5px;
+            transition: left 300ms ease; }
 
 @media (max-width: 767px) {
   #footer {

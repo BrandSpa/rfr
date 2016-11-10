@@ -116,7 +116,7 @@
     padding: 0 30px;
 
     & > li {
-
+      height: 40px;
       & > a {
         @include title5;
         color: $outer_space;
@@ -131,13 +131,20 @@
       }
 
       &:hover {
+        height: auto;
+
         .sub-menu {
           display: block;
+          opacity: 1;
+          transform: skew(1);
+          transition: all 500ms ease;
         }
       }
 
       .sub-menu {
-        display: none;
+        padding: 0;
+        opacity: 0;
+        transform: skew(0);
 
         a {
           @include title6;
