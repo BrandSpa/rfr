@@ -38,6 +38,8 @@
       registerStr('PRIVACY POLICY');
       registerStr('TERMS & CONDITIONS');
       registerStr('Contact');
+      registerStr('SEARCH BY LIST');
+
 
 
       foreach (getReligions() as $religion) {

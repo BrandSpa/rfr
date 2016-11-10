@@ -1,4 +1,4 @@
-<template id="search-list-template">
+<script type="text/template-x" id="search-list-template">
 <div class="map__search_list">
 
   <a href="#" class="map__search__close" v-on:click="close"><i class="ion-close"></i></a>
@@ -189,7 +189,7 @@
   </div>
   </div>
 
-</template>
+</script>
 
 <search-list
   dir="<?php echo get_template_directory_uri(); ?>" 
