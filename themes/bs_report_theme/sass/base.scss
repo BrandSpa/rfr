@@ -379,6 +379,7 @@ a {
   svg {
     opacity: 0;
     transition: 400ms all ease;
+
      &:first-child {
       fill: '#333';
       position: absolute;
@@ -392,7 +393,7 @@ a {
       top: 0;
     }
 
-    &:nth-child(3) {
+    &:nth-child(3),  &:nth-child(4)){
       position: absolute;
       right: 0;
       bottom: -12px;
