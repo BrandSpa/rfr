@@ -37753,7 +37753,7 @@
 
 	        this.validateAll();
 	        var fields = { name: name, country: country };
-
+	        console.log(fields);
 	        var mergeFields = Object.keys(fields).reduce(function (obj, key) {
 	          var newOb = {};
 	          var name = key.toUpperCase();

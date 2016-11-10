@@ -1,6 +1,6 @@
 
 <subscribe-form 
-  lang="<?php echo getLangName() ?>" 
+  lang="<?php echo getLang() ?>" 
   country="<?php echo getUserCountry() ?>"
 >
 </subscribe-form>

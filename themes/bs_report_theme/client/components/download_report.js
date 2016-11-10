@@ -51,7 +51,7 @@ export default function () {
         const {name, email, country, language, lang} = this;
         this.validateAll();
         const fields = {name, country};
-
+        console.log(fields);
         let mergeFields = Object.keys(fields).reduce((obj, key) => {
           let newOb = {};
           let name = key.toUpperCase();
