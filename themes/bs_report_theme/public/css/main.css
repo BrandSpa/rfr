@@ -146,6 +146,7 @@ h6 {
   display: table-cell;
   display: -ms-flexbox;
   display: flex;
+  flex-align: center;
   -ms-flex-align: center;
   align-items: center; }
 
@@ -153,6 +154,7 @@ h6 {
   display: table-cell;
   display: -ms-flexbox;
   display: flex;
+  flex-align: center;
   -ms-flex-align: baseline;
   align-items: baseline; }
 
@@ -278,6 +280,7 @@ a polygon, a path {
   display: table-cell;
   display: -ms-flexbox;
   display: flex;
+  flex-align: center;
   -ms-flex-align: center;
   align-items: center;
   font-family: "Roboto Condensed", sans-serif;
@@ -630,6 +633,7 @@ form button {
     display: table-cell;
     display: -ms-flexbox;
     display: flex;
+    flex-align: center;
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
@@ -826,6 +830,7 @@ form button {
   display: table-cell;
   display: -ms-flexbox;
   display: flex;
+  flex-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin: 40px 0;
@@ -840,6 +845,7 @@ form button {
     display: table-cell;
     display: -ms-flexbox;
     display: flex;
+    flex-align: center;
     -ms-flex-align: baseline;
     align-items: baseline; }
     .report__header_pdf__item h5 {
@@ -919,6 +925,7 @@ form button {
     display: table-cell;
     display: -ms-flexbox;
     display: flex;
+    flex-align: center;
     -ms-flex-align: center;
     align-items: center;
     background: #fff;
@@ -935,6 +942,7 @@ form button {
       display: table-cell;
       display: -ms-flexbox;
       display: flex;
+      flex-align: center;
       -ms-flex-align: center;
       align-items: center;
       width: 40px;
@@ -973,6 +981,7 @@ form button {
       display: table-cell;
       display: -ms-flexbox;
       display: flex;
+      flex-align: center;
       -ms-flex-align: center;
       align-items: center;
       font-size: 1.4375em;
@@ -992,6 +1001,7 @@ form button {
         display: table-cell;
         display: -ms-flexbox;
         display: flex;
+        flex-align: center;
         -ms-flex-align: center;
         align-items: center;
         width: 40px;
@@ -1088,6 +1098,7 @@ form button {
   display: table-cell;
   display: -ms-flexbox;
   display: flex;
+  flex-align: center;
   -ms-flex-align: center;
   align-items: center;
   font-size: 1.5em;
