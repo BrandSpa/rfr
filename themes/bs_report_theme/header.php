@@ -35,11 +35,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="map__info_country"></span>
     <span class="map__info_situation">
       <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/unchanged.svg" alt="">
-    </span>
-
- 
+    </span> 
   </div>
-
 
 
 <div class="nav_mobile">

@@ -10,8 +10,13 @@ const colors = {
   'Stable': '#E4E7EA',
 };
 
-function showInfo(info, txt) {
-  d3.select(info).select('.map__info_country').text(txt.replace(/-/g, ' '));
+function showInfo(info, report) {
+  let {meta_country, meta_situation} = report; 
+  let name = meta_country.replace(/-/g, ' ');
+  let src = `/public/img/icons/${meta_situation}.svg`;
+
+  d3.select(info).select('.map__info_country').text(name);
+  d3.select(info).select('.map__info_situation img').attr('src', src);
 
   mousePosition(null)
     .then(p => {
@@ -48,8 +53,8 @@ function showMapInfo(el, report, fill) {
   let info = document.querySelector('.map__info');
   
   el.on('mousemove', evt => {
-    let countryInfo = report.meta_country;
-    showInfo(info, countryInfo);
+
+    showInfo(info, report);
     setStyle(el, fill);
   });
 
