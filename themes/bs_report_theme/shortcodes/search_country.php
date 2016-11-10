@@ -1,4 +1,4 @@
-<template id="search-country-template">
+<script type="text/template-x" id="search-country-template">
 <div class="map__search">
 
   <a href="#" class="map__search__close" v-on:click="close"><i class="ion-close"></i></a>
@@ -22,7 +22,12 @@
     <ul class="map__search_results">
       <li 
         v-for="item in items" 
-        v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
+        v-bind:class="{
+          'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 
+          'bg-red': isPersecution(item.meta_nature_persecution),
+          'selected': isSelected($index) 
+        }"
+      >
           <a v-bind:href="item.guid">{{item.meta_country}}</a>
         <span>
           <img v-bind:src="getIcon(item.meta_situation)" alt="">
@@ -64,16 +69,18 @@
         <li>
             <img src="<?php echo get_template_directory_uri(); ?>/public/img/icons/Worsened.svg" alt=""> <?php echo gett('Worsened') ?>
         </li>
-
       </ul>
      </div>
-      </div>
+    </div>
     </div>
  
    
   </div>
   </div>
 
-</template>
+</script>
 
-<search-country dir="<?php echo get_template_directory_uri(); ?>" reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'></search-country>
+<search-country 
+  dir="<?php echo get_template_directory_uri(); ?>" 
+  reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'>
+</search-country>
