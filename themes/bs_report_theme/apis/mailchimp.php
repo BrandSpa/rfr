@@ -25,35 +25,20 @@ if( file_exists($dir_base . '/vendor/autoload.php') ) {
 
     return $lists[$key];
   }
-  
 
-  // $name = $_POST['name'] ? $_POST['name'] : '';
-  // $email = $_POST['email'];
-  // $country = $_POST['country'];
-  // $listKey = $_POST['lang'];
-  // $listId = 'e4bd5ff7e0';
+  function mc_subscribe($data, $lang, $apiKey = '709cb76ed68f751a3ae287f2c067a046-us13') {
+    $listId = getList($lang);
 
-  // $data = '{
-  //       "email_address": "'.$email.'",
-  //       "status": "subscribed",
-  //       "merge_fields": {"COUNTRY": "'.$country.'", "FNAME": "'. $name .'"},
-  //       "update_existing": true
-  // }';
+    $options = array(
+      'auth' => array('user', $apiKey)
+    );
 
-function mc_subscribe($data, $lang, $apiKey = '709cb76ed68f751a3ae287f2c067a046-us13') {
-  $listId = getList($lang);
-
-  $options = array(
-    'auth' => array('user', $apiKey)
-  );
-
-  $headers = array('Accept' => 'application/json', 'content-type' => 'application/json');
-  $urlBase = 'http://us13.api.mailchimp.com/3.0/';
-  $req = Requests::post($urlBase . 'lists/' . $listId . '/members', $headers, $data, $options);
-  return $req->body;
-}
+    $headers = array('Accept' => 'application/json', 'content-type' => 'application/json');
+    $urlBase = 'http://us13.api.mailchimp.com/3.0/';
+    $req = Requests::post($urlBase . 'lists/' . $listId . '/members', $headers, $data, $options);
+    return $req->body;
+  }
  
-
 }
 
 ?>
