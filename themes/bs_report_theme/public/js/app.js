@@ -114,7 +114,7 @@
 
 	  var windowHeight = window.innerHeight;
 
-	  if (windowHeight > 700) {
+	  if (windowHeight > 700 && document.querySelector('.home_header')) {
 	    document.querySelector('.home_header').style.height = windowHeight + 'px';
 	  }
 	});
