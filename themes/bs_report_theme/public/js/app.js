@@ -21061,8 +21061,15 @@
 	  'Stable': '#E4E7EA'
 	};
 
-	function showInfo(info, txt) {
-	  d3.select(info).select('.map__info_country').text(txt.replace(/-/g, ' '));
+	function showInfo(info, report) {
+	  var meta_country = report.meta_country;
+	  var meta_situation = report.meta_situation;
+
+	  var name = meta_country.replace(/-/g, ' ');
+	  var src = '/public/img/icons/' + meta_situation + '.svg';
+
+	  d3.select(info).select('.map__info_country').text(name);
+	  d3.select(info).select('.map__info_situation img').attr('src', src);
 
 	  (0, _get_mouse_position2.default)(null).then(function (p) {
 	    info.style.opacity = 1;
@@ -21094,8 +21101,8 @@
 	  var info = document.querySelector('.map__info');
 
 	  el.on('mousemove', function (evt) {
-	    var countryInfo = report.meta_country;
-	    showInfo(info, countryInfo);
+
+	    showInfo(info, report);
 	    setStyle(el, fill);
 	  });
 
@@ -37518,7 +37525,6 @@
 	        if (e) e.preventDefault();
 	        (0, _jquery2.default)('body').addClass('model-open');
 	        (0, _jquery2.default)('.map__search').addClass('map__search--show');
-	        console.log('opne', (0, _jquery2.default)('.map__search_input'));
 	        (0, _jquery2.default)('.map__search_input').focus();
 	      },
 	      getIcon: function getIcon(name) {
