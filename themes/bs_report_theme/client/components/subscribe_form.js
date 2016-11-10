@@ -1,6 +1,7 @@
 'use strict';
 import Vue from 'vue';
 import validator from 'validator';
+import $ from 'jquery';
 
 let initialState = {
   name: '',
@@ -16,7 +17,7 @@ let initialState = {
 export default function() {
   Vue.component('subscribe-form', {
     template: "#subscribe-form-template",
-    props: ['country'],
+    props: ['country', 'lang'],
     data() {
       return initialState;
     },
@@ -42,6 +43,36 @@ export default function() {
 
       onSubmit(e) {
         if(e) e.preventDefault();
+        const {name, email, country, language, lang} = this;
+        const fields = {name, country};
+        
+        this.validateAll();
+        
+        let mergeFields = Object.keys(fields).reduce((obj, key) => {
+          let newOb = {};
+          let name = key.toUpperCase();
+          newOb[name] = fields[key];
+          return {...obj, ...newOb};
+        }, {}); 
+
+        let data = {
+            "email_address": email,
+            "status": "subscribed",
+            "merge_fields": mergeFields,
+            "update_existing": true
+          };      
+
+        let payload = {action: 'mailchimp_subscribe', lang, data};        
+
+        if(this.isValid) {
+          $.ajax({
+            type: 'post',
+            url: '/wp-admin/admin-ajax.php',
+            data: payload
+          })
+          .done(res => console.log(res))
+          .fail(err => console.log(err));
+        }
 
       }
     }

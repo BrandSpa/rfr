@@ -41997,7 +41997,7 @@
 	exports.default = function () {
 	  _vue2.default.component('subscribe-form', {
 	    template: "#subscribe-form-template",
-	    props: ['country'],
+	    props: ['country', 'lang'],
 	    data: function data() {
 	      return initialState;
 	    },
@@ -42027,6 +42027,43 @@
 	      },
 	      onSubmit: function onSubmit(e) {
 	        if (e) e.preventDefault();
+	        var name = this.name;
+	        var email = this.email;
+	        var country = this.country;
+	        var language = this.language;
+	        var lang = this.lang;
+
+	        var fields = { name: name, country: country };
+
+	        this.validateAll();
+
+	        var mergeFields = Object.keys(fields).reduce(function (obj, key) {
+	          var newOb = {};
+	          var name = key.toUpperCase();
+	          newOb[name] = fields[key];
+	          return _extends({}, obj, newOb);
+	        }, {});
+
+	        var data = {
+	          "email_address": email,
+	          "status": "subscribed",
+	          "merge_fields": mergeFields,
+	          "update_existing": true
+	        };
+
+	        var payload = { action: 'mailchimp_subscribe', lang: lang, data: data };
+
+	        if (this.isValid) {
+	          _jquery2.default.ajax({
+	            type: 'post',
+	            url: '/wp-admin/admin-ajax.php',
+	            data: payload
+	          }).done(function (res) {
+	            return console.log(res);
+	          }).fail(function (err) {
+	            return console.log(err);
+	          });
+	        }
 	      }
 	    }
 	  });
@@ -42039,6 +42076,10 @@
 	var _validator = __webpack_require__(24);
 
 	var _validator2 = _interopRequireDefault(_validator);
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
