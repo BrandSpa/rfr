@@ -146,12 +146,14 @@ h6 {
   background: #1A2127 !important; }
 
 .center-vertical {
+  -js-display: flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center; }
 
 .center_horizontal {
+  -js-display: flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: baseline;
@@ -276,6 +278,7 @@ a polygon, a path {
   fill: #fff; }
 
 .link-bs {
+  -js-display: flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -627,6 +630,7 @@ form button {
       width: 80%;
       background: #fff; } }
   .nav__logo {
+    -js-display: flex;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -821,6 +825,7 @@ form button {
     margin: 0; }
 
 .report__header_pdf {
+  -js-display: flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -834,6 +839,7 @@ form button {
   .report__header_pdf__download img {
     padding-right: 10px; }
   .report__header_pdf__item {
+    -js-display: flex;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: baseline;
@@ -910,6 +916,7 @@ form button {
     font-size: 1.5625em;
     font-weight: normal;
     font-style: italic;
+    -js-display: flex;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -925,6 +932,7 @@ form button {
     transition: all 100ms ease;
     z-index: 100; }
     .map__info_situation {
+      -js-display: flex;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
@@ -962,6 +970,7 @@ form button {
       font-size: 1.5625em;
       font-weight: normal;
       font-style: italic;
+      -js-display: flex;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
@@ -980,6 +989,7 @@ form button {
       .map__search_results li a {
         color: #1A2127; }
       .map__search_results li span {
+        -js-display: flex;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
@@ -1075,6 +1085,7 @@ form button {
   font-size: 1.5625em;
   font-weight: normal;
   font-style: italic;
+  -js-display: flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
