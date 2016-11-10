@@ -498,6 +498,8 @@ a polygon, a path {
     -ms-flex-line-pack: center;
     align-content: center;
     text-align: center; }
+    .bs_share__tw path {
+      background: #1A2127 !important; }
 
 .input-red, input {
   background: #FC3938;

@@ -603,5 +603,8 @@ a {
     @include center-vertical;
     align-content: center;
     text-align: center;
+    path {
+      background: #1A2127 !important;
+    }
   }
 }
