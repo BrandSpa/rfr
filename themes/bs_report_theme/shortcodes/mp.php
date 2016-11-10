@@ -33,7 +33,7 @@
 
         <div class="col-xs-6">
           <div class="map__search_input-container">
-            <button class="button button--fill map__search_click open-search-countries"></button>
+            <button class="button button--fill map__search_click" v-on:click="showSearch"></button>
           </div>
         </div>
 

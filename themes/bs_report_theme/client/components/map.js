@@ -142,6 +142,7 @@ export default function () {
         e.preventDefault();
         $('.map__search').addClass('map__search--show');
         $('body').addClass('model-open');
+        $('.map__search_input').focus();
       },
 
       showSearchList(e) {

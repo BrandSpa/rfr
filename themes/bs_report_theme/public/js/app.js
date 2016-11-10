@@ -21024,6 +21024,7 @@
 	        e.preventDefault();
 	        (0, _jquery2.default)('.map__search').addClass('map__search--show');
 	        (0, _jquery2.default)('body').addClass('model-open');
+	        (0, _jquery2.default)('.map__search_input').focus();
 	      },
 	      showSearchList: function showSearchList(e) {
 	        e.preventDefault();
