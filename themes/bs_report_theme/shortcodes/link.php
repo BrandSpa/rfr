@@ -27,6 +27,12 @@ function link_sc($atts, $content = null) {
 
         <?php echo gett($at['link_text']) ?> <i class="<?php echo $at['link_icon'] ?>"></i>
 
+        <svg width="7px" height="7px" viewBox="330 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+
+            <polyline id="Path-2-Copy-2" stroke="#FFFFFF" stroke-width="1" fill="none" transform="translate(333.500000, 74.500000) scale(-1, 1) translate(-333.500000, -74.500000) " points="331 77 331 72 336 72"></polyline>
+        </svg>
+
           <svg width="7px" height="7px" viewBox="129 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
             <defs></defs>
@@ -34,11 +40,7 @@ function link_sc($atts, $content = null) {
         </svg>
 
 
-        <svg width="7px" height="7px" viewBox="330 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
-
-            <polyline id="Path-2-Copy-2" stroke="#FFFFFF" stroke-width="1" fill="none" transform="translate(333.500000, 74.500000) scale(-1, 1) translate(-333.500000, -74.500000) " points="331 77 331 72 336 72"></polyline>
-        </svg>
+        
     </a>
 
  <?php
