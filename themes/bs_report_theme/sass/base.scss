@@ -581,14 +581,17 @@ a {
   position: fixed;
   right: 0;
   width: 38px;
-  top: 0;
+  top: 50%;
   bottom: 0;
   margin: auto;
+ 
+
   &__fb {
     width: 100%;
     height: 38px;
     background: #192127;
     @include center-vertical;
+    text-align: center;
   }
 
     &__tw {
@@ -596,5 +599,6 @@ a {
     height: 38px;
     background: #fff;
     @include center-vertical;
+    text-align: center;
   }
 }
