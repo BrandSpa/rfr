@@ -39,6 +39,9 @@
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
+  <script>
+    flexibility(document.getElementsByClassName('report__header_pdf'));
+  </script>
 
 <?php wp_footer() ?>
 
