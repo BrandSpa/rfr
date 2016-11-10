@@ -11,7 +11,7 @@
 
     <button 
       class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-      v-on:click="showContinent('afrika')" >Afrika</button>
+      v-on:click="showContinent('afrika')" ><?php echo gett('Africa') ?></button>
 
     <ul class="map__search_results" data-country="afrika" style="display: none">
       <li
@@ -26,7 +26,7 @@
 
     <button 
       class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-      v-on:click="showContinent('asia')" >asia</button>
+      v-on:click="showContinent('asia')" ><?php echo gett('Asia') ?></button>
 
     <ul class="map__search_results" data-country="asia" style="display: none">
       <li
@@ -41,7 +41,7 @@
 
     <button 
         class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-        v-on:click="showContinent('easterEurope')" >Easter Europe</button>
+        v-on:click="showContinent('easterEurope')" ><?php echo gett('Eastern Europe') ?></button>
 
       <ul class="map__search_results" data-country="easterEurope" style="display: none">
         <li
@@ -56,7 +56,7 @@
 
      <button 
       class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-      v-on:click="showContinent('Latin America')">Latin America</button>
+      v-on:click="showContinent('Latin America')"><?php echo gett('Latin America') ?></button>
 
     <ul class="map__search_results" data-country="Latin America" style="display: none">
           <li 
@@ -71,7 +71,7 @@
 
     <button 
         class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-        v-on:click="showContinent('middleEast')" >Middle East</button>
+        v-on:click="showContinent('middleEast')" ><?php echo gett('Middle East') ?></button>
 
       <ul class="map__search_results" data-country="middleEast" style="display: none">
         <li
@@ -86,7 +86,7 @@
     
     <button 
       class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-      v-on:click="showContinent('North America')">North America</button>
+      v-on:click="showContinent('North America')"><?php echo gett('North America') ?></button>
 
     <ul class="map__search_results" data-country="North America" style="display: none">
           <li 
@@ -101,7 +101,7 @@
 
     <button 
         class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-        v-on:click="showContinent('ocenia')" >Ocenia</button>
+        v-on:click="showContinent('ocenia')" ><?php echo gett('Oceania') ?></button>
 
       <ul class="map__search_results" data-country="ocenia" style="display: none">
         <li
@@ -116,7 +116,7 @@
       
       <button 
         class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-        v-on:click="showContinent('russiaCentralAsia')" >Russia & Central Asia</button>
+        v-on:click="showContinent('russiaCentralAsia')" ><?php echo gett('Russia & Central Asia') ?></button>
 
       <ul class="map__search_results" data-country="russiaCentralAsia" style="display: none">
         <li
