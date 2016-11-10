@@ -2,6 +2,7 @@
 import Vue from 'vue';
 import validator from 'validator';
 import request from 'axios';
+import $ from 'jquery';
 
 let initialState = {
   name: '',
@@ -51,12 +52,13 @@ export default function () {
         this.validateAll();
 
         if(this.isValid) {
-          request
-          .post('/wp-admin/admin-ajax.php', {
+          $.ajax({
+            url: '/wp-admin/admin-ajax.php',
+            type: 'post',
             data: {action: 'mailchimp_subscribe'}
           })
-          .then(res => console.log(res.data))
-          .catch(err => console.log(err));
+          .done(res => console.log(res.data))
+          .fail(err => console.log(err));
         }
       }
     }

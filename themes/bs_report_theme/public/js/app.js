@@ -37754,11 +37754,13 @@
 	        this.validateAll();
 
 	        if (this.isValid) {
-	          _axios2.default.post('/wp-admin/admin-ajax.php', {
+	          _jquery2.default.ajax({
+	            url: '/wp-admin/admin-ajax.php',
+	            type: 'post',
 	            data: { action: 'mailchimp_subscribe' }
-	          }).then(function (res) {
+	          }).done(function (res) {
 	            return console.log(res.data);
-	          }).catch(function (err) {
+	          }).fail(function (err) {
 	            return console.log(err);
 	          });
 	        }
@@ -37778,6 +37780,10 @@
 	var _axios = __webpack_require__(88);
 
 	var _axios2 = _interopRequireDefault(_axios);
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
