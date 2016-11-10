@@ -51,6 +51,6 @@
     </div>
 
 
-    <button class="button button-dark"><?php echo gett('Subscribe') ?></button>
+    <button class="button button-dark" v-on:click.prevent="onSubmit"><?php echo gett('Subscribe') ?></button>
   </form>
 </script>
