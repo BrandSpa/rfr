@@ -116,7 +116,6 @@
     padding: 0 30px;
 
     & > li {
-      height: 40px;
       & > a {
         @include title5;
         color: $outer_space;
@@ -130,9 +129,7 @@
         }
       }
 
-      &:hover {
-        height: auto;
-      }
+    
 
 
 
