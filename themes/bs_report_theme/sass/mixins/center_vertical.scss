@@ -1,9 +1,11 @@
 @mixin center_vertical() {
+  -js-display: flex;
   display: flex;
   align-items: center;
 }
 
 @mixin center_horizontal {
+  -js-display: flex;
   display: flex;
   align-items: baseline;
 }
