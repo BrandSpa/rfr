@@ -8,7 +8,7 @@
 //folders names
 $base = __DIR__;
 $lib = 'lib';
-$api = 'api';
+$api = 'apis';
 $options = 'options';
 $shortcodes = 'shortcodes';
 $metaboxes = 'metaboxes';
