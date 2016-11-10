@@ -8,6 +8,7 @@
 //folders names
 $base = __DIR__;
 $lib = 'lib';
+$api = 'api';
 $options = 'options';
 $shortcodes = 'shortcodes';
 $metaboxes = 'metaboxes';
@@ -18,6 +19,7 @@ require 'vendor/autoload.php';
 
 //include lib functions
 include_once $lib . '/index.php';
+include_once $api . '/index.php';
 
 include_once $options . '/info.php';
 

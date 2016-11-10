@@ -11,7 +11,7 @@ function mailchimp_subscribe() {
   $apiKey =  get_option('mailchimp_api');
   $res = mc_subscribe($data, $listId, $apiKey);
   header('Content-type: application/json');
-  echo $data;
+  echo $res;
   die();
 }
 
