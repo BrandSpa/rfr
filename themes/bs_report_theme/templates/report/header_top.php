@@ -2,15 +2,6 @@
 <div class="col-md-8">
   <a href="#map" class="report__header__back-map"><?php echo gett('BACK TO MAP') ?></a>
 
-  <div class="report__header__slider_year">
-    <?php $year = get_post_meta($post->ID, 'report_year_key', true); ?>
-    <a href="?report_year=<?php echo $year - 1 ?>" disabled="true"> <i class="ion-chevron-left"></i> </a>
-
-    <?php echo get_post_meta($post->ID, 'report_year_key', true) ?>
-
-    <a href="?report_year=<?php echo $year + 1 ?>" disabled="true"> <i class="ion-chevron-right"></i> </a>
-  </div>
-
   <h1 class="title">
     <?php echo get_the_title() ?>
     <a href="#" class="open-select-countries">
