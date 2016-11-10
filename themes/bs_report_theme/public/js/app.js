@@ -20960,7 +20960,7 @@
 	    open = !open;
 	  }
 
-	  (0, _jquery2.default)('.nav .menu-item-has-children').on('click', openSubMenu);
+	  (0, _jquery2.default)('.nav .menu-item-has-children > a').on('click', openSubMenu);
 
 	  function openSubMenu(e) {
 	    e.preventDefault();

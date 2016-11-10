@@ -26,7 +26,7 @@ export default function nav() {
     open = !open;
   }
 
-  $('.nav .menu-item-has-children').on('click', openSubMenu);
+  $('.nav .menu-item-has-children > a').on('click', openSubMenu);
 
   function openSubMenu(e) {
     e.preventDefault();
