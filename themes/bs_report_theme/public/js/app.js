@@ -94,7 +94,7 @@
 
 	var _country_lang2 = _interopRequireDefault(_country_lang);
 
-	var _scroll_top = __webpack_require__(120);
+	var _scroll_top = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./lib/scroll_top\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _scroll_top2 = _interopRequireDefault(_scroll_top);
 
@@ -58057,36 +58057,6 @@
 			"numericCode": "716"
 		}
 	];
-
-/***/ },
-/* 119 */,
-/* 120 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	// ===== Scroll to Top ==== 
-	(0, _jquery2.default)(window).scroll(function () {
-	    if ((0, _jquery2.default)(this).scrollTop() >= 50) {
-	        // If page is scrolled more than 50px
-	        (0, _jquery2.default)('#return-to-top').fadeIn(200); // Fade in the arrow
-	    } else {
-	        (0, _jquery2.default)('#return-to-top').fadeOut(200); // Else fade out the arrow
-	    }
-	});
-
-	(0, _jquery2.default)('#return-to-top').click(function () {
-	    // When arrow is clicked
-	    (0, _jquery2.default)('body,html').animate({
-	        scrollTop: 0 // Scroll to top of body
-	    }, 500);
-	});
 
 /***/ }
 /******/ ]);
