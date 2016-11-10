@@ -37751,9 +37751,10 @@
 	        var language = this.language;
 	        var lang = this.lang;
 
-	        this.validateAll();
 	        var fields = { name: name, country: country };
-	        console.log(fields);
+
+	        this.validateAll();
+
 	        var mergeFields = Object.keys(fields).reduce(function (obj, key) {
 	          var newOb = {};
 	          var name = key.toUpperCase();
@@ -37772,11 +37773,11 @@
 
 	        if (this.isValid) {
 	          _jquery2.default.ajax({
-	            url: '/wp-admin/admin-ajax.php',
 	            type: 'post',
+	            url: '/wp-admin/admin-ajax.php',
 	            data: payload
 	          }).done(function (res) {
-	            return console.log(res.data);
+	            return console.log(res);
 	          }).fail(function (err) {
 	            return console.log(err);
 	          });

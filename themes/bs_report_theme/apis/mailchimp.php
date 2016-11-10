@@ -11,6 +11,7 @@ if( file_exists($dir_base . '/vendor/autoload.php') ) {
 
     $lists = array(
       "default" => "21bcce46c6",
+      "en" => "21bcce46c6",
       "es" => "43548c4f98",
       "fr" => "1bc8958e31",
       "pt" => "b5f7376421",

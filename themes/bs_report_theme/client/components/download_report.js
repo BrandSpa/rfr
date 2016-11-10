@@ -49,9 +49,10 @@ export default function () {
 
       onSubmit() {
         const {name, email, country, language, lang} = this;
-        this.validateAll();
         const fields = {name, country};
-        console.log(fields);
+        
+        this.validateAll();
+        
         let mergeFields = Object.keys(fields).reduce((obj, key) => {
           let newOb = {};
           let name = key.toUpperCase();
@@ -70,11 +71,11 @@ export default function () {
 
         if(this.isValid) {
           $.ajax({
-            url: '/wp-admin/admin-ajax.php',
             type: 'post',
+            url: '/wp-admin/admin-ajax.php',
             data: payload
           })
-          .done(res => console.log(res.data))
+          .done(res => console.log(res))
           .fail(err => console.log(err));
         }
       }

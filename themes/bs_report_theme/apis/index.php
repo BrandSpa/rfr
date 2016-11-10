@@ -10,7 +10,8 @@ function mailchimp_subscribe() {
   $listId = $_POST['lang'];
   $apiKey =  get_option('mailchimp_api');
   $res = mc_subscribe($data, $listId, $apiKey);
-  echo $res;
+  header('Content-type: application/json');
+  echo $data;
   die();
 }
 
