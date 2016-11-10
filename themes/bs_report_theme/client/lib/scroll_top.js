@@ -1,6 +1,6 @@
 'use strict';
 import $ from 'jquery';
-export default = function() {
+export default function() {
 
 $(window).scroll(function() {
 	if ($(this).scrollTop() >= 50) {
