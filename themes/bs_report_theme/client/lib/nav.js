@@ -30,7 +30,7 @@ export default function nav() {
 
   function openSubMenu(e) {
     e.preventDefault();
-    $(this).find('.sub-menu').addClass('sub-menu--open');
+    $(this).parent().find('.sub-menu').addClass('sub-menu--open');
   }
 
 
