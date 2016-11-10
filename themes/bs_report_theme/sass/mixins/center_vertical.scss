@@ -1,11 +1,11 @@
 @mixin center_vertical() {
-  -js-display: flex;
+ display: table-cell; // ie9
   display: flex;
   align-items: center;
 }
 
 @mixin center_horizontal {
-  -js-display: flex;
+ display: table-cell; // ie9
   display: flex;
   align-items: baseline;
 }
