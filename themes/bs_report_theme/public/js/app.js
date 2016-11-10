@@ -21066,7 +21066,7 @@
 	  var meta_situation = report.meta_situation;
 
 	  var name = meta_country.replace(/-/g, ' ');
-	  var src = '/public/img/icons/' + meta_situation + '.svg';
+	  var src = '/wp-content/themes/bs_report_theme/public/img/icons/' + meta_situation + '.svg';
 
 	  d3.select(info).select('.map__info_country').text(name);
 	  d3.select(info).select('.map__info_situation img').attr('src', src);
