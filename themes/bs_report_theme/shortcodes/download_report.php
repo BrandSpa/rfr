@@ -9,14 +9,18 @@
     <div class="col-md-1"></div>
 
     <div class="col-md-5" style="float: none; margin: 0 auto">
-      <form-download-report country="<?php echo getUserCountry() ?>"></form-download-report>
+      <form-download-report 
+        country="<?php echo getUserCountry() ?>"
+        lang="<?php echo getLang() ?>"
+        >
+        </form-download-report>
     </div>
     <div class="col-md-1"></div>
   </div>
 
 </div>
 
-<template id="form-download-template">
+<script type="text/template" id="form-download-template">
      <form  v-on:submit.prevent="onSubmit">
 
         <div class="input-container">
@@ -77,4 +81,4 @@
 
         <button class="button title-uppercase" v-on:click.prevent="onSubmit"><?php echo gett('Download Executive Summary') ?></button>
       </form>
-</template>
+</script>
