@@ -37753,11 +37753,27 @@
 
 	        this.validateAll();
 
+	        var mergeFields = Object.keys(this).reduce(function (obj, key) {
+	          var newOb = {};
+	          var name = key.toUpperCase();
+	          newOb[name] = data[key];
+	          return _extends({}, obj, newOb);
+	        }, {});
+
+	        var data = {
+	          "email_address": email,
+	          "status": "subscribed",
+	          "merge_fields": mergeFields,
+	          "update_existing": true
+	        };
+
+	        var payload = { action: 'mailchimp_subscribe', lang: lang, data: data };
+
 	        if (this.isValid) {
 	          _jquery2.default.ajax({
 	            url: '/wp-admin/admin-ajax.php',
 	            type: 'post',
-	            data: { action: 'mailchimp_subscribe' }
+	            data: payload
 	          }).done(function (res) {
 	            return console.log(res.data);
 	          }).fail(function (err) {

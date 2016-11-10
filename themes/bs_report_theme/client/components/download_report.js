@@ -50,12 +50,28 @@ export default function () {
       onSubmit() {
         const {name, email, country, language, lang} = this;
         this.validateAll();
+        
+        let mergeFields = Object.keys(this).reduce((obj, key) => {
+          let newOb = {};
+          let name = key.toUpperCase();
+          newOb[name] = data[key];
+          return {...obj, ...newOb};
+        }, {}); 
 
+        let data = {
+            "email_address": email,
+            "status": "subscribed",
+            "merge_fields": mergeFields,
+            "update_existing": true
+          };      
+
+        let payload = {action: 'mailchimp_subscribe', lang, data};        
+        
         if(this.isValid) {
           $.ajax({
             url: '/wp-admin/admin-ajax.php',
             type: 'post',
-            data: {action: 'mailchimp_subscribe'}
+            data: payload
           })
           .done(res => console.log(res.data))
           .fail(err => console.log(err));
