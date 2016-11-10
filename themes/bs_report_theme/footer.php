@@ -51,8 +51,8 @@
   </div>
   
   <div class="col-md-12 bs-logo">
-    <a href="http://brandspa.com" target="blank">
-      <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" width="150" class="pull-right">
+    <a href="http://brandspa.com" target="blank" class="pull-right">
+      <img src="<?php echo get_template_directory_uri() .'/public/img/bs.png' ?>" width="150" >
     </a>
   </div>
 
