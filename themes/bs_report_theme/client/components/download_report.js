@@ -50,8 +50,9 @@ export default function () {
       onSubmit() {
         const {name, email, country, language, lang} = this;
         this.validateAll();
-        
-        let mergeFields = Object.keys(this).reduce((obj, key) => {
+        const fields = {name, country};
+
+        let mergeFields = Object.keys(fields).reduce((obj, key) => {
           let newOb = {};
           let name = key.toUpperCase();
           newOb[name] = data[key];
@@ -66,7 +67,7 @@ export default function () {
           };      
 
         let payload = {action: 'mailchimp_subscribe', lang, data};        
-        
+
         if(this.isValid) {
           $.ajax({
             url: '/wp-admin/admin-ajax.php',

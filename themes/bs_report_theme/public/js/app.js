@@ -37752,8 +37752,9 @@
 	        var lang = this.lang;
 
 	        this.validateAll();
+	        var fields = { name: name, country: country };
 
-	        var mergeFields = Object.keys(this).reduce(function (obj, key) {
+	        var mergeFields = Object.keys(fields).reduce(function (obj, key) {
 	          var newOb = {};
 	          var name = key.toUpperCase();
 	          newOb[name] = data[key];
