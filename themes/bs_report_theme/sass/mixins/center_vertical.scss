@@ -1,13 +1,14 @@
 @mixin center_vertical() {
- display: table-cell; // ie9
+  display: table-cell; // ie9
   display: flex;
   flex-align: center;
+  flex-pack: center;
   align-items: center;
 }
 
 @mixin center_horizontal {
- display: table-cell; // ie9
+  display: table-cell; // ie9
   display: flex;
-  flex-align: center;
+  flex-align: baseline;
   align-items: baseline;
 }
