@@ -21024,8 +21024,10 @@
 	          var report = getReport(function (report) {
 	            return report.meta_country == countryName;
 	          })(reports);
-	          var fill = colors[report.meta_nature_persecution];
-	          $el.style("fill", fill);
+	          if (report && report.meta_nature_persecution) {
+	            var fill = colors[report.meta_nature_persecution];
+	            $el.style("fill", fill);
+	          }
 	        });
 
 	        paths.on('mousemove', function (e) {
