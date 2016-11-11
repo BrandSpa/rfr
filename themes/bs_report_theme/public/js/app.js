@@ -21025,8 +21025,8 @@
 	            return report.meta_country == countryName;
 	          })(reports);
 	          if (report && report.meta_nature_persecution) {
-	            var _fill2 = colors[report.meta_nature_persecution];
-	            $el.style("fill", _fill2);
+	            var fill = colors[report.meta_nature_persecution];
+	            $el.style("fill", fill);
 	          }
 	        });
 
@@ -21037,8 +21037,8 @@
 	            return report.meta_country == countryName;
 	          })(reports);
 	          if (report && report.meta_nature_persecution) {
-	            var _fill3 = colors[report.meta_nature_persecution];
-	            $el.style("fill", _fill3);
+	            var fill = colors[report.meta_nature_persecution];
+	            $el.style("fill", fill);
 	          }
 	        });
 
@@ -21048,8 +21048,12 @@
 	          var report = getReport(function (report) {
 	            return report.meta_country == countryName;
 	          })(reports);
-	          $el.style("cursor", "pointer");
-	          showMapInfo($el, report, fill);
+	          if (report && report.meta_nature_persecution) {
+	            var fill = colors[report.meta_nature_persecution];
+	            $el.style("cursor", "pointer");
+	            $el.style("fill", fill);
+	            showMapInfo($el, report, fill);
+	          }
 	        });
 
 	        polygons.on('mousemove', function (e) {
@@ -21058,8 +21062,12 @@
 	          var report = getReport(function (report) {
 	            return report.meta_country == countryName;
 	          })(reports);
-	          $el.style("cursor", "pointer");
-	          showMapInfo($el, report, fill);
+	          if (report && report.meta_nature_persecution) {
+	            var fill = colors[report.meta_nature_persecution];
+	            $el.style("cursor", "pointer");
+	            $el.style("fill", fill);
+	            showMapInfo($el, report, fill);
+	          }
 	        });
 
 	        d3.select("#map-container svg").attr('height', window.innerHeight);
@@ -21196,13 +21204,13 @@
 	  })(reports);
 
 	  if (report && report.guid) {
-	    var _fill = colors[report.meta_nature_persecution];
-	    el.style("fill", _fill);
+	    var fill = colors[report.meta_nature_persecution];
+	    el.style("fill", fill);
 
 	    SetLink.call(this, report.guid).then(function () {
 	      return console.log('hi setlink');
 	    });
-	    showMapInfo(parent, report, _fill);
+	    showMapInfo(parent, report, fill);
 	  }
 	}
 

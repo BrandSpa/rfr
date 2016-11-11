@@ -160,16 +160,25 @@ export default function () {
           let $el = d3.select(this);
           let countryName = $el.attr("id").replace(/-/g, ' ');
           let report = getReport(report => report.meta_country == countryName)(reports);
-          $el.style("cursor", "pointer");
-          showMapInfo($el, report, fill);
+          if(report && report.meta_nature_persecution) {
+            let fill = colors[report.meta_nature_persecution];
+            $el.style("cursor", "pointer");
+            $el.style("fill", fill);
+            showMapInfo($el, report, fill);
+          }
+          
         });
 
         polygons.on('mousemove', function(e) {
           let $el = d3.select(this);
           let countryName = $el.attr("id").replace(/-/g, ' ');
           let report = getReport(report => report.meta_country == countryName)(reports);
-          $el.style("cursor", "pointer");
-          showMapInfo($el, report, fill);
+          if(report && report.meta_nature_persecution) {
+            let fill = colors[report.meta_nature_persecution];
+            $el.style("cursor", "pointer");
+            $el.style("fill", fill);
+            showMapInfo($el, report, fill);
+          }
         });
 
         d3.select("#map-container svg").attr('height', window.innerHeight);
