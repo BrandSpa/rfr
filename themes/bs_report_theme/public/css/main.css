@@ -199,6 +199,7 @@ button:focus {
     -ms-flex-pack: center;
     justify-content: center; }
   .button:focus {
+    color: #fff;
     outline: none; }
   .button::after {
     content: '';
