@@ -18,5 +18,7 @@
   <?php endif; ?>
 </div>
 
+<?php include_once 'shortcodes/about_us.php' ?>
+<?php include_once 'shortcodes/press.php' ?>
 
 <?php get_footer() ?>
