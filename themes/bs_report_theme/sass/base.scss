@@ -12,6 +12,7 @@ body {
   position: relative;
   font-size: 14px;
   transition: margin 300ms cubic-bezier(0.7,0,0.3,1);
+  overflow-x: hidden;
 
   @media #{$mobile} {
     font-size: 10px;
@@ -656,3 +657,4 @@ a {
     color: #fff;
     top: 5px;
 }
+
