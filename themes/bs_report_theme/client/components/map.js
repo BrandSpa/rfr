@@ -10,13 +10,14 @@ const colors = {
   'Stable': '#E4E7EA',
 };
 
-function showInfo(info, report) {
-  let {meta_country, meta_situation} = report; 
+function showInfo(info, report, bg = '#fff') {
+  let $el = d3.select(info);
+  let {meta_country, meta_situation} = report;
   let name = meta_country.replace(/-/g, ' ');
   let src = `/wp-content/themes/bs_report_theme/public/img/icons/${meta_situation}.svg`;
-
-  d3.select(info).select('.map__info_country').text(name);
-  d3.select(info).select('.map__info_situation img').attr('src', src);
+  $el.style('background', bg);
+  $el.select('.map__info_country').text(name);
+  $el.select('.map__info_situation img').attr('src', src);
 
   mousePosition(null)
     .then(p => {
@@ -55,8 +56,7 @@ function showMapInfo(el, report, fill) {
   let info = document.querySelector('.map__info');
   
   el.on('mousemove', evt => {
-
-    showInfo(info, report);
+    showInfo(info, report, fill);
     setStyle(el, fill);
   });
 

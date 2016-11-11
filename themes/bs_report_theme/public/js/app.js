@@ -21086,14 +21086,17 @@
 	};
 
 	function showInfo(info, report) {
+	  var bg = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#fff';
+
+	  var $el = d3.select(info);
 	  var meta_country = report.meta_country;
 	  var meta_situation = report.meta_situation;
 
 	  var name = meta_country.replace(/-/g, ' ');
 	  var src = '/wp-content/themes/bs_report_theme/public/img/icons/' + meta_situation + '.svg';
-
-	  d3.select(info).select('.map__info_country').text(name);
-	  d3.select(info).select('.map__info_situation img').attr('src', src);
+	  $el.style('background', bg);
+	  $el.select('.map__info_country').text(name);
+	  $el.select('.map__info_situation img').attr('src', src);
 
 	  (0, _get_mouse_position2.default)(null).then(function (p) {
 	    info.style.opacity = 1;
@@ -21127,8 +21130,7 @@
 	  var info = document.querySelector('.map__info');
 
 	  el.on('mousemove', function (evt) {
-
-	    showInfo(info, report);
+	    showInfo(info, report, fill);
 	    setStyle(el, fill);
 	  });
 
