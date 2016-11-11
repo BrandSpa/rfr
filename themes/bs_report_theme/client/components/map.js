@@ -65,8 +65,9 @@ function showMapInfo(el, report, fill) {
 }
 
  function SetLink(reportGuid) {
+   const self = this;
    return new Promise(function(resolve, reject) {
-     console.log(this);
+     console.log(self);
       // d3
       //   .select( this.parentNode )
       //   .append("a", () => this )

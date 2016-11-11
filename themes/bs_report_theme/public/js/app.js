@@ -21127,8 +21127,9 @@
 	}
 
 	function SetLink(reportGuid) {
+	  var self = this;
 	  return new Promise(function (resolve, reject) {
-	    console.log(this);
+	    console.log(self);
 	    // d3
 	    //   .select( this.parentNode )
 	    //   .append("a", () => this )
