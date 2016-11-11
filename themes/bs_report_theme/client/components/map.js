@@ -166,7 +166,24 @@ export default function () {
             $el.style("fill", fill);
             showMapInfo($el, report, fill);
           }
-          
+        });
+
+        paths.on('click', function() {
+          let $el = d3.select(this);
+          let countryName = $el.attr("id").replace(/-/g, ' ');
+          let report = getReport(report => report.meta_country == countryName)(reports);
+          if(report && report.guid) {
+            window.location = report.guid;
+          }
+        });
+
+        polygons.on('click', function() {
+          let $el = d3.select(this);
+          let countryName = $el.attr("id").replace(/-/g, ' ');
+          let report = getReport(report => report.meta_country == countryName)(reports);
+          if(report && report.guid) {
+            window.location = report.guid;
+          }
         });
 
         polygons.on('mousemove', function(e) {

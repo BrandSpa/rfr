@@ -21056,6 +21056,28 @@
 	          }
 	        });
 
+	        paths.on('click', function () {
+	          var $el = d3.select(this);
+	          var countryName = $el.attr("id").replace(/-/g, ' ');
+	          var report = getReport(function (report) {
+	            return report.meta_country == countryName;
+	          })(reports);
+	          if (report && report.guid) {
+	            window.location = report.guid;
+	          }
+	        });
+
+	        polygons.on('click', function () {
+	          var $el = d3.select(this);
+	          var countryName = $el.attr("id").replace(/-/g, ' ');
+	          var report = getReport(function (report) {
+	            return report.meta_country == countryName;
+	          })(reports);
+	          if (report && report.guid) {
+	            window.location = report.guid;
+	          }
+	        });
+
 	        polygons.on('mousemove', function (e) {
 	          var $el = d3.select(this);
 	          var countryName = $el.attr("id").replace(/-/g, ' ');
