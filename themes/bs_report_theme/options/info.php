@@ -7,13 +7,21 @@ add_action('admin_menu', 'bs_admin_options_menu');
 function bs_admin_options_menu() {
 		add_menu_page(
     'Brandspa theme options',
-    'Offices info', //menu name
+    'BS Options', //menu name
     'manage_options', //allow it options
     'bs-logos', //slug
     'logos_settings_page',
     get_template_directory_uri() . '/public/img/bs_options.png', //icon on menu
     110 //position on menu
   );
+
+	add_submenu_page(
+		'bs-logos',
+		'Categories options',
+		'BS Categories',
+		'manage_options',
+		'bs-categories'
+	);
 
 	//call register settings function on init admin page
 	add_action( 'admin_init', 'bs_add_country_info_settings' );
@@ -39,7 +47,7 @@ function logos_settings_page() {
 
   <div style="background: #f1f1f1; background-size: contain; padding: 15px">
 		<div style="text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0, .1)">
-			<h1>RFR Offices info</h1>
+			<h1>RFR Options</h1>
 		</div>
 
   <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto">
