@@ -18,11 +18,11 @@ if(file_exists('vendor/autoload.php')) {
 }
 
 //include necessary functions to theme works like it has
-include_once $lib . '/index.php';
-include_once $api . '/index.php';
-// include_once $options . '/index.php';”
-include_once $metaboxes . '/index.php';
-include_once $shortcodes . '/index.php';
+include'lib/index.php';
+include 'apis/index.php';
+// include $options . '/index.php';”
+// include $metaboxes . '/index.php';
+// include $shortcodes . '/index.php';
 
 setTranslations();
 
