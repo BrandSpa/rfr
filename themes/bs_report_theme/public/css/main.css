@@ -593,7 +593,9 @@ form button {
     left: 0; }
   .input-container__error {
     opacity: 0;
-    transition: all 300ms ease; }
+    transition: all 300ms ease;
+    font-weight: bold;
+    font-style: italic; }
     .input-container__error-show {
       opacity: 1; }
   .input-container select {
