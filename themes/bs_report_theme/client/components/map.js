@@ -143,6 +143,7 @@ export default function () {
           let fill = colors[report.meta_nature_persecution];
           $el.style("cursor", "pointer");
           $el.style("fill", fill);
+          showMapInfo($el, report, fill);
 
         });
 

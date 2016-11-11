@@ -21027,6 +21027,7 @@
 	          var fill = colors[report.meta_nature_persecution];
 	          $el.style("cursor", "pointer");
 	          $el.style("fill", fill);
+	          showMapInfo($el, report, fill);
 	        });
 
 	        polygons.on('mousemove', function (e) {
