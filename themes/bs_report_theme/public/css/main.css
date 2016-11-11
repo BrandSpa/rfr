@@ -1269,7 +1269,7 @@ form button {
   .bs-modal__close {
     font-size: 32px;
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 10px; }
   .bs-modal__content {
     background: #F8F8F8;
