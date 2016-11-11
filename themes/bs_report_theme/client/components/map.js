@@ -41,11 +41,11 @@ function setStyleOut(el, fill) {
    el.classed("animate-path", false); 
 }
 
-function appendMap(mapUrl,container, cb) {
+function appendMap(mapUrl, container) {
   d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
-    if (error) throw error;
+    if (error) return Promise.reject(error);
     container.appendChild(xml.documentElement);
-    if(typeof cb == 'function') cb();
+    return Promise.resolve();
   });
 }
 
@@ -126,14 +126,16 @@ export default function () {
         d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale("+ transform.k +") ");
       });
 
-      appendMap(this.mapUrl, mapContainer, () => {
+      let map = appendMap(this.mapUrl, mapContainer);
+
+      map.then(() => {
         let polygons = d3.select(mapContainer).selectAll("polygon");
         let paths = d3.select(mapContainer).selectAll("path");
         
         d3.select("#map-container svg").call(zoomed);
 
-        polygons.each(function() {
-          setReport.call(this, reports);
+        polygons.on('mousemove', function(e) {
+          console.log('is moving');
         });
 
         paths.each(function() {
@@ -148,7 +150,7 @@ export default function () {
           .call(zoomed.transform, d3.zoomIdentity);
         });
         
-      });
+      })
     },
 
     methods: {
