@@ -12,6 +12,7 @@
       <form-download-report 
         country="<?php echo getUserCountry() ?>"
         lang="<?php echo getLang() ?>"
+        language="<?php if(function_exists('pll_current_language')): echo pll_current_language('name'); endif; ?>"
         >
         </form-download-report>
     </div>

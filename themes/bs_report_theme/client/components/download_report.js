@@ -7,7 +7,6 @@ import $ from 'jquery';
 let initialState = {
   name: '',
   email: '',
-  language: '',
   isValid: false,
   country: '',
   validation: {
@@ -19,7 +18,7 @@ let initialState = {
 export default function () {
   Vue.component('form-download-report', {
     template: '#form-download-template',
-    props: ['country', 'lang'],
+    props: ['country', 'lang', 'language'],
     data() {
       return initialState;
     },

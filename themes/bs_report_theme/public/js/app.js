@@ -37713,7 +37713,7 @@
 	exports.default = function () {
 	  _vue2.default.component('form-download-report', {
 	    template: '#form-download-template',
-	    props: ['country', 'lang'],
+	    props: ['country', 'lang', 'language'],
 	    data: function data() {
 	      return initialState;
 	    },
@@ -37812,7 +37812,6 @@
 	var initialState = {
 	  name: '',
 	  email: '',
-	  language: '',
 	  isValid: false,
 	  country: '',
 	  validation: {
