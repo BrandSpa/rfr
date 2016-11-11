@@ -1148,7 +1148,7 @@ form button {
   color: #FC3938;
   font-size: 32px;
   display: block;
-  float: right;
+  float: left;
   margin: 20px 40px 0 0; }
 
 .map__search_click {
