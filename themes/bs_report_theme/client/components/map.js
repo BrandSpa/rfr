@@ -137,7 +137,7 @@ export default function () {
         d3.select("#map-container svg").call(zoomed);
 
         paths.on('mousemove', function(e) {
-          console.log('is moving', this);
+          console.log('is moving', d3.select(this).style("cursor", "pointer"));
         });
 
         polygons.on('mousemove', function(e) {
