@@ -22,7 +22,7 @@ if(file_exists('vendor/autoload.php')) require 'vendor/autoload.php';
 // include_once $metaboxes . '/index.php';
 // include_once $shortcodes . '/index.php';
 
-setTranslations();
+// setTranslations();
 
 //add navigation menus
 register_nav_menus(
