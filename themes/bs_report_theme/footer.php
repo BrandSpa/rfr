@@ -1,5 +1,4 @@
  <?php $current_url = esc_url($_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']); ?>
-
  <a href="javascript:" id="return-to-top"><i class="ion-chevron-up"></i></a>
 
 <div class="bs_share" >
