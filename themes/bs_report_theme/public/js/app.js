@@ -21106,10 +21106,12 @@
 	}
 
 	function appendMap(mapUrl, container) {
-	  return d3.xml(mapUrl).mimeType("image/svg+xml").get(function (error, xml) {
-	    if (error) return Promise.reject(error);
-	    container.appendChild(xml.documentElement);
-	    return Promise.resolve();
+	  return new Promise(function () {
+	    d3.xml(mapUrl).mimeType("image/svg+xml").get(function (error, xml) {
+	      if (error) return reject(error);
+	      container.appendChild(xml.documentElement);
+	      return resolve();
+	    });
 	  });
 	}
 
