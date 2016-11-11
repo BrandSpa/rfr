@@ -22,9 +22,12 @@ include'lib/index.php';
 include 'apis/index.php';
 include 'options/index.php';
 include 'metaboxes/index.php';
-// include 'shortcodes/index.php';
-// include_once 'metaboxes/report.php';
-// include_once 'metaboxes/page_multi_regional.php';
+include_once 'shortcodes/map.php';
+include_once 'shortcodes/download_report_sc.php';
+include_once 'shortcodes/subscribe_sc.php';
+include_once 'shortcodes/link.php';
+include_once 'shortcodes/home_header.php';
+
 setTranslations();
 
 //add navigation menus
