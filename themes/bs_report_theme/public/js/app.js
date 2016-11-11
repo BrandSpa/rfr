@@ -21128,13 +21128,12 @@
 
 	function SetLink(reportGuid) {
 	  return new Promise(function (resolve, reject) {
-	    var _this = this;
-
-	    d3.select(this.parentNode).append("a", function () {
-	      return _this;
-	    }).attr("href", reportGuid).append(function () {
-	      return _this;
-	    });
+	    console.log(this);
+	    // d3
+	    //   .select( this.parentNode )
+	    //   .append("a", () => this )
+	    //   .attr("href", reportGuid)
+	    //   .append(() => this );
 
 	    return resolve();
 	  });

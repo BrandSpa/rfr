@@ -66,11 +66,12 @@ function showMapInfo(el, report, fill) {
 
  function SetLink(reportGuid) {
    return new Promise(function(resolve, reject) {
-      d3
-        .select( this.parentNode )
-        .append("a", () => this )
-        .attr("href", reportGuid)
-        .append(() => this );
+     console.log(this);
+      // d3
+      //   .select( this.parentNode )
+      //   .append("a", () => this )
+      //   .attr("href", reportGuid)
+      //   .append(() => this );
 
     return resolve();
    });
