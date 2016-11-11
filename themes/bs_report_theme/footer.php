@@ -35,7 +35,6 @@
    </div>
 
   </div>
-  
 
   <div class="col-md-3 footer__bottom">
     <div class="footer__bottom-left col-md-12">
