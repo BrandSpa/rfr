@@ -74,6 +74,7 @@ form {
   &__error {
     opacity: 0;
     transition: all 300ms ease;
+    color: $dark_jungle_green;
     font-weight: bold;
     font-style: italic;
     
