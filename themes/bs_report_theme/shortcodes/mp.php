@@ -25,7 +25,7 @@
         <h1 class="title title-line color-red">
           <?php echo gett('BY COUNTRY'); ?>
         </h1>
-        <h3 style="color: #fff">Click on any country to see its report.</h3>
+        <h4 style="color: #fff">Click on any country to see its report.</h4>
       </div>
       
       <div class="col-md-4">
