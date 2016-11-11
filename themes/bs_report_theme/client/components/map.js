@@ -136,11 +136,11 @@ export default function () {
         
         d3.select("#map-container svg").call(zoomed);
 
-        polygons.on('mousemove', function(e) {
-          console.log('is moving');
+        paths.on('mousemove', function(e) {
+          console.log('is moving', this);
         });
 
-        paths.on('mousemove', function(e) {
+        polygons.on('mousemove', function(e) {
           console.log('is moving');
         });
 
