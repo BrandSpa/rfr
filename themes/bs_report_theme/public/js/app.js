@@ -20996,8 +20996,6 @@
 	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang', 'url'],
 
 	    ready: function ready() {
-	      var _this = this;
-
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
@@ -21021,7 +21019,7 @@
 	        d3.select("#map-container svg").call(zoomed);
 
 	        paths.each(function () {
-	          var $el = d3.select(_this);
+	          var $el = d3.select(this);
 	          var countryName = $el.attr("id").replace(/-/g, ' ');
 	          var report = getReport(function (report) {
 	            return report.meta_country == countryName;

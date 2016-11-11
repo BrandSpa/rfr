@@ -136,7 +136,7 @@ export default function () {
         
         d3.select("#map-container svg").call(zoomed);
 
-        paths.each(() => {
+        paths.each(function() {
            let $el = d3.select(this);
            let countryName = $el.attr("id").replace(/-/g, ' ');
           let report = getReport(report => report.meta_country == countryName)(reports);
