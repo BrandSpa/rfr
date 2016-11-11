@@ -21,7 +21,7 @@ if(file_exists('vendor/autoload.php')) {
 include'lib/index.php';
 include 'apis/index.php';
 // include 'options/index.php';
-// include 'metaboxes/index.php';
+include 'metaboxes/index.php';
 include 'shortcodes/index.php';
 
 setTranslations();
