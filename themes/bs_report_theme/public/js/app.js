@@ -20996,6 +20996,8 @@
 	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang', 'url'],
 
 	    ready: function ready() {
+	      var _this = this;
+
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
@@ -21017,6 +21019,16 @@
 	        var paths = d3.select(mapContainer).selectAll("path");
 
 	        d3.select("#map-container svg").call(zoomed);
+
+	        paths.each(function () {
+	          var $el = d3.select(_this);
+	          var countryName = $el.attr("id").replace(/-/g, ' ');
+	          var report = getReport(function (report) {
+	            return report.meta_country == countryName;
+	          })(reports);
+	          var fill = colors[report.meta_nature_persecution];
+	          $el.style("fill", fill);
+	        });
 
 	        paths.on('mousemove', function (e) {
 	          var $el = d3.select(this);

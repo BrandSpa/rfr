@@ -136,6 +136,14 @@ export default function () {
         
         d3.select("#map-container svg").call(zoomed);
 
+        paths.each(() => {
+           let $el = d3.select(this);
+           let countryName = $el.attr("id").replace(/-/g, ' ');
+          let report = getReport(report => report.meta_country == countryName)(reports);
+           let fill = colors[report.meta_nature_persecution];
+            $el.style("fill", fill);
+        });
+
         paths.on('mousemove', function(e) {
           let $el = d3.select(this);
           let countryName = $el.attr("id").replace(/-/g, ' ');
