@@ -45,11 +45,6 @@
       </select>
     </div>
 
-    <div class="input-container">
-      <label for="" class="color-white"><?php echo gett('Language') ?></label>
-      <select name="" id="" v-model="language"></select>
-    </div>
-
     <button class="button button-dark" v-on:click.prevent="onSubmit"><?php echo gett('Subscribe') ?></button>
   </form>
 </script>
