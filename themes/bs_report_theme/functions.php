@@ -13,16 +13,18 @@ $options = 'options';
 $shortcodes = 'shortcodes';
 $metaboxes = 'metaboxes';
 
-if(file_exists('vendor/autoload.php')) require 'vendor/autoload.php';
+if(file_exists('vendor/autoload.php')) {
+  require 'vendor/autoload.php';
+}
 
 //include necessary functions to theme works like it has
-// include_once $lib . '/index.php';
-// include_once $api . '/index.php';
-// // include_once $options . '/index.php';”
-// include_once $metaboxes . '/index.php';
-// include_once $shortcodes . '/index.php';
+include_once $lib . '/index.php';
+include_once $api . '/index.php';
+// include_once $options . '/index.php';”
+include_once $metaboxes . '/index.php';
+include_once $shortcodes . '/index.php';
 
-// setTranslations();
+setTranslations();
 
 //add navigation menus
 register_nav_menus(
