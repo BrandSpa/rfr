@@ -62,9 +62,12 @@
         <div class="input-container">
           <label for="" class="color-red"><?php echo gett('Language') ?></label>
           <select name="" id="" v-model="language">
-            <?php foreach(getLanguages() as $lang): ?>
-              <option value="<?php echo $lang ?>"><?php echo $lang; ?></option>
+            <?php if(function_exists('pll_the_languages')): ?>
+
+            <?php foreach(pll_the_languages(array('raw'=>1)) as $lang): ?>
+              <option value="<?php echo $lang[name] ?>"><?php echo $lang[name]; ?></option>
             <?php endforeach; ?>
+            <?php endif; ?>
           </select>
         </div>
 
