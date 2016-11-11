@@ -185,7 +185,9 @@ button {
   text-align: center;
   line-height: 1;
   height: 40px;
-
+  @include center-vertical;
+  justify-content: center;
+  
   &--fill {
     width: 100%;
   }

@@ -179,7 +179,16 @@ button:focus {
   padding: 10px 40px;
   text-align: center;
   line-height: 1;
-  height: 40px; }
+  height: 40px;
+  display: table;
+  display: -ms-flexbox;
+  display: flex;
+  flex-align: center;
+  flex-pack: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .button--fill {
     width: 100%; }
   .button--center {
