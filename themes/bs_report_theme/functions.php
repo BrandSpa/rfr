@@ -13,28 +13,16 @@ $options = 'options';
 $shortcodes = 'shortcodes';
 $metaboxes = 'metaboxes';
 
-//include all libs from composer
-//is necessary first check if the folder exists
-require 'vendor/autoload.php';
+if(file_exists('vendor/autoload.php')) require 'vendor/autoload.php';
 
-//include lib functions
+//include necessary functions to theme works like it has
 include_once $lib . '/index.php';
 include_once $api . '/index.php';
-
-include_once $options . '/info.php';
+include_once $options . '/index.php';
+include_once $metaboxes . '/index.php';
+include_once $shortcodes . '/index.php';
 
 setTranslations();
-
-//include metaboxes
-include_once $metaboxes . '/report.php';
-include_once $metaboxes . '/page_multi_regional.php';
-
-//include shortcodes
-include_once $shortcodes . '/map.php';
-include_once $shortcodes . '/download_report_sc.php';
-include_once $shortcodes . '/subscribe_sc.php';
-include_once $shortcodes . '/link.php';
-include_once $shortcodes . '/home_header.php';
 
 //add navigation menus
 register_nav_menus(
@@ -101,7 +89,6 @@ function getLangList() {
     return _e('install polylang plugin');
   }
 }
-
 
 // function setNewLang() {
 //   $uri = $_SERVER['REQUEST_URI'];

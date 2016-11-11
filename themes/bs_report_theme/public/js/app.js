@@ -21143,7 +21143,7 @@
 	};
 
 	function setReport(reports) {
-	  var el = d3.select(this);
+	  var el = d3.select(this.parentNode);
 	  var countryName = el.attr("id").replace(/-/g, ' ');
 	  var report = getReport(function (report) {
 	    return report.meta_country == countryName;
