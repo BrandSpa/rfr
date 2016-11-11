@@ -65,17 +65,22 @@ function showMapInfo(el, report, fill) {
 }
 
  function SetLink(reportGuid) {
-  d3
-    .select( this.parentNode )
-    .append("a", () => this )
-    .attr("href", reportGuid)
-    .append(() => this );
+   new Promise(function(resolve, reject) {
+      d3
+        .select( this.parentNode )
+        .append("a", () => this )
+        .attr("href", reportGuid)
+        .append(() => this );
+   });
+
+
 }
 
 const getReport = (fn) => reports => reports.filter(fn)[0];
 
 function setReport(reports) {
-  let el = d3.select(this.parentNode);
+  let el = d3.select(this);
+  let parent = d3.select(this.parentNode);
   let countryName = el.attr("id").replace(/-/g, ' ');
   let report = getReport(report => report.meta_country == countryName)(reports);
 
@@ -84,7 +89,7 @@ function setReport(reports) {
     el.style("fill", fill);
 
     SetLink.call(this, report.guid);
-    showMapInfo(el, report, fill)
+    showMapInfo(parent, report, fill)
   }
 }
 

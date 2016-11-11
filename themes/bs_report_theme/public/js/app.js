@@ -21127,12 +21127,14 @@
 	}
 
 	function SetLink(reportGuid) {
-	  var _this = this;
+	  new Promise(function (resolve, reject) {
+	    var _this = this;
 
-	  d3.select(this.parentNode).append("a", function () {
-	    return _this;
-	  }).attr("href", reportGuid).append(function () {
-	    return _this;
+	    d3.select(this.parentNode).append("a", function () {
+	      return _this;
+	    }).attr("href", reportGuid).append(function () {
+	      return _this;
+	    });
 	  });
 	}
 
@@ -21143,7 +21145,8 @@
 	};
 
 	function setReport(reports) {
-	  var el = d3.select(this.parentNode);
+	  var el = d3.select(this);
+	  var parent = d3.select(this.parentNode);
 	  var countryName = el.attr("id").replace(/-/g, ' ');
 	  var report = getReport(function (report) {
 	    return report.meta_country == countryName;
@@ -21154,7 +21157,7 @@
 	    el.style("fill", fill);
 
 	    SetLink.call(this, report.guid);
-	    showMapInfo(el, report, fill);
+	    showMapInfo(parent, report, fill);
 	  }
 	}
 
