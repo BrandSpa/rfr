@@ -80,13 +80,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
 
   </div>
-
-  <h4 class="nav__subtitle">
-    RELIGIOUS<br>
-    <span class="color-red">FREEDOM</span><br>
-    REPORT<br>
-    2016
-  </h4>
+  
+  <a href="<?php echo $home ?>">
+    <h4 class="nav__subtitle">
+      RELIGIOUS<br>
+      <span class="color-red">FREEDOM</span><br>
+      REPORT<br>
+      2016
+    </h4>
+  </a>
 
   <?php
       $args = array(
