@@ -1149,7 +1149,7 @@ form button {
   font-size: 32px;
   display: block;
   float: left;
-  margin: 20px 40px 0 0; }
+  margin: 40px; }
 
 .map__search_click {
   position: relative;
