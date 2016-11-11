@@ -21106,7 +21106,7 @@
 	}
 
 	function appendMap(mapUrl, container) {
-	  return new Promise(function () {
+	  return new Promise(function (resolve, reject) {
 	    d3.xml(mapUrl).mimeType("image/svg+xml").get(function (error, xml) {
 	      if (error) return reject(error);
 	      container.appendChild(xml.documentElement);
