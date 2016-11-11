@@ -140,8 +140,8 @@ export default function () {
           console.log('is moving');
         });
 
-        paths.each(function() {
-          setReport.call(this, reports);
+        paths.on('mousemove', function(e) {
+          console.log('is moving');
         });
 
         d3.select("#map-container svg").attr('height', window.innerHeight);
