@@ -21025,8 +21025,20 @@
 	            return report.meta_country == countryName;
 	          })(reports);
 	          if (report && report.meta_nature_persecution) {
-	            var fill = colors[report.meta_nature_persecution];
-	            $el.style("fill", fill);
+	            var _fill2 = colors[report.meta_nature_persecution];
+	            $el.style("fill", _fill2);
+	          }
+	        });
+
+	        polygons.each(function () {
+	          var $el = d3.select(this);
+	          var countryName = $el.attr("id").replace(/-/g, ' ');
+	          var report = getReport(function (report) {
+	            return report.meta_country == countryName;
+	          })(reports);
+	          if (report && report.meta_nature_persecution) {
+	            var _fill3 = colors[report.meta_nature_persecution];
+	            $el.style("fill", _fill3);
 	          }
 	        });
 
@@ -21036,14 +21048,18 @@
 	          var report = getReport(function (report) {
 	            return report.meta_country == countryName;
 	          })(reports);
-	          var fill = colors[report.meta_nature_persecution];
 	          $el.style("cursor", "pointer");
-	          $el.style("fill", fill);
 	          showMapInfo($el, report, fill);
 	        });
 
 	        polygons.on('mousemove', function (e) {
-	          console.log('is moving');
+	          var $el = d3.select(this);
+	          var countryName = $el.attr("id").replace(/-/g, ' ');
+	          var report = getReport(function (report) {
+	            return report.meta_country == countryName;
+	          })(reports);
+	          $el.style("cursor", "pointer");
+	          showMapInfo($el, report, fill);
 	        });
 
 	        d3.select("#map-container svg").attr('height', window.innerHeight);
@@ -21180,13 +21196,13 @@
 	  })(reports);
 
 	  if (report && report.guid) {
-	    var fill = colors[report.meta_nature_persecution];
-	    el.style("fill", fill);
+	    var _fill = colors[report.meta_nature_persecution];
+	    el.style("fill", _fill);
 
 	    SetLink.call(this, report.guid).then(function () {
 	      return console.log('hi setlink');
 	    });
-	    showMapInfo(parent, report, fill);
+	    showMapInfo(parent, report, _fill);
 	  }
 	}
 
