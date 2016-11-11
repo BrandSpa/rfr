@@ -65,15 +65,15 @@ function showMapInfo(el, report, fill) {
 }
 
  function SetLink(reportGuid) {
-   new Promise(function(resolve, reject) {
+   return new Promise(function(resolve, reject) {
       d3
         .select( this.parentNode )
         .append("a", () => this )
         .attr("href", reportGuid)
         .append(() => this );
+
+    return resolve();
    });
-
-
 }
 
 const getReport = (fn) => reports => reports.filter(fn)[0];
@@ -88,7 +88,9 @@ function setReport(reports) {
     let fill = colors[report.meta_nature_persecution];
     el.style("fill", fill);
 
-    SetLink.call(this, report.guid);
+    SetLink
+    .call(this, report.guid)
+    .then(() => console.log('hi setlink'));
     showMapInfo(parent, report, fill)
   }
 }

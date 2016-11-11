@@ -21127,7 +21127,7 @@
 	}
 
 	function SetLink(reportGuid) {
-	  new Promise(function (resolve, reject) {
+	  return new Promise(function (resolve, reject) {
 	    var _this = this;
 
 	    d3.select(this.parentNode).append("a", function () {
@@ -21135,6 +21135,8 @@
 	    }).attr("href", reportGuid).append(function () {
 	      return _this;
 	    });
+
+	    return resolve();
 	  });
 	}
 
@@ -21156,7 +21158,9 @@
 	    var fill = colors[report.meta_nature_persecution];
 	    el.style("fill", fill);
 
-	    SetLink.call(this, report.guid);
+	    SetLink.call(this, report.guid).then(function () {
+	      return console.log('hi setlink');
+	    });
 	    showMapInfo(parent, report, fill);
 	  }
 	}
