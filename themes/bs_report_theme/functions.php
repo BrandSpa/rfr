@@ -23,9 +23,9 @@ include 'apis/index.php';
 // include 'options/index.php';
 // // include 'metaboxes/index.php';
 // include 'shortcodes/index.php';
-// include_once 'metaboxes/report.php';
-// include_once 'metaboxes/page_multi_regional.php';
-// setTranslations();
+include_once 'metaboxes/report.php';
+include_once 'metaboxes/page_multi_regional.php';
+setTranslations();
 
 //add navigation menus
 register_nav_menus(

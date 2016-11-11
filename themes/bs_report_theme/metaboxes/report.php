@@ -4,20 +4,20 @@ include_once str_replace('metaboxes', '', __DIR__) . '/lib/update_field.php';
 include_once str_replace('metaboxes', '', __DIR__) . '/lib/languages.php';
 include_once str_replace('metaboxes', '', __DIR__) . '/lib/countries.php';
 
-include_once __DIR__ . '/report/country.php';
-include_once __DIR__ . '/report/year.php';
-include_once __DIR__ . '/report/area.php';
-include_once __DIR__ . '/report/population.php';
-include_once __DIR__ . '/report/political_system.php';
-include_once __DIR__ . '/report/nature_persecution.php';
-include_once __DIR__ . '/report/situation.php';
-include_once __DIR__ . '/report/background.php';
-include_once __DIR__ . '/report/graph.php';
-include_once __DIR__ . '/report/map.php';
-include_once __DIR__ . '/report/languages.php';
-include_once __DIR__ . '/report/religion.php';
-include_once __DIR__ . '/report/religion_subcategories.php';
-include_once __DIR__ . '/report/content.php';
+include_once 'report/country.php';
+include_once 'report/year.php';
+include_once 'report/area.php';
+include_once 'report/population.php';
+include_once 'report/political_system.php';
+include_once 'report/nature_persecution.php';
+include_once 'report/situation.php';
+include_once 'report/background.php';
+include_once 'report/graph.php';
+include_once 'report/map.php';
+include_once 'report/languages.php';
+include_once 'report/religion.php';
+include_once 'report/religion_subcategories.php';
+include_once 'report/content.php';
 
   function bs_report_metabox() {
 
