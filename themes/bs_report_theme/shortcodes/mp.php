@@ -15,7 +15,7 @@
 >
 </map>
 
-<script type="text" id="map-template">
+<script type="text/template" id="map-template">
 
 
   <div id="map" class="map">
