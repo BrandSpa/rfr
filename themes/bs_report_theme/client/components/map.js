@@ -137,7 +137,13 @@ export default function () {
         d3.select("#map-container svg").call(zoomed);
 
         paths.on('mousemove', function(e) {
-          console.log('is moving', d3.select(this).style("cursor", "pointer"));
+          let $el = d3.select(this);
+          let countryName = el.attr("id").replace(/-/g, ' ');
+          let report = getReport(report => report.meta_country == countryName)(reports);
+          let fill = colors[report.meta_nature_persecution];
+          $el.style("cursor", "pointer");
+          $el.style("fill", fill);
+
         });
 
         polygons.on('mousemove', function(e) {

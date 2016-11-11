@@ -21019,7 +21019,14 @@
 	        d3.select("#map-container svg").call(zoomed);
 
 	        paths.on('mousemove', function (e) {
-	          console.log('is moving', d3.select(this).style("cursor", "pointer"));
+	          var $el = d3.select(this);
+	          var countryName = el.attr("id").replace(/-/g, ' ');
+	          var report = getReport(function (report) {
+	            return report.meta_country == countryName;
+	          })(reports);
+	          var fill = colors[report.meta_nature_persecution];
+	          $el.style("cursor", "pointer");
+	          $el.style("fill", fill);
 	        });
 
 	        polygons.on('mousemove', function (e) {
