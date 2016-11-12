@@ -964,6 +964,9 @@ form button {
   .report__content-content {
     padding: 0 0 100px 0;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .report__content-content {
+        padding: 40px; } }
     .report__content-content h5 {
       color: #FC3938; }
   .report__content h2::after {

@@ -90,6 +90,10 @@
       padding: 0 0 100px 0;
       overflow: hidden;
 
+      @media #{$mobile} {
+        padding: 40px;
+      }
+
       h5 {
         color: $red_orange;
       }
