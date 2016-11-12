@@ -1021,7 +1021,7 @@ form button {
       .map__header {
         position: initial;
         display: block;
-        padding: 20px; } }
+        padding: 10px; } }
   .map__footer {
     background: rgba(28, 33, 39, 0.9);
     padding: 40px;
