@@ -78,6 +78,7 @@ export default function () {
           .fail(err => console.log(err));
         }
       },
+      
       handleSuccess(res) {
         window.open();
         console.log(res);
