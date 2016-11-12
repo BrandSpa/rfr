@@ -34,7 +34,7 @@ function bs_slider_sc($atts, $content = null) {
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: true,
-      itemWidth: <?php echo $image_width ?>,
+      itemWidth: <?php echo $at['image_width'] ?>,
       itemMargin: 5
     });
   });
