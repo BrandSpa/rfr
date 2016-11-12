@@ -11,6 +11,7 @@
     padding: 20px 40px;
     position: absolute;
     width: 100%;
+    @include center_vertical;
   }
 
   &__footer {
