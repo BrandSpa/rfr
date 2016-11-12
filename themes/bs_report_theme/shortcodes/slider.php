@@ -10,8 +10,8 @@ function bs_slider_sc($atts, $content = null) {
 
     $imagesArr = explode(',', $at['images']);
     $linksArr = explode(',', $at['links']);
-    $imagesCount = $images.length;
-    $id = "slider-" . uniqid("slider-" . $imagesCount);
+    $imagesCount = count($images);
+    $id = "slider-" . uniqid();
   ob_start();
 ?>
 
