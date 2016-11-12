@@ -337,6 +337,10 @@ a {
     color: #fff;
     transition: 300ms all ease;
 
+    @media #{$mobile} {
+      margin: 0;
+    }
+
     i {
       margin-left: 10px;
     }

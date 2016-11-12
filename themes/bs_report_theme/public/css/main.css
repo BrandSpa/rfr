@@ -309,6 +309,9 @@ a polygon, a path {
   max-width: 100%;
   color: #fff;
   transition: 300ms all ease; }
+  @media (max-width: 767px) {
+    .link-bs {
+      margin: 0; } }
   .link-bs i {
     margin-left: 10px; }
   .link-bs::before {
