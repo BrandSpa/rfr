@@ -17,7 +17,8 @@ export default function() {
 
     ready() {
       this.items = JSON.parse(this.reports);
-      $('.map__search_input').focus();
+      if(md.phone() == null) $('.map__search_input').focus();
+      
       $('.open-select-countries').on('click', this.open);
       $('.open-search-countries').on('click', this.open);
     },
