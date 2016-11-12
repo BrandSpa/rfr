@@ -18,7 +18,7 @@ let initialState = {
 export default function () {
   Vue.component('form-download-report', {
     template: '#form-download-template',
-    props: ['country', 'lang', 'language'],
+    props: ['country', 'lang', 'language', 'dir'],
     data() {
       return initialState;
     },
@@ -78,9 +78,9 @@ export default function () {
           .fail(err => console.log(err));
         }
       },
-      
+
       handleSuccess(res) {
-        window.open();
+        window.open(this.dir);
         console.log(res);
       }
     }

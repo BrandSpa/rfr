@@ -38789,7 +38789,7 @@
 	exports.default = function () {
 	  _vue2.default.component('form-download-report', {
 	    template: '#form-download-template',
-	    props: ['country', 'lang', 'language'],
+	    props: ['country', 'lang', 'language', 'dir'],
 	    data: function data() {
 	      return initialState;
 	    },
@@ -38866,7 +38866,7 @@
 	        }
 	      },
 	      handleSuccess: function handleSuccess(res) {
-	        window.open();
+	        window.open(this.dir);
 	        console.log(res);
 	      }
 	    }
