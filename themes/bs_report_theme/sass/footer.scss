@@ -78,6 +78,7 @@
      @media #{$mobile},  #{$tablet} {
       height: auto;
       float: left;
+      padding-bottom: 40px;
     }
 
     &-left {

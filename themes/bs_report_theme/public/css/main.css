@@ -845,7 +845,8 @@ form button {
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     .footer__bottom {
       height: auto;
-      float: left; } }
+      float: left;
+      padding-bottom: 40px; } }
   .footer__bottom-left img {
     display: block;
     float: left;
