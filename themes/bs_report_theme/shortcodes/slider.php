@@ -33,7 +33,7 @@ function bs_slider_sc($atts, $content = null) {
     console.log($('#<?php echo $id?>'));
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
-      animationLoop: false,
+      animationLoop: true,
       itemWidth: <?php echo $image_width ?>,
       itemMargin: 5
     });
