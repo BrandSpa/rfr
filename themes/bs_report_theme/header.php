@@ -60,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <h4 class="nav_mobile__subtitle">
     RELIGIOUS <span class="color-red">FREEDOM</span><br>
-    REPORT <?php echo date('YYYY') ?>
+    REPORT <?php echo date('Y') ?>
   </h4>
 
      <a href="#" id="open-nav">
@@ -90,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       RELIGIOUS<br>
       <span class="color-red">FREEDOM</span><br>
       REPORT<br>
-      2016
+      <?php echo date('Y') ?>
     </h4>
   </a>
 
