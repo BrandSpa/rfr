@@ -11,11 +11,11 @@ function bs_slider_sc($atts, $content = null) {
     $imagesArr = explode(',', $at['images']);
     $linksArr = explode(',', $at['links']);
     $imagesCount = $images.length;
-
+    $id = "slider-" . UUID::v4();
   ob_start();
 ?>
 
-<div class="flexslider" id="slider-<?php echo UUID::v4(); ?>">
+<div class="flexslider" id="<?php echo $id?>">
   <ul class="slides">
     <?php foreach($imagesArr as $key => $imageId): ?>
     <a href="<?php echo $linksArr[$key] ?>">
@@ -27,7 +27,7 @@ function bs_slider_sc($atts, $content = null) {
 
 <script>
   $(window).load(function() {
-    $('#slider-<?php echo UUID::v4(); ?>').flexslider({
+    $('<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: false,
       itemWidth: 100,
