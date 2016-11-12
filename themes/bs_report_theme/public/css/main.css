@@ -858,7 +858,9 @@ form button {
     .footer__bottom {
       height: auto;
       float: left;
-      padding-bottom: 40px; } }
+      padding-bottom: 40px;
+      width: 100%;
+      text-align: center; } }
   .footer__bottom-left img {
     display: block;
     float: left;
