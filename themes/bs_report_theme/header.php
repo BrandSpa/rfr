@@ -54,7 +54,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <h4 class="nav_mobile__subtitle">
     RELIGIOUS <span class="color-red">FREEDOM</span><br>
-    REPORT 2016
+    REPORT <?php echo date('YYYY') ?>
   </h4>
 
      <a href="#" id="open-nav">
