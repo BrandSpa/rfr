@@ -55,7 +55,7 @@ function bs_slider_sc($atts, $content = null) {
             "param_name" => "images"
           ),
           array(
-            "type" => "dropdown",
+            "type" => "exploded_textarea",
             "param_name" => "links"
           )
         )
