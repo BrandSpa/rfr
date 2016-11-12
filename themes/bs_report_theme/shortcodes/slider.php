@@ -1,4 +1,5 @@
 <?php
+add_shortcode( 'bs_slider', 'bs_slider_sc' );
 
 function bs_slider_sc($atts, $content = null) {
   $at = shortcode_atts( array(
@@ -38,9 +39,9 @@ function bs_slider_sc($atts, $content = null) {
 <?php
 
   return ob_get_clean();
-  }
+  } //close bs_slider_sc
 
-  add_shortcode( 'bs_slider', 'bs_slider_sc' );
+  
 
   function bs_slider_vc() {
     vc_map(
