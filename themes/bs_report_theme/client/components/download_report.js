@@ -74,9 +74,13 @@ export default function () {
             url: '/wp-admin/admin-ajax.php',
             data: payload
           })
-          .done(res => console.log(res))
+          .done(res => this.handleSuccess)
           .fail(err => console.log(err));
         }
+      },
+      handleSuccess(res) {
+        window.open();
+        console.log(res);
       }
     }
   });

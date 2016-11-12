@@ -38825,6 +38825,8 @@
 	        });
 	      },
 	      onSubmit: function onSubmit() {
+	        var _this2 = this;
+
 	        var name = this.name;
 	        var email = this.email;
 	        var country = this.country;
@@ -38857,11 +38859,15 @@
 	            url: '/wp-admin/admin-ajax.php',
 	            data: payload
 	          }).done(function (res) {
-	            return console.log(res);
+	            return _this2.handleSuccess;
 	          }).fail(function (err) {
 	            return console.log(err);
 	          });
 	        }
+	      },
+	      handleSuccess: function handleSuccess(res) {
+	        window.open();
+	        console.log(res);
 	      }
 	    }
 	  });

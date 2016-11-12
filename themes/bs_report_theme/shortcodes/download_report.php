@@ -11,7 +11,7 @@
     <div class="col-md-5" style="float: none; margin: 0 auto">
       <form-download-report 
         country="<?php echo getUserCountry() ?>"
-        lang="<?php echo getLang() ?>"
+        lang="<?php echo pll_current_language('slug') ?>"
         language="<?php if(function_exists('pll_current_language')): echo pll_current_language('name'); endif; ?>"
         >
         </form-download-report>
@@ -66,7 +66,7 @@
             <?php if(function_exists('pll_the_languages')): ?>
 
             <?php foreach(pll_the_languages(array('raw'=>1)) as $lang): ?>
-              <option value="<?php echo $lang[name] ?>"><?php echo $lang[name]; ?></option>
+              <option value="<?php echo $lang[slug] ?>"><?php echo $lang[name]; ?></option>
             <?php endforeach; ?>
             <?php endif; ?>
           </select>
