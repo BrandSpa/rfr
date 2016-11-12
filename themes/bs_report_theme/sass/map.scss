@@ -229,8 +229,9 @@
   color: $red_orange;
   font-size: 32px;
   display: block;
-  float: left;
-  margin: 40px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
 }
 
 .map__search_click {
