@@ -6,7 +6,8 @@
 html {
   height: 100%;
   box-sizing: border-box;
-  margin-top: 0 !important; }
+  margin-top: 0 !important;
+  overflow-x: hidden; }
 
 body {
   background: #F8F8F8;
