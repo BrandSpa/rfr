@@ -21144,7 +21144,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var md = new MobileDetect(window.navigator.userAgent);
+	var md = new _mobileDetect2.default(window.navigator.userAgent);
 
 	var colors = {
 	  'Persecution': '#FC3938',
@@ -38666,7 +38666,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var md = new MobileDetect(window.navigator.userAgent);
+	var md = new _mobileDetect2.default(window.navigator.userAgent);
 
 	;
 

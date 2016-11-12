@@ -1,7 +1,7 @@
 'use strict';
 import Vue from 'vue';
 import $ from 'jquery';
-import mobileDetect from 'mobile-detect';
+import MobileDetect from 'mobile-detect';
 const md = new MobileDetect(window.navigator.userAgent);
 
 export default function() {
