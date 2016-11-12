@@ -43,8 +43,8 @@
     </div>
     
     <div class="footer__bottom-middle col-md-12">
-      <a href="#"><?php echo gett('PRIVACY POLICY') ?></a>
-      <a href="#”"><?php echo gett('TERMS & CONDITIONS') ?></a>
+      <a href="<?php echo gett('http://religious-freedom-report.org/privacy-policy/') ?>"><?php echo gett('PRIVACY POLICY') ?></a>
+      <a href="<?php echo gett('http://religious-freedom-report.org/terms-and-conditions/') ?>"><?php echo gett('TERMS & CONDITIONS') ?></a>
     </div>
   </div>
   

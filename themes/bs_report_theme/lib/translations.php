@@ -40,8 +40,8 @@
       registerStr('TERMS & CONDITIONS');
       registerStr('Contact');
       registerStr('SEARCH BY LIST');
-
-
+      registerStr('http://religious-freedom-report.org/privacy-policy/');
+      registerStr('http://religious-freedom-report.org/terms-and-conditions/');
 
       foreach (getReligions() as $religion) {
         registerStr($religion, $group. '-religions', false);
