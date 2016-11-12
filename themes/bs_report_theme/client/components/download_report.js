@@ -80,7 +80,7 @@ export default function () {
       },
 
       handleSuccess(res) {
-        window.open(`${this.dir}/pdfs/RFR_${this.language.toUpperCase()}.pdf`);
+        window.location(`${this.dir}/pdfs/RFR_${this.language.toUpperCase()}.pdf`);
         console.log(`${this.dir}/pdfs/RFR_${this.language}.pdf`);
       }
     }
