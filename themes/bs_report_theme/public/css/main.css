@@ -845,7 +845,8 @@ form button {
     .footer__top {
       height: auto;
       float: left;
-      padding-bottom: 40px; } }
+      padding-bottom: 40px;
+      width: 100%; } }
   .footer__top .nav__subtitle {
     padding: 0; }
 
