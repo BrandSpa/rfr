@@ -43145,12 +43145,13 @@
 	            type: 'post',
 	            url: '/wp-admin/admin-ajax.php',
 	            data: payload
-	          }).done(function (res) {
-	            return console.log(res);
-	          }).fail(function (err) {
+	          }).done(this.handleSuccess).fail(function (err) {
 	            return console.log(err);
 	          });
 	        }
+	      },
+	      handleSuccess: function handleSuccess(res) {
+	        window.location = 'http://religious-freedom-report.org/thank-you';
 	      }
 	    }
 	  });

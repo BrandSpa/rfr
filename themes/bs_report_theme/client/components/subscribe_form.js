@@ -74,11 +74,16 @@ export default function() {
             url: '/wp-admin/admin-ajax.php',
             data: payload
           })
-          .done(res => console.log(res))
+          .done(this.handleSuccess)
           .fail(err => console.log(err));
         }
 
+      },
+
+      handleSuccess(res) {
+        window.location = `http://religious-freedom-report.org/thank-you`;
       }
+
     }
   });
 
