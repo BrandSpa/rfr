@@ -488,8 +488,10 @@ a {
     color: #fff;
     padding-bottom: 40px;
     margin-right: (1 / 12) * 100%;
+
     @media #{$mobile} {
       font-size: (60 / 16) * 1em;
+      padding-bottom: 10px;
     }
 
     &:after {
@@ -500,6 +502,10 @@ a {
       display: block;
       border-bottom: 5px solid $red_orange;
       margin-right: (1 / 12) * 100%;
+      @media #{$mobile} {
+        font-size: (60 / 16) * 1em;
+        padding-bottom: 10px;
+      }
     }
   }
 
@@ -508,6 +514,7 @@ a {
     font-weight: 400;
     font-size: (24 / 16) * 1em;
     margin-right: (1 / 12) * 100%;
+    
     @media #{$mobile}, #{$tablet} {
       display: none;
     }

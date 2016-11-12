@@ -416,7 +416,8 @@ a polygon, a path {
     margin-right: 8.33333%; }
     @media (max-width: 767px) {
       .home_header__title {
-        font-size: 3.75em; } }
+        font-size: 3.75em;
+        padding-bottom: 10px; } }
     .home_header__title:after {
       content: '';
       padding-bottom: 50px;
@@ -425,6 +426,10 @@ a polygon, a path {
       display: block;
       border-bottom: 5px solid #FC3938;
       margin-right: 8.33333%; }
+      @media (max-width: 767px) {
+        .home_header__title:after {
+          font-size: 3.75em;
+          padding-bottom: 10px; } }
   .home_header__content {
     color: #fff;
     font-weight: 400;
