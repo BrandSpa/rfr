@@ -20,7 +20,7 @@
           @include title5;
           color: $red_orange;
           display: block;
-
+          margin-bottom: 15px;
           &:hover {
             color: $red_orange;
           }
@@ -37,7 +37,7 @@
             @include title6;
             display: block;
             color: $dark_jungle_green;
-            padding-bottom: 15px;
+            padding-bottom: 7px;
             font-weight: 300;
             position: relative;
 
