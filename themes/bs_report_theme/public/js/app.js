@@ -21091,6 +21091,7 @@
 	            showMapInfo($el, report, fill);
 	          }
 	        });
+
 	        var windowH = void 0;
 	        //set map height
 	        if (md.phone() == null) {

@@ -42,6 +42,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </span> 
   </div>
 
+<?php
+  $home = '/';
+  if(function_exists('pll_home_url')) {
+    $home = pll_home_url();
+  }
+?>
 
 <div class="nav_mobile">
   <a href="<?php echo $home ?>" class="nav_mobile__logo">
@@ -67,13 +73,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="nav">
   <div class="nav__logo" style="height: 120px;background: #fff">
-    <?php
-    $home = '/';
-      if(function_exists('pll_home_url')) {
-        $home = pll_home_url();
-      }
-     ?>
-
+    
     <a href="<?php echo $home ?>">
      
       <?php if( !empty( get_option("logo_" . str_replace(' ', '_', getOfficeCountry())  )) ): ?>

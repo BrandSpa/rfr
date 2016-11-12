@@ -169,6 +169,7 @@ export default function () {
             showMapInfo($el, report, fill);
           }
         });
+        
         let windowH;
         //set map height
         if(md.phone() == null) {
