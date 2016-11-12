@@ -127,4 +127,10 @@
 .bs-logo {
   background: $gray_white;
   padding: 20px;
+  
+  @media #{$mobile}, #{$tablet} {
+    width: 100%;
+    float: left;
+  }
+
 }

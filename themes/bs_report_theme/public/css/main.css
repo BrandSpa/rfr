@@ -873,6 +873,10 @@ form button {
 .bs-logo {
   background: #E8E8E8;
   padding: 20px; }
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+    .bs-logo {
+      width: 100%;
+      float: left; } }
 
 .report__header {
   padding: 60px 40px; }
