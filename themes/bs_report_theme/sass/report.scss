@@ -44,6 +44,10 @@
   &__content-header {
     padding: 100px 40px;
 
+    @media #{$mobile} {
+      padding: 20px;
+    }
+
     h1 {
       margin: 0;
     }

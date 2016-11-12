@@ -925,6 +925,9 @@ form button {
 
 .report__content-header {
   padding: 100px 40px; }
+  @media (max-width: 767px) {
+    .report__content-header {
+      padding: 20px; } }
   .report__content-header h1 {
     margin: 0; }
 
