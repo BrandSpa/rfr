@@ -17,10 +17,13 @@ function bs_slider_sc($atts, $content = null) {
 
 <div class="flexslider" id="<?php echo $id?>">
   <ul class="slides">
+    
     <?php foreach($imagesArr as $key => $imageId): ?>
-    <a href="<?php echo $linksArr[$key] ?>">
-      <img src=" <?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
-    </a>
+      <li>
+        <a href="<?php echo $linksArr[$key] ?>">
+          <img src=" <?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
+        </a>
+      </li>
     <?php endforeach; ?>
   </ul>
 </div>
