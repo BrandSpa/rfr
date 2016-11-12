@@ -131,7 +131,7 @@
 
       <button 
         class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-        v-on:click="showContinent('westernEurope')" ><?php echo get('Western Europe') ?></button>
+        v-on:click="showContinent('westernEurope')" ><?php echo gett('Western Europe') ?></button>
 
       <ul class="map__search_results" data-country="westernEurope" style="display: none">
         <li
