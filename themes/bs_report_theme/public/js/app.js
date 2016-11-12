@@ -38581,6 +38581,7 @@
 	    },
 	    ready: function ready() {
 	      this.items = JSON.parse(this.reports);
+	      console.log('phone', md.phone());
 	      if (md.phone() == null) (0, _jquery2.default)('.map__search_input').focus();
 
 	      (0, _jquery2.default)('.open-select-countries').on('click', this.open);
