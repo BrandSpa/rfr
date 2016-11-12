@@ -169,8 +169,15 @@ export default function () {
             showMapInfo($el, report, fill);
           }
         });
+        let windowH;
+        //set map height
+        if(md.phone() == null) {
+          windowH = window.innerHeight;
+        } else {
+          windowH = window.innerHeight / 2;
+        }
 
-        d3.select("#map-container svg").attr('height', window.innerHeight);
+        d3.select("#map-container svg").attr('height', windowH);
         
         d3.select('.map__controllers__more').on('click', function() {
           d3.select("#map-container svg").transition()
