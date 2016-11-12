@@ -44,6 +44,15 @@
       registerStr('http://religious-freedom-report.org/terms-and-conditions/');
       registerStr('http://religious-freedom-report.org/thank-you/');
       registerStr('http://religious-freedom-report.org/thank-you-download/');
+      registerStr('Africa');
+      registerStr('Asia');
+      registerStr('Eastern Europe');
+      registerStr('Latin America');
+      registerStr('Middle East');
+      registerStr('North America');
+      registerStr('Oceania');
+      registerStr('Russia & Central Asia');
+      registerStr('Western Europe');
       
       foreach (getReligions() as $religion) {
         registerStr($religion, $group. '-religions', false);
