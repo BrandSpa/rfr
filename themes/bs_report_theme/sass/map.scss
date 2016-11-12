@@ -256,7 +256,8 @@
   position: relative;
   background: $dark_jungle_green;
   width: 100%;
-
+  border: 1px solid #fff;
+  
   &::before {
       content: "\f4a5";
       display: block;
