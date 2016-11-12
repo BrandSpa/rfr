@@ -1,5 +1,6 @@
 <div style="background: #fff; padding: 120px 40px; width: 100%; float:left">
   <h1 class="title-center title-line color-red"> <?php echo gett('PRESS'); ?> </h1>
+  <div style="padding-bottom: 60px"></div>
   <div class="col-md-1"></div>
   <div class="col-md-10">
     <?php echo do_shortcode('[bs_slider 
