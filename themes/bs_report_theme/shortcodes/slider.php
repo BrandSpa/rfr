@@ -27,10 +27,10 @@ function bs_slider_sc($atts, $content = null) {
 
 <script>
   $(window).load(function() {
-    $('slider-<?php echo UUID::v4(); ?>').flexslider({
+    $('#slider-<?php echo UUID::v4(); ?>').flexslider({
       animation: "slide",
       animationLoop: false,
-      itemWidth: 210,
+      itemWidth: 100,
       itemMargin: 5
     });
   });
