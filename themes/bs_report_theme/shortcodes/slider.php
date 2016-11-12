@@ -11,7 +11,7 @@ function bs_slider_sc($atts, $content = null) {
     $imagesArr = explode(',', $at['images']);
     $linksArr = explode(',', $at['links']);
     $imagesCount = $images.length;
-    $id = "slider-" . UUID::v4();
+    $id = "slider-" . uniqid("slider-" . $imagesCount);
   ob_start();
 ?>
 
@@ -27,7 +27,7 @@ function bs_slider_sc($atts, $content = null) {
 
 <script>
   $(window).load(function() {
-    $('<?php echo $id?>').flexslider({
+    $('#<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: false,
       itemWidth: 100,
