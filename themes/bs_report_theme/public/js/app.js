@@ -38866,7 +38866,7 @@
 	        }
 	      },
 	      handleSuccess: function handleSuccess(res) {
-	        window.open(this.dir);
+	        window.open(this.dir + '/pdfs/RFR_' + this.language + '.pdf');
 	        console.log(res);
 	      }
 	    }
