@@ -67,7 +67,7 @@
     .nav__subtitle {
       padding: 0;
     }
-    
+
   }
 
   &__bottom {
@@ -77,7 +77,7 @@
 
      @media #{$mobile},  #{$tablet} {
       height: auto;
-
+      float: left;
     }
 
     &-left {
