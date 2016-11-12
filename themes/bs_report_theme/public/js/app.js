@@ -38825,8 +38825,6 @@
 	        });
 	      },
 	      onSubmit: function onSubmit() {
-	        var _this2 = this;
-
 	        var name = this.name;
 	        var email = this.email;
 	        var country = this.country;
@@ -38858,16 +38856,14 @@
 	            type: 'post',
 	            url: '/wp-admin/admin-ajax.php',
 	            data: payload
-	          }).done(function (res) {
-	            return _this2.handleSuccess;
-	          }).fail(function (err) {
+	          }).done(this.handleSuccess).fail(function (err) {
 	            return console.log(err);
 	          });
 	        }
 	      },
 	      handleSuccess: function handleSuccess(res) {
-	        window.open(this.dir + '/pdfs/RFR_' + this.language + '.pdf');
-	        console.log(res);
+	        window.open(this.dir + '/pdfs/RFR_' + this.language.toUpperCase() + '.pdf');
+	        console.log(this.dir + '/pdfs/RFR_' + this.language + '.pdf');
 	      }
 	    }
 	  });

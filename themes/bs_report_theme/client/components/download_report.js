@@ -74,14 +74,14 @@ export default function () {
             url: '/wp-admin/admin-ajax.php',
             data: payload
           })
-          .done(res => this.handleSuccess)
+          .done(this.handleSuccess)
           .fail(err => console.log(err));
         }
       },
 
       handleSuccess(res) {
-        window.open(`${this.dir}/pdfs/RFR_${this.language}.pdf`);
-        console.log(res);
+        window.open(`${this.dir}/pdfs/RFR_${this.language.toUpperCase()}.pdf`);
+        console.log(`${this.dir}/pdfs/RFR_${this.language}.pdf`);
       }
     }
   });
