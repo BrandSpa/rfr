@@ -11,7 +11,7 @@ function bs_slider_sc($atts, $content = null) {
 
   $imagesArr = explode(',', $at['images']);
   $linksArr = explode(',', $at['links']);
-  $imagesCount = count($images);
+  $imagesCount = count($imagesArr);
   $id = "slider-" . uniqid();
      
   ob_start();
