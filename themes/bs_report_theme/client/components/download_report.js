@@ -80,8 +80,7 @@ export default function () {
       },
 
       handleSuccess(res) {
-        window.location = `${this.dir}/public/pdfs/RFR_${this.language.toUpperCase()}.pdf`;
-        console.log(`${this.dir}/pdfs/RFR_${this.language}.pdf`);
+        window.location = `http://religious-freedom-report.org/thank-you-download/`;
       }
     }
   });
