@@ -4,6 +4,10 @@
   position: relative;
   float: left;
   width: 100%;
+  
+  &__header {
+    background: rgba(28, 33, 39, .9);
+  }
 
   &__controllers {
     opacity: 0;

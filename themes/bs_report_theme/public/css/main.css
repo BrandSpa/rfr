@@ -1004,6 +1004,8 @@ form button {
   position: relative;
   float: left;
   width: 100%; }
+  .map__header {
+    background: rgba(28, 33, 39, 0.9); }
   .map__controllers {
     opacity: 0;
     transition: all 300ms ease; }

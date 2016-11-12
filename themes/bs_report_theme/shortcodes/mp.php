@@ -16,11 +16,9 @@
 </map>
 
 <script type="text/template" id="map-template">
-
-
   <div id="map" class="map">
   
-    <div class="row">
+    <div class="row" class="map__header">
       <div class="col-md-8">
         <h1 class="title title-line color-red">
           <?php echo gett('BY COUNTRY'); ?>
