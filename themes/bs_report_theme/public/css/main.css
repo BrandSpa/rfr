@@ -1019,7 +1019,8 @@ form button {
     align-items: center; }
     @media (max-width: 767px) {
       .map__header {
-        position: initial; } }
+        position: initial;
+        display: block; } }
   .map__footer {
     background: rgba(28, 33, 39, 0.9);
     padding: 40px;
