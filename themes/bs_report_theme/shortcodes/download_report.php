@@ -13,7 +13,7 @@
         country="<?php echo getUserCountry() ?>"
         lang="<?php echo pll_current_language('slug') ?>"
         language="<?php if(function_exists('pll_current_language')): echo pll_current_language('slug'); endif; ?>"
-        dir="<?php echo get_template_directory() ?>"
+        dir="<?php echo get_template_directory_uri() ?>"
         >
         </form-download-report>
     </div>
