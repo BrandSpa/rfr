@@ -9,6 +9,8 @@
     left: 0;
     background: rgba(28, 33, 39, .9);
     padding: 40px;
+    position: absolute;
+    width: 100%;
   }
 
   &__footer {
@@ -16,6 +18,8 @@
     padding: 40px;
     bottom: 0;
     left: 0;
+    position: absolute;
+    width: 100%;
   }
 
   &__controllers {

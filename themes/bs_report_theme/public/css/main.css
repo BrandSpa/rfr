@@ -1007,12 +1007,16 @@ form button {
     top: 0;
     left: 0;
     background: rgba(28, 33, 39, 0.9);
-    padding: 40px; }
+    padding: 40px;
+    position: absolute;
+    width: 100%; }
   .map__footer {
     background: rgba(28, 33, 39, 0.9);
     padding: 40px;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    position: absolute;
+    width: 100%; }
   .map__controllers {
     opacity: 0;
     transition: all 300ms ease; }
