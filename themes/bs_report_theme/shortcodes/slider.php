@@ -9,34 +9,37 @@ function bs_slider_sc($atts, $content = null) {
       "image_width" => '200'
     ), $atts );
 
-    $imagesArr = explode(',', $at['images']);
-    $linksArr = explode(',', $at['links']);
-    $imagesCount = count($images);
-    $id = "slider-" . uniqid();
+  $imagesArr = explode(',', $at['images']);
+  $linksArr = explode(',', $at['links']);
+  $imagesCount = count($images);
+  $id = "slider-" . uniqid();
+     
   ob_start();
 ?>
 
+<?php if($imagesCount > 0): ?>
 <div class="flexslider" id="<?php echo $id?>">
   <ul class="slides">
-    <?php foreach($imagesArr as $key => $imageId): ?>
-      <li>
-        <a href="<?php echo $linksArr[$key] ?>">
-          <img src=" <?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
-        </a>
-      </li>
-    <?php endforeach; ?>
+      <?php foreach($imagesArr as $key => $imageId): ?>
+        <li>
+          <a href="<?php echo $linksArr[$key] ?>">
+            <img src=" <?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>" alt="">
+          </a>
+        </li>
+      <?php endforeach; ?>
   </ul>
 </div>
-
+<?php endif; ?>
 <script>
   $(function() {
-    console.log($('#<?php echo $id?>'));
+
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: true,
       itemWidth: <?php echo $at['image_width'] ?>,
       itemMargin: 5
     });
+
   });
 </script>
 
