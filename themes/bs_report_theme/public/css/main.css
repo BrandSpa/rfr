@@ -921,7 +921,7 @@ form button {
   margin: 40px 0;
   min-height: 100px;
   height: 100px;
-  border-top: 2px solid #FC3938;
+  border-top: 4px solid #FC3938;
   border-bottom: 2px solid #FC3938;
   float: left;
   width: 100%; }
