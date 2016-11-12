@@ -23,7 +23,7 @@
         <h1 class="title title-line color-red">
           <?php echo gett('BY COUNTRY'); ?>
         </h1>
-        <h4 style="color: #fff"><?php echo gett('Click on any country to see its report.') ?></h4>
+        <p style="color: #fff"><?php echo gett('Click on any country to see its report.') ?></p>
       </div>
       
       <div class="col-md-4">

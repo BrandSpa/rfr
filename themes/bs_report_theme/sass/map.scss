@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     background: rgba(28, 33, 39, .9);
-    padding: 40px;
+    padding: 20px 40px;
     position: absolute;
     width: 100%;
   }
@@ -51,7 +51,7 @@
 
   svg {
     display: block;
-    margin: 40px auto;
+    margin: 0 auto;
     width: 100%;
 
     @media #{$mobile} {
