@@ -60,6 +60,7 @@
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://www.promisejs.org/polyfills/promise-6.1.0.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.min.js"></script>
  
 <?php wp_footer() ?>
 
