@@ -833,7 +833,8 @@ form button {
   padding-top: 40px; }
   @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     .footer__top {
-      height: auto; } }
+      height: auto;
+      float: left; } }
   .footer__top .nav__subtitle {
     padding: 0; }
 
