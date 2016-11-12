@@ -27,7 +27,7 @@ function bs_slider_sc($atts, $content = null) {
 
 <script>
   $(function() {
-    console.log($('#<?php echo $id?>'));˛
+    console.log($('#<?php echo $id?>'));
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: false,
