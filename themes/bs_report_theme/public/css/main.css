@@ -1020,7 +1020,8 @@ form button {
     @media (max-width: 767px) {
       .map__header {
         position: initial;
-        display: block; } }
+        display: block;
+        padding: 20px; } }
   .map__footer {
     background: rgba(28, 33, 39, 0.9);
     padding: 40px;
