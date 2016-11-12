@@ -27,6 +27,7 @@ include_once 'shortcodes/download_report_sc.php';
 include_once 'shortcodes/subscribe_sc.php';
 include_once 'shortcodes/link.php';
 include_once 'shortcodes/home_header.php';
+include_once 'shortcodes/slider.php';
 
 setTranslations();
 
