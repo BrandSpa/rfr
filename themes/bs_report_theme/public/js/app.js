@@ -21144,6 +21144,8 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var md = new MobileDetect(window.navigator.userAgent);
+
 	var colors = {
 	  'Persecution': '#FC3938',
 	  'Discrimination': '#FFC849',
@@ -38658,7 +38660,13 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
+	var _mobileDetect = __webpack_require__(12);
+
+	var _mobileDetect2 = _interopRequireDefault(_mobileDetect);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var md = new MobileDetect(window.navigator.userAgent);
 
 	;
 

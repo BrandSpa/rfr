@@ -4,6 +4,7 @@ import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
 import $ from 'jquery';
 import mobileDetect from 'mobile-detect';
+const md = new MobileDetect(window.navigator.userAgent);
 
 const colors = {
   'Persecution': '#FC3938',

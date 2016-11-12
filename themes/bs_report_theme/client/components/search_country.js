@@ -1,6 +1,8 @@
 'use strict';
 import Vue from 'vue';
 import $ from 'jquery';
+import mobileDetect from 'mobile-detect';
+const md = new MobileDetect(window.navigator.userAgent);
 
 export default function() {
   Vue.component('search-country', {
