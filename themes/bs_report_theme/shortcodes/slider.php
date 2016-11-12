@@ -5,7 +5,8 @@ function bs_slider_sc($atts, $content = null) {
   $at = shortcode_atts( array(
       "images" => "",
       "links" => "",
-      "interval" => "8000"
+      "interval" => "8000",
+      "image_width" => '200'
     ), $atts );
 
     $imagesArr = explode(',', $at['images']);
@@ -17,7 +18,6 @@ function bs_slider_sc($atts, $content = null) {
 
 <div class="flexslider" id="<?php echo $id?>">
   <ul class="slides">
-    
     <?php foreach($imagesArr as $key => $imageId): ?>
       <li>
         <a href="<?php echo $linksArr[$key] ?>">
@@ -34,7 +34,7 @@ function bs_slider_sc($atts, $content = null) {
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: false,
-      itemWidth: 100,
+      itemWidth: <?php echo $image_width ?>,
       itemMargin: 5
     });
   });
@@ -61,6 +61,11 @@ function bs_slider_sc($atts, $content = null) {
           array(
             "type" => "exploded_textarea",
             "param_name" => "links"
+          ),
+           array(
+            "type" => "textfield",
+            "param_name" => "image_width",
+            "value" => 200
           )
         )
       ) 
