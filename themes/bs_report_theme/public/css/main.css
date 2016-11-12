@@ -831,7 +831,7 @@ form button {
   background: #ededed;
   height: 400px;
   padding-top: 40px; }
-  @media (max-width: 767px) {
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     .footer__top {
       height: auto; } }
   .footer__top .nav__subtitle {
@@ -841,7 +841,7 @@ form button {
   background: #F7F7F7;
   height: 400px;
   padding-top: 80px; }
-  @media (max-width: 767px) {
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
     .footer__bottom {
       height: auto; } }
   .footer__bottom-left img {

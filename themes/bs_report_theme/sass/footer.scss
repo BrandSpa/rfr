@@ -59,7 +59,7 @@
     height: 400px;
     padding-top: 40px; 
 
-    @media #{$mobile} {
+    @media #{$mobile}, #{$tablet} {
       height: auto;
     }
     
@@ -76,7 +76,7 @@
     height: 400px;
     padding-top: 80px;    
 
-     @media #{$mobile} {
+     @media #{$mobile},  #{$tablet} {
       height: auto;
     }
 
