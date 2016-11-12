@@ -1187,8 +1187,8 @@ form button {
   font-size: 32px;
   display: block;
   position: absolute;
-  left: 40px;
-  top: 40px; }
+  left: 20px;
+  top: 10px; }
 
 .map__search_click {
   position: relative;
