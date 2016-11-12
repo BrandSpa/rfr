@@ -12,6 +12,11 @@
     position: absolute;
     width: 100%;
     @include center_vertical;
+
+    @media #{$mobile} {
+      position: initial;
+    }
+
   }
 
   &__footer {
@@ -21,6 +26,10 @@
     left: 0;
     position: absolute;
     width: 100%;
+
+    @media #{$mobile} {
+      position: initial;
+    }
   }
 
   &__controllers {

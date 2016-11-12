@@ -1017,6 +1017,9 @@ form button {
     flex-pack: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 767px) {
+      .map__header {
+        position: initial; } }
   .map__footer {
     background: rgba(28, 33, 39, 0.9);
     padding: 40px;
@@ -1024,6 +1027,9 @@ form button {
     left: 0;
     position: absolute;
     width: 100%; }
+    @media (max-width: 767px) {
+      .map__footer {
+        position: initial; } }
   .map__controllers {
     opacity: 0;
     transition: all 300ms ease; }
