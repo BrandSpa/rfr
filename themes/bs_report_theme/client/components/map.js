@@ -3,6 +3,7 @@ import Vue from 'vue';
 import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
 import $ from 'jquery';
+import mobileDetect from 'mobile-detect';
 
 const colors = {
   'Persecution': '#FC3938',
@@ -66,37 +67,7 @@ function showMapInfo(el, report, fill) {
   });
 }
 
- function SetLink(reportGuid) {
-   const self = this;
-   return new Promise(function(resolve, reject) {
-      d3
-        .select( self.parentNode )
-        .append("a", () => self )
-        .attr("href", reportGuid)
-        .append(() => self );
-
-    return resolve();
-   });
-}
-
 const getReport = (fn) => reports => reports.filter(fn)[0];
-
-function setReport(reports) {
-  let el = d3.select(this);
-  let parent = d3.select(this.parentNode);
-  let countryName = el.attr("id").replace(/-/g, ' ');
-  let report = getReport(report => report.meta_country == countryName)(reports);
-
-  if(report && report.guid) {
-    let fill = colors[report.meta_nature_persecution];
-    el.style("fill", fill);
-
-    SetLink
-    .call(this, report.guid)
-    .then(() => console.log('hi setlink'));
-    showMapInfo(parent, report, fill)
-  }
-}
 
 export default function () {
 
@@ -198,7 +169,11 @@ export default function () {
           }
         });
 
-        d3.select("#map-container svg").attr('height', window.innerHeight);
+        //set map height
+        if(md.phone() == null) {
+          d3.select("#map-container svg").attr('height', window.innerHeight);
+        }
+        
 
         d3.select('.map__controllers__more').on('click', function() {
           d3.select("#map-container svg").transition()
