@@ -488,7 +488,9 @@ a {
     color: #fff;
     padding-bottom: 40px;
     margin-right: (1 / 12) * 100%;
-   
+    @media #{$mobile} {
+      font-size: (60 / 16) * 1em;
+    }
 
     &:after {
       content: '';

@@ -414,6 +414,9 @@ a polygon, a path {
     color: #fff;
     padding-bottom: 40px;
     margin-right: 8.33333%; }
+    @media (max-width: 767px) {
+      .home_header__title {
+        font-size: 3.75em; } }
     .home_header__title:after {
       content: '';
       padding-bottom: 50px;
