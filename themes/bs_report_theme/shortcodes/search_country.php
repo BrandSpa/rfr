@@ -5,7 +5,6 @@
   
   <div class="col-md-6 col-sm-10" style="float: none; margin: 0 auto">
        <h1 class="title-center title-line color-red"><?php echo gett('SEARCH BY COUNTRY') ?></h1>
-       <h4 class="title-center color-red" style="margin-bottom: 40px;"><?php echo gett('Click on any country to see its report.') ?></h4>
 
     <div class="row">
       <div class="col-md-6">

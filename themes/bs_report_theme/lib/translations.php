@@ -42,7 +42,9 @@
       registerStr('SEARCH BY LIST');
       registerStr('http://religious-freedom-report.org/privacy-policy/');
       registerStr('http://religious-freedom-report.org/terms-and-conditions/');
-
+      registerStr('http://religious-freedom-report.org/thank-you/');
+      registerStr('http://religious-freedom-report.org/thank-you-download/');
+      
       foreach (getReligions() as $religion) {
         registerStr($religion, $group. '-religions', false);
       }
