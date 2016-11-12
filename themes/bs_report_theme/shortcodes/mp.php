@@ -26,7 +26,7 @@
         <p style="color: #fff"><?php echo gett('Click on any country to see its report.') ?></p>
       </div>
       
-      <div class="col-md-4">
+      <div class="col-md-4 map__header__btns">
         <div class="col-xs-6">
           <button class="button button--fill" v-on:click="showSearchList"><?php echo gett('LIST'); ?></button>
         </div>
