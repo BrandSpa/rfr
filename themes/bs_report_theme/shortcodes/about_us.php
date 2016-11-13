@@ -24,7 +24,7 @@
 
     <div class="col-md-2"></div>
     <div class="col-md-8">
-      <a href="#" class="button"><?php echo gett('Conozca más sobre Ayuda a la Iglesia Necesitada') ?></a>
+      <a href="<?php echo get_option('redirect_url_' . getOfficeCountry())  ?>" class="button"><?php echo gett('Conozca más sobre Ayuda a la Iglesia Necesitada') ?></a>
     </div>
     <div class="col-md-2"></div>
   </div>
