@@ -1,7 +1,7 @@
 
 <subscribe-form 
   lang="<?php echo getLang() ?>" 
-  country="<?php echo getUserCountry() ?>"
+  country="<?php echo geoip_detect2_get_info_from_current_ip()->country->names['en'] ?>"
 >
 </subscribe-form>
 
