@@ -44,6 +44,7 @@
       registerStr('http://religious-freedom-report.org/terms-and-conditions/');
       registerStr('http://religious-freedom-report.org/thank-you/');
       registerStr('http://religious-freedom-report.org/thank-you-download/');
+      registerStr('Conozca más sobre Ayuda a la Iglesia Necesitada');
       
       registerStr('Africa');
       registerStr('Asia');
