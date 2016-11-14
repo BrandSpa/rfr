@@ -27,7 +27,7 @@ function bs_home_header_sc($atts, $content = null) {
     <?php endforeach; ?>
   <?php endif; ?>
 
-  <div class="col-md-6">
+  <div class="col-md-7">
     <div class="home_header__contents" >
       <ul>
         <li data-index="0" class="active">
