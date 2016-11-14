@@ -1,7 +1,7 @@
 const countries = require("json!./countries_list.json");
 
 export default function redirect() {
-  
-  console.log(countries.filter(country => country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase() ));
+  let country = countries.filter(country => country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase() );
+  console.log(country.languages[0]);
   console.log(bs.geo.country.names.en);
 }

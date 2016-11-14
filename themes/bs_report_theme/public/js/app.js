@@ -45266,10 +45266,10 @@
 	var countries = __webpack_require__(111);
 
 	function redirect() {
-
-	  console.log(countries.filter(function (country) {
+	  var country = countries.filter(function (country) {
 	    return country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase();
-	  }));
+	  });
+	  console.log(country.languages[0]);
 	  console.log(bs.geo.country.names.en);
 	}
 
