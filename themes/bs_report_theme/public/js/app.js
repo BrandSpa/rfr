@@ -59193,7 +59193,7 @@
 	  console.log(countries.filter(function (country) {
 	    return country.name == bs.geo.country.names.en;
 	  }));
-	  console.log(bs.geo);
+	  console.log(bs.geo.country.names.en);
 	}
 
 /***/ }
