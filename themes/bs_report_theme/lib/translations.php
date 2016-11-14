@@ -26,6 +26,9 @@
       registerStr('Area');
       registerStr('Population');
       registerStr('Political');
+      registerStr('Improved');
+      registerStr('Unchanged');
+      registerStr('Worsened');
       registerStr('Major Languages');
       registerStr('"ACN es una fundación internacional dependiente del Vaticano nacida en 1.947 que desarrolla anualmente más de 6.000 proyectos pastorales en más de 140 países. Por medio de tres pilares - oración, información y soporte financiero - ACN ayuda a cristianos perseguidos, que sufren y pasan necesidad en el mundo."');
       registerStr('Click on any country to see its report.');
@@ -46,6 +49,9 @@
       registerStr('http://religious-freedom-report.org/thank-you-download/');
       registerStr('Conozca más sobre Ayuda a la Iglesia Necesitada');
       registerStr('RELIGIOUS <span class="color-red">FREEDOM</span><br>REPORT');
+      registerStr('LIST');
+      registerStr('BY COUNTRY');
+      registerStr('SEARCH BY COUNTRY');
       registerStr('Africa');
       registerStr('Asia');
       registerStr('Eastern Europe');
