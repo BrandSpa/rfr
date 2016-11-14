@@ -1,9 +1,8 @@
 <?php
 //redirect to office
 
-if(function_exists('getOfficeCountry')) {
-  echo get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) );
-}
+echo get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) );
+
 
 ?>
 <!DOCTYPE html>
