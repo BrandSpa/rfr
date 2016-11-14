@@ -25,7 +25,7 @@ function bs_add_redirect_settings() {
 
   foreach ($options as $value) {
 		$value = str_replace(' ', '_', $value);
-    register_setting( 'bs_country_info_group', 'office_redirect_' . $value );
+    register_setting( 'bs_redirect_office_group', 'office_redirect_' . $value );
   }
 
 }
@@ -43,8 +43,8 @@ function redirect_settings_page() {
 
 
   <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto">
-      <?php settings_fields( 'bs_country_info_group' ); ?>
-      <?php do_settings_sections( 'bs_country_info_group' ); ?>
+      <?php settings_fields( 'bs_redirect_office_group' ); ?>
+      <?php do_settings_sections( 'bs_redirect_office_group' ); ?>
       <?php foreach ($countries as $value): ?>
 					<?php $value = str_replace(' ', '_', $value); ?>
           <p>Office: <?php echo $value ?></p>
