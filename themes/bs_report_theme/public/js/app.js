@@ -98,7 +98,7 @@
 
 	var _scroll_top2 = _interopRequireDefault(_scroll_top);
 
-	var _redirect = __webpack_require__(113);
+	var _redirect = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./lib/redirect\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _redirect2 = _interopRequireDefault(_redirect);
 
@@ -45252,26 +45252,6 @@
 	var _jquery2 = _interopRequireDefault(_jquery);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ },
-/* 113 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = redirect;
-	var countries = __webpack_require__(111);
-
-	function redirect() {
-	  var country = countries.filter(function (country) {
-	    return country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase();
-	  });
-	  console.log(country[0].languages[0]);
-	  console.log(bs.geo.country.names.en);
-	}
 
 /***/ }
 /******/ ]);
