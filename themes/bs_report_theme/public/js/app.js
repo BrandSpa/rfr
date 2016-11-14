@@ -21004,6 +21004,7 @@
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
+	      var countriesTrans = this.countriesTranslation;
 
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
@@ -21057,7 +21058,7 @@
 	            var fill = colors[report.meta_nature_persecution];
 	            $el.style("cursor", "pointer");
 	            $el.style("fill", fill);
-	            var name = this.countriesTranslation[countryName];
+	            var name = countriesTrans[countryName];
 	            console.log('name', name);
 	            showMapInfo($el, report, fill);
 	          }
@@ -21095,7 +21096,7 @@
 	            var fill = colors[report.meta_nature_persecution];
 	            $el.style("cursor", "pointer");
 	            $el.style("fill", fill);
-	            var name = this.countriesTranslation[countryName];
+	            var name = countriesTrans[countryName];
 	            console.log('name', name);
 	            showMapInfo($el, report, fill);
 	          }

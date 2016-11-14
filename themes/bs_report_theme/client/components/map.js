@@ -87,6 +87,7 @@ export default function () {
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
+      let countriesTrans = this.countriesTranslation;
 
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])
@@ -137,7 +138,7 @@ export default function () {
             let fill = colors[report.meta_nature_persecution];
             $el.style("cursor", "pointer");
             $el.style("fill", fill);
-            let name = this.countriesTranslation[countryName];
+            let name = countriesTrans[countryName];
             console.log('name', name);
             showMapInfo($el, report, fill);
           }
@@ -169,7 +170,7 @@ export default function () {
             let fill = colors[report.meta_nature_persecution];
             $el.style("cursor", "pointer");
             $el.style("fill", fill);
-            let name = this.countriesTranslation[countryName];
+            let name = countriesTrans[countryName];
             console.log('name', name);
             showMapInfo($el, report, fill);
           }
