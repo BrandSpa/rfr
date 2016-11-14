@@ -478,7 +478,7 @@ a polygon, a path {
         transform: translate3d(0, 0, 0); }
   .home_header__paginate a {
     display: inline-block;
-    width: 12px;
+    width: 41px;
     height: 12px;
     background: #fff; }
     .home_header__paginate a:hover, .home_header__paginate a.active {
