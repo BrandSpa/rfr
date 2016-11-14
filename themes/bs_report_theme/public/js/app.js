@@ -45270,7 +45270,11 @@
 	    return country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase();
 	  });
 	  var lang = country[0].languages[0];
-	  console.log(bs.langs[lang]);
+	  var url = bs.langs[lang].url;
+	  if (url) {
+	    window.location = url;
+	  }
+
 	  console.log(bs.geo.country.names.en);
 	}
 
