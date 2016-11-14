@@ -4,7 +4,7 @@ function contact_info_sc($atts, $content = null) {
   
   ob_start();
  
-  get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) );
+  echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) );
 
   return ob_get_clean();
 }
