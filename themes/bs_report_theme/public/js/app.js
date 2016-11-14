@@ -59190,8 +59190,9 @@
 	var countries = __webpack_require__(111);
 
 	function redirect() {
+
 	  console.log(countries.filter(function (country) {
-	    return country.name == bs.geo.country.names.en;
+	    return country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase();
 	  }));
 	  console.log(bs.geo.country.names.en);
 	}
