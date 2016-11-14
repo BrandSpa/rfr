@@ -9,7 +9,7 @@
     <div class="col-md-1"></div>
 
     <div class="col-md-5" style="float: none; margin: 0 auto">
-      <?php print_r(geoip_detect2_get_info_from_current_ip()->country) ?>
+      <?php print_r(geoip_detect2_get_info_from_current_ip()->country->names) ?>
       <form-download-report 
         country="<?php echo getUserCountry() ?>"
         lang="<?php echo pll_current_language('slug') ?>"
