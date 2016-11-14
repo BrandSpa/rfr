@@ -47,6 +47,8 @@ function redirect_settings_page() {
       <?php do_settings_sections( 'bs_country_info_group' ); ?>
       <?php foreach ($countries as $value): ?>
 					<?php $value = str_replace(' ', '_', $value); ?>
+          <p>Office: $value</p>
+          <p>
           <input
 							style="background: rgba(255,255,255,.4); width: 60%; height: 35px"
 							type="text"
@@ -54,6 +56,7 @@ function redirect_settings_page() {
 							name="office_redirect_<?php echo $value ?>"
 							value="<?php echo esc_attr( get_option('office_redirect_' . $value ) ); ?>"
 						/>
+            </p>
 	<?php submit_button(); ?>
   <?php endforeach; ?>
   </form>
