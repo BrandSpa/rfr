@@ -1,3 +1,11 @@
+<?php
+//redirect to office
+
+if(function_exists('getOfficeCountry')) {
+  echo get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) );
+}
+
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>
 <head>
@@ -16,7 +24,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.css" media="screen" title="no title">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-
 
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
