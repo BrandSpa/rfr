@@ -10,7 +10,7 @@ const colors = {
   'Persecution': '#FC3938',
   'Discrimination': '#FFC849',
   'Stable': '#E4E7EA',
-};
+};§
 
 function showInfo(info, report, bg = '#fff', name) {
   let {meta_country, meta_situation} = report;
@@ -87,7 +87,7 @@ export default function () {
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
-      let countriesTrans = this.countriesTranslation;
+      let countriesTrans = JSON.parse(JSON.stringify(this.countriesTranslation));
 
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])

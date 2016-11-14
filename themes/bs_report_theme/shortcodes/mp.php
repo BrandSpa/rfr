@@ -8,11 +8,11 @@
 
 <map
   posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
-  :countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'
+  countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'
   map-url='<?php echo $map_svg_url ?>'
   url='<?php echo get_template_directory_uri() ?>'
   lang='<?php echo $getReportLang ?>'
-  langTrans="<?php echo json_encode(trans_list(getCountries())) ?>"
+  lang-trans="<?php echo json_encode(trans_list(getCountries())) ?>"
 >
 </map>
 
