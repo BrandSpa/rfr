@@ -1,6 +1,6 @@
 <?php
 //redirect to office
-
+echo getOfficeCountry();
 echo get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) );
 
 
