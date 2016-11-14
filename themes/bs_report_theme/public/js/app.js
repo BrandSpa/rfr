@@ -21057,6 +21057,8 @@
 	            var fill = colors[report.meta_nature_persecution];
 	            $el.style("cursor", "pointer");
 	            $el.style("fill", fill);
+	            var name = this.countriesTranslation[countryName];
+	            console.log('name', name);
 	            showMapInfo($el, report, fill);
 	          }
 	        });
@@ -21093,6 +21095,8 @@
 	            var fill = colors[report.meta_nature_persecution];
 	            $el.style("cursor", "pointer");
 	            $el.style("fill", fill);
+	            var name = this.countriesTranslation[countryName];
+	            console.log('name', name);
 	            showMapInfo($el, report, fill);
 	          }
 	        });

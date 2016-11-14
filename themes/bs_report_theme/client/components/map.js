@@ -137,6 +137,8 @@ export default function () {
             let fill = colors[report.meta_nature_persecution];
             $el.style("cursor", "pointer");
             $el.style("fill", fill);
+            let name = this.countriesTranslation[countryName];
+            console.log('name', name);
             showMapInfo($el, report, fill);
           }
         });
@@ -167,6 +169,8 @@ export default function () {
             let fill = colors[report.meta_nature_persecution];
             $el.style("cursor", "pointer");
             $el.style("fill", fill);
+            let name = this.countriesTranslation[countryName];
+            console.log('name', name);
             showMapInfo($el, report, fill);
           }
         });
