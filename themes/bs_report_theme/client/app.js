@@ -4,7 +4,6 @@ import Vue from 'vue';
 import nav from './lib/nav';
 import map from './components/map';
 import religionsChart from './components/religions_chart';
-
 import searchCountry from './components/search_country';
 import searchList from './components/search_list';
 import downloadFormReport from './components/download_report';

@@ -55,7 +55,10 @@
   </div>
 
 </div>
-
+  <script>
+    var bs = {};
+    bs.geo = JSON.parse(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()); ?>);
+  </script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://www.promisejs.org/polyfills/promise-6.1.0.js"></script>
