@@ -12,7 +12,7 @@
   map-url='<?php echo $map_svg_url ?>'
   url='<?php echo get_template_directory_uri() ?>'
   lang='<?php echo $getReportLang ?>'
-  langsTranslations="<?php echo json_encode(trans_list(getCountries())) ?>"
+  langTrans="<?php echo json_encode(trans_list(getCountries())) ?>"
 >
 </map>
 
