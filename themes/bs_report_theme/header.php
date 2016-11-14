@@ -1,11 +1,9 @@
 <?php
 //redirect to office
-echo getOfficeCountry();
 $url = get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) );
 if(!empty($url)) {
-header ("Location:" . $url);
-exit;
-
+  header ("Location:" . $url);
+  exit;
 }
 
 ?>
