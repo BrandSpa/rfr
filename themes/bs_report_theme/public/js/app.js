@@ -59195,6 +59195,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function redirect() {
+	  console.log(_countries_list2.default.name[bs.geo.country.names.en]);
 	  console.log(bs.geo);
 	}
 
