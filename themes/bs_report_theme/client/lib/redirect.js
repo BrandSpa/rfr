@@ -11,5 +11,5 @@ export default function redirect() {
     window.location = url;
   }
 
-  console.log(bs.geo.country.names.en);
+  console.log(lang, url);
 }
