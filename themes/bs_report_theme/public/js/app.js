@@ -45269,7 +45269,7 @@
 	  var country = countries.filter(function (country) {
 	    return country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase();
 	  });
-	  console.log(country);
+	  console.log(country[0].languages[0]);
 	  console.log(bs.geo.country.names.en);
 	}
 
