@@ -21,7 +21,12 @@ function bs_contact_info_vc() {
         "name" =>  "Contact info",
         "base" => "bs_contact_info",
         "category" =>  "BS",
-        "params" => array()
+        "params" => array(
+          "type" => "textfield",
+          "param_name" => "style",
+          "heading" => "Style",
+          "value" => "color:#fff"
+        )
       ) 
     );
 }
