@@ -58,6 +58,7 @@
   <script>
     var bs = {};
     bs['geo'] = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()); ?>));
+    bs['langs'] = JSON.parse(JSON.stringify(<?php echo pll_the_languages(array('raw'=>1)) ?>));
   </script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
