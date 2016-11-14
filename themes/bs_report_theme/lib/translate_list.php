@@ -8,6 +8,4 @@
   function trans_list($arr) {
     return array_map('get_trans', $arr);
   }
-
-
 ?>
