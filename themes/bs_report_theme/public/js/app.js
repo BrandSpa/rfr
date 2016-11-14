@@ -38877,7 +38877,7 @@
 	        }
 	      },
 	      handleSuccess: function handleSuccess(res) {
-	        window.location = 'http://religious-freedom-report.org/thank-you-download/';
+	        window.location = this.thanks;
 	      }
 	    }
 	  });
@@ -43166,7 +43166,7 @@
 	        }
 	      },
 	      handleSuccess: function handleSuccess(res) {
-	        window.location = 'http://religious-freedom-report.org/thank-you';
+	        window.location = this.thanks;
 	      }
 	    }
 	  });
