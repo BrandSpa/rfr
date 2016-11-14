@@ -40,19 +40,20 @@ function redirect_settings_page() {
 
   <div style="background: #f1f1f1; background-size: contain; padding: 15px">
 		<div style="text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0, .1)">
-			<h1>RFR Options</h1>
+			<h1>RFR Office redirect</h1>
 		</div>
 
   <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto">
       <?php settings_fields( 'bs_country_info_group' ); ?>
       <?php do_settings_sections( 'bs_country_info_group' ); ?>
       <select name="office_redirect" id="">
-      </select>
-     
+
         <?php foreach ($countries as $country): ?>
         <option value="<?php echo $country ?>"><?php echo $country ?></option>
         <?php endforeach; ?>
 
+      </select>
+     
 	<?php submit_button(); ?>
   </form>
   </div>
