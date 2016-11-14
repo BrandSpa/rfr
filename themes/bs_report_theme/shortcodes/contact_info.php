@@ -1,11 +1,15 @@
 <?php
 function contact_info_sc($atts, $content = null) {
-  $at = shortcode_atts( array(), $atts );
+  $at = shortcode_atts( array(
+    "style" => "color:#fff"
+  ), $atts );
   
   ob_start();
- 
-  echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) );
-
+  ?>
+  <div style="<?php echo $at['style'] ?>">
+    <?php echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) ); ?>
+  </div>
+<?php
   return ob_get_clean();
 }
 
