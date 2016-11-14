@@ -12,10 +12,10 @@ const colors = {
   'Stable': '#E4E7EA',
 };
 
-function showInfo(info, report, bg = '#fff') {
-  let $el = d3.select(info);
+function showInfo(info, report, bg = '#fff', name) {
   let {meta_country, meta_situation} = report;
-  let name = meta_country.replace(/-/g, ' ');
+  let $el = d3.select(info);
+  name = name ? name : meta_country.replace(/-/g, ' ');
   let src = `/wp-content/themes/bs_report_theme/public/img/icons/${meta_situation}.svg`;
   $el.style('background', bg);
   $el.select('.map__info_country').text(name);
@@ -54,11 +54,11 @@ function appendMap(mapUrl, container) {
   }); 
 }
 
-function showMapInfo(el, report, fill) {
+function showMapInfo(el, report, fill, name) {
   let info = document.querySelector('.map__info');
   
   el.on('mousemove', evt => {
-    showInfo(info, report, fill);
+    showInfo(info, report, fill, name);
     setStyle(el, fill);
   });
 
@@ -140,7 +140,7 @@ export default function () {
             $el.style("fill", fill);
             let name = countriesTrans[countryName];
             console.log('name', name);
-            showMapInfo($el, report, fill);
+            showMapInfo($el, report, fill, name);
           }
         });
 
@@ -172,7 +172,7 @@ export default function () {
             $el.style("fill", fill);
             let name = countriesTrans[countryName];
             console.log('name', name);
-            showMapInfo($el, report, fill);
+            showMapInfo($el, report, fill, name);
           }
         });
         

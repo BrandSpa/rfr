@@ -21060,7 +21060,7 @@
 	            $el.style("fill", fill);
 	            var name = countriesTrans[countryName];
 	            console.log('name', name);
-	            showMapInfo($el, report, fill);
+	            showMapInfo($el, report, fill, name);
 	          }
 	        });
 
@@ -21098,7 +21098,7 @@
 	            $el.style("fill", fill);
 	            var name = countriesTrans[countryName];
 	            console.log('name', name);
-	            showMapInfo($el, report, fill);
+	            showMapInfo($el, report, fill, name);
 	          }
 	        });
 
@@ -21169,12 +21169,12 @@
 
 	function showInfo(info, report) {
 	  var bg = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#fff';
-
-	  var $el = d3.select(info);
+	  var name = arguments[3];
 	  var meta_country = report.meta_country;
 	  var meta_situation = report.meta_situation;
 
-	  var name = meta_country.replace(/-/g, ' ');
+	  var $el = d3.select(info);
+	  name = name ? name : meta_country.replace(/-/g, ' ');
 	  var src = '/wp-content/themes/bs_report_theme/public/img/icons/' + meta_situation + '.svg';
 	  $el.style('background', bg);
 	  $el.select('.map__info_country').text(name);
@@ -21208,11 +21208,11 @@
 	  });
 	}
 
-	function showMapInfo(el, report, fill) {
+	function showMapInfo(el, report, fill, name) {
 	  var info = document.querySelector('.map__info');
 
 	  el.on('mousemove', function (evt) {
-	    showInfo(info, report, fill);
+	    showInfo(info, report, fill, name);
 	    setStyle(el, fill);
 	  });
 
