@@ -10,7 +10,7 @@ const colors = {
   'Persecution': '#FC3938',
   'Discrimination': '#FFC849',
   'Stable': '#E4E7EA',
-};§
+};
 
 function showInfo(info, report, bg = '#fff', name) {
   let {meta_country, meta_situation} = report;
