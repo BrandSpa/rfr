@@ -43,9 +43,12 @@ function redirect_settings_page() {
 			<h1>RFR Office redirect</h1>
 		</div>
 
+
   <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto">
       <?php settings_fields( 'bs_country_info_group' ); ?>
       <?php do_settings_sections( 'bs_country_info_group' ); ?>
+      <?php foreach ($countries as $value): ?>
+					<?php $value = str_replace(' ', '_', $value); ?>
       <select name="office_redirect" id="">
 
         <?php foreach ($countries as $country): ?>
@@ -55,6 +58,8 @@ function redirect_settings_page() {
       </select>
      
 	<?php submit_button(); ?>
+  <?php endforeach; ?>
   </form>
+  
   </div>
 <?php } ?>
