@@ -6,8 +6,10 @@ export default function redirect() {
   let url = bs.langs[lang].url;
   window.localStorage.setItem('bs-lang', lang);
   let storageLang = window.localStorage.getItem('bs-lang');
+  let redirect = window.localStorage.getItem('bs-redirect') ? true : false;
 
-  if(url && storageLang != lang) {
+  if(url && redirect == false) {
+    window.localStorage.setItem('bs-redirect', true);
     window.location = url;
   }
 

@@ -45273,8 +45273,10 @@
 	  var url = bs.langs[lang].url;
 	  window.localStorage.setItem('bs-lang', lang);
 	  var storageLang = window.localStorage.getItem('bs-lang');
+	  var redirect = window.localStorage.getItem('bs-redirect') ? true : false;
 
-	  if (url && storageLang != lang) {
+	  if (url && redirect == false) {
+	    window.localStorage.setItem('bs-redirect', true);
 	    window.location = url;
 	  }
 
