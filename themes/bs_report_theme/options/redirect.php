@@ -47,7 +47,7 @@ function redirect_settings_page() {
       <?php do_settings_sections( 'bs_country_info_group' ); ?>
       <?php foreach ($countries as $value): ?>
 					<?php $value = str_replace(' ', '_', $value); ?>
-          <p>Office: $value</p>
+          <p>Office: <?php echo $value ?></p>
           <p>
           <input
 							style="background: rgba(255,255,255,.4); width: 60%; height: 35px"
