@@ -45257,7 +45257,7 @@
 /* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -45271,7 +45271,10 @@
 	  });
 	  var lang = country[0].languages[0];
 	  var url = bs.langs[lang].url;
-	  if (url) {
+	  window.localStorage.setItem('bs-lang', lang);
+	  var storageLang = window.localStorage.getItem('bs-lang');
+
+	  if (url && storageLang != lang) {
 	    window.location = url;
 	  }
 
