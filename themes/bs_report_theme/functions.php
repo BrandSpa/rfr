@@ -28,6 +28,7 @@ include_once 'shortcodes/subscribe_sc.php';
 include_once 'shortcodes/link.php';
 include_once 'shortcodes/home_header.php';
 include_once 'shortcodes/slider.php';
+include_once 'shortcodes/contact_info.php';
 
 setTranslations();
 
