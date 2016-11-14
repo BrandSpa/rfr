@@ -14,6 +14,7 @@ import countries from './lib/country_lang';
 import scrollTop from './lib/scroll_top';
 import redirect from './lib/redirect';
 $(() => {
+  redirect();
   nav();
   map();
   religionsChart();

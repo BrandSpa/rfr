@@ -105,6 +105,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
+	  (0, _redirect2.default)();
 	  (0, _nav2.default)();
 	  (0, _map2.default)();
 	  (0, _religions_chart2.default)();
