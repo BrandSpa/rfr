@@ -59,8 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </a>
 
   <h4 class="nav_mobile__subtitle">
-    RELIGIOUS <span class="color-red">FREEDOM</span><br>
-    REPORT <?php echo date('Y') ?>
+    <?php echo gett('RELIGIOUS <span class="color-red">FREEDOM</span><br> REPORT', true) ?> <?php echo date('Y') ?>
   </h4>
 
      <a href="#" id="open-nav">
@@ -87,10 +86,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   <a href="<?php echo $home ?>">
     <h4 class="nav__subtitle">
-      RELIGIOUS<br>
-      <span class="color-red">FREEDOM</span><br>
-      REPORT<br>
-      <?php echo date('Y') ?>
+      <?php echo gett('RELIGIOUS <span class="color-red">FREEDOM</span><br> REPORT', true) ?> <?php echo date('Y') ?>
     </h4>
   </a>
 
