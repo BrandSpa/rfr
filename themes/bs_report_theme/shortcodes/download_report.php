@@ -9,11 +9,11 @@
     <div class="col-md-1"></div>
 
     <div class="col-md-5" style="float: none; margin: 0 auto">
-      <?php print_r(geoip_detect2_get_info_from_current_ip()->country->names) ?>
+      <?php print_r(geoip_detect2_get_info_from_current_ip()->country->names['en']) ?>
       <form-download-report 
         country="<?php echo getUserCountry() ?>"
         lang="<?php echo pll_current_language('slug') ?>"
-        language="<?php if(function_exists('pll_current_language')): echo pll_current_language('slug'); endif; ?>"
+        language="<?php if(function_exists('geoip_detect2_get_info_from_current_ip')): echo geoip_detect2_get_info_from_current_ip()->country->names['en']; endif; ?>"
         dir="<?php echo get_template_directory_uri() ?>"
         >
         </form-download-report>
