@@ -51,7 +51,9 @@
       registerStr('RELIGIOUS <span class="color-red">FREEDOM</span><br>REPORT');
       registerStr('LIST');
       registerStr('BY COUNTRY');
+      registerStr('Country');
       registerStr('SEARCH BY COUNTRY');
+      registerStr('Download Executive Summary');
       registerStr('Africa');
       registerStr('Asia');
       registerStr('Eastern Europe');
