@@ -7,7 +7,7 @@ export default function modalIframe() {
     let template = `
       <div class="modal">
         <div class="iframe-container">
-          <iframe src="${url}" frameborder="0"></iframe>
+          <iframe src="${url}" frameborder="0" height="315" width="100%" allowfullscreen=""></iframe>
         </div>
       </div>
     `;
