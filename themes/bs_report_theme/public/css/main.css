@@ -568,6 +568,13 @@ a polygon, a path {
   @media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
     .modal {
       width: 100%; } }
+  .modal__close {
+    color: #FC3938;
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 10px; }
   .modal .iframe-container {
     position: relative;
     height: 0;
