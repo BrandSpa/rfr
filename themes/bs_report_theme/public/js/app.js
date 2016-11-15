@@ -10381,8 +10381,19 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	exports.default = religionChart;
 
-	exports.default = function () {
+	var _vue = __webpack_require__(5);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _hexRgba = __webpack_require__(7);
+
+	var _hexRgba2 = _interopRequireDefault(_hexRgba);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function religionChart() {
 
 	    _vue2.default.component('religions-chart', {
 	        template: '<div id="religions-chart" style="width: 100%; height: 400px; margin: 0 auto"></div>',
@@ -10476,17 +10487,7 @@
 	            });
 	        }
 	    });
-	};
-
-	var _vue = __webpack_require__(5);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	var _hexRgba = __webpack_require__(7);
-
-	var _hexRgba2 = _interopRequireDefault(_hexRgba);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	}
 
 /***/ },
 /* 5 */

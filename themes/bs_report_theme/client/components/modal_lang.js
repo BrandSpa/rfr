@@ -2,7 +2,7 @@
 import Vue from 'vue';
 import jQuery from 'jquery';
 
-export default function() {
+export default function modalLang() {
   Vue.component('modal-lang', {
     template: '#modal-lang-template',
     props: ['info', 'polylang'],

@@ -2,7 +2,7 @@
 import Vue from 'vue';
 import hexRgba from 'hex-rgba';
 
-export default function() {
+export default function religionChart() {
 
   Vue.component('religions-chart', {
     template: '<div id="religions-chart" style="width: 100%; height: 400px; margin: 0 auto"></div>',
