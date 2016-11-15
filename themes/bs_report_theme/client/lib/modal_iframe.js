@@ -1,3 +1,17 @@
-@L3-1019+Fb
+'use strict';
 
-Tyl3r_1019+F4c
+export default function modalIframe() {
+  $('.open-modal-iframe').on('click', function(e) {
+    e.preventDefault();
+    let url = $(this).attr('href');
+    let template = `
+      <div class="modal">
+        <div class="iframe-container">
+          <iframe src="${url}" frameborder="0"></iframe>
+        </div>
+      </div>
+    `;
+
+    $('body').append(template);
+  });
+}

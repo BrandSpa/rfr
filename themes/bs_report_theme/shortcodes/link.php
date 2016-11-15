@@ -4,12 +4,13 @@ function link_sc($atts, $content = null) {
     "link_text" => 'COUNTRY REPORTS',
     "link_href" => '#',
     "link_icon" => '',
+    "link_class" => ''
   ), $atts );
   
   ob_start();
   ?>
 
-    <a href="<?php echo $at['link_href'] ?>" class="link-bs">
+    <a href="<?php echo $at['link_href'] ?>" class="link-bs <?php echo $at['link_class'] ?>">
         
         <svg width="7px" height="7px" viewBox="129 71 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -78,6 +79,13 @@ function bs_link_vc() {
             "type" => "textfield",
             "heading" => "Link icon",
             "param_name" => "link_icon",
+            "value" => ""
+          ),
+
+           array(
+            "type" => "textfield",
+            "heading" => "Link class",
+            "param_name" => "link_class",
             "value" => ""
           )
         

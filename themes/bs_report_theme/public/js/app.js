@@ -102,6 +102,10 @@
 
 	var _redirect2 = _interopRequireDefault(_redirect);
 
+	var _modal_iframe = __webpack_require__(114);
+
+	var _modal_iframe2 = _interopRequireDefault(_modal_iframe);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
@@ -116,6 +120,7 @@
 	  (0, _footer_nav2.default)();
 	  (0, _home_header2.default)();
 	  (0, _scroll_top2.default)();
+	  (0, _modal_iframe2.default)();
 	  // countries();
 
 	  new _vue2.default({
@@ -45301,6 +45306,26 @@
 	  }
 
 	  console.log(lang, url);
+	}
+
+/***/ },
+/* 114 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = modalIframe;
+	function modalIframe() {
+	  $('.open-modal-iframe').on('click', function (e) {
+	    e.preventDefault();
+	    var url = $(this).attr('href');
+	    var template = '\n      <div class="modal">\n        <div class="iframe-container">\n          <iframe src="' + url + '" frameborder="0"></iframe>\n        </div>\n      </div>\n    ';
+
+	    $('body').append(template);
+	  });
 	}
 
 /***/ }

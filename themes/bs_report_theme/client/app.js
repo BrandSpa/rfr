@@ -13,6 +13,8 @@ import footerNav from './lib/footer_nav';
 import countries from './lib/country_lang';
 import scrollTop from './lib/scroll_top';
 import redirect from './lib/redirect';
+import modalIframe from './lib/modal_iframe';
+
 $(() => {
   redirect();
   nav();
@@ -25,6 +27,7 @@ $(() => {
   footerNav();
   homeHeader();
   scrollTop();
+  modalIframe();
   // countries();
 
   new Vue({
