@@ -21,7 +21,6 @@ export default function modalIframe() {
 
   $(document).delegate('.modal__close','click', function(e) {
     e.preventDefault();
-    console.log('click');
     let $modal = $('body').find('.modal');
     $modal.removeClass('.modal--show');
     $('body').removeClass('model-open');

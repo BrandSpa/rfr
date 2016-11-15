@@ -45323,7 +45323,6 @@
 
 	  $(document).delegate('.modal__close', 'click', function (e) {
 	    e.preventDefault();
-	    console.log('click');
 	    var $modal = $('body').find('.modal');
 	    $modal.removeClass('.modal--show');
 	    $('body').removeClass('model-open');

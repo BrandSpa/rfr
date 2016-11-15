@@ -560,7 +560,6 @@ a polygon, a path {
   height: 100%;
   position: fixed;
   z-index: 999999;
-  overflow-y: scroll;
   transition: all 300ms ease;
   top: -100%;
   opacity: 0;
