@@ -571,7 +571,8 @@ a polygon, a path {
   .modal .iframe-container {
     position: relative;
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-bottom: 56.25%; }
     .modal .iframe-container iframe {
       position: absolute;
       top: 0;
