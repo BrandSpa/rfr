@@ -88,7 +88,7 @@ export default function () {
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
       let countriesTrans = JSON.parse(JSON.stringify(this.countriesTranslation));
-
+      console.log('countries trans', countriesTrans);
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {
