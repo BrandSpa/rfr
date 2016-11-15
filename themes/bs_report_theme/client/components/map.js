@@ -87,9 +87,9 @@ export default function () {
       let mapContainer = document.querySelector('#map-container');
       let reports = JSON.parse(this.posts);
       let lang = this.lang;
-      let countriesTrans = JSON.parse(JSON.stringify(this.countriesTranslation));
-
-      console.log(JSON.parse(countriesTrans));
+      let countriesTrans = JSON.stringify(this.countriesTranslation);
+      countriesTrans = JSON.parse(countriesTrans);
+      console.log(countriesTrans);
       let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {

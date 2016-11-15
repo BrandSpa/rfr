@@ -21016,9 +21016,9 @@
 	      var mapContainer = document.querySelector('#map-container');
 	      var reports = JSON.parse(this.posts);
 	      var lang = this.lang;
-	      var countriesTrans = JSON.parse(JSON.stringify(this.countriesTranslation));
-
-	      console.log(JSON.parse(countriesTrans));
+	      var countriesTrans = JSON.stringify(this.countriesTranslation);
+	      countriesTrans = JSON.parse(countriesTrans);
+	      console.log(countriesTrans);
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
 	      }).on('zoom', function () {
