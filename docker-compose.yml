@@ -11,7 +11,7 @@ services:
     volumes:
       - /home/ec2-user/mysqldata:/var/lib/mysql
   wp:
-    image: wordpress
+    build: .
     environment:
       - WORDPRESS_DB_PASSWORD=my-secret-pw
     cpu_shares: 100
@@ -21,8 +21,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /home/ec2-user/rfr:/var/www/html/wp-content
-
+      - .:/var/www/html/wp-content
 
   # phpmyadmin:
   #   image: phpmyadmin/phpmyadmin
