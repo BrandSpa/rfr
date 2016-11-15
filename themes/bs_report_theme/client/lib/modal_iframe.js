@@ -11,7 +11,8 @@ export default function modalIframe() {
         </div>
       </div>
     `;
-
+    
+    $('body').addClass('model-open');
     $('body').append(template);
   });
 }
