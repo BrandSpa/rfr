@@ -690,6 +690,15 @@ a {
     width: 100%;
   }
 
+  &__close {
+    color: $red_orange;
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
+
   .iframe-container {
     position: relative;
     height: 0;
