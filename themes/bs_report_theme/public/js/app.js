@@ -21018,6 +21018,7 @@
 	      var lang = this.lang;
 	      var countriesTrans = JSON.stringify(this.countriesTranslation);
 	      countriesTrans = JSON.parse(countriesTrans);
+	      countriesTrans = JSON.parse(countriesTrans);
 	      console.log(countriesTrans);
 	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
 	        return d3.event.type !== 'wheel';
