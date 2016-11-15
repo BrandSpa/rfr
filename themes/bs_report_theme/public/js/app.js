@@ -43608,7 +43608,7 @@
 			"name": "Brazil",
 			"iso_code": "BR",
 			"languages": [
-				"pt"
+				"ptb"
 			]
 		},
 		{
