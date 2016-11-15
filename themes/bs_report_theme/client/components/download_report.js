@@ -80,11 +80,7 @@ export default function () {
       },
 
       handleSuccess(res) {
-        if(this.thanks) {
-          window.location = this.thanks;
-        }
-        
-        window.location = 'http://religious-freedom-report.org/thank-you-download/'; 
+        return window.location = this.thanks;
       }
     }
   });
