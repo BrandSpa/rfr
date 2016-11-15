@@ -45329,7 +45329,7 @@
 	    $('body').append(template);
 	  });
 
-	  $('.modal__close').on('click', function (e) {
+	  $(document).find('.modal__close').on('click', function (e) {
 	    e.preventDefault();
 	    var $modal = $('body').find('.modal');
 	    $modal.removeClass('.modal--show');
