@@ -45321,7 +45321,7 @@
 	    $('body').append(template);
 	  });
 
-	  $(document).find('.modal__close').on('click', function (e) {
+	  $('.modal__close').delegate('click', function (e) {
 	    e.preventDefault();
 	    console.log('click');
 	    var $modal = $('body').find('.modal');
