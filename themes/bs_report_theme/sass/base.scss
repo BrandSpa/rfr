@@ -684,6 +684,7 @@ a {
   transition: all 300ms ease;
   top: -100%;
   opacity: 0;
+  display: block;
 
   @media #{$tablet}, #{$mobile} {
     width: 100%;
@@ -691,10 +692,9 @@ a {
 
   .iframe-container {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
     height: 0;
     overflow: hidden;
+    
     iframe {
         position: absolute;
         top:0;
