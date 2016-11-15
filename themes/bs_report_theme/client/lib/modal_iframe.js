@@ -19,7 +19,7 @@ export default function modalIframe() {
     
   });
 
-  $('.modal__close').delegate('click', function(e) {
+  $(document).delegate('.modal__close','click', function(e) {
     e.preventDefault();
     console.log('click');
     let $modal = $('body').find('.modal');
