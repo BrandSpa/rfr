@@ -10,9 +10,9 @@
 
     <div class="col-md-5" style="float: none; margin: 0 auto">
 
-      <form-download-report 
+      <form-download-report
         country="<?php if(function_exists('geoip_detect2_get_info_from_current_ip')): echo geoip_detect2_get_info_from_current_ip()->country->names['en']; endif; ?>"
-        lang="<?php echo pll_current_language('slug') ?>"
+        lang="<?php if(function_exists('pll_current_language')): echo pll_current_language('slug'); endif; ?>"
         language="<?php if(function_exists('pll_current_language')): echo pll_current_language('slug'); endif; ?>"
         dir="<?php echo get_template_directory_uri() ?>"
         thanks="<?php echo gett('http://religious-freedom-report.org/thank-you-download/') ?>"
