@@ -2,7 +2,7 @@
 <subscribe-form 
   lang="<?php echo getLang() ?>" 
   country="<?php echo geoip_detect2_get_info_from_current_ip()->country->names['en'] ?>"
-  thanks="<?php echo gett('http://religious-freedom-report.org/thank-you') ?>"
+  thanks="<?php echo gett('http://religious-freedom-report.org/thank-you/') ?>"
 >
 </subscribe-form>
 
