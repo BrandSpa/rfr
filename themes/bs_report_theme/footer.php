@@ -62,9 +62,9 @@
   </script>
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
-  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+  // <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://www.promisejs.org/polyfills/promise-6.1.0.js"></script>
-   <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
+  <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 
 <?php wp_footer() ?>
