@@ -20981,10 +20981,11 @@
 	    e.preventDefault();
 	    var $submenu = (0, _jquery2.default)('.nav .menu-item-has-children > a').parent().find('.sub-menu');
 	    var $this = (0, _jquery2.default)(this).parent().find('.sub-menu');
-	    $submenu.removeClass('sub-menu--open');
+
 	    if ($this.hasClass('sub-menu--open')) {
 	      $this.removeClass('sub-menu--open');
 	    } else {
+	      $submenu.removeClass('sub-menu--open');
 	      $this.addClass('sub-menu--open');
 	    }
 	  }
