@@ -74,7 +74,7 @@ export default function() {
             valueSuffix: '%'
         },
         series: [{
-            name: ' ',
+            name: ':',
             data: seriesData,
             size: '60%',
             dataLabels: {
@@ -85,7 +85,7 @@ export default function() {
                 distance: -30
             }
         }, {
-            name: ' ',
+            name: ':',
             data: subSeriesData,
             size: '80%',
             innerSize: '60%',
