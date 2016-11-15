@@ -20979,7 +20979,9 @@
 
 	  function openSubMenu(e) {
 	    e.preventDefault();
-	    (0, _jquery2.default)('.nav .menu-item-has-children > a').parent().find('.sub-menu').removeClass('sub-menu--open');
+	    var $submenu = (0, _jquery2.default)('.nav .menu-item-has-children > a').parent().find('.sub-menu');
+	    $submenu.removeClass('sub-menu--open');
+	    if ($submenu.hasClass()) {}
 	    (0, _jquery2.default)(this).parent().find('.sub-menu').addClass('sub-menu--open');
 	  }
 	}
