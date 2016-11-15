@@ -45331,6 +45331,7 @@
 
 	  $('.modal__close').on('click', function (e) {
 	    e.preventDefault();
+	    console.log('click');
 	    var $modal = $('body').find('.modal');
 	    $modal.removeClass('.modal--show');
 	    $('body').removeClass('model-open');
