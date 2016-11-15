@@ -15,6 +15,7 @@ if( file_exists($dir_base . '/vendor/autoload.php') ) {
       "es" => "43548c4f98",
       "fr" => "1bc8958e31",
       "pt" => "b5f7376421",
+      "ptb" => "b5f7376421",
       "de" => "2593bd300f",
       "it" => "e41dae5ed7",
       "nl" => "d0860a70f5",

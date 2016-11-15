@@ -5,7 +5,6 @@ services:
       links:
        - mysql
       environment:
-        - WORDPRESS_DB_HOST=52.90.79.202
         - WORDPRESS_DB_PASSWORD=my-secret-pw
       ports:
         - "80:80"
@@ -18,7 +17,7 @@ services:
       ports:
        - "3307:3306"
       volumes:
-       - ~/mysqldata:/var/lib/mysql
+       - ~/mysqldata_rfr:/var/lib/mysql
   # phpmyadmin:
   #   image: phpmyadmin/phpmyadmin
   #   links:
