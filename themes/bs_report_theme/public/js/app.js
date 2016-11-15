@@ -38816,7 +38816,7 @@
 	exports.default = function () {
 	  _vue2.default.component('form-download-report', {
 	    template: '#form-download-template',
-	    props: ['country', 'lang', 'language', 'dir'],
+	    props: ['country', 'lang', 'language', 'dir', 'thanks'],
 	    data: function data() {
 	      return initialState;
 	    },
@@ -43108,7 +43108,7 @@
 	exports.default = function () {
 	  _vue2.default.component('subscribe-form', {
 	    template: "#subscribe-form-template",
-	    props: ['country', 'lang'],
+	    props: ['country', 'lang', 'thanks'],
 	    data: function data() {
 	      return initialState;
 	    },
@@ -45329,7 +45329,7 @@
 	    $('body').append(template);
 	  });
 
-	  $('.modal__close').on('click', function (e) {
+	  $(document).find('.modal__close').on('click', function (e) {
 	    e.preventDefault();
 	    console.log('click');
 	    var $modal = $('body').find('.modal');

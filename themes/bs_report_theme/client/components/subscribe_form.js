@@ -17,7 +17,7 @@ let initialState = {
 export default function() {
   Vue.component('subscribe-form', {
     template: "#subscribe-form-template",
-    props: ['country', 'lang'],
+    props: ['country', 'lang', 'thanks'],
     data() {
       return initialState;
     },
