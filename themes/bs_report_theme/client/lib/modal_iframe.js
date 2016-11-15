@@ -4,6 +4,7 @@ export default function modalIframe() {
   $('.open-modal-iframe').on('click', function(e) {
     e.preventDefault();
     let url = $(this).attr('href');
+
     let template = `
       <div class="modal modal--show">
         <a href="#" class="modal__close" v-on:click="close"><i class="ion-close"></i></a>
@@ -15,5 +16,14 @@ export default function modalIframe() {
     
     $('body').addClass('model-open');
     $('body').append(template);
+    
+  });
+
+  $('.modal__close').on('click', function(e) {
+    e.preventDefault();
+    let $modal = $('body').find('.modal');
+    $modal.removeClass('.modal--show');
+    $('body').removeClass('model-open');
+    $modal.remove();
   });
 }

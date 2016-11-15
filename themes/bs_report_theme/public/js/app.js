@@ -45322,10 +45322,19 @@
 	  $('.open-modal-iframe').on('click', function (e) {
 	    e.preventDefault();
 	    var url = $(this).attr('href');
+
 	    var template = '\n      <div class="modal modal--show">\n        <a href="#" class="modal__close" v-on:click="close"><i class="ion-close"></i></a>\n        <div class="iframe-container">\n          <iframe src="' + url + '" frameborder="0" height="315" width="100%" allowfullscreen=""></iframe>\n        </div>\n      </div>\n    ';
 
 	    $('body').addClass('model-open');
 	    $('body').append(template);
+	  });
+
+	  $('.modal__close').on('click', function (e) {
+	    e.preventDefault();
+	    var $modal = $('body').find('.modal');
+	    $modal.removeClass('.modal--show');
+	    $('body').removeClass('model-open');
+	    $modal.remove();
 	  });
 	}
 
