@@ -14,7 +14,9 @@ if(!empty($url)) {
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta content="IE=edge" http-equiv=X-UA-Compatible> 
     <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <meta property="og:image" content="<?php echo the_post_thumbnail_url( 'large' ) ?>" />
+    <meta property="og:image" content="<?php echo the_post_thumbnail_url( 'full' ) ?>" />
+    <meta property="og:title" content="RELIGIOUS FREEDOM REPORT - <?php wp_title(); ?>" />
+    
     <title>RELIGIOUS FREEDOM REPORT - <?php wp_title(); ?></title>
     <?php wp_head(); ?>
 
