@@ -34,7 +34,7 @@ function bs_slider_sc($atts, $content = null) {
 <script>
   $(function() {
     slider({
-      sliderId: <?php echo $id?>, 
+      sliderId: '<?php echo $id?>', 
       itemWidth: <?php echo $at['image_width'] ?>,
       itemMargin: <?php echo $at['item_margin'] ?>,
       controlNav: <?php echo $at['control_nav'] ?>
