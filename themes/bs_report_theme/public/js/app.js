@@ -45358,7 +45358,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function slider() {
+	window.slider = function () {
 		var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 		var sliderId = params.sliderId;
 		var imageWidth = params.imageWidth;
@@ -45376,9 +45376,9 @@
 				controlNav: controlNav
 			});
 		});
-	}
+	};
 
-	exports.default = window.slider;
+	exports.default = slider;
 
 /***/ }
 /******/ ]);
