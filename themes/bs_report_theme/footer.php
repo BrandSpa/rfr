@@ -56,11 +56,11 @@
 
 </div>
  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.16.0/polyfill.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
-   <script>
+   <script type="text/babel">
     var bs = {};
     bs['geo'] = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()); ?>));
     bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
