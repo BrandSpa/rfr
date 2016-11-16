@@ -45342,15 +45342,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-
-	var _vue = __webpack_require__(5);
-
-	var _vue2 = _interopRequireDefault(_vue);
 
 	var _jquery = __webpack_require__(1);
 

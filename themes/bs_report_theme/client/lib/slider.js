@@ -1,6 +1,4 @@
 'use strict';
-'use strict';
-import Vue from 'vue';
 import $ from 'jquery';
 
 window.slider = function(params = {}) {

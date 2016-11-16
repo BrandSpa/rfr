@@ -55,17 +55,34 @@
   </div>
 
 </div>
-  <script>
-    var bs = {};
-    bs['geo'] = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()); ?>));
-    bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
-  </script>
-
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.1/es6-shim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   // <script src="http://code.highcharts.com/modules/exporting.js"></script>
-  <script src="https://www.promisejs.org/polyfills/promise-6.1.0.js"></script>
   <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
+   <script>
+    var bs = {};
+    bs['geo'] = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()); ?>));
+    bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
+    bs.slider = function(params = {}) {
+      const {sliderId, imageWidth, itemMargin, controlNav} = params;
+      
+      $(() => {
+        $(`#${sliderId}`).flexslider({
+          animation: "slide",
+          animationLoop: true,
+          smoothHeight: true,
+          imageWidth,
+          itemMargin,
+          controlNav
+        });
+	  });
+
+  }
+
+  </script>
+
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 
 <?php wp_footer() ?>
