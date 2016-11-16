@@ -60,12 +60,16 @@
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
-   <script type="text/babel">
+   <script>
     var bs = {};
     bs['geo'] = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()); ?>));
     bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
     bs.slider = function(params = {}) {
-      const {sliderId, imageWidth, itemMargin, controlNav} = params;
+  </script>
+
+	<script type="text/babel">
+		    
+		const {sliderId, imageWidth, itemMargin, controlNav} = params;
       
       $(() => {
         $(`#${sliderId}`).flexslider({
@@ -80,7 +84,7 @@
 
   }
 
-  </script>
+	</script>
 
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 
