@@ -106,6 +106,10 @@
 
 	var _modal_iframe2 = _interopRequireDefault(_modal_iframe);
 
+	var _slider = __webpack_require__(115);
+
+	var _slider2 = _interopRequireDefault(_slider);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
@@ -45331,6 +45335,48 @@
 	    $('body').removeClass('model-open');
 	    $modal.remove();
 	  });
+	}
+
+/***/ },
+/* 115 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = slider;
+
+	var _vue = __webpack_require__(5);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function slider() {
+		var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+		var sliderId = params.sliderId;
+		var imageWidth = params.imageWidth;
+		var itemMargin = params.itemMargin;
+		var controlNav = params.controlNav;
+
+
+		(0, _jquery2.default)(function () {
+			(0, _jquery2.default)('#' + sliderId).flexslider({
+				animation: "slide",
+				animationLoop: true,
+				smoothHeight: true,
+				imageWidth: imageWidth,
+				itemMargin: itemMargin,
+				controlNav: controlNav
+			});
+		});
 	}
 
 /***/ }

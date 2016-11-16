@@ -14,6 +14,7 @@ import countries from './lib/country_lang';
 import scrollTop from './lib/scroll_top';
 import redirect from './lib/redirect';
 import modalIframe from './lib/modal_iframe';
+import slider from './lib/slider';
 
 $(() => {
   redirect();

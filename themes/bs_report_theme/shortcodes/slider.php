@@ -30,15 +30,11 @@ function bs_slider_sc($atts, $content = null) {
   </ul>
 </div>
 <?php endif; ?>
+
 <script>
   (function() {
     var $ = jQuery;
-    $('#<?php echo $id?>').flexslider({
-      animation: "slide",
-      animationLoop: true,
-      itemWidth: <?php echo $at['image_width'] ?>,
-      itemMargin: 5
-    });
+
 
   })();
 </script>
