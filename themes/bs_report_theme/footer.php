@@ -56,7 +56,6 @@
 
 </div>
  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
@@ -66,25 +65,7 @@
     bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
     
   </script>
-
-	<script type="text/babel">
-		bs.slider = function(params = {}) {
-		const {sliderId, imageWidth, itemMargin, controlNav} = params;
-      
-      $(() => {
-        $(`#${sliderId}`).flexslider({
-          animation: "slide",
-          animationLoop: true,
-          smoothHeight: true,
-          imageWidth,
-          itemMargin,
-          controlNav
-        });
-	  });
-
-	}
-	</script>
-
+	
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 
 <?php wp_footer() ?>

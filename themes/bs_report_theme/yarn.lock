@@ -3179,7 +3179,7 @@ Promise:
   dependencies:
     babel-cli "^6.14.0"
 
-promise@^7.1.1:
+promise:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-7.1.1.tgz#489654c692616b8aa55b0724fa809bb7db49c5bf"
   dependencies:
