@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K7HJH5');</script>
 <!-- End Google Tag Manager -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 </head>
 
 <!-- Google Tag Manager (noscript) -->
