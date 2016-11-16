@@ -32,7 +32,7 @@ function bs_slider_sc($atts, $content = null) {
 <?php endif; ?>
 <script>
   (function() {
-
+    var $ = jQuery;
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: true,
