@@ -7,6 +7,7 @@ function bs_slider_sc($atts, $content = null) {
       "links" => "",
       "interval" => "8000",
       "image_width" => '200',
+      "item_margin" => 5,
       "control_nav" => 1
     ), $atts );
 
@@ -34,7 +35,6 @@ function bs_slider_sc($atts, $content = null) {
 
 <script>
   $(function() {
-
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
       animationLoop: true,
@@ -43,7 +43,6 @@ function bs_slider_sc($atts, $content = null) {
       itemMargin: <?php echo $at['item_margin'] ?>,
       controlNav: <?php echo $at['control_nav'] ?>
     });
-
   });
 </script>
 
