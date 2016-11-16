@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import $ from 'jquery';
 
-export default function slider(params = {}) {
+function slider(params = {}) {
 	const {sliderId, imageWidth, itemMargin, controlNav} = params;
 	
 	$(() => {
@@ -18,3 +18,5 @@ export default function slider(params = {}) {
 	});
 
 }
+
+export default window.slider;

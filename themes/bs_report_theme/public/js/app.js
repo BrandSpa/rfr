@@ -45347,7 +45347,6 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.default = slider;
 
 	var _vue = __webpack_require__(5);
 
@@ -45378,6 +45377,8 @@
 			});
 		});
 	}
+
+	exports.default = window.slider;
 
 /***/ }
 /******/ ]);
