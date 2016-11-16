@@ -32,11 +32,14 @@ function bs_slider_sc($atts, $content = null) {
 <?php endif; ?>
 
 <script>
-  (function() {
-    var $ = jQuery;
-
-
-  })();
+  $(function() {
+    slider({
+      sliderId: <?php echo $id?>, 
+      itemWidth: <?php echo $at['image_width'] ?>,
+      itemMargin: <?php echo $at['item_margin'] ?>,
+      controlNav: <?php echo $at['control_nav'] ?>
+    });
+  });
 </script>
 
 <?php
