@@ -6,7 +6,9 @@ function bs_slider_sc($atts, $content = null) {
       "images" => "",
       "links" => "",
       "interval" => "8000",
-      "image_width" => '200'
+      "image_width" => '200',
+      "item_margin" => '5',
+      "control_nav" => 1
     ), $atts );
 
   $imagesArr = explode(',', $at['images']);
