@@ -65,7 +65,7 @@
     bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
     
   </script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.1/es6-shim.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 
 <?php wp_footer() ?>
