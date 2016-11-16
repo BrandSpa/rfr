@@ -6,7 +6,6 @@ if(!empty($url)) {
   header ("Location:" . $url);
   exit;
 }
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>
@@ -16,7 +15,7 @@ if(!empty($url)) {
     <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta property="og:image" content="<?php echo the_post_thumbnail_url( 'full' ) ?>" />
     <meta property="og:title" content="RELIGIOUS FREEDOM REPORT - <?php wp_title(); ?>" />
-    
+
     <title>RELIGIOUS FREEDOM REPORT - <?php wp_title(); ?></title>
     <?php wp_head(); ?>
 
