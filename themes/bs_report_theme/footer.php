@@ -61,6 +61,7 @@
     bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   // <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://www.promisejs.org/polyfills/promise-6.1.0.js"></script>
