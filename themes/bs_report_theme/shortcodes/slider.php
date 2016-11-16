@@ -31,7 +31,7 @@ function bs_slider_sc($atts, $content = null) {
 </div>
 <?php endif; ?>
 <script>
-  $(function() {
+  (function() {
 
     $('#<?php echo $id?>').flexslider({
       animation: "slide",
@@ -40,7 +40,7 @@ function bs_slider_sc($atts, $content = null) {
       itemMargin: 5
     });
 
-  });
+  })();
 </script>
 
 <?php
