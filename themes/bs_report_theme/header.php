@@ -14,6 +14,7 @@ if(!empty($url)) {
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta content="IE=edge" http-equiv=X-UA-Compatible> 
     <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="<?php echo the_post_thumbnail_url( 'large' ) ?>" />
     <title>RELIGIOUS FREEDOM REPORT - <?php wp_title(); ?></title>
     <?php wp_head(); ?>
 
@@ -23,6 +24,7 @@ if(!empty($url)) {
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/public/css/main.css" media="screen" title="no title">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
   <!-- Google Tag Manager -->
