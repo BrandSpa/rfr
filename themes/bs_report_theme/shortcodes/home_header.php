@@ -76,7 +76,6 @@ function bs_home_header_sc($atts, $content = null) {
   </div>
 </div>
 
-
 <?php
 
   return ob_get_clean();

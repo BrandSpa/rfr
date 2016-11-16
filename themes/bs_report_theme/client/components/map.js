@@ -3,6 +3,7 @@ import Vue from 'vue';
 import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
 import $ from 'jquery';
+import Promise from 'promise';
 import MobileDetect from 'mobile-detect';
 const md = new MobileDetect(window.navigator.userAgent);
 
