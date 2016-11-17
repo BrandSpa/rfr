@@ -66,28 +66,8 @@
     
   </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.1/es6-shim.js"></script>
+  <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 
-  <script type="text/javascript">
-
-    deferScript("<?php echo get_template_directory_uri() . '/public/js/app.js' ?>");
-
-    function deferScript(src) {
-      function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = src;
-      document.body.appendChild(element);
-    }
-
-      if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
-      else if (window.attachEvent) {
-        window.attachEvent("onload", downloadJSAtOnload);
-      } else {
-        window.onload = downloadJSAtOnload;
-      } 
-    }
-
-    </script>
 
 <?php wp_footer() ?>
 
