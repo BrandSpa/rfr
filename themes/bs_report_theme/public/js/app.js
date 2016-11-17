@@ -46199,7 +46199,7 @@
 	    return country.name.toLowerCase() == bs.geo.country.names.en.toLowerCase();
 	  });
 	  var lang = country[0].languages[0];
-	  var url = bs.langs[lang].url;
+	  var url = bs.langs[lang] ? bs.langs[lang].url : null;
 	  window.localStorage.setItem('bs-lang', lang);
 	  var storageLang = window.localStorage.getItem('bs-lang');
 	  var redirect = window.localStorage.getItem('bs-redirect') ? true : false;
