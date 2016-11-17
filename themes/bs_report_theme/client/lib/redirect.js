@@ -12,6 +12,4 @@ export default function redirect() {
     window.localStorage.setItem('bs-redirect', true);
     window.location = url;
   }
-
-  console.log(lang, url);
 }
