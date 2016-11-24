@@ -90,7 +90,7 @@ export default function () {
     },
 
     ready() {
-      let mapContainer = document.querySelector('#map-container');
+      
       let data = {lang: this.reportLang};
       let reports = [];
 
@@ -98,18 +98,22 @@ export default function () {
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', data}
-      }).done(res => this.$set('posts', res));
-      
-      reports = this.posts;
+      }).done(res => {
+        this.$set('posts', res);
+        this.setMap(res);
+    });
 
-      console.log('reports', reports);
-      
+    },
+
+    methods: {
+      setMap(reports) {
+      let mapContainer = document.querySelector('#map-container');
       let lang = this.lang;
       let countriesTrans = JSON.stringify(this.countriesTranslation);
       countriesTrans = JSON.parse(countriesTrans);
       countriesTrans = JSON.parse(countriesTrans);
-
-      let zoomed = d3.zoom()
+      console.log(reports);
+        let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {
         return d3.event.type !== 'wheel';
@@ -213,9 +217,8 @@ export default function () {
         });
         
       })
-    },
+      },
 
-    methods: {
       showSearch(e) {
         e.preventDefault();
         $('.map__search').addClass('map__search--show');

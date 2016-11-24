@@ -11490,7 +11490,6 @@
 	    ready: function ready() {
 	      var _this = this;
 
-	      var mapContainer = document.querySelector('#map-container');
 	      var data = { lang: this.reportLang };
 	      var reports = [];
 
@@ -11499,132 +11498,131 @@
 	        url: '/wp-admin/admin-ajax.php',
 	        data: { action: 'reports', data: data }
 	      }).done(function (res) {
-	        return _this.$set('posts', res);
-	      });
-
-	      reports = this.posts;
-
-	      console.log('reports', reports);
-
-	      var lang = this.lang;
-	      var countriesTrans = JSON.stringify(this.countriesTranslation);
-	      countriesTrans = JSON.parse(countriesTrans);
-	      countriesTrans = JSON.parse(countriesTrans);
-
-	      var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
-	        return d3.event.type !== 'wheel';
-	      }).on('zoom', function () {
-
-	        var transform = d3.event.transform;
-
-	        d3.select('.map__controllers').classed('map__controllers--show', true);
-	        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale(" + transform.k + ") ");
-	      });
-
-	      var map = appendMap(this.mapUrl, mapContainer);
-
-	      map.then(function () {
-	        var polygons = d3.select(mapContainer).selectAll("polygon");
-	        var paths = d3.select(mapContainer).selectAll("path");
-
-	        d3.select("#map-container svg").call(zoomed);
-
-	        paths.each(function () {
-	          var $el = d3.select(this);
-	          var countryName = $el.attr("id").replace(/-/g, ' ');
-	          var report = getReport(function (report) {
-	            return report.meta_country == countryName;
-	          })(reports);
-	          if (report && report.meta_nature_persecution) {
-	            var fill = colors[report.meta_nature_persecution];
-	            $el.style("fill", fill);
-	          }
-	        });
-
-	        polygons.each(function () {
-	          var $el = d3.select(this);
-	          var countryName = $el.attr("id").replace(/-/g, ' ');
-	          var report = getReport(function (report) {
-	            return report.meta_country == countryName;
-	          })(reports);
-	          if (report && report.meta_nature_persecution) {
-	            var fill = colors[report.meta_nature_persecution];
-	            $el.style("fill", fill);
-	          }
-	        });
-
-	        paths.on('mousemove', function (e) {
-	          var $el = d3.select(this);
-	          var countryName = $el.attr("id").replace(/-/g, ' ');
-	          var report = getReport(function (report) {
-	            return report.meta_country == countryName;
-	          })(reports);
-	          if (report && report.meta_nature_persecution) {
-	            var fill = colors[report.meta_nature_persecution];
-	            $el.style("cursor", "pointer");
-	            $el.style("fill", fill);
-	            var name = countriesTrans[countryName];
-	            console.log('name', name);
-	            showMapInfo($el, report, fill, name);
-	          }
-	        });
-
-	        paths.on('click', function () {
-	          var $el = d3.select(this);
-	          var countryName = $el.attr("id").replace(/-/g, ' ');
-	          var report = getReport(function (report) {
-	            return report.meta_country == countryName;
-	          })(reports);
-	          if (report && report.guid) {
-	            window.location = report.guid;
-	          }
-	        });
-
-	        polygons.on('click', function () {
-	          var $el = d3.select(this);
-	          var countryName = $el.attr("id").replace(/-/g, ' ');
-	          var report = getReport(function (report) {
-	            return report.meta_country == countryName;
-	          })(reports);
-	          if (report && report.guid) {
-	            window.location = report.guid;
-	          }
-	        });
-
-	        polygons.on('mousemove', function (e) {
-	          var $el = d3.select(this);
-	          var countryName = $el.attr("id").replace(/-/g, ' ');
-	          var report = getReport(function (report) {
-	            return report.meta_country == countryName;
-	          })(reports);
-	          if (report && report.meta_nature_persecution) {
-	            var fill = colors[report.meta_nature_persecution];
-	            $el.style("cursor", "pointer");
-	            $el.style("fill", fill);
-	            var name = countriesTrans[countryName];
-	            console.log('name', name);
-	            showMapInfo($el, report, fill, name);
-	          }
-	        });
-
-	        var windowH = void 0;
-	        //set map height
-	        if (md.phone() == null) {
-	          windowH = window.innerHeight;
-	        } else {
-	          windowH = window.innerHeight / 2;
-	        }
-
-	        d3.select("#map-container svg").attr('height', windowH);
-
-	        d3.select('.map__controllers__more').on('click', function () {
-	          d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
-	        });
+	        _this.$set('posts', res);
+	        _this.setMap(res);
 	      });
 	    },
 
 
 	    methods: {
+	      setMap: function setMap(reports) {
+	        var mapContainer = document.querySelector('#map-container');
+	        var lang = this.lang;
+	        var countriesTrans = JSON.stringify(this.countriesTranslation);
+	        countriesTrans = JSON.parse(countriesTrans);
+	        countriesTrans = JSON.parse(countriesTrans);
+	        console.log(reports);
+	        var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
+	          return d3.event.type !== 'wheel';
+	        }).on('zoom', function () {
+
+	          var transform = d3.event.transform;
+
+	          d3.select('.map__controllers').classed('map__controllers--show', true);
+	          d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale(" + transform.k + ") ");
+	        });
+
+	        var map = appendMap(this.mapUrl, mapContainer);
+
+	        map.then(function () {
+	          var polygons = d3.select(mapContainer).selectAll("polygon");
+	          var paths = d3.select(mapContainer).selectAll("path");
+
+	          d3.select("#map-container svg").call(zoomed);
+
+	          paths.each(function () {
+	            var $el = d3.select(this);
+	            var countryName = $el.attr("id").replace(/-/g, ' ');
+	            var report = getReport(function (report) {
+	              return report.meta_country == countryName;
+	            })(reports);
+	            if (report && report.meta_nature_persecution) {
+	              var fill = colors[report.meta_nature_persecution];
+	              $el.style("fill", fill);
+	            }
+	          });
+
+	          polygons.each(function () {
+	            var $el = d3.select(this);
+	            var countryName = $el.attr("id").replace(/-/g, ' ');
+	            var report = getReport(function (report) {
+	              return report.meta_country == countryName;
+	            })(reports);
+	            if (report && report.meta_nature_persecution) {
+	              var fill = colors[report.meta_nature_persecution];
+	              $el.style("fill", fill);
+	            }
+	          });
+
+	          paths.on('mousemove', function (e) {
+	            var $el = d3.select(this);
+	            var countryName = $el.attr("id").replace(/-/g, ' ');
+	            var report = getReport(function (report) {
+	              return report.meta_country == countryName;
+	            })(reports);
+	            if (report && report.meta_nature_persecution) {
+	              var fill = colors[report.meta_nature_persecution];
+	              $el.style("cursor", "pointer");
+	              $el.style("fill", fill);
+	              var name = countriesTrans[countryName];
+	              console.log('name', name);
+	              showMapInfo($el, report, fill, name);
+	            }
+	          });
+
+	          paths.on('click', function () {
+	            var $el = d3.select(this);
+	            var countryName = $el.attr("id").replace(/-/g, ' ');
+	            var report = getReport(function (report) {
+	              return report.meta_country == countryName;
+	            })(reports);
+	            if (report && report.guid) {
+	              window.location = report.guid;
+	            }
+	          });
+
+	          polygons.on('click', function () {
+	            var $el = d3.select(this);
+	            var countryName = $el.attr("id").replace(/-/g, ' ');
+	            var report = getReport(function (report) {
+	              return report.meta_country == countryName;
+	            })(reports);
+	            if (report && report.guid) {
+	              window.location = report.guid;
+	            }
+	          });
+
+	          polygons.on('mousemove', function (e) {
+	            var $el = d3.select(this);
+	            var countryName = $el.attr("id").replace(/-/g, ' ');
+	            var report = getReport(function (report) {
+	              return report.meta_country == countryName;
+	            })(reports);
+	            if (report && report.meta_nature_persecution) {
+	              var fill = colors[report.meta_nature_persecution];
+	              $el.style("cursor", "pointer");
+	              $el.style("fill", fill);
+	              var name = countriesTrans[countryName];
+	              console.log('name', name);
+	              showMapInfo($el, report, fill, name);
+	            }
+	          });
+
+	          var windowH = void 0;
+	          //set map height
+	          if (md.phone() == null) {
+	            windowH = window.innerHeight;
+	          } else {
+	            windowH = window.innerHeight / 2;
+	          }
+
+	          d3.select("#map-container svg").attr('height', windowH);
+
+	          d3.select('.map__controllers__more').on('click', function () {
+	            d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
+	          });
+	        });
+	      },
 	      showSearch: function showSearch(e) {
 	        e.preventDefault();
 	        (0, _jquery2.default)('.map__search').addClass('map__search--show');
