@@ -75,7 +75,6 @@ export default function () {
   Vue.component('map', {
     template: '#map-template',
     props: [
-      'posts', 
       'countriesTranslation', 
       'mapUrl',
       'lang',
@@ -83,11 +82,18 @@ export default function () {
       'langTrans',
       'reportLang'
     ],
+    
+    data() {
+      return {
+        posts: []
+      }
+    },
 
     ready() {
       let mapContainer = document.querySelector('#map-container');
       let data = {lang: this.reportLang};
       let reports = [];
+
        $.ajax({
         type: 'post',
         url: '/wp-admin/admin-ajax.php',

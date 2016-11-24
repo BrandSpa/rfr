@@ -11480,14 +11480,20 @@
 
 	  Vue.component('map', {
 	    template: '#map-template',
-	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang', 'url', 'langTrans', 'reportLang'],
+	    props: ['countriesTranslation', 'mapUrl', 'lang', 'url', 'langTrans', 'reportLang'],
 
+	    data: function data() {
+	      return {
+	        posts: []
+	      };
+	    },
 	    ready: function ready() {
 	      var _this = this;
 
 	      var mapContainer = document.querySelector('#map-container');
 	      var data = { lang: this.reportLang };
 	      var reports = [];
+
 	      _jquery2.default.ajax({
 	        type: 'post',
 	        url: '/wp-admin/admin-ajax.php',
