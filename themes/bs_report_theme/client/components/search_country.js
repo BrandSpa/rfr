@@ -24,7 +24,7 @@ export default function() {
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', data}
-      }).done(res => console.log(res));
+      }).done(res => this.reports = res);
       
       this.items = JSON.parse(this.reports);
       console.log('phone', md.phone());

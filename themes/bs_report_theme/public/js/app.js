@@ -29079,6 +29079,8 @@
 	      };
 	    },
 	    ready: function ready() {
+	      var _this = this;
+
 	      var data = { lang: this.reportLang };
 	      console.log(data);
 
@@ -29087,7 +29089,7 @@
 	        url: '/wp-admin/admin-ajax.php',
 	        data: { action: 'reports', data: data }
 	      }).done(function (res) {
-	        return console.log(res);
+	        return _this.reports = res;
 	      });
 
 	      this.items = JSON.parse(this.reports);
