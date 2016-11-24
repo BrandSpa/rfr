@@ -99,9 +99,9 @@ export default function () {
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', data}
       }).done(res => {
-        this.$set('posts', res);
-        this.setMap(res);
-    });
+          this.$set('posts', res);
+          this.setMap(res);
+      });
 
     },
 
@@ -112,8 +112,9 @@ export default function () {
       let countriesTrans = JSON.stringify(this.countriesTranslation);
       countriesTrans = JSON.parse(countriesTrans);
       countriesTrans = JSON.parse(countriesTrans);
-      console.log(reports);
-        let zoomed = d3.zoom()
+
+
+      let zoomed = d3.zoom()
       .scaleExtent([1, 5])
       .filter(function() {
         return d3.event.type !== 'wheel';

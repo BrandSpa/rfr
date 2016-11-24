@@ -3,6 +3,8 @@ $dir_base =  str_replace('apis', '', __DIR__);
 include_once 'mailchimp.php';
 include_once 'stripe.php';
 include_once $dir_base . '/lib/get_reports.php';
+include_once $dir_base . '/lib/translate_list.php';
+include_once $dir_base . '/lib/countries.php';
 
 add_action( 'wp_ajax_nopriv_mailchimp_subscribe', 'mailchimp_subscribe' );
 add_action( 'wp_ajax_mailchimp_subscribe', 'mailchimp_subscribe' );
@@ -46,6 +48,17 @@ add_action( 'wp_ajax_reports', 'reports' );
 function reports() {
   $data = $_POST['data'];
   $res = getReports($data);
+  header('Content-type: application/json');
+  echo json_encode($res);
+  die();
+}
+
+add_action( 'wp_ajax_nopriv_countries_translations', 'countries_translations' );
+add_action( 'wp_ajax_countries_translations', 'countries_translations' );
+
+function countries_translations() {
+  $data = $_POST['data'];
+  $res = array_combine( getCountries(), trans_list(getCountries()) );
   header('Content-type: application/json');
   echo json_encode($res);
   die();
