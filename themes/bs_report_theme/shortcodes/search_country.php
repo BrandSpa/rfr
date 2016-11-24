@@ -81,8 +81,8 @@
 
 </script>
 
-<search-country 
+<search-country
   dir="<?php echo get_template_directory_uri(); ?>"
-  report-lang="<?php echo $getReportLang ?>"
+  report-lang=<?php echo $getReportLang; ?>
 >
 </search-country>

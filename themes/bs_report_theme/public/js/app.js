@@ -29079,7 +29079,7 @@
 	      };
 	    },
 	    init: function init() {
-	      var data = { lang: this.reportLang };
+	      var data = { lang: this };
 	      console.log(data);
 
 	      _jquery2.default.ajax({

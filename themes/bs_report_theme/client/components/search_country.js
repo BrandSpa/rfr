@@ -17,9 +17,9 @@ export default function() {
     },
 
     init() {
-      let data = {lang: this.reportLang};
+      let data = {lang: this};
       console.log(data);
-      
+
       $.ajax({
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
