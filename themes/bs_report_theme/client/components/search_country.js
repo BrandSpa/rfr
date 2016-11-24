@@ -21,7 +21,7 @@ export default function() {
 
       $.ajax({
         type: 'post',
-        url: '',
+        url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', data}
       }).done(res => console.log(res));
     },

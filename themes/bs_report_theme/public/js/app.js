@@ -29083,7 +29083,7 @@
 
 	      _jquery2.default.ajax({
 	        type: 'post',
-	        url: '',
+	        url: '/wp-admin/admin-ajax.php',
 	        data: { action: 'reports', data: data }
 	      }).done(function (res) {
 	        return console.log(res);
