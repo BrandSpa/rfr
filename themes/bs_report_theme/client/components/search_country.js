@@ -18,8 +18,7 @@ export default function() {
     },
 
     ready() {
-         let data = {lang: this.reportLang};
-      console.log(data);
+      let data = {lang: this.reportLang};
 
       $.ajax({
         type: 'post',

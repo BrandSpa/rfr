@@ -86,6 +86,7 @@ export default function () {
 
     ready() {
       let mapContainer = document.querySelector('#map-container');
+      let data = {lang: this.reportLang};
       let reports = [];
        $.ajax({
         type: 'post',

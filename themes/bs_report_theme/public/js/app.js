@@ -11486,6 +11486,7 @@
 	      var _this = this;
 
 	      var mapContainer = document.querySelector('#map-container');
+	      var data = { lang: this.reportLang };
 	      var reports = [];
 	      _jquery2.default.ajax({
 	        type: 'post',
@@ -29095,7 +29096,6 @@
 	      var _this = this;
 
 	      var data = { lang: this.reportLang };
-	      console.log(data);
 
 	      _jquery2.default.ajax({
 	        type: 'post',
