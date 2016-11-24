@@ -6,7 +6,7 @@ const md = new MobileDetect(window.navigator.userAgent);
 export default function() {
   Vue.component('search-country', {
     template: '#search-country-template',
-    props: ['reports', 'dir'],
+    props: ['dir', 'reportLang'],
 
     data() {
       return {
@@ -14,6 +14,16 @@ export default function() {
         items: [],
         current: 0,
       }
+    },
+
+    init() {
+      let data = {lang: this.reportLang};
+
+      $.ajax({
+        type: 'post',
+        url: '',
+        data: {action: 'reports', data}
+      }).done(res => console.log(res));
     },
 
     ready() {

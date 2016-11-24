@@ -29069,7 +29069,7 @@
 	exports.default = function () {
 	  Vue.component('search-country', {
 	    template: '#search-country-template',
-	    props: ['reports', 'dir'],
+	    props: ['dir', 'reportLang'],
 
 	    data: function data() {
 	      return {
@@ -29077,6 +29077,17 @@
 	        items: [],
 	        current: 0
 	      };
+	    },
+	    init: function init() {
+	      var data = { lang: this.reportLang };
+
+	      _jquery2.default.ajax({
+	        type: 'post',
+	        url: '',
+	        data: { action: 'reports', data: data }
+	      }).done(function (res) {
+	        return console.log(res);
+	      });
 	    },
 	    ready: function ready() {
 	      this.items = JSON.parse(this.reports);

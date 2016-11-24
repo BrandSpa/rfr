@@ -1,6 +1,8 @@
 <?php
+$dir_base =  str_replace('apis', '', __DIR__);
 include_once 'mailchimp.php';
 include_once 'stripe.php';
+include_once $dir_base . '/lib/get_reports.php';
 
 add_action( 'wp_ajax_nopriv_mailchimp_subscribe', 'mailchimp_subscribe' );
 add_action( 'wp_ajax_mailchimp_subscribe', 'mailchimp_subscribe' );
@@ -35,5 +37,16 @@ function stripe_charge() {
   $res = stripe_monthly($apiKey, $data);
   header('Content-type: application/json');
   echo json_encode($res);
+  die();
+}
+
+add_action( 'wp_ajax_nopriv_reports', 'reports' );
+add_action( 'wp_ajax_reports', 'reports' );
+
+function reports() {
+  $data = $_POST['data'];
+  $res = get_reports();
+  header('Content-type: application/json');
+  echo json_encode($data);
   die();
 }

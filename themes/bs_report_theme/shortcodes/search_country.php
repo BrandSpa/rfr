@@ -82,6 +82,7 @@
 </script>
 
 <search-country 
-  dir="<?php echo get_template_directory_uri(); ?>" 
-  reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'>
+  dir="<?php echo get_template_directory_uri(); ?>"
+  report-lang="<?php echo $getReportLang ?>"
+>
 </search-country>
