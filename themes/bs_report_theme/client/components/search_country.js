@@ -17,7 +17,7 @@ export default function() {
     },
 
     init() {
-      let data = {lang: this};
+      let data = {lang: this.reportLang};
       console.log(data);
 
       $.ajax({
