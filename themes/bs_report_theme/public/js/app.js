@@ -11480,11 +11480,23 @@
 
 	  Vue.component('map', {
 	    template: '#map-template',
-	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang', 'url', 'langTrans'],
+	    props: ['posts', 'countriesTranslation', 'mapUrl', 'lang', 'url', 'langTrans', 'reportLang'],
 
 	    ready: function ready() {
+	      var _this = this;
+
 	      var mapContainer = document.querySelector('#map-container');
-	      var reports = JSON.parse(this.posts);
+	      var reports = [];
+	      _jquery2.default.ajax({
+	        type: 'post',
+	        url: '/wp-admin/admin-ajax.php',
+	        data: { action: 'reports', data: data }
+	      }).done(function (res) {
+	        return _this.$set('posts', res);
+	      });
+
+	      reports = this.posts;
+
 	      var lang = this.lang;
 	      var countriesTrans = JSON.stringify(this.countriesTranslation);
 	      countriesTrans = JSON.parse(countriesTrans);

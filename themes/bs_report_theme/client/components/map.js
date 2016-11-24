@@ -80,12 +80,21 @@ export default function () {
       'mapUrl',
       'lang',
       'url',
-      'langTrans'
+      'langTrans',
+      'reportLang'
     ],
 
     ready() {
       let mapContainer = document.querySelector('#map-container');
-      let reports = JSON.parse(this.posts);
+      let reports = [];
+       $.ajax({
+        type: 'post',
+        url: '/wp-admin/admin-ajax.php',
+        data: {action: 'reports', data}
+      }).done(res => this.$set('posts', res));
+      
+      reports = this.posts;
+      
       let lang = this.lang;
       let countriesTrans = JSON.stringify(this.countriesTranslation);
       countriesTrans = JSON.parse(countriesTrans);

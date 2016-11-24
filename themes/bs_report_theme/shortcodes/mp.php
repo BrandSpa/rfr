@@ -7,7 +7,7 @@
 <?php include('search_list.php') ?>
 
 <map
-  posts='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>' 
+  report-lang=<?php echo $getReportLang ?> 
   countries-translation='<?php echo json_encode( array_combine( getCountries(), trans_list(getCountries()) ) ) ?>'
   map-url='<?php echo $map_svg_url ?>'
   url='<?php echo get_template_directory_uri() ?>'
