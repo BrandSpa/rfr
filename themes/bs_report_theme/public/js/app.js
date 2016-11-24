@@ -29092,7 +29092,7 @@
 	        return _this.reports = res;
 	      });
 
-	      this.items = JSON.parse(this.reports);
+	      this.items = this.reports;
 	      console.log('phone', md.phone());
 	      if (md.phone() == null) (0, _jquery2.default)('.map__search_input').focus();
 
