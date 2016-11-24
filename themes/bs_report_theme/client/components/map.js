@@ -101,6 +101,8 @@ export default function () {
       }).done(res => this.$set('posts', res));
       
       reports = this.posts;
+
+      console.log('reports', reports);
       
       let lang = this.lang;
       let countriesTrans = JSON.stringify(this.countriesTranslation);

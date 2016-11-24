@@ -11504,6 +11504,8 @@
 
 	      reports = this.posts;
 
+	      console.log('reports', reports);
+
 	      var lang = this.lang;
 	      var countriesTrans = JSON.stringify(this.countriesTranslation);
 	      countriesTrans = JSON.parse(countriesTrans);
