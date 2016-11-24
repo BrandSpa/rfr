@@ -29158,7 +29158,7 @@
 	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
 	        } else {
-	          results = JSON.parse(this.reports);
+	          results = this.reports;
 	        }
 
 	        this.$set('items', results);

@@ -102,7 +102,7 @@ export default function() {
             });
 
           } else {
-            results = JSON.parse(this.reports);
+            results = this.reports;
           }
 
           this.$set('items', results);
