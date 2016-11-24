@@ -25,7 +25,7 @@ export default function() {
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', data}
-      }).done(res => this.reports = res);
+      }).done(res => this.$set('reports', res));
       
       console.log(this.reports);
 

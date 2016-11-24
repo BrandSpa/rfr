@@ -29090,7 +29090,7 @@
 	        url: '/wp-admin/admin-ajax.php',
 	        data: { action: 'reports', data: data }
 	      }).done(function (res) {
-	        return _this.reports = res;
+	        return _this.$set('reports', res);
 	      });
 
 	      console.log(this.reports);
