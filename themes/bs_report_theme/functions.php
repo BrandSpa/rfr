@@ -97,19 +97,14 @@ function getLangList() {
     return _e('install polylang plugin');
   }
 }
+function modify_jquery() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js', false, '1.12.4');
+		wp_enqueue_script('jquery');
+	}
+}
 
-// function setNewLang() {
-//   $uri = $_SERVER['REQUEST_URI'];
-//   $iso = getUserCountry()->isoCode;
-//   $lang = getCountriesInfo($iso)->languages[0];
-
-//   if(function_exists('pll_the_languages')) {
-//     if(isset(pll_the_languages( array( 'raw' => 1 ) )[$lang]) && is_array(pll_the_languages( array( 'raw' => 1 ) )[$lang])) {
-//       add_filter( 'pll_redirect_home', '/'. $lang );
-//     }  
-//   }
-// }
-
-// setNewLang();
-
+add_action('init', 'modify_jquery');
 ?>
