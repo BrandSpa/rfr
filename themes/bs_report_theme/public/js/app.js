@@ -29092,8 +29092,9 @@
 	        return _this.reports = res;
 	      });
 
+	      console.log(this.reports);
+
 	      this.items = this.reports;
-	      console.log(this.items);
 	      if (md.phone() == null) (0, _jquery2.default)('.map__search_input').focus();
 
 	      (0, _jquery2.default)('.open-select-countries').on('click', this.open);

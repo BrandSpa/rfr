@@ -26,8 +26,9 @@ export default function() {
         data: {action: 'reports', data}
       }).done(res => this.reports = res);
       
+      console.log(this.reports);
+      
       this.items = this.reports;
-      console.log(this.items);
       if(md.phone() == null) $('.map__search_input').focus();
       
       $('.open-select-countries').on('click', this.open);
