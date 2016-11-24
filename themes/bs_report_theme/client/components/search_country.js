@@ -87,7 +87,7 @@ export default function() {
         },
 
         search(evt) {
-          let reports = JSON.parse(this.reports);
+          let reports = this.reports;
           let query = this.country;
           let results = [];
           let key = evt.keyCode;

@@ -29144,7 +29144,7 @@
 	        return false;
 	      },
 	      search: function search(evt) {
-	        var reports = JSON.parse(this.reports);
+	        var reports = this.reports;
 	        var query = this.country;
 	        var results = [];
 	        var key = evt.keyCode;
