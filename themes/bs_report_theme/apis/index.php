@@ -45,8 +45,8 @@ add_action( 'wp_ajax_reports', 'reports' );
 
 function reports() {
   $data = $_POST['data'];
-  $res = getReports();
+  $res = getReports($data);
   header('Content-type: application/json');
-  echo json_encode($data);
+  echo json_encode($res);
   die();
 }
