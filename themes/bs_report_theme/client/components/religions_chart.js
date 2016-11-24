@@ -1,5 +1,4 @@
 'use strict';
-import Vue from 'vue';
 import hexRgba from 'hex-rgba';
 
 export default function religionChart() {

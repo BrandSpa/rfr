@@ -1,6 +1,5 @@
 'use strict';
 import $ from 'jquery';
-import Vue from 'vue';
 import nav from './lib/nav';
 import map from './components/map';
 import religionsChart from './components/religions_chart';

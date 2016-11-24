@@ -1,7 +1,5 @@
 'use strict';
-import Vue from 'vue';
 import validator from 'validator';
-import request from 'axios';
 import $ from 'jquery';
 
 let initialState = {

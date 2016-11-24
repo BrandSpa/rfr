@@ -55,7 +55,7 @@
   </div>
 
 </div>
- 
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.27/vue.min.js"></script>
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
@@ -66,7 +66,6 @@
   </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.1/es6-shim.js"></script>
   <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
-
 
 <?php wp_footer() ?>
 

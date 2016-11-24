@@ -1,5 +1,4 @@
 'use strict';
-import Vue from 'vue';
 import * as d3 from 'd3';
 import mousePosition from '../lib/get_mouse_position';
 import $ from 'jquery';

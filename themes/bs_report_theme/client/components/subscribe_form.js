@@ -1,5 +1,4 @@
 'use strict';
-import Vue from 'vue';
 import validator from 'validator';
 import $ from 'jquery';
 
