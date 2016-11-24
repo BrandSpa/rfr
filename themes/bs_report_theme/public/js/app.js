@@ -29075,6 +29075,7 @@
 	      return {
 	        country: '',
 	        items: [],
+	        reports: [],
 	        current: 0
 	      };
 	    },

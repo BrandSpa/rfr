@@ -12,6 +12,7 @@ export default function() {
       return {
         country: '',
         items: [],
+        reports: [],
         current: 0,
       }
     },
@@ -27,7 +28,7 @@ export default function() {
       }).done(res => this.reports = res);
       
       console.log(this.reports);
-      
+
       this.items = this.reports;
       if(md.phone() == null) $('.map__search_input').focus();
       
