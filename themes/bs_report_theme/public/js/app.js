@@ -29078,7 +29078,7 @@
 	        current: 0
 	      };
 	    },
-	    init: function init() {
+	    ready: function ready() {
 	      var data = { lang: this.reportLang };
 	      console.log(data);
 
@@ -29089,8 +29089,7 @@
 	      }).done(function (res) {
 	        return console.log(res);
 	      });
-	    },
-	    ready: function ready() {
+
 	      this.items = JSON.parse(this.reports);
 	      console.log('phone', md.phone());
 	      if (md.phone() == null) (0, _jquery2.default)('.map__search_input').focus();

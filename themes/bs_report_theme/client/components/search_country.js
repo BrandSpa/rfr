@@ -16,8 +16,8 @@ export default function() {
       }
     },
 
-    init() {
-      let data = {lang: this.reportLang};
+    ready() {
+         let data = {lang: this.reportLang};
       console.log(data);
 
       $.ajax({
@@ -25,9 +25,7 @@ export default function() {
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', data}
       }).done(res => console.log(res));
-    },
-
-    ready() {
+      
       this.items = JSON.parse(this.reports);
       console.log('phone', md.phone());
       if(md.phone() == null) $('.map__search_input').focus();
