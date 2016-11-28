@@ -16,6 +16,7 @@
 
   function setTranslations() {
       registerStr('RELIGIOUS FREEDOM<br> IN THE WORLD');
+      registerStr('RELIGIOUS <span class="color-red">FREEDOM</span><br>REPORT');
       registerStr('BACK TO MAP');
       registerStr('DOWNLOAD REPORT');
       registerStr('ABOUT US');
@@ -48,7 +49,6 @@
       registerStr('http://religious-freedom-report.org/thank-you/');
       registerStr('http://religious-freedom-report.org/thank-you-download/');
       registerStr('Conozca más sobre Ayuda a la Iglesia Necesitada');
-      registerStr('RELIGIOUS <span class="color-red">FREEDOM</span><br>REPORT');
       registerStr('LIST');
       registerStr('BY COUNTRY');
       registerStr('Country');
