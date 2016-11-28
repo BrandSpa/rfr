@@ -29215,11 +29215,20 @@
 	    props: ['continents', 'dir', 'lang'],
 	    data: function data() {
 	      return {
-	        reports: []
+	        reports: [],
+	        countriesTrans: []
 	      };
 	    },
 	    ready: function ready() {
 	      var _this = this;
+
+	      _jquery2.default.ajax({
+	        type: 'post',
+	        url: '/wp-admin/admin-ajax.php',
+	        data: { action: 'countries_translations', data: { lang: this.lang } }
+	      }).done(function (res) {
+	        return console.log('translations:', res);
+	      });
 
 	      _jquery2.default.ajax({
 	        type: 'post',

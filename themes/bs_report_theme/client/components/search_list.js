@@ -7,11 +7,18 @@ export default function() {
     props: ['continents', 'dir', 'lang'],
     data() {
       return {
-        reports: []
+        reports: [],
+        countriesTrans: []
       }
     },
 
     ready() {
+      $.ajax({
+        type: 'post',
+        url: '/wp-admin/admin-ajax.php',
+        data: {action: 'countries_translations', data: {lang: this.lang}}
+      }).done(res => console.log('translations:', res));
+
       $.ajax({
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
