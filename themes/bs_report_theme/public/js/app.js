@@ -29225,7 +29225,7 @@
 	        url: '/wp-admin/admin-ajax.php',
 	        data: { action: 'reports' }
 	      }).then(function (countries) {
-	        return _this.countries = countries;
+	        return _this.$set('countries', countries);
 	      });
 	    },
 	    ready: function ready() {

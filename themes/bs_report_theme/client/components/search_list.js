@@ -16,7 +16,7 @@ export default function() {
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports'}
       })
-      .then(countries => this.countries = countries);
+      .then(countries => this.$set('countries', countries));
     },
 
     ready() {
