@@ -28,6 +28,7 @@ export default function() {
       },
       
       getReports() {
+        let data = {lang: this.lang};
         $.ajax({
           type: 'post',
           url: '/wp-admin/admin-ajax.php',

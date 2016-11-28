@@ -19,7 +19,6 @@ export default function() {
     },
 
     ready() {
-      let data = {lang: this.reportLang};
       this.getCountriesTranslations()
       .then(() => this.getReports());
      
@@ -41,6 +40,7 @@ export default function() {
       },
 
       getReports() {
+        let data = {lang: this.reportLang};
         $.ajax({
           type: 'post',
           url: '/wp-admin/admin-ajax.php',

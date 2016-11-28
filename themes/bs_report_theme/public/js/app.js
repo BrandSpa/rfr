@@ -29100,7 +29100,6 @@
 	    ready: function ready() {
 	      var _this = this;
 
-	      var data = { lang: this.reportLang };
 	      this.getCountriesTranslations().then(function () {
 	        return _this.getReports();
 	      });
@@ -29127,6 +29126,7 @@
 	      getReports: function getReports() {
 	        var _this3 = this;
 
+	        var data = { lang: this.reportLang };
 	        _jquery2.default.ajax({
 	          type: 'post',
 	          url: '/wp-admin/admin-ajax.php',
@@ -29259,6 +29259,7 @@
 	      getReports: function getReports() {
 	        var _this3 = this;
 
+	        var data = { lang: this.lang };
 	        _jquery2.default.ajax({
 	          type: 'post',
 	          url: '/wp-admin/admin-ajax.php',
