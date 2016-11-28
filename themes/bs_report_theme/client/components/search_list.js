@@ -13,8 +13,8 @@ export default function() {
     },
 
     ready() {
-      getCountriesTranslations()
-      .then(() => getReports());
+      this.getCountriesTranslations()
+      .then(() => this.getReports());
     },
 
     methods: {

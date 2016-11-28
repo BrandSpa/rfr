@@ -29220,34 +29220,36 @@
 	      };
 	    },
 	    ready: function ready() {
-	      getCountriesTranslations().then(function () {
-	        return getReports();
+	      var _this = this;
+
+	      this.getCountriesTranslations().then(function () {
+	        return _this.getReports();
 	      });
 	    },
 
 
 	    methods: {
 	      getCountriesTranslations: function getCountriesTranslations() {
-	        var _this = this;
+	        var _this2 = this;
 
 	        return _jquery2.default.ajax({
 	          type: 'post',
 	          url: '/wp-admin/admin-ajax.php',
 	          data: { action: 'countries_translations', data: { lang: this.lang } }
 	        }).done(function (res) {
-	          return _this.$set('countriesTrans', res);
+	          return _this2.$set('countriesTrans', res);
 	        });
 	      },
 	      getReports: function getReports() {
-	        var _this2 = this;
+	        var _this3 = this;
 
 	        _jquery2.default.ajax({
 	          type: 'post',
 	          url: '/wp-admin/admin-ajax.php',
 	          data: { action: 'reports', data: { lang: this.lang } }
 	        }).done(function (res) {
-	          _this2.$set('reports', res);
-	          _this2.setReports();
+	          _this3.$set('reports', res);
+	          _this3.setReports();
 	        });
 	      },
 	      setReports: function setReports() {
