@@ -50,7 +50,7 @@ function logos_settings_page() {
       <?php do_settings_sections( 'bs_country_info_group' ); ?>
 			
 			<p>
-				<textarea name="translations" id="" cols="30" rows="10"><?php echo get_option('translations');  ?></textarea>
+				<textarea name="translations" style="width: 100%" rows="10"><?php echo get_option('translations');  ?></textarea>
 			</p>
 
         <?php foreach ($countries as $value): ?>
