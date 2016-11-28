@@ -9,9 +9,9 @@
 
   <div class="col-md-6">
 
-    <div v-for="(continentIndex, continent) in continents">
+    <li v-for="(continentIndex, continent) in continents">
       {{$index}}
-    </div>  
+    </li>
 
     <button 
       class="bg-dark_jungle map__search__list_btn color-rolling-store" 
