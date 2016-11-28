@@ -49,7 +49,7 @@ function reports() {
   $data = $_POST['data'];
   $res = getReports($data);
   header('Content-type: application/json');
-  echo json_encode($res);
+  echo wp_json_encode($res);
   die();
 }
 

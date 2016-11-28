@@ -11259,7 +11259,7 @@
 	});
 	exports.default = religionChart;
 
-	var _hexRgba = __webpack_require__(16);
+	var _hexRgba = __webpack_require__(14);
 
 	var _hexRgba2 = _interopRequireDefault(_hexRgba);
 
@@ -11362,9 +11362,7 @@
 	}
 
 /***/ },
-/* 14 */,
-/* 15 */,
-/* 16 */
+/* 14 */
 /***/ function(module, exports) {
 
 	'use strict';
