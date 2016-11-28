@@ -108,16 +108,4 @@ function modify_jquery() {
 
 add_action('init', 'modify_jquery');
 
-function registerTranslations() {
-	$trans = get_option('translations');
-	$translations = explode('|', $trans);
-	$group = 'bs_';
-
-	foreach($translations as $str) {
-		pll_register_string($str, $str, $group, true);
-	}
-}
-
-registerTranslations();
-
 ?>
