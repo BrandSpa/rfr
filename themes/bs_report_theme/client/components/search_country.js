@@ -112,7 +112,8 @@ export default function() {
           if (query.length > 0) {
 
             results = reports.filter( pst => {
-              return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1 
+              let translation = countriesTrans(pst.meta_country);
+              return translation.toLowerCase().indexOf(query.toLowerCase()) != -1 
             });
 
           } else {

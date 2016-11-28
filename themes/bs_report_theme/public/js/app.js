@@ -29187,7 +29187,8 @@
 	        if (query.length > 0) {
 
 	          results = reports.filter(function (pst) {
-	            return pst.meta_country.toLowerCase().indexOf(query.toLowerCase()) != -1;
+	            var translation = countriesTrans(pst.meta_country);
+	            return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
 	        } else {
 	          results = this.reports;
