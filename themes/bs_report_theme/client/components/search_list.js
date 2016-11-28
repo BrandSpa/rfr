@@ -19,7 +19,7 @@ export default function() {
       })
       .done(res => {
         console.log('res', res);
-        ”this.$set('reports', res);
+        this.$set('reports', res);
         this.setReports();
       });
     
