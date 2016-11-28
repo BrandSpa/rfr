@@ -110,7 +110,7 @@ add_action('init', 'modify_jquery');
 
 function registerTranslations() {
 	$trans = get_option('translations');
-	$translations = explode('\n', $trans);
+	$translations = explode('\r\n', $trans);
 	$group = 'bs_';
 
 	foreach($translations as $str) {
