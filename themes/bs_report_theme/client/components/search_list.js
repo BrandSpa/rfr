@@ -11,19 +11,15 @@ export default function() {
       }
     },
 
-    init() {
-   
-    },
-
     ready() {
-          $.ajax({
+      $.ajax({
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', lang: this.lang}
       })
       .done(res => {
         console.log('res', res);
-        this.$set('reports', res);
+        ”this.$set('reports', res);
         this.setReports();
       });
     

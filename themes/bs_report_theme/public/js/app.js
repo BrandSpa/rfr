@@ -66,7 +66,7 @@
 
 	var _search_country2 = _interopRequireDefault(_search_country);
 
-	var _search_list = __webpack_require__(22);
+	var _search_list = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/search_list\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _search_list2 = _interopRequireDefault(_search_list);
 
@@ -29198,130 +29198,7 @@
 	;
 
 /***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-	exports.default = function () {
-	  Vue.component('search-list', {
-	    template: '#search-list-template',
-	    props: ['continents', 'dir', 'lang'],
-	    data: function data() {
-	      return {
-	        reports: []
-	      };
-	    },
-	    init: function init() {},
-	    ready: function ready() {
-	      var _this = this;
-
-	      _jquery2.default.ajax({
-	        type: 'post',
-	        url: '/wp-admin/admin-ajax.php',
-	        data: { action: 'reports', lang: this.lang }
-	      }).done(function (res) {
-	        console.log('res', res);
-	        _this.$set('reports', res);
-	        _this.setReports();
-	      });
-	    },
-
-
-	    methods: {
-	      setReports: function setReports() {
-	        var reports = this.reports;
-	        var continents = JSON.parse(this.continents);
-	        var newContinents = {};
-
-	        var filterByCountry = function filterByCountry(coun) {
-	          if (reports.filter(function (r) {
-	            return r.meta_country == coun;
-	          })[0]) {
-	            return reports.filter(function (r) {
-	              return r.meta_country == coun;
-	            })[0];
-	          } else {
-	            return '';
-	          }
-	        };
-
-	        var cleanEmpty = function cleanEmpty(report) {
-	          return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
-	        };
-
-	        var continentsList = {
-	          'afrika': 'Afrika',
-	          'asia': 'Asia',
-	          'easterEurope': 'Easter Europe',
-	          'latinAmerica': 'Latin America',
-	          'middleEast': 'Middle East',
-	          'northAmerica': 'North America',
-	          'ocenia': 'Ocenia',
-	          'russiaCentralAsia': 'Russia & Central Asia',
-	          'westernEurope': 'Western Europe'
-	        };
-
-	        Object.keys(continentsList).forEach(function (continentKey) {
-	          newContinents[continentKey] = continents[continentsList[continentKey]].map(filterByCountry).filter(cleanEmpty);
-	        });
-
-	        this.continents = newContinents;
-	      },
-	      close: function close(e) {
-	        if (e) e.preventDefault();
-	        (0, _jquery2.default)('body').removeClass('model-open');
-	        (0, _jquery2.default)('.map__search_list').removeClass('map__search_list--show');
-	      },
-	      getIcon: function getIcon(name) {
-	        return this.dir + '/public/img/icons/' + name + '.svg';
-	      },
-	      isSelected: function isSelected(index) {
-	        return index === this.current;
-	      },
-	      isDiscrimination: function isDiscrimination(n) {
-	        if (n) {
-	          return n == 'Discrimination';
-	        }
-	      },
-	      isPersecution: function isPersecution(n) {
-	        if (n) {
-	          return n == 'Persecution';
-	        }
-	      },
-	      showContinent: function showContinent(continent) {
-	        var each = function each(fn) {
-	          return function (arr) {
-	            return Array.prototype.forEach.call(arr, fn);
-	          };
-	        };
-	        var parent = this.$el;
-	        var $all = parent.querySelectorAll('ul[data-country]');
-	        var $ul = parent.querySelector('ul[data-country="' + continent + '"]');
-	        var display = $ul.style.display == 'block' ? 'none' : 'block';
-	        each(function ($el) {
-	          $el.style.display = 'none';
-	        })($all);
-	        $ul.style.display = display;
-	      }
-	    }
-
-	  });
-	};
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ },
+/* 22 */,
 /* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
