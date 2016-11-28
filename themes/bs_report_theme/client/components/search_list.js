@@ -16,7 +16,9 @@ export default function() {
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', lang: this.lang}
-      }).done(res => {
+      })
+      .done(res => {
+        console.log('res', res);
           this.$set('reports', res);
       });
     },

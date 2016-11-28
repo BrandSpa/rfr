@@ -29226,6 +29226,7 @@
 	        url: '/wp-admin/admin-ajax.php',
 	        data: { action: 'reports', lang: this.lang }
 	      }).done(function (res) {
+	        console.log('res', res);
 	        _this.$set('reports', res);
 	      });
 	    },
