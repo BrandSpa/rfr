@@ -15,7 +15,7 @@ export default function() {
       $.ajax({
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
-        data: {action: 'reports', lang: this.lang}
+        data: {action: 'reports', data: {lang: this.lang}}
       })
       .done(res => {
         console.log('res', res);
