@@ -13,22 +13,17 @@ export default function() {
         country: '',
         items: [],
         reports: [],
+        countriesTrans: [],
         current: 0,
       }
     },
 
     ready() {
       let data = {lang: this.reportLang};
-
-      $.ajax({
-        type: 'post',
-        url: '/wp-admin/admin-ajax.php',
-        data: {action: 'reports', data}
-      }).done(res => this.$set('reports', res));
-      
-      console.log(this.reports);
-
-      this.items = this.reports;
+      this.getCountriesTranslations()
+      .then(() => this.getReports());
+     
+  
       if(md.phone() == null) $('.map__search_input').focus();
       
       $('.open-select-countries').on('click', this.open);
@@ -36,6 +31,26 @@ export default function() {
     },
 
     methods: {
+      getCountriesTranslations() {
+        return $.ajax({
+          type: 'post',
+          url: '/wp-admin/admin-ajax.php',
+          data: {action: 'countries_translations', data: {lang: this.lang}}
+        })
+        .done(res => this.$set('countriesTrans', res));
+      },
+
+      getReports() {
+        $.ajax({
+          type: 'post',
+          url: '/wp-admin/admin-ajax.php',
+          data: {action: 'reports', data}
+        })
+        .done(res => {
+          this.$set('reports', res);
+          this.$set('items', res);
+        });
+      },
 
       close(e) {
         if(e) e.preventDefault();

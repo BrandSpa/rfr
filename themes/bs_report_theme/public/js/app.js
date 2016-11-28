@@ -29093,6 +29093,7 @@
 	        country: '',
 	        items: [],
 	        reports: [],
+	        countriesTrans: [],
 	        current: 0
 	      };
 	    },
@@ -29100,18 +29101,10 @@
 	      var _this = this;
 
 	      var data = { lang: this.reportLang };
-
-	      _jquery2.default.ajax({
-	        type: 'post',
-	        url: '/wp-admin/admin-ajax.php',
-	        data: { action: 'reports', data: data }
-	      }).done(function (res) {
-	        return _this.$set('reports', res);
+	      this.getCountriesTranslations().then(function () {
+	        return _this.getReports();
 	      });
 
-	      console.log(this.reports);
-
-	      this.items = this.reports;
 	      if (md.phone() == null) (0, _jquery2.default)('.map__search_input').focus();
 
 	      (0, _jquery2.default)('.open-select-countries').on('click', this.open);
@@ -29120,6 +29113,29 @@
 
 
 	    methods: {
+	      getCountriesTranslations: function getCountriesTranslations() {
+	        var _this2 = this;
+
+	        return _jquery2.default.ajax({
+	          type: 'post',
+	          url: '/wp-admin/admin-ajax.php',
+	          data: { action: 'countries_translations', data: { lang: this.lang } }
+	        }).done(function (res) {
+	          return _this2.$set('countriesTrans', res);
+	        });
+	      },
+	      getReports: function getReports() {
+	        var _this3 = this;
+
+	        _jquery2.default.ajax({
+	          type: 'post',
+	          url: '/wp-admin/admin-ajax.php',
+	          data: { action: 'reports', data: data }
+	        }).done(function (res) {
+	          _this3.$set('reports', res);
+	          _this3.$set('items', res);
+	        });
+	      },
 	      close: function close(e) {
 	        if (e) e.preventDefault();
 	        (0, _jquery2.default)('body').removeClass('model-open');

@@ -23,8 +23,8 @@ export default function() {
           type: 'post',
           url: '/wp-admin/admin-ajax.php',
           data: {action: 'countries_translations', data: {lang: this.lang}}
-        }).done(res => this.$set('countriesTrans', res));
-
+        })
+        .done(res => this.$set('countriesTrans', res));
       },
       
       getReports() {
