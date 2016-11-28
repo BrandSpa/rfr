@@ -9,7 +9,7 @@
 
   <div class="col-md-6">
 
-    <div v-for="continent in continents">
+    <div v-for="continent in continents" track-by="$index">
         <button 
         class="bg-dark_jungle map__search__list_btn color-rolling-store" 
         v-on:click="showContinent('afrika')" ><?php echo gett('Africa') ?></button>
