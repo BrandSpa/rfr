@@ -4,8 +4,13 @@ import $ from 'jquery';
 export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',
-    props: ['reports', 'continents', 'dir'],
-    
+    props: ['continents', 'dir'],
+    data() {
+      return {
+        reports: []
+      }
+    },
+
     init() {
       $.ajax({
         url: '/wp-admin/admin-ajax.php',

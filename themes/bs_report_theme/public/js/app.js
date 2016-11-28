@@ -29212,8 +29212,12 @@
 	exports.default = function () {
 	  Vue.component('search-list', {
 	    template: '#search-list-template',
-	    props: ['reports', 'continents', 'dir'],
-
+	    props: ['continents', 'dir'],
+	    data: function data() {
+	      return {
+	        reports: []
+	      };
+	    },
 	    init: function init() {
 	      var _this = this;
 
