@@ -29226,7 +29226,6 @@
 	        url: '/wp-admin/admin-ajax.php',
 	        data: { action: 'reports', data: { lang: this.lang } }
 	      }).done(function (res) {
-	        console.log('res', res);
 	        _this.$set('reports', res);
 	        _this.setReports();
 	      });
@@ -29239,12 +29238,12 @@
 	        var continents = JSON.parse(this.continents);
 	        var newContinents = {};
 
-	        var filterByCountry = function filterByCountry(coun) {
+	        var filterByCountry = function filterByCountry(country) {
 	          if (reports.filter(function (r) {
-	            return r.meta_country == coun;
+	            return r.meta_country == country;
 	          })[0]) {
 	            return reports.filter(function (r) {
-	              return r.meta_country == coun;
+	              return r.meta_country == country;
 	            })[0];
 	          } else {
 	            return '';

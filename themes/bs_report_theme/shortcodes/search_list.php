@@ -9,6 +9,10 @@
 
   <div class="col-md-6">
 
+    <div v-for="continent in continents">
+          {{ $key }} : {{ value | json }}
+    </div>  
+
     <button 
       class="bg-dark_jungle map__search__list_btn color-rolling-store" 
       v-on:click="showContinent('afrika')" ><?php echo gett('Africa') ?></button>

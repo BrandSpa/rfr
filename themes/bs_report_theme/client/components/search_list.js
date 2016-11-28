@@ -18,7 +18,6 @@ export default function() {
         data: {action: 'reports', data: {lang: this.lang}}
       })
       .done(res => {
-        console.log('res', res);
         this.$set('reports', res);
         this.setReports();
       });
@@ -31,9 +30,9 @@ export default function() {
         let continents = JSON.parse(this.continents);
         let newContinents = {};
         
-        let filterByCountry = coun => {
-          if(reports.filter(r => r.meta_country == coun)[0]) {
-            return reports.filter(r => r.meta_country == coun)[0];
+        let filterByCountry = country => {
+          if(reports.filter(r => r.meta_country == country)[0]) {
+            return reports.filter(r => r.meta_country == country)[0];
           } else {
             return '';
           }
