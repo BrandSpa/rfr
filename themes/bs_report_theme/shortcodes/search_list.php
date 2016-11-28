@@ -10,7 +10,7 @@
   <div class="col-md-6">
 
     <div v-for="continent in continents">
-          {{ $key }} : {{ value | json }}
+          {{ $key }} : {{ continent | json }}
     </div>  
 
     <button 
