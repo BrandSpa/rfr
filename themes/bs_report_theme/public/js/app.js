@@ -11640,10 +11640,6 @@
 
 	var d3 = _interopRequireWildcard(_d);
 
-	var _get_mouse_position = __webpack_require__(18);
-
-	var _get_mouse_position2 = _interopRequireDefault(_get_mouse_position);
-
 	var _jquery = __webpack_require__(1);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
@@ -11652,9 +11648,13 @@
 
 	var _promise2 = _interopRequireDefault(_promise);
 
-	var _mobileDetect = __webpack_require__(19);
+	var _mobileDetect = __webpack_require__(18);
 
 	var _mobileDetect2 = _interopRequireDefault(_mobileDetect);
+
+	var _get_mouse_position = __webpack_require__(20);
+
+	var _get_mouse_position2 = _interopRequireDefault(_get_mouse_position);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28050,28 +28050,6 @@
 
 /***/ },
 /* 18 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = getMousePosition;
-	function getMousePosition(e, cb) {
-	  var el = e ? e : document;
-
-	  var mouseMov = new Promise(function (resolve, reject) {
-	    $(el).on('mousemove', function (evt) {
-	      return resolve({ left: evt.pageX, top: evt.pageY });
-	    });
-	  });
-
-	  return mouseMov;
-	};
-
-/***/ },
-/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// THIS FILE IS GENERATED - DO NOT EDIT!
@@ -29057,7 +29035,7 @@
 	    if (typeof module !== 'undefined' && module.exports) {
 	        return function (factory) { module.exports = factory(); };
 	    } else if (true) {
-	        return __webpack_require__(20);
+	        return __webpack_require__(19);
 	    } else if (typeof window !== 'undefined') {
 	        return function (factory) { window.MobileDetect = factory(); };
 	    } else {
@@ -29067,11 +29045,33 @@
 	})());
 
 /***/ },
-/* 20 */
+/* 19 */
 /***/ function(module, exports) {
 
 	module.exports = function() { throw new Error("define cannot be used indirect"); };
 
+
+/***/ },
+/* 20 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = getMousePosition;
+	function getMousePosition(e, cb) {
+	  var el = e ? e : document;
+
+	  var mouseMov = new Promise(function (resolve, reject) {
+	    $(el).on('mousemove', function (evt) {
+	      return resolve({ left: evt.pageX, top: evt.pageY });
+	    });
+	  });
+
+	  return mouseMov;
+	};
 
 /***/ },
 /* 21 */
@@ -29187,7 +29187,7 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _mobileDetect = __webpack_require__(19);
+	var _mobileDetect = __webpack_require__(18);
 
 	var _mobileDetect2 = _interopRequireDefault(_mobileDetect);
 
@@ -29214,41 +29214,61 @@
 	    template: '#search-list-template',
 	    props: ['reports', 'continents', 'dir'],
 
+	    init: function init() {
+	      var _this = this;
+
+	      _jquery2.default.ajax({
+	        url: '/wp-admin/admin-ajax.php',
+	        data: { action: 'reports' }
+	      }).then(function (countries) {
+	        return _this.countries = countries;
+	      });
+	    },
 	    ready: function ready() {
-	      var reports = JSON.parse(this.reports);
-	      var continents = JSON.parse(this.continents);
-	      var newContinents = {};
-
-	      var filterByCountry = function filterByCountry(coun) {
-	        if (reports.filter(function (r) {
-	          return r.meta_country == coun;
-	        })[0]) {
-	          return reports.filter(function (r) {
-	            return r.meta_country == coun;
-	          })[0];
-	        } else {
-	          return '';
-	        }
-	      };
-
-	      var cleanEmpty = function cleanEmpty(report) {
-	        return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
-	      };
-
-	      newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['asia'] = continents['Asia'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['northAmerica'] = continents['North America'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['ocenia'] = continents['Ocenia'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['russiaCentralAsia'] = continents['Russia & Central Asia'].map(filterByCountry).filter(cleanEmpty);
-	      newContinents['westernEurope'] = continents['Western Europe'].map(filterByCountry).filter(cleanEmpty);
-	      this.continents = newContinents;
+	      this.setReports();
 	    },
 
 
 	    methods: {
+	      setReports: function setReports() {
+	        var reports = this.reports;
+	        var continents = JSON.parse(this.continents);
+	        var newContinents = {};
+
+	        var filterByCountry = function filterByCountry(coun) {
+	          if (reports.filter(function (r) {
+	            return r.meta_country == coun;
+	          })[0]) {
+	            return reports.filter(function (r) {
+	              return r.meta_country == coun;
+	            })[0];
+	          } else {
+	            return '';
+	          }
+	        };
+
+	        var cleanEmpty = function cleanEmpty(report) {
+	          return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
+	        };
+
+	        var continentsList = {
+	          'afrika': 'Afrika',
+	          'asia': 'Asia',
+	          'easterEurope': 'Easter Europe',
+	          'latinAmerica': 'Latin America',
+	          'middleEast': 'Middle East',
+	          'northAmerica': 'North America',
+	          'ocenia': 'Ocenia',
+	          'russiaCentralAsia': 'Russia & Central Asia',
+	          'westernEurope': 'Western Europe'
+	        };
+
+	        Object.keys(continentsList).forEach(function (continentKey) {
+	          newContinents[continentKey] = continents[continentsList[continentKey]].map(filterByCountry).filter(cleanEmpty);
+	        });
+
+	        this.continents = newContinents;
+	      },
 	      close: function close(e) {
 	        if (e) e.preventDefault();
 	        (0, _jquery2.default)('body').removeClass('model-open');
