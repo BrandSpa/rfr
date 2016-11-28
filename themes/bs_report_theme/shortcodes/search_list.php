@@ -9,23 +9,6 @@
 
   <div class="col-md-6">
 
-    <div v-for="continent in continents" track-by="$index">
-        <button 
-        class="bg-dark_jungle map__search__list_btn color-rolling-store" 
-        v-on:click="showContinent('afrika')" ><?php echo gett('Africa') ?></button>
-
-      <ul class="map__search_results" data-country="afrika" style="display: none">
-        <li
-          v-for="item in continent" 
-          v-bind:class="{'bg-discrimination': isDiscrimination(item.meta_nature_persecution), 'bg-red': isPersecution(item.meta_nature_persecution),'selected': isSelected($index) }">
-          <a v-bind:href="item.guid">{{item.meta_country}}</a>
-          <span>
-            <img v-bind:src="getIcon(item.meta_situation)" alt="">
-          </span>
-        </li>
-      </ul>
-    </div>  
-
     <button 
       class="bg-dark_jungle map__search__list_btn color-rolling-store" 
       v-on:click="showContinent('afrika')" ><?php echo gett('Africa') ?></button>
