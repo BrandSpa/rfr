@@ -29220,28 +29220,36 @@
 	      };
 	    },
 	    ready: function ready() {
-	      var _this = this;
-
-	      _jquery2.default.ajax({
-	        type: 'post',
-	        url: '/wp-admin/admin-ajax.php',
-	        data: { action: 'countries_translations', data: { lang: this.lang } }
-	      }).done(function (res) {
-	        return console.log('translations:', res);
-	      });
-
-	      _jquery2.default.ajax({
-	        type: 'post',
-	        url: '/wp-admin/admin-ajax.php',
-	        data: { action: 'reports', data: { lang: this.lang } }
-	      }).done(function (res) {
-	        _this.$set('reports', res);
-	        _this.setReports();
+	      getCountriesTranslations().then(function () {
+	        return getReports();
 	      });
 	    },
 
 
 	    methods: {
+	      getCountriesTranslations: function getCountriesTranslations() {
+	        var _this = this;
+
+	        return _jquery2.default.ajax({
+	          type: 'post',
+	          url: '/wp-admin/admin-ajax.php',
+	          data: { action: 'countries_translations', data: { lang: this.lang } }
+	        }).done(function (res) {
+	          return _this.$set('countriesTrans', res);
+	        });
+	      },
+	      getReports: function getReports() {
+	        var _this2 = this;
+
+	        _jquery2.default.ajax({
+	          type: 'post',
+	          url: '/wp-admin/admin-ajax.php',
+	          data: { action: 'reports', data: { lang: this.lang } }
+	        }).done(function (res) {
+	          _this2.$set('reports', res);
+	          _this2.setReports();
+	        });
+	      },
 	      setReports: function setReports() {
 	        var reports = this.reports;
 	        var continents = JSON.parse(this.continents);

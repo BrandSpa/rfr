@@ -13,25 +13,32 @@ export default function() {
     },
 
     ready() {
-      $.ajax({
-        type: 'post',
-        url: '/wp-admin/admin-ajax.php',
-        data: {action: 'countries_translations', data: {lang: this.lang}}
-      }).done(res => console.log('translations:', res));
-
-      $.ajax({
-        type: 'post',
-        url: '/wp-admin/admin-ajax.php',
-        data: {action: 'reports', data: {lang: this.lang}}
-      })
-      .done(res => {
-        this.$set('reports', res);
-        this.setReports();
-      });
-    
+      getCountriesTranslations()
+      .then(() => getReports());
     },
 
     methods: {
+      getCountriesTranslations() {
+        return $.ajax({
+          type: 'post',
+          url: '/wp-admin/admin-ajax.php',
+          data: {action: 'countries_translations', data: {lang: this.lang}}
+        }).done(res => this.$set('countriesTrans', res));
+
+      },
+      
+      getReports() {
+        $.ajax({
+          type: 'post',
+          url: '/wp-admin/admin-ajax.php',
+          data: {action: 'reports', data: {lang: this.lang}}
+        })
+        .done(res => {
+          this.$set('reports', res);
+          this.setReports();
+        });
+      },
+
       setReports() {
         let reports = this.reports;
         let continents = JSON.parse(this.continents);
