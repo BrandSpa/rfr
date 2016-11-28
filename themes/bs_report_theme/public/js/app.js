@@ -29218,7 +29218,8 @@
 	        reports: []
 	      };
 	    },
-	    init: function init() {
+	    init: function init() {},
+	    ready: function ready() {
 	      var _this = this;
 
 	      _jquery2.default.ajax({
@@ -29228,10 +29229,8 @@
 	      }).done(function (res) {
 	        console.log('res', res);
 	        _this.$set('reports', res);
+	        _this.setReports();
 	      });
-	    },
-	    ready: function ready() {
-	      this.setReports();
 	    },
 
 

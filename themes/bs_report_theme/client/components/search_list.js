@@ -12,19 +12,21 @@ export default function() {
     },
 
     init() {
-       $.ajax({
+   
+    },
+
+    ready() {
+          $.ajax({
         type: 'post',
         url: '/wp-admin/admin-ajax.php',
         data: {action: 'reports', lang: this.lang}
       })
       .done(res => {
         console.log('res', res);
-          this.$set('reports', res);
+        this.$set('reports', res);
+        this.setReports();
       });
-    },
-
-    ready() {
-      this.setReports();
+    
     },
 
     methods: {
