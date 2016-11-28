@@ -10,7 +10,7 @@
   <div class="col-md-6">
 
     <div v-for="(continentIndex, continent) in continents">
-      {{continentIndex}}
+      {{$index}}
     </div>  
 
     <button 
