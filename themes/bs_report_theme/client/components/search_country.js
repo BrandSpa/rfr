@@ -113,6 +113,7 @@ export default function() {
 
             results = reports.filter( pst => {
               let translation = this.countriesTrans[pst.meta_country];
+              console.log(translation);
               return translation.toLowerCase().indexOf(query.toLowerCase()) != -1 
             });
 

@@ -29190,6 +29190,7 @@
 
 	          results = reports.filter(function (pst) {
 	            var translation = _this4.countriesTrans[pst.meta_country];
+	            console.log(translation);
 	            return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
 	        } else {
