@@ -9,7 +9,7 @@
 
   <div class="col-md-6">
 
-    <li v-for="(continentIndex, continent) in continents" v-bind:key="continent">
+    <li v-for="(continentIndex, continent) in continents" track-by="continent">
       {{$index}}
     </li>
 
