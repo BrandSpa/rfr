@@ -111,7 +111,7 @@ add_action('init', 'modify_jquery');
 function registerTranslations() {
 	$trans = get_option('translations');
 	$translations = explode('\n', $trans);
-	$group = 'bs_options';
+	$group = 'bs_';
 
 	foreach($translations as $str) {
 		pll_register_string($str, $str, $group, true);
@@ -119,5 +119,5 @@ function registerTranslations() {
 }
 
 registerTranslations();
-?>
 
+?>
