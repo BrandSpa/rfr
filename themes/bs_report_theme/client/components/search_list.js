@@ -4,7 +4,7 @@ import $ from 'jquery';
 export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',
-    props: ['continents', 'dir'],
+    props: ['continents', 'dir', 'lang'],
     data() {
       return {
         reports: []
@@ -12,11 +12,13 @@ export default function() {
     },
 
     init() {
-      $.ajax({
+       $.ajax({
+        type: 'post',
         url: '/wp-admin/admin-ajax.php',
-        data: {action: 'reports'}
-      })
-      .then(countries => this.$set('countries', countries));
+        data: {action: 'reports', lang: this.lang}
+      }).done(res => {
+          this.$set('reports', res);
+      });
     },
 
     ready() {

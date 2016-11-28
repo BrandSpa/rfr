@@ -29212,7 +29212,7 @@
 	exports.default = function () {
 	  Vue.component('search-list', {
 	    template: '#search-list-template',
-	    props: ['continents', 'dir'],
+	    props: ['continents', 'dir', 'lang'],
 	    data: function data() {
 	      return {
 	        reports: []
@@ -29222,10 +29222,11 @@
 	      var _this = this;
 
 	      _jquery2.default.ajax({
+	        type: 'post',
 	        url: '/wp-admin/admin-ajax.php',
-	        data: { action: 'reports' }
-	      }).then(function (countries) {
-	        return _this.$set('countries', countries);
+	        data: { action: 'reports', lang: this.lang }
+	      }).done(function (res) {
+	        _this.$set('reports', res);
 	      });
 	    },
 	    ready: function ready() {
