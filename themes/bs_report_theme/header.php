@@ -94,7 +94,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   <a href="<?php echo $home ?>">
     <h4 class="nav__subtitle">
-      <?php echo gett('RELIGIOUS <span class="color-red">FREEDOM</span><br> REPORT', true) ?> <?php echo date('Y') ?>
+      <?php echo gett('RELIGIOUS <span class="color-red">FREEDOM</span><br>REPORT', true) ?> <?php echo date('Y') ?>
     </h4>
   </a>
 
