@@ -9,8 +9,8 @@
 
   <div class="col-md-6">
 
-    <li v-for="(continentIndex, continent) in continents" track-by="continent">
-      {{$index}}
+    <li v-for="continent in continents" track-by="$index">
+      {{continent}}
     </li>
 
     <button 
