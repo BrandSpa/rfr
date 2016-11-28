@@ -23,6 +23,8 @@ function bs_admin_options_menu() {
 function bs_add_country_info_settings() {
 	$options = getOfficesCountries();
 
+	 register_setting( 'bs_country_info_group', 'translations');
+
   foreach ($options as $value) {
 		$value = str_replace(' ', '_', $value);
     register_setting( 'bs_country_info_group', 'logo_' . $value );
@@ -46,6 +48,10 @@ function logos_settings_page() {
   <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto">
       <?php settings_fields( 'bs_country_info_group' ); ?>
       <?php do_settings_sections( 'bs_country_info_group' ); ?>
+			
+			<p>
+				<textarea name="translations" id="" cols="30" rows="10"><?php echo get_option('translations');  ?></textarea>
+			</p>
 
         <?php foreach ($countries as $value): ?>
 					<?php $value = str_replace(' ', '_', $value); ?>
