@@ -29176,6 +29176,8 @@
 	        return false;
 	      },
 	      search: function search(evt) {
+	        var _this4 = this;
+
 	        var reports = this.reports;
 	        var query = this.country;
 	        var results = [];
@@ -29187,7 +29189,7 @@
 	        if (query.length > 0) {
 
 	          results = reports.filter(function (pst) {
-	            var translation = countriesTrans(pst.meta_country);
+	            var translation = _this4.countriesTrans(pst.meta_country);
 	            return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
 	          });
 	        } else {
