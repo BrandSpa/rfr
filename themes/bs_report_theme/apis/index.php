@@ -53,6 +53,16 @@ function reports() {
   die();
 }
 
+add_action( 'wp_ajax_nopriv_countries', 'countries' );
+add_action( 'wp_ajax_countries', 'countries' );
+
+function countries() {
+  $res = getCountries();
+  header('Content-type: application/json');
+  echo json_encode($res);
+  die();
+}
+
 add_action( 'wp_ajax_nopriv_countries_translations', 'countries_translations' );
 add_action( 'wp_ajax_countries_translations', 'countries_translations' );
 

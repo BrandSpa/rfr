@@ -7,4 +7,5 @@ function getPersecution() {
     'Stable',
   );
 }
- ?>
+
+?>

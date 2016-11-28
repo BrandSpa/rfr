@@ -191,8 +191,8 @@
 </script>
 
 <search-list
+  lang='<?php echo $getReportLang ?>'
   dir="<?php echo get_template_directory_uri(); ?>" 
-  reports='<?php echo json_encode( getReports(array('lang' => $getReportLang) )); ?>'
   continents='<?php echo json_encode( getContinents() ); ?>'
 >
 </search-list>

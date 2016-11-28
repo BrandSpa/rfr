@@ -5,35 +5,56 @@ export default function() {
   Vue.component('search-list', {
     template: '#search-list-template',
     props: ['reports', 'continents', 'dir'],
-  
+    
+    init() {
+      $.ajax({
+        url: '/wp-admin/admin-ajax.php',
+        data: {action: 'reports'}
+      })
+      .then(countries => this.countries = countries);
+    },
+
     ready() {
-      let reports = JSON.parse(this.reports);
-      let continents = JSON.parse(this.continents);
-      let newContinents = {};
-      
-      let filterByCountry = coun => {
-        if(reports.filter(r => r.meta_country == coun)[0]) {
-          return reports.filter(r => r.meta_country == coun)[0];
-        } else {
-          return '';
-        }
-      };
-
-      let cleanEmpty = report => typeof report == 'object';
-
-      newContinents['afrika'] = continents['Afrika'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['asia'] =  continents['Asia'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['easterEurope'] = continents['Easter Europe'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['latinAmerica'] = continents['Latin America'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['middleEast'] = continents['Middle East'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['northAmerica'] =  continents['North America'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['ocenia'] =  continents['Ocenia'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['russiaCentralAsia'] =  continents['Russia & Central Asia'].map(filterByCountry).filter(cleanEmpty);
-      newContinents['westernEurope'] =  continents['Western Europe'].map(filterByCountry).filter(cleanEmpty);
-      this.continents = newContinents;
+      this.setReports();
     },
 
     methods: {
+      setReports() {
+        let reports = this.reports;
+        let continents = JSON.parse(this.continents);
+        let newContinents = {};
+        
+        let filterByCountry = coun => {
+          if(reports.filter(r => r.meta_country == coun)[0]) {
+            return reports.filter(r => r.meta_country == coun)[0];
+          } else {
+            return '';
+          }
+        };
+
+        let cleanEmpty = report => typeof report == 'object';
+
+        let continentsList = {
+          'afrika': 'Afrika',
+          'asia': 'Asia',
+          'easterEurope': 'Easter Europe',
+          'latinAmerica': 'Latin America',
+          'middleEast': 'Middle East',
+          'northAmerica': 'North America',
+          'ocenia': 'Ocenia',
+          'russiaCentralAsia': 'Russia & Central Asia',
+          'westernEurope': 'Western Europe'
+        };
+
+        Object.keys(continentsList).forEach(continentKey => {
+          newContinents[continentKey] = continents[continentsList[continentKey]]
+          .map(filterByCountry)
+          .filter(cleanEmpty);
+        });
+
+        this.continents = newContinents;
+      },
+
       close(e) {
         if(e) e.preventDefault();
         $('body').removeClass('model-open');
