@@ -22,7 +22,8 @@ export default function() {
         return $.ajax({
           type: 'post',
           url: '/wp-admin/admin-ajax.php',
-          data: {action: 'countries_translations', data: {lang: this.lang}}
+          data: {action: 'countries_translations', data: {lang: this.lang}},
+          dataType: "json",
         })
         .done(res => this.$set('countriesTrans', res));
       },
@@ -32,7 +33,8 @@ export default function() {
         $.ajax({
           type: 'post',
           url: '/wp-admin/admin-ajax.php',
-          data: {action: 'reports', data: {lang: this.lang}}
+          data: {action: 'reports', data: {lang: this.lang}},
+          dataType: "json",
         })
         .done(res => {
           this.$set('reports', res);

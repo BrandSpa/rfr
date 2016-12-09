@@ -29256,7 +29256,8 @@
 	        return _jquery2.default.ajax({
 	          type: 'post',
 	          url: '/wp-admin/admin-ajax.php',
-	          data: { action: 'countries_translations', data: { lang: this.lang } }
+	          data: { action: 'countries_translations', data: { lang: this.lang } },
+	          dataType: "json"
 	        }).done(function (res) {
 	          return _this2.$set('countriesTrans', res);
 	        });
@@ -29268,7 +29269,8 @@
 	        _jquery2.default.ajax({
 	          type: 'post',
 	          url: '/wp-admin/admin-ajax.php',
-	          data: { action: 'reports', data: { lang: this.lang } }
+	          data: { action: 'reports', data: { lang: this.lang } },
+	          dataType: "json"
 	        }).done(function (res) {
 	          _this3.$set('reports', res);
 	          _this3.setReports();
