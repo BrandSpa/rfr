@@ -108,4 +108,16 @@ function modify_jquery() {
 
 add_action('init', 'modify_jquery');
 
+function redirect_to_office() {
+  $url = get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) );
+
+  if(!empty($url)) {
+    header ("Location:" . $url);
+    exit;
+  }
+
+}
+
+redirect_to_office();
+
 ?>
