@@ -42,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div class="hidden">
-<?php echo  get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) ); ?>
+<?php echo 'office: '. get_option('office_redirect_' . str_replace(' ', '_', getOfficeCountry()) ); ?>
 </div>
 <body id="acn_reports">
 
