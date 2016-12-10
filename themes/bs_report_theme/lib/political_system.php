@@ -9,6 +9,3 @@ function getPoliticalSystem() {
     'Monarchy/Democracy' 
   );
 }
-
-?>
-
