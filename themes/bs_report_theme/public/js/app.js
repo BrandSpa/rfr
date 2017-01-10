@@ -11634,7 +11634,7 @@
 	          d3.select("#map-container svg").on("mousedown", function () {
 	            var _this2 = this;
 
-	            console.log('mouse down', d3.event.transform);
+	            console.log('mouse down', d3.event);
 
 	            d3.event.preventDefault();
 	            var box = d3.select("#map-container svg g").node().getBBox();
