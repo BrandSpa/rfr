@@ -11625,7 +11625,7 @@
 	          d3.select('.zoom_more').on('click', function () {
 	            var mapSVG = d3.select("#map-container svg g");
 	            var k = 2;
-	            var width = d3.select("#map-container svg g").node().getBBox() / 2;
+	            var width = d3.select("#map-container svg g").node().getBBox();
 	            console.log('width', d3.select("#map-container svg g").node().getBBox());
 	            var transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + k + ')') : 'translate(0,0) scale(' + k + ')';
 	            mapSVG.attr("transform", transform);
@@ -11637,12 +11637,15 @@
 	            console.log('mouse down', d3.event.transform);
 
 	            d3.event.preventDefault();
-
+	            var box = d3.select("#map-container svg g").node().getBBox();
 	            d3.select(this).on("mousemove", function (e) {
-	              var x = d3.event.clientX;
+	              var w = box.width / 2;
+	              var x = d3.event.clientX - w;
 	              var y = d3.event.clientY;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + x + ',' + y + ')');
-	            }).on('mouseup', function () {
+	            });
+
+	            d3.select(window).on('mouseup', function () {
 	              return d3.select(_this2).on("mousemove", null);
 	            });
 	          });

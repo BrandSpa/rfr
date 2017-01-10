@@ -220,7 +220,7 @@ export default function () {
         d3.select('.zoom_more').on('click', function() {
           let mapSVG = d3.select("#map-container svg g");
           let k = 2;
-          let width = d3.select("#map-container svg g").node().getBBox() / 2;
+          let width = d3.select("#map-container svg g").node().getBBox();
           console.log('width',d3.select("#map-container svg g").node().getBBox());
           let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${k})`) : `translate(0,0) scale(${k})`;
           mapSVG.attr("transform", transform);
@@ -230,14 +230,16 @@ export default function () {
           console.log('mouse down', d3.event.transform);
 
           d3.event.preventDefault();
-
+           let box = d3.select("#map-container svg g").node().getBBox();
           d3.select(this)
           .on("mousemove", (e) => {
-            let x = d3.event.clientX; 
+            let w = box.width / 2;
+            let x = d3.event.clientX - w; 
             let y = d3.event.clientY;
              d3.select(this).select('g').attr("transform", `translate(${x},${y})`);
           })
-          .on('mouseup', () => d3.select(this).on("mousemove", null));
+
+          d3.select(window).on('mouseup', () => d3.select(this).on("mousemove", null));
         });
 
         })
