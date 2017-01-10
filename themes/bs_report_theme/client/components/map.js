@@ -240,7 +240,7 @@ export default function () {
             let w = box.width / 2;
             transformX = (d3.event.pageX - $('#map-container svg').offset().left) - startX;
             transformY = (d3.event.pageY - $('#map-container svg').offset().top) - startY;
-             d3.select(this).select('g').attr("transform", `translate(${x},${y}) scale(${transformScale})`);
+             d3.select(this).select('g').attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 
           d3.select(window).on('mouseup', () => d3.select(this).on("mousemove", null));
