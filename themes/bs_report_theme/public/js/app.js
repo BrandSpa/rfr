@@ -11618,6 +11618,9 @@
 
 	          d3.select("#map-container svg").attr('height', windowH);
 
+	          var transformX = void 0;
+	          var transformY = void 0;
+
 	          d3.select('.zoom_reset').on('click', function () {
 	            d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
 	          });
@@ -11625,8 +11628,7 @@
 	          d3.select('.zoom_more').on('click', function () {
 	            var mapSVG = d3.select("#map-container svg g");
 	            var k = 2;
-	            var width = d3.select("#map-container svg g").node().getBBox();
-	            console.log('width', d3.select("#map-container svg g").node().getBBox());
+	            var box = d3.select("#map-container svg g").node().getBBox();
 	            var transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + k + ')') : 'translate(0,0) scale(' + k + ')';
 	            mapSVG.attr("transform", transform);
 	          });
@@ -11642,8 +11644,8 @@
 	            var box = d3.select("#map-container svg g").node().getBBox();
 	            d3.select(this).on("mousemove", function (e) {
 	              var w = box.width / 2;
-	              var x = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left - startX;
-	              var y = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top - startY;
+	              transformX = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left - startX;
+	              transformY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top - startY;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + x + ',' + y + ')');
 	            });
 
