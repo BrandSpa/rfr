@@ -11634,14 +11634,14 @@
 	          d3.select("#map-container svg").on("mousedown", function () {
 	            var _this2 = this;
 
-	            console.log('mouse down', d3.event);
-
+	            console.log('mouse down', d3.event.pageX);
+	            var startX = d3.event.pageX;
 	            d3.event.preventDefault();
 	            var box = d3.select("#map-container svg g").node().getBBox();
 	            d3.select(this).on("mousemove", function (e) {
 	              var w = box.width / 2;
-	              var x = d3.event.clientX - w;
-	              var y = d3.event.clientY;
+	              var x = d3.event.pageX - startX;
+	              var y = d3.event.pageY;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + x + ',' + y + ')');
 	            });
 
