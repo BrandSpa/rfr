@@ -225,11 +225,6 @@ export default function () {
           .duration(750)
           .attr("transform", `scale(${k})`)
         });
-
-        
-
-
-        
       })
       },
 
