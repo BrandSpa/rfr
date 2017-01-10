@@ -235,9 +235,8 @@ export default function () {
           .on("mousemove", (e) => {
             let w = box.width / 2;
             let x = (d3.event.pageX - $('#map-container').offset().left) - startX;
-            console.log(x);
             let y = d3.event.pageY;
-             d3.select(this).select('g').attr("transform", `translate(${x},${y})`);
+             d3.select(this).select('g').attr("transform", `translate(${x},${0})`);
           })
 
           d3.select(window).on('mouseup', () => d3.select(this).on("mousemove", null));
