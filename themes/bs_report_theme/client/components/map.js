@@ -232,7 +232,11 @@ export default function () {
           d3.event.preventDefault();
 
           d3.select(this)
-          .on("mousemove", (e) => console.log(d3.event))
+          .on("mousemove", (e) => {
+            let x = d3.event.clientX; 
+            let y = d3.event.clientY;
+             d3.select(this).select('g').attr("transform", `translate(${x},${y})`);
+          })
           .on('mouseup', () => d3.select(this).on("mousemove", null));
         });
 

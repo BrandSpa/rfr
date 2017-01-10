@@ -11639,7 +11639,9 @@
 	            d3.event.preventDefault();
 
 	            d3.select(this).on("mousemove", function (e) {
-	              return console.log(d3.event);
+	              var x = d3.event.clientX;
+	              var y = d3.event.clientY;
+	              d3.select(_this2).select('g').attr("transform", 'translate(' + x + ',' + y + ')');
 	            }).on('mouseup', function () {
 	              return d3.select(_this2).on("mousemove", null);
 	            });
