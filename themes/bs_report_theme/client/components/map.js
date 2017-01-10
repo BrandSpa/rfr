@@ -114,18 +114,18 @@ export default function () {
       countriesTrans = JSON.parse(countriesTrans);
 
 
-      let zoomed = d3.zoom()
-      .scaleExtent([1, 5])
-      .filter(function() {
-        return d3.event.type !== 'wheel';
-      })
-      .on('zoom', function() {
+      // let zoomed = d3.zoom()
+      // .scaleExtent([1, 5])
+      // .filter(function() {
+      //   return d3.event.type !== 'wheel';
+      // })
+      // .on('zoom', function() {
 
-        let transform = d3.event.transform;
+      //   let transform = d3.event.transform;
 
-        d3.select('.map__controllers').classed('map__controllers--show', true);
-        d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale("+ transform.k +") ");
-      });
+      //   d3.select('.map__controllers').classed('map__controllers--show', true);
+      //   d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale("+ transform.k +") ");
+      // });
 
       let map = appendMap(this.mapUrl, mapContainer);
 
@@ -133,7 +133,7 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
         let paths = d3.select(mapContainer).selectAll("path");
         
-        d3.select("#map-container svg").call(zoomed);
+        // d3.select("#map-container svg").call(zoomed);
 
         paths.each(function() {
           let $el = d3.select(this);
@@ -224,6 +224,11 @@ export default function () {
           console.log('width',d3.select("#map-container svg g").node().getBBox());
           let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${k})`) : `translate(0,0) scale(${k})`;
           mapSVG.attr("transform", transform);
+        });
+
+        d3.select("#map-container svg g").on("mousedown", function() { 
+          d3.select(this)
+          .on("mousemove", (e) => console.log(e));
         });
 
       })

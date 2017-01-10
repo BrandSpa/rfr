@@ -11510,15 +11510,18 @@
 	        countriesTrans = JSON.parse(countriesTrans);
 	        countriesTrans = JSON.parse(countriesTrans);
 
-	        var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
-	          return d3.event.type !== 'wheel';
-	        }).on('zoom', function () {
+	        // let zoomed = d3.zoom()
+	        // .scaleExtent([1, 5])
+	        // .filter(function() {
+	        //   return d3.event.type !== 'wheel';
+	        // })
+	        // .on('zoom', function() {
 
-	          var transform = d3.event.transform;
+	        //   let transform = d3.event.transform;
 
-	          d3.select('.map__controllers').classed('map__controllers--show', true);
-	          d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale(" + transform.k + ") ");
-	        });
+	        //   d3.select('.map__controllers').classed('map__controllers--show', true);
+	        //   d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale("+ transform.k +") ");
+	        // });
 
 	        var map = appendMap(this.mapUrl, mapContainer);
 
@@ -11526,7 +11529,7 @@
 	          var polygons = d3.select(mapContainer).selectAll("polygon");
 	          var paths = d3.select(mapContainer).selectAll("path");
 
-	          d3.select("#map-container svg").call(zoomed);
+	          // d3.select("#map-container svg").call(zoomed);
 
 	          paths.each(function () {
 	            var $el = d3.select(this);
@@ -11626,6 +11629,12 @@
 	            console.log('width', d3.select("#map-container svg g").node().getBBox());
 	            var transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + k + ')') : 'translate(0,0) scale(' + k + ')';
 	            mapSVG.attr("transform", transform);
+	          });
+
+	          d3.select("#map-container svg g").on("mousedown", function () {
+	            d3.select(this).on("mousemove", function (e) {
+	              return console.log(e);
+	            });
 	          });
 	        });
 	      },
