@@ -235,6 +235,7 @@ export default function () {
           .on("mousemove", (e) => {
             let w = box.width / 2;
             let x = d3.event.pageX - startX;
+            console.log(x);
             let y = d3.event.pageY;
              d3.select(this).select('g').attr("transform", `translate(${x},${y})`);
           })

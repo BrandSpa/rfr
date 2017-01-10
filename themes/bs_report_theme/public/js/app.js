@@ -11641,6 +11641,7 @@
 	            d3.select(this).on("mousemove", function (e) {
 	              var w = box.width / 2;
 	              var x = d3.event.pageX - startX;
+	              console.log(x);
 	              var y = d3.event.pageY;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + x + ',' + y + ')');
 	            });
