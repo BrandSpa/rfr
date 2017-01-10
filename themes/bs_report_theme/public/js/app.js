@@ -11633,6 +11633,14 @@
 	            mapSVG.attr("transform", transform);
 	          });
 
+	          d3.select('.zoom_less').on('click', function () {
+	            var mapSVG = d3.select("#map-container svg g");
+	            transformScale = transformScale > 1 ? transformScale - 1 : 1;
+	            var box = d3.select("#map-container svg g").node().getBBox();
+	            var transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + transformScale + ')') : 'translate(0,0) scale(' + transformScale + ')';
+	            mapSVG.attr("transform", transform);
+	          });
+
 	          d3.select("#map-container svg").on("mousedown", function () {
 	            var _this2 = this;
 

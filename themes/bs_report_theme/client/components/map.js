@@ -228,6 +228,14 @@ export default function () {
           mapSVG.attr("transform", transform);
         });
 
+        d3.select('.zoom_less').on('click', function() {
+          let mapSVG = d3.select("#map-container svg g");
+          transformScale = transformScale > 1 ? transformScale - 1 : 1;
+          let box = d3.select("#map-container svg g").node().getBBox();
+          let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
+          mapSVG.attr("transform", transform);
+        });
+
         d3.select("#map-container svg").on("mousedown", function() { 
           console.log('mouse down', d3.event.pageX);
           let startX = d3.event.pageX - $('#map-container svg ').offset().left;
