@@ -6416,7 +6416,9 @@ form button {
         position: initial; } }
   .map__zoom_btns {
     position: absolute;
-    top: 20%; }
+    top: 20%;
+    width: 14px;
+    height: auto; }
     .map__zoom_btns .button {
       width: 14px;
       height: 14px;
