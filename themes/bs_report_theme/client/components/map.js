@@ -227,6 +227,7 @@ export default function () {
         });
 
         d3.select("#map-container svg g").on("mousedown", function() { 
+          d3.event.preventDefault();
           d3.select(this)
           .on("mousemove", (e) => console.log(e));
         });
