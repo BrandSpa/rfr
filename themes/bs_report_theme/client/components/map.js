@@ -220,8 +220,8 @@ export default function () {
         d3.select('.zoom_more').on('click', function() {
           let mapSVG = d3.select("#map-container svg g");
           let k = 2;
-          let width = mapSVG.attr('width') / 2;
-          console.log('width', width);
+          let width = d3.select("#map-container svg g").node().getBBox() / 2;
+          console.log('width',d3.select("#map-container svg g").node().getBBox());
           let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${k})`) : `translate(0,0) scale(${k})`;
           mapSVG.attr("transform", transform);
         });
