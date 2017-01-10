@@ -11624,8 +11624,7 @@
 	            var mapSVG = d3.select("#map-container svg");
 	            var k = 2;
 	            console.log('transform', mapSVG.attr("transform"));
-
-	            mapSVG.transition().duration(750).attr("transform", 'scale(' + k + ')');
+	            mapSVG.attr("transform", 'scale(' + k + ')');
 	          });
 	        });
 	      },
