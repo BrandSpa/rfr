@@ -11635,12 +11635,12 @@
 	            var _this2 = this;
 
 	            console.log('mouse down', d3.event.pageX);
-	            var startX = d3.event.pageX;
+	            var startX = d3.event.pageX - (0, _jquery2.default)('#map-container').offset().left;
 	            d3.event.preventDefault();
 	            var box = d3.select("#map-container svg g").node().getBBox();
 	            d3.select(this).on("mousemove", function (e) {
 	              var w = box.width / 2;
-	              var x = d3.event.pageX - startX;
+	              var x = d3.event.pageX - (0, _jquery2.default)('#map-container').offset().left - startX;
 	              console.log(x);
 	              var y = d3.event.pageY;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + x + ',' + y + ')');

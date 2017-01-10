@@ -228,13 +228,13 @@ export default function () {
 
         d3.select("#map-container svg").on("mousedown", function() { 
           console.log('mouse down', d3.event.pageX);
-          let startX = d3.event.pageX;
+          let startX = d3.event.pageX - $('#map-container').offset().left;
           d3.event.preventDefault();
            let box = d3.select("#map-container svg g").node().getBBox();
           d3.select(this)
           .on("mousemove", (e) => {
             let w = box.width / 2;
-            let x = d3.event.pageX - startX;
+            let x = (d3.event.pageX - $('#map-container').offset().left) - startX;
             console.log(x);
             let y = d3.event.pageY;
              d3.select(this).select('g').attr("transform", `translate(${x},${y})`);
