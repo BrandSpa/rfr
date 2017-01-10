@@ -11621,9 +11621,9 @@
 
 	          d3.select('.zoom_more').on('click', function () {
 	            var mapSVG = d3.select("#map-container svg g");
-	            var k = 4;
-	            console.log('transform', mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + k + ')'));
-	            mapSVG.attr("transform", 'scale(' + k + ')');
+	            var k = 2;
+	            var transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + k + ')') : 'scale(' + k + ')';
+	            mapSVG.attr("transform", transform);
 	          });
 	        });
 	      },
