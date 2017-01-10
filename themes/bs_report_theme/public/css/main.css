@@ -6414,6 +6414,14 @@ form button {
     @media (max-width: 767px) {
       .map__footer {
         position: initial; } }
+  .map__zoom_btns {
+    position: absolute;
+    top: 20%; }
+    .map__zoom_btns .button {
+      width: 14px;
+      height: 14px;
+      background: #192127;
+      border: 2px solid #FFFFFF; }
   .map__controllers {
     opacity: 0;
     transition: all 300ms ease; }

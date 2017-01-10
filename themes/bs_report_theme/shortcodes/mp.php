@@ -37,18 +37,18 @@
             <button class="button button--fill map__search_click" v-on:click="showSearch"></button>
           </div>
         </div>
-
-         <div class="col-md-12">
-          <div class="map__controllers">
-            <button class="map__controllers__more button"><?php echo gett('Reset'); ?></button>
-          </div>
-        </div>
-      
       </div>
 
     </div>
 
-  <div id="map-container"></div>
+  <div id="map-container">
+    <div class="map__zoom_btns">
+      <button class="button">reset</button>
+      <button class="button">+</button>
+      <button class="button">-</button>
+    </div>
+  </div>
+
   <div class="row map__footer">
   <div class="col-md-6 map_list">
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>

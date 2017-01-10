@@ -93,13 +93,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </a>
 
   <?php
-      $args = array(
-        'theme_location' => 'main',
-        'container' => false,
-        'echo' => true
-      );
+    $args = array(
+      'theme_location' => 'main',
+      'container' => false,
+      'echo' => true
+    );
 
-      $menu = wp_nav_menu( $args);
-
+    $menu = wp_nav_menu( $args);
    ?>
 </div>
