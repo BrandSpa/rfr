@@ -11623,7 +11623,7 @@
 	          d3.select('.zoom_more').on('click', function () {
 	            var mapSVG = d3.select("#map-container svg");
 	            var k = 2;
-	            console.log(mapSVG);
+	            console.log(mapSVG.attr("transform"));
 	            mapSVG.transition().duration(750).attr("transform", 'scale(' + k + ')');
 	          });
 	        });
