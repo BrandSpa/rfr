@@ -228,9 +228,11 @@ export default function () {
 
         d3.select("#map-container svg").on("mousedown", function() { 
           console.log('mouse down');
+
           d3.event.preventDefault();
           d3.select(this)
-          .on("mousemove", (e) => console.log(e));
+          .on("mousemove", (e) => console.log(d3.event));
+          .on('mouseup', () => d3.select(this).on("mousemove", null))
         });
 
         })
