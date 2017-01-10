@@ -6417,12 +6417,12 @@ form button {
   .map__zoom_btns {
     position: absolute;
     top: 20%;
-    right: 30px;
-    width: 14px;
+    right: 40px;
+    width: 40px;
     height: auto; }
     .map__zoom_btns .zoom_btn {
-      width: 14px;
-      height: 14px;
+      width: 40px;
+      height: 40px;
       background: #192127;
       border: 2px solid #FFFFFF; }
   .map__controllers {
