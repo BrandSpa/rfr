@@ -11635,15 +11635,15 @@
 	            var _this2 = this;
 
 	            console.log('mouse down', d3.event.pageX);
-	            var startX = d3.event.pageX - (0, _jquery2.default)('#map-container').offset().left;
-	            var startY = d3.event.pageY - (0, _jquery2.default)('#map-container').offset().top;
+	            var startX = d3.event.pageX - (0, _jquery2.default)('#map-container svg g').offset().left;
+	            var startY = d3.event.pageY - (0, _jquery2.default)('#map-container svg g').offset().top;
 
 	            d3.event.preventDefault();
 	            var box = d3.select("#map-container svg g").node().getBBox();
 	            d3.select(this).on("mousemove", function (e) {
 	              var w = box.width / 2;
-	              var x = d3.event.pageX - (0, _jquery2.default)('#map-container').offset().left - startX;
-	              var y = d3.event.pageY - (0, _jquery2.default)('#map-container').offset().top - startY;
+	              var x = d3.event.pageX - (0, _jquery2.default)('#map-container svg g').offset().left - startX;
+	              var y = d3.event.pageY - (0, _jquery2.default)('#map-container svg g').offset().top - startY;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + x + ',' + y + ')');
 	            });
 
