@@ -196,7 +196,6 @@ export default function () {
             $el.style("cursor", "pointer");
             $el.style("fill", fill);
             let name = countriesTrans[countryName];
-            console.log('name', name);
             showMapInfo($el, report, fill, name);
           }
         });
@@ -219,9 +218,9 @@ export default function () {
         });
 
         d3.select('.zoom_more').on('click', function() {
-          let mapSVG = d3.select("#map-container svg");
-          let k = 2;
-          console.log( 'transform', mapSVG.attr("transform") );
+          let mapSVG = d3.select("#map-container svg g");
+          let k = 4;
+          console.log( 'transform', mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${k})`) );
           mapSVG.attr("transform", `scale(${k})`)
         });
 

@@ -11601,7 +11601,6 @@
 	              $el.style("cursor", "pointer");
 	              $el.style("fill", fill);
 	              var name = countriesTrans[countryName];
-	              console.log('name', name);
 	              showMapInfo($el, report, fill, name);
 	            }
 	          });
@@ -11621,9 +11620,9 @@
 	          });
 
 	          d3.select('.zoom_more').on('click', function () {
-	            var mapSVG = d3.select("#map-container svg");
-	            var k = 2;
-	            console.log('transform', mapSVG.attr("transform"));
+	            var mapSVG = d3.select("#map-container svg g");
+	            var k = 4;
+	            console.log('transform', mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + k + ')'));
 	            mapSVG.attr("transform", 'scale(' + k + ')');
 	          });
 	        });
