@@ -6420,7 +6420,7 @@ form button {
     right: 30px;
     width: 14px;
     height: auto; }
-    .map__zoom_btns .button {
+    .map__zoom_btns .zoom_btn {
       width: 14px;
       height: 14px;
       background: #192127;
