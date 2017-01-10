@@ -43,9 +43,9 @@
 
   <div id="map-container">
     <div class="map__zoom_btns">
-      <button class="zoom_btn">R</button>
-      <button class="zoom_btn">+</button>
-      <button class="zoom_btn">-</button>
+      <button class="zoom_btn zoom_reset">R</button>
+      <button class="zoom_btn zoom_more">+</button>
+      <button class="zoom_btn zoom_less">-</button>
     </div>
   </div>
 
