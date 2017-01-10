@@ -221,6 +221,7 @@ export default function () {
           let mapSVG = d3.select("#map-container svg");
           let k = 2;
           console.log( 'transform', mapSVG.attr("transform") );
+
           mapSVG.transition()
           .duration(750)
           .attr("transform", `scale(${k})`)
