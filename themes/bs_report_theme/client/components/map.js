@@ -220,7 +220,7 @@ export default function () {
         d3.select('.zoom_more').on('click', function() {
           let mapSVG = d3.select("#map-container svg");
           let k = 2;
-          console.log(mapSVG.attr("transform") );
+          console.log( 'transform', mapSVG.attr("transform") );
           mapSVG.transition()
           .duration(750)
           .attr("transform", `scale(${k})`)
