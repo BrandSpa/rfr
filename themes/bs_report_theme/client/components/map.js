@@ -246,7 +246,7 @@ export default function () {
           .on("mousemove", (e) => {
              let box = d3.select("#map-container svg g").node().getBBox();
              let transform = d3.select(this).select('g').attr('transform');
-            console.log('transform', transformX, transformY, transform ? transform.match(/translate\((.*?)\)/g).split(',') : transform ); 
+            console.log('transform', transformX, transformY, transform ); 
             let w = box.width / 2;
             transformX = (d3.event.pageX - $('#map-container svg').offset().left) - startX;
             transformY = (d3.event.pageY - $('#map-container svg').offset().top) - startY;
