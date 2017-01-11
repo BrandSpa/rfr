@@ -11646,12 +11646,12 @@
 	          d3.select("#map-container svg").on("mousedown", function () {
 	            var _this2 = this;
 
-	            var groupMap = (0, _jquery2.default)('#map-container svg');
+	            var groupMap = (0, _jquery2.default)('#map-container svg g');
 	            var elOffsetLeft = groupMap.offset().left;
 	            var elOffsetTop = groupMap.offset().top;
 	            var startX = d3.event.clientX - elOffsetLeft;
 	            var startY = d3.event.clientY - elOffsetTop;
-
+	            console.log(d3.event);
 	            d3.event.preventDefault();
 
 	            d3.select(this).on("mousemove", function (e) {

@@ -239,12 +239,12 @@ export default function () {
         });
 
         d3.select("#map-container svg").on("mousedown", function() {
-          let groupMap = $('#map-container svg');
+          let groupMap = $('#map-container svg g');
           let elOffsetLeft = groupMap.offset().left;         
           let elOffsetTop = groupMap.offset().top;         
           let startX = d3.event.clientX - elOffsetLeft;
           let startY = d3.event.clientY - elOffsetTop;
-
+          console.log(d3.event);
           d3.event.preventDefault();
           
           d3.select(this)
