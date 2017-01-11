@@ -250,8 +250,8 @@ export default function () {
           d3.select(this)
           .on("mousemove", (e) => {
             console.log('e', e);
-            transformY = (transformY - d3.event.clientY) - startY; //(d3.event.clientY - elOffsetTop) - startX
-            transformX = (transformX - d3.event.clientX) - startX;
+            transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
+            transformX = d3.event.clientX - startX;
              d3.select(this).select('g').attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 
