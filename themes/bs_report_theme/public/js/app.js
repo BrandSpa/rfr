@@ -29147,6 +29147,8 @@
 	  value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	exports.default = function () {
 	  Vue.component('search-country', {
 	    template: '#search-country-template',
@@ -29198,6 +29200,10 @@
 	          data: { action: 'reports', data: data },
 	          dataType: "json"
 	        }).done(function (res) {
+	          var withTranslation = res.map(function (report) {
+	            return _extends({}, report, { meta_country: _this3.countriesTrans[report.meta_country] });
+	          });
+	          console.log('withTranslation', withTranslation);
 	          _this3.$set('reports', res);
 	          _this3.$set('items', res);
 	        });

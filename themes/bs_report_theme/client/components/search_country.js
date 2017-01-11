@@ -49,6 +49,10 @@ export default function() {
           dataType: "json"
         })
         .done(res => {
+          let withTranslation = res.map(report => {
+            return {...report, meta_country: this.countriesTrans[report.meta_country]};
+          });
+          console.log('withTranslation', withTranslation);
           this.$set('reports', res);
           this.$set('items', res);
         });
