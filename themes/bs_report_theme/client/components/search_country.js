@@ -52,6 +52,18 @@ export default function() {
           let withTranslation = res.map(report => {
             return {...report, meta_country: this.countriesTrans[report.meta_country]};
           });
+
+          withTranslation = withTranslation.sort(function (a, b) {
+            if (a.meta_country > b.meta_country) {
+              return 1;
+            }
+            if (a.meta_country < b.meta_country) {
+              return -1;
+            }
+            
+            return 0;
+          });
+
           console.log('withTranslation', withTranslation);
           this.$set('reports', res);
           this.$set('items', res);
