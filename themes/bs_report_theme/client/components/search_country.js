@@ -60,11 +60,11 @@ export default function() {
             if (a.meta_country < b.meta_country) {
               return -1;
             }
-            
+
             return 0;
           });
 
-          console.log('withTranslation', withTranslation);
+          console.log('withTranslation sorted', withTranslation);
           this.$set('reports', res);
           this.$set('items', res);
         });
