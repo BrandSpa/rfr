@@ -11627,6 +11627,7 @@
 	          d3.select("#map-container svg").attr('height', windowH);
 
 	          d3.select('.zoom_reset').on('click', function () {
+	            transformScale = 1;
 	            d3.select("#map-container svg g").transition().duration(300).attr('transform', 'translate(0,0) scale(1)');
 	          });
 
