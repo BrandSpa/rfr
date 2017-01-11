@@ -11641,7 +11641,7 @@
 	            mapSVG.attr("transform", transform);
 	          });
 
-	          d3.select("#map-container svg g").on("mousedown", function () {
+	          d3.select("#map-container svg").on("mousedown", function () {
 	            var _this2 = this;
 
 	            console.log('mouse down', d3.event.pageX);
