@@ -246,10 +246,11 @@ export default function () {
           
           d3.select(this)
           .on("mousemove", (e) => {
-            const x = d3.event.pageX - $('#map-container svg').offset().left;
-            const walkX = (x - startX) * 2;
+            let box = d3.select("#map-container svg g").node().getBBox();
+            let w = box.width / 2;
+            const walkX = d3.event.pageX - $('#map-container svg').offset().left - startX;
             transformY = (d3.event.pageY - $('#map-container svg').offset().top) - transformY;
-            transformX = transformX - walkX;
+            transformX = walkX - w;
              d3.select(this).select('g').attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 

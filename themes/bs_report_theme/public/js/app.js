@@ -11652,10 +11652,11 @@
 	            d3.event.preventDefault();
 
 	            d3.select(this).on("mousemove", function (e) {
-	              var x = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left;
-	              var walkX = (x - startX) * 2;
+	              var box = d3.select("#map-container svg g").node().getBBox();
+	              var w = box.width / 2;
+	              var walkX = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left - startX;
 	              transformY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top - transformY;
-	              transformX = transformX - walkX;
+	              transformX = walkX - w;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
 	            });
 
