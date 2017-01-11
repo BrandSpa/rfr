@@ -11645,6 +11645,8 @@
 	            var _this2 = this;
 
 	            console.log('mouse down', d3.event.pageX);
+	            var transform = d3.select(this).attr('transfrom');
+	            console.log('transform', transform);
 	            var startX = d3.event.pageX - (0, _jquery2.default)('#map-container svg ').offset().left;
 	            var startY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top;
 

@@ -238,6 +238,8 @@ export default function () {
 
         d3.select("#map-container svg g").on("mousedown", function() { 
           console.log('mouse down', d3.event.pageX);
+          let transform = d3.select(this).attr('transfrom');
+          console.log('transform', transform);
           let startX = d3.event.pageX - $('#map-container svg ').offset().left;
           let startY = d3.event.pageY - $('#map-container svg').offset().top;
 
