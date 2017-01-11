@@ -11659,7 +11659,7 @@
 	              var w = box.width / 2;
 	              transformY = d3.event.pageY - elOffsetTop - startY;
 	              transformX = d3.event.pageX - elOffsetLeft - startX;
-	              d3.select(_this2).select('g').attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
+	              d3.select(_this2).select('g').transition().duration(300).attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
 	            });
 
 	            d3.select(window).on('mouseup', function () {
