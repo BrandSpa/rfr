@@ -11652,7 +11652,6 @@
 	            d3.event.preventDefault();
 
 	            d3.select(this).on("mousemove", function (e) {
-	              var w = box.width / 2;
 	              transformX = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left - transformX;
 	              transformY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top - transformY;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
