@@ -11510,18 +11510,22 @@
 	        countriesTrans = JSON.parse(countriesTrans);
 	        countriesTrans = JSON.parse(countriesTrans);
 
-	        // let zoomed = d3.zoom()
-	        // .scaleExtent([1, 5])
-	        // .filter(function() {
-	        //   return d3.event.type !== 'wheel';
-	        // })
-	        // .on('zoom', function() {
+	        //default transform params
+	        var transformX = 0;
+	        var transformY = 0;
+	        var transformScale = 1;
 
-	        //   let transform = d3.event.transform;
+	        var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
+	          return d3.event.type !== 'wheel';
+	        }).on('zoom', function () {
 
-	        //   d3.select('.map__controllers').classed('map__controllers--show', true);
-	        //   d3.select(this).select('g').attr("transform", "translate(" + [transform.x, transform.y] + ") scale("+ transform.k +") ");
-	        // });
+	          var transform = d3.event.transform;
+	          transformX = transform.x;
+	          transformY = transform.y;
+
+	          d3.select('.map__controllers').classed('map__controllers--show', true);
+	          d3.select(this).select('g').attr("transform", "translate(" + [transformX, transformY] + ") scale(" + transformScale + ") ");
+	        });
 
 	        var map = appendMap(this.mapUrl, mapContainer);
 
@@ -11609,19 +11613,17 @@
 	          });
 
 	          var windowH = void 0;
+	          var windowW = void 0;
+
 	          //set map height
 	          if (md.phone() == null) {
 	            windowH = window.innerHeight;
+	            windowW = (0, _jquery2.default)('body').innerWidth();
 	          } else {
 	            windowH = window.innerHeight / 2;
 	          }
 
 	          d3.select("#map-container svg").attr('height', windowH);
-
-	          //default transform params
-	          var transformX = 0;
-	          var transformY = 0;
-	          var transformScale = 1;
 
 	          d3.select('.zoom_reset').on('click', function () {
 	            d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
@@ -11643,29 +11645,26 @@
 	            mapSVG.attr("transform", transform);
 	          });
 
-	          d3.select("#map-container svg").on("mousedown", function () {
-	            var _this2 = this;
+	          // d3.select("#map-container svg").on("mousedown", function() {
+	          //   let groupMap = $('#map-container svg g');
+	          //   let elOffsetLeft = groupMap.offset().left;        
+	          //   let elOffsetTop = groupMap.offset().top;        
+	          //   let startX = d3.event.clientX - elOffsetLeft;
+	          //   let startY = d3.event.clientY - elOffsetTop;
+	          //   d3.event.preventDefault();
 
-	            var groupMap = (0, _jquery2.default)('#map-container svg g');
-	            var elOffsetLeft = groupMap.offset().left;
-	            var elOffsetTop = groupMap.offset().top;
-	            var startX = d3.event.clientX - elOffsetLeft;
-	            var startY = d3.event.clientY - elOffsetTop;
-	            d3.event.preventDefault();
+	          //   d3.select(this)
+	          //   .on("mousemove", () => {
+	          //      let box = d3.select("#map-container svg g").node().getBBox();
+	          //      let w = box.width / 2;
+	          //      let h = box.height / 2;
+	          //     transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
+	          //     transformX = d3.event.clientX - startX;
+	          //      d3.select(this).select('g').attr("transform", `translate(${d3.event.x + w - startX}, ${d3.event.y + h - startY}) scale(${transformScale})`);
+	          //   })
 
-	            d3.select(this).on("mousemove", function () {
-	              var box = d3.select("#map-container svg g").node().getBBox();
-	              var w = box.width / 2;
-	              var h = box.height / 2;
-	              transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
-	              transformX = d3.event.clientX - startX;
-	              d3.select(_this2).select('g').attr("transform", 'translate(' + (d3.event.x + w - startX) + ',' + (d3.event.y + h - startY) + ') scale(' + transformScale + ')');
-	            });
-
-	            d3.select(window).on('mouseup', function () {
-	              return d3.select(_this2).on("mousemove", null);
-	            });
-	          });
+	          //   d3.select(window).on('mouseup', () => d3.select(this).on("mousemove", null));
+	          // });
 	        });
 	      },
 	      showSearch: function showSearch(e) {
