@@ -223,12 +223,13 @@ export default function () {
 
         d3.select("#map-container svg").attr('height', windowH);
         
-       
-
         d3.select('.zoom_reset').on('click', function() {
           transformScale = 1;
           lastX = 0;
           lastY = 0;
+          transformX = 0;
+          transformY = 0;
+          
           d3.select("#map-container svg g")
           .transition()
           .duration(300)
