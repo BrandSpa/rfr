@@ -246,8 +246,8 @@ export default function () {
           
           d3.select(this)
           .on("mousemove", (e) => {
-            transformX = (d3.event.pageX - $('#map-container svg').offset().left) - transformX;
-            transformY = (d3.event.pageY - $('#map-container svg').offset().top) - transformY;
+            transformX = d3.event.pageX;
+            transformY = d3.event.pageY;
              d3.select(this).select('g').attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 
