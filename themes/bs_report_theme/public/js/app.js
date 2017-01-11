@@ -11533,7 +11533,7 @@
 	          var polygons = d3.select(mapContainer).selectAll("polygon");
 	          var paths = d3.select(mapContainer).selectAll("path");
 
-	          // d3.select("#map-container svg").call(zoomed);
+	          d3.select("#map-container svg").call(zoomed);
 
 	          paths.each(function () {
 	            var $el = d3.select(this);

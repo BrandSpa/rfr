@@ -139,7 +139,7 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
         let paths = d3.select(mapContainer).selectAll("path");
         
-        // d3.select("#map-container svg").call(zoomed);
+        d3.select("#map-container svg").call(zoomed);
 
         paths.each(function() {
           let $el = d3.select(this);
