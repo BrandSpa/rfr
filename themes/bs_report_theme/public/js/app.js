@@ -11651,13 +11651,15 @@
 	            var elOffsetTop = groupMap.offset().top;
 	            var startX = d3.event.clientX - elOffsetLeft;
 	            var startY = d3.event.clientY - elOffsetTop;
-	            console.log(d3.event);
 	            d3.event.preventDefault();
 
 	            d3.select(this).on("mousemove", function () {
+	              var box = d3.select("#map-container svg g").node().getBBox();
+	              var w = box.width / 2;
+	              var h = box.height / 2;
 	              transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
 	              transformX = d3.event.clientX - startX;
-	              d3.select(_this2).select('g').attr("transform", 'translate(' + d3.event.x + ',' + d3.event.y + ') scale(' + transformScale + ')');
+	              d3.select(_this2).select('g').attr("transform", 'translate(' + (d3.event.x - w) + ',' + (d3.event.y - h) + ') scale(' + transformScale + ')');
 	            });
 
 	            d3.select(window).on('mouseup', function () {

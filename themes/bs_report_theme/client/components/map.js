@@ -244,14 +244,16 @@ export default function () {
           let elOffsetTop = groupMap.offset().top;        
           let startX = d3.event.clientX - elOffsetLeft;
           let startY = d3.event.clientY - elOffsetTop;
-          console.log(d3.event);
           d3.event.preventDefault();
           
           d3.select(this)
           .on("mousemove", () => {
+             let box = d3.select("#map-container svg g").node().getBBox();
+             let w = box.width / 2;
+             let h = box.height / 2;
             transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
             transformX = d3.event.clientX - startX;
-             d3.select(this).select('g').attr("transform", `translate(${d3.event.x},${d3.event.y}) scale(${transformScale})`);
+             d3.select(this).select('g').attr("transform", `translate(${d3.event.x - w},${d3.event.y - h}) scale(${transformScale})`);
           })
 
           d3.select(window).on('mouseup', () => d3.select(this).on("mousemove", null));
