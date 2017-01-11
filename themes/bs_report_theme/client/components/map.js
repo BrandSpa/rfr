@@ -250,7 +250,7 @@ export default function () {
             let w = box.width / 2;
             const walkX = d3.event.pageX - $('#map-container svg').offset().left - startX;
             transformY = (d3.event.pageY - $('#map-container svg').offset().top) - transformY;
-            transformX = walkX - w;
+            transformX = walkX + w;
              d3.select(this).select('g').attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 
