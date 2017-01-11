@@ -11650,6 +11650,7 @@
 
 	            d3.event.preventDefault();
 	            var box = d3.select("#map-container svg g").node().getBBox();
+	            console.log('box move', box);
 	            d3.select(this).on("mousemove", function (e) {
 	              var w = box.width / 2;
 	              transformX = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left - startX;

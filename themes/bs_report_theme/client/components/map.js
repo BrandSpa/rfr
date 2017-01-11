@@ -243,6 +243,7 @@ export default function () {
 
           d3.event.preventDefault();
            let box = d3.select("#map-container svg g").node().getBBox();
+           console.log('box move', box);
           d3.select(this)
           .on("mousemove", (e) => {
             let w = box.width / 2;
