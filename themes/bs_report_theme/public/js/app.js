@@ -11513,6 +11513,8 @@
 	        //default transform params
 	        var transformX = 0;
 	        var transformY = 0;
+	        var lastX = 0;
+	        var lastY = 0;
 	        var transformScale = 1;
 
 	        // let zoomed = d3.zoom()
@@ -11651,26 +11653,31 @@
 	            mapSVG.transition().duration(300).attr("transform", transform);
 	          });
 
-	          // d3.select("#map-container svg").on("mousedown", function() {
-	          //   let groupMap = $('#map-container svg g');
-	          //   let elOffsetLeft = groupMap.offset().left;        
-	          //   let elOffsetTop = groupMap.offset().top;        
-	          //   let startX = d3.event.clientX - elOffsetLeft;
-	          //   let startY = d3.event.clientY - elOffsetTop;
-	          //   d3.event.preventDefault();
+	          d3.select("#map-container svg").on("mousedown", function () {
+	            var _this2 = this;
 
-	          //   d3.select(this)
-	          //   .on("mousemove", () => {
-	          //      let box = d3.select("#map-container svg g").node().getBBox();
-	          //      let w = box.width / 2;
-	          //      let h = box.height / 2;
-	          //     transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
-	          //     transformX = d3.event.clientX - startX;
-	          //      d3.select(this).select('g').attr("transform", `translate(${d3.event.x + w - startX}, ${d3.event.y + h - startY}) scale(${transformScale})`);
-	          //   })
+	            var groupMap = (0, _jquery2.default)('#map-container svg g');
+	            var elOffsetLeft = groupMap.offset().left;
+	            var elOffsetTop = groupMap.offset().top;
+	            var startX = d3.event.clientX;
+	            var startY = d3.event.clientY;
+	            d3.event.preventDefault();
 
-	          //   d3.select(window).on('mouseup', () => d3.select(this).on("mousemove", null));
-	          // });
+	            d3.select(this).on("mousemove", function () {
+	              var box = d3.select("#map-container svg g").node().getBBox();
+	              var w = box.width / 2;
+	              var h = box.height / 2;
+	              transformY = lastY + (d3.event.clientY - startY); //(d3.event.clientY - elOffsetTop) - startX
+	              transformX = lastX + (d3.event.clientX - startX);
+	              d3.select(_this2).select('g').attr("transform", 'translate(' + transformX + ', ' + transformY + ') scale(' + transformScale + ')');
+	            });
+
+	            d3.select(window).on('mouseup', function () {
+	              d3.select(_this2).on("mousemove", null);
+	              lastX = transformX;
+	              lastY = transformY;
+	            });
+	          });
 	        });
 	      },
 	      showSearch: function showSearch(e) {
