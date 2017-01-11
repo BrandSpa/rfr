@@ -227,6 +227,8 @@ export default function () {
 
         d3.select('.zoom_reset').on('click', function() {
           transformScale = 1;
+          lastX = 0;
+          lastY = 0;
           d3.select("#map-container svg g")
           .transition()
           .duration(300)
