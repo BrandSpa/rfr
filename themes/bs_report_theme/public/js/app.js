@@ -11646,17 +11646,19 @@
 	          d3.select("#map-container svg").on("mousedown", function () {
 	            var _this2 = this;
 
-	            var startX = d3.event.pageX - (0, _jquery2.default)('#map-container svg ').offset().left;
-	            var startY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top;
+	            var groupMap = (0, _jquery2.default)('#map-container svg g');
+	            var elOffsetLeft = groupMap.offset().left;
+	            var elOffsetTop = groupMap.offset().top;
+	            var startX = d3.event.pageX - elOffsetLeft;
+	            var startY = d3.event.pageY - elOffsetTop;
 
 	            d3.event.preventDefault();
 
 	            d3.select(this).on("mousemove", function (e) {
 	              var box = d3.select("#map-container svg g").node().getBBox();
 	              var w = box.width / 2;
-	              var walkX = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left - startX;
-	              transformY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top - transformY;
-	              transformX = walkX + w;
+	              transformY = d3.event.pageY - elOffsetTop - startY;
+	              transformX = d3.event.pageX - elOffsetLeft - startX;
 	              d3.select(_this2).select('g').attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
 	            });
 
