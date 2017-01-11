@@ -11654,11 +11654,10 @@
 	            console.log(d3.event);
 	            d3.event.preventDefault();
 
-	            d3.select(this).on("mousemove", function (e) {
-	              console.log('e', e);
+	            d3.select(this).on("mousemove", function () {
 	              transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
 	              transformX = d3.event.clientX - startX;
-	              d3.select(_this2).select('g').attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
+	              d3.select(_this2).select('g').attr("transform", 'translate(' + d3.event.x + ',' + d3.event.y + ') scale(' + transformScale + ')');
 	            });
 
 	            d3.select(window).on('mouseup', function () {
