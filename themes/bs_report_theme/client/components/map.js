@@ -253,7 +253,7 @@ export default function () {
             let w = box.width / 2;
             transformY = (d3.event.pageY - elOffsetTop);
             transformX = (d3.event.pageX - elOffsetLeft);
-             d3.select(this).select('g').transition().duration(300).attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
+             d3.select(this).select('g').transition().duration(100).attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 
           d3.select(window).on('mouseup', () => d3.select(this).on("mousemove", null));
