@@ -11659,7 +11659,7 @@
 	              var h = box.height / 2;
 	              transformY = d3.event.clientY - startY; //(d3.event.clientY - elOffsetTop) - startX
 	              transformX = d3.event.clientX - startX;
-	              d3.select(_this2).select('g').attr("transform", 'translate(' + d3.event.x / w + ',' + d3.event.y / h + ') scale(' + transformScale + ')');
+	              d3.select(_this2).select('g').attr("transform", 'translate(' + (d3.event.x + w - startX) + ',' + (d3.event.y + h - startY) + ') scale(' + transformScale + ')');
 	            });
 
 	            d3.select(window).on('mouseup', function () {
