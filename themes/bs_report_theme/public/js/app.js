@@ -11524,6 +11524,7 @@
 	          transformY = transform.y;
 
 	          d3.select('.map__controllers').classed('map__controllers--show', true);
+
 	          d3.select(this).select('g').attr("transform", "translate(" + [transformX, transformY] + ") scale(" + transformScale + ") ");
 	        });
 
@@ -11626,7 +11627,7 @@
 	          d3.select("#map-container svg").attr('height', windowH);
 
 	          d3.select('.zoom_reset').on('click', function () {
-	            d3.select("#map-container svg").transition().duration(750).call(zoomed.transform, d3.zoomIdentity);
+	            d3.select("#map-container svg g").transition().duration(300).attr('transform', 'translate(0,0) scale(1)');
 	          });
 
 	          d3.select('.zoom_more').on('click', function () {
