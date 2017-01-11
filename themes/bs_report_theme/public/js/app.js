@@ -29201,7 +29201,8 @@
 	          dataType: "json"
 	        }).done(function (res) {
 	          var withTranslation = res.map(function (report) {
-	            return _extends({}, report, { meta_country: _this3.countriesTrans[report.meta_country] });
+	            var meta_country = _this3.countriesTrans[report.meta_country] ? _this3.countriesTrans[report.meta_country] : report.meta_country;
+	            return _extends({}, report, { meta_country: meta_country });
 	          });
 
 	          withTranslation = withTranslation.sort(function (a, b) {

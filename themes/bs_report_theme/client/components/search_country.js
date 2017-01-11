@@ -50,7 +50,8 @@ export default function() {
         })
         .done(res => {
           let withTranslation = res.map(report => {
-            return {...report, meta_country: this.countriesTrans[report.meta_country]};
+            let meta_country = this.countriesTrans[report.meta_country] ? this.countriesTrans[report.meta_country] : report.meta_country;
+            return {...report, meta_country};
           });
 
           withTranslation = withTranslation.sort(function (a, b) {
