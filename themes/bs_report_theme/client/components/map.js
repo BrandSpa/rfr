@@ -235,7 +235,10 @@ export default function () {
           transformScale = transformScale + 1;
           let box = d3.select("#map-container svg g").node().getBBox();
           let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
-          mapSVG.attr("transform", transform);
+          mapSVG
+          .transition()
+          .duration(300)
+          .attr("transform", transform);
         });
 
         d3.select('.zoom_less').on('click', function() {
@@ -243,7 +246,10 @@ export default function () {
           transformScale = transformScale > 1 ? transformScale - 1 : 1;
           let box = d3.select("#map-container svg g").node().getBBox();
           let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
-          mapSVG.attr("transform", transform);
+          mapSVG
+          .transition()
+          .duration(300)
+          .attr("transform", transform);
         });
 
         // d3.select("#map-container svg").on("mousedown", function() {
