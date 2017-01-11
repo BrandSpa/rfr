@@ -11515,18 +11515,22 @@
 	        var transformY = 0;
 	        var transformScale = 1;
 
-	        var zoomed = d3.zoom().scaleExtent([1, 5]).filter(function () {
-	          return d3.event.type !== 'wheel';
-	        }).on('zoom', function () {
+	        // let zoomed = d3.zoom()
+	        // .scaleExtent([1, 5])
+	        // .filter(function() {
+	        //   return d3.event.type !== 'wheel';
+	        // })
+	        // .on('zoom', function() {
 
-	          var transform = d3.event.transform;
-	          transformX = transform.x;
-	          transformY = transform.y;
+	        //   let transform = d3.event.transform;
+	        //   transformX = transform.x;
+	        //   transformY = transform.y;
 
-	          d3.select('.map__controllers').classed('map__controllers--show', true);
+	        //   d3.select('.map__controllers').classed('map__controllers--show', true);
 
-	          d3.select(this).select('g').attr("transform", "translate(" + [transformX, transformY] + ") scale(" + transformScale + ") ");
-	        });
+	        //   d3.select(this).select('g')
+	        //   .attr("transform", "translate(" + [transformX, transformY] + ") scale("+ transformScale +") ");
+	        // });
 
 	        var map = appendMap(this.mapUrl, mapContainer);
 
@@ -11534,7 +11538,7 @@
 	          var polygons = d3.select(mapContainer).selectAll("polygon");
 	          var paths = d3.select(mapContainer).selectAll("path");
 
-	          d3.select("#map-container svg").call(zoomed);
+	          // d3.select("#map-container svg").call(zoomed);
 
 	          paths.each(function () {
 	            var $el = d3.select(this);

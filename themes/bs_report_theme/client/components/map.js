@@ -118,22 +118,22 @@ export default function () {
         let transformY = 0;
         let transformScale = 1;
 
-      let zoomed = d3.zoom()
-      .scaleExtent([1, 5])
-      .filter(function() {
-        return d3.event.type !== 'wheel';
-      })
-      .on('zoom', function() {
+      // let zoomed = d3.zoom()
+      // .scaleExtent([1, 5])
+      // .filter(function() {
+      //   return d3.event.type !== 'wheel';
+      // })
+      // .on('zoom', function() {
 
-        let transform = d3.event.transform;
-        transformX = transform.x;
-        transformY = transform.y;
+      //   let transform = d3.event.transform;
+      //   transformX = transform.x;
+      //   transformY = transform.y;
 
-        d3.select('.map__controllers').classed('map__controllers--show', true);
+      //   d3.select('.map__controllers').classed('map__controllers--show', true);
         
-        d3.select(this).select('g')
-        .attr("transform", "translate(" + [transformX, transformY] + ") scale("+ transformScale +") ");
-      });
+      //   d3.select(this).select('g')
+      //   .attr("transform", "translate(" + [transformX, transformY] + ") scale("+ transformScale +") ");
+      // });
 
       let map = appendMap(this.mapUrl, mapContainer);
 
@@ -141,7 +141,7 @@ export default function () {
         let polygons = d3.select(mapContainer).selectAll("polygon");
         let paths = d3.select(mapContainer).selectAll("path");
         
-        d3.select("#map-container svg").call(zoomed);
+        // d3.select("#map-container svg").call(zoomed);
 
         paths.each(function() {
           let $el = d3.select(this);
