@@ -11646,7 +11646,7 @@
 	          d3.select("#map-container svg").on("mousedown", function () {
 	            var _this2 = this;
 
-	            var groupMap = (0, _jquery2.default)('#map-container svg g');
+	            var groupMap = (0, _jquery2.default)('#map-container svg');
 	            var elOffsetLeft = groupMap.offset().left;
 	            var elOffsetTop = groupMap.offset().top;
 	            var startX = d3.event.clientX - elOffsetLeft;
@@ -11659,7 +11659,7 @@
 	              var w = box.width / 2;
 	              transformY = d3.event.clientY - elOffsetTop - startX;
 	              transformX = d3.event.clientX - elOffsetLeft - startY;
-	              d3.select(_this2).select('g').transition().duration(100).attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
+	              d3.select(_this2).select('g').attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
 	            });
 
 	            d3.select(window).on('mouseup', function () {
