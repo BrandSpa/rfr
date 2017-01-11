@@ -236,7 +236,7 @@ export default function () {
           mapSVG.attr("transform", transform);
         });
 
-        d3.select("#map-container svg ").on("mousedown", function() { 
+        d3.select("#map-container svg g").on("mousedown", function() { 
           console.log('mouse down', d3.event.pageX);
           let startX = d3.event.pageX - $('#map-container svg ').offset().left;
           let startY = d3.event.pageY - $('#map-container svg').offset().top;
