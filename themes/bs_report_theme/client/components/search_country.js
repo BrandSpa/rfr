@@ -65,8 +65,8 @@ export default function() {
           });
 
           console.log('withTranslation sorted', withTranslation);
-          this.$set('reports', res);
-          this.$set('items', res);
+          this.$set('reports', withTranslation);
+          this.$set('items', withTranslation);
         });
       },
 

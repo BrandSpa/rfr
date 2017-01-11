@@ -29216,8 +29216,8 @@
 	          });
 
 	          console.log('withTranslation sorted', withTranslation);
-	          _this3.$set('reports', res);
-	          _this3.$set('items', res);
+	          _this3.$set('reports', withTranslation);
+	          _this3.$set('items', withTranslation);
 	        });
 	      },
 	      close: function close(e) {
