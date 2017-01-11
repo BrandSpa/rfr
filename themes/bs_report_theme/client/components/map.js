@@ -236,17 +236,18 @@ export default function () {
           mapSVG.attr("transform", transform);
         });
 
-        d3.select("#map-container svg").on("mousedown", function() { 
+        d3.select("#map-container svg ").on("mousedown", function() { 
           console.log('mouse down', d3.event.pageX);
           let startX = d3.event.pageX - $('#map-container svg ').offset().left;
           let startY = d3.event.pageY - $('#map-container svg').offset().top;
 
           d3.event.preventDefault();
-           let box = d3.select("#map-container svg g").node().getBBox();
+          
 
           d3.select(this)
           .on("mousemove", (e) => {
-            console.log('box move:', box);
+             let box = d3.select("#map-container svg g").node().getBBox();
+            console.log('box move:', d3.event.pageX);
             let w = box.width / 2;
             transformX = (d3.event.pageX - $('#map-container svg').offset().left) - startX;
             transformY = (d3.event.pageY - $('#map-container svg').offset().top) - startY;

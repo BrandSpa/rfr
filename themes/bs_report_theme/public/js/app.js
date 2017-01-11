@@ -11641,7 +11641,7 @@
 	            mapSVG.attr("transform", transform);
 	          });
 
-	          d3.select("#map-container svg").on("mousedown", function () {
+	          d3.select("#map-container svg ").on("mousedown", function () {
 	            var _this2 = this;
 
 	            console.log('mouse down', d3.event.pageX);
@@ -11649,10 +11649,10 @@
 	            var startY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top;
 
 	            d3.event.preventDefault();
-	            var box = d3.select("#map-container svg g").node().getBBox();
 
 	            d3.select(this).on("mousemove", function (e) {
-	              console.log('box move:', box);
+	              var box = d3.select("#map-container svg g").node().getBBox();
+	              console.log('box move:', d3.event.pageX);
 	              var w = box.width / 2;
 	              transformX = d3.event.pageX - (0, _jquery2.default)('#map-container svg').offset().left - startX;
 	              transformY = d3.event.pageY - (0, _jquery2.default)('#map-container svg').offset().top - startY;
