@@ -11649,16 +11649,16 @@
 	            var groupMap = (0, _jquery2.default)('#map-container svg g');
 	            var elOffsetLeft = groupMap.offset().left;
 	            var elOffsetTop = groupMap.offset().top;
-	            var startX = d3.event.pageX - elOffsetLeft;
-	            var startY = d3.event.pageY - elOffsetTop;
+	            var startX = d3.event.clientX - elOffsetLeft;
+	            var startY = d3.event.clientY - elOffsetTop;
 
 	            d3.event.preventDefault();
 
 	            d3.select(this).on("mousemove", function (e) {
 	              var box = d3.select("#map-container svg g").node().getBBox();
 	              var w = box.width / 2;
-	              transformY = d3.event.pageY - elOffsetTop;
-	              transformX = d3.event.pageX - elOffsetLeft;
+	              transformY = d3.event.clientY - elOffsetTop - startX;
+	              transformX = d3.event.clientX - elOffsetLeft - startY;
 	              d3.select(_this2).select('g').transition().duration(100).attr("transform", 'translate(' + transformX + ',' + transformY + ') scale(' + transformScale + ')');
 	            });
 

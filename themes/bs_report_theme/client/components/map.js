@@ -242,8 +242,8 @@ export default function () {
           let groupMap = $('#map-container svg g');
           let elOffsetLeft = groupMap.offset().left;         
           let elOffsetTop = groupMap.offset().top;         
-          let startX = d3.event.pageX - elOffsetLeft;
-          let startY = d3.event.pageY - elOffsetTop;
+          let startX = d3.event.clientX - elOffsetLeft;
+          let startY = d3.event.clientY - elOffsetTop;
 
           d3.event.preventDefault();
           
@@ -251,8 +251,8 @@ export default function () {
           .on("mousemove", (e) => {
             let box = d3.select("#map-container svg g").node().getBBox();
             let w = box.width / 2;
-            transformY = (d3.event.pageY - elOffsetTop);
-            transformX = (d3.event.pageX - elOffsetLeft);
+            transformY = (d3.event.clientY - elOffsetTop) - startX;
+            transformX = (d3.event.clientX - elOffsetLeft) - startY;
              d3.select(this).select('g').transition().duration(100).attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 
