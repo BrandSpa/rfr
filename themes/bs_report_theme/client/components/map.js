@@ -209,10 +209,12 @@ export default function () {
         }
 
         d3.select("#map-container svg").attr('height', windowH);
-
-        let transformX;
-        let transformY;
+        
+        //default transform params
+        let transformX = 0;
+        let transformY = 0;
         let transformScale = 1;
+
         d3.select('.zoom_reset').on('click', function() {
           d3.select("#map-container svg")
           .transition()
@@ -244,12 +246,10 @@ export default function () {
           
           d3.select(this)
           .on("mousemove", (e) => {
-             let box = d3.select("#map-container svg g").node().getBBox();
-             let transform = d3.select(this).select('g').attr('transform');
-            console.log('transform', transformX, transformY, transform ); 
+            console.log('transform', , transformY, transform ); 
             let w = box.width / 2;
-            transformX = (d3.event.pageX - $('#map-container svg').offset().left) - startX;
-            transformY = (d3.event.pageY - $('#map-container svg').offset().top) - startY;
+            transformX = (d3.event.pageX - $('#map-container svg').offset().left) - transformX;
+            transformY = (d3.event.pageY - $('#map-container svg').offset().top) - transformY;
              d3.select(this).select('g').attr("transform", `translate(${transformX},${transformY}) scale(${transformScale})`);
           })
 
