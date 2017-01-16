@@ -43,7 +43,22 @@
 
   <div id="map-container">
     <div class="map__zoom_btns">
-      <button class="zoom_btn zoom_reset">R</button>
+      <button class="zoom_btn zoom_reset">
+        <svg width="27px" height="26px" viewBox="7 7 27 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <circle id="Oval-3" stroke="#FFFFFF" stroke-width="2" fill="none" cx="20.5" cy="19.5" r="7.5"></circle>
+            <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(8.500000, 19.000000)" stroke-linecap="square">
+                <path d="M20,1 L24,1" id="Line" stroke="#FFFFFF" stroke-width="2"></path>
+                <path d="M0,1 L4,1" id="Line" stroke="#FFFFFF" stroke-width="2"></path>
+            </g>
+            <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(20.500000, 20.000000) rotate(90.000000) translate(-20.500000, -20.000000) translate(8.500000, 19.000000)" stroke-linecap="square">
+                <path d="M20,1 L24,1" id="Line" stroke="#FFFFFF" stroke-width="2"></path>
+                <path d="M0,1 L4,1" id="Line" stroke="#FFFFFF" stroke-width="2"></path>
+            </g>
+        </svg>
+      </button>
       <button class="zoom_btn zoom_more">+</button>
       <button class="zoom_btn zoom_less">-</button>
     </div>
