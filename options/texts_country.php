@@ -34,23 +34,22 @@ function footer_country_page() {
 			<h1>RFR footer country</h1>
 		</div>
 
-  <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto">
+  <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto; background: #ffff">
       <?php settings_fields( 'bs_footer_country_group' ); ?>
       <?php do_settings_sections( 'bs_footer_country_group' ); ?>
-			<p>
-				<h4>About us title</h4>
-				<input style="width: 100%" type="text"  name="footer_title" value="<?php echo esc_attr( get_option('footer_title') ); ?>" />
-			</p>
 			
-			<p>
+				<h4>About us title</h4>
+				<input style="width: 100%; height: 35px" type="text"  name="footer_title" value="<?php echo esc_attr( get_option('footer_title') ); ?>" />
+			
+			
 				<h4>About us text</h4>
-				<textarea style="width: 100%" type="text" name="footer_text" rows="3"><?php echo esc_attr( get_option('footer_text') ); ?></textarea>
+				<textarea style="width: 100%; height: 35px" type="text" name="footer_text" rows="3"><?php echo esc_attr( get_option('footer_text') ); ?></textarea>
 			</p>
 
-			<p>
+			
 				<h4>About us button</h4>
-				<input style="width: 100%" type="text" name="footer_button" value="<?php echo esc_attr( get_option('footer_button') ); ?>" />
-			</p>
+				<input style="width: 100%; height: 35px" type="text" name="footer_button" value="<?php echo esc_attr( get_option('footer_button') ); ?>" />
+
 					<?php submit_button(); ?>
   </form>
   </div>
