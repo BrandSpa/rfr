@@ -6,7 +6,7 @@
 
     $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
 
-    add_meta_box('page_redirect', 'Multi-regional info', 'bs_page_redirect_cb', 'page', 'normal', 'high', null);
+    add_meta_box('page_redirect', 'Page redirect info', 'bs_page_redirect_cb', 'page', 'normal', 'high', null);
   }
 
   add_action('add_meta_boxes', 'bs_page_redirect_metabox');
