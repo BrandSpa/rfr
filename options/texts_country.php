@@ -38,13 +38,15 @@ function footer_country_page() {
       <?php settings_fields( 'bs_footer_country_group' ); ?>
       <?php do_settings_sections( 'bs_footer_country_group' ); ?>
 			<p>
-				<input type="text" name="footer_title" value="<?php echo esc_attr( get_option('footer_title') ); ?>" />
+				<input style="width: 100%" type="text" name="footer_title" value="<?php echo esc_attr( get_option('footer_title') ); ?>" />
 			</p>
 			<p>
-				<input type="text" name="footer_text" value="<?php echo esc_attr( get_option('footer_text') ); ?>" />
+				<textarea style="width: 100%" type="text" name="footer_text" rows="3">
+					<?php echo esc_attr( get_option('footer_text') ); ?>
+				</textarea>
 			</p>
 			<p>
-				<input type="text" name="footer_button" value="<?php echo esc_attr( get_option('footer_button') ); ?>" />
+				<input style="width: 100%" type="text" name="footer_button" value="<?php echo esc_attr( get_option('footer_button') ); ?>" />
 			</p>
 					<?php submit_button(); ?>
   </form>
