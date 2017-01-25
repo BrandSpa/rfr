@@ -1,3 +1,10 @@
+  <?php 
+    if(geoip_detect2_get_info_from_current_ip()->country->names['en'] == get_post_meta($post->ID, 'page_redirect_country_key', true)):
+     header('location: '. get_post_meta($post->ID,'page_redirect_url_key', true) );
+     end();
+    endif;
+  ?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>
 <head>
@@ -24,6 +31,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K7HJH5');</script>
 <!-- End Google Tag Manager -->
+
+
 
 </head>
 
