@@ -34,7 +34,7 @@
     <div class="col-md-8">
       <a href="<?php echo get_option('redirect_url_' . getOfficeCountry())  ?>" class="button">
        <?php if(geoip_detect2_get_info_from_current_ip()->country->names['en'] == 'Canada'): ?>
-        <?php echo get_option('footer_title'); ?>
+        <?php echo get_option('footer_button'); ?>
       <?php else: ?>
         <?php echo gett('"ACN es una fundación internacional dependiente del Vaticano nacida en 1.947 que desarrolla anualmente más de 6.000 proyectos pastorales en más de 140 países. Por medio de tres pilares - oración, información y soporte financiero - ACN ayuda a cristianos perseguidos, que sufren y pasan necesidad en el mundo."') ?>
       <?php endif; ?>
