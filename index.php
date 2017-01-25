@@ -1,9 +1,13 @@
 <?php get_header() ?>
 <div class="hidden">
-  <?php echo geoip_detect2_get_info_from_current_ip()->country->names['en']; ?>
-  <?php echo get_post_meta($post->ID,'page_redirect_url_key', true) ?>
-  <?php echo get_post_meta($post->ID, 'page_redirect_country_key', true) ?>
-  
+
+  <?php 
+    if(geoip_detect2_get_info_from_current_ip()->country->names['en'] == get_post_meta($post->ID, 'page_redirect_country_key', true)):
+     header('location: '. get_post_meta($post->ID,'page_redirect_url_key', true) );
+     end();
+    endif;
+  ?>
+
 </div>
 
 <div >
