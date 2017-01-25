@@ -34,7 +34,7 @@ function footer_country_page() {
 			<h1>RFR footer canada</h1>
 		</div>
 
-  <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto; background: #ffff">
+  <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto; background: #ffff; padding: 30px">
       <?php settings_fields( 'bs_footer_country_group' ); ?>
       <?php do_settings_sections( 'bs_footer_country_group' ); ?>
 			
@@ -43,7 +43,7 @@ function footer_country_page() {
 			
 		
 				<h4>About us text</h4>
-				<textarea style="width: 100%; height: 35px" type="text" name="footer_text" cols="3" rows="3"><?php echo esc_attr( get_option('footer_text') ); ?></textarea>
+				<textarea style="width: 100%; height: 35px" type="text" name="footer_text" cols="3" rows="4"><?php echo esc_attr( get_option('footer_text') ); ?></textarea>
 
 			
 				<h4>About us button</h4>
