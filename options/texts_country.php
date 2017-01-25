@@ -11,7 +11,7 @@ function bs_admin_footer_country_menu() {
     'Footer country', //menu name
     'manage_options', //allow it options
     'bs-footer-country', //slug
-    'logos_settings_page',
+    'footer_country_page',
     get_template_directory_uri() . '/public/img/bs_options.png', //icon on menu
     110 //position on menu
   );
@@ -26,11 +26,8 @@ function bs_footer_texts_info_settings() {
   register_setting( 'bs_footer_country_group', 'footer_button');
 }
 
-function logos_settings_page() {
+function footer_country_page() {
 ?>
-  <?php
-  $countries = getOfficesCountries();
-   ?>
 
   <div style="background: #f1f1f1; background-size: contain; padding: 15px">
 		<div style="text-align: center; text-shadow: 1px 1px 3px rgba(0,0,0, .1)">
@@ -40,8 +37,6 @@ function logos_settings_page() {
   <form method="post" action="options.php" style="position: relative; width: 80%; margin: 0 auto">
       <?php settings_fields( 'bs_footer_country_group' ); ?>
       <?php do_settings_sections( 'bs_footer_country_group' ); ?>
-
-	
 			<p>
 				<input type="text" name="footer_title" value="<?php echo esc_attr( get_option('footer_title') ); ?>" />
 			</p>
