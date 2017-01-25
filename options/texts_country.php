@@ -47,9 +47,10 @@ function footer_country_page() {
 
 			
 				<h4>About us button</h4>
-				<input style="width: 100%; height: 35px" type="text" name="footer_button" value="<?php echo esc_attr( get_option('footer_button') ); ?>" />
+				<input style="width: 100%;" type="text" name="footer_button" value="<?php echo esc_attr( get_option('footer_button') ); ?>" />
 
 					<?php submit_button(); ?>
   </form>
   </div>
 <?php } ?>
+
