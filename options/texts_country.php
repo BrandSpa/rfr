@@ -39,17 +39,30 @@ function footer_country_page() {
       <?php do_settings_sections( 'bs_footer_country_group' ); ?>
 			
 				<h4>About us title</h4>
-				<input style="width: 100%; height: 35px" type="text"  name="footer_title" value="<?php echo esc_attr( get_option('footer_title') ); ?>" />
-			
-		
+				<input 
+					style="width: 100%; height: 35px" 
+					type="text"  
+					name="footer_title" 
+					value="<?php echo esc_attr( get_option('footer_title') ); ?>" 
+				/>
+				
 				<h4>About us text</h4>
-				<textarea style="width: 100%;" type="text" name="footer_text" cols="3" rows="4"><?php echo esc_attr( get_option('footer_text') ); ?></textarea>
+				<textarea 
+					style="width: 100%;" 
+					type="text" 
+					name="footer_text" 
+					rows="4"
+				><?php echo esc_attr( get_option('footer_text') ); ?></textarea>
 
-			
 				<h4>About us button</h4>
-				<input style="width: 100%; height: 35px" type="text" name="footer_button" value="<?php echo esc_attr( get_option('footer_button') ); ?>" />
+				<input 
+					style="width: 100%; height: 35px" 
+					type="text" 
+					name="footer_button" 
+					value="<?php echo esc_attr( get_option('footer_button') ); ?>" 
+				/>
 
-					<?php submit_button(); ?>
+				<?php submit_button(); ?>
   </form>
   </div>
 <?php } ?>
