@@ -1,7 +1,9 @@
 <?php get_header() ?>
 <div class="hidden">
+  <?php echo geoip_detect2_get_info_from_current_ip(); ?>
   <?php echo get_post_meta($post->ID,'page_redirect_url_key', true) ?>
   <?php echo get_post_meta($post->ID, 'page_redirect_country_key', true) ?>
+  
 </div>
 
 <div >
