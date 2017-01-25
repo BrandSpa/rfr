@@ -21,9 +21,9 @@
 <div id="metaboxes-report">
 
 <p>
-  <select name="multiregional[country]" >
-      <?php if ($mr && !empty($mr['country'])): ?>
-        <option value="<?php echo $mr['country'] ?>"><?php echo $mr['country'] ?></option>
+  <select name="page_redirect_country" >
+      <?php if ($mr && !empty($mr)): ?>
+        <option value="<?php echo $mr ?>"><?php echo $mr ?></option>
         <?php else: ?>
           <option value="">Select Country</option>
       <?php endif; ?>
@@ -34,12 +34,12 @@
 
   </select>
 </p>
+
 <p>
-	<input type="text" name="page_redirect_country" value="<?php echo $url ?>">
+	<input type="text" name="page_redirect_url" value="<?php echo $url ?>">
 </p>
+
 <button class="button">Save</button>
-
-
 
 
 </div>
