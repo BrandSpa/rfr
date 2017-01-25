@@ -174,7 +174,7 @@ export default function () {
             $el.style("cursor", "pointer");
             $el.style("fill", fill);
             let name = countriesTrans[countryName];
-            console.log('name', name);
+
             showMapInfo($el, report, fill, name);
           }
         });

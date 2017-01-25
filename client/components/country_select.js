@@ -32,11 +32,11 @@ export default function() {
 
     methods: {
       up() {
-        console.log('up');
+
       },
 
       down() {
-        console.log('down');
+
       },
 
       enter() {
