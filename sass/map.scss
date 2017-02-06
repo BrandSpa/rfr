@@ -56,6 +56,14 @@
       border: 2px solid #FFFFFF;
       color: #fff;
     }
+
+    .zoom_reset {
+      margin: 0;
+      text-align: center;
+      img {
+        text-align: center;
+      }
+    }
   }
 
   &__controllers {
