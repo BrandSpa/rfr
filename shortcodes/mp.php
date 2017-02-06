@@ -44,10 +44,10 @@
   <div id="map-container">
     <div class="map__zoom_btns">
       <button class="zoom_btn zoom_reset">
-        R
+        <img src="<?php echo get_template_directory_uri() ?>/public/img/r.svg" alt="">
       </button>
-      <button class="zoom_btn zoom_more">+</button>
-      <button class="zoom_btn zoom_less">-</button>
+      <button class="zoom_btn zoom_more"><img src="<?php echo get_template_directory_uri() ?>/public/img/plus.svg" alt=""></button>
+      <button class="zoom_btn zoom_less"><img src="<?php echo get_template_directory_uri() ?>/public/img/less.svg" alt=""></button>
     </div>
   </div>
 
