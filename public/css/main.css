@@ -6429,6 +6429,11 @@ form button {
       background: #192127;
       border: 2px solid #FFFFFF;
       color: #fff; }
+    .map__zoom_btns .zoom_reset {
+      margin: 0;
+      text-align: center; }
+      .map__zoom_btns .zoom_reset img {
+        text-align: center; }
   .map__controllers {
     opacity: 0;
     transition: all 300ms ease; }
