@@ -51,7 +51,7 @@
     </div>
   </div>
 
-  <div class="row map__footer">
+  <div class="row map__footer hidden-xs">
   <div class="col-md-6 map_list">
     <h5 class="color-red pull-left"><?php echo gett('NATURE OF PERSECUTION') ?></h5>
     <ul class="map_list_exp">
