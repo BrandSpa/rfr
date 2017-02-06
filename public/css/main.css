@@ -6431,7 +6431,7 @@ form button {
       color: #fff; }
     .map__zoom_btns .zoom_reset {
       margin: 0;
-      text-align: center; }
+      padding: 0; }
       .map__zoom_btns .zoom_reset img {
         text-align: center; }
   .map__controllers {
