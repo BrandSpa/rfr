@@ -46635,7 +46635,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 */
 
 var SearchByCountry = _react2.default.createClass({
-	displayName: "SearchByCountry",
+	displayName: 'SearchByCountry',
 	getInitialState: function getInitialState() {
 		return {
 			show: false,
@@ -46666,10 +46666,19 @@ var SearchByCountry = _react2.default.createClass({
 		this.setState({ reports: results });
 	},
 	getIcon: function getIcon(name) {
-		return this.props.templateUrl + "/public/img/icons/" + name + ".svg";
+		return this.props.templateUrl + '/public/img/icons/' + name + '.svg';
 	},
 	toggleShow: function toggleShow() {
 		this.setState({ show: !this.state.show });
+	},
+	setColor: function setColor(situation) {
+		if (situation == 'Discrimination') {
+			return 'bg-discrimination';
+		}
+
+		if (situation == 'Persecution') {
+			return 'bg-red';
+		}
 	},
 	render: function render() {
 		var _this2 = this;
@@ -46681,114 +46690,114 @@ var SearchByCountry = _react2.default.createClass({
 
 
 		return _react2.default.createElement(
-			"div",
+			'div',
 			{ className: this.state.show ? "map__search map__search--show" : "map__search" },
 			_react2.default.createElement(
-				"a",
-				{ href: "#", className: "map__search__close", onClick: this.toggleShow },
-				_react2.default.createElement("i", { className: "ion-close" })
+				'a',
+				{ href: '#', className: 'map__search__close', onClick: this.toggleShow },
+				_react2.default.createElement('i', { className: 'ion-close' })
 			),
 			_react2.default.createElement(
-				"div",
-				{ className: "col-md-6 col-sm-10", style: { float: 'none', margin: '0 auto' } },
+				'div',
+				{ className: 'col-md-6 col-sm-10', style: { float: 'none', margin: '0 auto' } },
 				_react2.default.createElement(
-					"h1",
-					{ className: "title-center title-line color-red" },
+					'h1',
+					{ className: 'title-center title-line color-red' },
 					texts.search_by_country
 				),
 				_react2.default.createElement(
-					"div",
-					{ className: "row" },
+					'div',
+					{ className: 'row' },
 					_react2.default.createElement(
-						"div",
-						{ className: "col-md-6" },
+						'div',
+						{ className: 'col-md-6' },
 						_react2.default.createElement(
-							"div",
-							{ className: "map__search_input-container" },
-							_react2.default.createElement("input", { type: "text", onChange: this.search, className: "map__search_input" })
+							'div',
+							{ className: 'map__search_input-container' },
+							_react2.default.createElement('input', { type: 'text', onChange: this.search, className: 'map__search_input' })
 						),
 						_react2.default.createElement(
-							"ul",
-							{ className: "map__search_results" },
+							'ul',
+							{ className: 'map__search_results' },
 							reports.map(function (report, i) {
 								return _react2.default.createElement(
-									"li",
-									{ key: i },
+									'li',
+									{ key: i, 'class': _this2.setColor.bind(null, report.meta_nature_persecution) },
 									_react2.default.createElement(
-										"a",
+										'a',
 										{ href: report.guid },
 										report.meta_country
 									),
 									_react2.default.createElement(
-										"span",
+										'span',
 										null,
-										_react2.default.createElement("img", { src: _this2.getIcon(report.meta_situation), alt: "" })
+										_react2.default.createElement('img', { src: _this2.getIcon(report.meta_situation), alt: '' })
 									)
 								);
 							})
 						)
 					),
 					_react2.default.createElement(
-						"div",
-						{ className: "col-md-6" },
+						'div',
+						{ className: 'col-md-6' },
 						_react2.default.createElement(
-							"div",
-							{ className: "row" },
+							'div',
+							{ className: 'row' },
 							_react2.default.createElement(
-								"h5",
-								{ className: "color-red pull-left" },
+								'h5',
+								{ className: 'color-red pull-left' },
 								texts.nature_of_persecution
 							),
 							_react2.default.createElement(
-								"ul",
-								{ className: "map__search__list" },
+								'ul',
+								{ className: 'map__search__list' },
 								_react2.default.createElement(
-									"li",
+									'li',
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Persecution.svg", alt: "" }),
+									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Persecution.svg', alt: '' }),
 									texts.persecution
 								),
 								_react2.default.createElement(
-									"li",
+									'li',
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Discrimination.svg", alt: "" }),
+									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Discrimination.svg', alt: '' }),
 									texts.discrimination
 								),
 								_react2.default.createElement(
-									"li",
+									'li',
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Stable.svg", alt: "" }),
+									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Stable.svg', alt: '' }),
 									texts.stable
 								)
 							)
 						),
 						_react2.default.createElement(
-							"div",
-							{ className: "row" },
+							'div',
+							{ className: 'row' },
 							_react2.default.createElement(
-								"h5",
-								{ className: "color-red pull-left" },
+								'h5',
+								{ className: 'color-red pull-left' },
 								texts.situation
 							),
 							_react2.default.createElement(
-								"ul",
-								{ className: "map__search__list" },
+								'ul',
+								{ className: 'map__search__list' },
 								_react2.default.createElement(
-									"li",
+									'li',
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/improved.svg", alt: "" }),
+									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/improved.svg', alt: '' }),
 									texts.improved
 								),
 								_react2.default.createElement(
-									"li",
+									'li',
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/unchanged.svg", alt: "" }),
+									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/unchanged.svg', alt: '' }),
 									texts.unchanged
 								),
 								_react2.default.createElement(
-									"li",
+									'li',
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Worsened.svg", alt: "" }),
+									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Worsened.svg', alt: '' }),
 									texts.worsened
 								)
 							)

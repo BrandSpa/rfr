@@ -50,6 +50,16 @@ const SearchByCountry = React.createClass({
 		this.setState({show: !this.state.show});
 	},
 
+	setColor(situation) {
+		if(situation == 'Discrimination') {
+			return 'bg-discrimination';
+		}
+
+		if(situation == 'Persecution') {
+			return 'bg-red';
+		}
+	},
+
 	render() {
 		const { texts, templateUrl } = this.props;
 		const { reports } = this.state;
@@ -69,7 +79,7 @@ const SearchByCountry = React.createClass({
 
 						<ul className="map__search_results">
 								{reports.map((report, i) =>
-									<li key={i}>
+									<li key={i} class={this.setColor.bind(null, report.meta_nature_persecution)}>
 										<a href={report.guid}>{report.meta_country}</a>
 										<span><img src={this.getIcon(report.meta_situation)} alt="" /></span>
 									</li>
@@ -88,7 +98,6 @@ const SearchByCountry = React.createClass({
 									<li>
 										<img src={`${templateUrl}/public/img/icons/Discrimination.svg`} alt="" />
 										{texts.discrimination}
-
 									</li>
 
 									<li>
