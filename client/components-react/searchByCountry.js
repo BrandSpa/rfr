@@ -78,7 +78,7 @@ const SearchByCountry = React.createClass({
 					</div>
 					<div className="col-md-6">
 						<div className="row">
-							<h5 className="color-red pull-left"></h5>
+							<h5 className="color-red pull-left">{texts.nature_of_persecution}</h5>
 							<ul className="map__search__list">
 									<li>
 										<img src={`${templateUrl}/public/img/icons/Persecution.svg`} alt="" />

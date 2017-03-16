@@ -46734,7 +46734,11 @@ var SearchByCountry = _react2.default.createClass({
 						_react2.default.createElement(
 							"div",
 							{ className: "row" },
-							_react2.default.createElement("h5", { className: "color-red pull-left" }),
+							_react2.default.createElement(
+								"h5",
+								{ className: "color-red pull-left" },
+								texts.nature_of_persecution
+							),
 							_react2.default.createElement(
 								"ul",
 								{ className: "map__search__list" },
