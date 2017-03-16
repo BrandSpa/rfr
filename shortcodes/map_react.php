@@ -28,8 +28,8 @@ function bs_map_react_sc($atts, $content = null) {
 		"stable" => gett('Stable'),
 		"situation" => gett('SITUATION'),
 		"improved" => gett('Improved'),
-		"Unchanged" => gett('Unchanged'),
-		"Worsened" => gett('Worsened')
+		"unchanged" => gett('Unchanged'),
+		"worsened" => gett('Worsened')
 	],
 	"templateUrl" => get_template_directory_uri()
  ];

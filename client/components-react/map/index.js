@@ -1,9 +1,10 @@
 import React from 'react';
 import qs from 'qs';
-import MapHeader from './header'; 
-import MapFooter from './footer';
 import request from 'axios';
 import setMap from '../../lib/setMap';
+import MapHeader from './header'; 
+import MapFooter from './footer';
+import SearchByCountry from '../searchByCountry';
 const endpoint = 'http://religious-freedom-report.org/wp-admin/admin-ajax.php';
 
 const MapComponent = React.createClass({
@@ -33,6 +34,7 @@ const MapComponent = React.createClass({
 
 		return (
 			<div>
+			<SearchByCountry {...this.props} />
 				<div className="map__info" style={{position: 'absolute'}}> 
 					<div className="map__info_country"></div>
 					<div className="map__info_situation"></div>
