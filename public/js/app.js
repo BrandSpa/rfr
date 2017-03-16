@@ -46672,6 +46672,7 @@ var SearchByCountry = _react2.default.createClass({
 		this.setState({ show: !this.state.show });
 	},
 	setColor: function setColor(situation) {
+		console.log(situation);
 		if (situation == 'Discrimination') {
 			return 'bg-discrimination';
 		}
@@ -46679,6 +46680,8 @@ var SearchByCountry = _react2.default.createClass({
 		if (situation == 'Persecution') {
 			return 'bg-red';
 		}
+
+		return '';
 	},
 	render: function render() {
 		var _this2 = this;

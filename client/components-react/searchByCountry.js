@@ -51,6 +51,7 @@ const SearchByCountry = React.createClass({
 	},
 
 	setColor(situation) {
+		console.log(situation);
 		if(situation == 'Discrimination') {
 			return 'bg-discrimination';
 		}
@@ -58,6 +59,8 @@ const SearchByCountry = React.createClass({
 		if(situation == 'Persecution') {
 			return 'bg-red';
 		}
+
+		return '';
 	},
 
 	render() {
