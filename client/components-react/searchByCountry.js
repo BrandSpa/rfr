@@ -23,7 +23,8 @@ const SearchByCountry = React.createClass({
 	},
 
 	render() {
-		const {texts} = this.props;
+		const { texts, templateUrl } = this.props;
+		
 		return (
 			<div className="map__search">
 				<a href="#" className="map__search__close" onClick="close"><i className="ion-close"></i></a>
