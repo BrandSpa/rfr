@@ -42,7 +42,7 @@ function bs_map_react_sc($atts, $content = null) {
   return ob_get_clean();
   }
 
-  add_shortcode( 'bs_map_react', 'bs_map_sc' );
+  add_shortcode( 'bs_map_react', 'bs_map_react_sc' );
 	add_action( 'vc_before_init', 'bs_map_react_vc' );
 
   function bs_map_react_vc() {
