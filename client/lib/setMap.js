@@ -10,20 +10,20 @@ const colors = {
 };
 
 function showInfo(info, report, bg = '#fff', name) {
-  let {meta_country, meta_situation} = report;
-  let $el = d3.select(info);
-  name = name ? name : meta_country.replace(/-/g, ' ');
-  let src = `/wp-content/themes/bs_report_theme/public/img/icons/${meta_situation}.svg`;
-  $el.style('background', bg);
-  $el.select('.map__info_country').text(name);
-  $el.select('.map__info_situation img').attr('src', src);
+	let { meta_country, meta_situation } = report;
+	let $el = d3.select(info);
+	let src = `/wp-content/themes/bs_report_theme/public/img/icons/${meta_situation}.svg`;
+	name = name ? name : meta_country.replace(/-/g, ' ');
+	$el.style('background', bg);
+	$el.select('.map__info_country').text(name);
+	$el.select('.map__info_situation img').attr('src', src);
 
-  mousePosition(null)
-    .then(p => {
-      info.style.opacity = 1;
-      info.style.top = (p.top - 80) + 'px';
-      info.style.left = (p.left - 300) + 'px';
-    });
+	mousePosition(null)
+		.then(p => {
+			info.style.opacity = 1;
+			info.style.top = (p.top - 80) + 'px';
+			info.style.left = (p.left - 300) + 'px';
+		});
 }
 
 function setStyle(el, fill) {
@@ -42,27 +42,27 @@ function setStyleOut(el, fill) {
 }
 
 function appendMap(mapUrl, container) {
-  return new Promise(function(resolve, reject) {
-    d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
-      if (error) return reject(error);
-      container.appendChild(xml.documentElement);
-      return resolve();
-    });
-  }); 
+	return new Promise(function (resolve, reject) {
+		d3.xml(mapUrl).mimeType("image/svg+xml").get((error, xml) => {
+			if (error) return reject(error);
+			container.appendChild(xml.documentElement);
+			return resolve();
+		});
+	});
 }
 
 function showMapInfo(el, report, fill, name) {
-  let info = document.querySelector('.map__info');
-  
-  el.on('mousemove', evt => {
-    showInfo(info, report, fill, name);
-    setStyle(el, fill);
-  });
+	let info = document.querySelector('.map__info');
 
-  el.on('mouseleave', evt => {
-    setStyleOut(el, fill);
-    info.style.opacity = 0;
-  });
+	el.on('mousemove', evt => {
+		showInfo(info, report, fill, name);
+		setStyle(el, fill);
+	});
+
+	el.on('mouseleave', evt => {
+		setStyleOut(el, fill);
+		info.style.opacity = 0;
+	});
 }
 
 const getReport = (fn) => reports => reports.filter(fn)[0];
@@ -95,7 +95,6 @@ function getCountryInfo(reports, countriesTrans) {
 		$el.style("cursor", "pointer");
 		$el.style("fill", fill);
 		let name = countriesTrans[countryName] ? countriesTrans[countryName] : countryName;
-		console.log('on');
 		showMapInfo($el, report, fill, name);
 	}
 }
@@ -111,144 +110,144 @@ function setMap(mapUrl, reports, lang, countriesTrans) {
 	let transformScale = 1;
 
 	appendMap(mapUrl, mapContainer)
-	.then(() => {
-		let polygons = d3.select(mapContainer).selectAll("polygon");
-		let paths = d3.select(mapContainer).selectAll("path");
+		.then(() => {
+			let polygons = d3.select(mapContainer).selectAll("polygon");
+			let paths = d3.select(mapContainer).selectAll("path");
 
-		// d3.select("#map-container svg").call(zoomed);
+			// d3.select("#map-container svg").call(zoomed);
 
-		paths.each(function() {
-			setCountryReport.call(this, reports);
-		});
+			paths.each(function () {
+				setCountryReport.call(this, reports);
+			});
 
-		polygons.each(function() {
-			setCountryReport.call(this, reports)
-		} );
-		
-		paths.on('mousemove', function() {
-			getCountryInfo.call(this, reports, countriesTrans) 
-		});
+			polygons.each(function () {
+				setCountryReport.call(this, reports)
+			});
 
-		polygons.on('mousemove', function() {
-			getCountryInfo.call(this, reports, countriesTrans) 
-		});
+			paths.on('mousemove', function () {
+				getCountryInfo.call(this, reports, countriesTrans)
+			});
 
-		paths.on('click', function() { 
-			redirectToReport.call(this, reports) 
-		});
+			polygons.on('mousemove', function () {
+				getCountryInfo.call(this, reports, countriesTrans)
+			});
 
-		polygons.on('click', function() {
-			redirectToReport.call(this, reports)
-		});
-	
-		let windowH;
-		let windowW;
+			paths.on('click', function () {
+				redirectToReport.call(this, reports)
+			});
 
-		//set map height
-		if (window.innerWidth <= '767') {
-			windowH = window.innerHeight;
-			windowW = $('body').innerWidth();
-		} else {
-			windowH = window.innerHeight / 2;
-		}
+			polygons.on('click', function () {
+				redirectToReport.call(this, reports)
+			});
 
-		d3.select("#map-container svg").attr('height', windowH);
+			let windowH;
+			let windowW;
 
-		d3.select('.zoom_reset')
-		.on('click', function () {
-			transformScale = 1;
-			lastX = 0;
-			lastY = 0;
-			transformX = 0;
-			transformY = 0;
+			//set map height
+			if (window.innerWidth <= '767') {
+				windowH = window.innerHeight / 2;
+			} else {
+				windowH = window.innerHeight;
+				windowW = $('body').innerWidth();
+			}
 
-			d3.select("#map-container svg g")
-				.transition()
-				.duration(300)
-				.attr('transform', 'translate(0,0) scale(1)');
-		});
+			d3.select("#map-container svg").attr('height', windowH);
 
-		d3.select('.zoom_more')
-		.on('click', function () {
-			let mapSVG = d3.select("#map-container svg g");
-			transformScale = transformScale + 1;
-			let box = d3.select("#map-container svg g").node().getBBox();
-			let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
-			mapSVG
-				.transition()
-				.duration(300)
-				.attr("transform", transform);
-		});
+			d3.select('.zoom_reset')
+				.on('click', function () {
+					transformScale = 1;
+					lastX = 0;
+					lastY = 0;
+					transformX = 0;
+					transformY = 0;
 
-		d3.select('.zoom_less')
-		.on('click', function () {
-			let mapSVG = d3.select("#map-container svg g");
-			transformScale = transformScale > 1 ? transformScale - 1 : 1;
-			let box = d3.select("#map-container svg g").node().getBBox();
-			let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
-			mapSVG
-				.transition()
-				.duration(300)
-				.attr("transform", transform);
-		});
-
-			d3.select("#map-container svg")
-			.on("touchstart", () => {
-			let groupMap = $('#map-container svg g');
-			let elOffsetLeft = groupMap.offset().left;
-			let elOffsetTop = groupMap.offset().top;
-			let startX = d3.event.touches[0].clientX;
-			let startY = d3.event.touches[0].clientY;
-			d3.event.preventDefault();
-			d3.select("#map-container svg")
-				.on("touchmove", () => {
-					let box = d3.select("#map-container svg g").node().getBBox();
-					let w = box.width / 2;
-					let h = box.height / 2;
-					transformY = lastY + (d3.event.touches[0].clientY - startY); //(d3.event.touches[0].clientY - elOffsetTop) - startX
-					transformX = lastX + (d3.event.touches[0].clientX - startX);
 					d3.select("#map-container svg g")
-						.attr("transform", `translate(${transformX}, ${transformY}) scale(${transformScale})`);
-				})
+						.transition()
+						.duration(300)
+						.attr('transform', 'translate(0,0) scale(1)');
+				});
 
-			d3.select(window)
-			.on('touchend', () => {
-				d3.select(this).on("touchmove", null);
-				lastX = transformX;
-				lastY = transformY;
-			});
-
-		});
-
-		d3.select("#map-container svg")
-		.on("mousedown", function () {
-			let groupMap = $('#map-container svg g');
-			let elOffsetLeft = groupMap.offset().left;
-			let elOffsetTop = groupMap.offset().top;
-			let startX = d3.event.clientX;
-			let startY = d3.event.clientY;
-			d3.event.preventDefault();
-
-			d3.select(this)
-				.on("mousemove", () => {
+			d3.select('.zoom_more')
+				.on('click', function () {
+					let mapSVG = d3.select("#map-container svg g");
+					transformScale = transformScale + 1;
 					let box = d3.select("#map-container svg g").node().getBBox();
-					let w = box.width / 2;
-					let h = box.height / 2;
-					transformY = lastY + (d3.event.clientY - startY); //(d3.event.clientY - elOffsetTop) - startX
-					transformX = lastX + (d3.event.clientX - startX);
-					d3.select(this).select('g').attr("transform", `translate(${transformX}, ${transformY}) scale(${transformScale})`);
-				})
+					let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
+					mapSVG
+						.transition()
+						.duration(300)
+						.attr("transform", transform);
+				});
 
-			d3.select(window)
-			.on('mouseup', () => {
-				d3.select(this).on("mousemove", null);
-				lastX = transformX;
-				lastY = transformY;
-			});
+			d3.select('.zoom_less')
+				.on('click', function () {
+					let mapSVG = d3.select("#map-container svg g");
+					transformScale = transformScale > 1 ? transformScale - 1 : 1;
+					let box = d3.select("#map-container svg g").node().getBBox();
+					let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
+					mapSVG
+						.transition()
+						.duration(300)
+						.attr("transform", transform);
+				});
 
-		});
+			d3.select("#map-container svg")
+				.on("touchstart", () => {
+					let groupMap = $('#map-container svg g');
+					let elOffsetLeft = groupMap.offset().left;
+					let elOffsetTop = groupMap.offset().top;
+					let startX = d3.event.touches[0].clientX;
+					let startY = d3.event.touches[0].clientY;
+					d3.event.preventDefault();
+					d3.select("#map-container svg")
+						.on("touchmove", () => {
+							let box = d3.select("#map-container svg g").node().getBBox();
+							let w = box.width / 2;
+							let h = box.height / 2;
+							transformY = lastY + (d3.event.touches[0].clientY - startY); //(d3.event.touches[0].clientY - elOffsetTop) - startX
+							transformX = lastX + (d3.event.touches[0].clientX - startX);
+							d3.select("#map-container svg g")
+								.attr("transform", `translate(${transformX}, ${transformY}) scale(${transformScale})`);
+						})
 
-	})
+					d3.select(window)
+						.on('touchend', () => {
+							d3.select(this).on("touchmove", null);
+							lastX = transformX;
+							lastY = transformY;
+						});
+
+				});
+
+			d3.select("#map-container svg")
+				.on("mousedown", function () {
+					let groupMap = $('#map-container svg g');
+					let elOffsetLeft = groupMap.offset().left;
+					let elOffsetTop = groupMap.offset().top;
+					let startX = d3.event.clientX;
+					let startY = d3.event.clientY;
+					d3.event.preventDefault();
+
+					d3.select(this)
+						.on("mousemove", () => {
+							let box = d3.select("#map-container svg g").node().getBBox();
+							let w = box.width / 2;
+							let h = box.height / 2;
+							transformY = lastY + (d3.event.clientY - startY); //(d3.event.clientY - elOffsetTop) - startX
+							transformX = lastX + (d3.event.clientX - startX);
+							d3.select(this).select('g').attr("transform", `translate(${transformX}, ${transformY}) scale(${transformScale})`);
+						})
+
+					d3.select(window)
+						.on('mouseup', () => {
+							d3.select(this).on("mousemove", null);
+							lastX = transformX;
+							lastY = transformY;
+						});
+
+				});
+
+		})
 };
 
 
