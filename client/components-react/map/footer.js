@@ -16,7 +16,6 @@ const MapFooter = React.createClass({
 						<li>
 								<img src={`${templateUrl}/public/img/icons/Discrimination.svg`} alt="" />
 								{texts.discrimination}
-								
 						</li>
 
 						<li>

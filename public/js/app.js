@@ -46558,7 +46558,6 @@ var MapHeader = _react2.default.createClass({
 	showSearch: function showSearch(e) {
 		e.preventDefault();
 		this.props.searchCountry.toggleShow();
-		console.log('showSearch', this.props.searchCountry);
 	},
 	render: function render() {
 		var texts = this.props.texts;
@@ -46619,6 +46618,8 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _react = __webpack_require__(76);
 
 var _react2 = _interopRequireDefault(_react);
@@ -46642,6 +46643,9 @@ var SearchByCountry = _react2.default.createClass({
 			show: false,
 			reports: []
 		};
+	},
+	componentWillReceiveProps: function componentWillReceiveProps(props) {
+		this.setState(_extends({}, this.state, props));
 	},
 	search: function search(e) {
 		var _this = this;

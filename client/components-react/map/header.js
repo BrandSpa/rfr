@@ -9,7 +9,6 @@ const MapHeader = React.createClass({
 	showSearch(e) {
 		e.preventDefault();
 		this.props.searchCountry.toggleShow();
-		console.log('showSearch', this.props.searchCountry);
 	},
 
 	render() {

@@ -17,6 +17,10 @@ const SearchByCountry = React.createClass({
 		}
 	},
 
+	componentWillReceiveProps(props) {
+		this.setState({...this.state, ...props});
+	},
+
 	search(e) {
 		let query = e.target.value;
 		let results = [];
