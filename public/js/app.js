@@ -44253,7 +44253,8 @@ var MapComponent = _react2.default.createClass({
 	displayName: 'MapComponent',
 	getInitialState: function getInitialState() {
 		return {
-			reports: []
+			reports: [],
+			countriesTrans: []
 		};
 	},
 	getDefaultProps: function getDefaultProps() {
@@ -44274,7 +44275,7 @@ var MapComponent = _react2.default.createClass({
 		var reqTranslations = _axios2.default.post(endpoint, dataTranslations);
 
 		Promise.all([reqReports, reqTranslations]).then(function (res) {
-			_this.setState({ reports: res[0].data });
+			_this.setState({ reports: res[0].data, countriesTrans: res[1].data });
 			(0, _setMap2.default)(_this.props.templateUrl + '/public/img/map.svg', res[0].data, 'en', res[1].data);
 		});
 	},
@@ -44916,7 +44917,7 @@ exports.default = function () {
         if (query.length > 0) {
 
           results = reports.filter(function (pst) {
-            var translation = _this4.countriesTrans[pst.meta_country];
+            var translation = _this4.props.countriesTrans[pst.meta_country];
             if (translation) {
               return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
             }

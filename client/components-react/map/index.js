@@ -10,7 +10,8 @@ const endpoint = 'http://religious-freedom-report.org/wp-admin/admin-ajax.php';
 const MapComponent = React.createClass({
 	getInitialState() {
 		return {
-			reports: []
+			reports: [],
+			countriesTrans: []
 		}
 	},
 
@@ -32,7 +33,7 @@ const MapComponent = React.createClass({
 
 		Promise.all([reqReports, reqTranslations])
 			.then(res => {
-				this.setState({reports: res[0].data});
+				this.setState({reports: res[0].data, countriesTrans: res[1].data});
 				setMap(`${this.props.templateUrl}/public/img/map.svg`, res[0].data, 'en', res[1].data);
 			});
 	},
