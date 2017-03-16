@@ -24,7 +24,7 @@ const MapComponent = React.createClass({
 
 		Promise.all([reqReports, reqTranslations])
 			.then(res => {
-				setMap(`${templateUrl}/public/img/map.svg`, res[0].data, 'en', res[1].data);
+				setMap(`${this.props.templateUrl}/public/img/map.svg`, res[0].data, 'en', res[1].data);
 			});
 	},
 
