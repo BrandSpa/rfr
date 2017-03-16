@@ -13,12 +13,13 @@ const SearchByCountry = React.createClass({
 	getInitialState(){
 		return {
 			show: false,
-			reports: []
+			reports: [],
+			allReports: []
 		}
 	},
 
 	componentWillReceiveProps(props) {
-		this.setState({...this.state, ...props});
+		this.setState({reports: props.reports, allReport: props.reports});
 	},
 
 	search(e) {
@@ -26,7 +27,7 @@ const SearchByCountry = React.createClass({
 		let results = [];
 		if (query.length > 0) {
 
-			results = this.props.reports.filter(pst => {
+			results = this.state.allReport.filter(pst => {
 				let translation = this.props.countriesTrans[pst.meta_country];
 				if (translation) {
 					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1
@@ -35,9 +36,10 @@ const SearchByCountry = React.createClass({
 			});
 
 		} else {
-			results = this.props.reports;
+			results = this.state.allReport;
 		}
-		console.log(results);
+
+		this.setState({reports: results});
 	},
 
 	getIcon(name) {

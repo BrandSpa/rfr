@@ -46618,8 +46618,6 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _react = __webpack_require__(76);
 
 var _react2 = _interopRequireDefault(_react);
@@ -46641,11 +46639,12 @@ var SearchByCountry = _react2.default.createClass({
 	getInitialState: function getInitialState() {
 		return {
 			show: false,
-			reports: []
+			reports: [],
+			allReports: []
 		};
 	},
 	componentWillReceiveProps: function componentWillReceiveProps(props) {
-		this.setState(_extends({}, this.state, props));
+		this.setState({ reports: props.reports, allReport: props.reports });
 	},
 	search: function search(e) {
 		var _this = this;
@@ -46654,16 +46653,17 @@ var SearchByCountry = _react2.default.createClass({
 		var results = [];
 		if (query.length > 0) {
 
-			results = this.props.reports.filter(function (pst) {
+			results = this.state.allReport.filter(function (pst) {
 				var translation = _this.props.countriesTrans[pst.meta_country];
 				if (translation) {
 					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
 				}
 			});
 		} else {
-			results = this.props.reports;
+			results = this.state.allReport;
 		}
-		console.log(results);
+
+		this.setState({ reports: results });
 	},
 	getIcon: function getIcon(name) {
 		return this.props.templateUrl + "/public/img/icons/" + name + ".svg";
