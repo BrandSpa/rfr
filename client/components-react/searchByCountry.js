@@ -23,12 +23,13 @@ const SearchByCountry = React.createClass({
 	},
 
 	render() {
+		const {texts} = this.props;
 		return (
 			<div className="map__search">
 				<a href="#" className="map__search__close" onClick="close"><i className="ion-close"></i></a>
   
 			<div className="col-md-6 col-sm-10" style={{ float: 'none', margin: '0 auto' }}>
-				<h1 className="title-center title-line color-red">{text.search_by_country}</h1>
+				<h1 className="title-center title-line color-red">{texts.search_by_country}</h1>
 
 				<div className="row">
 					<div className="col-md-6">
