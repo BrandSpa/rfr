@@ -50,7 +50,7 @@ function bs_map_react_sc($atts, $content = null) {
     vc_map( 
       array(
         "name" =>  "BS Map React",
-        "base" => "bs_map_React",
+        "base" => "bs_map_react",
         "category" =>  "BS",
         "params" => $params
       ) 
