@@ -46722,7 +46722,7 @@ var SearchByCountry = _react2.default.createClass({
 							reports.map(function (report, i) {
 								return _react2.default.createElement(
 									'li',
-									{ key: i, 'class': _this2.setColor.bind(null, report.meta_nature_persecution) },
+									{ key: i, className: _this2.setColor.bind(null, report.meta_nature_persecution) },
 									_react2.default.createElement(
 										'a',
 										{ href: report.guid },
