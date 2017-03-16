@@ -46725,9 +46725,7 @@ var SearchByCountry = _react2.default.createClass({
 							reports.map(function (report, i) {
 								return _react2.default.createElement(
 									'li',
-									{ key: i, className: function className() {
-											return _this2.setColor.bind(null, report.meta_nature_persecution);
-										} },
+									{ key: i, style: report.meta_nature_persecution == 'Discrimination' ? { color: '#FC3938' } : {} },
 									_react2.default.createElement(
 										'a',
 										{ href: report.guid },
