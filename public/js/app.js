@@ -46651,7 +46651,7 @@ var SearchByCountry = _react2.default.createClass({
 			{ className: 'map__search' },
 			_react2.default.createElement(
 				'a',
-				{ href: '#', className: 'map__search__close', onClick: 'close' },
+				{ href: '#', className: 'map__search__close', onClick: this.close },
 				_react2.default.createElement('i', { className: 'ion-close' })
 			),
 			_react2.default.createElement(
