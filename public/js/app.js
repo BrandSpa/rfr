@@ -46670,8 +46670,8 @@ var SearchByCountry = _react2.default.createClass({
 						{ className: 'col-md-6' },
 						_react2.default.createElement(
 							'div',
-							{ 'class': 'map__search_input-container' },
-							_react2.default.createElement('input', { type: 'text', onChange: 'search', 'class': 'map__search_input' })
+							{ className: 'map__search_input-container' },
+							_react2.default.createElement('input', { type: 'text', onChange: this.search, className: 'map__search_input' })
 						),
 						_react2.default.createElement(
 							'ul',

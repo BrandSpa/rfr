@@ -24,7 +24,7 @@ const SearchByCountry = React.createClass({
 
 	render() {
 		const { texts, templateUrl } = this.props;
-		
+
 		return (
 			<div className="map__search">
 				<a href="#" className="map__search__close" onClick="close"><i className="ion-close"></i></a>
@@ -34,8 +34,8 @@ const SearchByCountry = React.createClass({
 
 				<div className="row">
 					<div className="col-md-6">
-						<div class="map__search_input-container">
-							<input type="text" onChange="search" class="map__search_input" />
+						<div className="map__search_input-container">
+							<input type="text" onChange={this.search} className="map__search_input" />
 						</div>
 
 						<ul className="map__search_results">
