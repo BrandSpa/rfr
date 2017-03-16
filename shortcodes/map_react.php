@@ -36,7 +36,8 @@ function bs_map_react_sc($atts, $content = null) {
 
  ob_start();
 ?>
-	<div class="bs-map" data-props='{"texts": {}, "images": {}, "templateUrl": ""}'></div>
+
+	<div class="bs-map" data-props='<?php echo json_encode($props) ?>'></div>
 
 <?php
   return ob_get_clean();
