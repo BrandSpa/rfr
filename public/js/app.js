@@ -46639,7 +46639,8 @@ var SearchByCountry = _react2.default.createClass({
 	displayName: "SearchByCountry",
 	getInitialState: function getInitialState() {
 		return {
-			show: false
+			show: false,
+			reports: []
 		};
 	},
 	search: function search(e) {
@@ -46672,6 +46673,7 @@ var SearchByCountry = _react2.default.createClass({
 		var _props = this.props;
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
+		var reports = this.state.reports;
 
 
 		return _react2.default.createElement(
@@ -46704,7 +46706,7 @@ var SearchByCountry = _react2.default.createClass({
 						_react2.default.createElement(
 							"ul",
 							{ className: "map__search_results" },
-							this.props.reports.map(function (report, i) {
+							reports.map(function (report, i) {
 								return _react2.default.createElement(
 									"li",
 									{ key: i },
@@ -46766,20 +46768,20 @@ var SearchByCountry = _react2.default.createClass({
 								_react2.default.createElement(
 									"li",
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Persecution.svg", alt: "" }),
-									texts.persecution
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/improved.svg", alt: "" }),
+									texts.improved
 								),
 								_react2.default.createElement(
 									"li",
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Discrimination.svg", alt: "" }),
-									texts.discrimination
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/unchanged.svg", alt: "" }),
+									texts.unchanged
 								),
 								_react2.default.createElement(
 									"li",
 									null,
-									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Stable.svg", alt: "" }),
-									texts.stable
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Worsened.svg", alt: "" }),
+									texts.worsened
 								)
 							)
 						)

@@ -12,7 +12,8 @@ import React from 'react';
 const SearchByCountry = React.createClass({
 	getInitialState(){
 		return {
-			show: false
+			show: false,
+			reports: []
 		}
 	},
 
@@ -45,6 +46,7 @@ const SearchByCountry = React.createClass({
 
 	render() {
 		const { texts, templateUrl } = this.props;
+		const { reports } = this.state;
 
 		return (
 			<div className={this.state.show ? "map__search map__search--show" : "map__search" }>
@@ -60,12 +62,12 @@ const SearchByCountry = React.createClass({
 						</div>
 
 						<ul className="map__search_results">
-							{this.props.reports.map((report, i) => 
-								<li key={i}>
-									<a href={report.guid}>{report.meta_country}</a>
-									<span><img src={this.getIcon(report.meta_situation)} alt="" /></span>
-								</li>
-							)}
+								{reports.map((report, i) =>
+									<li key={i}>
+										<a href={report.guid}>{report.meta_country}</a>
+										<span><img src={this.getIcon(report.meta_situation)} alt="" /></span>
+									</li>
+								)}
 						</ul>
 					</div>
 					<div className="col-md-6">
@@ -94,19 +96,16 @@ const SearchByCountry = React.createClass({
 							<h5 className="color-red pull-left">{texts.situation}</h5>
 							<ul className="map__search__list">
 									<li>
-										<img src={`${templateUrl}/public/img/icons/Persecution.svg`} alt="" />
-										{texts.persecution}
+										<img src={`${templateUrl}/public/img/icons/improved.svg`} alt="" />
+										{texts.improved}
 									</li>
-
 									<li>
-										<img src={`${templateUrl}/public/img/icons/Discrimination.svg`} alt="" />
-										{texts.discrimination}
-
+										<img src={`${templateUrl}/public/img/icons/unchanged.svg`} alt="" />
+										{texts.unchanged}
 									</li>
-
 									<li>
-										<img src={`${templateUrl}/public/img/icons/Stable.svg`} alt="" />
-										{texts.stable}
+										<img src={`${templateUrl}/public/img/icons/Worsened.svg`} alt="" />
+										{texts.worsened}
 									</li>
 							</ul>
 						</div>
