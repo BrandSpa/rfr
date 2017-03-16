@@ -23,6 +23,7 @@ include 'apis/index.php';
 include 'options/index.php';
 include 'metaboxes/index.php';
 include_once 'shortcodes/map.php';
+include_once 'shortcodes/map_react.php';
 include_once 'shortcodes/download_report_sc.php';
 include_once 'shortcodes/subscribe_sc.php';
 include_once 'shortcodes/link.php';

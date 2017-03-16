@@ -1,5 +1,5 @@
 'use strict';
-const countries = require("json!./countries_list.json");
+const countries = require("./countries_list.json");
 
 export default function countryLang() {
 
@@ -10,6 +10,4 @@ export default function countryLang() {
     ob['languages'] = con['languages'].map(lang => lang['iso639_1']);
     return ob;
   });
-
-  console.log(JSON.stringify(cons));
 }

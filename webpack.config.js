@@ -1,3 +1,4 @@
+ 
  module.exports = {
     watch: true,
      entry: {
@@ -9,10 +10,16 @@
          filename: '[name].js'
      },
      module: {
-         loaders: [{
+        loaders: [
+          {
              test: /\.js$/,
              exclude: /node_modules/,
              loader: 'babel-loader'
-         }]
+         },
+        {
+          test: /\.json$/,
+          use: 'json-loader'
+        }
+      ]
      }
  }

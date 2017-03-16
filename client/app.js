@@ -1,4 +1,5 @@
 'use strict';
+import 'babel-polyfill';
 import $ from 'jquery';
 import nav from './lib/nav';
 import map from './components/map';
@@ -14,6 +15,11 @@ import scrollTop from './lib/scroll_top';
 import redirect from './lib/redirect';
 import modalIframe from './lib/modal_iframe';
 import slider from './lib/slider';
+
+import multipleRender from 'react-multiple-render';
+import MapComponent from './components-react/map/index';
+
+multipleRender(MapComponent, '.bs-map');
 
 $(() => {
   redirect();
