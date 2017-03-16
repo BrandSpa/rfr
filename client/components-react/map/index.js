@@ -8,7 +8,8 @@ import SearchByCountry from '../searchByCountry';
 const endpoint = 'http://religious-freedom-report.org/wp-admin/admin-ajax.php';
 
 const MapComponent = React.createClass({
-	getInitialProps() {
+
+	getDefaultProps() {
 		return {
 			texts: {},
 			images: {},
@@ -17,6 +18,7 @@ const MapComponent = React.createClass({
 	},
 
 	componentDidMount() {
+		this.reports = [];
 		let data = qs.stringify({ action: 'reports', data: { lang: 'es' } });
 		let dataTranslations = qs.stringify({ action: 'countries_translations', data: { lang: 'es' } });
 
@@ -25,6 +27,7 @@ const MapComponent = React.createClass({
 
 		Promise.all([reqReports, reqTranslations])
 			.then(res => {
+				this.reports = res[0].data;
 				setMap(`${this.props.templateUrl}/public/img/map.svg`, res[0].data, 'en', res[1].data);
 			});
 	},
@@ -34,7 +37,7 @@ const MapComponent = React.createClass({
 
 		return (
 			<div>
-			<SearchByCountry {...this.props} />
+			<SearchByCountry {...this.props} reports={this.reports} />
 				<div className="map__info" style={{position: 'absolute'}}> 
 					<div className="map__info_country"></div>
 					<div className="map__info_situation"></div>
