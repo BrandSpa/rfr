@@ -46676,10 +46676,10 @@ var SearchByCountry = _react2.default.createClass({
 						_react2.default.createElement(
 							'ul',
 							{ className: 'map__search_results' },
-							this.props.reports.map(function (report) {
-								_react2.default.createElement(
+							this.props.reports.map(function (report, i) {
+								return _react2.default.createElement(
 									'li',
-									null,
+									{ key: i },
 									_react2.default.createElement(
 										'a',
 										{ href: report.guid },

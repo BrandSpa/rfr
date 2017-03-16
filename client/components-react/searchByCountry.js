@@ -39,12 +39,12 @@ const SearchByCountry = React.createClass({
 						</div>
 
 						<ul className="map__search_results">
-							{this.props.reports.map(report => {
-								<li>
+							{this.props.reports.map((report, i) => 
+								<li key={i}>
 									<a href={report.guid}>{report.meta_country}</a>
 									<span> <img src={this.getIcon(report.meta_situation)} alt="" /> </span>
 								</li>
-							})}
+							)}
 						</ul>
 					</div>
 					<div className="col-md-6">
