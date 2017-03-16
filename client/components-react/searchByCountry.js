@@ -10,6 +10,12 @@ import React from 'react';
 */
 
 const SearchByCountry = React.createClass({
+	getInitialState(){
+		return {
+			show: false
+		}
+	},
+
 	search() {
 		console.log('nea');
 	},
@@ -18,16 +24,16 @@ const SearchByCountry = React.createClass({
 		return `${this.props.templateUrl}/public/img/icons/${name}.svg`
 	},
 
-	close() {
-
+	toggleShow() {
+		this.setState({show: !this.state.show});
 	},
 
 	render() {
 		const { texts, templateUrl } = this.props;
 
 		return (
-			<div className="map__search">
-				<a href="#" className="map__search__close" onClick={this.close}><i className="ion-close"></i></a>
+			<div className={this.state.show ? "map__search" : "map__search map__search--show"}>
+				<a href="#" className="map__search__close" onClick={this.toggleShow}><i className="ion-close"></i></a>
   
 			<div className="col-md-6 col-sm-10" style={{ float: 'none', margin: '0 auto' }}>
 				<h1 className="title-center title-line color-red">{texts.search_by_country}</h1>
@@ -42,7 +48,7 @@ const SearchByCountry = React.createClass({
 							{this.props.reports.map((report, i) => 
 								<li key={i}>
 									<a href={report.guid}>{report.meta_country}</a>
-									<span> <img src={this.getIcon(report.meta_situation)} alt="" /> </span>
+									<span><img src={this.getIcon(report.meta_situation)} alt="" /></span>
 								</li>
 							)}
 						</ul>

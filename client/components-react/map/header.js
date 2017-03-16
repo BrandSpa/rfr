@@ -8,7 +8,8 @@ const MapHeader = React.createClass({
 
 	showSearch(e) {
 		e.preventDefault();
-		console.log('showSearch');
+		this.props.searchCountry.toggleShow();
+		console.log('showSearch', this.props.searchCountry);
 	},
 
 	render() {
@@ -25,8 +26,6 @@ const MapHeader = React.createClass({
 				</div>
 				
 				<div className="col-md-4 map__header__btns">
-
-
 					<div className="col-xs-6">
 						<button className="button button--fill" onClick={this.showSearchList}>{texts.list}</button>
 					</div>

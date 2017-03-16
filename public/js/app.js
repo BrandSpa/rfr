@@ -44287,7 +44287,7 @@ var MapComponent = _react2.default.createClass({
 		return _react2.default.createElement(
 			'div',
 			null,
-			_react2.default.createElement(_searchByCountry2.default, _extends({}, this.props, this.state)),
+			_react2.default.createElement(_searchByCountry2.default, _extends({ ref: searchCountry = this.searchCountry = searchCountry }, this.props, this.state)),
 			_react2.default.createElement(
 				'div',
 				{ className: 'map__info', style: { position: 'absolute' } },
@@ -44297,7 +44297,7 @@ var MapComponent = _react2.default.createClass({
 			_react2.default.createElement(
 				'div',
 				{ className: 'map' },
-				_react2.default.createElement(_header2.default, this.props),
+				_react2.default.createElement(_header2.default, _extends({}, this.props, { searchCountry: this.searchCountry })),
 				_react2.default.createElement(
 					'div',
 					{ id: 'map-container' },
@@ -46552,7 +46552,8 @@ var MapHeader = _react2.default.createClass({
 	},
 	showSearch: function showSearch(e) {
 		e.preventDefault();
-		console.log('showSearch');
+		this.props.searchCountry.toggleShow();
+		console.log('showSearch', this.props.searchCountry);
 	},
 	render: function render() {
 		var texts = this.props.texts;
@@ -46631,13 +46632,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var SearchByCountry = _react2.default.createClass({
 	displayName: 'SearchByCountry',
+	getInitialState: function getInitialState() {
+		return {
+			show: false
+		};
+	},
 	search: function search() {
 		console.log('nea');
 	},
 	getIcon: function getIcon(name) {
 		return this.props.templateUrl + '/public/img/icons/' + name + '.svg';
 	},
-	close: function close() {},
+	toggleShow: function toggleShow() {
+		this.setState({ show: !this.state.show });
+	},
 	render: function render() {
 		var _this = this;
 
@@ -46648,10 +46656,10 @@ var SearchByCountry = _react2.default.createClass({
 
 		return _react2.default.createElement(
 			'div',
-			{ className: 'map__search' },
+			{ className: this.state.show ? "map__search" : "map__search map__search--show" },
 			_react2.default.createElement(
 				'a',
-				{ href: '#', className: 'map__search__close', onClick: this.close },
+				{ href: '#', className: 'map__search__close', onClick: this.toggleShow },
 				_react2.default.createElement('i', { className: 'ion-close' })
 			),
 			_react2.default.createElement(
@@ -46688,9 +46696,7 @@ var SearchByCountry = _react2.default.createClass({
 									_react2.default.createElement(
 										'span',
 										null,
-										' ',
-										_react2.default.createElement('img', { src: _this.getIcon(report.meta_situation), alt: '' }),
-										' '
+										_react2.default.createElement('img', { src: _this.getIcon(report.meta_situation), alt: '' })
 									)
 								);
 							})
