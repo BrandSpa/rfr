@@ -22,7 +22,7 @@ const SearchByCountry = React.createClass({
 		if (query.length > 0) {
 
 			results = this.props.reports.filter(pst => {
-				let translation = this.countriesTrans[pst.meta_country];
+				let translation = this.props.countriesTrans[pst.meta_country];
 				if (translation) {
 					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1
 				}

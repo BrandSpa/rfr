@@ -44917,7 +44917,7 @@ exports.default = function () {
         if (query.length > 0) {
 
           results = reports.filter(function (pst) {
-            var translation = _this4.props.countriesTrans[pst.meta_country];
+            var translation = _this4.countriesTrans[pst.meta_country];
             if (translation) {
               return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
             }
@@ -46650,7 +46650,7 @@ var SearchByCountry = _react2.default.createClass({
 		if (query.length > 0) {
 
 			results = this.props.reports.filter(function (pst) {
-				var translation = _this.countriesTrans[pst.meta_country];
+				var translation = _this.props.countriesTrans[pst.meta_country];
 				if (translation) {
 					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
 				}
