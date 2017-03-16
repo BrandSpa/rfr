@@ -16,8 +16,23 @@ const SearchByCountry = React.createClass({
 		}
 	},
 
-	search() {
-		console.log('nea');
+	search(e) {
+		let query = e.target.value;
+		let results = [];
+		if (query.length > 0) {
+
+			results = this.props.reports.filter(pst => {
+				let translation = this.countriesTrans[pst.meta_country];
+				if (translation) {
+					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1
+				}
+
+			});
+
+		} else {
+			results = this.props.reports;
+		}
+		console.log(results);
 	},
 
 	getIcon(name) {
@@ -32,7 +47,7 @@ const SearchByCountry = React.createClass({
 		const { texts, templateUrl } = this.props;
 
 		return (
-			<div className={this.state.show ? "map__search" : "map__search map__search--show"}>
+			<div className={this.state.show ? "map__search map__search--show" : "map__search" }>
 				<a href="#" className="map__search__close" onClick={this.toggleShow}><i className="ion-close"></i></a>
   
 			<div className="col-md-6 col-sm-10" style={{ float: 'none', margin: '0 auto' }}>

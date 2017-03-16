@@ -46635,23 +46635,38 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 */
 
 var SearchByCountry = _react2.default.createClass({
-	displayName: 'SearchByCountry',
+	displayName: "SearchByCountry",
 	getInitialState: function getInitialState() {
 		return {
 			show: false
 		};
 	},
-	search: function search() {
-		console.log('nea');
+	search: function search(e) {
+		var _this = this;
+
+		var query = e.target.value;
+		var results = [];
+		if (query.length > 0) {
+
+			results = this.props.reports.filter(function (pst) {
+				var translation = _this.countriesTrans[pst.meta_country];
+				if (translation) {
+					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
+				}
+			});
+		} else {
+			results = this.props.reports;
+		}
+		console.log(results);
 	},
 	getIcon: function getIcon(name) {
-		return this.props.templateUrl + '/public/img/icons/' + name + '.svg';
+		return this.props.templateUrl + "/public/img/icons/" + name + ".svg";
 	},
 	toggleShow: function toggleShow() {
 		this.setState({ show: !this.state.show });
 	},
 	render: function render() {
-		var _this = this;
+		var _this2 = this;
 
 		var _props = this.props;
 		var texts = _props.texts;
@@ -46659,110 +46674,110 @@ var SearchByCountry = _react2.default.createClass({
 
 
 		return _react2.default.createElement(
-			'div',
-			{ className: this.state.show ? "map__search" : "map__search map__search--show" },
+			"div",
+			{ className: this.state.show ? "map__search map__search--show" : "map__search" },
 			_react2.default.createElement(
-				'a',
-				{ href: '#', className: 'map__search__close', onClick: this.toggleShow },
-				_react2.default.createElement('i', { className: 'ion-close' })
+				"a",
+				{ href: "#", className: "map__search__close", onClick: this.toggleShow },
+				_react2.default.createElement("i", { className: "ion-close" })
 			),
 			_react2.default.createElement(
-				'div',
-				{ className: 'col-md-6 col-sm-10', style: { float: 'none', margin: '0 auto' } },
+				"div",
+				{ className: "col-md-6 col-sm-10", style: { float: 'none', margin: '0 auto' } },
 				_react2.default.createElement(
-					'h1',
-					{ className: 'title-center title-line color-red' },
+					"h1",
+					{ className: "title-center title-line color-red" },
 					texts.search_by_country
 				),
 				_react2.default.createElement(
-					'div',
-					{ className: 'row' },
+					"div",
+					{ className: "row" },
 					_react2.default.createElement(
-						'div',
-						{ className: 'col-md-6' },
+						"div",
+						{ className: "col-md-6" },
 						_react2.default.createElement(
-							'div',
-							{ className: 'map__search_input-container' },
-							_react2.default.createElement('input', { type: 'text', onChange: this.search, className: 'map__search_input' })
+							"div",
+							{ className: "map__search_input-container" },
+							_react2.default.createElement("input", { type: "text", onChange: this.search, className: "map__search_input" })
 						),
 						_react2.default.createElement(
-							'ul',
-							{ className: 'map__search_results' },
+							"ul",
+							{ className: "map__search_results" },
 							this.props.reports.map(function (report, i) {
 								return _react2.default.createElement(
-									'li',
+									"li",
 									{ key: i },
 									_react2.default.createElement(
-										'a',
+										"a",
 										{ href: report.guid },
 										report.meta_country
 									),
 									_react2.default.createElement(
-										'span',
+										"span",
 										null,
-										_react2.default.createElement('img', { src: _this.getIcon(report.meta_situation), alt: '' })
+										_react2.default.createElement("img", { src: _this2.getIcon(report.meta_situation), alt: "" })
 									)
 								);
 							})
 						)
 					),
 					_react2.default.createElement(
-						'div',
-						{ className: 'col-md-6' },
+						"div",
+						{ className: "col-md-6" },
 						_react2.default.createElement(
-							'div',
-							{ className: 'row' },
-							_react2.default.createElement('h5', { className: 'color-red pull-left' }),
+							"div",
+							{ className: "row" },
+							_react2.default.createElement("h5", { className: "color-red pull-left" }),
 							_react2.default.createElement(
-								'ul',
-								{ className: 'map__search__list' },
+								"ul",
+								{ className: "map__search__list" },
 								_react2.default.createElement(
-									'li',
+									"li",
 									null,
-									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Persecution.svg', alt: '' }),
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Persecution.svg", alt: "" }),
 									texts.persecution
 								),
 								_react2.default.createElement(
-									'li',
+									"li",
 									null,
-									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Discrimination.svg', alt: '' }),
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Discrimination.svg", alt: "" }),
 									texts.discrimination
 								),
 								_react2.default.createElement(
-									'li',
+									"li",
 									null,
-									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Stable.svg', alt: '' }),
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Stable.svg", alt: "" }),
 									texts.stable
 								)
 							)
 						),
 						_react2.default.createElement(
-							'div',
-							{ className: 'row' },
+							"div",
+							{ className: "row" },
 							_react2.default.createElement(
-								'h5',
-								{ className: 'color-red pull-left' },
+								"h5",
+								{ className: "color-red pull-left" },
 								texts.situation
 							),
 							_react2.default.createElement(
-								'ul',
-								{ className: 'map__search__list' },
+								"ul",
+								{ className: "map__search__list" },
 								_react2.default.createElement(
-									'li',
+									"li",
 									null,
-									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Persecution.svg', alt: '' }),
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Persecution.svg", alt: "" }),
 									texts.persecution
 								),
 								_react2.default.createElement(
-									'li',
+									"li",
 									null,
-									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Discrimination.svg', alt: '' }),
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Discrimination.svg", alt: "" }),
 									texts.discrimination
 								),
 								_react2.default.createElement(
-									'li',
+									"li",
 									null,
-									_react2.default.createElement('img', { src: templateUrl + '/public/img/icons/Stable.svg', alt: '' }),
+									_react2.default.createElement("img", { src: templateUrl + "/public/img/icons/Stable.svg", alt: "" }),
 									texts.stable
 								)
 							)

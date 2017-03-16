@@ -42,7 +42,7 @@ const MapComponent = React.createClass({
 
 		return (
 			<div>
-			<SearchByCountry ref={searchCountry => this.searchCountry = searchCountry} {...this.props} {...this.state} />
+				<SearchByCountry ref={searchCountry => this.searchCountry = searchCountry} {...this.props} {...this.state} />
 				<div className="map__info" style={{position: 'absolute'}}> 
 					<div className="map__info_country"></div>
 					<div className="map__info_situation"></div>
