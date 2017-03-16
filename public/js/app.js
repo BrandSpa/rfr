@@ -44279,6 +44279,8 @@ var MapComponent = _react2.default.createClass({
 		});
 	},
 	render: function render() {
+		var _this2 = this;
+
 		var _props = this.props;
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
@@ -44287,7 +44289,9 @@ var MapComponent = _react2.default.createClass({
 		return _react2.default.createElement(
 			'div',
 			null,
-			_react2.default.createElement(_searchByCountry2.default, _extends({ ref: searchCountry = this.searchCountry = searchCountry }, this.props, this.state)),
+			_react2.default.createElement(_searchByCountry2.default, _extends({ ref: function ref(searchCountry) {
+					return _this2.searchCountry = searchCountry;
+				} }, this.props, this.state)),
 			_react2.default.createElement(
 				'div',
 				{ className: 'map__info', style: { position: 'absolute' } },
