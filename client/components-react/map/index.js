@@ -10,7 +10,8 @@ const MapComponent = React.createClass({
 	getInitialProps() {
 		return {
 			texts: {},
-			images: {}
+			images: {},
+			templateUrl: ""
 		}
 	},
 
@@ -23,7 +24,7 @@ const MapComponent = React.createClass({
 
 		Promise.all([reqReports, reqTranslations])
 			.then(res => {
-				setMap('/map.svg', res[0].data, 'en', res[1].data);
+				setMap(`${templateUrl}/public/img/map.svg`, res[0].data, 'en', res[1].data);
 			});
 	},
 
