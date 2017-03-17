@@ -5,6 +5,7 @@ import religionsChart from './components/religions_chart';
 import searchCountry from './components/search_country';
 import searchList from './components/search_list';
 import downloadFormReport from './components/download_report';
+
 //jquery
 import footerNav from './lib/footer_nav';
 import countries from './lib/country_lang';
@@ -19,10 +20,12 @@ import multipleRender from 'react-multiple-render';
 import MapComponent from './components-react/map/index';
 import SubscribeFormComponent from './components-react/subscribeForm';
 import HeaderSlider from './components-react/headerSlider';
+import DownloadReport from './components-react/downloadReport';
 
 multipleRender(MapComponent, '.bs-map');
 multipleRender(SubscribeFormComponent, '.bs-subscribe');
 multipleRender(HeaderSlider, '.bs-header-slider');
+multipleRender(DownloadReport, '.bs-download-report');
 
 $(() => {
   redirect();

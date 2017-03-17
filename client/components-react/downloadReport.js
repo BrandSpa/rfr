@@ -1,89 +1,130 @@
 import React from 'react';
+import qs from 'qs';
+import request from 'axios';
+import isEmail from 'validator/lib/isEmail';
+import isEmpty from 'validator/lib/isEmpty';
+const endpoint = '/wp-admin/admin-ajax.php';
 
 const DownloadReport = React.createClass({
-	render() {
-		return (
-			<div id="download-report">
+  getInitialState() {
+        return {
+            name: '',
+            email: '',
+            country: '',
+            language: '',
+            errors: {
+                name: false,
+                email: false,
+            },
+        };
+    },
 
-  <h1 class="title-center title-line color-red">
-    <?php echo gett('DOWNLOAD REPORT'); ?>
-  </h1>
- 
-  <div class="row">
-    <div class="col-md-1"></div>
+    handleChange(field, e) {
+        let val = e.target.value;
+        this.setState({ ...this.state, [field]: val });
+    },
 
-    <div class="col-md-5" style="float: none; margin: 0 auto">
+    validate() {
+        let errors = {};
 
+        let validations = Object.keys(this.state.errors).map(field => {
+            let val = isEmpty(this.state[field]);
+            if (field == 'email') val = !isEmail(this.state[field]);
+            errors = { ...errors, [field]: val };
+            return val;
+        });
 
-     <form  v-on:submit.prevent="onSubmit">
+        this.setState({ errors });
 
-        <div class="input-container">
-          <label for="" class="color-red">
-            <?php echo gett('Name') ?> 
-            <span 
-              class="input-container__error" 
-              v-bind:class="{ 'input-container__error-show': validation.name}"   
-            >
-              <?php echo gett('Required') ?>
-            </span>
-          </label>
+        return Promise.all(validations).then(arr => arr.every(item => item == false)).catch(err => console.error(err));
+    },
 
-          <input 
-            type="text" 
-            v-model="name" 
-            v-on:keyup="validate({field: 'name'})" 
-          />
+    handleSubmit(e) {
+        e.preventDefault();
+        this.validate().then(isValid => {
+            if (isValid) this.storeContact();
+        });
+    },
 
-        </div>
+    storeContact() {
+        const { name, email } = this.state;
+        const { country } = this.props;
 
-        <div class="input-container">
-          <label for="" class="color-red">
-            <?php echo gett('Email') ?>
-            <span
-              class="input-container__error"
-              v-bind:class="{ 'input-container__error-show': validation.email}"
-            > 
-              <?php echo gett('Invalid') ?>
-            </span>
-          </label>
-          <input 
-            type="text"
-            v-model="email"
-            v-on:keyup="validate({field: 'email'})" 
-          />
-        </div>
+        let mc_data = {
+            email_address: email,
+            status: 'subscribed',
+            merge_fields: { NAME: name, COUNTRY: country },
+            update_existing: true,
+        };
 
-        <div class="input-container">
-          <label for="" class="color-red"><?php echo gett('Language') ?></label>
-          <select name="" id="" v-model="language">
-            <?php if(function_exists('pll_the_languages')): ?>
+        let data = qs.stringify({ action: 'mailchimp_subscribe', data: mc_data });
 
-            <?php foreach(pll_the_languages(array('raw'=>1)) as $lang): ?>
-              <option value="<?php echo $lang[slug] ?>"><?php echo $lang[name]; ?></option>
-            <?php endforeach; ?>
-            <?php endif; ?>
-          </select>
-        </div>
+        request
+            .post(endpoint, data)
+            .then(res => {
+                console.log(res.data);
+                if (res.data.id) {
+                    return (window.location = this.props.thanks);
+                }
+            })
+            .catch(err => console.error(err));
+    },
 
-         <div class="input-container">
-          <label for="" class="color-red"><?php echo gett('Country') ?></label>
-       
-          <select name="" id="" v-model="country">
+    render() {
+        const { errors, name, email } = this.state;
+        const { texts, countries, country } = this.props;
 
-            <?php foreach(getCountries() as $country): ?>
-              <option value="<?php echo $country ?>"><?php echo $country; ?></option>
-            <?php endforeach; ?>
-          </select>
-        </div>
+        return (
+            <div id="download-report">
 
-        <button class="button title-uppercase" v-on:click.prevent="onSubmit"><?php echo gett('Download Executive Summary') ?></button>
-      </form>
-		    </div>
-    <div class="col-md-1"></div>
-  </div>
+                <h1 className="title-center title-line color-red"> {texts.title} </h1>
 
-</div>
+                <div className="row">
+                    <div className="col-md-1" />
 
-		)
-	}
+                    <div className="col-md-5" style="float: none; margin: 0 auto">
+
+                        <form onSubmit={this.handleSubmit}>
+
+                            <div className="input-container">
+                                <label className="color-red">
+                                    {texts.name} 
+                                    <span className={errors.name ? 'input-container__error input-container__error-show' : 'input-container__error'} > {texts.required} </span>
+                                </label>
+
+                                <input type="text" value={name} onChange={this.handleChange.bind(null, 'name')} />
+
+                            </div>
+
+                            <div className="input-container">
+                                <label className="color-red">
+                                    {texts.email}
+                                    <span className={errors.email ? 'input-container__error input-container__error-show' : 'input-container__error'} > {texts.invalid} </span>
+                                </label>
+                                <input type="text" value={email} onChange={this.handleChange.bind(null, 'email')} />
+                            </div>
+
+                            <div className="input-container">
+                                <label className="color-red">{texts.language}</label>
+                                <select name="" id="" value={language} onChange={this.handleChange.bind(null, 'language')}>
+                                    {languages.map((lang, i) => ( <option key={i} value={lang.slug}>{$lang.name}</option> ))}
+                                </select>
+                            </div>
+
+                            <div className="input-container">
+                                <label className="color-red">{texts.country}</label>
+
+                                <select value={country} onChange={this.handleChange.bind(null, 'country')}>
+                                    {countries.map((country, i) => <option key={i} value={country}>{country}</option>)}
+                                </select>
+                            </div>
+
+                            <button className="button title-uppercase" onClick={this.handleSubmit}>{texts.btn}</button>
+                        </form>
+                    </div>
+                    <div className="col-md-1" />
+                </div>
+            </div>
+        );
+    },
 });

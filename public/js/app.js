@@ -42050,16 +42050,22 @@ var _headerSlider = __webpack_require__(244);
 
 var _headerSlider2 = _interopRequireDefault(_headerSlider);
 
+var _downloadReport = __webpack_require__(672);
+
+var _downloadReport2 = _interopRequireDefault(_downloadReport);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//react
-(0, _reactMultipleRender2.default)(_index2.default, '.bs-map');
 //jquery
 
 //vue
+(0, _reactMultipleRender2.default)(_index2.default, '.bs-map');
+
+//react
 
 (0, _reactMultipleRender2.default)(_subscribeForm2.default, '.bs-subscribe');
 (0, _reactMultipleRender2.default)(_headerSlider2.default, '.bs-header-slider');
+(0, _reactMultipleRender2.default)(_downloadReport2.default, '.bs-download-report');
 
 $(function () {
   (0, _redirect2.default)();
@@ -42096,6 +42102,234 @@ $(function () {
       });
     }
   });
+});
+
+/***/ }),
+/* 672 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(44);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _qs = __webpack_require__(205);
+
+var _qs2 = _interopRequireDefault(_qs);
+
+var _axios = __webpack_require__(161);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+var _isEmail = __webpack_require__(156);
+
+var _isEmail2 = _interopRequireDefault(_isEmail);
+
+var _isEmpty = __webpack_require__(234);
+
+var _isEmpty2 = _interopRequireDefault(_isEmpty);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var endpoint = '/wp-admin/admin-ajax.php';
+
+var DownloadReport = _react2.default.createClass({
+    displayName: 'DownloadReport',
+    getInitialState: function getInitialState() {
+        return {
+            name: '',
+            email: '',
+            country: '',
+            language: '',
+            errors: {
+                name: false,
+                email: false
+            }
+        };
+    },
+    handleChange: function handleChange(field, e) {
+        var val = e.target.value;
+        this.setState(_extends({}, this.state, _defineProperty({}, field, val)));
+    },
+    validate: function validate() {
+        var _this = this;
+
+        var errors = {};
+
+        var validations = Object.keys(this.state.errors).map(function (field) {
+            var val = (0, _isEmpty2.default)(_this.state[field]);
+            if (field == 'email') val = !(0, _isEmail2.default)(_this.state[field]);
+            errors = _extends({}, errors, _defineProperty({}, field, val));
+            return val;
+        });
+
+        this.setState({ errors: errors });
+
+        return Promise.all(validations).then(function (arr) {
+            return arr.every(function (item) {
+                return item == false;
+            });
+        }).catch(function (err) {
+            return console.error(err);
+        });
+    },
+    handleSubmit: function handleSubmit(e) {
+        var _this2 = this;
+
+        e.preventDefault();
+        this.validate().then(function (isValid) {
+            if (isValid) _this2.storeContact();
+        });
+    },
+    storeContact: function storeContact() {
+        var _this3 = this;
+
+        var _state = this.state;
+        var name = _state.name;
+        var email = _state.email;
+        var country = this.props.country;
+
+
+        var mc_data = {
+            email_address: email,
+            status: 'subscribed',
+            merge_fields: { NAME: name, COUNTRY: country },
+            update_existing: true
+        };
+
+        var data = _qs2.default.stringify({ action: 'mailchimp_subscribe', data: mc_data });
+
+        _axios2.default.post(endpoint, data).then(function (res) {
+            console.log(res.data);
+            if (res.data.id) {
+                return window.location = _this3.props.thanks;
+            }
+        }).catch(function (err) {
+            return console.error(err);
+        });
+    },
+    render: function render() {
+        var _state2 = this.state;
+        var errors = _state2.errors;
+        var name = _state2.name;
+        var email = _state2.email;
+        var _props = this.props;
+        var texts = _props.texts;
+        var countries = _props.countries;
+        var country = _props.country;
+
+
+        return _react2.default.createElement(
+            'div',
+            { id: 'download-report' },
+            _react2.default.createElement(
+                'h1',
+                { className: 'title-center title-line color-red' },
+                ' ',
+                texts.title,
+                ' '
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'row' },
+                _react2.default.createElement('div', { className: 'col-md-1' }),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'col-md-5', style: 'float: none; margin: 0 auto' },
+                    _react2.default.createElement(
+                        'form',
+                        { onSubmit: this.handleSubmit },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-container' },
+                            _react2.default.createElement(
+                                'label',
+                                { className: 'color-red' },
+                                texts.name,
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: errors.name ? 'input-container__error input-container__error-show' : 'input-container__error' },
+                                    ' ',
+                                    texts.required,
+                                    ' '
+                                )
+                            ),
+                            _react2.default.createElement('input', { type: 'text', value: name, onChange: this.handleChange.bind(null, 'name') })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-container' },
+                            _react2.default.createElement(
+                                'label',
+                                { className: 'color-red' },
+                                texts.email,
+                                _react2.default.createElement(
+                                    'span',
+                                    { className: errors.email ? 'input-container__error input-container__error-show' : 'input-container__error' },
+                                    ' ',
+                                    texts.invalid,
+                                    ' '
+                                )
+                            ),
+                            _react2.default.createElement('input', { type: 'text', value: email, onChange: this.handleChange.bind(null, 'email') })
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-container' },
+                            _react2.default.createElement(
+                                'label',
+                                { className: 'color-red' },
+                                texts.language
+                            ),
+                            _react2.default.createElement(
+                                'select',
+                                { name: '', id: '', value: language, onChange: this.handleChange.bind(null, 'language') },
+                                languages.map(function (lang, i) {
+                                    return _react2.default.createElement(
+                                        'option',
+                                        { key: i, value: lang.slug },
+                                        $lang.name
+                                    );
+                                })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'input-container' },
+                            _react2.default.createElement(
+                                'label',
+                                { className: 'color-red' },
+                                texts.country
+                            ),
+                            _react2.default.createElement(
+                                'select',
+                                { value: country, onChange: this.handleChange.bind(null, 'country') },
+                                countries.map(function (country, i) {
+                                    return _react2.default.createElement(
+                                        'option',
+                                        { key: i, value: country },
+                                        country
+                                    );
+                                })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'button title-uppercase', onClick: this.handleSubmit },
+                            texts.btn
+                        )
+                    )
+                ),
+                _react2.default.createElement('div', { className: 'col-md-1' })
+            )
+        );
+    }
 });
 
 /***/ })
