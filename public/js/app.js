@@ -16972,7 +16972,7 @@ var HeaderSlider = _react2.default.createClass({
 			{ className: "home_header" },
 			backgrounds.map(function (bg, i) {
 				return _react2.default.createElement("div", {
-					className: i == 0 ? "home_header__background--active" : "home_header__background",
+					className: i == 0 ? "home_header__background home_header__background--active" : "home_header__background",
 					style: { background: "url(" + bg + ")", backgroundSize: 'cover', backgroundPosition: 'center' }
 				});
 			}),
@@ -17032,9 +17032,9 @@ var HeaderSlider = _react2.default.createClass({
 				_react2.default.createElement(
 					"div",
 					{ className: "home_header__paginate" },
-					_react2.default.createElement("a", { href: "#", className: "active", "data-index": "0" }),
-					_react2.default.createElement("a", { href: "#", "data-index": "1" }),
-					_react2.default.createElement("a", { href: "#", "data-index": "2" })
+					_react2.default.createElement("a", { href: "#", className: "active" }),
+					_react2.default.createElement("a", { href: "#" }),
+					_react2.default.createElement("a", { href: "#" })
 				)
 			),
 			_react2.default.createElement("div", { className: "col-md-2" }),

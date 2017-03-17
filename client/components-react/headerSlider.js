@@ -22,7 +22,7 @@ const HeaderSlider = React.createClass({
 
 				{backgrounds.map((bg, i) => 
 					<div
-						className={i == 0 ? "home_header__background--active" : "home_header__background"}
+						className={i == 0 ? "home_header__background home_header__background--active" : "home_header__background"}
 						style={{ background: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
 					></div>
 				)}
@@ -60,9 +60,9 @@ const HeaderSlider = React.createClass({
 					</div>
 
 					<div className="home_header__paginate">
-						<a href="#" className="active" data-index="0"></a>
-						<a href="#" data-index="1"></a>
-						<a href="#" data-index="2"></a>
+						<a href="#" className="active"></a>
+						<a href="#"></a>
+						<a href="#"></a>
 					</div>
 
 				</div>
