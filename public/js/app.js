@@ -66617,6 +66617,7 @@ var SearchByContinent = _react2.default.createClass({
 		Object.keys(continentsList).forEach(function (continentKey) {
 			newContinents[continentKey] = continents[continentsList[continentKey]].map(filterByCountry).filter(cleanEmpty);
 		});
+
 		this.setState({ continents: newContinents });
 		console.log(newContinents);
 	},
@@ -66630,7 +66631,7 @@ var SearchByContinent = _react2.default.createClass({
 
 		return _react2.default.createElement(
 			'div',
-			{ className: 'map__search_list' },
+			{ className: this.state.show ? "map__search_list map__search_list--show" : "map__search_list" },
 			_react2.default.createElement(
 				'a',
 				{ href: '#', className: 'map__search__close', onClick: this.close },

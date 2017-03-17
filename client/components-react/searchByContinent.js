@@ -48,6 +48,7 @@ const SearchByContinent = React.createClass({
 				.map(filterByCountry)
 				.filter(cleanEmpty);
 		});
+		
 		this.setState({continents: newContinents});
 		console.log(newContinents);
 	},
@@ -56,7 +57,7 @@ const SearchByContinent = React.createClass({
 		const { texts, templateUrl, countriesTrans, continents } = this.props;
 
 		return (
-			<div className="map__search_list">
+			<div className={this.state.show ? "map__search_list map__search_list--show" : "map__search_list"}>
 				<a href="#" className="map__search__close" onClick={this.close}><i className="ion-close"></i></a>
 				<div className="col-md-6 col-sm-10" style={{ float: 'none', margin: '0 auto' }}>
 					<h1 className="title-center title-line color-red">{texts.search_by_list}</h1>
