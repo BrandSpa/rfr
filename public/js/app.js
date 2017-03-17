@@ -16976,7 +16976,7 @@ var HeaderSlider = _react2.default.createClass({
 		var contents = _props.contents;
 		var content_html = _props.content_html;
 
-		var left = (this.state.slide - 1) * 100 + "%";
+		var left = "-" + (this.state.slide - 1) * 100 + "%";
 		return _react2.default.createElement(
 			"div",
 			{ className: "home_header" },

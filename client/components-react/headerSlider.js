@@ -27,7 +27,7 @@ const HeaderSlider = React.createClass({
 	},
 	render() {
 		const { backgrounds, contents, content_html } = this.props;
-		let left = `${(this.state.slide - 1) * 100}%`;
+		let left = `-${(this.state.slide - 1) * 100}%`;
 		return (
 			<div className="home_header">
 
