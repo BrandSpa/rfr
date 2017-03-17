@@ -37,7 +37,7 @@ $(() => {
   // religionsChart();
   // downloadFormReport();
   searchCountry();
-  // searchList();
+  searchList();
   footerNav();
 
   scrollTop();
