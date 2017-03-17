@@ -16944,21 +16944,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * 		<?php if(is_array( explode(',', $at['backgrounds']) )): ?>
- *  <?php  foreach(explode(',', $at['backgrounds']) as $key => $imageId):  ?>
- <?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>
-				<?php endforeach; ?>
-  <?php endif; ?>
-		content_html: <?php echo apply_filters('the_content', $content); ?>
-		"contents" => [
-			1 => [
-				"title" => $at['title_1'],
-				"content" => $at['content_1']
-			]
-		]
- */
-
 var HeaderSlider = _react2.default.createClass({
 	displayName: "HeaderSlider",
 	getInitialState: function getInitialState() {
@@ -16985,6 +16970,7 @@ var HeaderSlider = _react2.default.createClass({
 			{ className: "home_header" },
 			backgrounds.map(function (bg, i) {
 				return _react2.default.createElement("div", {
+					key: i,
 					className: i == _this.state.slide - 1 ? "home_header__background home_header__background--active" : "home_header__background",
 					style: { background: "url(" + bg + ")", backgroundSize: 'cover', backgroundPosition: 'center' }
 				});
@@ -16998,48 +16984,22 @@ var HeaderSlider = _react2.default.createClass({
 					_react2.default.createElement(
 						"ul",
 						{ style: { left: left } },
-						_react2.default.createElement(
-							"li",
-							{ className: "active" },
-							_react2.default.createElement(
-								"h1",
-								{ className: "home_header__title" },
-								contents[1].title
-							),
-							_react2.default.createElement(
-								"p",
-								{ className: "home_header__content" },
-								contents[1].content
-							)
-						),
-						_react2.default.createElement(
-							"li",
-							null,
-							_react2.default.createElement(
-								"h1",
-								{ className: "home_header__title" },
-								contents[2].title
-							),
-							_react2.default.createElement(
-								"p",
-								{ className: "home_header__content" },
-								contents[2].content
-							)
-						),
-						_react2.default.createElement(
-							"li",
-							null,
-							_react2.default.createElement(
-								"h1",
-								{ className: "home_header__title" },
-								contents[3].title
-							),
-							_react2.default.createElement(
-								"p",
-								{ className: "home_header__content" },
-								contents[3].content
-							)
-						)
+						[1, 2, 3].map(function (num, i) {
+							return _react2.default.createElement(
+								"li",
+								{ key: i, className: i == 0 ? 'active' : '' },
+								_react2.default.createElement(
+									"h1",
+									{ className: "home_header__title" },
+									contents[num].title
+								),
+								_react2.default.createElement(
+									"p",
+									{ className: "home_header__content" },
+									contents[num].content
+								)
+							);
+						})
 					)
 				),
 				_react2.default.createElement(
