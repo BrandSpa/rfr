@@ -42227,6 +42227,7 @@ var DownloadReport = _react2.default.createClass({
         var texts = _props.texts;
         var countries = _props.countries;
         var country = _props.country;
+        var languages = _props.languages;
         var language = _props.language;
 
 
