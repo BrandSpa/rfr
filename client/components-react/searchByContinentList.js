@@ -23,7 +23,8 @@ const SearchByContinentList = React.createClass({
 		return '';
 	},
 
-	toggleShow() {
+	toggleShow(e) {
+		if(e) e.preventDefault();
 		this.setState({ show: !this.state.show });
 	},
 
