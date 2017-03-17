@@ -128,3 +128,5 @@ const DownloadReport = React.createClass({
         );
     },
 });
+
+export default DownloadReport;
