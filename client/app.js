@@ -3,7 +3,6 @@ import 'babel-polyfill';
 
 //jquery
 import scrollTop from './lib/scroll_top';
-import redirect from './lib/redirect';
 import modalIframe from './lib/modal_iframe';
 import nav from './lib/nav';
 
