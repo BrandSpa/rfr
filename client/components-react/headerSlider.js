@@ -9,7 +9,7 @@ const HeaderSlider = React.createClass({
 
 	componentDidMount() {
 		this.interval = setInterval(() => {
-			this.setState({slide: this.state.slide + 1});
+			this.setState({slide: this.state.slide < 3 ? this.state.slide + 1 : 1});
 		}, 5000);
 	},
 

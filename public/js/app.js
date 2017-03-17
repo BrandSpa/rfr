@@ -16955,7 +16955,7 @@ var HeaderSlider = _react2.default.createClass({
 		var _this = this;
 
 		this.interval = setInterval(function () {
-			_this.setState({ slide: _this.state.slide + 1 });
+			_this.setState({ slide: _this.state.slide < 3 ? _this.state.slide + 1 : 1 });
 		}, 5000);
 	},
 	changeSlide: function changeSlide(slideNum, e) {
