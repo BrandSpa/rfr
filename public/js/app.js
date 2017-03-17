@@ -28927,8 +28927,8 @@ var SearchByContinent = _react2.default.createClass({
 					_react2.default.createElement(
 						'div',
 						{ className: 'col-md-6' },
-						continentsList.map(function (continent) {
-							return _react2.default.createElement(_searchByContinentList2.default, _extends({}, _this.props, { title: texts[continent], reports: _this.state.continents[continent] }));
+						continentsList.map(function (continent, i) {
+							return _react2.default.createElement(_searchByContinentList2.default, _extends({ key: i }, _this.props, { title: texts[continent], reports: _this.state.continents[continent] }));
 						})
 					)
 				)
