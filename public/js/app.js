@@ -46687,7 +46687,7 @@ var SearchByCountry = _react2.default.createClass({
 		var _state$countriesTrans = _state.countriesTrans;
 		var countriesTrans = _state$countriesTrans === undefined ? {} : _state$countriesTrans;
 
-
+		console.log('list', countriesTrans);
 		return _react2.default.createElement(
 			'div',
 			{ className: this.state.show ? "map__search map__search--show" : "map__search" },
@@ -46989,7 +46989,7 @@ function getCountryInfo(reports, countriesTrans) {
 		var fill = colors[report.meta_nature_persecution];
 		$el.style("cursor", "pointer");
 		$el.style("fill", fill);
-		console.log(countriesTrans);
+		console.log(countriesTrans, countryName);
 		var name = countriesTrans[countryName] ? countriesTrans[countryName] : countryName;
 		showMapInfo($el, report, fill, name);
 	}

@@ -57,7 +57,7 @@ const SearchByCountry = React.createClass({
 	render() {
 		const { texts, templateUrl } = this.props;
 		const { reports, countriesTrans = {} } = this.state;
-
+		console.log('list', countriesTrans);
 		return (
 			<div className={this.state.show ? "map__search map__search--show" : "map__search" }>
 				<a href="#" className="map__search__close" onClick={this.toggleShow}><i className="ion-close"></i></a>
