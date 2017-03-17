@@ -66406,12 +66406,13 @@ var SubscribeForm = _react2.default.createClass({
 					'label',
 					{ className: 'color-white' },
 					texts.name,
+					' ',
 					_react2.default.createElement(
 						'span',
-						{
-							className: errors.name ? 'input-container__error input-container__error-show' : 'input-container__error'
-						},
-						texts.invalid
+						{ className: errors.name ? 'input-container__error input-container__error-show' : 'input-container__error' },
+						' ',
+						texts.invalid,
+						' '
 					)
 				),
 				_react2.default.createElement('input', { type: 'text', onChange: this.handleChange.bind(null, 'name'), value: this.state.name })
@@ -66423,12 +66424,13 @@ var SubscribeForm = _react2.default.createClass({
 					'label',
 					{ className: 'color-white' },
 					texts.email,
+					' ',
 					_react2.default.createElement(
 						'span',
-						{
-							className: errors.email ? 'input-container__error input-container__error-show' : 'input-container__error'
-						},
-						texts.invalid
+						{ className: errors.email ? 'input-container__error input-container__error-show' : 'input-container__error' },
+						' ',
+						texts.invalid,
+						' '
 					)
 				),
 				_react2.default.createElement('input', { type: 'text', onChange: this.handleChange.bind(null, 'email'), value: this.state.email })
@@ -66439,14 +66441,7 @@ var SubscribeForm = _react2.default.createClass({
 				_react2.default.createElement(
 					'label',
 					{ className: 'color-white' },
-					texts.country,
-					_react2.default.createElement(
-						'span',
-						{
-							className: errors.country ? 'input-container__error input-container__error-show' : 'input-container__error'
-						},
-						texts.invalid
-					)
+					texts.country
 				),
 				_react2.default.createElement(
 					'select',

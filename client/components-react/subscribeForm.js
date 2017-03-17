@@ -63,12 +63,7 @@ const SubscribeForm = React.createClass({
 			<form onSubmit={this.handleSubmit}>
 				<div className="input-container">
 					<label className="color-white">
-						{texts.name}
-						<span
-							className={errors.name ? 'input-container__error input-container__error-show' : 'input-container__error'}
-						>
-							{texts.invalid}
-						</span>
+						{texts.name} <span className={errors.name ? 'input-container__error input-container__error-show' : 'input-container__error'} > {texts.invalid} </span>
 					</label>
 
 					<input type="text" onChange={this.handleChange.bind(null, 'name')} value={this.state.name} />
@@ -76,12 +71,7 @@ const SubscribeForm = React.createClass({
 
 				<div className="input-container">
 					<label className="color-white">
-						{texts.email}
-						<span
-							className={errors.email ? 'input-container__error input-container__error-show' : 'input-container__error'}
-						>
-							{texts.invalid}
-						</span>
+						{texts.email} <span className={errors.email ? 'input-container__error input-container__error-show' : 'input-container__error'} > {texts.invalid} </span>
 					</label>
 					<input type="text" onChange={this.handleChange.bind(null, 'email')} value={this.state.email} />
 				</div>
@@ -89,11 +79,6 @@ const SubscribeForm = React.createClass({
 				<div className="input-container">
 					<label className="color-white">
 						{texts.country}
-							<span
-							className={errors.country ? 'input-container__error input-container__error-show' : 'input-container__error'}
-						>
-							{texts.invalid}
-						</span>
 						</label>
 					<select onChange={this.handleChange.bind(null, 'country')} value={country || this.state.country}>
 						{countries.map((country, i) =>
