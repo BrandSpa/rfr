@@ -18,7 +18,7 @@ import slider from './lib/slider';
 
 import multipleRender from 'react-multiple-render';
 import MapComponent from './components-react/map/index';
-import SubscribeFormComponent from './components-react/map/index';
+import SubscribeFormComponent from './components-react/subscribeForm';
 
 multipleRender(MapComponent, '.bs-map');
 multipleRender(SubscribeFormComponent, '.bs-subscribe');

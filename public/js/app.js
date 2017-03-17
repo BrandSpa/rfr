@@ -66249,12 +66249,16 @@ var _index = __webpack_require__(226);
 
 var _index2 = _interopRequireDefault(_index);
 
+var _subscribeForm = __webpack_require__(601);
+
+var _subscribeForm2 = _interopRequireDefault(_subscribeForm);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactMultipleRender2.default)(_index2.default, '.bs-map');
 // import map from './components/map';
 
-(0, _reactMultipleRender2.default)(_index2.default, '.bs-subscribe');
+(0, _reactMultipleRender2.default)(_subscribeForm2.default, '.bs-subscribe');
 
 (0, _jquery2.default)(function () {
   (0, _redirect2.default)();
@@ -66292,6 +66296,122 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   });
 });
+
+/***/ }),
+/* 601 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(60);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _qs = __webpack_require__(465);
+
+var _qs2 = _interopRequireDefault(_qs);
+
+var _axios = __webpack_require__(241);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SubscribeForm = _react2.default.createClass({
+	displayName: 'SubscribeForm',
+	getInitialState: function getInitialState() {
+		errors: {}
+	},
+	handleSubmit: function handleSubmit(e) {
+		e.preventDefault();
+	},
+	storeContact: function storeContact() {
+		var data = { action: 'mailchimp_subscribe', lang: lang, data: data };
+		_axios2.default.post(endpoint, data).then(function (res) {
+			console.log(res.data);
+		});
+	},
+	render: function render() {
+		var errors = this.state.errors;
+		var _props = this.props;
+		var texts = _props.texts;
+		var countries = _props.countries;
+		var country = _props.country;
+
+
+		return _react2.default.createElement(
+			'form',
+			{ onSubmit: this.handleSubmit },
+			_react2.default.createElement(
+				'div',
+				{ className: 'input-container' },
+				_react2.default.createElement(
+					'label',
+					{ 'for': '', className: 'color-white' },
+					texts.name,
+					texts.invalid,
+					_react2.default.createElement(
+						'span',
+						{
+							className: errors.name ? 'input-container__error input-container__error-show' : 'input-container__error'
+						},
+						texts.invalid
+					)
+				),
+				_react2.default.createElement('input', { type: 'text', 'v-model': 'name' })
+			),
+			_react2.default.createElement(
+				'div',
+				{ className: 'input-container' },
+				_react2.default.createElement(
+					'label',
+					{ 'for': '', className: 'color-white' },
+					texts.email,
+					_react2.default.createElement(
+						'span',
+						{
+							className: errors.email ? 'input-container__error input-container__error-show' : 'input-container__error'
+						},
+						texts.invalid
+					)
+				),
+				_react2.default.createElement('input', { type: 'text', 'v-model': 'email' })
+			),
+			_react2.default.createElement(
+				'div',
+				{ className: 'input-container' },
+				_react2.default.createElement(
+					'label',
+					{ className: 'color-white' },
+					texts.country
+				),
+				_react2.default.createElement(
+					'select',
+					{ value: country },
+					countries.map(function (country, i) {
+						return _react2.default.createElement(
+							'option',
+							{ value: country },
+							country
+						);
+					})
+				)
+			),
+			_react2.default.createElement(
+				'button',
+				{ className: 'button button-dark', onClick: this.handleSubmit },
+				texts.subscribe
+			)
+		);
+	}
+});
+
+exports.default = SubscribeForm;
 
 /***/ })
 /******/ ]);
