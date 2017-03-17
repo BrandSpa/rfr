@@ -4,7 +4,7 @@ import 'babel-polyfill';
 import religionsChart from './components/religions_chart';
 import searchCountry from './components/search_country';
 import searchList from './components/search_list';
-import downloadFormReport from './components/download_report';
+// import downloadFormReport from './components/download_report';
 
 //jquery
 import footerNav from './lib/footer_nav';
@@ -33,7 +33,7 @@ $(() => {
   // map();
     // subscribeForm();
   religionsChart();
-  downloadFormReport();
+  // downloadFormReport();
   searchCountry();
   // searchList();
   footerNav();

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 670);
+/******/ 	return __webpack_require__(__webpack_require__.s = 610);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -87,7 +87,7 @@ module.exports = function hexToRgba(hex, opacity){
 
 /***/ }),
 
-/***/ 160:
+/***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -315,11 +315,11 @@ rawAsap.makeRequestCallFromTimer = makeRequestCallFromTimer;
 // back into ASAP proper.
 // https://github.com/tildeio/rsvp.js/blob/cddf7232546a9cf858524b75cde6f9edf72620a7/lib/rsvp/asap.js
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(97)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(96)))
 
 /***/ }),
 
-/***/ 243:
+/***/ 229:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -329,7 +329,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _promise = __webpack_require__(530);
+var _promise = __webpack_require__(514);
 
 var _promise2 = _interopRequireDefault(_promise);
 
@@ -368,14 +368,14 @@ exports.default = section;
 
 /***/ }),
 
-/***/ 260:
+/***/ 245:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 // rawAsap provides everything we need except exception management.
-var rawAsap = __webpack_require__(160);
+var rawAsap = __webpack_require__(157);
 // RawTasks are recycled to reduce GC churn.
 var freeTasks = [];
 // We queue errors to ensure they are thrown in right order (FIFO).
@@ -442,24 +442,24 @@ RawTask.prototype.call = function () {
 
 /***/ }),
 
-/***/ 530:
+/***/ 514:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(534)
+module.exports = __webpack_require__(518)
 
 
 /***/ }),
 
-/***/ 531:
+/***/ 515:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Promise = __webpack_require__(66);
+var Promise = __webpack_require__(65);
 
 module.exports = Promise;
 Promise.prototype.done = function (onFulfilled, onRejected) {
@@ -474,7 +474,7 @@ Promise.prototype.done = function (onFulfilled, onRejected) {
 
 /***/ }),
 
-/***/ 532:
+/***/ 516:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -482,7 +482,7 @@ Promise.prototype.done = function (onFulfilled, onRejected) {
 
 //This file contains the ES6 extensions to the core Promises/A+ API
 
-var Promise = __webpack_require__(66);
+var Promise = __webpack_require__(65);
 
 module.exports = Promise;
 
@@ -589,13 +589,13 @@ Promise.prototype['catch'] = function (onRejected) {
 
 /***/ }),
 
-/***/ 533:
+/***/ 517:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Promise = __webpack_require__(66);
+var Promise = __webpack_require__(65);
 
 module.exports = Promise;
 Promise.prototype['finally'] = function (f) {
@@ -613,23 +613,23 @@ Promise.prototype['finally'] = function (f) {
 
 /***/ }),
 
-/***/ 534:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(66);
-__webpack_require__(531);
-__webpack_require__(533);
-__webpack_require__(532);
-__webpack_require__(535);
-__webpack_require__(536);
+module.exports = __webpack_require__(65);
+__webpack_require__(515);
+__webpack_require__(517);
+__webpack_require__(516);
+__webpack_require__(519);
+__webpack_require__(520);
 
 
 /***/ }),
 
-/***/ 535:
+/***/ 519:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -638,8 +638,8 @@ __webpack_require__(536);
 // This file contains then/promise specific extensions that are only useful
 // for node.js interop
 
-var Promise = __webpack_require__(66);
-var asap = __webpack_require__(260);
+var Promise = __webpack_require__(65);
+var asap = __webpack_require__(245);
 
 module.exports = Promise;
 
@@ -767,13 +767,13 @@ Promise.prototype.nodeify = function (callback, ctx) {
 
 /***/ }),
 
-/***/ 536:
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Promise = __webpack_require__(66);
+var Promise = __webpack_require__(65);
 
 module.exports = Promise;
 Promise.enableSynchronous = function () {
@@ -837,13 +837,40 @@ Promise.disableSynchronous = function() {
 
 /***/ }),
 
-/***/ 66:
+/***/ 610:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var asap = __webpack_require__(160);
+var _uploader = __webpack_require__(229);
+
+var _uploader2 = _interopRequireDefault(_uploader);
+
+var _religions_chart = __webpack_require__(77);
+
+var _religions_chart2 = _interopRequireDefault(_religions_chart);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+$(function () {
+  (0, _uploader2.default)();
+  (0, _religions_chart2.default)();
+
+  new Vue({
+    el: '#metaboxes-report'
+  });
+});
+
+/***/ }),
+
+/***/ 65:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var asap = __webpack_require__(157);
 
 function noop() {}
 
@@ -1058,34 +1085,7 @@ function doResolve(fn, promise) {
 
 /***/ }),
 
-/***/ 670:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _uploader = __webpack_require__(243);
-
-var _uploader2 = _interopRequireDefault(_uploader);
-
-var _religions_chart = __webpack_require__(79);
-
-var _religions_chart2 = _interopRequireDefault(_religions_chart);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-$(function () {
-  (0, _uploader2.default)();
-  (0, _religions_chart2.default)();
-
-  new Vue({
-    el: '#metaboxes-report'
-  });
-});
-
-/***/ }),
-
-/***/ 79:
+/***/ 77:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1200,7 +1200,7 @@ function religionChart() {
 
 /***/ }),
 
-/***/ 97:
+/***/ 96:
 /***/ (function(module, exports) {
 
 var g;
