@@ -12,6 +12,7 @@
  * 	<?php echo gett('Improved') ?> 
  * 	<?php echo gett('Unchanged') ?>
  * 		<?php echo gett('Worsened') ?>
+
  */
 function bs_map_react_sc($atts, $content = null) {
 	$attributes = [];
@@ -31,7 +32,8 @@ function bs_map_react_sc($atts, $content = null) {
 		"situation" => gett('SITUATION'),
 		"improved" => gett('Improved'),
 		"unchanged" => gett('Unchanged'),
-		"worsened" => gett('Worsened')
+		"worsened" => gett('Worsened'),
+		"africa" => gett('Africa')
 	],
 	"templateUrl" => get_template_directory_uri()
  ];

@@ -1,13 +1,4 @@
 import React from 'react';
-// <?php echo gett('SEARCH BY COUNTRY') ?>
-//<?php echo gett('NATURE OF PERSECUTION') ?>
-/**
- * "{
-		'bg-discrimination': isDiscrimination(item.meta_nature_persecution),
-    'bg-red': isPersecution(item.meta_nature_persecution),
-  	'selected': isSelected($index)
-}"
-*/
 
 const SearchByCountry = React.createClass({
 	getInitialState(){
@@ -27,8 +18,9 @@ const SearchByCountry = React.createClass({
 		let results = [];
 		if (query.length > 0) {
 
-			results = this.state.allReport.filter(pst => {
-				let translation = this.props.countriesTrans[pst.meta_country];
+		results = this.state.allReport.filter(pst => {
+		let translation = this.props.countriesTrans[pst.meta_country];
+
 				if (translation) {
 					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1
 				}
@@ -64,7 +56,7 @@ const SearchByCountry = React.createClass({
 
 	render() {
 		const { texts, templateUrl } = this.props;
-		const { reports } = this.state;
+		const { reports, countriesTrans } = this.state;
 
 		return (
 			<div className={this.state.show ? "map__search map__search--show" : "map__search" }>
@@ -82,7 +74,7 @@ const SearchByCountry = React.createClass({
 						<ul className="map__search_results">
 								{reports.map((report, i) =>
 									<li key={i} className={this.getColor(report.meta_nature_persecution)}>
-										<a href={report.guid}>{report.meta_country}</a>
+										<a href={report.guid}>{countriesTrans[report.meta_country]}</a>
 										<span><img src={this.getIcon(report.meta_situation)} alt="" /></span>
 									</li>
 								)}

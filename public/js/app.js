@@ -46624,16 +46624,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// <?php echo gett('SEARCH BY COUNTRY') ?>
-//<?php echo gett('NATURE OF PERSECUTION') ?>
-/**
- * "{
-		'bg-discrimination': isDiscrimination(item.meta_nature_persecution),
-    'bg-red': isPersecution(item.meta_nature_persecution),
-  	'selected': isSelected($index)
-}"
-*/
-
 var SearchByCountry = _react2.default.createClass({
 	displayName: 'SearchByCountry',
 	getInitialState: function getInitialState() {
@@ -46655,6 +46645,7 @@ var SearchByCountry = _react2.default.createClass({
 
 			results = this.state.allReport.filter(function (pst) {
 				var translation = _this.props.countriesTrans[pst.meta_country];
+
 				if (translation) {
 					return translation.toLowerCase().indexOf(query.toLowerCase()) != -1;
 				}
@@ -46688,7 +46679,9 @@ var SearchByCountry = _react2.default.createClass({
 		var _props = this.props;
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
-		var reports = this.state.reports;
+		var _state = this.state;
+		var reports = _state.reports;
+		var countriesTrans = _state.countriesTrans;
 
 
 		return _react2.default.createElement(
@@ -46728,7 +46721,7 @@ var SearchByCountry = _react2.default.createClass({
 									_react2.default.createElement(
 										'a',
 										{ href: report.guid },
-										report.meta_country
+										countriesTrans[report.meta_country]
 									),
 									_react2.default.createElement(
 										'span',
