@@ -18,8 +18,10 @@ import slider from './lib/slider';
 
 import multipleRender from 'react-multiple-render';
 import MapComponent from './components-react/map/index';
+import SubscribeFormComponent from './components-react/map/index';
 
 multipleRender(MapComponent, '.bs-map');
+multipleRender(SubscribeFormComponent, '.bs-subscribe-form');
 
 $(() => {
   redirect();
@@ -45,7 +47,8 @@ $(() => {
   if( windowHeight  > 700 && document.querySelector('.home_header')) {
     document.querySelector('.home_header').style.height = `${windowHeight}px`;
   }
-  
+
+  //smooth scroll
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();

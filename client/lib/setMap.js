@@ -1,6 +1,5 @@
 import * as d3 from 'd3';
 import $ from 'jquery';
-import MobileDetect from 'mobile-detect';
 import mousePosition from './get_mouse_position';
 
 const colors = {
@@ -94,7 +93,6 @@ function getCountryInfo(reports, countriesTrans) {
 		let fill = colors[report.meta_nature_persecution];
 		$el.style("cursor", "pointer");
 		$el.style("fill", fill);
-		console.log(countriesTrans, countryName);
 		let name = countriesTrans[countryName] ? countriesTrans[countryName] : countryName;
 		showMapInfo($el, report, fill, name);
 	}
