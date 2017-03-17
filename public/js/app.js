@@ -16971,6 +16971,8 @@ var HeaderSlider = _react2.default.createClass({
 		this.setState({ slide: slideNum });
 	},
 	render: function render() {
+		var _this = this;
+
 		var _props = this.props;
 		var backgrounds = _props.backgrounds;
 		var contents = _props.contents;
@@ -16982,7 +16984,7 @@ var HeaderSlider = _react2.default.createClass({
 			{ className: "home_header" },
 			backgrounds.map(function (bg, i) {
 				return _react2.default.createElement("div", {
-					className: i == 0 ? "home_header__background home_header__background--active" : "home_header__background",
+					className: i == _this.state.slide - 1 ? "home_header__background home_header__background--active" : "home_header__background",
 					style: { background: "url(" + bg + ")", backgroundSize: 'cover', backgroundPosition: 'center' }
 				});
 			}),

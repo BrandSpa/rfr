@@ -33,7 +33,7 @@ const HeaderSlider = React.createClass({
 
 				{backgrounds.map((bg, i) => 
 					<div
-						className={i == 0 ? "home_header__background home_header__background--active" : "home_header__background"}
+						className={i == (this.state.slide - 1) ? "home_header__background home_header__background--active" : "home_header__background"}
 						style={{ background: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
 					></div>
 				)}
