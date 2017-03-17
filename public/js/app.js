@@ -16929,10 +16929,138 @@ module.exports = exports['default'];
 /***/ }),
 /* 243 */,
 /* 244 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-throw new Error("Module build failed: SyntaxError: Unexpected token, expected , (29:8)\n\n\u001b[0m \u001b[90m 27 | \u001b[39m\t}\u001b[33m,\u001b[39m\n \u001b[90m 28 | \u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 | \u001b[39m\t\t\u001b[36mconst\u001b[39m { backgrounds\u001b[33m,\u001b[39m contents\u001b[33m,\u001b[39m content_html } \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mprops\u001b[33m;\u001b[39m\n \u001b[90m    | \u001b[39m\t\t      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 | \u001b[39m\t\t\u001b[36mreturn\u001b[39m (\n \u001b[90m 31 | \u001b[39m\t\t\t\u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"home_header\"\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 32 | \u001b[39m\u001b[0m\n");
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(44);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * 		<?php if(is_array( explode(',', $at['backgrounds']) )): ?>
+ *  <?php  foreach(explode(',', $at['backgrounds']) as $key => $imageId):  ?>
+ <?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>
+				<?php endforeach; ?>
+  <?php endif; ?>
+		content_html: <?php echo apply_filters('the_content', $content); ?>
+		"contents" => [
+			1 => [
+				"title" => $at['title_1'],
+				"content" => $at['content_1']
+			]
+		]
+ */
+
+var HeaderSlider = _react2.default.createClass({
+	displayName: "HeaderSlider",
+	getInitialState: function getInitialState() {
+		return {
+			slide: 1
+		};
+	},
+	changeSlide: function changeSlide(slideNum, e) {
+		e.preventDefault();
+		this.setState({ slide: slideNum });
+	},
+	render: function render() {
+		var _props = this.props;
+		var backgrounds = _props.backgrounds;
+		var contents = _props.contents;
+		var content_html = _props.content_html;
+
+		return _react2.default.createElement(
+			"div",
+			{ className: "home_header" },
+			backgrounds.map(function (bg, i) {
+				return _react2.default.createElement("div", {
+					className: i == 0 ? "home_header__background home_header__background--active" : "home_header__background",
+					style: { background: "url(" + bg + ")", backgroundSize: 'cover', backgroundPosition: 'center' }
+				});
+			}),
+			_react2.default.createElement(
+				"div",
+				{ className: "col-md-7" },
+				_react2.default.createElement(
+					"div",
+					{ className: "home_header__contents" },
+					_react2.default.createElement(
+						"ul",
+						null,
+						_react2.default.createElement(
+							"li",
+							{ "data-index": "0", className: "active" },
+							_react2.default.createElement(
+								"h1",
+								{ className: "home_header__title" },
+								contents[1].title
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "home_header__content" },
+								contents[1].content
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"h1",
+								{ className: "home_header__title" },
+								contents[2].title
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "home_header__content" },
+								contents[2].content
+							)
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement(
+								"h1",
+								{ className: "home_header__title" },
+								contents[3].title
+							),
+							_react2.default.createElement(
+								"p",
+								{ className: "home_header__content" },
+								contents[3].content
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "home_header__paginate" },
+					_react2.default.createElement("a", { href: "#", onClick: changeSlide.bind(null, 1), className: this.state.slide == 1 ? 'active' : '' }),
+					_react2.default.createElement("a", { href: "#", onClick: changeSlide.bind(null, 2), className: this.state.slide == 2 ? 'active' : '' }),
+					_react2.default.createElement("a", { href: "#", onClick: changeSlide.bind(null, 3), className: this.state.slide == 3 ? 'active' : '' })
+				)
+			),
+			_react2.default.createElement("div", { className: "col-md-2" }),
+			_react2.default.createElement(
+				"div",
+				{ className: "col-md-2" },
+				_react2.default.createElement(
+					"div",
+					{ className: "home_header__content_right" },
+					_react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: content_html } })
+				)
+			)
+		);
+	}
+});
+
+exports.default = HeaderSlider;
 
 /***/ }),
 /* 245 */

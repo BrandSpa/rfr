@@ -25,7 +25,7 @@ const HeaderSlider = React.createClass({
 		e.preventDefault();
 		this.setState({slide: slideNum});
 	},
-
+	render() {
 		const { backgrounds, contents, content_html } = this.props;
 		return (
 			<div className="home_header">
