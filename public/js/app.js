@@ -17856,53 +17856,7 @@ function footerNav() {
 }
 
 /***/ }),
-/* 252 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = homeHeader;
-
-var _change_slide = __webpack_require__(283);
-
-var _change_slide2 = _interopRequireDefault(_change_slide);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function homeHeader() {
-  var count = 1;
-  var $homeHeader = $('.home_header');
-  var interval = $homeHeader.data('interval') ? $('.home_header').data('interval') : 4000;
-  var startAutoplay = $homeHeader.data('autoplay') ? true : false;
-  var slide = (0, _change_slide2.default)();
-  var autoplay = void 0;
-  if (startAutoplay) {
-
-    autoplay = setInterval(function () {
-      slide.changeIndex();
-      slide.changeBg();
-      slide.transform();
-    }, interval);
-  }
-
-  $('.home_header__paginate a').on('click', function (e) {
-    e.preventDefault();
-    if (autoplay) {
-      clearInterval(autoplay);
-    }
-
-    var ind = $(this).data('index');
-    var slide = (0, _change_slide2.default)(ind);
-    slide.changeBg();
-    slide.transform();
-  });
-}
-
-/***/ }),
+/* 252 */,
 /* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19587,54 +19541,7 @@ var SearchByCountry = _react2.default.createClass({
 exports.default = SearchByCountry;
 
 /***/ }),
-/* 283 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = changeSlide;
-function changeSlide() {
-  var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-
-  var counter = count;
-  var slides = document.querySelectorAll('.home_header__contents li');
-
-  function changeIndex() {
-    if (counter == slides.length - 1) {
-      counter = 0;
-    } else {
-      counter++;
-    }
-  }
-
-  function changeBg() {
-    var bg = document.querySelector('.home_header__background:nth-child(' + (counter + 1) + ')');
-    if (bg) {
-      $('.home_header__background').removeClass('home_header__background--active');
-      bg.classList.add('home_header__background--active');
-    };
-  }
-
-  function transform() {
-    var leftAuto = counter * 100;
-
-    $('a[data-index]').removeClass('active');
-    document.querySelector('a[data-index=\'' + counter + '\']').classList.add('active');
-    document.querySelector('.home_header__contents ul').style.left = '-' + leftAuto + '%';
-  }
-
-  return {
-    transform: transform,
-    changeIndex: changeIndex,
-    changeBg: changeBg
-  };
-}
-
-/***/ }),
+/* 283 */,
 /* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42083,10 +41990,6 @@ module.exports = function() {
 
 __webpack_require__(258);
 
-var _nav = __webpack_require__(254);
-
-var _nav2 = _interopRequireDefault(_nav);
-
 var _religions_chart = __webpack_require__(79);
 
 var _religions_chart2 = _interopRequireDefault(_religions_chart);
@@ -42102,10 +42005,6 @@ var _search_list2 = _interopRequireDefault(_search_list);
 var _download_report = __webpack_require__(247);
 
 var _download_report2 = _interopRequireDefault(_download_report);
-
-var _home_header = __webpack_require__(252);
-
-var _home_header2 = _interopRequireDefault(_home_header);
 
 var _footer_nav = __webpack_require__(251);
 
@@ -42130,6 +42029,10 @@ var _modal_iframe2 = _interopRequireDefault(_modal_iframe);
 var _slider = __webpack_require__(257);
 
 var _slider2 = _interopRequireDefault(_slider);
+
+var _nav = __webpack_require__(254);
+
+var _nav2 = _interopRequireDefault(_nav);
 
 var _reactMultipleRender = __webpack_require__(259);
 
@@ -42168,7 +42071,7 @@ $(function () {
   (0, _search_country2.default)();
   // searchList();
   (0, _footer_nav2.default)();
-  (0, _home_header2.default)();
+  homeHeader();
   (0, _scroll_top2.default)();
   (0, _modal_iframe2.default)();
   // countries();
