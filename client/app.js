@@ -5,7 +5,7 @@ import nav from './lib/nav';
 // import map from './components/map';
 import religionsChart from './components/religions_chart';
 import searchCountry from './components/search_country';
-import searchList from './components/search_list';
+// import searchList from './components/search_list';
 import downloadFormReport from './components/download_report';
 // import subscribeForm from './components/subscribe_form';
 import homeHeader from './lib/home_header';
@@ -31,7 +31,7 @@ $(() => {
   religionsChart();
   downloadFormReport();
   searchCountry();
-  searchList();
+  // searchList();
   footerNav();
   homeHeader();
   scrollTop();
