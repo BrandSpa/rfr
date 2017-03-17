@@ -56616,18 +56616,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _d3Selection = __webpack_require__(535);
-
-Object.keys(_d3Selection).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _d3Selection[key];
-    }
-  });
-});
-
 var _d3Request = __webpack_require__(534);
 
 Object.keys(_d3Request).forEach(function (key) {
@@ -56648,6 +56636,18 @@ Object.keys(_d3Transition).forEach(function (key) {
     enumerable: true,
     get: function get() {
       return _d3Transition[key];
+    }
+  });
+});
+
+var _d3Selection = __webpack_require__(535);
+
+Object.keys(_d3Selection).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _d3Selection[key];
     }
   });
 });
