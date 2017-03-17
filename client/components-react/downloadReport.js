@@ -107,7 +107,7 @@ const DownloadReport = React.createClass({
                             <div className="input-container">
                                 <label className="color-red">{texts.language}</label>
                                 <select name="" id="" value={language} onChange={this.handleChange.bind(null, 'language')}>
-                                    {languages.map((lang, i) => ( <option key={i} value={lang.slug}>{$lang.name}</option> ))}
+                                    {Object.keys(languages).map((lang, i) => ( <option key={i} value={languages[lang].slug}>{languages[lang].name}</option> ))}
                                 </select>
                             </div>
 

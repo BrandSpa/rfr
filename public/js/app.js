@@ -42296,11 +42296,11 @@ var DownloadReport = _react2.default.createClass({
                             _react2.default.createElement(
                                 'select',
                                 { name: '', id: '', value: language, onChange: this.handleChange.bind(null, 'language') },
-                                languages.map(function (lang, i) {
+                                Object.keys(languages).map(function (lang, i) {
                                     return _react2.default.createElement(
                                         'option',
-                                        { key: i, value: lang.slug },
-                                        $lang.name
+                                        { key: i, value: languages[lang].slug },
+                                        languages[lang].name
                                     );
                                 })
                             )
