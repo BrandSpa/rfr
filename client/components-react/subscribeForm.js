@@ -98,7 +98,7 @@ const SubscribeForm = React.createClass({
 						</label>
 					<select onChange={this.handleChange.bind(null, 'country')} value={country || this.state.country}>
 						{countries.map((country, i) =>
-							<option value={country}>{country}</option>
+							<option key={i} value={country}>{country}</option>
 						)}
 					</select>
 				</div>

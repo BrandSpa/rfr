@@ -66455,7 +66455,7 @@ var SubscribeForm = _react2.default.createClass({
 					countries.map(function (country, i) {
 						return _react2.default.createElement(
 							'option',
-							{ value: country },
+							{ key: i, value: country },
 							country
 						);
 					})
