@@ -1,6 +1,8 @@
 import React from 'react';
 import qs from 'qs';
 import request from 'axios';
+import isEmail from 'validator/lib/isEmail';
+import isEmpty from 'validator/lib/isEmpty';
 
 const SubscribeForm = React.createClass({
 	getInitialState() {
@@ -9,7 +11,9 @@ const SubscribeForm = React.createClass({
 			email: '',
 			country: '',
 			errors: {
-
+				name: false,
+				email: false,
+				country: false,
 			}
 		}
 	},
@@ -19,8 +23,27 @@ const SubscribeForm = React.createClass({
 		this.setState({...this.state, [field]: val});
 	},
 
+	validate() {
+    let errors = {};
+
+    let validations = Object.keys(this.state.errors).map(field => {
+			let val = isEmpty(this.state[field]);
+			if(field == 'email') val = !isEmail(this.state[field]);
+      errors = {...errors, [field]: val};
+      return val;
+    });
+	
+    this.setState({errors});
+		
+    return Promise
+			.all(validations)
+			.then(arr => arr.every(item => item == false))
+      .catch(err => console.error(err));
+	},
+
 	handleSubmit(e) {
 		e.preventDefault();
+		this.validate().then(isValid =>console.log(isValid, this.state));
 	},
 
 	storeContact() {

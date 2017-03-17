@@ -66322,6 +66322,14 @@ var _axios = __webpack_require__(241);
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _isEmail = __webpack_require__(215);
+
+var _isEmail2 = _interopRequireDefault(_isEmail);
+
+var _isEmpty = __webpack_require__(568);
+
+var _isEmpty2 = _interopRequireDefault(_isEmpty);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -66333,15 +66341,46 @@ var SubscribeForm = _react2.default.createClass({
 			name: '',
 			email: '',
 			country: '',
-			errors: {}
+			errors: {
+				name: false,
+				email: false,
+				country: false
+			}
 		};
 	},
 	handleChange: function handleChange(field, e) {
 		var val = e.target.value;
 		this.setState(_extends({}, this.state, _defineProperty({}, field, val)));
 	},
+	validate: function validate() {
+		var _this = this;
+
+		var errors = {};
+
+		var validations = Object.keys(this.state.errors).map(function (field) {
+			var val = (0, _isEmpty2.default)(_this.state[field]);
+			if (field == 'email') val = !(0, _isEmail2.default)(_this.state[field]);
+			errors = _extends({}, errors, _defineProperty({}, field, val));
+			return val;
+		});
+
+		this.setState({ errors: errors });
+
+		return Promise.all(validations).then(function (arr) {
+			return arr.every(function (item) {
+				return item == false;
+			});
+		}).catch(function (err) {
+			return console.error(err);
+		});
+	},
 	handleSubmit: function handleSubmit(e) {
+		var _this2 = this;
+
 		e.preventDefault();
+		this.validate().then(function (isValid) {
+			return console.log(isValid, _this2.state);
+		});
 	},
 	storeContact: function storeContact() {
 		var data = { action: 'mailchimp_subscribe', lang: lang, data: data };
