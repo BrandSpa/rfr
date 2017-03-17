@@ -66404,7 +66404,7 @@ var SubscribeForm = _react2.default.createClass({
 				{ className: 'input-container' },
 				_react2.default.createElement(
 					'label',
-					{ 'for': '', className: 'color-white' },
+					{ className: 'color-white' },
 					texts.name,
 					texts.invalid,
 					_react2.default.createElement(
@@ -66422,7 +66422,7 @@ var SubscribeForm = _react2.default.createClass({
 				{ className: 'input-container' },
 				_react2.default.createElement(
 					'label',
-					{ 'for': '', className: 'color-white' },
+					{ className: 'color-white' },
 					texts.email,
 					_react2.default.createElement(
 						'span',

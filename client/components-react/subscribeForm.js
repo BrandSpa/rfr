@@ -62,7 +62,7 @@ const SubscribeForm = React.createClass({
 		return (
 			<form onSubmit={this.handleSubmit}>
 				<div className="input-container">
-					<label for="" className="color-white">
+					<label className="color-white">
 						{texts.name}
 						{texts.invalid}
 						<span
@@ -76,7 +76,7 @@ const SubscribeForm = React.createClass({
 				</div>
 
 				<div className="input-container">
-					<label for="" className="color-white">
+					<label className="color-white">
 						{texts.email}
 						<span
 							className={errors.email ? 'input-container__error input-container__error-show' : 'input-container__error'}
