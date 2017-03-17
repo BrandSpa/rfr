@@ -40226,9 +40226,11 @@ $(function () {
   (0, _modal_iframe2.default)();
   // countries();
 
-  new Vue({
-    el: '#acn_reports'
-  });
+  if (Vue) {
+    new Vue({
+      el: '#acn_reports'
+    });
+  }
 
   var windowHeight = window.innerHeight;
 

@@ -78,13 +78,7 @@
       <?php echo gett('Religions') ?> <sup><?php echo get_post_meta($post->ID, 'report_religion_sup_key', true) ?></sup>
     </h5>
 
-    <religions-chart
-      :religions='<?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>'
-      :colors='<?php echo json_encode(getReligionsColors()) ?>'
-    >
-    </religions-chart>
-
-    <div 
+    <div
       class="bs-religions-charts"
       data-props='{
         "religions":  <?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>,

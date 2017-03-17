@@ -44,9 +44,12 @@ $(() => {
   modalIframe();
   // countries();
 
-  new Vue({
-    el: '#acn_reports'
-  });
+  if(Vue) {
+      new Vue({
+      el: '#acn_reports'
+    });
+
+  }
 
   const windowHeight = window.innerHeight;
 
