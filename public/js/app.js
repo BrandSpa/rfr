@@ -66308,6 +66308,8 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _react = __webpack_require__(60);
 
 var _react2 = _interopRequireDefault(_react);
@@ -66322,12 +66324,21 @@ var _axios2 = _interopRequireDefault(_axios);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var SubscribeForm = _react2.default.createClass({
 	displayName: 'SubscribeForm',
 	getInitialState: function getInitialState() {
 		return {
+			name: '',
+			email: '',
+			country: '',
 			errors: {}
 		};
+	},
+	handleChange: function handleChange(field, e) {
+		var val = e.target.value;
+		this.setState(_extends({}, this.state, _defineProperty({}, field, val)));
 	},
 	handleSubmit: function handleSubmit(e) {
 		e.preventDefault();
@@ -66365,7 +66376,7 @@ var SubscribeForm = _react2.default.createClass({
 						texts.invalid
 					)
 				),
-				_react2.default.createElement('input', { type: 'text', 'v-model': 'name' })
+				_react2.default.createElement('input', { type: 'text', onChange: this.handleChange.bind(null, 'name'), value: this.state.name })
 			),
 			_react2.default.createElement(
 				'div',
@@ -66382,7 +66393,7 @@ var SubscribeForm = _react2.default.createClass({
 						texts.invalid
 					)
 				),
-				_react2.default.createElement('input', { type: 'text', 'v-model': 'email' })
+				_react2.default.createElement('input', { type: 'text', onChange: this.handleChange.bind(null, 'email'), value: this.state.email })
 			),
 			_react2.default.createElement(
 				'div',
@@ -66394,7 +66405,7 @@ var SubscribeForm = _react2.default.createClass({
 				),
 				_react2.default.createElement(
 					'select',
-					{ value: country },
+					{ onChange: this.handleChange.bind(null, 'country'), value: country || this.state.country },
 					countries.map(function (country, i) {
 						return _react2.default.createElement(
 							'option',

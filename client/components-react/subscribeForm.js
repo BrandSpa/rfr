@@ -5,10 +5,18 @@ import request from 'axios';
 const SubscribeForm = React.createClass({
 	getInitialState() {
 		return {
+			name: '',
+			email: '',
+			country: '',
 			errors: {
-				
+
 			}
 		}
+	},
+
+	handleChange(field, e) {
+		let val = e.target.value;
+		this.setState({...this.state, [field]: val});
 	},
 
 	handleSubmit(e) {
@@ -41,7 +49,7 @@ const SubscribeForm = React.createClass({
 						</span>
 					</label>
 
-					<input type="text" v-model="name" />
+					<input type="text" onChange={this.handleChange.bind(null, 'name')} value={this.state.name} />
 				</div>
 
 				<div className="input-container">
@@ -53,12 +61,12 @@ const SubscribeForm = React.createClass({
 							{texts.invalid}
 						</span>
 					</label>
-					<input type="text" v-model="email" />
+					<input type="text" onChange={this.handleChange.bind(null, 'email')} value={this.state.email} />
 				</div>
 
 				<div className="input-container">
 					<label className="color-white">{texts.country}</label>
-					<select value={country}>
+					<select onChange={this.handleChange.bind(null, 'country')} value={country || this.state.country}>
 						{countries.map((country, i) =>
 							<option value={country}>{country}</option>
 						)}
