@@ -1,11 +1,13 @@
 'use strict';
 
 import uploader from './uploader';
-import religionsChart from '../components/religions_chart';
+// import religionsChart from '../components/religions_chart';
+import ReligionsChart from '../components-react/religionsChart';
 
 $(() => {
   uploader();
-  religionsChart();
+  // religionsChart();
+multipleRender(ReligionsChart, '.bs-religions-charts');
 
   new Vue({
     el: '#metaboxes-report'

@@ -27,11 +27,14 @@
     </script>
 
 
-    <religions-chart
-      :religions='<?php echo json_encode(getArrayTranslated($report_religion))  ?>'
-      :colors='<?php echo json_encode(getReligionsColors()) ?>'
+    <div
+      class="bs-religions-charts"
+      data-props='{
+        "religions":  <?php echo json_encode(getArrayTranslated(get_post_meta($post->ID, 'report_religion_key', true))) ?>,
+        "colors": <?php echo json_encode(getReligionsColors()) ?>
+      }'
     >
-    </religions-chart>
+    </div>
 
     <input
       type="text"
