@@ -42247,7 +42247,7 @@ var DownloadReport = _react2.default.createClass({
                 _react2.default.createElement('div', { className: 'col-md-1' }),
                 _react2.default.createElement(
                     'div',
-                    { className: 'col-md-5', style: 'float: none; margin: 0 auto' },
+                    { className: 'col-md-5', style: { float: 'none', margin: '0 auto' } },
                     _react2.default.createElement(
                         'form',
                         { onSubmit: this.handleSubmit },

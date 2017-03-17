@@ -82,7 +82,7 @@ const DownloadReport = React.createClass({
                 <div className="row">
                     <div className="col-md-1" />
 
-                    <div className="col-md-5" style="float: none; margin: 0 auto">
+                    <div className="col-md-5" style={{float: 'none', margin: '0 auto'}}>
 
                         <form onSubmit={this.handleSubmit}>
 
