@@ -66343,8 +66343,7 @@ var SubscribeForm = _react2.default.createClass({
 			country: '',
 			errors: {
 				name: false,
-				email: false,
-				country: false
+				email: false
 			}
 		};
 	},

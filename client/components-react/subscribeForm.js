@@ -13,7 +13,6 @@ const SubscribeForm = React.createClass({
 			errors: {
 				name: false,
 				email: false,
-				country: false,
 			}
 		}
 	},
