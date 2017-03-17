@@ -78,3 +78,5 @@ const HeaderSlider = React.createClass({
 		)
 	}
 });
+
+export default HeaderSlider;
