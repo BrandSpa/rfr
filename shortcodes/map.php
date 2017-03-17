@@ -39,7 +39,7 @@ function bs_map_sc($atts, $content = null) {
   ob_start();
  
 ?>
-	<div class="bs-map" data-props='<?php echo json_encode(cleanQuote($props)) ?>'></div>
+	<div class="bs-map" data-props='<?php echo cleanQuote(json_encode($props)) ?>'></div>
 <?php
   return ob_get_clean();
   }
