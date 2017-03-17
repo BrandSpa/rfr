@@ -60,9 +60,9 @@ register_nav_menus(
 function enqueue_scripts()
 {
   wp_enqueue_media();
-  wp_enqueue_script( 'highcharts', '//code.highcharts.com/highcharts.js', array(), '3', true );
+  // wp_enqueue_script( 'highcharts', '//code.highcharts.com/highcharts.js', array(), '3', true );
   wp_enqueue_script( 'highcharts_exporting', '//code.highcharts.com/modules/exporting.js', array(), '3', true );
-  wp_enqueue_script( 'vue', '//cdnjs.cloudflare.com/ajax/libs/vue/1.0.27/vue.min.js', array(), '2', true );
+  // wp_enqueue_script( 'vue', '//cdnjs.cloudflare.com/ajax/libs/vue/1.0.27/vue.min.js', array(), '2', true );
   wp_enqueue_script( 'app_script', get_template_directory_uri() . '/public/js/admin.js',array(), '4', true  );
 }
 
