@@ -71,7 +71,11 @@ const SearchByContinent = React.createClass({
 
 		return (
 			<div className={this.state.show ? "map__search_list map__search_list--show" : "map__search_list"}>
-				<a href="#" className="map__search__close" onClick={this.toggleShow}><i className="ion-close"></i></a>
+
+				<a href="#" className="map__search__close" onClick={this.toggleShow}>
+					<i className="ion-close"></i>
+				</a>
+
 				<div className="col-md-6 col-sm-10" style={{ float: 'none', margin: '0 auto' }}>
 					<h1 className="title-center title-line color-red">{texts.search_by_list}</h1>
 					<div className="row">
