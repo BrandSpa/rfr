@@ -9,8 +9,8 @@ const SearchByContinent = React.createClass({
 			}
 		},
 	
-	componentWillReceiveProps() {
-		console.log(this.props);
+	componentWillReceiveProps(props) {
+		console.log(props);
 		this.setContinents();
 	},
 
