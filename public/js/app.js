@@ -17045,9 +17045,27 @@ var HeaderSlider = _react2.default.createClass({
 				_react2.default.createElement(
 					"div",
 					{ className: "home_header__paginate" },
-					_react2.default.createElement("a", { href: "#", onClick: this.changeSlide.bind(null, 1), className: this.state.slide == 1 ? 'active' : '' }),
-					_react2.default.createElement("a", { href: "#", onClick: this.changeSlide.bind(null, 2), className: this.state.slide == 2 ? 'active' : '' }),
-					_react2.default.createElement("a", { href: "#", onClick: this.changeSlide.bind(null, 3), className: this.state.slide == 3 ? 'active' : '' })
+					_react2.default.createElement(
+						"a",
+						{ href: "#",
+							onClick: this.changeSlide.bind(null, 1),
+							className: this.state.slide == 1 ? 'active' : '' },
+						" "
+					),
+					_react2.default.createElement(
+						"a",
+						{ href: "#",
+							onClick: this.changeSlide.bind(null, 2),
+							className: this.state.slide == 2 ? 'active' : '' },
+						" "
+					),
+					_react2.default.createElement(
+						"a",
+						{ href: "#",
+							onClick: this.changeSlide.bind(null, 3),
+							className: this.state.slide == 3 ? 'active' : '' },
+						" "
+					)
 				)
 			),
 			_react2.default.createElement("div", { className: "col-md-2" }),
