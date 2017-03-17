@@ -56,7 +56,7 @@ const SearchByCountry = React.createClass({
 
 	render() {
 		const { texts, templateUrl } = this.props;
-		const { reports, countriesTrans } = this.state;
+		const { reports, countriesTrans = {} } = this.state;
 
 		return (
 			<div className={this.state.show ? "map__search map__search--show" : "map__search" }>
