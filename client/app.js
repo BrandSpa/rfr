@@ -21,11 +21,13 @@ import MapComponent from './components-react/map/index';
 import SubscribeFormComponent from './components-react/subscribeForm';
 import HeaderSlider from './components-react/headerSlider';
 import DownloadReport from './components-react/downloadReport';
+import ReligionsChart from './components-react/religionsChart';
 
 multipleRender(MapComponent, '.bs-map');
 multipleRender(SubscribeFormComponent, '.bs-subscribe');
 multipleRender(HeaderSlider, '.bs-header-slider');
 multipleRender(DownloadReport, '.bs-download-report');
+multipleRender(ReligionsChart, '.bs-religions-charts');
 
 $(() => {
   redirect();
