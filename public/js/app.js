@@ -66700,6 +66700,7 @@ var SearchByContinentList = _react2.default.createClass({
 		var _this = this;
 
 		var _props = this.props;
+		var reports = _props.reports;
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
 		var countriesTrans = _props.countriesTrans;

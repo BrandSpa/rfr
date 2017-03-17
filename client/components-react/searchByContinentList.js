@@ -33,7 +33,7 @@ const SearchByContinentList = React.createClass({
 	},
 
 	render() {
-		const { texts, templateUrl, countriesTrans } = this.props;
+		const { reports, texts, templateUrl, countriesTrans } = this.props;
 
 		return (
 			<div>
