@@ -55,9 +55,6 @@
   </div>
 
 </div>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.27/vue.js"></script>
-  <script src="http://code.highcharts.com/highcharts.js"></script>
-  <script src="http://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://cdn.jsdelivr.net/flexslider/2.6.3/jquery.flexslider.js"></script>
    <script>
     var bs = {};
