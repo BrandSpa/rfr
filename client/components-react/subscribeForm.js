@@ -1,11 +1,6 @@
 import React from 'react';
-/**
- * <?php echo gett('Country') ?>
- * 			<?php echo gett('Email') ?>
- * 			<?php echo gett('Name') ?>
- * <?php echo gett('Subscribe') ?>
- * getCountries()
- */
+import qs from 'qs';
+import request from 'axios';
 
 const SubscribeForm = React.createClass({
 	getInitialState() {
@@ -16,6 +11,15 @@ const SubscribeForm = React.createClass({
 
 	handleSubmit(e) {
 		e.preventDefault();
+	},
+
+	storeContact() {
+		let data = {action: 'mailchimp_subscribe', lang, data};
+		request
+			.post(endpoint, data)
+			.then(res => {
+				console.log(res.data);
+			}) 
 	},
 
 	render() {
