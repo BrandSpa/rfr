@@ -121,4 +121,8 @@ function redirect_to_office() {
 
 redirect_to_office();
 
+function cleanQuote($val) {
+	return str_replace("'", "\u0027", $val);
+}
+
 ?>
