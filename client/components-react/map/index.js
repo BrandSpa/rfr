@@ -19,14 +19,15 @@ const MapComponent = React.createClass({
 		return {
 			texts: {},
 			images: {},
-			templateUrl: ""
+			templateUrl: '',
+			lang: 'en'
 		}
 	},
 
 	componentDidMount() {
 		this.reports = [];
-		let data = qs.stringify({ action: 'reports', data: { lang: 'es' } });
-		let dataTranslations = qs.stringify({ action: 'countries_translations', data: { lang: 'es' } });
+		let data = qs.stringify({ action: 'reports', data: { lang: this.props.lang } });
+		let dataTranslations = qs.stringify({ action: 'countries_translations', data: { lang: this.props.lang } });
 
 		let reqReports = request.post(endpoint, data);
 		let reqTranslations = request.post(endpoint, dataTranslations);

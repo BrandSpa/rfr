@@ -44261,15 +44261,16 @@ var MapComponent = _react2.default.createClass({
 		return {
 			texts: {},
 			images: {},
-			templateUrl: ""
+			templateUrl: '',
+			lang: 'en'
 		};
 	},
 	componentDidMount: function componentDidMount() {
 		var _this = this;
 
 		this.reports = [];
-		var data = _qs2.default.stringify({ action: 'reports', data: { lang: 'es' } });
-		var dataTranslations = _qs2.default.stringify({ action: 'countries_translations', data: { lang: 'es' } });
+		var data = _qs2.default.stringify({ action: 'reports', data: { lang: this.props.lang } });
+		var dataTranslations = _qs2.default.stringify({ action: 'countries_translations', data: { lang: this.props.lang } });
 
 		var reqReports = _axios2.default.post(endpoint, data);
 		var reqTranslations = _axios2.default.post(endpoint, dataTranslations);

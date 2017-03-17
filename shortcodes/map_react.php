@@ -35,7 +35,8 @@ function bs_map_react_sc($atts, $content = null) {
 		"worsened" => gett('Worsened'),
 		"africa" => gett('Africa')
 	],
-	"templateUrl" => get_template_directory_uri()
+	"templateUrl" => get_template_directory_uri(),
+	"lang" => getLang()
  ];
 
  ob_start();
