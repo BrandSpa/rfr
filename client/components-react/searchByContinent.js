@@ -78,7 +78,7 @@ const SearchByContinent = React.createClass({
 					<div className="row">
 						<div className="col-md-6">
 						{continentsList.map(continent => 
-							<List {...this.props} reports={this.state.continents[continent]} />
+							<List {...this.props} title={texts[continent]} reports={this.state.continents[continent]} />
 						)}
 						</div>
 					</div>

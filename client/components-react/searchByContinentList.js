@@ -28,7 +28,7 @@ const SearchByContinentList = React.createClass({
 	},
 
 	render() {
-		const { reports = [], texts, templateUrl, countriesTrans } = this.props;
+		const { reports = [], texts, templateUrl, countriesTrans, title } = this.props;
 
 		return (
 			<div>
@@ -36,7 +36,7 @@ const SearchByContinentList = React.createClass({
 					className="bg-dark_jungle map__search__list_btn color-rolling-store"
 					onClick={this.toggleShow}
 				>
-					{texts.africa}
+					{title}
 				</button>
 
 				<ul className="map__search_results" style={this.state.show ? { display: 'block' } : { display: 'none' }}>

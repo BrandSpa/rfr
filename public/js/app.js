@@ -66657,7 +66657,7 @@ var SearchByContinent = _react2.default.createClass({
 						'div',
 						{ className: 'col-md-6' },
 						continentsList.map(function (continent) {
-							return _react2.default.createElement(_searchByContinentList2.default, _extends({}, _this.props, { reports: _this.state.continents[continent] }));
+							return _react2.default.createElement(_searchByContinentList2.default, _extends({}, _this.props, { title: texts[continent], reports: _this.state.continents[continent] }));
 						})
 					)
 				)
@@ -66718,6 +66718,7 @@ var SearchByContinentList = _react2.default.createClass({
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
 		var countriesTrans = _props.countriesTrans;
+		var title = _props.title;
 
 
 		return _react2.default.createElement(
@@ -66729,7 +66730,7 @@ var SearchByContinentList = _react2.default.createClass({
 					className: 'bg-dark_jungle map__search__list_btn color-rolling-store',
 					onClick: this.toggleShow
 				},
-				texts.africa
+				title
 			),
 			_react2.default.createElement(
 				'ul',

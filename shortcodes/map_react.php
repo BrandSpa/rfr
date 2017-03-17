@@ -34,7 +34,16 @@ function bs_map_react_sc($atts, $content = null) {
 		"unchanged" => gett('Unchanged'),
 		"worsened" => gett('Worsened'),
 		"africa" => gett('Africa'),
-		"search_by_list" => gett('SEARCH BY LIST')
+		"search_by_list" => gett('SEARCH BY LIST'),
+		'afrika' =>  gett('Africa'),
+		'asia' => gett('Asia'),
+		'easterEurope' => gett('Eastern Europe'),
+		'latinAmerica' => gett('Latin America'),
+		'middleEast' => gett('Middle East'),
+		'northAmerica' => gett('North America'),
+		'oceania' => gett('Oceania'),
+		'russiaCentralAsia' => gett('Russia & Central Asia'),
+		'westernEurope' => gett('Western Europe')
 	],
 	"templateUrl" => get_template_directory_uri(),
 	"lang" => getLang(),
