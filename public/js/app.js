@@ -44245,6 +44245,10 @@ var _searchByCountry = __webpack_require__(266);
 
 var _searchByCountry2 = _interopRequireDefault(_searchByCountry);
 
+var _searchByContinent = __webpack_require__(600);
+
+var _searchByContinent2 = _interopRequireDefault(_searchByContinent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var endpoint = 'http://religious-freedom-report.org/wp-admin/admin-ajax.php';
@@ -46685,7 +46689,7 @@ var SearchByCountry = _react2.default.createClass({
 		var countriesTrans = _props.countriesTrans;
 		var reports = this.state.reports;
 
-		console.log('list', countriesTrans);
+
 		return _react2.default.createElement(
 			'div',
 			{ className: this.state.show ? "map__search map__search--show" : "map__search" },
@@ -66531,6 +66535,202 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }
   });
 });
+
+/***/ }),
+/* 600 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(76);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _searchByContinentList = __webpack_require__(601);
+
+var _searchByContinentList2 = _interopRequireDefault(_searchByContinentList);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SearchByContinent = _react2.default.createClass({
+	displayName: 'SearchByContinent',
+	render: function render() {
+		var _props = this.props;
+		var texts = _props.texts;
+		var templateUrl = _props.templateUrl;
+		var countriesTrans = _props.countriesTrans;
+		var continents = _props.continents;
+
+
+		return _react2.default.createElement(
+			'div',
+			{ className: 'map__search_list' },
+			_react2.default.createElement(
+				'a',
+				{ href: '#', className: 'map__search__close', onClick: this.close },
+				_react2.default.createElement('i', { className: 'ion-close' })
+			),
+			_react2.default.createElement(
+				'div',
+				{ className: 'col-md-6 col-sm-10', style: { float: 'none', margin: '0 auto' } },
+				_react2.default.createElement(
+					'h1',
+					{ className: 'title-center title-line color-red' },
+					texts.search_by_list
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'row' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'col-md-6' },
+						_react2.default.createElement(_searchByContinentList2.default, null)
+					)
+				)
+			)
+		);
+	}
+});
+
+exports.default = SearchByContinent;
+
+/***/ }),
+/* 601 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _react = __webpack_require__(76);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SearchByContinentList = _react2.default.createClass({
+	displayName: 'SearchByContinentList',
+	getInitialState: function getInitialState() {
+		return {
+			show: false
+		};
+	},
+	componentDidMount: function componentDidMount() {
+		this.setContinents();
+	},
+	setContinents: function setContinents() {
+		var _props = this.props;
+		var reports = _props.reports;
+		var continents = _props.continents;
+
+		var newContinents = {};
+
+		var filterByCountry = function filterByCountry(country) {
+			if (reports.filter(function (r) {
+				return r.meta_country == country;
+			})[0]) {
+				return reports.filter(function (r) {
+					return r.meta_country == country;
+				})[0];
+			} else {
+				return '';
+			}
+		};
+
+		var cleanEmpty = function cleanEmpty(report) {
+			return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
+		};
+
+		var continentsList = {
+			'afrika': 'Afrika',
+			'asia': 'Asia',
+			'easterEurope': 'Easter Europe',
+			'latinAmerica': 'Latin America',
+			'middleEast': 'Middle East',
+			'northAmerica': 'North America',
+			'ocenia': 'Ocenia',
+			'russiaCentralAsia': 'Russia & Central Asia',
+			'westernEurope': 'Western Europe'
+		};
+
+		Object.keys(continentsList).forEach(function (continentKey) {
+			newContinents[continentKey] = continents[continentsList[continentKey]].map(filterByCountry).filter(cleanEmpty);
+		});
+
+		console.log(newContinents);
+	},
+	getIcon: function getIcon(name) {
+		return this.props.templateUrl + '/public/img/icons/' + name + '.svg';
+	},
+	getColor: function getColor(situation) {
+		if (situation == 'Discrimination') {
+			return 'bg-discrimination';
+		}
+
+		if (situation == 'Persecution') {
+			return 'bg-red';
+		}
+
+		return '';
+	},
+	toggleShow: function toggleShow() {
+		this.setState({ show: !this.state.show });
+	},
+	render: function render() {
+		var _this = this;
+
+		var _props2 = this.props;
+		var texts = _props2.texts;
+		var templateUrl = _props2.templateUrl;
+		var countriesTrans = _props2.countriesTrans;
+
+
+		return _react2.default.createElement(
+			'div',
+			null,
+			_react2.default.createElement(
+				'button',
+				{
+					className: 'bg-dark_jungle map__search__list_btn color-rolling-store',
+					onClick: this.toggleShow
+				},
+				texts.africa
+			),
+			_react2.default.createElement(
+				'ul',
+				{ 'class': 'map__search_results', style: this.state.show ? { display: 'block' } : { display: 'none' } },
+				reports.map(function (report) {
+					return _react2.default.createElement(
+						'li',
+						{ className: '' },
+						_react2.default.createElement(
+							'a',
+							{ href: report.guid },
+							countriesTrans[report.meta_country]
+						),
+						_react2.default.createElement(
+							'span',
+							null,
+							_react2.default.createElement('img', { src: _this.getIcon(report.meta_situation), alt: '' })
+						)
+					);
+				})
+			)
+		);
+	}
+});
+
+exports.default = SearchByContinentList;
 
 /***/ })
 /******/ ]);

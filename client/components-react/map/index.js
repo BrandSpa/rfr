@@ -5,6 +5,7 @@ import setMap from '../../lib/setMap';
 import MapHeader from './header'; 
 import MapFooter from './footer';
 import SearchByCountry from '../searchByCountry';
+import searchByContinent from '../searchByContinent';
 const endpoint = 'http://religious-freedom-report.org/wp-admin/admin-ajax.php';
 
 const MapComponent = React.createClass({

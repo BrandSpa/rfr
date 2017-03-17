@@ -7,16 +7,55 @@ const SearchByContinentList = React.createClass({
 		}
 	},
 
+	componentDidMount() {
+		this.setContinents();
+	},
+
+	setContinents() {
+		const { reports, continents } = this.props;
+		let newContinents = {};
+
+		let filterByCountry = country => {
+			if (reports.filter(r => r.meta_country == country)[0]) {
+				return reports.filter(r => r.meta_country == country)[0];
+			} else {
+				return '';
+			}
+		};
+
+		let cleanEmpty = report => typeof report == 'object';
+
+		let continentsList = {
+			'afrika': 'Afrika',
+			'asia': 'Asia',
+			'easterEurope': 'Easter Europe',
+			'latinAmerica': 'Latin America',
+			'middleEast': 'Middle East',
+			'northAmerica': 'North America',
+			'ocenia': 'Ocenia',
+			'russiaCentralAsia': 'Russia & Central Asia',
+			'westernEurope': 'Western Europe'
+		};
+
+		Object.keys(continentsList).forEach(continentKey => {
+			newContinents[continentKey] = continents[continentsList[continentKey]]
+				.map(filterByCountry)
+				.filter(cleanEmpty);
+		});
+
+		console.log(newContinents);
+	},
+
 	getIcon(name) {
 		return `${this.props.templateUrl}/public/img/icons/${name}.svg`
 	},
 
 	getColor(situation) {
-		if(situation == 'Discrimination') {
+		if (situation == 'Discrimination') {
 			return 'bg-discrimination';
 		}
 
-		if(situation == 'Persecution') {
+		if (situation == 'Persecution') {
 			return 'bg-red';
 		}
 
@@ -24,30 +63,32 @@ const SearchByContinentList = React.createClass({
 	},
 
 	toggleShow() {
-		this.setState({show: !this.state.show});
+		this.setState({ show: !this.state.show });
 	},
 
 	render() {
-		const { countriesTrans } = this.props;
+		const { texts, templateUrl, countriesTrans } = this.props;
 
 		return (
-    <button 
-      className="bg-dark_jungle map__search__list_btn color-rolling-store"
-			onClick={this.toggleShow}
-		>
-		{texts.africa}
-		</button>
+			<div>
+				<button
+					className="bg-dark_jungle map__search__list_btn color-rolling-store"
+					onClick={this.toggleShow}
+				>
+					{texts.africa}
+				</button>
 
-    <ul class="map__search_results" data-country="afrika" style="display: none">
-     {reports.map(report => 
-			 <li className="">
-        <a href={report.guid}>{{countriesTrans[report.meta_country]}}</a>
-        <span>
-          <img src={this.getIcon(report.meta_situation)} alt="" />
-        </span>
-      </li>	 
-		)}
-    </ul>
+				<ul class="map__search_results" style={this.state.show ? { display: 'block' } : { display: 'none' }}>
+					{reports.map(report =>
+						<li className="">
+							<a href={report.guid}>{ countriesTrans[report.meta_country] }</a>
+							<span>
+								<img src={this.getIcon(report.meta_situation)} alt="" />
+							</span>
+						</li>
+					)}
+				</ul>
+			</div>
 		)
 	}
 });

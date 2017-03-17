@@ -33,10 +33,12 @@ function bs_map_react_sc($atts, $content = null) {
 		"improved" => gett('Improved'),
 		"unchanged" => gett('Unchanged'),
 		"worsened" => gett('Worsened'),
-		"africa" => gett('Africa')
+		"africa" => gett('Africa'),
+		"search_by_list" => gett('SEARCH BY LIST')
 	],
 	"templateUrl" => get_template_directory_uri(),
-	"lang" => getLang()
+	"lang" => getLang(),
+	"continents" => getContinents()
  ];
 
  ob_start();
