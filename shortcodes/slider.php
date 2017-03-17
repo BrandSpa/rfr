@@ -51,8 +51,6 @@ function bs_slider_sc($atts, $content = null) {
   return ob_get_clean();
   } //close bs_slider_sc
 
-  
-
   function bs_slider_vc() {
     vc_map(
       array(

@@ -1,6 +1,6 @@
 'use strict';
 
-export default function() {
+export default function scrollTop() {
 
 $(window).scroll(function() {
 	if ($(this).scrollTop() >= 50) {
