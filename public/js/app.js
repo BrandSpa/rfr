@@ -66334,6 +66334,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+var endpoint = '/wp-admin/admin-ajax.php';
+
 var SubscribeForm = _react2.default.createClass({
 	displayName: 'SubscribeForm',
 	getInitialState: function getInitialState() {

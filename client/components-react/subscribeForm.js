@@ -3,6 +3,7 @@ import qs from 'qs';
 import request from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import isEmpty from 'validator/lib/isEmpty';
+const endpoint = '/wp-admin/admin-ajax.php';
 
 const SubscribeForm = React.createClass({
 	getInitialState() {
