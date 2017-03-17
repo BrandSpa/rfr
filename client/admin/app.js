@@ -9,9 +9,9 @@ $(() => {
   // religionsChart();
 multipleRender(ReligionsChart, '.bs-religions-charts');
 
-  new Vue({
-    el: '#metaboxes-report'
-  });
+  // new Vue({
+  //   el: '#metaboxes-report'
+  // });
 
 });
 

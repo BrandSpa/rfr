@@ -22864,9 +22864,9 @@ $(function () {
   // religionsChart();
   (0, _reactMultipleRender2.default)(_religionsChart2.default, '.bs-religions-charts');
 
-  new Vue({
-    el: '#metaboxes-report'
-  });
+  // new Vue({
+  //   el: '#metaboxes-report'
+  // });
 });
 // import religionsChart from '../components/religions_chart';
 
