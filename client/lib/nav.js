@@ -1,6 +1,4 @@
 'use strict';
-import $ from 'jquery';
-
 export default function nav() {
   let nav = $('.nav');
   let bod = $('body');

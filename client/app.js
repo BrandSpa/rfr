@@ -1,8 +1,7 @@
 'use strict';
 import 'babel-polyfill';
-import $ from 'jquery';
 import nav from './lib/nav';
-//vue
+//vuew
 import religionsChart from './components/religions_chart';
 import searchCountry from './components/search_country';
 import downloadFormReport from './components/download_report';

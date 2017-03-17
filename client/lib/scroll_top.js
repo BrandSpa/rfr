@@ -1,5 +1,5 @@
 'use strict';
-import $ from 'jquery';
+
 export default function() {
 
 $(window).scroll(function() {

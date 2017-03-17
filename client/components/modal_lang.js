@@ -1,5 +1,5 @@
 'use strict';
-import jQuery from 'jquery';
+
 
 export default function modalLang() {
   Vue.component('modal-lang', {

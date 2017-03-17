@@ -1,5 +1,4 @@
 'use strict';
-import $ from 'jquery';
 
 window.slider = function(params = {}) {
 	const {sliderId, imageWidth, itemMargin, controlNav} = params;

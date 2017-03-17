@@ -1,6 +1,6 @@
 'use strict';
 import validator from 'validator';
-import $ from 'jquery';
+
 
 let initialState = {
   name: '',

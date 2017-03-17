@@ -1,5 +1,4 @@
 'use strict';
-import $ from 'jquery';
 
 export default function getMousePosition(e, cb) {
   var el = e ? e : document;

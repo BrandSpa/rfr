@@ -1,5 +1,4 @@
 import * as d3 from './d3';
-import $ from 'jquery';
 import mousePosition from './get_mouse_position';
 
 const colors = {

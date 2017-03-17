@@ -1,5 +1,4 @@
 'use strict';
-import $ from 'jquery';
 import Promise from 'promise';
 
 const open_media_uploader_image = () => {
