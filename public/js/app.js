@@ -66592,7 +66592,7 @@ var SearchByContinent = _react2.default.createClass({
 					_react2.default.createElement(
 						'div',
 						{ className: 'col-md-6' },
-						_react2.default.createElement(_searchByContinentList2.default, null)
+						_react2.default.createElement(_searchByContinentList2.default, this.props)
 					)
 				)
 			)
