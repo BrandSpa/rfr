@@ -66406,7 +66406,6 @@ var SubscribeForm = _react2.default.createClass({
 					'label',
 					{ className: 'color-white' },
 					texts.name,
-					texts.invalid,
 					_react2.default.createElement(
 						'span',
 						{

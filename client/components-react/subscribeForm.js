@@ -64,7 +64,6 @@ const SubscribeForm = React.createClass({
 				<div className="input-container">
 					<label className="color-white">
 						{texts.name}
-						{texts.invalid}
 						<span
 							className={errors.name ? 'input-container__error input-container__error-show' : 'input-container__error'}
 						>
