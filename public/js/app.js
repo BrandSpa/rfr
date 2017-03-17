@@ -66440,7 +66440,14 @@ var SubscribeForm = _react2.default.createClass({
 				_react2.default.createElement(
 					'label',
 					{ className: 'color-white' },
-					texts.country
+					texts.country,
+					_react2.default.createElement(
+						'span',
+						{
+							className: errors.country ? 'input-container__error input-container__error-show' : 'input-container__error'
+						},
+						texts.invalid
+					)
 				),
 				_react2.default.createElement(
 					'select',

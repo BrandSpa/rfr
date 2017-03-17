@@ -88,7 +88,14 @@ const SubscribeForm = React.createClass({
 				</div>
 
 				<div className="input-container">
-					<label className="color-white">{texts.country}</label>
+					<label className="color-white">
+						{texts.country}
+							<span
+							className={errors.country ? 'input-container__error input-container__error-show' : 'input-container__error'}
+						>
+							{texts.invalid}
+						</span>
+						</label>
 					<select onChange={this.handleChange.bind(null, 'country')} value={country || this.state.country}>
 						{countries.map((country, i) =>
 							<option value={country}>{country}</option>
