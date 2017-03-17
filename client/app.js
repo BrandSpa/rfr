@@ -21,7 +21,7 @@ import MapComponent from './components-react/map/index';
 import SubscribeFormComponent from './components-react/map/index';
 
 multipleRender(MapComponent, '.bs-map');
-multipleRender(SubscribeFormComponent, '.bs-subscribe-form');
+multipleRender(SubscribeFormComponent, '.bs-subscribe');
 
 $(() => {
   redirect();

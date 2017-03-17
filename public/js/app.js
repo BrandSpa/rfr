@@ -66254,7 +66254,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _reactMultipleRender2.default)(_index2.default, '.bs-map');
 // import map from './components/map';
 
-(0, _reactMultipleRender2.default)(_index2.default, '.bs-subscribe-form');
+(0, _reactMultipleRender2.default)(_index2.default, '.bs-subscribe');
 
 (0, _jquery2.default)(function () {
   (0, _redirect2.default)();
