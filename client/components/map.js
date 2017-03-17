@@ -1,7 +1,5 @@
 'use strict';
-import * as d3 from 'd3';
 import $ from 'jquery';
-import Promise from 'promise';
 import MobileDetect from 'mobile-detect';
 import mousePosition from '../lib/get_mouse_position';
 const md = new MobileDetect(window.navigator.userAgent);
