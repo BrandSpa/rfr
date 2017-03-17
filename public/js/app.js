@@ -28891,7 +28891,6 @@ var SearchByContinent = _react2.default.createClass({
 		});
 
 		this.setState({ continents: newContinents });
-		console.log(newContinents);
 	},
 	render: function render() {
 		var _this = this;

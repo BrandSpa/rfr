@@ -51,7 +51,6 @@ const SearchByContinent = React.createClass({
 		});
 
 		this.setState({continents: newContinents});
-		console.log(newContinents);
 	},
 
 	render() {
