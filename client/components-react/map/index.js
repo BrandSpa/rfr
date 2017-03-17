@@ -35,7 +35,8 @@ const MapComponent = React.createClass({
 			.then(res => {
 				this.setState({reports: res[0].data, countriesTrans: res[1].data});
 				setMap(`${this.props.templateUrl}/public/img/map.svg`, res[0].data, 'en', res[1].data);
-			});
+			})
+			.catch(err => console.error(err));
 	},
 
  	render() {

@@ -44277,6 +44277,8 @@ var MapComponent = _react2.default.createClass({
 		Promise.all([reqReports, reqTranslations]).then(function (res) {
 			_this.setState({ reports: res[0].data, countriesTrans: res[1].data });
 			(0, _setMap2.default)(_this.props.templateUrl + '/public/img/map.svg', res[0].data, 'en', res[1].data);
+		}).catch(function (err) {
+			return console.error(err);
 		});
 	},
 	render: function render() {
