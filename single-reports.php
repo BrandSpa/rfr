@@ -36,7 +36,8 @@
     <h1><?php _e( "Sorry, we don't have this report..." ); ?></h1>
   <?php endif; ?>
 
-<?php include_once 'shortcodes/mp.php' ?>
+<?php //include_once 'shortcodes/mp.php' ?>
+<?php echo do_shortcode('[bs_map]') ?>
 <?php include_once 'shortcodes/download_report.php' ?>
 <?php include_once 'shortcodes/about_us.php' ?>
 <?php include_once 'shortcodes/press.php' ?>
