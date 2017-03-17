@@ -15,7 +15,17 @@ import React from 'react';
  */
 
 const HeaderSlider = React.createClass({
-	render() {
+	getInitialState() {
+		return {
+			slide: 1
+		}
+	},
+
+	changeSlide(slideNum, e) {
+		e.preventDefault();
+		this.setState({slide: slideNum});
+	},
+
 		const { backgrounds, contents, content_html } = this.props;
 		return (
 			<div className="home_header">
@@ -60,9 +70,9 @@ const HeaderSlider = React.createClass({
 					</div>
 
 					<div className="home_header__paginate">
-						<a href="#" className="active"></a>
-						<a href="#"></a>
-						<a href="#"></a>
+						<a href="#" onClick={changeSlide.bind(null, 1)} className={this.state.slide == 1 ? 'active' : ''}></a>
+						<a href="#" onClick={changeSlide.bind(null, 2)} className={this.state.slide == 2 ? 'active' : ''}></a>
+						<a href="#" onClick={changeSlide.bind(null, 3)} className={this.state.slide == 3 ? 'active' : ''}></a>
 					</div>
 
 				</div>
