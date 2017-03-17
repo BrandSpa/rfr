@@ -2,7 +2,7 @@
 import 'babel-polyfill';
 import $ from 'jquery';
 import nav from './lib/nav';
-import map from './components/map';
+// import map from './components/map';
 import religionsChart from './components/religions_chart';
 import searchCountry from './components/search_country';
 import searchList from './components/search_list';
@@ -24,7 +24,7 @@ multipleRender(MapComponent, '.bs-map');
 $(() => {
   redirect();
   nav();
-  map();
+  // map();
   religionsChart();
   downloadFormReport();
   searchCountry();
