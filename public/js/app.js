@@ -66639,7 +66639,7 @@ var SearchByContinent = _react2.default.createClass({
 			{ className: this.state.show ? "map__search_list map__search_list--show" : "map__search_list" },
 			_react2.default.createElement(
 				'a',
-				{ href: '#', className: 'map__search__close', onClick: this.close },
+				{ href: '#', className: 'map__search__close', onClick: this.toggleShow },
 				_react2.default.createElement('i', { className: 'ion-close' })
 			),
 			_react2.default.createElement(
