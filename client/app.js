@@ -1,7 +1,7 @@
 'use strict';
 import 'babel-polyfill';
 //vue
-import religionsChart from './components/religions_chart';
+import Vue from 'vue';
 import searchCountry from './components/search_country';
 import searchList from './components/search_list';
 // import downloadFormReport from './components/download_report';
@@ -44,12 +44,11 @@ $(() => {
   modalIframe();
   // countries();
 
-  if(Vue) {
-      new Vue({
-      el: '#acn_reports'
-    });
 
-  }
+  new Vue({
+    el: '#acn_reports'
+  });
+
 
   const windowHeight = window.innerHeight;
 

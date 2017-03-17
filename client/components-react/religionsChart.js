@@ -2,12 +2,11 @@ import React from 'react';
 import Highcharts from 'highcharts';
 
 const ReligionChart = React.createClass({
-
 	componentDidMount() {
 		let religions = this.props.religions;
     let colors = this.props.colors;
-      let seriesData = [];
-      let subSeriesData = [];
+    let seriesData = [];
+    let subSeriesData = [];
 
       function createData(color, name, y, brighten) {
         let newOb = {};
