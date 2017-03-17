@@ -37,7 +37,7 @@ $(() => {
   searchCountry();
   // searchList();
   footerNav();
-  homeHeader();
+
   scrollTop();
   modalIframe();
   // countries();

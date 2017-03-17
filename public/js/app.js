@@ -42077,7 +42077,7 @@ $(function () {
   (0, _search_country2.default)();
   // searchList();
   (0, _footer_nav2.default)();
-  homeHeader();
+
   (0, _scroll_top2.default)();
   (0, _modal_iframe2.default)();
   // countries();
