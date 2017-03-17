@@ -69,7 +69,7 @@ function appendScript(src) {
     element.src = src;
     document.body.appendChild(element);
   }
-  appendScript("<?php echo get_template_directory_uri() . '/public/js/app.js' ?>");
+  appendScript("<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"); 
 </script>
 <!--wordpress scripts-->
 <?php wp_footer() ?>
