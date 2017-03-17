@@ -11,7 +11,7 @@
  * "languages" => pll_the_languages(array('raw'=>1))
  */
 
-function donwload_report_sc($atts, $content = null) {
+function donwload_report_react_sc($atts, $content = null) {
   $at = shortcode_atts( array(), $atts );
   
   ob_start();
@@ -25,18 +25,18 @@ function donwload_report_sc($atts, $content = null) {
   return ob_get_clean();
 }
 
-add_shortcode( 'bs_donwload_report', 'donwload_report_sc' );
+add_shortcode( 'bs_donwload_report_react', 'donwload_report_react_sc' );
 
-function bs_donwload_report_vc() {
+function bs_donwload_report_react_vc() {
     vc_map( 
       array(
-        "name" =>  "Download Report",
-        "base" => "bs_donwload_report",
+        "name" =>  "Download Report react",
+        "base" => "bs_donwload_report_react",
         "category" =>  "BS",
         "params" => array()
       ) 
     );
 }
 
-add_action( 'vc_before_init', 'bs_donwload_report_vc' );
+add_action( 'vc_before_init', 'bs_donwload_report_react_vc' );
 ?>
