@@ -66375,9 +66375,11 @@ var SubscribeForm = _react2.default.createClass({
 		});
 	},
 	handleSubmit: function handleSubmit(e) {
+		var _this2 = this;
+
 		e.preventDefault();
 		this.validate().then(function (isValid) {
-			if (isValid) storeContact();
+			if (isValid) _this2.storeContact();
 		});
 	},
 	storeContact: function storeContact() {

@@ -43,7 +43,7 @@ const SubscribeForm = React.createClass({
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.validate().then(isValid => { if(isValid) storeContact() });
+		this.validate().then(isValid => { if(isValid) this.storeContact() });
 	},
 
 	storeContact() {
