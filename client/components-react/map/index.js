@@ -11,7 +11,7 @@ const MapComponent = React.createClass({
 	getInitialState() {
 		return {
 			reports: [],
-			countriesTrans: []
+			countriesTrans: {}
 		}
 	},
 

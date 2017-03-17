@@ -44254,7 +44254,7 @@ var MapComponent = _react2.default.createClass({
 	getInitialState: function getInitialState() {
 		return {
 			reports: [],
-			countriesTrans: []
+			countriesTrans: {}
 		};
 	},
 	getDefaultProps: function getDefaultProps() {
