@@ -66325,7 +66325,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SubscribeForm = _react2.default.createClass({
 	displayName: 'SubscribeForm',
 	getInitialState: function getInitialState() {
-		errors: {}
+		return {
+			errors: {}
+		};
 	},
 	handleSubmit: function handleSubmit(e) {
 		e.preventDefault();

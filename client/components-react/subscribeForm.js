@@ -4,8 +4,10 @@ import request from 'axios';
 
 const SubscribeForm = React.createClass({
 	getInitialState() {
-		errors: {
-
+		return {
+			errors: {
+				
+			}
 		}
 	},
 
