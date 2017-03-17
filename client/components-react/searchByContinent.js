@@ -9,7 +9,7 @@ const SearchByContinent = React.createClass({
 			}
 		},
 	
-	componentDidMount() {
+	componentWillReceiveProps() {
 		this.setContinents();
 	},
 
@@ -20,7 +20,7 @@ const SearchByContinent = React.createClass({
 	setContinents() {
 		const { reports, continents } = this.props;
 		let newContinents = {};
-
+		console.log(reports);
 		let filterByCountry = country => {
 			if (reports.filter(r => r.meta_country == country)[0]) {
 				return reports.filter(r => r.meta_country == country)[0];
@@ -48,7 +48,7 @@ const SearchByContinent = React.createClass({
 				.map(filterByCountry)
 				.filter(cleanEmpty);
 		});
-		
+
 		this.setState({continents: newContinents});
 		console.log(newContinents);
 	},

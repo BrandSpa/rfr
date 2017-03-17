@@ -66573,7 +66573,7 @@ var SearchByContinent = _react2.default.createClass({
 			show: false
 		};
 	},
-	componentDidMount: function componentDidMount() {
+	componentWillReceiveProps: function componentWillReceiveProps() {
 		this.setContinents();
 	},
 	toggleShow: function toggleShow() {
@@ -66585,7 +66585,7 @@ var SearchByContinent = _react2.default.createClass({
 		var continents = _props.continents;
 
 		var newContinents = {};
-
+		console.log(reports);
 		var filterByCountry = function filterByCountry(country) {
 			if (reports.filter(function (r) {
 				return r.meta_country == country;
