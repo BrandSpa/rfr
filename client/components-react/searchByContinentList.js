@@ -41,8 +41,8 @@ const SearchByContinentList = React.createClass({
 				</button>
 
 				<ul className="map__search_results" style={this.state.show ? { display: 'block' } : { display: 'none' }}>
-					{reports.map(report =>
-						<li className="">
+					{reports.map((report, i) =>
+						<li key={i} className={this.getColor(report.meta_nature_persecution)}>
 							<a href={report.guid}>{ countriesTrans[report.meta_country] }</a>
 							<span>
 								<img src={this.getIcon(report.meta_situation)} alt="" />

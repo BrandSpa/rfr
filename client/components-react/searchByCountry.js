@@ -38,7 +38,8 @@ const SearchByCountry = React.createClass({
 		return `${this.props.templateUrl}/public/img/icons/${name}.svg`
 	},
 
-	toggleShow() {
+	toggleShow(e) {
+		if(e) e.preventDefault();
 		this.setState({show: !this.state.show});
 	},
 
