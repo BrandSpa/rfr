@@ -27297,123 +27297,7 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 230 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports.default = function () {
-  Vue.component('subscribe-form', {
-    template: "#subscribe-form-template",
-    props: ['country', 'lang', 'thanks'],
-    data: function data() {
-      return initialState;
-    },
-
-
-    methods: {
-      validate: function validate() {
-        var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { field: '' };
-        var field = opts.field;
-
-        var data = this.$data[field];
-        var validation = this.$data.validation;
-
-        switch (field) {
-          case 'name':
-            validation = _extends({}, validation, { name: _validator2.default.isEmpty(data) });
-            break;
-          case 'email':
-            validation = _extends({}, validation, { email: !_validator2.default.isEmail(data) });
-            break;
-        };
-
-        this.$set('validation', validation);
-        this.$set('isValid', Object.keys(validation).filter(function (key) {
-          return validation[key] == true;
-        }).length == 0);
-      },
-      validateAll: function validateAll() {
-        var _this = this;
-
-        Object.keys(this.validation).forEach(function (field) {
-          return _this.validate({ field: field });
-        });
-      },
-      onSubmit: function onSubmit(e) {
-        if (e) e.preventDefault();
-        var name = this.name;
-        var email = this.email;
-        var country = this.country;
-        var language = this.language;
-        var lang = this.lang;
-
-        var fields = { name: name, country: country };
-
-        this.validateAll();
-
-        var mergeFields = Object.keys(fields).reduce(function (obj, key) {
-          var newOb = {};
-          var name = key.toUpperCase();
-          newOb[name] = fields[key];
-          return _extends({}, obj, newOb);
-        }, {});
-
-        var data = {
-          "email_address": email,
-          "status": "subscribed",
-          "merge_fields": mergeFields,
-          "update_existing": true
-        };
-
-        var payload = { action: 'mailchimp_subscribe', lang: lang, data: data };
-
-        if (this.isValid) {
-          _jquery2.default.ajax({
-            type: 'post',
-            url: '/wp-admin/admin-ajax.php',
-            data: payload
-          }).done(this.handleSuccess).fail(function (err) {
-            return console.log(err);
-          });
-        }
-      },
-      handleSuccess: function handleSuccess(res) {
-        return window.location = this.thanks;
-      }
-    }
-  });
-};
-
-var _validator = __webpack_require__(211);
-
-var _validator2 = _interopRequireDefault(_validator);
-
-var _jquery = __webpack_require__(18);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var initialState = {
-  name: '',
-  email: '',
-  language: '',
-  country: '',
-  validation: {
-    name: false,
-    email: false
-  }
-};
-
-/***/ }),
+/* 230 */,
 /* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -66209,10 +66093,6 @@ var _download_report = __webpack_require__(227);
 
 var _download_report2 = _interopRequireDefault(_download_report);
 
-var _subscribe_form = __webpack_require__(230);
-
-var _subscribe_form2 = _interopRequireDefault(_subscribe_form);
-
 var _home_header = __webpack_require__(233);
 
 var _home_header2 = _interopRequireDefault(_home_header);
@@ -66255,20 +66135,21 @@ var _subscribeForm2 = _interopRequireDefault(_subscribeForm);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactMultipleRender2.default)(_index2.default, '.bs-map');
-// import map from './components/map';
+// import subscribeForm from './components/subscribe_form';
 
+// import map from './components/map';
+(0, _reactMultipleRender2.default)(_index2.default, '.bs-map');
 (0, _reactMultipleRender2.default)(_subscribeForm2.default, '.bs-subscribe');
 
 (0, _jquery2.default)(function () {
   (0, _redirect2.default)();
   (0, _nav2.default)();
   // map();
+  // subscribeForm();
   (0, _religions_chart2.default)();
   (0, _download_report2.default)();
   (0, _search_country2.default)();
   (0, _search_list2.default)();
-  (0, _subscribe_form2.default)();
   (0, _footer_nav2.default)();
   (0, _home_header2.default)();
   (0, _scroll_top2.default)();
