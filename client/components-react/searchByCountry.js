@@ -82,7 +82,7 @@ const SearchByCountry = React.createClass({
 
 						<ul className="map__search_results">
 								{reports.map((report, i) =>
-									<li key={i} style={report.meta_nature_persecution == 'Discrimination'? {color: '#FC3938'} :  {}}>
+									<li key={i} style={this.getColor(report.meta_nature_persecution)}>
 										<a href={report.guid}>{report.meta_country}</a>
 										<span><img src={this.getIcon(report.meta_situation)} alt="" /></span>
 									</li>
