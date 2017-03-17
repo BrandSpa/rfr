@@ -6,7 +6,8 @@ function subscribe_form_react_sc($atts, $content = null) {
 			"country" => gett('Country'),
 			"email" => gett('Email'),
 			"name" => gett('Name'),
-			"subscribe" => gett('Subscribe')
+			"subscribe" => gett('Subscribe'),
+			"invalid" => gett('Invalid')
 		],
 		"lang"=> getLang(), 
   	"country" => getCountry(),
