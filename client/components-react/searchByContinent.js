@@ -21,9 +21,7 @@ const SearchByContinent = React.createClass({
 
 	setContinents(props) {
 		const { reports, continents } = props;
-		console.log(reports);
 		let newContinents = {};
-		console.log(reports);
 		let filterByCountry = country => {
 			if (reports.filter(r => r.meta_country == country)[0]) {
 				return reports.filter(r => r.meta_country == country)[0];

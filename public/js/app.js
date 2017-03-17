@@ -28857,9 +28857,7 @@ var SearchByContinent = _react2.default.createClass({
 		var reports = props.reports;
 		var continents = props.continents;
 
-		console.log(reports);
 		var newContinents = {};
-		console.log(reports);
 		var filterByCountry = function filterByCountry(country) {
 			if (reports.filter(function (r) {
 				return r.meta_country == country;
