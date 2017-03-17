@@ -66652,7 +66652,8 @@ var SearchByContinent = _react2.default.createClass({
 					_react2.default.createElement(
 						'div',
 						{ className: 'col-md-6' },
-						_react2.default.createElement(_searchByContinentList2.default, _extends({}, this.props, { reports: this.state.continents.africa }))
+						_react2.default.createElement(_searchByContinentList2.default, _extends({}, this.props, { reports: this.state.continents.afrika })),
+						_react2.default.createElement(_searchByContinentList2.default, _extends({}, this.props, { reports: this.state.continents.asia }))
 					)
 				)
 			)
