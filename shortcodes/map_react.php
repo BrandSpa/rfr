@@ -41,7 +41,7 @@ function bs_map_react_sc($atts, $content = null) {
 		'latinAmerica' => gett('Latin America'),
 		'middleEast' => gett('Middle East'),
 		'northAmerica' => gett('North America'),
-		'oceania' => gett('Oceania'),
+		'ocenia' => gett('Oceania'),
 		'russiaCentralAsia' => gett('Russia & Central Asia'),
 		'westernEurope' => gett('Western Europe')
 	],
