@@ -66574,6 +66574,7 @@ var SearchByContinent = _react2.default.createClass({
 		};
 	},
 	componentWillReceiveProps: function componentWillReceiveProps() {
+		console.log(this.props);
 		this.setContinents();
 	},
 	toggleShow: function toggleShow() {

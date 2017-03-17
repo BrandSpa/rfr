@@ -10,6 +10,7 @@ const SearchByContinent = React.createClass({
 		},
 	
 	componentWillReceiveProps() {
+		console.log(this.props);
 		this.setContinents();
 	},
 
