@@ -1,8 +1,5 @@
 'use strict';
 import 'babel-polyfill';
-//vue
-// import downloadFormReport from './components/download_report';
-
 //jquery
 import footerNav from './lib/footer_nav';
 import countries from './lib/country_lang';
@@ -29,23 +26,9 @@ multipleRender(ReligionsChart, '.bs-religions-charts');
 $(() => {
   redirect();
   nav();
-  // map();
-    // subscribeForm();
-  // religionsChart();
-  // downloadFormReport();
-  // searchCountry();
-  searchList();
   footerNav();
-
   scrollTop();
   modalIframe();
-  // countries();
-
-
-  // new Vue({
-  //   el: '#acn_reports'
-  // });
-
 
   const windowHeight = window.innerHeight;
 
