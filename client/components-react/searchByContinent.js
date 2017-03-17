@@ -58,6 +58,18 @@ const SearchByContinent = React.createClass({
 	render() {
 		const { texts, templateUrl, countriesTrans, continents } = this.props;
 
+		let continentsList = [
+			'afrika',
+			'asia',
+			'easterEurope',
+			'latinAmerica',
+			'middleEast',
+			'northAmerica',
+			'ocenia',
+			'russiaCentralAsia',
+			'westernEurope'
+		];
+
 		return (
 			<div className={this.state.show ? "map__search_list map__search_list--show" : "map__search_list"}>
 				<a href="#" className="map__search__close" onClick={this.close}><i className="ion-close"></i></a>
@@ -65,8 +77,9 @@ const SearchByContinent = React.createClass({
 					<h1 className="title-center title-line color-red">{texts.search_by_list}</h1>
 					<div className="row">
 						<div className="col-md-6">
-							<List {...this.props} reports={this.state.continents.afrika} />
-							<List {...this.props} reports={this.state.continents.asia} />
+						{continentsList.map(continent => 
+							<List {...this.props} reports={this.state.continents[continent]} />
+						)}
 						</div>
 					</div>
 				</div>

@@ -66623,12 +66623,16 @@ var SearchByContinent = _react2.default.createClass({
 		console.log(newContinents);
 	},
 	render: function render() {
+		var _this = this;
+
 		var _props = this.props;
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
 		var countriesTrans = _props.countriesTrans;
 		var continents = _props.continents;
 
+
+		var continentsList = ['afrika', 'asia', 'easterEurope', 'latinAmerica', 'middleEast', 'northAmerica', 'ocenia', 'russiaCentralAsia', 'westernEurope'];
 
 		return _react2.default.createElement(
 			'div',
@@ -66652,8 +66656,9 @@ var SearchByContinent = _react2.default.createClass({
 					_react2.default.createElement(
 						'div',
 						{ className: 'col-md-6' },
-						_react2.default.createElement(_searchByContinentList2.default, _extends({}, this.props, { reports: this.state.continents.afrika })),
-						_react2.default.createElement(_searchByContinentList2.default, _extends({}, this.props, { reports: this.state.continents.asia }))
+						continentsList.map(function (continent) {
+							return _react2.default.createElement(_searchByContinentList2.default, _extends({}, _this.props, { reports: _this.state.continents[continent] }));
+						})
 					)
 				)
 			)
