@@ -16996,7 +16996,7 @@ var HeaderSlider = _react2.default.createClass({
 						null,
 						_react2.default.createElement(
 							"li",
-							{ "data-index": "0", className: "active" },
+							{ className: this.state.slide == 1 ? 'active' : '' },
 							_react2.default.createElement(
 								"h1",
 								{ className: "home_header__title" },
@@ -17010,7 +17010,7 @@ var HeaderSlider = _react2.default.createClass({
 						),
 						_react2.default.createElement(
 							"li",
-							null,
+							{ className: this.state.slide == 2 ? 'active' : '' },
 							_react2.default.createElement(
 								"h1",
 								{ className: "home_header__title" },
@@ -17024,7 +17024,7 @@ var HeaderSlider = _react2.default.createClass({
 						),
 						_react2.default.createElement(
 							"li",
-							null,
+							{ className: this.state.slide == 3 ? 'active' : '' },
 							_react2.default.createElement(
 								"h1",
 								{ className: "home_header__title" },

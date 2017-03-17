@@ -40,7 +40,7 @@ const HeaderSlider = React.createClass({
 				<div className="col-md-7">
 					<div className="home_header__contents" >
 						<ul>
-							<li data-index="0" className="active">
+							<li className={this.state.slide == 1 ? 'active' : ''}>
 								<h1 className="home_header__title">
 									{contents[1].title}
 								</h1>
@@ -49,7 +49,7 @@ const HeaderSlider = React.createClass({
 								</p>
 							</li>
 
-							<li>
+							<li className={this.state.slide == 2 ? 'active' : ''}>
 								<h1 className="home_header__title">
 									{contents[2].title}
 								</h1>
@@ -58,7 +58,7 @@ const HeaderSlider = React.createClass({
 								</p>
 							</li>
 
-							<li>
+							<li className={this.state.slide == 3 ? 'active' : ''}>
 								<h1 className="home_header__title">
 									{contents[3].title}
 								</h1>
