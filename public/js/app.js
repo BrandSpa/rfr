@@ -16976,6 +16976,7 @@ var HeaderSlider = _react2.default.createClass({
 		var contents = _props.contents;
 		var content_html = _props.content_html;
 
+		var left = (this.state.slide - 1) * 100 + "%";
 		return _react2.default.createElement(
 			"div",
 			{ className: "home_header" },
@@ -16993,7 +16994,7 @@ var HeaderSlider = _react2.default.createClass({
 					{ className: "home_header__contents" },
 					_react2.default.createElement(
 						"ul",
-						null,
+						{ style: { left: left } },
 						_react2.default.createElement(
 							"li",
 							{ className: this.state.slide == 1 ? 'active' : '' },
