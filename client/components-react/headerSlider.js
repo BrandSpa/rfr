@@ -7,8 +7,15 @@ const HeaderSlider = React.createClass({
 		}
 	},
 
+	componentDidMount() {
+		this.interval = setInterval(() => {
+			this.setState({slide: this.state.slide + 1});
+		}, 5000);
+	},
+
 	changeSlide(slideNum, e) {
 		e.preventDefault();
+		clearInterval(this.interval);
 		this.setState({slide: slideNum});
 	},
 

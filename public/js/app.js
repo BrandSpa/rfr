@@ -16951,12 +16951,20 @@ var HeaderSlider = _react2.default.createClass({
 			slide: 1
 		};
 	},
+	componentDidMount: function componentDidMount() {
+		var _this = this;
+
+		this.interval = setInterval(function () {
+			_this.setState({ slide: _this.state.slide + 1 });
+		}, 5000);
+	},
 	changeSlide: function changeSlide(slideNum, e) {
 		e.preventDefault();
+		clearInterval(this.interval);
 		this.setState({ slide: slideNum });
 	},
 	render: function render() {
-		var _this = this;
+		var _this2 = this;
 
 		var _props = this.props;
 		var backgrounds = _props.backgrounds;
@@ -16971,7 +16979,7 @@ var HeaderSlider = _react2.default.createClass({
 			backgrounds.map(function (bg, i) {
 				return _react2.default.createElement("div", {
 					key: i,
-					className: i == _this.state.slide - 1 ? "home_header__background home_header__background--active" : "home_header__background",
+					className: i == _this2.state.slide - 1 ? "home_header__background home_header__background--active" : "home_header__background",
 					style: { background: "url(" + bg + ")", backgroundSize: 'cover', backgroundPosition: 'center' }
 				});
 			}),
