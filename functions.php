@@ -44,25 +44,10 @@ register_nav_menus(
   )
 );
 
-// function modify_jquery() {
-// 	if (!is_admin()) {
-// 		// comment out the next two lines to load the local copy of jQuery
-// 		wp_deregister_script( 'wp-embed' );
-// 		wp_deregister_script('jquery');
-// 		wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, '3.1.1', true); 
-// 		wp_enqueue_script('jquery');
-// 	}
-// }
-
-// add_action('init', 'modify_jquery');
-
 // JS on admin
 function enqueue_scripts()
 {
   wp_enqueue_media();
-  // wp_enqueue_script( 'highcharts', '//code.highcharts.com/highcharts.js', array(), '3', true );
-  // wp_enqueue_script( 'highcharts_exporting', '//code.highcharts.com/modules/exporting.js', array(), '3', true );
-  // wp_enqueue_script( 'vue', '//cdnjs.cloudflare.com/ajax/libs/vue/1.0.27/vue.min.js', array(), '2', true );
   wp_enqueue_script( 'app_script', get_template_directory_uri() . '/public/js/admin.js',array(), '4', true  );
 }
 
@@ -117,7 +102,8 @@ function modify_jquery() {
 	if (!is_admin()) {
 		// comment out the next two lines to load the local copy of jQuery
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js', false, '1.12.4');
+    wp_deregister_script( 'wp-embed');
+		wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js', false, '1.12.4');
 		wp_enqueue_script('jquery');
 	}
 }
