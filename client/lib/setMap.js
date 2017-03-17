@@ -153,7 +153,7 @@ function setMap(mapUrl, reports, lang, countriesTrans) {
 			d3.select("#map-container svg").attr('height', windowH);
 
 			d3.select('.zoom_reset')
-				.on('click', function () {
+				.on('click',  () => {
 					transformScale = 1;
 					lastX = 0;
 					lastY = 0;
@@ -172,6 +172,7 @@ function setMap(mapUrl, reports, lang, countriesTrans) {
 					transformScale = transformScale + 1;
 					let box = d3.select("#map-container svg g").node().getBBox();
 					let transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, `scale(${transformScale})`) : `translate(0,0) scale(${transformScale})`;
+
 					mapSVG
 						.transition()
 						.duration(300)

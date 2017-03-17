@@ -31721,6 +31721,7 @@ function setMap(mapUrl, reports, lang, countriesTrans) {
 			transformScale = transformScale + 1;
 			var box = d3.select("#map-container svg g").node().getBBox();
 			var transform = mapSVG.attr("transform") ? mapSVG.attr("transform").replace(/scale\((.*?)\)/g, 'scale(' + transformScale + ')') : 'translate(0,0) scale(' + transformScale + ')';
+
 			mapSVG.transition().duration(300).attr("transform", transform);
 		});
 
