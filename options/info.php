@@ -79,12 +79,8 @@ function logos_settings_page() {
 						/>
 
 						<h4>Contact info</h4>
-						<textarea name="<?php echo 'contact_info_' . $value ?>" id="" cols="30" rows="10"><?php echo get_option('contact_info_' . $value ) ?></textarea>
+						<textarea name="<?php echo 'contact_info_' . $value ?>" style="background: rgba(255,255,255,.4); width: 60%; " rows="10"><?php echo get_option('contact_info_' . $value ) ?></textarea>
 					
-						<script>
-							
-						</script>
-
 							<?php submit_button(); ?>
 
           </section>
