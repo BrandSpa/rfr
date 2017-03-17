@@ -66375,17 +66375,31 @@ var SubscribeForm = _react2.default.createClass({
 		});
 	},
 	handleSubmit: function handleSubmit(e) {
-		var _this2 = this;
-
 		e.preventDefault();
 		this.validate().then(function (isValid) {
-			return console.log(isValid, _this2.state);
+			if (isValid) storeContact();
 		});
 	},
 	storeContact: function storeContact() {
-		var data = { action: 'mailchimp_subscribe', lang: lang, data: data };
+		var _state = this.state;
+		var name = _state.name;
+		var email = _state.email;
+		var country = this.props.country;
+
+
+		var mc_data = {
+			email_address: email,
+			status: 'subscribed',
+			merge_fields: { NAME: name, COUNTRY: country },
+			update_existing: true
+		};
+
+		var data = _qs2.default.stringify({ action: 'mailchimp_subscribe', data: mc_data });
+
 		_axios2.default.post(endpoint, data).then(function (res) {
 			console.log(res.data);
+		}).catch(function (err) {
+			return console.error(err);
 		});
 	},
 	render: function render() {

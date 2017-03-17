@@ -43,16 +43,28 @@ const SubscribeForm = React.createClass({
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.validate().then(isValid =>console.log(isValid, this.state));
+		this.validate().then(isValid => { if(isValid) storeContact() });
 	},
 
 	storeContact() {
-		let data = {action: 'mailchimp_subscribe', lang, data};
+		const {	name, email } = this.state;
+		const { country } = this.props;
+
+		let mc_data = {
+    	email_address: email,
+    	status: 'subscribed',
+    	merge_fields: {NAME: name, COUNTRY: country },
+    	update_existing: true
+    };
+
+    let data = qs.stringify({action: 'mailchimp_subscribe', data: mc_data});
+
 		request
 			.post(endpoint, data)
 			.then(res => {
 				console.log(res.data);
 			}) 
+			.catch(err => console.error(err));
 	},
 
 	render() {
