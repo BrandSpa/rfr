@@ -66550,6 +66550,8 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 var _react = __webpack_require__(76);
 
 var _react2 = _interopRequireDefault(_react);
@@ -66562,12 +66564,58 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var SearchByContinent = _react2.default.createClass({
 	displayName: 'SearchByContinent',
-	render: function render() {
+	getInitialState: function getInitialState() {
+		return {
+			continents: []
+		};
+	},
+	setContinents: function setContinents() {
 		var _props = this.props;
-		var texts = _props.texts;
-		var templateUrl = _props.templateUrl;
-		var countriesTrans = _props.countriesTrans;
+		var reports = _props.reports;
 		var continents = _props.continents;
+
+		var newContinents = {};
+
+		var filterByCountry = function filterByCountry(country) {
+			if (reports.filter(function (r) {
+				return r.meta_country == country;
+			})[0]) {
+				return reports.filter(function (r) {
+					return r.meta_country == country;
+				})[0];
+			} else {
+				return '';
+			}
+		};
+
+		var cleanEmpty = function cleanEmpty(report) {
+			return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
+		};
+
+		var continentsList = {
+			'afrika': 'Afrika',
+			'asia': 'Asia',
+			'easterEurope': 'Easter Europe',
+			'latinAmerica': 'Latin America',
+			'middleEast': 'Middle East',
+			'northAmerica': 'North America',
+			'ocenia': 'Ocenia',
+			'russiaCentralAsia': 'Russia & Central Asia',
+			'westernEurope': 'Western Europe'
+		};
+
+		Object.keys(continentsList).forEach(function (continentKey) {
+			newContinents[continentKey] = continents[continentsList[continentKey]].map(filterByCountry).filter(cleanEmpty);
+		});
+		this.setState({ continents: newContinents });
+		console.log(newContinents);
+	},
+	render: function render() {
+		var _props2 = this.props;
+		var texts = _props2.texts;
+		var templateUrl = _props2.templateUrl;
+		var countriesTrans = _props2.countriesTrans;
+		var continents = _props2.continents;
 
 
 		return _react2.default.createElement(
@@ -66613,8 +66661,6 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 var _react = __webpack_require__(76);
 
 var _react2 = _interopRequireDefault(_react);
@@ -66630,47 +66676,6 @@ var SearchByContinentList = _react2.default.createClass({
 	},
 	componentDidMount: function componentDidMount() {
 		this.setContinents();
-	},
-	setContinents: function setContinents() {
-		var _props = this.props;
-		var reports = _props.reports;
-		var continents = _props.continents;
-
-		var newContinents = {};
-
-		var filterByCountry = function filterByCountry(country) {
-			if (reports.filter(function (r) {
-				return r.meta_country == country;
-			})[0]) {
-				return reports.filter(function (r) {
-					return r.meta_country == country;
-				})[0];
-			} else {
-				return '';
-			}
-		};
-
-		var cleanEmpty = function cleanEmpty(report) {
-			return (typeof report === 'undefined' ? 'undefined' : _typeof(report)) == 'object';
-		};
-
-		var continentsList = {
-			'afrika': 'Afrika',
-			'asia': 'Asia',
-			'easterEurope': 'Easter Europe',
-			'latinAmerica': 'Latin America',
-			'middleEast': 'Middle East',
-			'northAmerica': 'North America',
-			'ocenia': 'Ocenia',
-			'russiaCentralAsia': 'Russia & Central Asia',
-			'westernEurope': 'Western Europe'
-		};
-
-		Object.keys(continentsList).forEach(function (continentKey) {
-			newContinents[continentKey] = continents[continentsList[continentKey]].map(filterByCountry).filter(cleanEmpty);
-		});
-
-		console.log(newContinents);
 	},
 	getIcon: function getIcon(name) {
 		return this.props.templateUrl + '/public/img/icons/' + name + '.svg';
@@ -66692,10 +66697,10 @@ var SearchByContinentList = _react2.default.createClass({
 	render: function render() {
 		var _this = this;
 
-		var _props2 = this.props;
-		var texts = _props2.texts;
-		var templateUrl = _props2.templateUrl;
-		var countriesTrans = _props2.countriesTrans;
+		var _props = this.props;
+		var texts = _props.texts;
+		var templateUrl = _props.templateUrl;
+		var countriesTrans = _props.countriesTrans;
 
 
 		return _react2.default.createElement(

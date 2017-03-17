@@ -11,40 +11,6 @@ const SearchByContinentList = React.createClass({
 		this.setContinents();
 	},
 
-	setContinents() {
-		const { reports, continents } = this.props;
-		let newContinents = {};
-
-		let filterByCountry = country => {
-			if (reports.filter(r => r.meta_country == country)[0]) {
-				return reports.filter(r => r.meta_country == country)[0];
-			} else {
-				return '';
-			}
-		};
-
-		let cleanEmpty = report => typeof report == 'object';
-
-		let continentsList = {
-			'afrika': 'Afrika',
-			'asia': 'Asia',
-			'easterEurope': 'Easter Europe',
-			'latinAmerica': 'Latin America',
-			'middleEast': 'Middle East',
-			'northAmerica': 'North America',
-			'ocenia': 'Ocenia',
-			'russiaCentralAsia': 'Russia & Central Asia',
-			'westernEurope': 'Western Europe'
-		};
-
-		Object.keys(continentsList).forEach(continentKey => {
-			newContinents[continentKey] = continents[continentsList[continentKey]]
-				.map(filterByCountry)
-				.filter(cleanEmpty);
-		});
-
-		console.log(newContinents);
-	},
 
 	getIcon(name) {
 		return `${this.props.templateUrl}/public/img/icons/${name}.svg`
