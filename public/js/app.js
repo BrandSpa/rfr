@@ -16971,7 +16971,7 @@ var HeaderSlider = _react2.default.createClass({
 			"div",
 			{ className: "home_header" },
 			backgrounds.map(function (bg, i) {
-				_react2.default.createElement("div", {
+				return _react2.default.createElement("div", {
 					className: i == 0 ? "home_header__background--active" : "home_header__background",
 					style: { background: "url(" + bg + ")", backgroundSize: 'cover', backgroundPosition: 'center' }
 				});

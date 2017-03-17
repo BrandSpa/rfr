@@ -20,12 +20,12 @@ const HeaderSlider = React.createClass({
 		return (
 			<div className="home_header">
 
-				{backgrounds.map((bg, i) => {
+				{backgrounds.map((bg, i) => 
 					<div
 						className={i == 0 ? "home_header__background--active" : "home_header__background"}
 						style={{ background: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
 					></div>
-				})}
+				)}
 
 				<div className="col-md-7">
 					<div className="home_header__contents" >
