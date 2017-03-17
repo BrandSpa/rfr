@@ -72,7 +72,7 @@ const DownloadReport = React.createClass({
 
     render() {
         const { errors, name, email } = this.state;
-        const { texts, countries, country } = this.props;
+        const { texts, countries, country, language } = this.props;
 
         return (
             <div id="download-report">
