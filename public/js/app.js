@@ -42148,7 +42148,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //vue
 
 (0, _reactMultipleRender2.default)(_subscribeForm2.default, '.bs-subscribe');
-(0, _reactMultipleRender2.default)(_headerSlider2.default, '.bs-header-slider"');
+(0, _reactMultipleRender2.default)(_headerSlider2.default, '.bs-header-slider');
 
 $(function () {
   (0, _redirect2.default)();

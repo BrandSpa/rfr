@@ -22,7 +22,7 @@ import HeaderSlider from './components-react/headerSlider';
 
 multipleRender(MapComponent, '.bs-map');
 multipleRender(SubscribeFormComponent, '.bs-subscribe');
-multipleRender(HeaderSlider, '.bs-header-slider"');
+multipleRender(HeaderSlider, '.bs-header-slider');
 
 $(() => {
   redirect();
