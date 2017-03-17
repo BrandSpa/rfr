@@ -46671,7 +46671,7 @@ var SearchByCountry = _react2.default.createClass({
 	toggleShow: function toggleShow() {
 		this.setState({ show: !this.state.show });
 	},
-	setColor: function setColor(situation) {
+	getColor: function getColor(situation) {
 		console.log(situation);
 		if (situation == 'Discrimination') {
 			return 'bg-discrimination';

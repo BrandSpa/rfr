@@ -50,7 +50,7 @@ const SearchByCountry = React.createClass({
 		this.setState({show: !this.state.show});
 	},
 
-	setColor(situation) {
+	getColor(situation) {
 		console.log(situation);
 		if(situation == 'Discrimination') {
 			return 'bg-discrimination';
