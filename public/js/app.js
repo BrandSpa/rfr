@@ -31517,14 +31517,11 @@ Object.keys(_d3Request).forEach(function (key) {
 
 var _d3Transition = __webpack_require__(576);
 
-Object.keys(_d3Transition).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _d3Transition[key];
-    }
-  });
+Object.defineProperty(exports, 'transition', {
+  enumerable: true,
+  get: function get() {
+    return _d3Transition.transition;
+  }
 });
 
 var _d3Selection = __webpack_require__(539);
