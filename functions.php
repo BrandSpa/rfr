@@ -26,6 +26,7 @@ include_once 'shortcodes/map.php';
 include_once 'shortcodes/map_react.php';
 include_once 'shortcodes/download_report_sc.php';
 include_once 'shortcodes/subscribe_sc.php';
+include_once 'shortcodes/subscribe_react.php';
 include_once 'shortcodes/link.php';
 include_once 'shortcodes/home_header.php';
 include_once 'shortcodes/slider.php';
@@ -123,6 +124,15 @@ redirect_to_office();
 
 function cleanQuote($val) {
 	return str_replace("'", "\u0027", $val);
+}
+
+if(!function_exists('getCountry')) {
+  function getCountry() {
+    if(function_exists('geoip_detect2_get_info_from_current_ip')): 
+      return geoip_detect2_get_info_from_current_ip()->country->names['en']; 
+    endif;
+    return '';
+  }
 }
 
 ?>
