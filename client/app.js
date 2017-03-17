@@ -1,9 +1,6 @@
 'use strict';
 import 'babel-polyfill';
 //vue
-import Vue from 'vue';
-import searchCountry from './components/search_country';
-import searchList from './components/search_list';
 // import downloadFormReport from './components/download_report';
 
 //jquery
@@ -36,7 +33,7 @@ $(() => {
     // subscribeForm();
   // religionsChart();
   // downloadFormReport();
-  searchCountry();
+  // searchCountry();
   searchList();
   footerNav();
 
@@ -45,9 +42,9 @@ $(() => {
   // countries();
 
 
-  new Vue({
-    el: '#acn_reports'
-  });
+  // new Vue({
+  //   el: '#acn_reports'
+  // });
 
 
   const windowHeight = window.innerHeight;
