@@ -16962,7 +16962,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var HeaderSlider = _react2.default.createClass({
 	displayName: "HeaderSlider",
 	render: function render() {
-		var backgrounds = this.props.backgrounds;
+		var _props = this.props;
+		var backgrounds = _props.backgrounds;
+		var contents = _props.contents;
 
 		return _react2.default.createElement(
 			"div",

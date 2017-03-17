@@ -16,7 +16,7 @@ import React from 'react';
 
 const HeaderSlider = React.createClass({
 	render() {
-		const { backgrounds } = this.props;
+		const { backgrounds, contents } = this.props;
 		return (
 			<div className="home_header">
 
