@@ -46989,6 +46989,7 @@ function getCountryInfo(reports, countriesTrans) {
 		var fill = colors[report.meta_nature_persecution];
 		$el.style("cursor", "pointer");
 		$el.style("fill", fill);
+		console.log(countriesTrans);
 		var name = countriesTrans[countryName] ? countriesTrans[countryName] : countryName;
 		showMapInfo($el, report, fill, name);
 	}
