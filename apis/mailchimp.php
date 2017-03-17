@@ -5,8 +5,6 @@ if( file_exists($dir_base . '/vendor/autoload.php') ) {
 
   require $dir_base . 'vendor/autoload.php';
   
-  $apiKey = '709cb76ed68f751a3ae287f2c067a046-us13';
-
   function getList($key) {
 
     $lists = array(
@@ -28,7 +26,7 @@ if( file_exists($dir_base . '/vendor/autoload.php') ) {
     return $lists[$key];
   }
 
-  function mc_subscribe($data, $lang, $apiKey = '709cb76ed68f751a3ae287f2c067a046-us13') {
+  function mc_subscribe($data, $lang, $apiKey) {
     $listId = getList($lang);
 
     $options = array(
