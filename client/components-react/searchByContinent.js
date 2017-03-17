@@ -19,6 +19,7 @@ const SearchByContinent = React.createClass({
 
 	setContinents() {
 		const { reports, continents } = this.props;
+		console.log(reports);
 		let newContinents = {};
 		console.log(reports);
 		let filterByCountry = country => {

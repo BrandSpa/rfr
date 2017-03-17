@@ -66584,6 +66584,7 @@ var SearchByContinent = _react2.default.createClass({
 		var reports = _props.reports;
 		var continents = _props.continents;
 
+		console.log(reports);
 		var newContinents = {};
 		console.log(reports);
 		var filterByCountry = function filterByCountry(country) {
