@@ -70,9 +70,9 @@ const HeaderSlider = React.createClass({
 					</div>
 
 					<div className="home_header__paginate">
-						<a href="#" onClick={changeSlide.bind(null, 1)} className={this.state.slide == 1 ? 'active' : ''}></a>
-						<a href="#" onClick={changeSlide.bind(null, 2)} className={this.state.slide == 2 ? 'active' : ''}></a>
-						<a href="#" onClick={changeSlide.bind(null, 3)} className={this.state.slide == 3 ? 'active' : ''}></a>
+						<a href="#" onClick={this.changeSlide.bind(null, 1)} className={this.state.slide == 1 ? 'active' : ''}></a>
+						<a href="#" onClick={this.changeSlide.bind(null, 2)} className={this.state.slide == 2 ? 'active' : ''}></a>
+						<a href="#" onClick={this.changeSlide.bind(null, 3)} className={this.state.slide == 3 ? 'active' : ''}></a>
 					</div>
 
 				</div>
