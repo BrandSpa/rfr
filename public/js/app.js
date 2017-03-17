@@ -16965,6 +16965,7 @@ var HeaderSlider = _react2.default.createClass({
 		var _props = this.props;
 		var backgrounds = _props.backgrounds;
 		var contents = _props.contents;
+		var content_html = _props.content_html;
 
 		return _react2.default.createElement(
 			"div",
