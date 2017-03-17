@@ -46682,10 +46682,8 @@ var SearchByCountry = _react2.default.createClass({
 		var _props = this.props;
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
-		var _state = this.state;
-		var reports = _state.reports;
-		var _state$countriesTrans = _state.countriesTrans;
-		var countriesTrans = _state$countriesTrans === undefined ? {} : _state$countriesTrans;
+		var countriesTrans = _props.countriesTrans;
+		var reports = this.state.reports;
 
 		console.log('list', countriesTrans);
 		return _react2.default.createElement(
