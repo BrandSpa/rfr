@@ -43,7 +43,7 @@ const MapComponent = React.createClass({
 
  	render() {
 		const { texts, templateUrl } = this.props;
-
+		console.log('index', this.state);
 		return (
 			<div>
 				<SearchByCountry ref={searchCountry => this.searchCountry = searchCountry} {...this.props} {...this.state} />

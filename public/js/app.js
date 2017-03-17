@@ -44293,7 +44293,7 @@ var MapComponent = _react2.default.createClass({
 		var texts = _props.texts;
 		var templateUrl = _props.templateUrl;
 
-
+		console.log('index', this.state);
 		return _react2.default.createElement(
 			'div',
 			null,
