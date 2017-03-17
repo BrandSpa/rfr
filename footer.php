@@ -62,9 +62,15 @@
     bs['geo'] = JSON.parse(JSON.stringify(<?php echo json_encode(geoip_detect2_get_info_from_current_ip()); ?>));
     bs['langs'] = JSON.parse(JSON.stringify(<?php echo json_encode(pll_the_languages(array('raw'=>1))) ?>));
   </script>
-  
-  <script src="<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"></script>
 
+<script>
+function appendScript(src) {
+    var element = document.createElement("script");
+    element.src = src;
+    document.body.appendChild(element);
+  }
+  appendScript("<?php echo get_template_directory_uri() . '/public/js/app.js' ?>");
+</script>
 <!--wordpress scripts-->
 <?php wp_footer() ?>
 <!--/wordpress scripts-->
