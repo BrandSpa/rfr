@@ -44300,6 +44300,9 @@ var MapComponent = _react2.default.createClass({
 			_react2.default.createElement(_searchByCountry2.default, _extends({ ref: function ref(searchCountry) {
 					return _this2.searchCountry = searchCountry;
 				} }, this.props, this.state)),
+			_react2.default.createElement(_searchByContinent2.default, _extends({ ref: function ref(searchContinent) {
+					return _this2.searchContinent = searchContinent;
+				} }, this.props, this.state)),
 			_react2.default.createElement(
 				'div',
 				{ className: 'map__info', style: { position: 'absolute' } },

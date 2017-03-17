@@ -5,7 +5,7 @@ import setMap from '../../lib/setMap';
 import MapHeader from './header'; 
 import MapFooter from './footer';
 import SearchByCountry from '../searchByCountry';
-import searchByContinent from '../searchByContinent';
+import SearchByContinent from '../searchByContinent';
 const endpoint = 'http://religious-freedom-report.org/wp-admin/admin-ajax.php';
 
 const MapComponent = React.createClass({
@@ -47,6 +47,7 @@ const MapComponent = React.createClass({
 		return (
 			<div>
 				<SearchByCountry ref={searchCountry => this.searchCountry = searchCountry} {...this.props} {...this.state} />
+				<SearchByContinent ref={searchContinent => this.searchContinent = searchContinent} {...this.props} {...this.state} />
 				<div className="map__info" style={{position: 'absolute'}}> 
 					<div className="map__info_country"></div>
 					<div className="map__info_situation"></div>
