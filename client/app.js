@@ -2,12 +2,11 @@
 import 'babel-polyfill';
 import $ from 'jquery';
 import nav from './lib/nav';
-// import map from './components/map';
+//vue
 import religionsChart from './components/religions_chart';
 import searchCountry from './components/search_country';
-// import searchList from './components/search_list';
 import downloadFormReport from './components/download_report';
-// import subscribeForm from './components/subscribe_form';
+//jquery
 import homeHeader from './lib/home_header';
 import footerNav from './lib/footer_nav';
 import countries from './lib/country_lang';
@@ -15,7 +14,7 @@ import scrollTop from './lib/scroll_top';
 import redirect from './lib/redirect';
 import modalIframe from './lib/modal_iframe';
 import slider from './lib/slider';
-
+//react
 import multipleRender from 'react-multiple-render';
 import MapComponent from './components-react/map/index';
 import SubscribeFormComponent from './components-react/subscribeForm';

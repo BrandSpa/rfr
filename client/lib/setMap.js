@@ -1,4 +1,5 @@
-import * as d3 from 'd3';
+const d3 = {...require('d3-selection'), ...require('d3-request'), ...require('d3-transition')};
+
 import $ from 'jquery';
 import mousePosition from './get_mouse_position';
 
