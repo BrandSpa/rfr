@@ -21,7 +21,6 @@ multipleRender(DownloadReport, '.bs-download-report');
 multipleRender(ReligionsChart, '.bs-religions-charts');
 
 $(() => {
-  redirect();
   nav();
   scrollTop();
   modalIframe();
