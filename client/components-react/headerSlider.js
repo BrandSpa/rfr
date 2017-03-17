@@ -18,7 +18,7 @@ const HeaderSlider = React.createClass({
 	render() {
 		const { backgrounds } = this.props;
 		return (
-			<div class="home_header" data-interval="<?php echo $at['interval'] ?>" data-autoplay="true" >
+			<div className="home_header">
 
 				{backgrounds.map((bg, i) => {
 					<div
@@ -27,50 +27,50 @@ const HeaderSlider = React.createClass({
 					></div>
 				})}
 
-				<div class="col-md-7">
-					<div class="home_header__contents" >
+				<div className="col-md-7">
+					<div className="home_header__contents" >
 						<ul>
-							<li data-index="0" class="active">
-								<h1 class="home_header__title">
+							<li data-index="0" className="active">
+								<h1 className="home_header__title">
 									{contents[1].title}
 								</h1>
-								<p class="home_header__content">
+								<p className="home_header__content">
 									{contents[1].content}
 								</p>
 							</li>
 
 							<li>
-								<h1 class="home_header__title">
+								<h1 className="home_header__title">
 									{contents[2].title}
 								</h1>
-								<p class="home_header__content">
+								<p className="home_header__content">
 									{contents[2].content}
 								</p>
 							</li>
 
 							<li>
-								<h1 class="home_header__title">
+								<h1 className="home_header__title">
 									{contents[3].title}
 								</h1>
-								<p class="home_header__content">
+								<p className="home_header__content">
 									{contents[3].content}
 								</p>
 							</li>
 						</ul>
 					</div>
 
-					<div class="home_header__paginate">
-						<a href="#" class="active" data-index="0"></a>
+					<div className="home_header__paginate">
+						<a href="#" className="active" data-index="0"></a>
 						<a href="#" data-index="1"></a>
 						<a href="#" data-index="2"></a>
 					</div>
 
 				</div>
 
-				<div class="col-md-2"></div>
+				<div className="col-md-2"></div>
 
-				<div class="col-md-2">
-					<div class="home_header__content_right">
+				<div className="col-md-2">
+					<div className="home_header__content_right">
 						<div dangerouslySetInnerHTML={{__html: content_html}} />
 					</div>
 				</div>
