@@ -34,7 +34,7 @@ $(() => {
   nav();
   // map();
     // subscribeForm();
-  religionsChart();
+  // religionsChart();
   // downloadFormReport();
   searchCountry();
   // searchList();
