@@ -10,16 +10,16 @@ const SearchByContinent = React.createClass({
 		},
 	
 	componentWillReceiveProps(props) {
-		console.log(props);
-		this.setContinents();
+
+		this.setContinents(props);
 	},
 
 	toggleShow() {
 		this.setState({show: !this.state.show});
 	},
 
-	setContinents() {
-		const { reports, continents } = this.props;
+	setContinents(props) {
+		const { reports, continents } = props;
 		console.log(reports);
 		let newContinents = {};
 		console.log(reports);

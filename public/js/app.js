@@ -66574,16 +66574,15 @@ var SearchByContinent = _react2.default.createClass({
 		};
 	},
 	componentWillReceiveProps: function componentWillReceiveProps(props) {
-		console.log(props);
-		this.setContinents();
+
+		this.setContinents(props);
 	},
 	toggleShow: function toggleShow() {
 		this.setState({ show: !this.state.show });
 	},
-	setContinents: function setContinents() {
-		var _props = this.props;
-		var reports = _props.reports;
-		var continents = _props.continents;
+	setContinents: function setContinents(props) {
+		var reports = props.reports;
+		var continents = props.continents;
 
 		console.log(reports);
 		var newContinents = {};
@@ -66624,11 +66623,11 @@ var SearchByContinent = _react2.default.createClass({
 		console.log(newContinents);
 	},
 	render: function render() {
-		var _props2 = this.props;
-		var texts = _props2.texts;
-		var templateUrl = _props2.templateUrl;
-		var countriesTrans = _props2.countriesTrans;
-		var continents = _props2.continents;
+		var _props = this.props;
+		var texts = _props.texts;
+		var templateUrl = _props.templateUrl;
+		var countriesTrans = _props.countriesTrans;
+		var continents = _props.continents;
 
 
 		return _react2.default.createElement(
