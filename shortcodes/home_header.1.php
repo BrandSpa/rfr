@@ -13,32 +13,69 @@ function bs_home_header_sc($atts, $content = null) {
       "interval" => "8000"
     ), $atts );
 
-    		$images = [];
-		foreach(explode(',', $at['backgrounds']) as $imageId) {
-			array_push($images, wp_get_attachment_url($imageId));
-		}
-
-		$contents = [];
-
-		foreach([1,2,3] as $num) {
-			$cont = [
-				"title" => $at['title_' . $num],
-				"content" => $at['content_' . $num]
-			];
-
-			$contents[$num] = $cont;
-		}
-
-		$props = [
-			"backgrounds" => $images,
-			"contents" => $contents,
-			"content_html" => apply_filters('the_content', $content)
-		];
-
-
   ob_start();
 ?>
-<div class="bs-header-slider" data-props='<?php echo cleanQuote(json_encode($props)) ?>'></div>
+
+<div class="home_header" data-interval="<?php echo $at['interval'] ?>" data-autoplay="true" >
+  <?php if(is_array( explode(',', $at['backgrounds']) )): ?>
+    <?php  foreach(explode(',', $at['backgrounds']) as $key => $imageId):  ?>
+      <div
+        class="home_header__background <?php if($key == 0) echo 'home_header__background--active' ?>"   
+        data-index="<?php echo $key ?>"
+        style="background: url(<?php echo wp_get_attachment_image_src($imageId, 'full')[0] ?>);  background-size: cover; background-position: center"
+        ></div>
+    <?php endforeach; ?>
+  <?php endif; ?>
+
+  <div class="col-md-7">
+    <div class="home_header__contents" >
+      <ul>
+        <li data-index="0" class="active">
+          <h1 class="home_header__title">
+            <?php echo $at['title_1']?>
+          </h1>
+          <p class="home_header__content">
+            <?php echo $at['content_1']?>
+          </p>
+        </li>
+        
+        <li>
+          <h1 class="home_header__title">
+            <?php echo $at['title_2']?>
+          </h1>
+          <p class="home_header__content">
+            <?php echo $at['content_2']?>
+          </p>
+        </li>
+
+        <li>
+          <h1 class="home_header__title">
+            <?php echo $at['title_3']?>
+          </h1>
+          <p class="home_header__content">
+            <?php echo $at['content_3']?>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home_header__paginate">
+      <a href="#" class="active" data-index="0"></a>
+      <a href="#" data-index="1"></a>
+      <a href="#" data-index="2"></a>
+    </div>
+ 
+  </div>
+  
+  <div class="col-md-2"></div>
+
+  <div class="col-md-2">
+    <div class="home_header__content_right">
+      <?php echo apply_filters('the_content', $content); ?>
+    </div>
+  </div>
+</div>
+
 <?php
 
   return ob_get_clean();
