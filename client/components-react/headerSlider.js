@@ -22,9 +22,8 @@ const HeaderSlider = React.createClass({
 
 				{backgrounds.map((bg, i) => {
 					<div
-						class="home_header__background <?php if($key == 0) echo 'home_header__background--active' ?>"
-						data-index="<?php echo $key ?>"
-						style={{ background: 'url()', backgroundSize: 'cover', backgroundPosition: 'center' }}
+						className={i == 0 ? "home_header__background--active" : "home_header__background"}
+						style={{ background: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
 					></div>
 				})}
 
@@ -72,7 +71,7 @@ const HeaderSlider = React.createClass({
 
 				<div class="col-md-2">
 					<div class="home_header__content_right">
-					// content html
+						<div dangerouslySetInnerHTML={{__html: content_html}} />
 					</div>
 				</div>
 			</div>

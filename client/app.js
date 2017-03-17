@@ -18,9 +18,11 @@ import slider from './lib/slider';
 import multipleRender from 'react-multiple-render';
 import MapComponent from './components-react/map/index';
 import SubscribeFormComponent from './components-react/subscribeForm';
+import HeaderSlider from './components-react/headerSlider';
 
 multipleRender(MapComponent, '.bs-map');
 multipleRender(SubscribeFormComponent, '.bs-subscribe');
+multipleRender(HeaderSlider, '.bs-header-slider"');
 
 $(() => {
   redirect();
