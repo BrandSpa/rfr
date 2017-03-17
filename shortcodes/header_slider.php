@@ -37,7 +37,7 @@ function bs_header_slider_sc($atts, $content = null) {
 
   ob_start();
 ?>
-<div class="bs-header-slider"></div>
+<div class="bs-header-slider" data-props='<?php echo cleanQuote(json_encode($props)) ?>'></div>
 <?php
 
   return ob_get_clean();
