@@ -31530,8 +31530,6 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _jquery = __webpack_require__(25);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -31542,7 +31540,7 @@ var _get_mouse_position2 = _interopRequireDefault(_get_mouse_position);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var d3 = _extends({}, __webpack_require__(535), __webpack_require__(534), __webpack_require__(572));
+var d3 = Object.assign({}, __webpack_require__(535), __webpack_require__(534), __webpack_require__(572));
 
 var colors = {
 	'Persecution': '#FC3938',
