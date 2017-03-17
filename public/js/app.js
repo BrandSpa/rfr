@@ -46721,7 +46721,7 @@ var SearchByCountry = _react2.default.createClass({
 									_react2.default.createElement(
 										'a',
 										{ href: report.guid },
-										countriesTrans[report.meta_country]
+										countriesTrans[report.meta_country] ? countriesTrans[report.meta_country] : report.meta_country
 									),
 									_react2.default.createElement(
 										'span',
