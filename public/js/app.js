@@ -31530,6 +31530,10 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _d = __webpack_require__(779);
+
+var d3 = _interopRequireWildcard(_d);
+
 var _jquery = __webpack_require__(25);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -31540,7 +31544,7 @@ var _get_mouse_position2 = _interopRequireDefault(_get_mouse_position);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var d3 = Object.assign({}, __webpack_require__(535), __webpack_require__(534), __webpack_require__(572));
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 var colors = {
 	'Persecution': '#FC3938',
@@ -56596,6 +56600,54 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       (0, _jquery2.default)('html, body').animate({ scrollTop: (0, _jquery2.default)(hash).offset().top }, 800, function () {
         return window.location.hash = hash;
       });
+    }
+  });
+});
+
+/***/ }),
+/* 778 */,
+/* 779 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _d3Selection = __webpack_require__(535);
+
+Object.keys(_d3Selection).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _d3Selection[key];
+    }
+  });
+});
+
+var _d3Request = __webpack_require__(534);
+
+Object.keys(_d3Request).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _d3Request[key];
+    }
+  });
+});
+
+var _d3Transition = __webpack_require__(572);
+
+Object.keys(_d3Transition).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _d3Transition[key];
     }
   });
 });
