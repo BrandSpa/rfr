@@ -7,11 +7,6 @@ const SearchByContinentList = React.createClass({
 		}
 	},
 
-	componentDidMount() {
-		this.setContinents();
-	},
-
-
 	getIcon(name) {
 		return `${this.props.templateUrl}/public/img/icons/${name}.svg`
 	},
@@ -44,7 +39,7 @@ const SearchByContinentList = React.createClass({
 					{texts.africa}
 				</button>
 
-				<ul class="map__search_results" style={this.state.show ? { display: 'block' } : { display: 'none' }}>
+				<ul className="map__search_results" style={this.state.show ? { display: 'block' } : { display: 'none' }}>
 					{reports.map(report =>
 						<li className="">
 							<a href={report.guid}>{ countriesTrans[report.meta_country] }</a>

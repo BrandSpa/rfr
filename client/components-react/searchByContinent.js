@@ -4,11 +4,20 @@ import List from './searchByContinentList';
 const SearchByContinent = React.createClass({
 		getInitialState() {
 			return {
-				continents: []
+				continents: [],
+				show: false
 			}
 		},
+	
+	componentDidMount() {
+		this.setContinents();
+	},
 
-		setContinents() {
+	toggleShow() {
+		this.setState({show: !this.state.show});
+	},
+
+	setContinents() {
 		const { reports, continents } = this.props;
 		let newContinents = {};
 

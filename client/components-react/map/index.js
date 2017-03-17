@@ -53,7 +53,7 @@ const MapComponent = React.createClass({
 					<div className="map__info_situation"></div>
 				</div>
 			<div className="map">
-				<MapHeader {...this.props} searchCountry={this.searchCountry} />
+				<MapHeader {...this.props} searchCountry={this.searchCountry} searchContinent={this.searchContinent} />
 				<div id="map-container">
 					<div className="map__zoom_btns">
 						<button className="zoom_btn zoom_reset">

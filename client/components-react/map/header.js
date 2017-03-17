@@ -3,6 +3,7 @@ import React from 'react';
 const MapHeader = React.createClass({
 	showSearchList(e) {
 		e.preventDefault();
+		this.props.searchContinent.toggleShow();
 		console.log('showSearchList');
 	},
 

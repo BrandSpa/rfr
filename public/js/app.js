@@ -44312,7 +44312,7 @@ var MapComponent = _react2.default.createClass({
 			_react2.default.createElement(
 				'div',
 				{ className: 'map' },
-				_react2.default.createElement(_header2.default, _extends({}, this.props, { searchCountry: this.searchCountry })),
+				_react2.default.createElement(_header2.default, _extends({}, this.props, { searchCountry: this.searchCountry, searchContinent: this.searchContinent })),
 				_react2.default.createElement(
 					'div',
 					{ id: 'map-container' },
@@ -46563,6 +46563,7 @@ var MapHeader = _react2.default.createClass({
 	displayName: 'MapHeader',
 	showSearchList: function showSearchList(e) {
 		e.preventDefault();
+		this.props.searchContinent.toggleShow();
 		console.log('showSearchList');
 	},
 	showSearch: function showSearch(e) {
@@ -66568,8 +66569,15 @@ var SearchByContinent = _react2.default.createClass({
 	displayName: 'SearchByContinent',
 	getInitialState: function getInitialState() {
 		return {
-			continents: []
+			continents: [],
+			show: false
 		};
+	},
+	componentDidMount: function componentDidMount() {
+		this.setContinents();
+	},
+	toggleShow: function toggleShow() {
+		this.setState({ show: !this.state.show });
 	},
 	setContinents: function setContinents() {
 		var _props = this.props;
@@ -66676,9 +66684,6 @@ var SearchByContinentList = _react2.default.createClass({
 			show: false
 		};
 	},
-	componentDidMount: function componentDidMount() {
-		this.setContinents();
-	},
 	getIcon: function getIcon(name) {
 		return this.props.templateUrl + '/public/img/icons/' + name + '.svg';
 	},
@@ -66720,7 +66725,7 @@ var SearchByContinentList = _react2.default.createClass({
 			),
 			_react2.default.createElement(
 				'ul',
-				{ 'class': 'map__search_results', style: this.state.show ? { display: 'block' } : { display: 'none' } },
+				{ className: 'map__search_results', style: this.state.show ? { display: 'block' } : { display: 'none' } },
 				reports.map(function (report) {
 					return _react2.default.createElement(
 						'li',
