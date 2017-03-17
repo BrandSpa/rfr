@@ -10,10 +10,14 @@ const SearchByCountry = React.createClass({
 	},
 
 	componentDidMount() {
-		document.querySelector('.open-select-countries').addEventListener('click', (e) => {
-			e.preventDefault();
-			this.toggleShow(e);
-		});
+		const btn = document.querySelector('.open-select-countries');
+		if(btn) {
+			btn.addEventListener('click', (e) => {
+				e.preventDefault();
+				this.toggleShow(e);
+			});
+		}
+	
 	},
 
 	componentWillReceiveProps(props) {
