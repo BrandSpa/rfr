@@ -26,7 +26,7 @@ function bs_header_slider_sc($atts, $content = null) {
 				"content" => $at['content_' . $num]
 			];
 
-			array_push($contents, $cont);
+			$contents[$num] = $cont;
 		}
 
 		$props = [
