@@ -63,6 +63,9 @@ const SubscribeForm = React.createClass({
 			.post(endpoint, data)
 			.then(res => {
 				console.log(res.data);
+				if(res.data.id) {
+					return window.location = this.props.thanks;
+				}
 			}) 
 			.catch(err => console.error(err));
 	},

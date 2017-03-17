@@ -66384,6 +66384,8 @@ var SubscribeForm = _react2.default.createClass({
 		});
 	},
 	storeContact: function storeContact() {
+		var _this3 = this;
+
 		var _state = this.state;
 		var name = _state.name;
 		var email = _state.email;
@@ -66401,6 +66403,9 @@ var SubscribeForm = _react2.default.createClass({
 
 		_axios2.default.post(endpoint, data).then(function (res) {
 			console.log(res.data);
+			if (res.data.id) {
+				return window.location = _this3.props.thanks;
+			}
 		}).catch(function (err) {
 			return console.error(err);
 		});
