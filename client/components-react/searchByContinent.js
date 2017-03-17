@@ -53,7 +53,7 @@ const SearchByContinent = React.createClass({
 					<h1 className="title-center title-line color-red">{texts.search_by_list}</h1>
 					<div className="row">
 						<div className="col-md-6">
-							<List {...this.props} />
+							<List {...this.props} reports={this.state.continents.africa} />
 						</div>
 					</div>
 				</div>

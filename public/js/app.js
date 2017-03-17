@@ -66550,6 +66550,8 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _react = __webpack_require__(76);
@@ -66640,7 +66642,7 @@ var SearchByContinent = _react2.default.createClass({
 					_react2.default.createElement(
 						'div',
 						{ className: 'col-md-6' },
-						_react2.default.createElement(_searchByContinentList2.default, this.props)
+						_react2.default.createElement(_searchByContinentList2.default, _extends({}, this.props, { reports: this.state.continents.africa }))
 					)
 				)
 			)
