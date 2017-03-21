@@ -1,6 +1,6 @@
- 
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
  module.exports = {
-    watch: true,
+
      entry: {
        app: './client/app.js',
        admin: './client/admin/app.js'
@@ -21,5 +21,8 @@
           use: 'json-loader'
         }
       ]
-     }
+     },
+    plugins: [
+      new BundleAnalyzerPlugin()
+    ]
  }
