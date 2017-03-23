@@ -1,13 +1,15 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
- module.exports = {
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const fs = require('fs');
+const Path = require('path');
 
+ module.exports = {
      entry: {
        app: './client/app.js',
        admin: './client/admin/app.js'
      },
      output: {
          path: './public/js',
-         filename: '[name].js'
+         filename: '[name].[hash].js'
      },
      module: {
         loaders: [
@@ -23,6 +25,24 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
       ]
      },
     plugins: [
-      new BundleAnalyzerPlugin()
+      // new BundleAnalyzerPlugin()
+      function () {
+        this.plugin("done", function (statsData) {
+          var stats = statsData.toJson();
+          console.log(stats.chunks[0].files[0]);
+          if (!stats.errors.length) {
+            var htmlFileName = "footer.php";
+            var html = fs.readFileSync(Path.join(__dirname, htmlFileName), "utf8");
+
+            var htmlOutput = html.replace(
+              /<script\s+src=(["'])(.+?)app.*\.js\1/i,
+              "<script src=$1$2" + stats.chunks[0].files[0] + "$1");
+
+            fs.writeFileSync(
+              Path.join(__dirname, htmlFileName),
+              htmlOutput);
+          }
+        });
+      }
     ]
  }

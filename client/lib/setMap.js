@@ -134,7 +134,15 @@ function setMap(mapUrl, reports, lang, countriesTrans) {
 				redirectToReport.call(this, reports)
 			});
 
+			paths.on('touchstart', function () {
+				redirectToReport.call(this, reports)
+			});
+
 			polygons.on('click', function () {
+				redirectToReport.call(this, reports)
+			});
+
+			polygons.on('touchstart', function () {
 				redirectToReport.call(this, reports)
 			});
 

@@ -29712,10 +29712,6 @@ function setMap(mapUrl, reports, lang, countriesTrans) {
 			redirectToReport.call(this, reports);
 		});
 
-		polygons.on('touchstart', function () {
-			redirectToReport.call(this, reports);
-		});
-
 		var windowH = void 0;
 		var windowW = void 0;
 
