@@ -72,7 +72,7 @@ function appendScript(src) {
   appendScript("<?php echo get_template_directory_uri() . '/public/js/app.js' ?>"); 
 </script>-->
 
-<script src="<?php echo get_template_directory_uri() ?>/public/js/app.5032e85ac062382ed555.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/public/js/app.1cc5ce175c37cf73bd68.js"></script>
 
 <!--wordpress scripts-->
 <?php wp_footer() ?>
