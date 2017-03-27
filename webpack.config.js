@@ -5,7 +5,6 @@ const Path = require('path');
  module.exports = {
      entry: {
        app: './client/app.js',
-       admin: './client/admin/app.js'
      },
      output: {
          path: './public/js',
