@@ -4,7 +4,6 @@ function bs_in_office($country) {
 }
 function bs_logo_url() {
 	$country = getCountry();
-    return $country;
 	if(!bs_in_office($country)) {
 		$country = 'default';
 	}
