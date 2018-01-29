@@ -14,4 +14,5 @@ include_once 'get_user_country.php';
 include_once 'get_office_country.php';
 include_once 'countries_info.php';
 include_once 'uuid.php';
+include_once 'logo_url.php';
 ?>

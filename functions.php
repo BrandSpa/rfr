@@ -20,7 +20,6 @@ if(file_exists('vendor/autoload.php')) {
 //include necessary functions to theme works like it has
 include 'lib/index.php';
 include 'apis/index.php';
-require_once 'lib/logo_url.php';
 include 'options/index.php';
 include 'metaboxes/index.php';
 include_once 'shortcodes/map.php';
