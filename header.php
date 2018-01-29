@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     $home = pll_home_url();
   }
 ?>
-
+<input type="hidden" name="bslogo" value="<?php echo bs_logo_url(); ?>">
 <div class="nav_mobile">
   <a href="<?php echo $home ?>" class="nav_mobile__logo">
       <?php if( !empty( get_option("logo_" . str_replace(' ', '_', getOfficeCountry())  )) ): ?>
