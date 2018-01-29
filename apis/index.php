@@ -5,7 +5,7 @@ include_once 'stripe.php';
 include_once $dir_base . '/lib/get_reports.php';
 include_once $dir_base . '/lib/translate_list.php';
 include_once $dir_base . '/lib/countries.php';
-include_once $main_dir . '/lib/location.php';
+include_once $dir_base . '/lib/location.php';
 
 add_action( 'wp_ajax_nopriv_mailchimp_subscribe', 'mailchimp_subscribe' );
 add_action( 'wp_ajax_mailchimp_subscribe', 'mailchimp_subscribe' );
