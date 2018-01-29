@@ -15,6 +15,9 @@
   }
 
   function setTranslations() {
+      if(!isset($group)){
+        $group = "acn";
+      }
       registerStr('RELIGIOUS FREEDOM<br> IN THE WORLD');
       registerStr('RELIGIOUS <span class="color-red">FREEDOM</span><br>REPORT');
       registerStr('BACK TO MAP');
