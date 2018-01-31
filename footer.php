@@ -38,7 +38,7 @@
 
   <div class="col-md-3 footer__bottom">
     <div class="footer__bottom-left col-md-12">
-      <input type="hidden" value="<?php echo getOfficeCountry(); ?>">
+      <input type="hidden" value="<?php echo getCountry(); ?>"> 
       <h4 style="text-transform: uppercase" class="color-red"><?php echo gett('Contact') ?></h4>
       <?php echo get_option('contact_info_' . str_replace(' ', '_', getOfficeCountry()) ) ?>
     </div>
